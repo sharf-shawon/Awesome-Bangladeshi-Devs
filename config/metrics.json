@@ -1,0 +1,35 @@
+{
+  "lookback_days": 90,
+  "top_n": 25,
+  "per_query": 30,
+  "max_candidates": 50,
+  "location_aliases": [
+    "Bangladesh",
+    "Bangladeshi",
+    "🇧🇩",
+    "Dhaka",
+    "Dacca",
+    "Chattogram",
+    "Chittagong",
+    "Sylhet",
+    "Khulna",
+    "Rajshahi",
+    "Barishal",
+    "Rangpur",
+    "Mymensingh",
+    "Comilla",
+    "Cumilla",
+    "Narayanganj",
+    "Gazipur"
+  ],
+  "weights": {
+    "followers": 0.2,
+    "public_repos": 0.1,
+    "recent_total_contributions": 0.35,
+    "recent_pull_requests": 0.1,
+    "recent_issues": 0.05,
+    "recent_commits": 0.05,
+    "recent_reviews": 0.05,
+    "recent_repo_stars_sum": 0.1
+  }
+}

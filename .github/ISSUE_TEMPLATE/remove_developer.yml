@@ -1,0 +1,37 @@
+name: "Remove Developer from Awesome List"
+description: "Request to remove a Bangladeshi developer from the Awesome list."
+title: "Remove Developer"
+labels: ["remove-developer", "automation"]
+body:
+  - type: input
+    id: github_username
+    attributes:
+      label: "GitHub Username"
+      description: "The GitHub username of the developer to remove (case-sensitive)."
+      placeholder: "e.g. johndoe"
+    validations:
+      required: true
+  - type: input
+    id: reason
+    attributes:
+      label: "Reason for Removal"
+      description: "Why should this developer be removed? (e.g., self-removal, no longer meets criteria, etc.)"
+      placeholder: "Self-removal, not Bangladeshi, etc."
+    validations:
+      required: true
+  - type: checkboxes
+    id: self_removal
+    attributes:
+      label: "Self-Removal Confirmation"
+      description: "If you are requesting to remove your own profile, please confirm. If not, leave unchecked."
+      options:
+        - label: "I am the owner of this GitHub profile and request my own removal."
+          required: false
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: "Agreement"
+      description: "I confirm that the information provided is accurate and complies with the Awesome list guidelines."
+      options:
+        - label: "I have read and agree to the contribution guidelines and understand that ineligible or malicious requests will be rejected."
+          required: true

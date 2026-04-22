@@ -1,0 +1,271 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_run:
+    workflows: ["Collect GitHub stats"]
+    types:
+      - completed
+  issues:
+    types: [labeled, edited, reopened]
+  workflow_dispatch:
+    inputs:
+      force_release:
+        description: 'Force a monthly release now'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.issue.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # 1. Validation Phase (Run on everything)
+  validation:
+    # On issues, only run if it has the correct labels
+    if: |
+      github.event_name != 'issues' || 
+      contains(github.event.issue.labels.*.name, 'add-developer') || 
+      contains(github.event.issue.labels.*.name, 'remove-developer')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Lint README
+        run: npx awesome-lint README.md
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate JSON schemas
+        run: python src/validate_data.py
+
+  # 2. Testing Phase (Needs Validation)
+  test:
+    needs: validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pytest pytest-cov
+
+      - name: Run tests with coverage
+        run: pytest --cov=src --cov=tests --cov-report=xml --cov-report=term
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage.xml
+
+  # 3. Processing and Deployment Phase (Needs Test)
+  deploy:
+    needs: test
+    if: |
+      github.event_name == 'push' || 
+      github.event_name == 'issues' ||
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for accurate tagging/releases
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Process Issue (If issue event)
+        id: process
+        if: github.event_name == 'issues'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python src/process_issue.py "${{ github.event.issue.number }}" "${{ github.event.issue.title }}" "${{ github.event.issue.body }}" "${{ github.event.issue.user.login }}" "${{ github.repository_owner }}" > process_output.txt 2>&1
+          cat process_output.txt
+          
+          if grep -q "users.json and removed_users.json updated" process_output.txt; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+          
+          if grep -q "MANUAL_REVIEW:" process_output.txt; then
+            echo "status=manual" >> $GITHUB_OUTPUT
+          elif grep -q "REMOVAL_ALERT:" process_output.txt; then
+            echo "status=removed_alert" >> $GITHUB_OUTPUT
+          elif grep -q "Missing required fields" process_output.txt || grep -q "not allowed" process_output.txt || grep -q "Duplicate entry" process_output.txt; then
+            echo "status=failure" >> $GITHUB_OUTPUT
+          else
+            echo "status=success" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Add Manual Review Label
+        if: steps.process.outputs.status == 'manual'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue edit "${{ github.event.issue.number }}" --add-label "manual-review"
+
+      - name: Inject Google Analytics ID
+        env:
+          GA_ID: ${{ secrets.GOOGLE_ANALYTICS }}
+        run: |
+          if [ -n "$GA_ID" ]; then
+            # Replace the placeholder with the secret value
+            sed -i "s/GOOGLE_ANALYTICS_ID/$GA_ID/g" _config.yml
+            echo "Google Analytics ID injected."
+          else
+            # If no secret is provided, remove the entry to avoid tracking with a placeholder
+            sed -i "/google_analytics: GOOGLE_ANALYTICS_ID/d" _config.yml
+            echo "No Google Analytics ID secret found. Removing placeholder from config."
+          fi
+
+      - name: Generate README
+        run: |
+          python src/generate_readme.py
+
+      - name: Lint README for Awesome compliance
+        run: npx awesome-lint README.md
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/users.json README.md _config.yml
+          if [ -f "data/removed_users.json" ]; then
+            git add data/removed_users.json
+          fi
+          git diff --cached --quiet || git commit -m "chore: auto-update data and readme [skip ci]"
+          git push
+
+      - name: Create GitHub Release (Monthly Only)
+        # Trigger on scheduled stats OR manual force_release
+        if: |
+          inputs.force_release == true ||
+          (github.event_name == 'workflow_run' && github.event.workflow_run.event == 'schedule')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Check if today is the last day of the month, UNLESS force_release is true
+          if [ "${{ inputs.force_release }}" != "true" ] && [ "$(date +%d -d tomorrow)" != "01" ]; then
+            echo "Today is not the last day of the month and not a forced release. Skipping."
+            exit 0
+          fi
+          
+          MONTH_YEAR=$(date +'%B %Y')
+          TAG_NAME="monthly-$(date +'%Y-%m')"
+          
+          # Check if tag already exists (e.g. if re-running manual release)
+          if git rev-parse "$TAG_NAME" >/dev/null 2>&1; then
+            TAG_NAME="${TAG_NAME}-manual-$(date +'%H%M%S')"
+          fi
+          
+          # Create and push tag
+          git tag "$TAG_NAME"
+          git push origin "$TAG_NAME"
+          
+          # Create Release
+          LATEST_DATA=$(ls -t data/????-??-??.json | head -n 1)
+          gh release create "$TAG_NAME" \
+            --title "Awesome ${MONTH_YEAR}" \
+            --notes "Monthly archive of the Top Bangladeshi Developers list and statistics for ${MONTH_YEAR}." \
+            --target main \
+            "$LATEST_DATA" README.md
+
+      - name: Comment and Close Issue
+        if: github.event_name == 'issues' && always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          OUTPUT=$(cat process_output.txt)
+          ISSUE_NUMBER="${{ github.event.issue.number }}"
+          
+          STATE=$(gh issue view "$ISSUE_NUMBER" --json state --jq .state)
+          if [ "$STATE" == "CLOSED" ]; then
+            echo "Issue already closed, skipping comment."
+            exit 0
+          fi
+          
+          if [ "${{ steps.process.outputs.status }}" == "success" ] && [ "${{ steps.process.outputs.changed }}" == "true" ]; then
+            COMMENT="### ✅ Request Processed Successfully
+            
+            All validations and tests passed. The changes have been applied to the list and the README has been updated.
+            
+            **Logs:**
+            \`\`\`
+            $OUTPUT
+            \`\`\`"
+            gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
+            gh issue close "$ISSUE_NUMBER" --reason "completed"
+          elif [ "${{ steps.process.outputs.status }}" == "removed_alert" ]; then
+            REASON=$(echo "$OUTPUT" | grep "REMOVAL_ALERT:" | cut -d: -f3-)
+            COMMENT="### ❌ Request Denied
+            
+            This user cannot be added because they were previously removed from the list.
+            
+            **Reason for previous removal:** $REASON
+            
+            If you believe this is an error, please contact a maintainer."
+            gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
+            gh issue close "$ISSUE_NUMBER" --reason "not_planned"
+          elif [ "${{ steps.process.outputs.status }}" == "manual" ]; then
+            COMMENT="### ⏳ Request Pending Manual Review
+            
+            This request requires manual intervention from a maintainer (labeled with \`manual-review\`). 
+            
+            **Details:**
+            \`\`\`
+            $OUTPUT
+            \`\`\`"
+            gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
+          elif [ "${{ steps.process.outputs.status }}" == "failure" ]; then
+            COMMENT="### ⚠️ Request failed validation
+            
+            The automation could not process your request due to validation errors.
+            
+            **Errors:**
+            \`\`\`
+            $OUTPUT
+            \`\`\`"
+            gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
+          fi

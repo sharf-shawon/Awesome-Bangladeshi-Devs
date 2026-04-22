@@ -1,0 +1,30 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: validate-data
+        name: Validate JSON Data
+        entry: python3 src/validate_data.py
+        language: system
+        files: ^data/.*\.json$
+        pass_filenames: false
+
+    -   id: generate-readme
+        name: Generate README
+        entry: python3 src/generate_readme.py
+        language: system
+        files: ^(data/.*\.json|src/generate_readme\.py)$
+        pass_filenames: false
+
+    -   id: awesome-lint
+        name: Lint README with Awesome Lint
+        entry: npx --yes awesome-lint README.md
+        language: system
+        files: ^README\.md$
+        pass_filenames: false
+
+    -   id: run-tests
+        name: Run Project Tests
+        entry: .venv/bin/python -m pytest
+        language: system
+        files: ^(src/.*\.py|tests/.*\.py)$
+        pass_filenames: false

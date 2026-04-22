@@ -1,0 +1,15 @@
+.venv/
+.pytest_cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.bak
+*.swp
+.DS_Store
+.idea/
+.vscode/PythonImportHelper-v2-Completion.json
+.coverage

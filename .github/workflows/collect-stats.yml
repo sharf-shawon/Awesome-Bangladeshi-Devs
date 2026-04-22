@@ -1,0 +1,45 @@
+name: Collect GitHub stats
+
+on:
+  schedule:
+    - cron: '0 23 * * *' # Daily at 11 PM UTC
+  workflow_dispatch:
+    inputs:
+      config_path:
+        description: Path to metrics config
+        required: false
+        default: config/metrics.json
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run collector
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          CONFIG_PATH: ${{ inputs.config_path || 'config/metrics.json' }}
+          GITHUB_APP_NAME: bd-github-collector
+        run: python src/collect_stats.py
+
+      - name: Commit generated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/*.json
+          git diff --cached --quiet || git commit -m "chore(data): update github stats"
+          git push
