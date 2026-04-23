@@ -245,7 +245,8 @@ Highlighting developers whose projects have gained the most stars recently, mark
 A comprehensive list of all developers who have submitted their profiles to this directory, sorted alphabetically. These developers contribute to various fields including web development, mobile apps, AI, and more.
 
 
-1. [Jhankar Programming Hero](https://github.com/jhankarpHero?rank=directory) - Bangladesh, 1273 followers, 30 public repos, 32 stars.
+1. [almahmud](https://github.com/almahmudbd?rank=directory) - BD, 21 followers, 18 public repos, 48 stars.
+2. [Jhankar Programming Hero](https://github.com/jhankarpHero?rank=directory) - Bangladesh, 1273 followers, 30 public repos, 32 stars.
 
 ## Contributing
 
