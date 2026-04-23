@@ -170,9 +170,9 @@ def main():
         "lookback_days": lookback_days,
         "top_n": top_n,
         "candidate_count": len(candidates),
-        "published_count": min(top_n, len(scored)),
+        "published_count": len(scored),
         "metrics": {"weights": weights},
-        "developers": scored[:top_n],
+        "developers": scored,
         "errors": [r for r in rows if "error" in r],
     }
 

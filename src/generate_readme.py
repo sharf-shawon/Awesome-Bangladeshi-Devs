@@ -62,6 +62,21 @@ def load_json(path):
 
 def get_stats_data():
     """Returns (latest_stats, previous_stats, latest_date)"""
+    # Prefer automated.json as per instructions
+    automated_path = os.path.join(DATA_DIR, "automated.json")
+    if os.path.exists(automated_path):
+        latest_data = load_json(automated_path)
+        latest_date = latest_data.get("run_date")
+        latest_devs = latest_data.get("developers", []) if isinstance(latest_data, dict) else []
+        
+        # Look for the previous dated file for growth calculation
+        files = sorted(glob.glob(os.path.join(DATA_DIR, "????-??-??.json")), reverse=True)
+        previous_devs = []
+        if files:
+            prev_data = load_json(files[0])
+            previous_devs = prev_data.get("developers", []) if isinstance(prev_data, dict) else []
+        return latest_devs, previous_devs, latest_date
+
     files = sorted(glob.glob(os.path.join(DATA_DIR, "????-??-??.json")), reverse=True)
     if not files:
         return [], [], None
@@ -86,8 +101,8 @@ def calculate_growth(latest_devs, previous_devs):
         prev = prev_map.get(login_lower, {})
         
         # Calculate growth if previous data exists
-        dev["followers_growth"] = dev["followers"] - prev.get("followers", dev["followers"])
-        dev["stars_growth"] = dev["recent_repo_stars_sum"] - prev.get("recent_repo_stars_sum", dev["recent_repo_stars_sum"])
+        dev["followers_growth"] = dev.get("followers", 0) - prev.get("followers", dev.get("followers", 0))
+        dev["stars_growth"] = dev.get("recent_repo_stars_sum", 0) - prev.get("recent_repo_stars_sum", dev.get("recent_repo_stars_sum", 0))
         enriched.append(dev)
     return enriched
 
@@ -118,6 +133,11 @@ def section(title, entries, level=3):
     return f"{prefix} {title}\n\n" + "\n".join(entries)
 
 def main():
+    config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config", "metrics.json")
+    cfg = load_json(config_path)
+    if not isinstance(cfg, dict): cfg = {}
+    top_n = cfg.get("top_n", 25)
+
     latest_devs, previous_devs, latest_date = get_stats_data()
     user_devs = load_json(os.path.join(DATA_DIR, "users.json"))
     if not isinstance(user_devs, list): user_devs = []
@@ -145,19 +165,19 @@ def main():
         enriched_devs = calculate_growth(latest_devs, previous_devs)
         
         # 1. GOATS Subsections
-        top_score = sorted(enriched_devs, key=lambda d: d.get("composite_score", 0), reverse=True)[:25]
-        top_followers = sorted(enriched_devs, key=lambda d: d.get("followers", 0), reverse=True)[:25]
-        top_stars = sorted(enriched_devs, key=lambda d: d.get("recent_repo_stars_sum", 0), reverse=True)[:25]
-        top_repos = sorted(enriched_devs, key=lambda d: d.get("public_repos", 0), reverse=True)[:25]
+        top_score = sorted(enriched_devs, key=lambda d: d.get("composite_score", 0), reverse=True)[:top_n]
+        top_followers = sorted(enriched_devs, key=lambda d: d.get("followers", 0), reverse=True)[:top_n]
+        top_stars = sorted(enriched_devs, key=lambda d: d.get("recent_repo_stars_sum", 0), reverse=True)[:top_n]
+        top_repos = sorted(enriched_devs, key=lambda d: d.get("public_repos", 0), reverse=True)[:top_n]
 
         goats_content = [
-            section("Top 25 by Overall Score", [format_list_entry(d, i+1, "score") for i, d in enumerate(top_score)]),
+            section(f"Top {top_n} by Overall Score", [format_list_entry(d, i+1, "score") for i, d in enumerate(top_score)]),
             "",
-            section("Top 25 by Followers", [format_list_entry(d, i+1, "followers") for i, d in enumerate(top_followers)]),
+            section(f"Top {top_n} by Followers", [format_list_entry(d, i+1, "followers") for i, d in enumerate(top_followers)]),
             "",
-            section("Top 25 by Stars", [format_list_entry(d, i+1, "stars") for i, d in enumerate(top_stars)]),
+            section(f"Top {top_n} by Stars", [format_list_entry(d, i+1, "stars") for i, d in enumerate(top_stars)]),
             "",
-            section("Top 25 by Public Repos", [format_list_entry(d, i+1, "repos") for i, d in enumerate(top_repos)])
+            section(f"Top {top_n} by Public Repos", [format_list_entry(d, i+1, "repos") for i, d in enumerate(top_repos)])
         ]
 
         # 2. Rising Stars Subsections
@@ -169,6 +189,7 @@ def main():
             "",
             section("Most Stars Gained This Month", [format_list_entry(d, i+1, "rising_stars") for i, d in enumerate(rising_stars)])
         ]
+
 
         # 3. All Developers (Numbered List)
         stats_map = {d["login"].lower(): d for d in enriched_devs}

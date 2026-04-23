@@ -78,7 +78,7 @@ def test_calculate_growth():
 @patch("builtins.open")
 def test_main_no_stats(mock_open, mock_load_json, mock_get_stats):
     mock_get_stats.return_value = ([], [], None)
-    mock_load_json.side_effect = [[{"github_username": "user1"}], {}]
+    mock_load_json.side_effect = [{"top_n": 25}, [{"github_username": "user1"}], {}]
     
     generate_readme.main()
     mock_open.assert_called_with(generate_readme.README_PATH, "w", encoding="utf-8")
@@ -93,7 +93,7 @@ def test_main_with_stats(mock_open, mock_load_json, mock_get_stats):
         "followers_growth": 5, "stars_growth": 2
     }]
     mock_get_stats.return_value = (devs, devs, "2026-04-22")
-    mock_load_json.side_effect = [[{"github_username": "user1"}], {}]
+    mock_load_json.side_effect = [{"top_n": 25}, [{"github_username": "user1"}], {}]
     
     generate_readme.main()
     mock_open.assert_called_with(generate_readme.README_PATH, "w", encoding="utf-8")
