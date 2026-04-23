@@ -52,5 +52,14 @@
     "followers": 44,
     "public_repos": 12,
     "recent_repo_stars_sum": 22
+  },
+  {
+    "name": "Rifat Nabi",
+    "github_username": "torifat",
+    "profile_url": "https://github.com/torifat",
+    "location": "Sydney, Australia",
+    "followers": 917,
+    "public_repos": 202,
+    "recent_repo_stars_sum": 660
   }
 ]
