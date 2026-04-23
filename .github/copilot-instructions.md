@@ -1,4 +1,3 @@
-
 # Copilot instructions
 
 ## Automation, Validation, and Workflow Rules (MUST FOLLOW)
@@ -6,32 +5,32 @@
 **This repository is fully automated and all code, workflows, and documentation must strictly follow these rules:**
 
 ### 1. Data Management
-- All user-submitted developer entries are stored in `data/users.json` (single source of truth for manual entries).
-- All automated/statistical entries are stored in `data/automated.json` (single source of truth for automated entries).
-- No duplicate entries (by username, case-insensitive) are allowed in either file.
+- **Manual Entries:** Stored in `data/users.json` (single source of truth for user-submitted metadata).
+- **Automated Stats:** Stored in dated JSON files (e.g., `data/2026-04-22.json`). `data/automated.json` is a legacy fallback/source of truth for the latest stats if dated files are missing.
+- **Removals:** Stored in `data/removed_users.json`. No duplicate entries (by username, case-insensitive) are allowed in any file.
+- **Config:** `config/metrics.json` defines all ranking weights, location aliases, and `top_n` limits.
 
 ### 2. Issue-Driven Automation
 - `.github/ISSUE_TEMPLATE/add_developer.yml` and `remove_developer.yml` are used for all add/remove requests.
-- `.github/workflows/process-add-remove.yml` automates processing of these issues:
+- `.github/workflows/pipeline.yml` (specifically the `deploy` job) automates processing of these issues:
 	- Self-removal is automated if the issue author matches the username.
-	- Third-party removals require manual review.
+	- Third-party removals require manual review (labeled with `manual-review`).
 	- All adds/removes are validated against `config/metrics.json` (location, required fields, etc).
 
 ### 3. Data Aggregation & README Generation
-- `src/generate_readme.py` must aggregate and rank from both `users.json` and `automated.json`.
-- `README.md` and `contributing.md` must always reflect the latest config and data.
-- All public docs must be regenerated on config/data changes.
+- `src/generate_readme.py` MUST aggregate and rank from `users.json` and the latest dated stats file (or `automated.json`).
+- `README.md` and `contributing.md` MUST always reflect the latest config and data.
+- **Post-Filtering:** Lists in the README (e.g., Top 25) must be sliced *after* filtering out users in `removed_users.json` to ensure the list remains full.
 
 ### 4. CI/CD & Validation
-- All workflows must pass awesome-lint, schema validation, and all other checks before merging or deploying.
-- `.github/workflows/generate-readme.yml` and `.github/workflows/validate.yml` enforce these checks.
-- All scripts and workflows must be tested with ~100% coverage (unit, integration, regression, edge cases).
+- **Unified Pipeline:** `.github/workflows/pipeline.yml` handles validation, testing, issue processing, and README generation.
+- **Stats Collection:** `.github/workflows/collect-stats.yml` runs daily to fetch fresh statistics and save them as dated JSON files.
+- **Quality Checks:** All PRs and pushes must pass `awesome-lint`, `validate_data.py`, and `pytest` with high coverage.
 
 ### 5. Coding Principles
-- Use only standard library modules unless a dependency meaningfully reduces complexity.
-- Prefer explicit configuration in `config/*.json` over hardcoded constants.
-- All validation and ranking logic must use `config/metrics.json` as the single source of truth.
-- All code must be robust, handle edge cases, and be easy to review.
+- **Standard Library:** Use only standard library modules unless a dependency (like `requests`) meaningfully reduces complexity.
+- **Single Source of Truth:** All validation and ranking logic must use `config/metrics.json`.
+- **Robustness:** All scripts must handle missing data, API timeouts, and edge cases (e.g., users with no name or repos).
 
 ### 6. Copilot Response Style
 - Always generate complete files for repository features.

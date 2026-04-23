@@ -22,7 +22,7 @@ def test_format_list_entry():
     }
     # Test normal entry
     entry = generate_readme.format_list_entry(dev, 1, "directory")
-    assert "1. [Test User](https://github.com/testuser?rank=directory) - Dhaka, Bangladesh, 100 followers, 10 public repos, 50 stars." in entry
+    assert "1. [Test User](https://github.com/testuser) - Dhaka, Bangladesh, 100 followers, 10 public repos, 50 stars." in entry
 
     # Test rising followers
     entry = generate_readme.format_list_entry(dev, 1, "rising_followers")
@@ -80,8 +80,16 @@ def test_main_no_stats(mock_open, mock_load_json, mock_get_stats):
     mock_get_stats.return_value = ([], [], None)
     mock_load_json.side_effect = [{"top_n": 25}, [{"github_username": "user1"}], {}]
     
+    # Mocking open as a context manager
+    mock_file = MagicMock()
+    mock_open.return_value.__enter__.return_value = mock_file
+    
     generate_readme.main()
-    mock_open.assert_called_with(generate_readme.README_PATH, "w", encoding="utf-8")
+    
+    # Capture all written content
+    written_content = "".join([call.args[0] for call in mock_file.write.call_args_list])
+    assert "## Directory of Awesome Bangladeshi Developers" in written_content
+    assert "*This directory is curated from manual submissions.*" in written_content
 
 @patch("generate_readme.get_stats_data")
 @patch("generate_readme.load_json")
@@ -95,5 +103,17 @@ def test_main_with_stats(mock_open, mock_load_json, mock_get_stats):
     mock_get_stats.return_value = (devs, devs, "2026-04-22")
     mock_load_json.side_effect = [{"top_n": 25}, [{"github_username": "user1"}], {}]
     
+    mock_file = MagicMock()
+    mock_open.return_value.__enter__.return_value = mock_file
+    
     generate_readme.main()
-    mock_open.assert_called_with(generate_readme.README_PATH, "w", encoding="utf-8")
+    
+    written_content = "".join([call.args[0] for call in mock_file.write.call_args_list])
+    assert "## GOATS: Top Bangladeshi Developers" in written_content
+    assert "### Top 25 Bangladeshi Developers by Overall Score" in written_content
+    assert "The most active and impactful developers" in written_content
+    assert "## Rising Stars: Trending Developers" in written_content
+    assert "### Trending: Most Followers Gained This Month" in written_content
+    assert "Rising talent experiencing the fastest growth" in written_content
+    assert "## Directory of Awesome Bangladeshi Developers" in written_content
+    assert "not currently in the top rankings" in written_content

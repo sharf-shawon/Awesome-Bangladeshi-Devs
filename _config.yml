@@ -1,5 +1,35 @@
 title: Awesome Bangladeshi Developers
-description: A curated list of the most impactful, active, and rising Bangladeshi developers on GitHub.
+description: "Discover the most impactful, active, and rising Bangladeshi developers on GitHub. A data-driven directory featuring top contributors, open-source leaders, and rising talent from the Bangladeshi tech community."
+url: "https://Awesome-Bangladeshi-Devs.shawon.me" # Update this to your production URL if different
+baseurl: "/"
+github:
+  is_project_page: true
+  repository_url: "https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs"
+
+# SEO and Social Media
+twitter:
+  username: sharf_shawon
+  card: summary_large_image
+logo: /assets/logo.png # Placeholder if you add one later
+social:
+  name: Awesome Bangladeshi Devs
+  links:
+    - https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs
+
+# Build settings
 theme: jekyll-theme-merlot
-google_analytics: G-MHQ27V2WFL
+google_analytics: GOOGLE_ANALYTICS # This is handled by your workflow now, but good to keep here as fallback
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 show_downloads: false
+exclude:
+  - .venv
+  - .pytest_cache
+  - tests
+  - src
+  - requirements.txt
+  - GEMINI.md
+  - LICENSE
+  - .pre-commit-config.yaml

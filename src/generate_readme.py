@@ -25,16 +25,9 @@ GOAL = (
 
 HOW_TO_JOIN = (
     "## How to Join\n\n"
-    "<details>\n"
-    "<summary>Expand for instructions</summary>\n\n"
-    "Adding yourself is **fully automated**. Follow these steps:\n\n"
-    "### 1. Open an Issue\n"
-    "Use the [Add Developer](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/issues/new?template=add_developer.yml) template.\n\n"
-    "### 2. Submit\n"
-    "Our automation fetches your stats and adds you to the list.\n\n"
-    "### 3. Removal\n"
-    "Use the [Remove Developer](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/issues/new?template=remove_developer.yml) template for self-removal.\n"
-    "</details>"
+    "1. Open an Issue: [Add Developer](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/issues/new?template=add_developer.yml)\n"
+    "2. Submit: Fill in your username and location.\n"
+    "3. Done: Our automation handles the rest!"
 )
 
 HOW_IT_WORKS = (
@@ -111,10 +104,6 @@ def format_list_entry(dev, index, rank_type=None):
     name = dev.get("name") or login or "Unknown"
     url = dev.get("profile_url") or f"https://github.com/{login}"
     
-    if rank_type:
-        separator = "&" if "?" in url else "?"
-        url = f"{url}{separator}rank={rank_type}"
-    
     location = (dev.get("location") or "Bangladesh").strip().rstrip(",")
     followers = dev.get("followers", 0)
     repos = dev.get("public_repos", 0)
@@ -155,8 +144,8 @@ def main():
         all_devs_sorted = sorted(user_devs, key=lambda d: (d.get("name") or d.get("github_username", "")).lower())
         directory_entries = [format_list_entry(d, i+1, "fallback") for i, d in enumerate(all_devs_sorted)]
         content = [
-            "## Other Awesome Bangladeshi Developers\n\n",
-            "*This list is curated from user inputs.*\n\n",
+            "## Directory of Awesome Bangladeshi Developers\n\n",
+            "*This directory is curated from manual submissions.*\n\n",
             "\n".join(directory_entries)
         ]
         has_stats = False
@@ -170,59 +159,91 @@ def main():
         top_stars = sorted(enriched_devs, key=lambda d: d.get("recent_repo_stars_sum", 0), reverse=True)[:top_n]
         top_repos = sorted(enriched_devs, key=lambda d: d.get("public_repos", 0), reverse=True)[:top_n]
 
-        goats_content = [
-            section(f"Top {top_n} by Overall Score", [format_list_entry(d, i+1, "score") for i, d in enumerate(top_score)]),
-            "",
-            section(f"Top {top_n} by Followers", [format_list_entry(d, i+1, "followers") for i, d in enumerate(top_followers)]),
-            "",
-            section(f"Top {top_n} by Stars", [format_list_entry(d, i+1, "stars") for i, d in enumerate(top_stars)]),
-            "",
-            section(f"Top {top_n} by Public Repos", [format_list_entry(d, i+1, "repos") for i, d in enumerate(top_repos)])
-        ]
-
         # 2. Rising Stars Subsections
         rising_followers = sorted(enriched_devs, key=lambda d: d.get("followers_growth", 0), reverse=True)[:20]
         rising_stars = sorted(enriched_devs, key=lambda d: d.get("stars_growth", 0), reverse=True)[:20]
         
-        rising_content = [
-            section("Most Followers Gained This Month", [format_list_entry(d, i+1, "rising_followers") for i, d in enumerate(rising_followers)]),
+        # Deduplication for Awesome compliance (each link must appear only once)
+        used_links = set()
+
+        def format_unique_entry(dev, rank_type=None):
+            url = dev.get("profile_url") or f"https://github.com/{dev.get('login', dev.get('github_username', ''))}"
+            if url.lower() in used_links:
+                return None
+            used_links.add(url.lower())
+            return dev
+
+        top_score_devs = [d for d in [format_unique_entry(d, "score") for d in top_score] if d]
+        top_followers_devs = [d for d in [format_unique_entry(d, "followers") for d in top_followers] if d]
+        top_stars_devs = [d for d in [format_unique_entry(d, "stars") for d in top_stars] if d]
+        top_repos_devs = [d for d in [format_unique_entry(d, "repos") for d in top_repos] if d]
+        
+        goats_content = [
+            section(f"Top {top_n} Bangladeshi Developers by Overall Score", 
+                    ["*The most active and impactful developers based on a weighted composite of contributions, followers, stars, and activity.*", "", 
+                     *[format_list_entry(d, i+1, "score") for i, d in enumerate(top_score_devs)]]),
             "",
-            section("Most Stars Gained This Month", [format_list_entry(d, i+1, "rising_stars") for i, d in enumerate(rising_stars)])
+            section(f"Top {top_n} Bangladeshi Developers by Followers", 
+                    ["*Developers with the most significant reach and community following in the Bangladeshi tech ecosystem.*", "", 
+                     *[format_list_entry(d, i+1, "followers") for i, d in enumerate(top_followers_devs)]]),
+            "",
+            section(f"Top {top_n} Bangladeshi Developers by Stars", 
+                    ["*Creators of the most popular and recognized open-source projects, measured by recent repository stars.*", "", 
+                     *[format_list_entry(d, i+1, "stars") for i, d in enumerate(top_stars_devs)]]),
+            "",
+            section(f"Top {top_n} Bangladeshi Developers by Public Repos", 
+                    ["*The most prolific contributors with a vast portfolio of public repositories and open-source projects.*", "", 
+                     *[format_list_entry(d, i+1, "repos") for i, d in enumerate(top_repos_devs)]])
         ]
 
+        rising_followers_devs = [d for d in [format_unique_entry(d, "rising_followers") for d in rising_followers] if d]
+        rising_stars_devs = [d for d in [format_unique_entry(d, "rising_stars") for d in rising_stars] if d]
 
-        # 3. All Developers (Numbered List)
+        rising_content = [
+            section("Trending: Most Followers Gained This Month", 
+                    ["*Rising talent experiencing the fastest growth in community following and recognition.*", "", 
+                     *[format_list_entry(d, i+1, "rising_followers") for i, d in enumerate(rising_followers_devs)]]),
+            "",
+            section("Trending: Most Stars Gained This Month", 
+                    ["*Projects and developers gaining the most community appreciation and traction recently.*", "", 
+                     *[format_list_entry(d, i+1, "rising_stars") for i, d in enumerate(rising_stars_devs)]])
+        ]
+
+        # 3. Directory
         stats_map = {d["login"].lower(): d for d in enriched_devs}
-        directory = []
+        directory_candidates = []
         for dev in user_devs:
             login = dev.get("github_username", "").lower()
             if not login: continue
             full_dev = stats_map.get(login, dev)
             if "login" not in full_dev: full_dev["login"] = login
             if "profile_url" not in full_dev: full_dev["profile_url"] = f"https://github.com/{login}"
-            directory.append(full_dev)
+            directory_candidates.append(full_dev)
             
-        directory.sort(key=lambda d: (d.get("name") or d.get("login", "")).lower())
-        directory_entries = [format_list_entry(d, i+1, "directory") for i, d in enumerate(directory)]
+        directory_candidates.sort(key=lambda d: (d.get("name") or d.get("login", "")).lower())
+        directory_devs = [d for d in [format_unique_entry(d, "directory") for d in directory_candidates] if d]
+        directory_entries = [format_list_entry(d, i+1, "directory") for i, d in enumerate(directory_devs)]
 
         content = [
-            "## GOATS\n\n",
+            "## GOATS: Top Bangladeshi Developers\n\n",
             "\n".join(goats_content),
             "",
-            "## Rising Stars\n\n",
+            "## Rising Stars: Trending Developers\n\n",
             "\n".join(rising_content),
             "",
-            "## Other Awesome Bangladeshi Developers\n\n",
-            "*This list is curated from user inputs.*\n\n",
+            "## Directory of Awesome Bangladeshi Developers\n\n",
+            "*This directory features developers who are part of our community but not currently in the top rankings.*\n\n",
             "\n".join(directory_entries)
         ]
 
     # Build README
     lines = [
         f"# Awesome Bangladeshi Developers {AWESOME_BADGE}",
+        "Discover the top Bangladeshi open-source contributors, GitHub leaders, and rising software talent.",
+        "",
         f"{BUILD_STATUS} {STATS_STATUS} {VISITOR_BADGE} {LAST_COMMIT} {LICENSE_BADGE}",
         "",
-        "A curated list of the most impactful, active, and rising Bangladeshi developers on GitHub.",
+        "A curated, data-driven directory of the most impactful and active Bangladeshi developers on GitHub.",
         "",
         "## Contents",
         ""
@@ -233,22 +254,22 @@ def main():
             "- [Goal & Use Case](#goal--use-case)",
             "- [How to Join](#how-to-join)",
             "- [How it Works](#how-it-works)",
-            "- [GOATS](#goats)",
-            "  - [Top 25 by Overall Score](#top-25-by-overall-score)",
-            "  - [Top 25 by Followers](#top-25-by-followers)",
-            "  - [Top 25 by Stars](#top-25-by-stars)",
-            "  - [Top 25 by Public Repos](#top-25-by-public-repos)",
-            "- [Rising Stars](#rising-stars)",
-            "  - [Most Followers Gained This Month](#most-followers-gained-this-month)",
-            "  - [Most Stars Gained This Month](#most-stars-gained-this-month)",
-            "- [Other Awesome Bangladeshi Developers](#other-awesome-bangladeshi-developers)"
+            "- [GOATS: Top Bangladeshi Developers](#goats-top-bangladeshi-developers)",
+            f"  - [Top {top_n} Bangladeshi Developers by Overall Score](#top-{top_n}-bangladeshi-developers-by-overall-score)",
+            f"  - [Top {top_n} Bangladeshi Developers by Followers](#top-{top_n}-bangladeshi-developers-by-followers)",
+            f"  - [Top {top_n} Bangladeshi Developers by Stars](#top-{top_n}-bangladeshi-developers-by-stars)",
+            f"  - [Top {top_n} Bangladeshi Developers by Public Repos](#top-{top_n}-bangladeshi-developers-by-public-repos)",
+            "- [Rising Stars: Trending Developers](#rising-stars-trending-developers)",
+            "  - [Trending: Most Followers Gained This Month](#trending-most-followers-gained-this-month)",
+            "  - [Trending: Most Stars Gained This Month](#trending-most-stars-gained-this-month)",
+            "- [Directory of Awesome Bangladeshi Developers](#directory-of-awesome-bangladeshi-developers)"
         ]
     else:
         lines += [
             "- [Goal & Use Case](#goal--use-case)",
             "- [How to Join](#how-to-join)",
             "- [How it Works](#how-it-works)",
-            "- [Other Awesome Bangladeshi Developers](#other-awesome-bangladeshi-developers)"
+            "- [Directory of Awesome Bangladeshi Developers](#directory-of-awesome-bangladeshi-developers)"
         ]
 
     lines += [
