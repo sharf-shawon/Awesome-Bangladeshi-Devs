@@ -215,6 +215,91 @@ jobs:
             echo "No changes to commit."
           fi
 
+      - name: Comment and Close Issue
+        if: github.event_name == 'issues' && always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Only comment if we actually got to run the processing script
+          if [ ! -f process_output.txt ]; then
+            echo "Processing script did not run, skipping this comment step."
+            exit 0
+          fi
+          
+          OUTPUT=$(cat process_output.txt)
+          ISSUE_NUMBER="${{ github.event.issue.number }}"
+          
+          # Check current state to avoid double actions
+          STATE=$(gh issue view "$ISSUE_NUMBER" --json state --jq .state)
+          if [ "$STATE" == "CLOSED" ]; then
+            echo "Issue already closed, skipping comment."
+            exit 0
+          fi
+          
+          STATUS="${{ steps.process.outputs.status }}"
+          CHANGED="${{ steps.process.outputs.changed }}"
+          
+          if [ "$STATUS" == "success" ]; then
+            if [ "$CHANGED" == "true" ]; then
+              COMMENT="### ✅ Request Processed Successfully
+              
+              All validations and tests passed. The changes have been applied to the list and the README has been updated.
+              
+              **Logs:**
+              \`\`\`
+              $OUTPUT
+              \`\`\`"
+              gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
+              gh issue close "$ISSUE_NUMBER" --reason "completed"
+            else
+              COMMENT="### ℹ️ No Changes Made
+              
+              The automation processed your request successfully, but no changes were made to the directory. This usually means the developer is already in the list with the same information, or the request didn't require an update.
+              
+              **Logs:**
+              \`\`\`
+              $OUTPUT
+              \`\`\`"
+              gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
+              # We don't necessarily close here, maybe a maintainer wants to see it? 
+              # Actually, for automation, we should probably close it if it's already there.
+              if echo "$OUTPUT" | grep -iq "Duplicate entry"; then
+                 gh issue close "$ISSUE_NUMBER" --reason "not_planned"
+              fi
+            fi
+          elif [ "$STATUS" == "removed_alert" ]; then
+            REASON=$(echo "$OUTPUT" | grep "REMOVAL_ALERT:" | cut -d: -f3-)
+            COMMENT="### ❌ Request Denied
+            
+            This user cannot be added because they were previously removed from the list.
+            
+            **Reason for previous removal:** $REASON
+            
+            If you believe this is an error, please contact a maintainer."
+            gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
+            gh issue close "$ISSUE_NUMBER" --reason "not_planned"
+          elif [ "$STATUS" == "manual" ]; then
+            COMMENT="### ⏳ Request Pending Manual Review
+            
+            This request requires manual intervention from a maintainer (labeled with \`manual-review\`). 
+            
+            **Details:**
+            \`\`\`
+            $OUTPUT
+            \`\`\`"
+            gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
+          elif [ "$STATUS" == "failure" ]; then
+            COMMENT="### ⚠️ Request failed validation
+            
+            The automation could not process your request due to validation errors.
+            
+            **Errors:**
+            \`\`\`
+            $OUTPUT
+            \`\`\`"
+            gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
+          fi
+
       - name: Create GitHub Release (Monthly Only)
         # Trigger on scheduled stats OR manual force_release
         if: |
@@ -249,60 +334,41 @@ jobs:
             --target main \
             "$LATEST_DATA" README.md
 
-      - name: Comment and Close Issue
-        if: github.event_name == 'issues' && always()
+  # 4. Global Error Handler for Issues
+  notify_failure:
+    needs: [validation, test, deploy]
+    if: |
+      always() && 
+      github.event_name == 'issues' && 
+      (needs.validation.result == 'failure' || needs.test.result == 'failure' || needs.deploy.result == 'failure')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment on Failed Workflow
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          OUTPUT=$(cat process_output.txt)
           ISSUE_NUMBER="${{ github.event.issue.number }}"
           
-          STATE=$(gh issue view "$ISSUE_NUMBER" --json state --jq .state)
-          if [ "$STATE" == "CLOSED" ]; then
-            echo "Issue already closed, skipping comment."
-            exit 0
+          # Check if there is already a comment or if it's already handled by deploy
+          # If deploy was skipped, we definitely need to comment here.
+          # If deploy failed, we also comment here with more detail.
+          
+          PHASE=""
+          if [ "${{ needs.validation.result }}" == "failure" ]; then
+            PHASE="Validation"
+          elif [ "${{ needs.test.result }}" == "failure" ]; then
+            PHASE="Testing"
+          else
+            PHASE="Deployment/Processing"
           fi
           
-          if [ "${{ steps.process.outputs.status }}" == "success" ] && [ "${{ steps.process.outputs.changed }}" == "true" ]; then
-            COMMENT="### ✅ Request Processed Successfully
-            
-            All validations and tests passed. The changes have been applied to the list and the README has been updated.
-            
-            **Logs:**
-            \`\`\`
-            $OUTPUT
-            \`\`\`"
-            gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
-            gh issue close "$ISSUE_NUMBER" --reason "completed"
-          elif [ "${{ steps.process.outputs.status }}" == "removed_alert" ]; then
-            REASON=$(echo "$OUTPUT" | grep "REMOVAL_ALERT:" | cut -d: -f3-)
-            COMMENT="### ❌ Request Denied
-            
-            This user cannot be added because they were previously removed from the list.
-            
-            **Reason for previous removal:** $REASON
-            
-            If you believe this is an error, please contact a maintainer."
-            gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
-            gh issue close "$ISSUE_NUMBER" --reason "not_planned"
-          elif [ "${{ steps.process.outputs.status }}" == "manual" ]; then
-            COMMENT="### ⏳ Request Pending Manual Review
-            
-            This request requires manual intervention from a maintainer (labeled with \`manual-review\`). 
-            
-            **Details:**
-            \`\`\`
-            $OUTPUT
-            \`\`\`"
-            gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
-          elif [ "${{ steps.process.outputs.status }}" == "failure" ]; then
-            COMMENT="### ⚠️ Request failed validation
-            
-            The automation could not process your request due to validation errors.
-            
-            **Errors:**
-            \`\`\`
-            $OUTPUT
-            \`\`\`"
-            gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
-          fi
+          COMMENT="### ❌ Automation Error: $PHASE Phase Failed
+          
+          The automation workflow failed during the **$PHASE** phase. This could be due to invalid input, a temporary API issue, or a system error.
+          
+          A maintainer has been notified and will review this request manually.
+          
+          **Status:** ${{ needs.validation.result }} (Val) | ${{ needs.test.result }} (Test) | ${{ needs.deploy.result }} (Deploy)"
+          
+          gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
+          gh issue edit "$ISSUE_NUMBER" --add-label "manual-review"
