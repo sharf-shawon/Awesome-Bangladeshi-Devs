@@ -18,14 +18,11 @@ on:
         type: boolean
         default: false
 
+# Global permissions
 permissions:
   contents: write
   issues: write
   pull-requests: write
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.event.issue.number || github.ref }}
-  cancel-in-progress: true
 
 jobs:
   # 1. Validation Phase (Run on everything)
@@ -56,6 +53,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Pull latest changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+
       - name: Validate JSON schemas
         run: python src/validate_data.py
 
@@ -77,6 +80,12 @@ jobs:
           pip install -r requirements.txt
           pip install pytest pytest-cov
 
+      - name: Pull latest changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+
       - name: Run tests with coverage
         run: pytest --cov=src --cov=tests --cov-report=xml --cov-report=term
 
@@ -89,6 +98,9 @@ jobs:
   # 3. Processing and Deployment Phase (Needs Test)
   deploy:
     needs: test
+    concurrency:
+      group: deploy-lock-${{ github.ref }}
+      cancel-in-progress: false
     if: |
       github.event_name == 'push' || 
       github.event_name == 'issues' ||
@@ -99,7 +111,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch all history for accurate tagging/releases
+          fetch-depth: 0 
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -113,6 +125,13 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Pull latest data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git reset --hard origin/main
 
       - name: Process Issue (If issue event)
         id: process
@@ -151,11 +170,9 @@ jobs:
           GA_ID: ${{ secrets.GOOGLE_ANALYTICS }}
         run: |
           if [ -n "$GA_ID" ]; then
-            # Replace the placeholder with the secret value
             sed -i "s/GOOGLE_ANALYTICS_ID/$GA_ID/g" _config.yml
             echo "Google Analytics ID injected."
           else
-            # If no secret is provided, remove the entry to avoid tracking with a placeholder
             sed -i "/google_analytics: GOOGLE_ANALYTICS_ID/d" _config.yml
             echo "No Google Analytics ID secret found. Removing placeholder from config."
           fi
@@ -175,8 +192,28 @@ jobs:
           if [ -f "data/removed_users.json" ]; then
             git add data/removed_users.json
           fi
-          git diff --cached --quiet || git commit -m "chore: auto-update data and readme [skip ci]"
-          git push
+          
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: auto-update data and readme [skip ci]"
+            
+            # Robust retry loop for pushing
+            MAX_RETRIES=5
+            for i in $(seq 1 $MAX_RETRIES); do
+              echo "Push attempt $i..."
+              if git push origin main; then
+                echo "Push successful!"
+                exit 0
+              fi
+              echo "Push rejected. Syncing with remote and retrying..."
+              git fetch origin main
+              git rebase origin/main
+              sleep $((i * 2))
+            done
+            echo "Failed to push after $MAX_RETRIES attempts."
+            exit 1
+          else
+            echo "No changes to commit."
+          fi
 
       - name: Create GitHub Release (Monthly Only)
         # Trigger on scheduled stats OR manual force_release
