@@ -1,6 +1,8 @@
 # Contributing to Awesome Bangladeshi Developers
 
-Thank you for your interest in contributing! This project aims to showcase the most impactful and active Bangladeshi developers on GitHub.
+Thank you for your interest in contributing to the most comprehensive directory of Bangladeshi GitHub developers! By joining this list, you're helping to showcase the talent and impact of the Bangladeshi open-source community to the world.
+
+This project is designed to be a data-driven resource for finding the top developers, rising stars, and active contributors from Bangladesh.
 
 ## 🚀 Adding a Developer
 

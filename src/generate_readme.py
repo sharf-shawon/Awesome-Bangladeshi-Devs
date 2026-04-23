@@ -171,13 +171,21 @@ def main():
         top_repos = sorted(enriched_devs, key=lambda d: d.get("public_repos", 0), reverse=True)[:top_n]
 
         goats_content = [
-            section(f"Top {top_n} by Overall Score", [format_list_entry(d, i+1, "score") for i, d in enumerate(top_score)]),
+            section(f"🏆 Top {top_n} Developers by Overall Score", 
+                   ["This list ranks developers based on a weighted composite score of their GitHub activity over the last 90 days, including contributions, repository stars, followers, and more. It highlights the most consistently active members of the community.\n"] + 
+                   [format_list_entry(d, i+1, "score") for i, d in enumerate(top_score)]),
             "",
-            section(f"Top {top_n} by Followers", [format_list_entry(d, i+1, "followers") for i, d in enumerate(top_followers)]),
+            section(f"👥 Top {top_n} Developers by Followers", 
+                   ["Followers on GitHub indicate a developer's reach and influence within the global open-source ecosystem. These developers have built a significant following through their work and contributions.\n"] + 
+                   [format_list_entry(d, i+1, "followers") for i, d in enumerate(top_followers)]),
             "",
-            section(f"Top {top_n} by Stars", [format_list_entry(d, i+1, "stars") for i, d in enumerate(top_stars)]),
+            section(f"✨ Top {top_n} Developers by Stars", 
+                   ["Repository stars represent community recognition and the practical utility of a developer's projects. These developers have created tools and libraries that are widely used and appreciated.\n"] + 
+                   [format_list_entry(d, i+1, "stars") for i, d in enumerate(top_stars)]),
             "",
-            section(f"Top {top_n} by Public Repos", [format_list_entry(d, i+1, "repos") for i, d in enumerate(top_repos)])
+            section(f"📁 Top {top_n} Developers by Public Repositories", 
+                   ["A high number of public repositories often showcases a developer's diverse portfolio and commitment to sharing their work openly. This list highlights the most prolific creators in the community.\n"] + 
+                   [format_list_entry(d, i+1, "repos") for i, d in enumerate(top_repos)])
         ]
 
         # 2. Rising Stars Subsections
@@ -185,9 +193,13 @@ def main():
         rising_stars = sorted(enriched_devs, key=lambda d: d.get("stars_growth", 0), reverse=True)[:20]
         
         rising_content = [
-            section("Most Followers Gained This Month", [format_list_entry(d, i+1, "rising_followers") for i, d in enumerate(rising_followers)]),
+            section("📈 Most Followers Gained Recently", 
+                   ["This list highlights developers who have seen the most significant growth in their follower count recently, indicating rising interest in their work.\n"] + 
+                   [format_list_entry(d, i+1, "rising_followers") for i, d in enumerate(rising_followers)]),
             "",
-            section("Most Stars Gained This Month", [format_list_entry(d, i+1, "rising_stars") for i, d in enumerate(rising_stars)])
+            section("⭐ Most Repository Stars Gained Recently", 
+                   ["Highlighting developers whose projects have gained the most stars recently, marking their current impact on the community.\n"] + 
+                   [format_list_entry(d, i+1, "rising_stars") for i, d in enumerate(rising_stars)])
         ]
 
 
@@ -206,14 +218,15 @@ def main():
         directory_entries = [format_list_entry(d, i+1, "directory") for i, d in enumerate(directory)]
 
         content = [
-            "## GOATS\n\n",
+            "## ⭐ Top-Rated Bangladeshi GitHub Developers\n\n",
             "\n".join(goats_content),
             "",
-            "## Rising Stars\n\n",
+            "## 🚀 Rising Bangladeshi Developers\n\n",
+            "These developers have seen significant growth in their GitHub metrics recently, marking them as emerging talents to watch in the Bangladeshi developer ecosystem.\n\n",
             "\n".join(rising_content),
             "",
-            "## Other Awesome Bangladeshi Developers\n\n",
-            "*This list is curated from user inputs.*\n\n",
+            "## 📍 Full Directory of Awesome Bangladeshi Developers\n\n",
+            "A comprehensive list of all developers who have submitted their profiles to this directory, sorted alphabetically. These developers contribute to various fields including web development, mobile apps, AI, and more.\n\n",
             "\n".join(directory_entries)
         ]
 
@@ -233,22 +246,22 @@ def main():
             "- [Goal & Use Case](#goal--use-case)",
             "- [How to Join](#how-to-join)",
             "- [How it Works](#how-it-works)",
-            "- [GOATS](#goats)",
-            "  - [Top 25 by Overall Score](#top-25-by-overall-score)",
-            "  - [Top 25 by Followers](#top-25-by-followers)",
-            "  - [Top 25 by Stars](#top-25-by-stars)",
-            "  - [Top 25 by Public Repos](#top-25-by-public-repos)",
-            "- [Rising Stars](#rising-stars)",
-            "  - [Most Followers Gained This Month](#most-followers-gained-this-month)",
-            "  - [Most Stars Gained This Month](#most-stars-gained-this-month)",
-            "- [Other Awesome Bangladeshi Developers](#other-awesome-bangladeshi-developers)"
+            "- [⭐ Top-Rated Bangladeshi GitHub Developers](#-top-rated-bangladeshi-github-developers)",
+            "  - [🏆 Top 25 Developers by Overall Score](#-top-25-developers-by-overall-score)",
+            "  - [👥 Top 25 Developers by Followers](#-top-25-developers-by-followers)",
+            "  - [✨ Top 25 Developers by Stars](#-top-25-developers-by-stars)",
+            "  - [📁 Top 25 Developers by Public Repositories](#-top-25-developers-by-public-repositories)",
+            "- [🚀 Rising Bangladeshi Developers](#-rising-bangladeshi-developers)",
+            "  - [📈 Most Followers Gained Recently](#-most-followers-gained-recently)",
+            "  - [⭐ Most Repository Stars Gained Recently](#-most-repository-stars-gained-recently)",
+            "- [📍 Full Directory of Awesome Bangladeshi Developers](#-full-directory-of-awesome-bangladeshi-developers)"
         ]
     else:
         lines += [
             "- [Goal & Use Case](#goal--use-case)",
             "- [How to Join](#how-to-join)",
             "- [How it Works](#how-it-works)",
-            "- [Other Awesome Bangladeshi Developers](#other-awesome-bangladeshi-developers)"
+            "- [📍 Full Directory of Awesome Bangladeshi Developers](#-full-directory-of-awesome-bangladeshi-developers)"
         ]
 
     lines += [
