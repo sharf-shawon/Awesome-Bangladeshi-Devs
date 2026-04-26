@@ -251,9 +251,10 @@ A comprehensive list of all developers who have submitted their profiles to this
 4. [Md Sazzadul islam](https://github.com/md-sazzadul-islam?rank=directory) - Dhaka, Bangladesh, 2381 followers, 7 public repos, 113 stars.
 5. [Mehdi Hasan Khan](https://github.com/mugli?rank=directory) - Berlin, Germany, 1451 followers, 39 public repos, 1541 stars.
 6. [Muhammad Mominul Huque](https://github.com/mominul?rank=directory) - Bangladesh, 224 followers, 86 public repos, 110 stars.
-7. [PRAS Samin](https://github.com/prassamin?rank=directory) - Void, 59 followers, 32 public repos, 156 stars.
-8. [Rifat Nabi](https://github.com/torifat?rank=directory) - Sydney, Australia, 917 followers, 202 public repos, 660 stars.
-9. [Safwan Rahman](https://github.com/safwanrahman?rank=directory) - Dhaka, Bangladesh, 183 followers, 70 public repos, 438 stars.
+7. [Nazmul Hassan](https://github.com/nazmul-nhb?rank=directory) - Sirajganj, Bangladesh, 50 followers, 156 public repos, 22 stars.
+8. [PRAS Samin](https://github.com/prassamin?rank=directory) - Void, 59 followers, 32 public repos, 156 stars.
+9. [Rifat Nabi](https://github.com/torifat?rank=directory) - Sydney, Australia, 917 followers, 202 public repos, 660 stars.
+10. [Safwan Rahman](https://github.com/safwanrahman?rank=directory) - Dhaka, Bangladesh, 183 followers, 70 public repos, 438 stars.
 
 ## Contributing
 
