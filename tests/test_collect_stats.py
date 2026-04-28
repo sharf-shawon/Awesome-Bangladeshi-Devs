@@ -2,7 +2,7 @@ import os
 import json
 import pytest
 from pathlib import Path
-from unittest.mock import patch, MagicMock, mock_open as stdlib_mock_open
+from unittest.mock import patch, MagicMock, mock_open as stdlib_mock_open, call
 from datetime import datetime, timezone
 
 import sys
@@ -39,7 +39,7 @@ def test_load_config():
 
 @patch("collect_stats.gh_get")
 def test_search_candidates(mock_get):
-    mock_get.return_value = {"items": [{"login": "user1"}]}
+    mock_get.return_value = {"items": [{"login": "user1"}], "total_count": 1}
     with patch("os.path.exists") as mock_exists:
         mock_exists.return_value = False
         candidates = collect_stats.search_candidates(["Loc1"])
@@ -47,13 +47,61 @@ def test_search_candidates(mock_get):
 
 @patch("collect_stats.gh_get")
 def test_search_candidates_removed(mock_get):
-    mock_get.return_value = {"items": [{"login": "user1"}]}
+    mock_get.return_value = {"items": [{"login": "user1"}], "total_count": 1}
     with patch("os.path.exists") as mock_exists:
         mock_exists.return_value = True
         with patch("builtins.open") as mock_open:
             mock_open.return_value.__enter__.return_value.read.return_value = json.dumps({"user1": {}})
             candidates = collect_stats.search_candidates(["Loc1"])
             assert "user1" not in candidates
+
+@patch("collect_stats.gh_get")
+def test_search_candidates_paginates(mock_get):
+    """search_candidates must paginate until all results are fetched."""
+    page1 = [{"login": f"u{i}"} for i in range(100)]
+    page2 = [{"login": f"u{i}"} for i in range(100, 120)]
+    mock_get.side_effect = [
+        {"items": page1, "total_count": 120},
+        {"items": page2, "total_count": 120},
+    ]
+    with patch("os.path.exists", return_value=False):
+        candidates = collect_stats.search_candidates(["Bangladesh"], per_query=100)
+    assert len(candidates) == 120
+    assert mock_get.call_count == 2
+
+@patch("collect_stats.gh_get")
+def test_search_candidates_stops_at_api_cap(mock_get):
+    """search_candidates must stop after 1000 results (GitHub Search API cap)."""
+    # Each page has 100 unique logins so deduplication does not obscure the count
+    pages = [
+        {"items": [{"login": f"u{p * 100 + i}"} for i in range(100)], "total_count": 5000}
+        for p in range(11)  # provide 11 pages; only first 10 should be fetched
+    ]
+    mock_get.side_effect = pages
+    with patch("os.path.exists", return_value=False):
+        candidates = collect_stats.search_candidates(["Bangladesh"], per_query=100)
+    assert len(candidates) == 1000
+    assert mock_get.call_count == 10
+
+@patch("collect_stats.gh_get")
+def test_search_candidates_stops_on_partial_page(mock_get):
+    """search_candidates stops when fewer items than per_page are returned."""
+    mock_get.return_value = {
+        "items": [{"login": "user1"}, {"login": "user2"}],
+        "total_count": 2,
+    }
+    with patch("os.path.exists", return_value=False):
+        candidates = collect_stats.search_candidates(["Bangladesh"], per_query=100)
+    assert set(candidates) == {"user1", "user2"}
+    assert mock_get.call_count == 1
+
+@patch("collect_stats.gh_get")
+def test_search_candidates_empty_page(mock_get):
+    """search_candidates stops immediately on an empty first page."""
+    mock_get.return_value = {"items": [], "total_count": 0}
+    with patch("os.path.exists", return_value=False):
+        candidates = collect_stats.search_candidates(["Bangladesh"])
+    assert candidates == []
 
 @patch("collect_stats.gh_get")
 def test_get_user(mock_get):
@@ -160,6 +208,79 @@ def test_load_users_from_json_non_list(tmp_path):
     assert collect_stats.load_users_from_json(str(p)) == []
 
 
+# --- load_logins_from_readme ---
+
+def test_load_logins_from_readme_not_found(tmp_path):
+    result = collect_stats.load_logins_from_readme(str(tmp_path / "README.md"))
+    assert result == []
+
+def test_load_logins_from_readme_extracts_profile_links(tmp_path):
+    content = (
+        "# README\n\n"
+        "1. [Alice](https://github.com/alice?rank=score) - Location.\n"
+        "2. [Bob Dev](https://github.com/bob-dev?rank=followers) - Location.\n"
+        "3. [Charlie](https://github.com/charlie) - No rank param.\n"
+    )
+    p = tmp_path / "README.md"
+    p.write_text(content, encoding="utf-8")
+    result = collect_stats.load_logins_from_readme(str(p))
+    assert "alice" in result
+    assert "bob-dev" in result
+    assert "charlie" in result
+
+def test_load_logins_from_readme_ignores_multi_segment_repo_links(tmp_path):
+    content = (
+        "[![Badge](https://github.com/owner/repo/actions/badge.svg)]"
+        "(https://github.com/owner/repo/actions/badge.svg)\n"
+        "[Issues](https://github.com/owner/repo/issues/new?template=foo.yml)\n"
+    )
+    p = tmp_path / "README.md"
+    p.write_text(content, encoding="utf-8")
+    result = collect_stats.load_logins_from_readme(str(p))
+    # Multi-segment paths must not appear in results
+    assert "owner" not in result
+    assert "owner/repo" not in result
+
+def test_load_logins_from_readme_deduplicates(tmp_path):
+    content = (
+        "[Alice](https://github.com/alice?rank=score)\n"
+        "[Alice Again](https://github.com/alice?rank=followers)\n"
+    )
+    p = tmp_path / "README.md"
+    p.write_text(content, encoding="utf-8")
+    result = collect_stats.load_logins_from_readme(str(p))
+    assert result.count("alice") == 1
+
+def test_load_logins_from_readme_empty_file(tmp_path):
+    p = tmp_path / "README.md"
+    p.write_text("", encoding="utf-8")
+    assert collect_stats.load_logins_from_readme(str(p)) == []
+
+def test_load_logins_from_readme_preserves_case(tmp_path):
+    """Usernames are case-sensitive on GitHub; preserve original casing."""
+    content = "[Dev](https://github.com/MyDev?rank=score)\n"
+    p = tmp_path / "README.md"
+    p.write_text(content, encoding="utf-8")
+    result = collect_stats.load_logins_from_readme(str(p))
+    assert "MyDev" in result
+
+def test_load_logins_from_readme_mixed_content(tmp_path):
+    """Real-world README snippet: profile links interleaved with badge/action URLs."""
+    content = (
+        "[![Pipeline](https://github.com/org/repo/actions/pipeline.yml/badge.svg)]"
+        "(https://github.com/org/repo/actions/pipeline.yml)\n"
+        "1. [Dev One](https://github.com/devone?rank=score) - Dhaka.\n"
+        "2. [Dev Two](https://github.com/devtwo?rank=followers) - Bangladesh.\n"
+        "[Remove](https://github.com/org/repo/issues/new?template=remove.yml)\n"
+    )
+    p = tmp_path / "README.md"
+    p.write_text(content, encoding="utf-8")
+    result = collect_stats.load_logins_from_readme(str(p))
+    assert "devone" in result
+    assert "devtwo" in result
+    assert "org" not in result
+
+
 # --- main() tests ---
 
 def _base_config():
@@ -204,6 +325,7 @@ def _full_contribs():
 @patch("collect_stats.load_config")
 @patch("collect_stats.search_candidates")
 @patch("collect_stats.load_users_from_json")
+@patch("collect_stats.load_logins_from_readme")
 @patch("collect_stats.get_user")
 @patch("collect_stats.get_repo_stats")
 @patch("collect_stats.get_contribs")
@@ -211,10 +333,11 @@ def _full_contribs():
 @patch("os.makedirs")
 @patch("builtins.open", new_callable=stdlib_mock_open)
 def test_main(mock_open, mock_mkdir, mock_exists, mock_contribs, mock_repo_stats,
-              mock_user, mock_load_users, mock_candidates, mock_config):
+              mock_user, mock_load_readme, mock_load_users, mock_candidates, mock_config):
     mock_config.return_value = _base_config()
     mock_candidates.return_value = ["user1"]
     mock_load_users.return_value = ["user2"]
+    mock_load_readme.return_value = ["user3"]
     mock_user.side_effect = lambda login: _full_user_response(login)
     mock_repo_stats.return_value = (20, 5, ["Python", "JavaScript"])
     mock_contribs.return_value = _full_contribs()
@@ -226,10 +349,11 @@ def test_main(mock_open, mock_mkdir, mock_exists, mock_contribs, mock_repo_stats
     written = "".join(call.args[0] for call in mock_open().write.call_args_list)
     payload = json.loads(written)
 
-    # Both search candidate and registered user should appear
+    # All three sources should appear
     logins = [d["login"] for d in payload["developers"]]
     assert "user1" in logins
     assert "user2" in logins
+    assert "user3" in logins
 
     # All developers should have a rank
     for dev in payload["developers"]:
@@ -238,7 +362,8 @@ def test_main(mock_open, mock_mkdir, mock_exists, mock_contribs, mock_repo_stats
     # Payload metadata
     assert payload["search_candidate_count"] == 1
     assert payload["registered_user_count"] == 1
-    assert payload["candidate_count"] == 2
+    assert payload["readme_user_count"] == 1
+    assert payload["candidate_count"] == 3
 
     # Rich fields collected
     dev = next(d for d in payload["developers"] if d["login"] == "user1")
@@ -252,15 +377,17 @@ def test_main(mock_open, mock_mkdir, mock_exists, mock_contribs, mock_repo_stats
 @patch("collect_stats.load_config")
 @patch("collect_stats.search_candidates")
 @patch("collect_stats.load_users_from_json")
+@patch("collect_stats.load_logins_from_readme")
 @patch("collect_stats.get_user")
 @patch("os.path.exists")
 @patch("os.makedirs")
 @patch("builtins.open", new_callable=stdlib_mock_open)
 def test_main_error(mock_open, mock_mkdir, mock_exists, mock_user,
-                    mock_load_users, mock_candidates, mock_config):
+                    mock_load_readme, mock_load_users, mock_candidates, mock_config):
     mock_config.return_value = _base_config()
     mock_candidates.return_value = ["user1"]
     mock_load_users.return_value = []
+    mock_load_readme.return_value = []
     mock_user.side_effect = Exception("api error")
     mock_exists.return_value = False
 
@@ -277,6 +404,7 @@ def test_main_error(mock_open, mock_mkdir, mock_exists, mock_user,
 @patch("collect_stats.load_config")
 @patch("collect_stats.search_candidates")
 @patch("collect_stats.load_users_from_json")
+@patch("collect_stats.load_logins_from_readme")
 @patch("collect_stats.get_user")
 @patch("collect_stats.get_repo_stats")
 @patch("collect_stats.get_contribs")
@@ -284,12 +412,13 @@ def test_main_error(mock_open, mock_mkdir, mock_exists, mock_user,
 @patch("os.makedirs")
 @patch("builtins.open", new_callable=stdlib_mock_open)
 def test_main_deduplicates_users(mock_open, mock_mkdir, mock_exists, mock_contribs,
-                                  mock_repo_stats, mock_user, mock_load_users,
-                                  mock_candidates, mock_config):
-    """Users in both search results and users.json should only appear once."""
+                                  mock_repo_stats, mock_user, mock_load_readme,
+                                  mock_load_users, mock_candidates, mock_config):
+    """Users appearing in multiple sources should only be processed once."""
     mock_config.return_value = _base_config()
     mock_candidates.return_value = ["user1"]
-    mock_load_users.return_value = ["user1"]  # same login as search result
+    mock_load_users.return_value = ["user1"]   # same as search
+    mock_load_readme.return_value = ["user1"]  # same again
     mock_user.side_effect = lambda login: _full_user_response(login)
     mock_repo_stats.return_value = (10, 3, ["Go"])
     mock_contribs.return_value = _full_contribs()
@@ -307,6 +436,39 @@ def test_main_deduplicates_users(mock_open, mock_mkdir, mock_exists, mock_contri
 @patch("collect_stats.load_config")
 @patch("collect_stats.search_candidates")
 @patch("collect_stats.load_users_from_json")
+@patch("collect_stats.load_logins_from_readme")
+@patch("collect_stats.get_user")
+@patch("collect_stats.get_repo_stats")
+@patch("collect_stats.get_contribs")
+@patch("os.path.exists")
+@patch("os.makedirs")
+@patch("builtins.open", new_callable=stdlib_mock_open)
+def test_main_readme_only_user_included(mock_open, mock_mkdir, mock_exists, mock_contribs,
+                                         mock_repo_stats, mock_user, mock_load_readme,
+                                         mock_load_users, mock_candidates, mock_config):
+    """A user present only in the README (not in users.json or search) must be scanned."""
+    mock_config.return_value = _base_config()
+    mock_candidates.return_value = []
+    mock_load_users.return_value = []
+    mock_load_readme.return_value = ["readme-only-dev"]
+    mock_user.side_effect = lambda login: _full_user_response(login)
+    mock_repo_stats.return_value = (5, 2, ["Python"])
+    mock_contribs.return_value = _full_contribs()
+    mock_exists.return_value = False
+
+    collect_stats.main()
+
+    written = "".join(call.args[0] for call in mock_open().write.call_args_list)
+    payload = json.loads(written)
+    logins = [d["login"] for d in payload["developers"]]
+    assert "readme-only-dev" in logins
+    assert payload["readme_user_count"] == 1
+
+
+@patch("collect_stats.load_config")
+@patch("collect_stats.search_candidates")
+@patch("collect_stats.load_users_from_json")
+@patch("collect_stats.load_logins_from_readme")
 @patch("collect_stats.get_user")
 @patch("collect_stats.get_repo_stats")
 @patch("collect_stats.get_contribs")
@@ -314,17 +476,17 @@ def test_main_deduplicates_users(mock_open, mock_mkdir, mock_exists, mock_contri
 @patch("os.makedirs")
 @patch("builtins.open", new_callable=stdlib_mock_open)
 def test_main_removed_users_excluded(mock_open, mock_mkdir, mock_exists, mock_contribs,
-                                      mock_repo_stats, mock_user, mock_load_users,
-                                      mock_candidates, mock_config):
-    """Removed users must not appear in the output even if present in users.json."""
+                                      mock_repo_stats, mock_user, mock_load_readme,
+                                      mock_load_users, mock_candidates, mock_config):
+    """Removed users must not appear in the output from any source."""
     mock_config.return_value = _base_config()
     mock_candidates.return_value = ["user1"]
     mock_load_users.return_value = ["removed-dev"]
+    mock_load_readme.return_value = ["removed-dev"]
     mock_user.side_effect = lambda login: _full_user_response(login)
     mock_repo_stats.return_value = (10, 3, [])
     mock_contribs.return_value = _full_contribs()
 
-    # Make os.path.exists return True only for the removed_users.json path
     def exists_side_effect(path):
         return os.path.basename(path) == "removed_users.json"
 
@@ -344,6 +506,7 @@ def test_main_removed_users_excluded(mock_open, mock_mkdir, mock_exists, mock_co
 @patch("collect_stats.load_config")
 @patch("collect_stats.search_candidates")
 @patch("collect_stats.load_users_from_json")
+@patch("collect_stats.load_logins_from_readme")
 @patch("collect_stats.get_user")
 @patch("collect_stats.get_repo_stats")
 @patch("collect_stats.get_contribs")
@@ -351,8 +514,8 @@ def test_main_removed_users_excluded(mock_open, mock_mkdir, mock_exists, mock_co
 @patch("os.makedirs")
 @patch("builtins.open", new_callable=stdlib_mock_open)
 def test_main_all_developers_ranked(mock_open, mock_mkdir, mock_exists, mock_contribs,
-                                     mock_repo_stats, mock_user, mock_load_users,
-                                     mock_candidates, mock_config):
+                                     mock_repo_stats, mock_user, mock_load_readme,
+                                     mock_load_users, mock_candidates, mock_config):
     """All successful developers must have a rank (not just top_n)."""
     mock_config.return_value = {
         "lookback_days": 90, "top_n": 1, "location_aliases": ["Loc1"],
@@ -360,6 +523,7 @@ def test_main_all_developers_ranked(mock_open, mock_mkdir, mock_exists, mock_con
     }
     mock_candidates.return_value = ["user1", "user2", "user3"]
     mock_load_users.return_value = []
+    mock_load_readme.return_value = []
     follower_map = {"user1": 10, "user2": 20, "user3": 30}
     mock_user.side_effect = lambda login: {**_full_user_response(login), "followers": follower_map[login]}
     mock_repo_stats.return_value = (0, 0, [])
@@ -374,4 +538,5 @@ def test_main_all_developers_ranked(mock_open, mock_mkdir, mock_exists, mock_con
     # All 3 developers should have a rank (top_n=1 should not cap the ranks)
     assert len(ranks) == 3
     assert sorted(ranks) == [1, 2, 3]
+
 

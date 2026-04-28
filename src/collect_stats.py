@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import time
 from datetime import datetime, timedelta, timezone
@@ -19,6 +20,7 @@ if TOKEN:
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG_PATH = os.getenv("CONFIG_PATH", os.path.join(ROOT, "config", "metrics.json"))
 DATA_DIR = os.path.join(ROOT, "data")
+README_PATH = os.path.join(ROOT, "README.md")
 
 
 def gh_get(url, params=None):
@@ -50,7 +52,7 @@ def load_config():
         return json.load(f)
 
 
-def search_candidates(locations, per_query=30):
+def search_candidates(locations, per_query=100):
     removed_path = os.path.join(DATA_DIR, "removed_users.json")
     removed_logins = set()
     if os.path.exists(removed_path):
@@ -60,15 +62,30 @@ def search_candidates(locations, per_query=30):
     seen = {}
     for loc in locations:
         q = f"location:{quote(loc)} followers:>=1"
-        data = gh_get("https://api.github.com/search/users", {"q": q, "per_page": per_query})
-        for item in data.get("items", []):
-            login = item["login"]
-            # Normalize for comparison
-            norm_login = login.lower().replace(".", "-").strip()
-            if norm_login not in removed_logins:
-                seen[login] = item
-            else:
-                print(f"Skipping removed user: {login}")
+        page = 1
+        fetched = 0
+        page_size = min(per_query, 100)
+        while True:
+            data = gh_get(
+                "https://api.github.com/search/users",
+                {"q": q, "per_page": page_size, "page": page},
+            )
+            items = data.get("items", [])
+            if not items:
+                break
+            for item in items:
+                login = item["login"]
+                norm_login = login.lower().replace(".", "-").strip()
+                if norm_login not in removed_logins:
+                    seen[login] = item
+                else:
+                    print(f"Skipping removed user: {login}")
+            fetched += len(items)
+            # GitHub Search API caps at 1000 results; stop when all fetched
+            total = min(data.get("total_count", 0), 1000)
+            if fetched >= total or len(items) < page_size:
+                break
+            page += 1
     return list(seen.keys())
 
 
@@ -114,6 +131,26 @@ def load_users_from_json(users_path):
         login = u.get("github_username") or u.get("login")
         if login:
             logins.append(login)
+    return logins
+
+
+def load_logins_from_readme(readme_path):
+    """Extract GitHub profile usernames from markdown links in the README.
+
+    Matches URLs of the form:
+        https://github.com/USERNAME
+        https://github.com/USERNAME?rank=TYPE
+
+    Multi-segment paths (org/repo URLs, action badges, issue templates) are
+    intentionally excluded because they contain a '/' after the username.
+    """
+    if not os.path.exists(readme_path):
+        return []
+    with open(readme_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    # Inside a markdown link paren: only single-path-segment github.com URLs
+    pattern = r'\(https://github\.com/([A-Za-z0-9][A-Za-z0-9._-]*)(?:\?[^)#\s]*)?\)'
+    logins = list(dict.fromkeys(re.findall(pattern, content)))
     return logins
 
 
@@ -169,12 +206,15 @@ def main():
     now = datetime.now(timezone.utc)
     start = now - timedelta(days=lookback_days)
 
-    # Collect candidates from GitHub location search
-    search_logins = search_candidates(locations, per_query=cfg.get("per_query", 30))
+    # Collect candidates from GitHub location search (paginated)
+    search_logins = search_candidates(locations, per_query=cfg.get("per_query", 100))
 
     # Load all manually-registered users from users.json
     users_path = os.path.join(DATA_DIR, "users.json")
     registered_logins = load_users_from_json(users_path)
+
+    # Load all developers currently listed in the README
+    readme_logins = load_logins_from_readme(README_PATH)
 
     # Load removed users to skip them
     removed_path = os.path.join(DATA_DIR, "removed_users.json")
@@ -186,7 +226,7 @@ def main():
     # Merge all logins deduplicating case-insensitively; search candidates first
     seen_lower = set()
     all_logins = []
-    for login in search_logins + registered_logins:
+    for login in search_logins + registered_logins + readme_logins:
         norm = login.lower().replace(".", "-").strip()
         if norm not in seen_lower and norm not in removed_logins:
             seen_lower.add(norm)
@@ -242,6 +282,7 @@ def main():
         "top_n": top_n,
         "search_candidate_count": len(search_logins),
         "registered_user_count": len(registered_logins),
+        "readme_user_count": len(readme_logins),
         "candidate_count": len(all_logins),
         "published_count": len(scored),
         "metrics": {"weights": weights},

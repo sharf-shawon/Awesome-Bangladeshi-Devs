@@ -1,8 +1,7 @@
 {
   "lookback_days": 90,
   "top_n": 25,
-  "per_query": 30,
-  "max_candidates": 50,
+  "per_query": 100,
   "location_aliases": [
     "Bangladesh",
     "Bangladeshi",
