@@ -81,6 +81,42 @@ def get_repo_star_sum(login, max_repos=100):
     return sum(r.get("stargazers_count", 0) for r in repos), len(repos)
 
 
+def get_repo_stats(login, max_repos=100):
+    """Fetch repos and return star sum, repo count, and top languages in one API call."""
+    repos = gh_get(
+        f"https://api.github.com/users/{login}/repos",
+        {"per_page": min(max_repos, 100), "sort": "updated"},
+    )
+    stars_sum = sum(r.get("stargazers_count", 0) for r in repos)
+    repo_count = len(repos)
+    lang_counts = {}
+    for repo in repos:
+        lang = repo.get("language")
+        if lang:
+            lang_counts[lang] = lang_counts.get(lang, 0) + 1
+    top_languages = [
+        lang
+        for lang, _ in sorted(lang_counts.items(), key=lambda x: x[1], reverse=True)[:5]
+    ]
+    return stars_sum, repo_count, top_languages
+
+
+def load_users_from_json(users_path):
+    """Return a list of GitHub login names from a users.json file."""
+    if not os.path.exists(users_path):
+        return []
+    with open(users_path, "r", encoding="utf-8") as f:
+        users = json.load(f)
+    if not isinstance(users, list):
+        return []
+    logins = []
+    for u in users:
+        login = u.get("github_username") or u.get("login")
+        if login:
+            logins.append(login)
+    return logins
+
+
 def get_contribs(login, from_dt, to_dt):
     query = """
     query($login: String!, $from: DateTime!, $to: DateTime!) {
@@ -133,22 +169,56 @@ def main():
     now = datetime.now(timezone.utc)
     start = now - timedelta(days=lookback_days)
 
-    candidates = search_candidates(locations, per_query=cfg.get("per_query", 30))
+    # Collect candidates from GitHub location search
+    search_logins = search_candidates(locations, per_query=cfg.get("per_query", 30))
+
+    # Load all manually-registered users from users.json
+    users_path = os.path.join(DATA_DIR, "users.json")
+    registered_logins = load_users_from_json(users_path)
+
+    # Load removed users to skip them
+    removed_path = os.path.join(DATA_DIR, "removed_users.json")
+    removed_logins = set()
+    if os.path.exists(removed_path):
+        with open(removed_path, "r", encoding="utf-8") as f:
+            removed_logins = set(json.load(f).keys())
+
+    # Merge all logins deduplicating case-insensitively; search candidates first
+    seen_lower = set()
+    all_logins = []
+    for login in search_logins + registered_logins:
+        norm = login.lower().replace(".", "-").strip()
+        if norm not in seen_lower and norm not in removed_logins:
+            seen_lower.add(norm)
+            all_logins.append(login)
+
     rows = []
-    for login in candidates[: cfg.get("max_candidates", 50)]:
+    for login in all_logins:
         try:
             user = get_user(login)
-            stars_sum, repo_count_seen = get_repo_star_sum(login)
+            stars_sum, repo_count_seen, top_languages = get_repo_stats(login)
             contribs = get_contribs(login, start, now)
             rows.append({
                 "login": login,
                 "name": user.get("name"),
+                "avatar_url": user.get("avatar_url"),
                 "profile_url": user.get("html_url"),
+                "bio": user.get("bio"),
+                "company": user.get("company"),
+                "blog": user.get("blog"),
+                "twitter_username": user.get("twitter_username"),
+                "email": user.get("email"),
                 "location": user.get("location"),
+                "hireable": user.get("hireable"),
                 "followers": user.get("followers", 0),
+                "following": user.get("following", 0),
                 "public_repos": user.get("public_repos", 0),
+                "public_gists": user.get("public_gists", 0),
                 "repo_scan_count": repo_count_seen,
                 "recent_repo_stars_sum": stars_sum,
+                "top_languages": top_languages,
+                "account_created_at": user.get("created_at"),
+                "account_updated_at": user.get("updated_at"),
                 **contribs,
             })
         except Exception as exc:
@@ -161,7 +231,8 @@ def main():
         r["composite_score"] = round(sum((r.get(f"norm_{m}", 0.0) * w) for m, w in weights.items()), 6)
     scored.sort(key=lambda x: x["composite_score"], reverse=True)
 
-    for i, r in enumerate(scored[:top_n], start=1):
+    # Assign ranks to ALL developers so historic data is fully usable
+    for i, r in enumerate(scored, start=1):
         r["rank"] = i
 
     payload = {
@@ -169,7 +240,9 @@ def main():
         "generated_at": now.isoformat(),
         "lookback_days": lookback_days,
         "top_n": top_n,
-        "candidate_count": len(candidates),
+        "search_candidate_count": len(search_logins),
+        "registered_user_count": len(registered_logins),
+        "candidate_count": len(all_logins),
         "published_count": len(scored),
         "metrics": {"weights": weights},
         "developers": scored,
