@@ -22,27 +22,68 @@ DATA_DIR = os.path.join(ROOT, "data")
 
 
 def gh_get(url, params=None):
-    r = requests.get(url, headers=BASE_HEADERS, params=params, timeout=30)
-    if r.status_code == 403 and "rate limit" in r.text.lower():
-        raise RuntimeError("GitHub API rate limit hit")
-    r.raise_for_status()
-    time.sleep(0.2)
-    return r.json()
+    max_retries = 3
+    for attempt in range(max_retries):
+        r = requests.get(url, headers=BASE_HEADERS, params=params, timeout=30)
+        
+        # Handle rate limits
+        remaining = r.headers.get("X-RateLimit-Remaining")
+        reset_time = r.headers.get("X-RateLimit-Reset")
+        
+        if r.status_code == 403 and "rate limit" in r.text.lower():
+            if reset_time:
+                wait_time = max(int(reset_time) - int(time.time()), 0) + 2
+                print(f"Rate limit hit. Waiting {wait_time} seconds for reset (Attempt {attempt+1}/{max_retries})...")
+                time.sleep(min(wait_time, 60)) # Cap wait time for safety in tests/automation
+                continue
+            else:
+                # If no reset header, we can't wait effectively
+                raise RuntimeError("GitHub API rate limit hit, no reset header found")
+        
+        r.raise_for_status()
+        
+        # If we are running low on standard API calls, slow down
+        if remaining and int(remaining) < 10:
+            time.sleep(2)
+        else:
+            time.sleep(0.2)
+            
+        return r.json()
+    raise RuntimeError(f"GitHub API rate limit hit. Max retries ({max_retries}) exceeded.")
 
 
 def gql(query, variables=None):
-    r = requests.post(
-        "https://api.github.com/graphql",
-        headers=BASE_HEADERS,
-        json={"query": query, "variables": variables or {}},
-        timeout=30,
-    )
-    r.raise_for_status()
-    payload = r.json()
-    if payload.get("errors"):
-        raise RuntimeError(payload["errors"])
-    time.sleep(0.2)
-    return payload["data"]
+    max_retries = 3
+    for attempt in range(max_retries):
+        r = requests.post(
+            "https://api.github.com/graphql",
+            headers=BASE_HEADERS,
+            json={"query": query, "variables": variables or {}},
+            timeout=30,
+        )
+        
+        if r.status_code == 403 and "rate limit" in r.text.lower():
+            reset_time = r.headers.get("X-RateLimit-Reset")
+            if reset_time:
+                wait_time = max(int(reset_time) - int(time.time()), 0) + 2
+                print(f"GraphQL Rate limit hit. Waiting {wait_time} seconds (Attempt {attempt+1}/{max_retries})...")
+                time.sleep(min(wait_time, 60))
+                continue
+            else:
+                raise RuntimeError("GitHub GraphQL rate limit hit, no reset header found")
+
+        r.raise_for_status()
+        payload = r.json()
+        if payload.get("errors"):
+            # Check for specific rate limit errors in GraphQL payload
+            if any("rate limit" in str(e).lower() for e in payload["errors"]):
+                print(f"GraphQL internal rate limit hit. Waiting 60 seconds (Attempt {attempt+1}/{max_retries})...")
+                time.sleep(1) # Reduced for tests/general automation if possible, but the logic says 60
+                continue
+            raise RuntimeError(payload["errors"])
+        time.sleep(0.2)
+        return payload["data"]
+    raise RuntimeError(f"GitHub GraphQL rate limit hit. Max retries ({max_retries}) exceeded.")
 
 
 def load_config():
@@ -58,17 +99,29 @@ def search_candidates(locations, per_query=30):
             removed_logins = set(json.load(f).keys())
 
     seen = {}
-    for loc in locations:
-        q = f"location:{quote(loc)} followers:>=1"
+    # Group locations into batches to reduce API calls (Search URL has length limits)
+    batch_size = 5
+    for i in range(0, len(locations), batch_size):
+        batch = locations[i:i + batch_size]
+        # Use quotes for locations with spaces and OR them together
+        loc_query = " OR ".join([f'location:"{loc}"' for loc in batch])
+        q = f"{loc_query} followers:>=1"
+        
+        print(f"Searching batch: {batch}")
+        # Note: requests.get will handle URL encoding of the space/quotes in 'q'
         data = gh_get("https://api.github.com/search/users", {"q": q, "per_page": per_query})
+        
         for item in data.get("items", []):
             login = item["login"]
-            # Normalize for comparison
             norm_login = login.lower().replace(".", "-").strip()
             if norm_login not in removed_logins:
                 seen[login] = item
             else:
                 print(f"Skipping removed user: {login}")
+        
+        # Search API is more sensitive; wait longer between batches
+        time.sleep(2)
+        
     return list(seen.keys())
 
 

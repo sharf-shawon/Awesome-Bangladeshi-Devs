@@ -3,14 +3,19 @@ name: CI/CD Pipeline
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE'
+      - '.gitignore'
+      - '.pre-commit-config.yaml'
   pull_request:
     branches: [main]
-  workflow_run:
-    workflows: ["Collect GitHub stats"]
-    types:
-      - completed
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE'
+      - '.gitignore'
   issues:
-    types: [labeled, edited, reopened]
+    types: [opened, labeled, edited, reopened]
   workflow_dispatch:
     inputs:
       force_release:

@@ -11,26 +11,46 @@ import collect_stats
 
 def test_gh_get():
     with patch("requests.get") as mock_get:
+        # Success case
         mock_get.return_value.status_code = 200
         mock_get.return_value.json.return_value = {"a": 1}
+        mock_get.return_value.headers = {}
         assert collect_stats.gh_get("url") == {"a": 1}
 
-        # Test rate limit
-        mock_get.return_value.status_code = 403
-        mock_get.return_value.text = "rate limit"
-        with pytest.raises(RuntimeError):
+        # Rate limit hit with reset header (test retry once then success)
+        mock_get.side_effect = [
+            MagicMock(status_code=403, text="rate limit", headers={"X-RateLimit-Reset": str(int(datetime.now().timestamp()) + 1)}),
+            MagicMock(status_code=200, headers={}, json=MagicMock(return_value={"b": 2}))
+        ]
+        with patch("time.sleep"): # Don't actually sleep
+            assert collect_stats.gh_get("url") == {"b": 2}
+
+        # Rate limit hit NO reset header (immediate failure)
+        mock_get.side_effect = None
+        mock_get.return_value = MagicMock(status_code=403, text="rate limit", headers={})
+        with pytest.raises(RuntimeError, match="no reset header found"):
             collect_stats.gh_get("url")
 
 def test_gql():
     with patch("requests.post") as mock_post:
+        # Success case
         mock_post.return_value.status_code = 200
         mock_post.return_value.json.return_value = {"data": {"a": 1}}
+        mock_post.return_value.headers = {}
         assert collect_stats.gql("query") == {"a": 1}
 
-        # Test errors
-        mock_post.return_value.json.return_value = {"errors": "error"}
+        # GraphQL error
+        mock_post.return_value.json.return_value = {"errors": [{"message": "error"}]}
         with pytest.raises(RuntimeError):
             collect_stats.gql("query")
+        
+        # GraphQL rate limit in errors
+        mock_post.side_effect = [
+            MagicMock(status_code=200, headers={}, json=MagicMock(return_value={"errors": [{"message": "rate limit hit"}]})),
+            MagicMock(status_code=200, headers={}, json=MagicMock(return_value={"data": {"c": 3}}))
+        ]
+        with patch("time.sleep"):
+            assert collect_stats.gql("query") == {"c": 3}
 
 def test_load_config():
     with patch("builtins.open") as mock_open:
@@ -44,6 +64,17 @@ def test_search_candidates(mock_get):
         mock_exists.return_value = False
         candidates = collect_stats.search_candidates(["Loc1"])
         assert "user1" in candidates
+
+@patch("collect_stats.gh_get")
+def test_search_candidates_batching(mock_get):
+    mock_get.return_value = {"items": []}
+    locations = ["L1", "L2", "L3", "L4", "L5", "L6"] # > 5 locations
+    with patch("time.sleep") as mock_sleep:
+        collect_stats.search_candidates(locations)
+        # Should be 2 batches (5 + 1)
+        assert mock_get.call_count == 2
+        # Should have slept at least once after the first batch
+        assert mock_sleep.called
 
 @patch("collect_stats.gh_get")
 def test_search_candidates_removed(mock_get):
