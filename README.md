@@ -259,6 +259,7 @@ A comprehensive list of all developers who have submitted their profiles to this
 12. [Rifat Nabi](https://github.com/torifat?rank=directory) - Sydney, Australia, 917 followers, 202 public repos, 660 stars.
 13. [Safwan Rahman](https://github.com/safwanrahman?rank=directory) - Dhaka, Bangladesh, 183 followers, 70 public repos, 438 stars.
 14. [Sharfuddin Shawon](https://github.com/sharf-shawon?rank=directory) - Puran Dhaka, Bangladesh | USA, 18 followers, 70 public repos, 70 stars.
+15. [ডেভ সংকেত](https://github.com/devsonket?rank=directory) - Bangladesh, 136 followers, 2 public repos, 1043 stars.
 
 ## Contributing
 
