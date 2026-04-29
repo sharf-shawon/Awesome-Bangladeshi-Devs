@@ -66,14 +66,14 @@ def test_search_candidates(mock_get):
         assert "user1" in candidates
 
 @patch("collect_stats.gh_get")
-def test_search_candidates_batching(mock_get):
+def test_search_candidates_sequential(mock_get):
     mock_get.return_value = {"items": []}
-    locations = ["L1", "L2", "L3", "L4", "L5", "L6"] # > 5 locations
+    locations = ["L1", "L2", "L3"]
     with patch("time.sleep") as mock_sleep:
         collect_stats.search_candidates(locations)
-        # Should be 2 batches (5 + 1)
-        assert mock_get.call_count == 2
-        # Should have slept at least once after the first batch
+        # Should call API once for each location
+        assert mock_get.call_count == 3
+        # Should have slept between locations
         assert mock_sleep.called
 
 @patch("collect_stats.gh_get")

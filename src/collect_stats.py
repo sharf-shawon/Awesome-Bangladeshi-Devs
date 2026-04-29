@@ -99,28 +99,25 @@ def search_candidates(locations, per_query=30):
             removed_logins = set(json.load(f).keys())
 
     seen = {}
-    # Group locations into batches to reduce API calls (Search URL has length limits)
-    batch_size = 5
-    for i in range(0, len(locations), batch_size):
-        batch = locations[i:i + batch_size]
-        # Use quotes for locations with spaces and OR them together
-        loc_query = " OR ".join([f'location:"{loc}"' for loc in batch])
-        q = f"{loc_query} followers:>=1"
+    for loc in locations:
+        # Use quotes for locations with spaces/special characters
+        q = f'location:"{loc}" followers:>=1'
         
-        print(f"Searching batch: {batch}")
-        # Note: requests.get will handle URL encoding of the space/quotes in 'q'
-        data = gh_get("https://api.github.com/search/users", {"q": q, "per_page": per_query})
+        print(f"Searching location: {loc}")
+        try:
+            data = gh_get("https://api.github.com/search/users", {"q": q, "per_page": per_query})
+            for item in data.get("items", []):
+                login = item["login"]
+                norm_login = login.lower().replace(".", "-").strip()
+                if norm_login not in removed_logins:
+                    seen[login] = item
+                else:
+                    print(f"Skipping removed user: {login}")
+        except Exception as e:
+            print(f"Error searching location {loc}: {e}")
         
-        for item in data.get("items", []):
-            login = item["login"]
-            norm_login = login.lower().replace(".", "-").strip()
-            if norm_login not in removed_logins:
-                seen[login] = item
-            else:
-                print(f"Skipping removed user: {login}")
-        
-        # Search API is more sensitive; wait longer between batches
-        time.sleep(2)
+        # Respect Search API rate limit slightly between locations
+        time.sleep(1)
         
     return list(seen.keys())
 
