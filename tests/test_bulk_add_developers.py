@@ -66,6 +66,7 @@ def test_parse_input_deduplication_case_insensitive():
     raw = "User1\nuser1\nUSER1"
     result = bulk_add_developers.parse_input(raw)
     assert len(result) == 1
+    assert result[0] == "User1"  # first occurrence is preserved
 
 
 # ---------------------------------------------------------------------------

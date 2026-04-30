@@ -9,6 +9,8 @@ Usage:
     python src/bulk_add_developers.py "<newline-or-comma-separated list>"
 """
 
+import contextlib
+import io
 import re
 import sys
 import json
@@ -30,8 +32,8 @@ def extract_username(entry: str) -> str:
     if not entry:
         return ""
 
-    # Handle github.com URLs
-    if "github.com" in entry:
+    # Handle github.com URLs – only match when github.com is the host
+    if re.match(r"^https?://github\.com/", entry):
         # Strip scheme and host
         path = re.sub(r"^https?://github\.com/", "", entry)
         # First path segment is the username
@@ -88,7 +90,6 @@ def bulk_add(raw_input: str) -> dict:
         print(f"\n--- Processing: {username} ---")
 
         # Capture stdout so we can inspect the reason for failure
-        import io, contextlib
         buf = io.StringIO()
         with contextlib.redirect_stdout(buf):
             result = process_issue.add_developer(fields, title)
