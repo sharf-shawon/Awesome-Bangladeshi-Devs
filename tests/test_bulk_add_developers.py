@@ -48,7 +48,7 @@ def test_parse_input_comma_separated():
     assert result == ["user1", "user2", "user3"]
 
 def test_parse_input_mixed_separators():
-    raw = "user1\nhttps://github.com/user2, user3\nuser1"  # user1 duplicated
+    raw = "user1\nhttps://github.com/user2, user3\nuser1"  # user1 duplicate
     result = bulk_add_developers.parse_input(raw)
     assert result == ["user1", "user2", "user3"]
 

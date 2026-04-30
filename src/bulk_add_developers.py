@@ -53,9 +53,9 @@ def parse_input(raw: str) -> list[str]:
         username = extract_username(token)
         if not username:
             continue
-        normalised = process_issue.normalize_username(username)
-        if normalised and normalised not in seen:
-            seen.add(normalised)
+        normalized = process_issue.normalize_username(username)
+        if normalized and normalized not in seen:
+            seen.add(normalized)
             usernames.append(username)
     return usernames
 
