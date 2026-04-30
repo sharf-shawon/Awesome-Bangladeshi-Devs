@@ -247,21 +247,27 @@ A comprehensive list of all developers who have submitted their profiles to this
 
 1. [Ahad Chowdhury](https://github.com/maacpiash?rank=directory) - Sydney, Australia, 142 followers, 103 public repos, 131 stars.
 2. [Ahmed Shahriar Sakib](https://github.com/ahmedshahriar?rank=directory) - Ontario, Canada, Earth, 311 followers, 64 public repos, 315 stars.
-3. [almahmud](https://github.com/almahmudbd?rank=directory) - BD, 21 followers, 18 public repos, 48 stars.
-4. [bdeshi](https://github.com/bdeshi?rank=directory) - B-612, 86 followers, 82 public repos, 43 stars.
-5. [Jayed Ahsan Saad](https://github.com/JayedAhsan?rank=directory) - Dhaka, Bangladesh, 44 followers, 12 public repos, 22 stars.
-6. [Jhankar Programming Hero](https://github.com/jhankarpHero?rank=directory) - Bangladesh, 1273 followers, 30 public repos, 32 stars.
-7. [M Asif Rahman](https://github.com/Asif2BD?rank=directory) - WordPress, 83 followers, 64 public repos, 123 stars.
-8. [Mahedi Kamal](https://github.com/MahediKamal?rank=directory) - Bangladesh, 36 followers, 30 public repos, 57 stars.
-9. [Md Sazzadul islam](https://github.com/md-sazzadul-islam?rank=directory) - Dhaka, Bangladesh, 2381 followers, 7 public repos, 113 stars.
-10. [Mehdi Hasan Khan](https://github.com/mugli?rank=directory) - Berlin, Germany, 1451 followers, 39 public repos, 1541 stars.
-11. [Muhammad Mominul Huque](https://github.com/mominul?rank=directory) - Bangladesh, 224 followers, 86 public repos, 110 stars.
-12. [Nazmul Hassan](https://github.com/nazmul-nhb?rank=directory) - Sirajganj, Bangladesh, 50 followers, 156 public repos, 22 stars.
-13. [PRAS Samin](https://github.com/prassamin?rank=directory) - Void, 59 followers, 32 public repos, 156 stars.
-14. [Rifat Nabi](https://github.com/torifat?rank=directory) - Sydney, Australia, 917 followers, 202 public repos, 660 stars.
-15. [Safwan Rahman](https://github.com/safwanrahman?rank=directory) - Dhaka, Bangladesh, 183 followers, 70 public repos, 438 stars.
-16. [Sharfuddin Shawon](https://github.com/sharf-shawon?rank=directory) - Puran Dhaka, Bangladesh | USA, 18 followers, 70 public repos, 70 stars.
-17. [ডেভ সংকেত](https://github.com/devsonket?rank=directory) - Bangladesh, 136 followers, 2 public repos, 1043 stars.
+3. [Alien](https://github.com/Ahmed-Munna?rank=directory) - Dhaka, Bangladesh, 18 followers, 62 public repos, 90 stars.
+4. [almahmud](https://github.com/almahmudbd?rank=directory) - BD, 21 followers, 18 public repos, 48 stars.
+5. [Apu Deb Chowdhury  ](https://github.com/imdeb99?rank=directory) - Sylhet, 14 followers, 19 public repos, 0 stars.
+6. [bdeshi](https://github.com/bdeshi?rank=directory) - B-612, 86 followers, 82 public repos, 43 stars.
+7. [Jayed Ahsan Saad](https://github.com/JayedAhsan?rank=directory) - Dhaka, Bangladesh, 44 followers, 12 public repos, 22 stars.
+8. [Jhankar Programming Hero](https://github.com/jhankarpHero?rank=directory) - Bangladesh, 1273 followers, 30 public repos, 32 stars.
+9. [M Asif Rahman](https://github.com/Asif2BD?rank=directory) - WordPress, 83 followers, 64 public repos, 123 stars.
+10. [Mahed Ahmed Chowdhury](https://github.com/Mahed21?rank=directory) - Sylhet, Bangladesh, 13 followers, 87 public repos, 3 stars.
+11. [Mahedi Kamal](https://github.com/MahediKamal?rank=directory) - Bangladesh, 36 followers, 30 public repos, 57 stars.
+12. [Mahmudul Hasan](https://github.com/mahmudhaisan?rank=directory) - Dhaka, Bangladesh, 11 followers, 25 public repos, 10 stars.
+13. [Md Sazzadul islam](https://github.com/md-sazzadul-islam?rank=directory) - Dhaka, Bangladesh, 2381 followers, 7 public repos, 113 stars.
+14. [Md. Jalal Uddin Chowdhury](https://github.com/JalalChowdhury?rank=directory) - Sylhet,Bangladesh., 36 followers, 59 public repos, 32 stars.
+15. [Mehdi Hasan Khan](https://github.com/mugli?rank=directory) - Berlin, Germany, 1451 followers, 39 public repos, 1541 stars.
+16. [Muhammad Asif Ul Islam](https://github.com/akasifislam?rank=directory) - Dhaka, Bangladesh., 83 followers, 127 public repos, 15 stars.
+17. [Muhammad Mominul Huque](https://github.com/mominul?rank=directory) - Bangladesh, 224 followers, 86 public repos, 110 stars.
+18. [Nazmul Hassan](https://github.com/nazmul-nhb?rank=directory) - Sirajganj, Bangladesh, 50 followers, 156 public repos, 22 stars.
+19. [PRAS Samin](https://github.com/prassamin?rank=directory) - Void, 59 followers, 32 public repos, 156 stars.
+20. [Rifat Nabi](https://github.com/torifat?rank=directory) - Sydney, Australia, 917 followers, 202 public repos, 660 stars.
+21. [Safwan Rahman](https://github.com/safwanrahman?rank=directory) - Dhaka, Bangladesh, 183 followers, 70 public repos, 438 stars.
+22. [Sharfuddin Shawon](https://github.com/sharf-shawon?rank=directory) - Puran Dhaka, Bangladesh | USA, 18 followers, 70 public repos, 70 stars.
+23. [ডেভ সংকেত](https://github.com/devsonket?rank=directory) - Bangladesh, 136 followers, 2 public repos, 1043 stars.
 
 ## Contributing
 

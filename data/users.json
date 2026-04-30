@@ -151,5 +151,59 @@
     "followers": 311,
     "public_repos": 64,
     "recent_repo_stars_sum": 315
+  },
+  {
+    "name": "Mahed Ahmed Chowdhury",
+    "github_username": "Mahed21",
+    "profile_url": "https://github.com/Mahed21",
+    "location": "Sylhet, Bangladesh",
+    "followers": 13,
+    "public_repos": 87,
+    "recent_repo_stars_sum": 3
+  },
+  {
+    "name": "Muhammad Asif Ul Islam",
+    "github_username": "akasifislam",
+    "profile_url": "https://github.com/akasifislam",
+    "location": "Dhaka, Bangladesh.",
+    "followers": 83,
+    "public_repos": 127,
+    "recent_repo_stars_sum": 15
+  },
+  {
+    "name": "Md. Jalal Uddin Chowdhury",
+    "github_username": "JalalChowdhury",
+    "profile_url": "https://github.com/JalalChowdhury",
+    "location": "Sylhet,Bangladesh.",
+    "followers": 36,
+    "public_repos": 59,
+    "recent_repo_stars_sum": 32
+  },
+  {
+    "name": "Alien",
+    "github_username": "Ahmed-Munna",
+    "profile_url": "https://github.com/Ahmed-Munna",
+    "location": "Dhaka, Bangladesh",
+    "followers": 18,
+    "public_repos": 62,
+    "recent_repo_stars_sum": 90
+  },
+  {
+    "name": "Apu Deb Chowdhury  ",
+    "github_username": "imdeb99",
+    "profile_url": "https://github.com/imdeb99",
+    "location": "Sylhet ",
+    "followers": 14,
+    "public_repos": 19,
+    "recent_repo_stars_sum": 0
+  },
+  {
+    "name": "Mahmudul Hasan",
+    "github_username": "mahmudhaisan",
+    "profile_url": "https://github.com/mahmudhaisan",
+    "location": "Dhaka, Bangladesh",
+    "followers": 11,
+    "public_repos": 25,
+    "recent_repo_stars_sum": 10
   }
 ]
