@@ -116,6 +116,8 @@ def format_list_entry(dev, index, rank_type=None):
         url = f"{url}{separator}rank={rank_type}"
     
     location = (dev.get("location") or "Bangladesh").strip().rstrip(",")
+    # Ensure first character is uppercase for awesome-lint compliance (remark-lint:awesome-list-item)
+    location = location[0].upper() + location[1:] if location else "Bangladesh"
     followers = dev.get("followers", 0)
     repos = dev.get("public_repos", 0)
     stars = dev.get("recent_repo_stars_sum", 0)
