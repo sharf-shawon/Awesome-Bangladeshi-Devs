@@ -1,0 +1,109 @@
+name: Bulk Add Developers
+
+# Restricted to workflow_dispatch so only users with repository write access
+# (collaborators / maintainers / owners) can trigger it – not the public.
+on:
+  workflow_dispatch:
+    inputs:
+      developers:
+        description: |
+          Newline- or comma-separated list of GitHub usernames, profile URLs,
+          or repository URLs.  Examples:
+            johndoe
+            https://github.com/johndoe
+            https://github.com/johndoe/some-repo
+            user1, user2, user3
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  bulk-add:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Pull latest data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Validate existing data
+        run: python src/validate_data.py
+
+      - name: Run bulk add
+        id: bulk_add
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python src/bulk_add_developers.py "${{ github.event.inputs.developers }}" | tee bulk_output.txt
+          if grep -q "users.json and removed_users.json updated" bulk_output.txt; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Setup Node.js
+        if: steps.bulk_add.outputs.changed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate README
+        if: steps.bulk_add.outputs.changed == 'true'
+        run: python src/generate_readme.py
+
+      - name: Lint README for Awesome compliance
+        if: steps.bulk_add.outputs.changed == 'true'
+        run: npx awesome-lint README.md
+
+      - name: Commit and push changes
+        if: steps.bulk_add.outputs.changed == 'true'
+        run: |
+          git add data/users.json README.md
+          if [ -f "data/removed_users.json" ]; then
+            git add data/removed_users.json
+          fi
+
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: bulk-add developers via workflow [skip ci]"
+
+            MAX_RETRIES=5
+            for i in $(seq 1 $MAX_RETRIES); do
+              echo "Push attempt $i..."
+              if git push origin main; then
+                echo "Push successful!"
+                exit 0
+              fi
+              echo "Push rejected. Syncing with remote and retrying..."
+              git fetch origin main
+              git rebase origin/main
+              sleep $((i * 2))
+            done
+            echo "Failed to push after $MAX_RETRIES attempts."
+            exit 1
+          else
+            echo "No changes to commit."
+          fi
+
+      - name: Print summary
+        if: always()
+        run: |
+          if [ -f bulk_output.txt ]; then
+            cat bulk_output.txt
+          fi
