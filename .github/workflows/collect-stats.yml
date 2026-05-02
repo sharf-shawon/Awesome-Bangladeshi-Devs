@@ -43,3 +43,12 @@ jobs:
           git add data/*.json
           git diff --cached --quiet || git commit -m "chore(data): update github stats"
           git push
+
+      - name: Tag and release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG=$(date -u +'%Y-%m-%d')
+          git tag $TAG
+          git push origin $TAG
+          gh release create $TAG --title "Stats for $TAG" --notes "Automated daily stats collection"
