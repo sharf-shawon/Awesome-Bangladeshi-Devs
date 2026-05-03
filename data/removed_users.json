@@ -10,5 +10,11 @@
     "reason": "not bengladeshi",
     "removed_by": "sharf-shawon",
     "is_self": false
+  },
+  "imranbru99": {
+    "github_username": "imranbru99",
+    "reason": "Proven to put malware in client code",
+    "removed_by": "sharf-shawon",
+    "is_self": false
   }
 }
