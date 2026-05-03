@@ -4,5 +4,11 @@
     "reason": "not bangladeshi",
     "removed_by": "sharf-shawon",
     "is_self": false
+  },
+  "ab-noori": {
+    "github_username": "ab-noori",
+    "reason": "not bengladeshi",
+    "removed_by": "sharf-shawon",
+    "is_self": false
   }
 }
