@@ -49,6 +49,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TAG=$(date -u +'%Y-%m-%d')
-          git tag $TAG
-          git push origin $TAG
+          git tag -f $TAG
+          git push origin $TAG --force
+          gh release delete $TAG --yes || true
           gh release create $TAG --title "Stats for $TAG" --notes "Automated daily stats collection"

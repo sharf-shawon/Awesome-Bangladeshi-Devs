@@ -107,9 +107,12 @@ def calculate_growth(latest_devs, previous_devs):
     return enriched
 
 def format_list_entry(dev, index, rank_type=None):
-    login = dev.get("login") or dev.get("github_username") or ""
-    name = dev.get("name") or login or "Unknown"
+    login = (dev.get("login") or dev.get("github_username") or "").strip()
+    name = (dev.get("name") or login or "Unknown").strip()
+    # Sanitize name for awesome-lint compliance (no < or > in links)
+    name = name.replace("<", "").replace(">", "")
     url = dev.get("profile_url") or f"https://github.com/{login}"
+
     
     if rank_type:
         separator = "&" if "?" in url else "?"
@@ -117,7 +120,11 @@ def format_list_entry(dev, index, rank_type=None):
     
     location = (dev.get("location") or "Bangladesh").strip().rstrip(",")
     # Ensure first character is uppercase for awesome-lint compliance (remark-lint:awesome-list-item)
-    location = location[0].upper() + location[1:] if location else "Bangladesh"
+    if location:
+        location = location[0].upper() + location[1:]
+    else:
+        location = "Bangladesh"
+
     followers = dev.get("followers", 0)
     repos = dev.get("public_repos", 0)
     stars = dev.get("recent_repo_stars_sum", 0)
@@ -164,7 +171,32 @@ def main():
         has_stats = False
     else:
         has_stats = True
-        enriched_devs = calculate_growth(latest_devs, previous_devs)
+        
+        # Merge developers from both users.json and automated stats
+        stats_map = {d["login"].lower(): d for d in latest_devs}
+        user_map = {d.get("github_username", "").lower(): d for d in user_devs if d.get("github_username")}
+        all_logins = set(stats_map.keys()) | set(user_map.keys())
+        
+        merged_devs = []
+        for login in all_logins:
+            auto_dev = stats_map.get(login)
+            user_dev = user_map.get(login)
+            
+            if auto_dev and user_dev:
+                # Prefer automated stats, but keep user info for fields not in automated
+                merged = user_dev.copy()
+                merged.update(auto_dev)
+            elif auto_dev:
+                merged = auto_dev.copy()
+            else:
+                merged = user_dev.copy()
+            
+            if "login" not in merged: merged["login"] = login
+            if "github_username" not in merged: merged["github_username"] = login
+            if "profile_url" not in merged: merged["profile_url"] = f"https://github.com/{login}"
+            merged_devs.append(merged)
+
+        enriched_devs = calculate_growth(merged_devs, previous_devs)
         
         # 1. GOATS Subsections
         top_score = sorted(enriched_devs, key=lambda d: d.get("composite_score", 0), reverse=True)[:top_n]
@@ -206,18 +238,11 @@ def main():
 
 
         # 3. All Developers (Numbered List)
-        stats_map = {d["login"].lower(): d for d in enriched_devs}
-        directory = []
-        for dev in user_devs:
-            login = dev.get("github_username", "").lower()
-            if not login: continue
-            full_dev = stats_map.get(login, dev)
-            if "login" not in full_dev: full_dev["login"] = login
-            if "profile_url" not in full_dev: full_dev["profile_url"] = f"https://github.com/{login}"
-            directory.append(full_dev)
-            
-        directory.sort(key=lambda d: (d.get("name") or d.get("login", "")).lower())
+        directory = enriched_devs[:]
+        directory.sort(key=lambda d: (d.get("name") or d.get("login", "")).strip().lower())
         directory_entries = [format_list_entry(d, i+1, "directory") for i, d in enumerate(directory)]
+
+
 
         content = [
             "## ⭐ Top-Rated Bangladeshi GitHub Developers\n\n",
