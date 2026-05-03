@@ -108,16 +108,15 @@ def calculate_growth(latest_devs, previous_devs):
 
 def format_list_entry(dev, index, rank_type=None):
     login = (dev.get("login") or dev.get("github_username") or "").strip()
-    name = (dev.get("name") or login or "Unknown").strip()
-    # Sanitize name for awesome-lint compliance (no < or > in links)
+    name = (dev.get("name") or "").strip()
+    # Sanitize name for display
     name = name.replace("<", "").replace(">", "")
     url = dev.get("profile_url") or f"https://github.com/{login}"
 
-    
     if rank_type:
         separator = "&" if "?" in url else "?"
         url = f"{url}{separator}rank={rank_type}"
-    
+
     location = (dev.get("location") or "Bangladesh").strip().rstrip(",")
     # Ensure first character is uppercase for awesome-lint compliance (remark-lint:awesome-list-item)
     if location:
@@ -128,14 +127,18 @@ def format_list_entry(dev, index, rank_type=None):
     followers = dev.get("followers", 0)
     repos = dev.get("public_repos", 0)
     stars = dev.get("recent_repo_stars_sum", 0)
-    
+
     growth_str = ""
     if rank_type == "rising_followers" and dev.get("followers_growth", 0) > 0:
         growth_str = f" (+{dev['followers_growth']} this month)"
     elif rank_type == "rising_stars" and dev.get("stars_growth", 0) > 0:
         growth_str = f" (+{dev['stars_growth']} stars this month)"
-    
-    return f"{index}. [{name}]({url}) - {location}, {followers} followers{growth_str}, {repos} public repos, {stars} stars."
+
+    name_display = f", {name}" if name and name.lower() != login.lower() else ""
+    return f"{index}. [{login}]({url}) - {location}{name_display}, {followers} followers{growth_str}, {repos} public repos, {stars} stars."
+
+
+
 
 def section(title, entries, level=3):
     prefix = "#" * level
@@ -161,7 +164,7 @@ def main():
 
     if not latest_devs:
         # Fallback
-        all_devs_sorted = sorted(user_devs, key=lambda d: (d.get("name") or d.get("github_username", "")).lower())
+        all_devs_sorted = sorted(user_devs, key=lambda d: (d.get("github_username") or d.get("login", "")).strip().lower())
         directory_entries = [format_list_entry(d, i+1, "fallback") for i, d in enumerate(all_devs_sorted)]
         content = [
             "## Other Awesome Bangladeshi Developers\n\n",
@@ -239,8 +242,9 @@ def main():
 
         # 3. All Developers (Numbered List)
         directory = enriched_devs[:]
-        directory.sort(key=lambda d: (d.get("name") or d.get("login", "")).strip().lower())
+        directory.sort(key=lambda d: (d.get("login") or d.get("github_username", "")).strip().lower())
         directory_entries = [format_list_entry(d, i+1, "directory") for i, d in enumerate(directory)]
+
 
 
 

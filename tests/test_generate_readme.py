@@ -22,11 +22,14 @@ def test_format_list_entry():
     }
     # Test normal entry
     entry = generate_readme.format_list_entry(dev, 1, "directory")
-    assert "1. [Test User](https://github.com/testuser?rank=directory) - Dhaka, Bangladesh, 100 followers, 10 public repos, 50 stars." in entry
+    assert "1. [testuser](https://github.com/testuser?rank=directory) - Dhaka, Bangladesh, Test User, 100 followers, 10 public repos, 50 stars." in entry
+
+
 
     # Test rising followers
     entry = generate_readme.format_list_entry(dev, 1, "rising_followers")
     assert "100 followers (+5 this month)" in entry
+
 
 def test_section():
     entries = ["1. A", "2. B"]
@@ -136,9 +139,10 @@ def test_format_list_entry_sanitization():
     }
     entry = generate_readme.format_list_entry(dev, 1)
     # Check that whitespace is stripped and location is capitalized
-    assert "[Space User]" in entry
+    assert "[spaceuser]" in entry
+    assert "Dhaka, bangladesh, Space User" in entry
     assert "github.com/spaceuser" in entry
-    assert "Dhaka, bangladesh" in entry
+
 
 def test_format_list_entry_name_lint_sanitization():
     dev = {
@@ -147,7 +151,11 @@ def test_format_list_entry_name_lint_sanitization():
         "location": "Bangladesh"
     }
     entry = generate_readme.format_list_entry(dev, 1)
-    assert "[/NameWithTags]" in entry
+    assert "[taguser]" in entry
+    assert "Bangladesh, /NameWithTags" in entry
+
+
+
     assert "<" not in entry.split("]")[0]
     assert ">" not in entry.split("]")[0]
 
