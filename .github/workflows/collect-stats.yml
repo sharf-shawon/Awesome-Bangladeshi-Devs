@@ -41,7 +41,25 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/*.json
-          git diff --cached --quiet || git commit -m "chore(data): update github stats"
+          if [ -d "data/web" ]; then
+            git add data/web/*.json
+          fi
+          if [ -d "developers" ]; then
+            git add developers/**/index.html || true
+          fi
+          if [ -d "languages" ]; then
+            git add languages/index.html
+          fi
+          if [ -d "locations" ]; then
+            git add locations/index.html
+          fi
+          if [ -f "sitemap.xml" ]; then
+            git add sitemap.xml
+          fi
+          if [ -f "robots.txt" ]; then
+            git add robots.txt
+          fi
+          git diff --cached --quiet || git commit -m "chore(data): update github stats and site bundle"
           git push
 
       - name: Tag and release

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Awesome Bangladeshi Developers</title>
+  <meta name="description" content="Real-time searchable directory of Bangladeshi GitHub developers, repositories, languages, and activity insights." />
+  <meta name="keywords" content="Bangladeshi developers, GitHub developers Bangladesh, open source Bangladesh, developer search" />
+  <meta property="og:title" content="Awesome Bangladeshi Developers" />
+  <meta property="og:description" content="Search, filter, and discover developers and repositories from Bangladesh." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <script defer src="/assets/app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Awesome Bangladeshi Developers</h1>
+    <p id="meta">Loading latest data…</p>
+  </header>
+
+  <nav>
+    <a href="#discover">Discover Developers</a>
+    <a href="#repos">Discover Repos</a>
+    <a href="#trends">Trends</a>
+    <a href="#leaderboards">Leaderboards</a>
+  </nav>
+
+  <main>
+    <section id="discover">
+      <h2>Discover Developers</h2>
+      <form id="filters">
+        <label>Search <input type="search" id="q" placeholder="name, username, repo, skill…" /></label>
+        <label>Location <input type="text" id="location" placeholder="Dhaka" /></label>
+        <label>Language <input type="text" id="language" placeholder="Python" /></label>
+        <label>Skill/Expertise <input type="text" id="skill" placeholder="Django, React" /></label>
+        <label>Sort
+          <select id="sort">
+            <option value="activity">Activity</option>
+            <option value="followers">Followers</option>
+            <option value="stars">Stars</option>
+            <option value="forks">Forks</option>
+            <option value="updated">Last Updated</option>
+          </select>
+        </label>
+        <label>Min Stars <input type="number" id="minStars" min="0" value="0" /></label>
+        <label>Min Forks <input type="number" id="minForks" min="0" value="0" /></label>
+      </form>
+      <div id="count" aria-live="polite"></div>
+      <div id="results"></div>
+      <button id="loadMore" type="button">Load more</button>
+      <noscript>This page needs JavaScript for instant filtering. Developer profile pages remain crawlable.</noscript>
+    </section>
+
+    <section id="repos">
+      <h2>Rising Repositories</h2>
+      <ul id="risingRepos"></ul>
+    </section>
+
+    <section id="trends">
+      <h2>Trends</h2>
+      <ul id="timeline"></ul>
+    </section>
+
+    <section id="leaderboards">
+      <h2>Leaderboards</h2>
+      <h3>Top Languages</h3>
+      <ul id="topLanguages"></ul>
+      <h3>Top Locations</h3>
+      <ul id="topLocations"></ul>
+    </section>
+  </main>
+</body>
+</html>
