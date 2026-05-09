@@ -6,6 +6,6 @@ theme: minima
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-google_analytics: GOOGLE_ANALYTICS_ID
+google_analytics: G-MHQ27V2WFL
 show_downloads: false
 keywords: "Bangladeshi developers, Bangladeshi projects, GitHub Bangladesh, open source Bangladesh, developer directory"
