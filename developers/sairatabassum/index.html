@@ -1,21 +1,38 @@
+---
+layout: null
+---
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Saira Tabassum (sairatabassum) | Awesome Bangladeshi Developers</title>
-  <meta name="description" content="Saira Tabassum (sairatabassum) from Dhaka, Bangladesh – GitHub activity and repository highlights." />
+  <meta name="description" content="Saira Tabassum (sairatabassum) from Dhaka, Bangladesh — Bangladeshi developer profile with GitHub repository details, languages, and contribution highlights." />
+  <meta name="keywords" content="Bangladeshi developer, sairatabassum, GitHub Bangladesh, Dhaka, Bangladesh" />
   <link rel="canonical" href="https://awesome-bangladeshi-devs.shawon.me/developers/sairatabassum/" />
   <meta property="og:type" content="profile" />
   <meta property="og:title" content="Saira Tabassum (sairatabassum)" />
-  <meta property="og:description" content="Saira Tabassum (sairatabassum) from Dhaka, Bangladesh – GitHub activity and repository highlights." />
+  <meta property="og:description" content="Saira Tabassum (sairatabassum) from Dhaka, Bangladesh — Bangladeshi developer profile with GitHub repository details, languages, and contribution highlights." />
   <meta property="og:url" content="https://awesome-bangladeshi-devs.shawon.me/developers/sairatabassum/" />
   <meta name="twitter:card" content="summary" />
+  <link rel="stylesheet" href="/assets/styles.css" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Saira Tabassum", "alternateName": "sairatabassum", "url": "https://github.com/sairatabassum", "sameAs": ["https://github.com/sairatabassum"], "homeLocation": "Dhaka, Bangladesh", "knowsAbout": []}</script>
 </head>
-<body>
-  <main>
-    <p><a href="/">← Back to directory</a></p>
+<body data-page="developer-profile">
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="/">Awesome Bangladeshi Developers</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/developers/">Bangladeshi Developers</a>
+        <a href="/projects/">Bangladeshi Projects</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container page-main">
+    <p><a href="/developers/">← Back to developer directory</a></p>
     <h1>Saira Tabassum <small>(sairatabassum)</small></h1>
     <p><a href="https://github.com/sairatabassum" rel="noopener">GitHub profile</a></p>
     <p><strong>Location:</strong> Dhaka, Bangladesh</p>
@@ -23,8 +40,41 @@
     <p><strong>Activity score:</strong> 0.0125 | <strong>Last active:</strong> 2025-10-18T04:08:27Z</p>
     <p><strong>Languages:</strong> Not available</p>
     <p><strong>Skills & expertise:</strong> Not available</p>
-    <h2>Highlighted repositories</h2>
-    <ul><li>No repository summaries available.</li></ul>
+    <h2>Repository details</h2>
+    <div id="repoDetails">
+      <p class="meta">No repository summaries in the current snapshot. Loading latest public repositories…</p>
+    </div>
   </main>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© Awesome Bangladeshi Developers</p>
+      <p><a href="/sitemap.xml">Sitemap</a> · <a href="/robots.txt">Robots</a></p>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      const root = document.getElementById("repoDetails");
+      if (!root || false) return;
+      const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+      fetch("https://api.github.com/users/sairatabassum/repos?per_page=12&sort=updated", { headers: { "Accept": "application/vnd.github+json" } })
+        .then((r) => (r.ok ? r.json() : []))
+        .then((repos) => {
+          if (!Array.isArray(repos) || !repos.length) {
+            root.innerHTML = "<p class=\"meta\">No repositories available.</p>";
+            return;
+          }
+          const rows = repos
+            .slice(0, 12)
+            .map((repo) =>
+              `<tr><td><a href="${esc(repo.html_url || '#')}" rel="noopener">${esc(repo.name || 'repository')}</a><br/><small>${esc(repo.full_name || '')}</small></td><td>${esc(repo.description || 'No description provided.')}</td><td>${esc(repo.language || 'Unknown')}</td><td>⭐ ${Number(repo.stargazers_count || 0)}</td><td>🍴 ${Number(repo.forks_count || 0)}</td><td>${esc((repo.updated_at || '').slice(0, 10) || 'N/A')}</td><td>${(repo.topics || []).slice(0, 7).map((t) => `<code>${esc(t)}</code>`).join(' ') || '—'}</td></tr>`
+            )
+            .join("");
+          root.innerHTML = `<table class="repo-table"><thead><tr><th>Repository</th><th>Description</th><th>Language</th><th>Stars</th><th>Forks</th><th>Updated</th><th>Topics</th></tr></thead><tbody>${rows}</tbody></table>`;
+        })
+        .catch(() => {
+          root.innerHTML = "<p class=\"meta\">Unable to load repositories right now.</p>";
+        });
+    })();
+  </script>
 </body>
 </html>

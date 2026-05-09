@@ -16,5 +16,6 @@
   "search_index": "search-index.json",
   "sorted_indexes": "sorted-indexes.json",
   "stats_summary": "stats-summary.json",
-  "charts": "charts.json"
+  "charts": "charts.json",
+  "projects_index": "projects-index.json"
 }

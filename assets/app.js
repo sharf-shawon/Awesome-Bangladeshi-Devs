@@ -21,7 +21,8 @@
   const sitePath = (path) => `${base}${path.startsWith("/") ? path : `/${path}`}`;
 
   const fetchJson = async (path, options = {}) => {
-    const res = await fetch(sitePath(path), { cache: options.cache || "default" });
+    const url = /^https?:\/\//i.test(path) ? path : sitePath(path);
+    const res = await fetch(url, { cache: options.cache || "default" });
     if (!res.ok) throw new Error(`Failed loading ${path}: ${res.status}`);
     return res.json();
   };
@@ -60,6 +61,42 @@
     state.sorted = await fetchJson(withVersion(`/data/web/${state.manifest.sorted_indexes}`));
     const projectsPath = state.manifest.projects_index || "projects-index.json";
     state.projects = (await fetchJson(withVersion(`/data/web/${projectsPath}`))).items || [];
+  };
+
+  const hydrateProjectsFallback = async () => {
+    if (state.projects.length) return;
+    const owners = (state.summary?.top_followers || []).slice(0, 12);
+    const map = new Map();
+    await Promise.all(
+      owners.map(async (owner) => {
+        try {
+          const repos = await fetchJson(`https://api.github.com/users/${encodeURIComponent(owner)}/repos?per_page=12&sort=updated`);
+          for (const repo of repos || []) {
+            const key = String(repo.full_name || repo.name || "").toLowerCase();
+            if (!key) continue;
+            const prev = map.get(key);
+            const candidate = {
+              id: key,
+              name: repo.name,
+              full_name: repo.full_name || repo.name,
+              url: repo.html_url,
+              description: repo.description,
+              language: repo.language,
+              stargazers_count: Number(repo.stargazers_count || 0),
+              forks_count: Number(repo.forks_count || 0),
+              updated_at: repo.updated_at,
+              pushed_at: repo.pushed_at,
+              topics: repo.topics || [],
+              owner,
+              archived: !!repo.archived,
+              is_fork: !!repo.fork,
+            };
+            if (!prev || candidate.stargazers_count > prev.stargazers_count) map.set(key, candidate);
+          }
+        } catch (_) {}
+      })
+    );
+    state.projects = [...map.values()].sort((a, b) => b.stargazers_count - a.stargazers_count);
   };
 
   const hydrateDevelopersMap = async () => {
@@ -241,7 +278,10 @@
       await loadCore();
       if (page === "home") renderHome();
       if (page === "developers") await initDevelopersPage();
-      if (page === "projects") initProjectsPage();
+      if (page === "projects") {
+        await hydrateProjectsFallback();
+        initProjectsPage();
+      }
     } catch (err) {
       console.error(err);
       const meta = byId("meta");

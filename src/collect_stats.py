@@ -580,6 +580,7 @@ def _developer_page_html(dev, base_url):
     skills = ", ".join(escape(s) for s in dev.get("skills", [])) or "Not available"
     languages = ", ".join(escape(s) for s in dev.get("languages", [])) or "Not available"
 
+    has_repo_rows = bool(repo_items)
     return f"""---
 layout: null
 ---
@@ -623,7 +624,9 @@ layout: null
     <p><strong>Languages:</strong> {languages}</p>
     <p><strong>Skills & expertise:</strong> {skills}</p>
     <h2>Repository details</h2>
-    {"<table class=\"repo-table\"><thead><tr><th>Repository</th><th>Description</th><th>Language</th><th>Stars</th><th>Forks</th><th>Updated</th><th>Topics</th></tr></thead><tbody>" + ''.join(repo_items) + "</tbody></table>" if repo_items else "<p>No repository summaries available.</p>"}
+    <div id="repoDetails">
+      {"<table class=\"repo-table\"><thead><tr><th>Repository</th><th>Description</th><th>Language</th><th>Stars</th><th>Forks</th><th>Updated</th><th>Topics</th></tr></thead><tbody>" + ''.join(repo_items) + "</tbody></table>" if repo_items else "<p class=\"meta\">No repository summaries in the current snapshot. Loading latest public repositories…</p>"}
+    </div>
   </main>
   <footer class=\"site-footer\">
     <div class=\"container footer-wrap\">
@@ -631,6 +634,31 @@ layout: null
       <p><a href=\"/sitemap.xml\">Sitemap</a> · <a href=\"/robots.txt\">Robots</a></p>
     </div>
   </footer>
+  <script>
+    (function () {{
+      const root = document.getElementById("repoDetails");
+      if (!root || {str(has_repo_rows).lower()}) return;
+      const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({{"&":"&amp;","<":"&lt;",">":"&gt;","\\"":"&quot;","'":"&#39;"}}[c]));
+      fetch("https://api.github.com/users/{escape(login)}/repos?per_page=12&sort=updated", {{ headers: {{ "Accept": "application/vnd.github+json" }} }})
+        .then((r) => (r.ok ? r.json() : []))
+        .then((repos) => {{
+          if (!Array.isArray(repos) || !repos.length) {{
+            root.innerHTML = "<p class=\\"meta\\">No repositories available.</p>";
+            return;
+          }}
+          const rows = repos
+            .slice(0, 12)
+            .map((repo) =>
+              `<tr><td><a href="${{esc(repo.html_url || '#')}}" rel="noopener">${{esc(repo.name || 'repository')}}</a><br/><small>${{esc(repo.full_name || '')}}</small></td><td>${{esc(repo.description || 'No description provided.')}}</td><td>${{esc(repo.language || 'Unknown')}}</td><td>⭐ ${{Number(repo.stargazers_count || 0)}}</td><td>🍴 ${{Number(repo.forks_count || 0)}}</td><td>${{esc((repo.updated_at || '').slice(0, 10) || 'N/A')}}</td><td>${{(repo.topics || []).slice(0, 7).map((t) => `<code>${{esc(t)}}</code>`).join(' ') || '—'}}</td></tr>`
+            )
+            .join("");
+          root.innerHTML = `<table class="repo-table"><thead><tr><th>Repository</th><th>Description</th><th>Language</th><th>Stars</th><th>Forks</th><th>Updated</th><th>Topics</th></tr></thead><tbody>${{rows}}</tbody></table>`;
+        }})
+        .catch(() => {{
+          root.innerHTML = "<p class=\\"meta\\">Unable to load repositories right now.</p>";
+        }});
+    }})();
+  </script>
 </body>
 </html>
 """
