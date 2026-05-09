@@ -1,7 +1,11 @@
-title: Top GitHub Developers in Bangladesh | Awesome Bangladeshi Developers
-description: Discover the most impactful, active, and rising stars in the Bangladeshi open-source community. A curated, data-driven directory of top GitHub developers from Bangladesh.
-theme: jekyll-theme-merlot
-google_analytics: G-MHQ27V2WFL
-show_downloads: false
-keywords: "Bangladeshi developers, GitHub stars Bangladesh, top developers in Bangladesh, open source Bangladesh, Bangladeshi tech community, GitHub ranking Bangladesh"
+title: Awesome Bangladeshi Developers
+description: Discover and explore Bangladeshi developers, projects, and open-source trends with searchable, data-driven insights.
 url: "https://awesome-bangladeshi-devs.shawon.me"
+baseurl: ""
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+google_analytics: GOOGLE_ANALYTICS_ID
+show_downloads: false
+keywords: "Bangladeshi developers, Bangladeshi projects, GitHub Bangladesh, open source Bangladesh, developer directory"

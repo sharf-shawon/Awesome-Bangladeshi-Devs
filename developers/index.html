@@ -1,0 +1,32 @@
+---
+layout: default
+title: Bangladeshi Developers Directory | Awesome Bangladeshi Developers
+description: Search, sort, and filter Bangladeshi developers by skills, location, languages, stars, forks, and activity.
+page_key: developers
+permalink: /developers/
+---
+
+<section>
+  <h1>Bangladeshi Developers</h1>
+  <p class="lead">Real-time search and filtering across the community directory.</p>
+  <form id="devFilters" class="filters" aria-label="Developer filters">
+    <label>Search <input type="search" id="q" placeholder="name, username, repo, skill…" /></label>
+    <label>Location <input type="text" id="location" placeholder="Dhaka" /></label>
+    <label>Language <input type="text" id="language" placeholder="Python" /></label>
+    <label>Skill <input type="text" id="skill" placeholder="Django, React" /></label>
+    <label>Sort
+      <select id="sort">
+        <option value="activity">Activity</option>
+        <option value="followers">Followers</option>
+        <option value="stars">Stars</option>
+        <option value="forks">Forks</option>
+        <option value="updated">Recently Active</option>
+      </select>
+    </label>
+    <label>Min Stars <input type="number" id="minStars" min="0" value="0" /></label>
+    <label>Min Forks <input type="number" id="minForks" min="0" value="0" /></label>
+  </form>
+  <div id="count" class="meta" aria-live="polite"></div>
+  <div id="results" class="card-grid"></div>
+  <button id="loadMore" class="button" type="button">Load more</button>
+</section>

@@ -547,17 +547,24 @@ def _developer_page_html(dev, base_url):
     login = dev.get("login") or "unknown"
     name = dev.get("name") or login
     canonical = f"{base_url.rstrip('/')}/developers/{login}/" if base_url else f"/developers/{login}/"
-    description = f"{name} ({login}) from {dev.get('location') or 'Bangladesh'} – GitHub activity and repository highlights."
+    description = f"{name} ({login}) from {dev.get('location') or 'Bangladesh'} — Bangladeshi developer profile with GitHub repository details, languages, and contribution highlights."
 
     repo_items = []
     for repo in dev.get("top_repositories", [])[:12]:
         repo_name = escape(repo.get("name") or "repository")
+        repo_full_name = escape(repo.get("full_name") or repo.get("name") or "repository")
         repo_url = escape(repo.get("url") or "#")
         repo_desc = escape(repo.get("description") or "")
         language = escape(repo.get("language") or "Unknown")
         stars = int(repo.get("stargazers_count", 0) or 0)
         forks = int(repo.get("forks_count", 0) or 0)
-        repo_items.append(f"<li><a href=\"{repo_url}\" rel=\"noopener\">{repo_name}</a> - {repo_desc} <small>({language} · ⭐ {stars} · 🍴 {forks})</small></li>")
+        updated = escape(repo.get("updated_at") or repo.get("pushed_at") or "N/A")
+        topics = ", ".join(escape(t) for t in (repo.get("topics") or [])[:7])
+        repo_items.append(
+            f"<tr><td><a href=\"{repo_url}\" rel=\"noopener\">{repo_name}</a><br/><small>{repo_full_name}</small></td>"
+            f"<td>{repo_desc or 'No description provided.'}</td>"
+            f"<td>{language}</td><td>⭐ {stars}</td><td>🍴 {forks}</td><td>{updated}</td><td>{topics or '—'}</td></tr>"
+        )
 
     json_ld = {
         "@context": "https://schema.org",
@@ -573,24 +580,41 @@ def _developer_page_html(dev, base_url):
     skills = ", ".join(escape(s) for s in dev.get("skills", [])) or "Not available"
     languages = ", ".join(escape(s) for s in dev.get("languages", [])) or "Not available"
 
-    return f"""<!doctype html>
+    return f"""---
+layout: null
+---
+<!doctype html>
 <html lang=\"en\">
 <head>
   <meta charset=\"utf-8\" />
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
   <title>{escape(name)} ({escape(login)}) | Awesome Bangladeshi Developers</title>
   <meta name=\"description\" content=\"{escape(description)}\" />
+  <meta name=\"keywords\" content=\"Bangladeshi developer, {escape(login)}, GitHub Bangladesh, {escape(dev.get('location') or 'Bangladesh')}\" />
   <link rel=\"canonical\" href=\"{escape(canonical)}\" />
   <meta property=\"og:type\" content=\"profile\" />
   <meta property=\"og:title\" content=\"{escape(name)} ({escape(login)})\" />
   <meta property=\"og:description\" content=\"{escape(description)}\" />
   <meta property=\"og:url\" content=\"{escape(canonical)}\" />
   <meta name=\"twitter:card\" content=\"summary\" />
+  <link rel=\"stylesheet\" href=\"/assets/styles.css\" />
   <script type=\"application/ld+json\">{json.dumps(json_ld, ensure_ascii=False)}</script>
 </head>
-<body>
-  <main>
-    <p><a href=\"/\">← Back to directory</a></p>
+<body data-page=\"developer-profile\">
+  <header class=\"site-header\">
+    <div class=\"container header-wrap\">
+      <a class=\"brand\" href=\"/\">Awesome Bangladeshi Developers</a>
+      <nav class=\"site-nav\" aria-label=\"Primary\">
+        <a href=\"/\">Home</a>
+        <a href=\"/developers/\">Bangladeshi Developers</a>
+        <a href=\"/projects/\">Bangladeshi Projects</a>
+        <a href=\"/about/\">About</a>
+        <a href=\"/contact/\">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class=\"container page-main\">
+    <p><a href=\"/developers/\">← Back to developer directory</a></p>
     <h1>{escape(name)} <small>({escape(login)})</small></h1>
     <p><a href=\"{escape(dev.get('profile_url') or f'https://github.com/{login}') }\" rel=\"noopener\">GitHub profile</a></p>
     <p><strong>Location:</strong> {escape(dev.get('location') or 'Unknown')}</p>
@@ -598,9 +622,15 @@ def _developer_page_html(dev, base_url):
     <p><strong>Activity score:</strong> {float(dev.get('activity_score', 0) or 0):.4f} | <strong>Last active:</strong> {escape(dev.get('last_active_at') or 'N/A')}</p>
     <p><strong>Languages:</strong> {languages}</p>
     <p><strong>Skills & expertise:</strong> {skills}</p>
-    <h2>Highlighted repositories</h2>
-    <ul>{''.join(repo_items) if repo_items else '<li>No repository summaries available.</li>'}</ul>
+    <h2>Repository details</h2>
+    {"<table class=\"repo-table\"><thead><tr><th>Repository</th><th>Description</th><th>Language</th><th>Stars</th><th>Forks</th><th>Updated</th><th>Topics</th></tr></thead><tbody>" + ''.join(repo_items) + "</tbody></table>" if repo_items else "<p>No repository summaries available.</p>"}
   </main>
+  <footer class=\"site-footer\">
+    <div class=\"container footer-wrap\">
+      <p>© Awesome Bangladeshi Developers</p>
+      <p><a href=\"/sitemap.xml\">Sitemap</a> · <a href=\"/robots.txt\">Robots</a></p>
+    </div>
+  </footer>
 </body>
 </html>
 """
@@ -612,10 +642,13 @@ def _hub_page_html(title, items, item_key, value_key):
         label = escape(str(it.get(item_key, "Unknown")))
         value = escape(str(it.get(value_key, 0)))
         lis.append(f"<li><strong>{label}</strong>: {value}</li>")
-    return f"""<!doctype html>
+    return f"""---
+layout: null
+---
+<!doctype html>
 <html lang=\"en\">
-<head><meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><title>{escape(title)}</title></head>
-<body><main><p><a href=\"/\">← Back to home</a></p><h1>{escape(title)}</h1><ul>{''.join(lis) if lis else '<li>No data available.</li>'}</ul></main></body>
+<head><meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><title>{escape(title)} | Awesome Bangladeshi Developers</title><meta name=\"description\" content=\"{escape(title)} for Bangladeshi developers.\" /><link rel=\"stylesheet\" href=\"/assets/styles.css\" /></head>
+<body><header class=\"site-header\"><div class=\"container header-wrap\"><a class=\"brand\" href=\"/\">Awesome Bangladeshi Developers</a></div></header><main class=\"container page-main\"><p><a href=\"/\">← Back to home</a></p><h1>{escape(title)}</h1><ul class=\"list\">{''.join(lis) if lis else '<li>No data available.</li>'}</ul></main></body>
 </html>
 """
 
@@ -656,6 +689,10 @@ def generate_developer_pages(developers, base_url=""):
         f.write(_hub_page_html("Location Leaderboard", location_items[:200], "location", "developers"))
 
     page_urls.extend([
+        f"{base_url.rstrip('/')}/developers/" if base_url else "/developers/",
+        f"{base_url.rstrip('/')}/projects/" if base_url else "/projects/",
+        f"{base_url.rstrip('/')}/about/" if base_url else "/about/",
+        f"{base_url.rstrip('/')}/contact/" if base_url else "/contact/",
         f"{base_url.rstrip('/')}/languages/" if base_url else "/languages/",
         f"{base_url.rstrip('/')}/locations/" if base_url else "/locations/",
     ])
@@ -729,6 +766,40 @@ def build_site_outputs(payload, cfg):
     }
     _write_json(os.path.join(WEB_DIR, "sorted-indexes.json"), {k: [d.get("login") for d in sorted(developers, key=fn, reverse=True)] for k, fn in sort_specs.items()})
 
+    projects = {}
+    for dev in developers:
+        owner_login = dev.get("login")
+        for repo in dev.get("top_repositories", []) or []:
+            repo_name = repo.get("full_name") or repo.get("name")
+            if not repo_name:
+                continue
+            project_key = repo_name.lower()
+            current = projects.get(project_key)
+            candidate = {
+                "id": project_key,
+                "name": repo.get("name"),
+                "full_name": repo.get("full_name") or repo.get("name"),
+                "url": repo.get("url"),
+                "description": repo.get("description"),
+                "language": repo.get("language"),
+                "stargazers_count": int(repo.get("stargazers_count", 0) or 0),
+                "forks_count": int(repo.get("forks_count", 0) or 0),
+                "updated_at": repo.get("updated_at"),
+                "pushed_at": repo.get("pushed_at"),
+                "topics": repo.get("topics", []),
+                "owner": owner_login,
+                "archived": bool(repo.get("archived", False)),
+                "is_fork": bool(repo.get("is_fork", False)),
+            }
+            if (not current) or (candidate["stargazers_count"], candidate["forks_count"], candidate.get("updated_at") or "") > (
+                current["stargazers_count"],
+                current["forks_count"],
+                current.get("updated_at") or "",
+            ):
+                projects[project_key] = candidate
+    projects_list = sorted(projects.values(), key=lambda p: (p.get("stargazers_count", 0), p.get("forks_count", 0), p.get("updated_at") or ""), reverse=True)
+    _write_json(os.path.join(WEB_DIR, "projects-index.json"), {"items": projects_list})
+
     charts = {
         "timeline": payload.get("aggregates", {}).get("activity_timeline", []),
         "languages": payload.get("aggregates", {}).get("language_leaderboard", [])[:15],
@@ -764,6 +835,7 @@ def build_site_outputs(payload, cfg):
         "sorted_indexes": "sorted-indexes.json",
         "stats_summary": "stats-summary.json",
         "charts": "charts.json",
+        "projects_index": "projects-index.json",
     }
     _write_json(os.path.join(WEB_DIR, "manifest.json"), manifest)
 
