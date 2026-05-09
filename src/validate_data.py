@@ -29,14 +29,20 @@ def validate_duplicate_usernames(data_dir):
     automated = []
 
     if users_path.exists():
-        with open(users_path, "r", encoding="utf-8") as f:
-            payload = json.load(f)
-            users = payload if isinstance(payload, list) else []
+        try:
+            with open(users_path, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+                users = payload if isinstance(payload, list) else []
+        except Exception:
+            users = []
 
     if automated_path.exists():
-        with open(automated_path, "r", encoding="utf-8") as f:
-            payload = json.load(f)
-            automated = payload.get("developers", []) if isinstance(payload, dict) else []
+        try:
+            with open(automated_path, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+                automated = payload.get("developers", []) if isinstance(payload, dict) else []
+        except Exception:
+            automated = []
 
     all_ids = {}
     ok = True
