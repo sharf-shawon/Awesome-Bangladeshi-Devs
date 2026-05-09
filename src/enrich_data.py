@@ -35,7 +35,8 @@ def rotate_token():
     print(f"Rotating to token index {CURRENT_TOKEN_IDX}...")
     return True
 
-# GraphQL Fragment
+# Optimized GraphQL Fragment
+# Reduced repos to 10, removed daily calendar (fetching totals directly)
 USER_FRAGMENT = """
 fragment UserProfile on User {
   login
@@ -48,7 +49,7 @@ fragment UserProfile on User {
   createdAt
   followers { totalCount }
   following { totalCount }
-  repositories(first: 50, orderBy: {field: STARGAZERS, direction: DESC}, isFork: false) {
+  repositories(first: 10, orderBy: {field: STARGAZERS, direction: DESC}, isFork: false) {
     nodes {
       name
       description
@@ -56,7 +57,7 @@ fragment UserProfile on User {
       stargazerCount
       forkCount
       primaryLanguage { name }
-      repositoryTopics(first: 10) {
+      repositoryTopics(first: 5) {
         nodes { topic { name } }
       }
       createdAt
@@ -68,20 +69,15 @@ fragment UserProfile on User {
     }
     totalCount
   }
-  contributionsCollection {
-    contributionCalendar {
-      totalContributions
-      weeks {
-        contributionDays {
-          contributionCount
-          date
-        }
-      }
-    }
+  yearlyContribs: contributionsCollection {
+    contributionCalendar { totalContributions }
     totalCommitContributions
     totalIssueContributions
     totalPullRequestContributions
     totalPullRequestReviewContributions
+  }
+  recentContribs: contributionsCollection(from: $thirtyDaysAgo) {
+    contributionCalendar { totalContributions }
   }
 }
 """
@@ -97,30 +93,21 @@ def gql(query, variables=None):
                 timeout=60,
             )
             
-            # Handle rate limiting by rotating tokens
             if r.status_code == 403 or r.status_code == 429:
-                print(f"Rate limit or forbidden error (HTTP {r.status_code}).")
-                if rotate_token():
-                    continue
-                else:
-                    r.raise_for_status()
+                if rotate_token(): continue
+                else: r.raise_for_status()
 
             r.raise_for_status()
             payload = r.json()
             
             if payload.get("errors"):
-                # Check for rate limit errors in GraphQL response
                 if any("rate limit" in str(e).lower() for e in payload["errors"]):
-                    print("GraphQL rate limit hit.")
-                    if rotate_token():
-                        continue
+                    if rotate_token(): continue
                 raise RuntimeError(payload["errors"])
                 
             return payload.get("data", {})
         except Exception as e:
-            print(f"Request error: {e}")
-            if rotate_token():
-                continue
+            if rotate_token(): continue
             raise e
     return {}
 
@@ -136,27 +123,8 @@ def load_yaml(path):
             return yaml.safe_load(f) or {}
     return {}
 
-def calculate_activity_score(user_data):
-    contribs = user_data.get("contributionsCollection", {})
-    calendar = contribs.get("contributionCalendar", {})
-    total_contribs = calendar.get("totalContributions", 0)
-    
-    recent_contribs = 0
-    now = datetime.now(timezone.utc)
-    thirty_days_ago = now - timedelta(days=30)
-    
-    for week in calendar.get("weeks", []):
-        for day in week.get("contributionDays", []):
-            date = datetime.strptime(day["date"], "%Y-%m-%d").replace(tzinfo=timezone.utc)
-            if date > thirty_days_ago:
-                recent_contribs += day["contributionCount"]
-                
-    score = (total_contribs * 0.1) + (recent_contribs * 0.9)
-    return round(score, 2)
-
 def process_user_data(user):
-    if not user:
-        return None
+    if not user: return None
         
     repos_nodes = user.get("repositories", {}).get("nodes", [])
     repos = []
@@ -190,6 +158,14 @@ def process_user_data(user):
             topics[t] = topics.get(t, 0) + 1
     top_topics = sorted(topics.items(), key=lambda x: x[1], reverse=True)[:10]
 
+    # Optimized Score Calculation
+    yearly = user.get("yearlyContribs", {})
+    recent = user.get("recentContribs", {})
+    total_y = yearly.get("contributionCalendar", {}).get("totalContributions", 0)
+    total_r = recent.get("contributionCalendar", {}).get("totalContributions", 0)
+    
+    score = (total_y * 0.1) + (total_r * 0.9)
+
     return {
         "username": user["login"],
         "name": user["name"] or user["login"],
@@ -203,23 +179,21 @@ def process_user_data(user):
         "following": user["following"]["totalCount"],
         "public_repos": user.get("repositories", {}).get("totalCount", len(repos)),
         "last_active": repos[0]["pushedAt"] if repos else None,
-        "activity_score": calculate_activity_score(user),
+        "activity_score": round(score, 2),
         "top_languages": [l[0] for l in top_langs],
         "top_topics": [t[0] for t in top_topics],
-        "featured_repos": repos[:10],
+        "featured_repos": repos,
         "last_repo_fetched_at": datetime.now(timezone.utc).isoformat(),
         "schema_version": "1.0"
     }
 
 def main():
     if not TOKENS:
-        print("No GitHub tokens found. Set GH_TOKENS environment variable.")
+        print("No GitHub tokens found.")
         return
 
     users = load_json(USERS_JSON)
-    if not users:
-        print("No users found in users.json")
-        return
+    if not users: return
 
     enriched_data = load_json(ENRICHED_JSON, default={})
     if isinstance(enriched_data, list):
@@ -228,39 +202,35 @@ def main():
     overrides = load_yaml(OVERRIDES_YML)
     now = datetime.now(timezone.utc)
     week_ago = now - timedelta(days=7)
+    thirty_days_ago = (now - timedelta(days=30)).isoformat()
     
     to_enrich = []
     for user_entry in users:
         login = user_entry.get("github_username")
         if not login: continue
-        
         existing = enriched_data.get(login)
         if existing:
             last_fetch = datetime.fromisoformat(existing["last_repo_fetched_at"].replace("Z", "+00:00"))
-            if last_fetch > week_ago:
-                continue
+            if last_fetch > week_ago: continue
         to_enrich.append(login)
 
     print(f"Users to enrich: {len(to_enrich)}")
     
-    batch_size = 10
+    batch_size = 30 # Increased batch size
     updated_count = 0
-    failed_logins = []
     
     for i in range(0, len(to_enrich), batch_size):
         batch = to_enrich[i : i + batch_size]
-        query_parts = ["query {"]
+        query_parts = ["query($thirtyDaysAgo: DateTime!) {"]
         for idx, login in enumerate(batch):
             query_parts.append(f"  user{idx}: user(login: \"{login}\") {{ ...UserProfile }}")
-        query_parts.append("  rateLimit { limit cost remaining resetAt }")
+        query_parts.append("  rateLimit { remaining }")
         query_parts.append("}")
         query_parts.append(USER_FRAGMENT)
         
         try:
-            data = gql("\n".join(query_parts))
-            if not data:
-                failed_logins.extend(batch)
-                continue
+            data = gql("\n".join(query_parts), {"thirtyDaysAgo": thirty_days_ago})
+            if not data: continue
 
             for idx, login in enumerate(batch):
                 user_raw = data.get(f"user{idx}")
@@ -271,43 +241,30 @@ def main():
                         enriched.update(user_overrides)
                         enriched_data[login] = enriched
                         updated_count += 1
-                    else:
-                        failed_logins.append(login)
-                else:
-                    print(f"User {login} not found in GitHub response.")
-                    failed_logins.append(login)
-
+            
+            # Rate limit logging
             if data.get("rateLimit"):
-                rl = data["rateLimit"]
-                print(f"Rate Limit Remaining: {rl['remaining']} (Token Index: {CURRENT_TOKEN_IDX})")
+                print(f"Batch {i//batch_size + 1} done. RL Remaining: {data['rateLimit']['remaining']}")
+            
+            # Incremental save every 150 users
+            if updated_count % 150 == 0:
+                with open(ENRICHED_JSON, "w", encoding="utf-8") as f:
+                    json.dump(list(enriched_data.values()), f, ensure_ascii=False, indent=2)
             
             time.sleep(1)
-            
         except Exception as e:
-            print(f"Batch processing failed: {e}")
-            failed_logins.extend(batch)
-            time.sleep(5)
+            print(f"Batch failed: {e}")
+            time.sleep(2)
 
-    # FINAL VALIDATION & INTEGRITY CHECK
-    # We only save if the total number of enriched users is at least 95% of what we expect
-    # or if we've successfully updated at least some users.
-    # This prevents accidental deletion of data if the API fails globally.
-    
-    total_expected = len(users)
-    total_current = len(enriched_data)
-    
-    print(f"Integrity check: {total_current}/{total_expected} users enriched.")
-    
-    if total_current < (total_expected * 0.9):
-        print("CRITICAL: Enrichment resulted in significant data loss (less than 90% of expected users). ABORTING SAVE.")
+    # Integrity Check
+    if len(enriched_data) < (len(users) * 0.9):
+        print("CRITICAL: Significant data loss detected. Aborting.")
         exit(1)
 
-    # Final save
-    final_list = list(enriched_data.values())
     with open(ENRICHED_JSON, "w", encoding="utf-8") as f:
-        json.dump(final_list, f, ensure_ascii=False, indent=2)
+        json.dump(list(enriched_data.values()), f, ensure_ascii=False, indent=2)
         
-    print(f"Successfully updated {updated_count} users. Failed/Skipped: {len(failed_logins)}")
+    print(f"Updated {updated_count} users.")
 
 if __name__ == "__main__":
     main()
