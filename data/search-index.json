@@ -1,0 +1,23 @@
+[
+  {
+    "id": "sharf-shawon",
+    "name": "Sharfuddin Shawon",
+    "bio": "Software Engineer | Community Builder",
+    "langs": [
+      "Python",
+      "JavaScript"
+    ],
+    "topics": [
+      "community",
+      "bangladesh"
+    ],
+    "r_names": [
+      "Awesome-Bangladeshi-Devs"
+    ],
+    "r_desc": [
+      "A curated list of awesome Bangladeshi developers on GitHub."
+    ],
+    "score": 100.0,
+    "followers": 18
+  }
+]

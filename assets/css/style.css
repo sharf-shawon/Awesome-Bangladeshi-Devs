@@ -1,0 +1,31 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+:root {
+  --blue-500: #3b82f6;
+  --green-500: #10b981;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.dev-card {
+  backface-visibility: hidden;
+}
+
+#search-input::placeholder {
+  color: #9ca3af;
+}
+
+@media (prefers-color-scheme: dark) {
+  #search-input {
+    color: white;
+  }
+}

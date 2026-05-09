@@ -1,0 +1,5 @@
+# Manual overrides and curation
+# Example:
+# sharf-shawon:
+#   aliases: ["shawon"]
+#   featured: true

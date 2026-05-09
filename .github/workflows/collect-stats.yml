@@ -1,21 +1,17 @@
-name: Collect GitHub stats
+name: Enrich Developer Data
 
 on:
   schedule:
     - cron: '0 23 * * *' # Daily at 11 PM UTC
   workflow_dispatch:
-    inputs:
-      config_path:
-        description: Path to metrics config
-        required: false
-        default: config/metrics.json
-        type: string
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  collect:
+  enrich:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,27 +25,56 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run collector
+      - name: Run Enricher
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          CONFIG_PATH: ${{ inputs.config_path || 'config/metrics.json' }}
-          GITHUB_APP_NAME: bd-github-collector
-        run: python src/collect_stats.py
+          GH_TOKENS: ${{ secrets.GH_TOKENS }}
+        run: python src/enrich_data.py
+
+      - name: Build Search Index
+        run: python src/build_search_index.py
 
       - name: Commit generated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/*.json
-          git diff --cached --quiet || git commit -m "chore(data): update github stats"
+          git diff --cached --quiet || git commit -m "chore(data): enriched user data and search index"
           git push
 
-      - name: Tag and release
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          TAG=$(date -u +'%Y-%m-%d')
-          git tag -f $TAG
-          git push origin $TAG --force
-          gh release delete $TAG --yes || true
-          gh release create $TAG --title "Stats for $TAG" --notes "Automated daily stats collection"
+  build_site:
+    needs: enrich
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Eleventy Site
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './_site'
+
+  deploy_site:
+    needs: build_site
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

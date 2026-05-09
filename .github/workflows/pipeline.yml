@@ -28,6 +28,8 @@ permissions:
   contents: write
   issues: write
   pull-requests: write
+  pages: write
+  id-token: write
 
 jobs:
   # 1. Validation Phase (Run on everything)
@@ -175,11 +177,13 @@ jobs:
           GA_ID: ${{ secrets.GOOGLE_ANALYTICS }}
         run: |
           if [ -n "$GA_ID" ]; then
-            sed -i "s/GOOGLE_ANALYTICS_ID/$GA_ID/g" _config.yml
+            # We'll inject this into the base.njk layout for Eleventy
+            sed -i "s/GOOGLE_ANALYTICS_ID/$GA_ID/g" site/_includes/base.njk
             echo "Google Analytics ID injected."
           else
-            sed -i "/google_analytics: GOOGLE_ANALYTICS_ID/d" _config.yml
-            echo "No Google Analytics ID secret found. Removing placeholder from config."
+            # Remove the script tag if no ID is found
+            sed -i '/GOOGLE_ANALYTICS_ID/d' site/_includes/base.njk
+            echo "No Google Analytics ID secret found. Cleaning up layout."
           fi
 
       - name: Generate README
@@ -338,6 +342,49 @@ jobs:
             --notes "Monthly archive of the Top Bangladeshi Developers list and statistics for ${MONTH_YEAR}." \
             --target main \
             "$LATEST_DATA" README.md
+
+  # 5. Build and Deploy Site (Only on push or successful issue processing)
+  build_site:
+    needs: deploy
+    if: |
+      github.event_name == 'push' || 
+      (github.event_name == 'issues' && needs.deploy.result == 'success') ||
+      github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Eleventy Site
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './_site'
+
+  deploy_site:
+    needs: build_site
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
   # 4. Global Error Handler for Issues
   notify_failure:

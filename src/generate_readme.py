@@ -62,12 +62,14 @@ def load_json(path):
 
 def get_stats_data():
     """Returns (latest_stats, previous_stats, latest_date)"""
-    # Prefer automated.json as per instructions
-    automated_path = os.path.join(DATA_DIR, "automated.json")
-    if os.path.exists(automated_path):
-        latest_data = load_json(automated_path)
-        latest_date = latest_data.get("run_date")
-        latest_devs = latest_data.get("developers", []) if isinstance(latest_data, dict) else []
+    # Prefer users-enriched.json
+    enriched_path = os.path.join(DATA_DIR, "users-enriched.json")
+    if os.path.exists(enriched_path):
+        latest_devs = load_json(enriched_path)
+        # Map username to login for compatibility with existing README generation logic
+        for dev in latest_devs:
+            if "username" in dev:
+                dev["login"] = dev["username"]
         
         # Look for the previous dated file for growth calculation
         files = sorted(glob.glob(os.path.join(DATA_DIR, "????-??-??.json")), reverse=True)
@@ -75,6 +77,8 @@ def get_stats_data():
         if files:
             prev_data = load_json(files[0])
             previous_devs = prev_data.get("developers", []) if isinstance(prev_data, dict) else []
+        
+        latest_date = datetime.now().date().isoformat()
         return latest_devs, previous_devs, latest_date
 
     files = sorted(glob.glob(os.path.join(DATA_DIR, "????-??-??.json")), reverse=True)

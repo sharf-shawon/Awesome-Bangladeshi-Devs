@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title or "Awesome Bangladeshi Devs" }}</title>
+  <meta name="description" content="{{ description or 'Discover and explore the work of talented Bangladeshi developers on GitHub.' }}">
+  
+  <!-- SEO -->
+  <link rel="canonical" href="https://sharf-shawon.github.io/Awesome-Bangladeshi-Devs{{ page.url }}">
+  <meta property="og:title" content="{{ title or 'Awesome Bangladeshi Devs' }}">
+  <meta property="og:description" content="{{ description or 'Discover and explore the work of talented Bangladeshi developers on GitHub.' }}">
+  <meta property="og:url" content="https://sharf-shawon.github.io/Awesome-Bangladeshi-Devs{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GOOGLE_ANALYTICS_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GOOGLE_ANALYTICS_ID');
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
+  <header class="border-b dark:border-gray-800 py-4 mb-8">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <a href="/" class="text-xl font-bold">Awesome Bangladeshi Devs</a>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="/" class="hover:text-blue-500">Directory</a></li>
+          <li><a href="/stats/" class="hover:text-blue-500">Stats</a></li>
+          <li><a href="https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs" class="hover:text-blue-500">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4">
+    {{ content | safe }}
+  </main>
+
+  <footer class="mt-16 py-8 border-t dark:border-gray-800 text-center text-gray-500 text-sm">
+    <p>&copy; {{ "" | readableDate }} Awesome Bangladeshi Devs. Created by the community.</p>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

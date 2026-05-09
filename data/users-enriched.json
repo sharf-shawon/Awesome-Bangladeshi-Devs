@@ -1,0 +1,47 @@
+[
+  {
+    "username": "sharf-shawon",
+    "name": "Sharfuddin Shawon",
+    "avatar_url": "https://github.com/sharf-shawon.png",
+    "bio": "Software Engineer | Community Builder",
+    "location": "Puran Dhaka, Bangladesh",
+    "company": null,
+    "blog": "https://shawon.me",
+    "created_at": "2015-01-01T00:00:00Z",
+    "followers": 18,
+    "following": 5,
+    "public_repos": 70,
+    "last_active": "2024-05-08T00:00:00Z",
+    "activity_score": 100.0,
+    "top_languages": [
+      "Python",
+      "JavaScript"
+    ],
+    "top_topics": [
+      "community",
+      "bangladesh"
+    ],
+    "featured_repos": [
+      {
+        "name": "Awesome-Bangladeshi-Devs",
+        "description": "A curated list of awesome Bangladeshi developers on GitHub.",
+        "url": "https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs",
+        "stargazerCount": 150,
+        "forkCount": 20,
+        "primaryLanguage": "Python",
+        "topics": [
+          "community",
+          "bangladesh"
+        ],
+        "createdAt": "2023-01-01T00:00:00Z",
+        "pushedAt": "2024-05-08T00:00:00Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": null,
+        "license": "MIT"
+      }
+    ],
+    "last_repo_fetched_at": "2024-05-08T00:00:00Z",
+    "schema_version": "1.0"
+  }
+]

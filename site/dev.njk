@@ -1,0 +1,116 @@
+---
+layout: base.njk
+pagination:
+  data: enriched
+  size: 1
+  alias: user
+permalink: "/dev/{{ user.username | lower }}/index.html"
+eleventyComputed:
+  title: "{{ user.name }} (@{{ user.username }}) - Awesome Bangladeshi Devs"
+  description: "Check out {{ user.name }}'s GitHub profile, top languages, and featured projects on Awesome Bangladeshi Devs."
+---
+
+<div class="max-w-4xl mx-auto">
+  <div class="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
+    <img src="{{ user.avatar_url }}" alt="{{ user.name }}" class="w-48 h-48 rounded-full shadow-lg border-4 border-white dark:border-gray-800">
+    <div class="text-center md:text-left">
+      <h1 class="text-4xl font-bold mb-2">{{ user.name }}</h1>
+      <p class="text-xl text-gray-500 mb-4">@{{ user.username }}</p>
+      
+      {% if user.bio %}
+        <p class="text-lg mb-4">{{ user.bio }}</p>
+      {% endif %}
+
+      <div class="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-400">
+        {% if user.location %}
+          <span>📍 {{ user.location }}</span>
+        {% endif %}
+        {% if user.company %}
+          <span>🏢 {{ user.company }}</span>
+        {% endif %}
+        {% if user.blog %}
+          <span>🔗 <a href="{{ user.blog }}" class="hover:text-blue-500">{{ user.blog }}</a></span>
+        {% endif %}
+        <span>📅 Joined {{ user.created_at | readableDate }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl text-center">
+      <p class="text-3xl font-bold text-blue-500">{{ user.followers }}</p>
+      <p class="text-sm uppercase tracking-wider text-gray-500">Followers</p>
+    </div>
+    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl text-center">
+      <p class="text-3xl font-bold text-green-500">{{ user.activity_score }}</p>
+      <p class="text-sm uppercase tracking-wider text-gray-500">Activity Score</p>
+    </div>
+    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl text-center">
+      <p class="text-3xl font-bold text-purple-500">{{ user.public_repos }}</p>
+      <p class="text-sm uppercase tracking-wider text-gray-500">Public Repos</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <section>
+      <h2 class="text-2xl font-bold mb-6">Top Languages</h2>
+      <div class="flex flex-wrap gap-2">
+        {% for lang in user.top_languages %}
+          <span class="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full font-medium">{{ lang }}</span>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold mb-6">Expertise & Topics</h2>
+      <div class="flex flex-wrap gap-2">
+        {% for topic in user.top_topics %}
+          <span class="px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-full font-medium">{{ topic }}</span>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+
+  <section class="mt-16">
+    <h2 class="text-2xl font-bold mb-8">Featured Repositories</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {% for repo in user.featured_repos %}
+        <div class="border dark:border-gray-800 p-6 rounded-xl hover:shadow-md transition-shadow">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-xl font-bold"><a href="{{ repo.url }}" class="hover:text-blue-500">{{ repo.name }}</a></h3>
+            <span class="text-sm text-gray-500">⭐ {{ repo.stargazerCount }}</span>
+          </div>
+          <p class="text-gray-600 dark:text-gray-400 mb-4 line-clamp-2 h-12">{{ repo.description or "No description provided." }}</p>
+          <div class="flex justify-between items-center text-sm">
+            <span class="font-medium text-blue-500">{{ repo.primaryLanguage or "Plain Text" }}</span>
+            <span class="text-gray-400">Updated {{ repo.pushedAt | readableDate }}</span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <div class="mt-16 text-center">
+    <a href="https://github.com/{{ user.username }}" class="inline-block px-8 py-3 bg-black dark:bg-white text-white dark:text-black font-bold rounded-lg hover:opacity-80">View on GitHub</a>
+  </div>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ user.name }}",
+  "alternateName": "{{ user.username }}",
+  "url": "https://github.com/{{ user.username }}",
+  "image": "{{ user.avatar_url }}",
+  "description": "{{ user.bio }}",
+  "sameAs": [
+    "{{ user.blog }}"
+  ],
+  "jobTitle": "{{ user.company }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{{ user.location }}"
+  }
+}
+</script>

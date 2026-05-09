@@ -1,0 +1,57 @@
+---
+layout: base.njk
+title: Awesome Bangladeshi Devs - Discover Top GitHub Talent
+description: Explore, search, and discover the most active and talented Bangladeshi developers on GitHub.
+---
+
+<div class="py-12 text-center">
+  <h1 class="text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">Discover Bangladeshi GitHub Talent</h1>
+  <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Explore a curated directory of thousands of Bangladeshi developers, ranked by activity, contributions, and project impact.</p>
+</div>
+
+<!-- Search Section -->
+<div class="max-w-3xl mx-auto mb-16 sticky top-4 z-10">
+  <div class="relative">
+    <input type="text" id="search-input" placeholder="Search by name, username, language, or topic..." class="w-full px-6 py-4 rounded-full border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:border-blue-500 shadow-xl text-lg">
+    <div id="search-results-count" class="absolute right-6 top-1/2 -translate-y-1/2 text-sm text-gray-400"></div>
+  </div>
+  
+  <div class="flex flex-wrap justify-center gap-2 mt-4" id="quick-filters">
+    <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="Python">Python</button>
+    <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="JavaScript">JavaScript</button>
+    <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="TypeScript">TypeScript</button>
+    <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="Go">Go</button>
+    <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="Rust">Rust</button>
+  </div>
+</div>
+
+<!-- Results Grid -->
+<div id="dev-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {% for user in enriched | sort(true, false, 'activity_score') | limit(24) %}
+    <div class="dev-card border dark:border-gray-800 p-6 rounded-2xl hover:shadow-lg transition-all group">
+      <div class="flex items-center gap-4 mb-4">
+        <img src="{{ user.avatar_url }}" alt="{{ user.name }}" class="w-16 h-16 rounded-full group-hover:scale-110 transition-transform">
+        <div>
+          <h3 class="font-bold text-lg"><a href="/dev/{{ user.username | lower }}/" class="hover:text-blue-500">{{ user.name }}</a></h3>
+          <p class="text-sm text-gray-500">@{{ user.username }}</p>
+        </div>
+      </div>
+      <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2 h-10">{{ user.bio or "No bio available." }}</p>
+      <div class="flex flex-wrap gap-1 mb-4 h-12 overflow-hidden">
+        {% for lang in user.top_languages | limit(3) %}
+          <span class="text-xs px-2 py-1 bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 rounded">{{ lang }}</span>
+        {% endfor %}
+      </div>
+      <div class="flex justify-between items-center text-xs text-gray-400 border-t dark:border-gray-800 pt-4">
+        <span>⭐ {{ user.followers }} followers</span>
+        <span class="font-bold text-green-500">{{ user.activity_score }} activity</span>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<div id="no-results" class="hidden py-12 text-center text-gray-500">
+  <p class="text-xl">No developers found matching your search.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>

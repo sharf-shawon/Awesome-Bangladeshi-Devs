@@ -1,0 +1,47 @@
+---
+layout: base.njk
+title: Ecosystem Insights - Awesome Bangladeshi Devs
+description: Explore trends, language distributions, and growth statistics for the Bangladeshi developer community on GitHub.
+---
+
+<div class="py-12">
+  <h1 class="text-4xl font-bold mb-8 text-center">Ecosystem Insights</h1>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+    <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl">
+      <h2 class="text-2xl font-bold mb-6">Top Languages</h2>
+      <div class="space-y-4">
+        {% for lang in stats.topLanguages %}
+          <div class="flex items-center gap-4">
+            <a href="/languages/{{ lang.name | lower | slugify }}/" class="w-32 hover:text-blue-500 font-medium">{{ lang.name }}</a>
+            <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+              <div class="bg-blue-500 h-full" style="width: {{ lang.percentage }}%"></div>
+            </div>
+            <span class="w-12 text-right text-sm text-gray-500">{{ lang.percentage }}%</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl text-center flex flex-col justify-center">
+      <h2 class="text-2xl font-bold mb-4">Total Community Size</h2>
+      <p class="text-6xl font-extrabold text-blue-500 mb-2">{{ stats.totalUsers }}</p>
+      <p class="text-gray-500 uppercase tracking-widest">Enriched Profiles</p>
+    </div>
+  </div>
+
+  <section>
+    <h2 class="text-2xl font-bold mb-8 text-center">Most Active This Month</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {% for user in stats.mostActive %}
+        <div class="bg-white dark:bg-gray-900 border dark:border-gray-800 p-6 rounded-xl flex items-center gap-4">
+           <img src="{{ user.avatar_url }}" class="w-12 h-12 rounded-full">
+           <div>
+             <a href="/dev/{{ user.username | lower }}/" class="font-bold hover:text-blue-500">{{ user.name }}</a>
+             <p class="text-xs text-green-500 font-medium">{{ user.activity_score }} score</p>
+           </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>

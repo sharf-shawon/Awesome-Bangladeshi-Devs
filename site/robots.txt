@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sharf-shawon.github.io/Awesome-Bangladeshi-Devs/sitemap.xml
