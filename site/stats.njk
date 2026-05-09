@@ -13,7 +13,7 @@ description: Explore trends, language distributions, and growth statistics for t
       <div class="space-y-4">
         {% for lang in stats.topLanguages %}
           <div class="flex items-center gap-4">
-            <a href="/languages/{{ lang.name | lower | slugify }}/" class="w-32 hover:text-blue-500 font-medium">{{ lang.name }}</a>
+            <a href="{{ ('/languages/' + lang.name | slugifyLang + '/') | url }}" class="w-32 hover:text-blue-500 font-medium">{{ lang.name }}</a>
             <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
               <div class="bg-blue-500 h-full" style="width: {{ lang.percentage }}%"></div>
             </div>
@@ -37,7 +37,7 @@ description: Explore trends, language distributions, and growth statistics for t
         <div class="bg-white dark:bg-gray-900 border dark:border-gray-800 p-6 rounded-xl flex items-center gap-4">
            <img src="{{ user.avatar_url }}" class="w-12 h-12 rounded-full">
            <div>
-             <a href="/dev/{{ user.username | lower }}/" class="font-bold hover:text-blue-500">{{ user.name }}</a>
+             <a href="{{ ('/dev/' + user.username | lower + '/') | url }}" class="font-bold hover:text-blue-500">{{ user.name }}</a>
              <p class="text-xs text-green-500 font-medium">{{ user.activity_score }} score</p>
            </div>
         </div>

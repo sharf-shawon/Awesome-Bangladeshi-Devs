@@ -13,3 +13,4 @@ __pycache__/
 .idea/
 .vscode/PythonImportHelper-v2-Completion.json
 .coverage
+node_modules/

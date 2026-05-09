@@ -25,7 +25,7 @@ eleventyExcludeFromCollections: true
   {% endfor %}
   {% for lang in languages %}
   <url>
-    <loc>https://sharf-shawon.github.io/Awesome-Bangladeshi-Devs/languages/{{ lang | lower | slugify }}/</loc>
+    <loc>https://sharf-shawon.github.io/Awesome-Bangladeshi-Devs/languages/{{ lang | slugifyLang }}/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>

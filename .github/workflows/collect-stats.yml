@@ -54,11 +54,17 @@ jobs:
               git rebase origin/main
               sleep $((i * 2))
             done
-            echo "Failed to push after $MAX_RETRIES attempts."
-            exit 1
+            # We don't exit 1 here because we still want to try building the site with artifacts
+            echo "Failed to push after $MAX_RETRIES attempts, but continuing to build."
           else
             echo "No changes to commit."
           fi
+
+      - name: Upload enriched data
+        uses: actions/upload-artifact@v4
+        with:
+          name: enriched-data
+          path: data/*.json
 
   build_site:
     needs: enrich
@@ -66,6 +72,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Download enriched data
+        uses: actions/download-artifact@v4
+        with:
+          name: enriched-data
+          path: data/
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

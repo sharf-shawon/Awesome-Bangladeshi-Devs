@@ -224,6 +224,12 @@ jobs:
             echo "No changes to commit."
           fi
 
+      - name: Upload updated data
+        uses: actions/upload-artifact@v4
+        with:
+          name: updated-data
+          path: data/*.json
+
       - name: Comment and Close Issue
         if: github.event_name == 'issues' && always()
         env:
@@ -354,6 +360,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Download updated data
+        uses: actions/download-artifact@v4
+        with:
+          name: updated-data
+          path: data/
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

@@ -10,6 +10,15 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromISO(dateObj, { zone: "utc" }).toLocaleString(DateTime.DATE_FULL);
   });
 
+  eleventyConfig.addFilter("slugifyLang", (str) => {
+    if (!str) return "";
+    return str.toLowerCase()
+      .replace(/[+]/g, 'p')
+      .replace(/[#]/g, 'sharp')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+  });
+
   eleventyConfig.addFilter("limit", function(array, limit) {
     return array.slice(0, limit);
   });
@@ -22,6 +31,7 @@ module.exports = function(eleventyConfig) {
     },
     templateFormats: ["md", "njk", "html"],
     markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk"
+    htmlTemplateEngine: "njk",
+    pathPrefix: "/Awesome-Bangladeshi-Devs/"
   };
 };

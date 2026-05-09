@@ -32,7 +32,7 @@ description: Explore, search, and discover the most active and talented Banglade
       <div class="flex items-center gap-4 mb-4">
         <img src="{{ user.avatar_url }}" alt="{{ user.name }}" class="w-16 h-16 rounded-full group-hover:scale-110 transition-transform">
         <div>
-          <h3 class="font-bold text-lg"><a href="/dev/{{ user.username | lower }}/" class="hover:text-blue-500">{{ user.name }}</a></h3>
+          <h3 class="font-bold text-lg"><a href="{{ ('/dev/' + user.username | lower + '/') | url }}" class="hover:text-blue-500">{{ user.name }}</a></h3>
           <p class="text-sm text-gray-500">@{{ user.username }}</p>
         </div>
       </div>

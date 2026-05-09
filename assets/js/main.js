@@ -7,7 +7,7 @@ const quickFilters = document.querySelectorAll('#quick-filters button');
 
 async function initSearch() {
     try {
-        const response = await fetch('/data/search-index.json');
+        const response = await fetch(`${window.pathPrefix}data/search-index.json`);
         const data = await response.json();
 
         const options = {
@@ -90,7 +90,7 @@ function renderResults(results) {
             <div class="flex items-center gap-4 mb-4">
                 <img src="https://github.com/${user.id}.png" alt="${user.name}" class="w-16 h-16 rounded-full group-hover:scale-110 transition-transform">
                 <div>
-                    <h3 class="font-bold text-lg"><a href="/dev/${user.id.toLowerCase()}/" class="hover:text-blue-500">${user.name}</a></h3>
+                    <h3 class="font-bold text-lg"><a href="${window.pathPrefix}dev/${user.id.toLowerCase()}/" class="hover:text-blue-500">${user.name}</a></h3>
                     <p class="text-sm text-gray-500">@${user.id}</p>
                 </div>
             </div>
