@@ -29,7 +29,7 @@
     history.replaceState(null, "", `${location.pathname}?${params.toString()}`);
   };
 
-  const fetchJson = (p) => fetch(p, { cache: "no-store" }).then((r) => r.json());
+  const fetchJson = (p) => fetch(p, { cache: "no-cache" }).then((r) => r.json());
 
   const loadManifest = async () => {
     state.manifest = await fetchJson('/data/web/manifest.json');
