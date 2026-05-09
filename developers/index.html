@@ -10,11 +10,11 @@ permalink: /developers/
   <h1>Bangladeshi Developers</h1>
   <p class="lead">Real-time search and filtering across the community directory.</p>
   <form id="devFilters" class="filters" aria-label="Developer filters">
-    <label>Search <input type="search" id="q" placeholder="name, username, repo, skill…" /></label>
-    <label>Location <input type="text" id="location" placeholder="Dhaka" /></label>
-    <label>Language <input type="text" id="language" placeholder="Python" /></label>
-    <label>Skill <input type="text" id="skill" placeholder="Django, React" /></label>
-    <label>Sort
+    <label for="q">Search <input type="search" id="q" placeholder="name, username, repo, skill…" /></label>
+    <label for="location">Location <input type="text" id="location" placeholder="Dhaka" /></label>
+    <label for="language">Language <input type="text" id="language" placeholder="Python" /></label>
+    <label for="skill">Skill <input type="text" id="skill" placeholder="Django, React" /></label>
+    <label for="sort">Sort
       <select id="sort">
         <option value="activity">Activity</option>
         <option value="followers">Followers</option>
@@ -23,8 +23,8 @@ permalink: /developers/
         <option value="updated">Recently Active</option>
       </select>
     </label>
-    <label>Min Stars <input type="number" id="minStars" min="0" value="0" /></label>
-    <label>Min Forks <input type="number" id="minForks" min="0" value="0" /></label>
+    <label for="minStars">Min Stars <input type="number" id="minStars" min="0" value="0" /></label>
+    <label for="minForks">Min Forks <input type="number" id="minForks" min="0" value="0" /></label>
   </form>
   <div id="count" class="meta" aria-live="polite"></div>
   <div id="results" class="card-grid"></div>

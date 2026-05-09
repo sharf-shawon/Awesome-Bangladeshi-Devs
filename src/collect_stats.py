@@ -637,7 +637,8 @@ layout: null
   <script>
     (function () {{
       const root = document.getElementById("repoDetails");
-      if (!root || {str(has_repo_rows).lower()}) return;
+      const hasPreloadedRepos = {str(has_repo_rows).lower()};
+      if (!root || hasPreloadedRepos) return;
       const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({{"&":"&amp;","<":"&lt;",">":"&gt;","\\"":"&quot;","'":"&#39;"}}[c]));
       fetch("https://api.github.com/users/{escape(login)}/repos?per_page=12&sort=updated", {{ headers: {{ "Accept": "application/vnd.github+json" }} }})
         .then((r) => (r.ok ? r.json() : []))

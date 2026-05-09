@@ -10,10 +10,10 @@ permalink: /projects/
   <h1>Bangladeshi Projects</h1>
   <p class="lead">Explore repository activity, language distribution, and rising projects from Bangladeshi developers.</p>
   <form id="projectFilters" class="filters" aria-label="Project filters">
-    <label>Search <input type="search" id="pq" placeholder="repo, description, owner, topic…" /></label>
-    <label>Language <input type="text" id="planguage" placeholder="JavaScript" /></label>
-    <label>Owner <input type="text" id="powner" placeholder="GitHub username" /></label>
-    <label>Sort
+    <label for="pq">Search <input type="search" id="pq" placeholder="repo, description, owner, topic…" /></label>
+    <label for="planguage">Language <input type="text" id="planguage" placeholder="JavaScript" /></label>
+    <label for="powner">Owner <input type="text" id="powner" placeholder="GitHub username" /></label>
+    <label for="psort">Sort
       <select id="psort">
         <option value="stars">Stars</option>
         <option value="forks">Forks</option>
@@ -21,8 +21,8 @@ permalink: /projects/
         <option value="name">Name</option>
       </select>
     </label>
-    <label>Min Stars <input type="number" id="pminStars" min="0" value="0" /></label>
-    <label>Min Forks <input type="number" id="pminForks" min="0" value="0" /></label>
+    <label for="pminStars">Min Stars <input type="number" id="pminStars" min="0" value="0" /></label>
+    <label for="pminForks">Min Forks <input type="number" id="pminForks" min="0" value="0" /></label>
   </form>
   <div id="projectCount" class="meta" aria-live="polite"></div>
   <div id="projectResults" class="card-grid"></div>
