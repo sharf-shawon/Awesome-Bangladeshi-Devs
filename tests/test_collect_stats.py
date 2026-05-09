@@ -164,3 +164,85 @@ def test_main_error(mock_mkdir, mock_open, mock_user, mock_candidates, mock_conf
     args, kwargs = mock_open.call_args_list[-1]
     # This is a bit tricky to check without better mocking of open
     assert mock_open.called
+
+def test_summarize_repositories():
+    repos = [
+        {
+            "name": "a",
+            "full_name": "u/a",
+            "html_url": "https://github.com/u/a",
+            "description": "Repo A",
+            "language": "Python",
+            "stargazers_count": 10,
+            "forks_count": 2,
+            "updated_at": "2026-05-01T00:00:00Z",
+            "pushed_at": "2026-05-02T00:00:00Z",
+            "topics": ["api", "backend"],
+        },
+        {
+            "name": "b",
+            "full_name": "u/b",
+            "html_url": "https://github.com/u/b",
+            "description": "Repo B",
+            "language": "Go",
+            "stargazers_count": 5,
+            "forks_count": 1,
+            "updated_at": "2026-05-03T00:00:00Z",
+            "pushed_at": "2026-05-03T00:00:00Z",
+            "topics": ["cli"],
+        },
+    ]
+    summary = collect_stats.summarize_repositories(repos, {"top_repos_per_user": 2})
+    assert summary["recent_repo_stars_sum"] == 15
+    assert summary["repo_forks_sum"] == 3
+    assert "Python" in summary["languages"]
+    assert "api" in summary["expertise_tags"]
+
+
+def test_build_site_outputs(tmp_path):
+    with patch.object(collect_stats, "WEB_DIR", str(tmp_path / "web")), \
+         patch.object(collect_stats, "DEVELOPERS_DIR", str(tmp_path / "developers")), \
+         patch.object(collect_stats, "ROOT", str(tmp_path)), \
+         patch.object(collect_stats, "SITEMAP_PATH", str(tmp_path / "sitemap.xml")), \
+         patch.object(collect_stats, "ROBOTS_PATH", str(tmp_path / "robots.txt")), \
+         patch("collect_stats.load_site_url", return_value="https://example.com"):
+        payload = {
+            "generated_at": "2026-05-09T00:00:00Z",
+            "run_date": "2026-05-09",
+            "developers": [
+                {
+                    "login": "user1",
+                    "name": "User 1",
+                    "profile_url": "https://github.com/user1",
+                    "location": "Dhaka",
+                    "followers": 10,
+                    "public_repos": 5,
+                    "recent_repo_stars_sum": 15,
+                    "repo_forks_sum": 3,
+                    "activity_score": 0.5,
+                    "last_active_at": "2026-05-09T00:00:00Z",
+                    "skills": ["Python"],
+                    "languages": ["Python"],
+                    "primary_languages": ["Python"],
+                    "expertise_tags": ["backend"],
+                    "top_repositories": [
+                        {"name": "repo", "url": "https://github.com/user1/repo", "stargazers_count": 10, "forks_count": 2, "language": "Python", "description": "d"}
+                    ],
+                    "followers_growth": 1,
+                    "stars_growth": 2,
+                }
+            ],
+            "aggregates": {
+                "activity_timeline": [{"date": "2026-05-09", "developers": 1, "total_contributions": 10, "average_score": 0.5}],
+                "language_leaderboard": [{"language": "Python", "developers": 1, "stars": 15}],
+                "location_leaderboard": [{"location": "Dhaka", "developers": 1}],
+                "rising_repositories": [{"repository": "u/r", "url": "https://github.com/u/r", "stars_growth": 2}],
+            },
+        }
+        collect_stats.build_site_outputs(payload, {"web_page_size": 1})
+
+        assert (tmp_path / "web" / "manifest.json").exists()
+        assert (tmp_path / "web" / "search-index.json").exists()
+        assert (tmp_path / "developers" / "user1" / "index.html").exists()
+        assert (tmp_path / "sitemap.xml").exists()
+        assert (tmp_path / "robots.txt").exists()

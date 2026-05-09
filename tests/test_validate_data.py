@@ -43,3 +43,30 @@ def test_main_real_call():
         # We can't easily trigger the if __name__ == "__main__" block directly without running the script
         # but we can call main() which is what it does.
         pass
+
+def test_validate_duplicate_usernames(tmp_path):
+    data_dir = tmp_path
+    users = [
+        {"github_username": "Foo.Bar"},
+        {"github_username": "foo-bar"},
+    ]
+    automated = {
+        "developers": [
+            {"login": "x"},
+            {"login": "X"},
+        ]
+    }
+    (data_dir / "users.json").write_text(json.dumps(users), encoding="utf-8")
+    (data_dir / "automated.json").write_text(json.dumps(automated), encoding="utf-8")
+
+    assert validate_data.validate_duplicate_usernames(data_dir) is False
+
+
+def test_validate_duplicate_usernames_ok(tmp_path):
+    data_dir = tmp_path
+    users = [{"github_username": "foo"}]
+    automated = {"developers": [{"login": "bar"}]}
+    (data_dir / "users.json").write_text(json.dumps(users), encoding="utf-8")
+    (data_dir / "automated.json").write_text(json.dumps(automated), encoding="utf-8")
+
+    assert validate_data.validate_duplicate_usernames(data_dir) is True
