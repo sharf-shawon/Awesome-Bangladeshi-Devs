@@ -5,19 +5,19 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sharf-shawon.github.io/Awesome-Bangladeshi-Devs/</loc>
+    <loc>https://awesome-bangladeshi-devs.shawon.me/</loc>
     <lastmod>{{ "" | readableDate }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sharf-shawon.github.io/Awesome-Bangladeshi-Devs/stats/</loc>
+    <loc>https://awesome-bangladeshi-devs.shawon.me/stats/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   {% for user in enriched %}
   <url>
-    <loc>https://sharf-shawon.github.io/Awesome-Bangladeshi-Devs/dev/{{ user.username | lower }}/</loc>
+    <loc>https://awesome-bangladeshi-devs.shawon.me/dev/{{ user.username | lower }}/</loc>
     <lastmod>{{ user.last_repo_fetched_at | readableDate }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -25,7 +25,7 @@ eleventyExcludeFromCollections: true
   {% endfor %}
   {% for lang in languages %}
   <url>
-    <loc>https://sharf-shawon.github.io/Awesome-Bangladeshi-Devs/languages/{{ lang | slugifyLang }}/</loc>
+    <loc>https://awesome-bangladeshi-devs.shawon.me/languages/{{ lang | slugifyLang }}/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
