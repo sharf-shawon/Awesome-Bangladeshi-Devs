@@ -303,6 +303,8 @@ def _clean_text(value):
 
 def _tokenize(*parts):
     text = " ".join(_clean_text(p).lower() for p in parts if p)
+    # Keep token chars commonly found in developer terms (c++, c#, node.js, ci-cd) and
+    # drop 1-char tokens to reduce noisy matches in the client-side search index.
     return sorted({t for t in re.split(r"[^a-z0-9+#.\-]+", text) if len(t) > 1})
 
 def summarize_repositories(repos, cfg):
@@ -749,6 +751,7 @@ def build_site_outputs(payload, cfg):
     _write_json(os.path.join(WEB_DIR, "stats-summary.json"), summary)
 
     version_source = {"generated_at": payload.get("generated_at"), "run_date": payload.get("run_date"), "developer_count": len(developers), "pages": page_files}
+    # 16 hex chars keeps URLs short while being stable enough for static-bundle cache busting.
     version_hash = hashlib.sha256(json.dumps(version_source, sort_keys=True).encode("utf-8")).hexdigest()[:16]
     manifest = {
         "version": version_hash,

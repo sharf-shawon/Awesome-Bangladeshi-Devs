@@ -29,13 +29,21 @@
     history.replaceState(null, "", `${location.pathname}?${params.toString()}`);
   };
 
-  const fetchJson = (p) => fetch(p, { cache: "no-cache" }).then((r) => r.json());
+  const fetchJson = (p, options = {}) =>
+    fetch(p, { cache: options.cache || "default" }).then((r) => {
+      if (!r.ok) throw new Error(`Failed to load ${p} (HTTP ${r.status})`);
+      return r.json();
+    });
+  const versioned = (p) => {
+    const v = state.manifest?.version;
+    return v ? `${p}?v=${encodeURIComponent(v)}` : p;
+  };
 
   const loadManifest = async () => {
-    state.manifest = await fetchJson('/data/web/manifest.json');
-    state.summary = await fetchJson(`/data/web/${state.manifest.stats_summary}`);
-    state.charts = await fetchJson(`/data/web/${state.manifest.charts}`);
-    state.index = (await fetchJson(`/data/web/${state.manifest.search_index}`)).items || [];
+    state.manifest = await fetchJson('/data/web/manifest.json', { cache: "no-cache" });
+    state.summary = await fetchJson(versioned(`/data/web/${state.manifest.stats_summary}`));
+    state.charts = await fetchJson(versioned(`/data/web/${state.manifest.charts}`));
+    state.index = (await fetchJson(versioned(`/data/web/${state.manifest.search_index}`))).items || [];
     el('meta').textContent = `Last updated: ${state.summary.generated_at || 'N/A'} · Developers: ${state.summary.total_developers || 0}`;
     renderCharts();
     await ensurePage(1);
@@ -46,14 +54,14 @@
     if (state.pages[num]) return;
     const file = state.manifest.directory_index[num - 1];
     if (!file) return;
-    const payload = await fetchJson(`/data/web/${file}`);
+    const payload = await fetchJson(versioned(`/data/web/${file}`));
     state.pages[num] = payload.developers || [];
     for (const d of state.pages[num]) state.developers.set(d.login, d);
   };
 
   const sortedIds = async () => {
     const sortBy = el('sort').value || 'activity';
-    const data = await fetchJson(`/data/web/${state.manifest.sorted_indexes}`);
+    const data = await fetchJson(versioned(`/data/web/${state.manifest.sorted_indexes}`));
     return data[sortBy] || [];
   };
 
