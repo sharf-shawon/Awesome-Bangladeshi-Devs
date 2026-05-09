@@ -25,8 +25,6 @@ OVERRIDES_YML = os.path.join(DATA_DIR, "overrides.yml")
 TOKENS = [t.strip() for t in (os.getenv("GH_TOKENS") or os.getenv("GH_TOKEN") or "").split(",") if t.strip()]
 CURRENT_TOKEN_IDX = 0
 
-log(f"Initialized with {len(TOKENS)} tokens.")
-
 def get_headers():
     headers = {
         "Accept": "application/vnd.github+json",
@@ -44,6 +42,27 @@ def rotate_token():
     CURRENT_TOKEN_IDX = (CURRENT_TOKEN_IDX + 1) % len(TOKENS)
     log(f"Rotating to token index {CURRENT_TOKEN_IDX}...")
     return True
+
+def validate_tokens():
+    valid_tokens = []
+    log(f"Validating {len(TOKENS)} tokens...")
+    for idx, token in enumerate(TOKENS):
+        try:
+            r = requests.get("https://api.github.com/rate_limit", headers={"Authorization": f"Bearer {token}"}, timeout=10)
+            if r.status_code == 200:
+                data = r.json()
+                remaining = data["resources"]["graphql"]["remaining"]
+                if remaining > 100:
+                    valid_tokens.append(token)
+                    log(f"Token {idx} is valid (RL: {remaining})")
+                else:
+                    log(f"Token {idx} is nearly exhausted (RL: {remaining}), skipping.")
+            else:
+                log(f"Token {idx} returned status {r.status_code}, skipping.")
+        except Exception as e:
+            log(f"Error validating token {idx}: {e}")
+    
+    return valid_tokens
 
 # Optimized GraphQL Fragment
 USER_FRAGMENT = """
@@ -88,7 +107,7 @@ fragment UserProfile on User {
 """
 
 def gql(query, variables=None):
-    max_retries = len(TOKENS) if TOKENS else 1
+    max_retries = len(TOKENS)
     for attempt in range(max_retries):
         try:
             r = requests.post(
@@ -98,10 +117,19 @@ def gql(query, variables=None):
                 timeout=60,
             )
             
+            # Handle rate limiting or secondary rate limits (Abuse detection)
             if r.status_code == 403 or r.status_code == 429:
-                log(f"Rate limit or forbidden (HTTP {r.status_code}).")
-                if rotate_token(): continue
-                else: r.raise_for_status()
+                body = r.text.lower()
+                if "secondary rate limit" in body or "abuse" in body:
+                    log(f"Secondary rate limit hit on token {CURRENT_TOKEN_IDX}. Waiting 30s...")
+                    time.sleep(30)
+                else:
+                    log(f"Primary rate limit hit on token {CURRENT_TOKEN_IDX}.")
+                
+                if rotate_token():
+                    continue
+                else:
+                    r.raise_for_status()
 
             r.raise_for_status()
             payload = r.json()
@@ -109,17 +137,23 @@ def gql(query, variables=None):
             if payload.get("errors"):
                 errors_str = str(payload["errors"])
                 if "rate limit" in errors_str.lower():
-                    log("GraphQL internal rate limit hit.")
-                    if rotate_token(): continue
-                log(f"GraphQL Errors encountered: {errors_str[:200]}...")
-                # We return the data even if there are errors for some users in the batch
+                    log(f"GraphQL internal rate limit on token {CURRENT_TOKEN_IDX}.")
+                    if rotate_token():
+                        continue
+                
+                # If it's a validation error or other GraphQL error, we return what we have
+                # but log the first error for debugging
+                log(f"GraphQL partial error: {errors_str[:200]}...")
             
             return payload.get("data") or {}
         except Exception as e:
-            log(f"Request error (Attempt {attempt+1}): {e}")
-            if rotate_token(): continue
+            log(f"Request error on token {CURRENT_TOKEN_IDX} (Attempt {attempt+1}/{max_retries}): {e}")
+            if rotate_token():
+                time.sleep(2)
+                continue
             raise e
-    return {}
+            
+    raise RuntimeError("Failed to complete GraphQL request after trying all available tokens.")
 
 def load_json(path, default=None):
     if os.path.exists(path):
@@ -203,29 +237,33 @@ def process_user_data(user):
     }
 
 def main():
+    global TOKENS
     if not TOKENS:
         log("CRITICAL: No GitHub tokens found. Exiting.")
         return
 
-    log("Loading users...")
+    # Validate tokens and filter out bad ones
+    TOKENS = validate_tokens()
+    if not TOKENS:
+        log("CRITICAL: No valid GitHub tokens available. Exiting.")
+        return
+
+    log("Loading data files...")
     users_raw = load_json(USERS_JSON)
     if not users_raw:
         log("No users found in users.json. Exiting.")
         return
-    log(f"Loaded {len(users_raw)} users from users.json.")
 
-    log("Loading enriched data...")
     enriched_data = load_json(ENRICHED_JSON, default={})
     if isinstance(enriched_data, list):
         enriched_data = {u["username"]: u for u in enriched_data}
-    log(f"Loaded {len(enriched_data)} existing enriched profiles.")
         
     overrides = load_yaml(OVERRIDES_YML)
     now = datetime.now(timezone.utc)
     week_ago = now - timedelta(days=7)
     thirty_days_ago = (now - timedelta(days=30)).isoformat()
     
-    log("Filtering users for enrichment...")
+    log("Filtering users...")
     to_enrich = []
     for user_entry in users_raw:
         login = user_entry.get("github_username")
@@ -240,11 +278,12 @@ def main():
 
     log(f"Total users needing enrichment: {len(to_enrich)}")
     if not to_enrich:
-        log("All users are up to date. Exiting.")
+        log("All users are up to date.")
         return
     
-    batch_size = 30
+    batch_size = 15 # Reduced for better reliability and faster initial feedback
     updated_count = 0
+    consecutive_failures = 0
     total_batches = (len(to_enrich) + batch_size - 1) // batch_size
     
     for i in range(0, len(to_enrich), batch_size):
@@ -275,23 +314,28 @@ def main():
                         users_processed_in_batch += 1
             
             log(f"Batch {batch_idx} complete: {users_processed_in_batch}/{len(batch)} users enriched.")
+            consecutive_failures = 0 # Reset on success
             
             if data.get("rateLimit"):
-                log(f"Rate Limit Remaining: {data['rateLimit']['remaining']}")
+                log(f"Token {CURRENT_TOKEN_IDX} RL Remaining: {data['rateLimit']['remaining']}")
             
             if updated_count % 300 == 0:
                 log(f"Saving progress... ({len(enriched_data)} users total)")
                 with open(ENRICHED_JSON, "w", encoding="utf-8") as f:
                     json.dump(list(enriched_data.values()), f, ensure_ascii=False, indent=2)
             
-            time.sleep(1)
+            time.sleep(0.5)
         except Exception as e:
-            log(f"Batch {batch_idx} failed: {e}")
+            log(f"Batch {batch_idx} FAILED fundamentally: {e}")
+            consecutive_failures += 1
+            if consecutive_failures >= 3:
+                log("CRITICAL: Too many consecutive failures. Aborting to prevent infinite loop.")
+                break
             time.sleep(5)
 
     log("Final integrity check...")
     if len(enriched_data) < (len(users_raw) * 0.9):
-        log("CRITICAL: Final user count is below 90% threshold. Aborting save to prevent data loss.")
+        log(f"CRITICAL: Integrity check failed ({len(enriched_data)}/{len(users_raw)}). Aborting save.")
         exit(1)
 
     log(f"Saving final data to {ENRICHED_JSON}...")
