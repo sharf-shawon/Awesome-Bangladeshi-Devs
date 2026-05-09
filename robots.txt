@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://awesome-bangladeshi-devs.shawon.me/sitemap.xml

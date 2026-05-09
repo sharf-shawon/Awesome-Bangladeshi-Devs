@@ -1,0 +1,297 @@
+{
+  "timeline": [
+    {
+      "date": "2026-04-22",
+      "developers": 25,
+      "total_contributions": 9928,
+      "average_score": 0.166578
+    },
+    {
+      "date": "2026-04-23",
+      "developers": 49,
+      "total_contributions": 10425,
+      "average_score": 0.104823
+    },
+    {
+      "date": "2026-04-24",
+      "developers": 49,
+      "total_contributions": 10513,
+      "average_score": 0.104649
+    },
+    {
+      "date": "2026-04-25",
+      "developers": 49,
+      "total_contributions": 10555,
+      "average_score": 0.104377
+    },
+    {
+      "date": "2026-04-26",
+      "developers": 49,
+      "total_contributions": 10607,
+      "average_score": 0.104612
+    },
+    {
+      "date": "2026-04-27",
+      "developers": 49,
+      "total_contributions": 10578,
+      "average_score": 0.104757
+    },
+    {
+      "date": "2026-04-27",
+      "developers": 49,
+      "total_contributions": 10578,
+      "average_score": 0.104757
+    },
+    {
+      "date": "2026-04-29",
+      "developers": 98,
+      "total_contributions": 18441,
+      "average_score": 0.070268
+    },
+    {
+      "date": "2026-04-30",
+      "developers": 98,
+      "total_contributions": 18443,
+      "average_score": 0.070032
+    },
+    {
+      "date": "2026-05-01",
+      "developers": 98,
+      "total_contributions": 18553,
+      "average_score": 0.069753
+    },
+    {
+      "date": "2026-05-02",
+      "developers": 98,
+      "total_contributions": 18823,
+      "average_score": 0.0695
+    },
+    {
+      "date": "2026-05-03",
+      "developers": 98,
+      "total_contributions": 18862,
+      "average_score": 0.069756
+    },
+    {
+      "date": "2026-05-04",
+      "developers": 98,
+      "total_contributions": 18957,
+      "average_score": 0.069177
+    },
+    {
+      "date": "2026-05-05",
+      "developers": 98,
+      "total_contributions": 19090,
+      "average_score": 0.06863
+    },
+    {
+      "date": "2026-05-06",
+      "developers": 99,
+      "total_contributions": 19283,
+      "average_score": 0.068019
+    },
+    {
+      "date": "2026-05-07",
+      "developers": 99,
+      "total_contributions": 19517,
+      "average_score": 0.068396
+    },
+    {
+      "date": "2026-05-08",
+      "developers": 98,
+      "total_contributions": 20383,
+      "average_score": 0.069465
+    }
+  ],
+  "languages": [],
+  "locations": [
+    {
+      "location": "Dhaka, Bangladesh",
+      "developers": 23
+    },
+    {
+      "location": "Bangladesh",
+      "developers": 13
+    },
+    {
+      "location": "Sylhet, Bangladesh",
+      "developers": 11
+    },
+    {
+      "location": "Sylhet",
+      "developers": 5
+    },
+    {
+      "location": "Unknown",
+      "developers": 2
+    },
+    {
+      "location": "Sylhet,Bangladesh",
+      "developers": 2
+    },
+    {
+      "location": "Sydney, Australia",
+      "developers": 2
+    },
+    {
+      "location": "Mirpur, Dhaka, Bangladesh",
+      "developers": 2
+    },
+    {
+      "location": "Dhaka,Bangladesh",
+      "developers": 2
+    },
+    {
+      "location": "Dhaka, Bangladesh.",
+      "developers": 2
+    },
+    {
+      "location": "Bogura, Bangladesh",
+      "developers": 2
+    },
+    {
+      "location": "WordPress",
+      "developers": 1
+    },
+    {
+      "location": "Void",
+      "developers": 1
+    },
+    {
+      "location": "Uttara Dhaka Bangladesh",
+      "developers": 1
+    },
+    {
+      "location": "Sylhet,Bangladesh.",
+      "developers": 1
+    }
+  ],
+  "rising_repositories": [],
+  "rising_developers": [
+    {
+      "login": "JubayerRiyad",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "mralaminahamed",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "md-sazzadul-islam",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "torifat",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "mdtanvirahamedshanto",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "progmamun",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "mugli",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "jhankarpHero",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "zhalok",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "ashrafbd1496",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "akbiplobx",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "nazmul-nhb",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "AbdurrahmanTalha",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "codersaiful",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "Mehedi364",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "akasifislam",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "ShibbirAhmad",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "EngrSaad2",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "sajjadrahman56",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "maacpiash",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "mehrazmorshed",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "noruzzamans",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "mominul",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "ahmedshahriar",
+      "followers_growth": 0,
+      "stars_growth": 0
+    },
+    {
+      "login": "Emad-ahmed",
+      "followers_growth": 0,
+      "stars_growth": 0
+    }
+  ]
+}
