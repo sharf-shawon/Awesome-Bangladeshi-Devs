@@ -24,8 +24,39 @@ body {
   color: #9ca3af;
 }
 
+#search-input {
+  color: #111827; /* Gray 900 */
+}
+
 @media (prefers-color-scheme: dark) {
   #search-input {
     color: white;
+    background-color: #1f2937; /* Gray 800 */
+    border-color: #374151; /* Gray 700 */
   }
+}
+
+.infinite-scroll-status {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  color: #6b7280;
+}
+
+.infinite-scroll-status.is-loading {
+  display: block;
+}
+
+.advanced-search-panel {
+  transition: all 0.3s ease;
+}
+
+.advanced-search-panel.hidden {
+  display: none;
+}
+
+/* Repository Filter Styles */
+.repo-filter-active {
+  background-color: #3b82f6;
+  color: white;
 }

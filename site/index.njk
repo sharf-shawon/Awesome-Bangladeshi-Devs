@@ -6,22 +6,59 @@ description: Explore, search, and discover the most active and talented Banglade
 
 <div class="py-12 text-center">
   <h1 class="text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">Discover Bangladeshi GitHub Talent</h1>
+  <div class="text-6xl font-black mb-6 text-gray-900 dark:text-white" id="total-count">
+    {{ enriched | length }}
+  </div>
   <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Explore a curated directory of thousands of Bangladeshi developers, ranked by activity, contributions, and project impact.</p>
 </div>
 
 <!-- Search Section -->
-<div class="max-w-3xl mx-auto mb-16 sticky top-4 z-10">
-  <div class="relative">
-    <input type="text" id="search-input" placeholder="Search by name, username, language, or topic..." class="w-full px-6 py-4 rounded-full border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:border-blue-500 shadow-xl text-lg">
-    <div id="search-results-count" class="absolute right-6 top-1/2 -translate-y-1/2 text-sm text-gray-400"></div>
+<div class="max-w-4xl mx-auto mb-16">
+  <div class="sticky top-4 z-20">
+    <div class="relative">
+      <input type="text" id="search-input" placeholder="Search by name, username, bio, language (e.g. 'python'), or topic (e.g. 'web')..." class="w-full px-6 py-4 rounded-full border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:border-blue-500 shadow-xl text-lg transition-all">
+      <div id="search-results-count" class="absolute right-6 top-1/2 -translate-y-1/2 text-sm text-gray-400"></div>
+    </div>
+    
+    <div class="flex flex-wrap justify-between items-center gap-4 mt-4 px-2">
+      <div class="flex flex-wrap gap-2" id="quick-filters">
+        <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="Python">Python</button>
+        <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="JavaScript">JavaScript</button>
+        <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="TypeScript">TypeScript</button>
+        <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="Go">Go</button>
+      </div>
+      
+      <button id="toggle-advanced" class="text-sm font-medium text-blue-500 hover:text-blue-600 flex items-center gap-1">
+        <span>Advanced Filters</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
   </div>
-  
-  <div class="flex flex-wrap justify-center gap-2 mt-4" id="quick-filters">
-    <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="Python">Python</button>
-    <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="JavaScript">JavaScript</button>
-    <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="TypeScript">TypeScript</button>
-    <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="Go">Go</button>
-    <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="Rust">Rust</button>
+
+  <!-- Advanced Search Panel -->
+  <div id="advanced-search-panel" class="hidden bg-gray-50 dark:bg-gray-800/50 p-6 rounded-2xl mt-4 border dark:border-gray-700">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Sort By</label>
+        <select id="sort-by" class="w-full bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg p-2 text-sm">
+          <option value="relevance">Relevance</option>
+          <option value="activity_score">Activity Score</option>
+          <option value="followers">Followers</option>
+          <option value="public_repos">Public Repos</option>
+          <option value="name">Name</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Min Followers</label>
+        <input type="number" id="min-followers" placeholder="0" class="w-full bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg p-2 text-sm">
+      </div>
+      <div>
+        <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Language</label>
+        <input type="text" id="lang-filter" placeholder="Filter by language..." class="w-full bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg p-2 text-sm">
+      </div>
+    </div>
   </div>
 </div>
 
@@ -52,6 +89,16 @@ description: Explore, search, and discover the most active and talented Banglade
 
 <div id="no-results" class="hidden py-12 text-center text-gray-500">
   <p class="text-xl">No developers found matching your search.</p>
+</div>
+
+<div id="infinite-scroll-status" class="infinite-scroll-status mb-12">
+  <div class="flex items-center justify-center gap-2">
+    <svg class="animate-spin h-5 w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+    </svg>
+    <span>Loading more developers...</span>
+  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>

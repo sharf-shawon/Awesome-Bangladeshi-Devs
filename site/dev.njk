@@ -32,7 +32,18 @@ eleventyComputed:
           <span>🔗 <a href="{{ user.blog }}" class="hover:text-blue-500">{{ user.blog }}</a></span>
         {% endif %}
         <span>📅 Joined {{ user.created_at | readableDate }}</span>
+        {% if user.last_active %}
+          <span class="text-green-500 font-medium">⚡ Last Active: {{ user.last_active | readableDate }}</span>
+        {% endif %}
       </div>
+    </div>
+  </div>
+
+  <!-- GitHub Activity Graph -->
+  <div class="mb-12">
+    <h2 class="text-2xl font-bold mb-6">GitHub Activity</h2>
+    <div class="bg-white dark:bg-gray-800 p-4 rounded-xl border dark:border-gray-700 overflow-x-auto">
+      <img src="https://ghchart.rshah.org/3b82f6/{{ user.username }}" alt="{{ user.username }}'s GitHub Activity Chart" class="max-w-full mx-auto">
     </div>
   </div>
 
@@ -72,10 +83,21 @@ eleventyComputed:
   </div>
 
   <section class="mt-16">
-    <h2 class="text-2xl font-bold mb-8">Featured Repositories</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
+      <h2 class="text-2xl font-bold">Repositories</h2>
+      <div class="flex flex-wrap gap-2" id="repo-filters">
+        <input type="text" id="repo-search" placeholder="Search repositories..." class="px-4 py-2 rounded-lg border dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:border-blue-500 text-sm">
+        <select id="repo-sort" class="px-4 py-2 rounded-lg border dark:border-gray-700 bg-white dark:bg-gray-800 text-sm">
+          <option value="stars">Stars</option>
+          <option value="updated">Recently Updated</option>
+          <option value="name">Name</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="repos-container" class="grid grid-cols-1 md:grid-cols-2 gap-6" data-username="{{ user.username }}">
       {% for repo in user.featured_repos %}
-        <div class="border dark:border-gray-800 p-6 rounded-xl hover:shadow-md transition-shadow">
+        <div class="repo-card border dark:border-gray-800 p-6 rounded-xl hover:shadow-md transition-shadow" data-stars="{{ repo.stargazerCount }}" data-name="{{ repo.name | lower }}" data-updated="{{ repo.pushedAt }}">
           <div class="flex justify-between items-start mb-4">
             <h3 class="text-xl font-bold"><a href="{{ repo.url }}" class="hover:text-blue-500">{{ repo.name }}</a></h3>
             <span class="text-sm text-gray-500">⭐ {{ repo.stargazerCount }}</span>
@@ -87,6 +109,12 @@ eleventyComputed:
           </div>
         </div>
       {% endfor %}
+    </div>
+
+    <div id="load-more-repos-container" class="mt-12 text-center">
+      <button id="load-more-repos" class="px-8 py-3 border-2 border-blue-500 text-blue-500 font-bold rounded-lg hover:bg-blue-500 hover:text-white transition-all">
+        Load More from GitHub
+      </button>
     </div>
   </section>
 

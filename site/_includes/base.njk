@@ -30,10 +30,12 @@
     <div class="container mx-auto px-4 flex justify-between items-center">
       <a href="{{ '/' | url }}" class="text-xl font-bold">Awesome Bangladeshi Devs</a>
       <nav>
-        <ul class="flex space-x-4">
-          <li><a href="{{ '/' | url }}" class="hover:text-blue-500">Directory</a></li>
-          <li><a href="{{ '/stats/' | url }}" class="hover:text-blue-500">Stats</a></li>
-          <li><a href="https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs" class="hover:text-blue-500">GitHub</a></li>
+        <ul class="flex flex-wrap items-center gap-4 md:gap-6 text-sm md:text-base">
+          <li><a href="{{ '/' | url }}" class="hover:text-blue-500 font-medium">Directory</a></li>
+          <li><a href="{{ '/projects/' | url }}" class="hover:text-blue-500 font-medium">Projects</a></li>
+          <li><a href="{{ '/stats/' | url }}" class="hover:text-blue-500 font-medium">Stats</a></li>
+          <li><a href="{{ '/languages/' | url }}" class="hover:text-blue-500 font-medium">Languages</a></li>
+          <li><a href="https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs" target="_blank" class="px-4 py-2 bg-black dark:bg-white text-white dark:text-black rounded-lg text-sm font-bold hover:opacity-80 transition-all">GitHub</a></li>
         </ul>
       </nav>
     </div>
