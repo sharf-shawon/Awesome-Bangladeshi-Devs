@@ -133068,7 +133068,7 @@
     "following": 43,
     "public_repos": 12,
     "last_active": "2026-05-05T15:45:43Z",
-    "activity_score": 25.5,
+    "activity_score": 15.6,
     "top_languages": [
       "Blade",
       "Java",
@@ -133227,7 +133227,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T23:52:15.682139+00:00",
+    "last_repo_fetched_at": "2026-05-10T07:13:17.459396+00:00",
     "schema_version": "1.0"
   },
   {
@@ -638634,7 +638634,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-10T07:13:17.459396+00:00",
+    "last_repo_fetched_at": "2026-05-10T23:54:47.810895+00:00",
     "schema_version": "1.0"
   }
 ]
