@@ -256,7 +256,7 @@ def main():
 
     enriched_data = load_json(ENRICHED_JSON, default={})
     if isinstance(enriched_data, list):
-        enriched_data = {u["username"]: u for u in enriched_data}
+        enriched_data = {u["username"].lower(): u for u in enriched_data}
         
     overrides = load_yaml(OVERRIDES_YML)
     now = datetime.now(timezone.utc)
@@ -268,7 +268,7 @@ def main():
     for user_entry in users_raw:
         login = user_entry.get("github_username")
         if not login: continue
-        existing = enriched_data.get(login)
+        existing = enriched_data.get(login.lower())
         if existing:
             try:
                 last_fetch = datetime.fromisoformat(existing["last_repo_fetched_at"].replace("Z", "+00:00"))
@@ -309,7 +309,7 @@ def main():
                     if enriched:
                         user_overrides = overrides.get(login, {})
                         enriched.update(user_overrides)
-                        enriched_data[login] = enriched
+                        enriched_data[login.lower()] = enriched
                         updated_count += 1
                         users_processed_in_batch += 1
             

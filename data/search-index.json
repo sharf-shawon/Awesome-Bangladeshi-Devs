@@ -123451,40 +123451,5 @@
     ],
     "score": 15.0,
     "followers": 3
-  },
-  {
-    "id": "tahajjat",
-    "name": "Mir Tahajjat  Hossain",
-    "bio": "Technical Lead @ The Entourage Effect",
-    "langs": [
-      "Blade",
-      "Java",
-      "HTML"
-    ],
-    "topics": [],
-    "r_names": [
-      "devflow-skills",
-      "student-management-system",
-      "task-management-rest-api",
-      "Tahajjat",
-      "dbl-pharma-expense-management",
-      "gitone",
-      "portfolio-web-page",
-      "FreeCodeCampProject",
-      "apparelunlimited",
-      "gitFirstApp"
-    ],
-    "r_desc": [
-      "Structured AI prompt skills for Claude Code and Claude.ai covering the full development lifecycle — from requirement analysis to performance audit and commit. Language-agnostic, framework-flexible.",
-      "A web-based Student Management System designed to streamline student, batch, attendance, payment, and SMS communication processes for educational institutions. The system enables administrators to efficiently manage student records, monitor attendance, track payments, generate reports, and send automated SMS notifications to students and guardians.",
-      "Task Management REST API built with Spring Boot and PostgreSQL for LinkedIn tutorial series.",
-      "Android app for pharma sales representatives to manage expense claims, approvals, and reporting with SQLite and API integration.",
-      "gitone",
-      "My personal portfolio web page",
-      "Solutions to problems and projects from FreeCodeCamp.",
-      "Apparel  Unlimited  eCommerce  application  "
-    ],
-    "score": 15.6,
-    "followers": 6
   }
 ]
