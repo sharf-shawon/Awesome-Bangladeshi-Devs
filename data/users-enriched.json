@@ -638461,5 +638461,245 @@
     ],
     "last_repo_fetched_at": "2026-05-09T19:33:58.683115+00:00",
     "schema_version": "1.0"
+  },
+  {
+    "username": "chayanforyou",
+    "name": "Chayan Mistry",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12654289?u=5db9cb2327ada2257e3878664d5eae0d4e90de8a&v=4",
+    "bio": "Software Engineer | Robotics Learner",
+    "location": "Dhaka, Bangladesh",
+    "company": "Square Health Ltd.",
+    "blog": "https://chayanforyou.github.io",
+    "created_at": "2015-05-29T05:01:52Z",
+    "followers": 107,
+    "following": 35,
+    "public_repos": 94,
+    "last_active": "2026-05-11T17:16:26Z",
+    "activity_score": 97.1,
+    "top_languages": [
+      "Dart",
+      "C++",
+      "Kotlin"
+    ],
+    "top_topics": [
+      "flutter",
+      "remote-control",
+      "remote",
+      "android",
+      "animation",
+      "accessibility-service",
+      "floating-ball",
+      "floating-widget",
+      "kotlin-android",
+      "quick-action"
+    ],
+    "featured_repos": [
+      {
+        "name": "QuickBall",
+        "description": "A Quick Action Ball that gives fast access to system controls (volume, brightness, lock) with smart positioning",
+        "url": "https://github.com/chayanforyou/QuickBall",
+        "stargazerCount": 141,
+        "forkCount": 9,
+        "primaryLanguage": "Kotlin",
+        "topics": [
+          "accessibility-service",
+          "floating-ball",
+          "floating-widget",
+          "kotlin-android",
+          "quick-action"
+        ],
+        "createdAt": "2025-09-15T11:40:30Z",
+        "pushedAt": "2026-05-11T17:16:26Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": "https://play.google.com/store/apps/details?id=io.github.chayanforyou.quickball",
+        "license": "GNU General Public License v3.0"
+      },
+      {
+        "name": "flutter_material_3_demo",
+        "description": "A flutter project showcasing supported Material 3 components, typography, color system and elevation. Supports different light/dark mode, color seed, and comparison to Material 2.",
+        "url": "https://github.com/chayanforyou/flutter_material_3_demo",
+        "stargazerCount": 74,
+        "forkCount": 27,
+        "primaryLanguage": "Dart",
+        "topics": [
+          "dark-mode",
+          "material-design",
+          "material-ui",
+          "material3",
+          "light-mode"
+        ],
+        "createdAt": "2022-05-18T10:26:47Z",
+        "pushedAt": "2025-10-06T08:42:00Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": "",
+        "license": "Apache License 2.0"
+      },
+      {
+        "name": "bkash-pgwclient-demo-flutter",
+        "description": "bKash payment gateway integration in flutter",
+        "url": "https://github.com/chayanforyou/bkash-pgwclient-demo-flutter",
+        "stargazerCount": 45,
+        "forkCount": 28,
+        "primaryLanguage": "Dart",
+        "topics": [
+          "bkash",
+          "bkash-pgw",
+          "flutter",
+          "bkash-payment",
+          "bkash-payment-gateway"
+        ],
+        "createdAt": "2021-02-07T05:52:44Z",
+        "pushedAt": "2024-10-19T07:01:48Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": "",
+        "license": null
+      },
+      {
+        "name": "WearLeveling",
+        "description": "This Wear Leveling library is for Microcontroller EEPROM to increase its life cycle",
+        "url": "https://github.com/chayanforyou/WearLeveling",
+        "stargazerCount": 31,
+        "forkCount": 4,
+        "primaryLanguage": "C++",
+        "topics": [
+          "eeprom",
+          "microcontroller",
+          "arduino",
+          "avr",
+          "library"
+        ],
+        "createdAt": "2017-07-06T04:00:15Z",
+        "pushedAt": "2025-03-27T13:36:54Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": "",
+        "license": "Apache License 2.0"
+      },
+      {
+        "name": "Remote-Control-Switch",
+        "description": "This device can be used to remotely control the speed of an AC fan and lights to switch it ON/OFF. ",
+        "url": "https://github.com/chayanforyou/Remote-Control-Switch",
+        "stargazerCount": 16,
+        "forkCount": 4,
+        "primaryLanguage": null,
+        "topics": [
+          "remote-control",
+          "remote",
+          "fan",
+          "dimmer",
+          "regulator"
+        ],
+        "createdAt": "2018-10-04T18:08:33Z",
+        "pushedAt": "2024-11-06T05:14:49Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": "",
+        "license": "Creative Commons Zero v1.0 Universal"
+      },
+      {
+        "name": "RGB-LED-Remote",
+        "description": "A Flutter app which can control RGB LED Strip lights & Bulbs",
+        "url": "https://github.com/chayanforyou/RGB-LED-Remote",
+        "stargazerCount": 11,
+        "forkCount": 19,
+        "primaryLanguage": "Dart",
+        "topics": [
+          "android",
+          "led-controller",
+          "led-strips",
+          "remote",
+          "remote-control"
+        ],
+        "createdAt": "2024-09-16T09:52:31Z",
+        "pushedAt": "2025-04-17T13:47:11Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": "",
+        "license": null
+      },
+      {
+        "name": "OpenCVBot-Firmware",
+        "description": null,
+        "url": "https://github.com/chayanforyou/OpenCVBot-Firmware",
+        "stargazerCount": 11,
+        "forkCount": 2,
+        "primaryLanguage": "C++",
+        "topics": [],
+        "createdAt": "2024-03-21T15:00:23Z",
+        "pushedAt": "2025-09-12T14:43:59Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": "",
+        "license": null
+      },
+      {
+        "name": "foodpanda-order-tracking-animation",
+        "description": "A demonstration of foodpanda like order tracking animation in flutter.",
+        "url": "https://github.com/chayanforyou/foodpanda-order-tracking-animation",
+        "stargazerCount": 11,
+        "forkCount": 2,
+        "primaryLanguage": "Dart",
+        "topics": [
+          "animation",
+          "flutter",
+          "flutter-ui",
+          "food-delivery",
+          "food-ordering"
+        ],
+        "createdAt": "2024-02-28T06:16:50Z",
+        "pushedAt": "2024-02-28T06:33:56Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": "",
+        "license": null
+      },
+      {
+        "name": "Covid19Detector",
+        "description": "A Flutter app to detect covid19 from an X-Ray image with TensorFlow Lite. Just use some sample images available in the repo.",
+        "url": "https://github.com/chayanforyou/Covid19Detector",
+        "stargazerCount": 10,
+        "forkCount": 3,
+        "primaryLanguage": "Dart",
+        "topics": [
+          "covid19",
+          "ml",
+          "tensorflow-lite",
+          "flutter",
+          "android"
+        ],
+        "createdAt": "2020-10-07T05:24:29Z",
+        "pushedAt": "2020-10-07T06:05:26Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": "",
+        "license": null
+      },
+      {
+        "name": "bkash_pull_to_refresh_animation",
+        "description": "A demonstration of bKash-like pull-to-refresh animation in Flutter.",
+        "url": "https://github.com/chayanforyou/bkash_pull_to_refresh_animation",
+        "stargazerCount": 8,
+        "forkCount": 2,
+        "primaryLanguage": "Dart",
+        "topics": [
+          "animation",
+          "dart",
+          "flutter",
+          "pull-to-refresh",
+          "rive"
+        ],
+        "createdAt": "2025-11-29T17:04:04Z",
+        "pushedAt": "2026-04-09T03:34:36Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": "",
+        "license": null
+      }
+    ],
+    "last_repo_fetched_at": "2026-05-13T00:01:33.531215+00:00",
+    "schema_version": "1.0"
   }
 ]

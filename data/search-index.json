@@ -123451,5 +123451,52 @@
     ],
     "score": 15.0,
     "followers": 3
+  },
+  {
+    "id": "chayanforyou",
+    "name": "Chayan Mistry",
+    "bio": "Software Engineer | Robotics Learner",
+    "langs": [
+      "Dart",
+      "C++",
+      "Kotlin"
+    ],
+    "topics": [
+      "flutter",
+      "remote-control",
+      "remote",
+      "android",
+      "animation",
+      "accessibility-service",
+      "floating-ball",
+      "floating-widget",
+      "kotlin-android",
+      "quick-action"
+    ],
+    "r_names": [
+      "QuickBall",
+      "flutter_material_3_demo",
+      "bkash-pgwclient-demo-flutter",
+      "WearLeveling",
+      "Remote-Control-Switch",
+      "RGB-LED-Remote",
+      "OpenCVBot-Firmware",
+      "foodpanda-order-tracking-animation",
+      "Covid19Detector",
+      "bkash_pull_to_refresh_animation"
+    ],
+    "r_desc": [
+      "A Quick Action Ball that gives fast access to system controls (volume, brightness, lock) with smart positioning",
+      "A flutter project showcasing supported Material 3 components, typography, color system and elevation. Supports different light/dark mode, color seed, and comparison to Material 2.",
+      "bKash payment gateway integration in flutter",
+      "This Wear Leveling library is for Microcontroller EEPROM to increase its life cycle",
+      "This device can be used to remotely control the speed of an AC fan and lights to switch it ON/OFF. ",
+      "A Flutter app which can control RGB LED Strip lights & Bulbs",
+      "A demonstration of foodpanda like order tracking animation in flutter.",
+      "A Flutter app to detect covid19 from an X-Ray image with TensorFlow Lite. Just use some sample images available in the repo.",
+      "A demonstration of bKash-like pull-to-refresh animation in Flutter."
+    ],
+    "score": 97.1,
+    "followers": 107
   }
 ]
