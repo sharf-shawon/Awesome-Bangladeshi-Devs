@@ -24300,7 +24300,7 @@
       "Solutions to problems and projects from FreeCodeCamp.",
       "Apparel  Unlimited  eCommerce  application  "
     ],
-    "score": 15.6,
+    "score": 11.2,
     "followers": 6
   },
   {
@@ -67384,7 +67384,7 @@
       "Imagine typing without touching a keyboard - that's exactly what this AI-Powered Virtual Keyboard allows you to do! This cutting-edge project combines computer vision, hand tracking, and gesture recognition to create a futuristic typing experience. Using just your webcam, you can type by moving your hands in the air.",
       "This is my very first Portfolio."
     ],
-    "score": 35.6,
+    "score": 33.9,
     "followers": 25
   },
   {
@@ -67459,9 +67459,9 @@
       "TypeScript"
     ],
     "topics": [
+      "reactjs",
       "expressjs",
       "mongodb",
-      "reactjs",
       "nodejs",
       "firebase",
       "node-js",
@@ -67474,19 +67474,19 @@
       "quick-buzz-E-Commare-Team",
       "on-Time-News-server-12",
       "on-Time-News-Client-12",
+      "parcel-delvey-client",
       "react-spinnner",
       "b9a7-chefs-table",
       "B9A8-Book-Review",
       "b9a9-real-estate-home-finder",
       "b9a10-client-10-Journy-Junction",
-      "b9a10-server-10-Journy-Junction",
-      "my-Blog-server-11"
+      "b9a10-server-10-Journy-Junction"
     ],
     "r_desc": [
       "quick buzz BD"
     ],
-    "score": 383.1,
-    "followers": 428
+    "score": 433.1,
+    "followers": 494
   },
   {
     "id": "tar3q-az1z",
@@ -67535,7 +67535,7 @@
       "contains the solutions of problems from timus oj."
     ],
     "score": 19.8,
-    "followers": 109
+    "followers": 110
   },
   {
     "id": "lnzva",
@@ -67583,13 +67583,13 @@
       "bistro-restorent-clinent",
       "khulna-job-client",
       "my-portfolio",
-      "Assinment-1",
-      "gurbani-hat",
-      "b13-dragon-news-next-better-auth"
+      "wanderlust-server",
+      "wanderlust",
+      "Assinment-1"
     ],
     "r_desc": [],
-    "score": 188.6,
-    "followers": 55
+    "score": 205.0,
+    "followers": 65
   },
   {
     "id": "fluentmoheshwar",
@@ -67637,7 +67637,7 @@
       "It allows you to get dislikes of a YouTube video.",
       "বাংলা ভাষার তথ্য় ও সফটওয়ার "
     ],
-    "score": 78.5,
+    "score": 73.1,
     "followers": 53
   },
   {
@@ -67673,7 +67673,7 @@
       "I will upload some codes on machine learning problem",
       "This is a all pair shortest path from the book Introduction to Algorithm. Here it is solved using python."
     ],
-    "score": 5.7,
+    "score": 4.8,
     "followers": 24
   },
   {
@@ -67683,8 +67683,8 @@
     "langs": [
       "HTML",
       "TypeScript",
-      "JavaScript",
-      "Java"
+      "Java",
+      "JavaScript"
     ],
     "topics": [
       "aiub",
@@ -67696,20 +67696,20 @@
     "r_names": [
       "E-Ticketing",
       "Image-Search",
+      "git-ai-pilot",
       "LifeConnect_Backend",
       "TestWordPress",
       "How-old-am-i",
       "XI-Class-Admission",
       "covid19",
       "editor1",
-      "github-profiles",
-      "notes-web"
+      "github-profiles"
     ],
     "r_desc": [
       "Welcome to the E-Ticketing System GitHub repository! A Java (Swing) project developed for Object-Oriented Programming I course at AIUB. Features include login, registration, and ticket booking for buses, ships, and flights. Explore the code and contribute to enhance the project!"
     ],
-    "score": 908.5,
-    "followers": 43
+    "score": 1080.0,
+    "followers": 44
   },
   {
     "id": "FKhushbu927",
@@ -67737,7 +67737,7 @@
       "In this repository  I show how to create a Maven project in Eclipse that uses Hibernate to access Oracle."
     ],
     "score": 1.6,
-    "followers": 23
+    "followers": 24
   },
   {
     "id": "LogicalAnt",
@@ -67777,8 +67777,8 @@
       "testing Codeigniter",
       "A general forum app where user can pull up a thread and bunch of other features."
     ],
-    "score": 125.2,
-    "followers": 108
+    "score": 127.1,
+    "followers": 130
   },
   {
     "id": "Meshkat-Shadik",
@@ -67826,8 +67826,8 @@
       "A proper way to paginate a infinite listview with the help of some basic tricks and riverpod",
       "https://leetcode.com/shadik14/ in this handle I used to do some problem solving stuff. \"LEETHUB\" is the extension that I used to automatically push the accepted code to the github! 70% of code I write on mobile and as I'm not a fan of \"KIWI Browser\", I'm not using the Extension in the mobile, so git doesn't track all the solutions!"
     ],
-    "score": 81.0,
-    "followers": 59
+    "score": 91.5,
+    "followers": 58
   },
   {
     "id": "anup30",
@@ -67872,7 +67872,7 @@
       "django mvt student management admin view app.",
       "module 18, Project: Student Management System"
     ],
-    "score": 40.5,
+    "score": 40.3,
     "followers": 4
   },
   {
@@ -81774,8 +81774,8 @@
       "Visit Site",
       "Visit Site"
     ],
-    "score": 85.1,
-    "followers": 761
+    "score": 88.1,
+    "followers": 770
   },
   {
     "id": "afrinbhuiyan",
@@ -81821,8 +81821,8 @@
       "React-based frontend for NexusLaunch a modern product discovery platform featuring authentication, product listings, upvotes, and responsive UI with Tailwind CSS.",
       "Hey, It’s Me!"
     ],
-    "score": 64.7,
-    "followers": 750
+    "score": 52.6,
+    "followers": 778
   },
   {
     "id": "REFAT-156",
@@ -81864,7 +81864,7 @@
       "THIS IS 1 UID TO AUTO FILE MAKING TOOL 💛🥀"
     ],
     "score": 19.6,
-    "followers": 695
+    "followers": 697
   },
   {
     "id": "JISAN-404",
@@ -81900,7 +81900,7 @@
       "This repo update every 4day"
     ],
     "score": 1.7,
-    "followers": 676
+    "followers": 677
   },
   {
     "id": "mahafuz",
@@ -81947,7 +81947,7 @@
       "Generate SVG backgrounds with custom-sized shapes. :collision:",
       "CLI to check website status in the command line."
     ],
-    "score": 12.1,
+    "score": 10.4,
     "followers": 668
   },
   {
@@ -81975,8 +81975,8 @@
       "File Clonnig",
       "facebook automation tools"
     ],
-    "score": 118.2,
-    "followers": 661
+    "score": 123.5,
+    "followers": 664
   },
   {
     "id": "muzahid120",
@@ -82007,7 +82007,7 @@
       "Config files for my GitHub profile."
     ],
     "score": 0.0,
-    "followers": 627
+    "followers": 652
   },
   {
     "id": "AntsyLich",
@@ -82035,8 +82035,8 @@
       "MangaDex current seasonal list. Updated daily.",
       "kotlin/js libraries for tachiyomi sources"
     ],
-    "score": 71.1,
-    "followers": 586
+    "score": 55.6,
+    "followers": 597
   },
   {
     "id": "raqueeb",
@@ -82075,8 +82075,8 @@
       "নতুন সাইট আসছে কৃত্রিম বুদ্ধিমত্তা নিয়ে",
       "অ্যান্ড্রয়েড অ্যাপের জন্য \"এমনিস্ট\" হাতে লেখা ডিজিট চিনতে মডেল ট্রেনিং"
     ],
-    "score": 12.0,
-    "followers": 1172
+    "score": 13.0,
+    "followers": 1176
   },
   {
     "id": "FamimHayat",
@@ -82100,8 +82100,8 @@
       "chatting"
     ],
     "r_desc": [],
-    "score": 61.0,
-    "followers": 579
+    "score": 48.8,
+    "followers": 578
   },
   {
     "id": "MunifTanjim",
@@ -82150,8 +82150,8 @@
       "Bitbucket API client for Browser and Node.js",
       "Lua grammar for tree-sitter"
     ],
-    "score": 314.2,
-    "followers": 567
+    "score": 263.7,
+    "followers": 569
   },
   {
     "id": "ahammadmejbah",
@@ -82163,18 +82163,19 @@
     ],
     "topics": [
       "data-science",
-      "data-visualization",
       "deep-learning",
+      "data-visualization",
       "data-engineering",
       "machine-learning",
       "data-structures",
       "computer-vision",
       "data-mining",
-      "artificial-intelligence",
-      "database"
+      "benchmark",
+      "benchmarking"
     ],
     "r_names": [
       "Fueling-Ambitions-Via-Book-Discoveries",
+      "Awesome-Datasets-Hub",
       "ahammadmejbah",
       "Artificial-Intelligence-Research-and-Development-Projects",
       "Optimization-Methods-With-Mathematics-and-Python-By-Mejbah-Ahammad",
@@ -82182,11 +82183,11 @@
       "Artificial-Intelligence-Resources",
       "Mathematical-Foundations-of-Image-Processing-and-Computer-Vision",
       "Scikit-Learn-Cheat-Sheet",
-      "Supplemental-Materials",
-      "Computer-Graphics-With-Mathematics-and-Python-By-Mejbah-Ahammad"
+      "Supplemental-Materials"
     ],
     "r_desc": [
       "This series uncovers the most valuable insights from groundbreaking books in AI, Machine Learning, and Data Science, helping you accelerate your learning journey. Each episode transforms complex theories into practical knowledge, making advanced topics more accessible and actionable.",
+      "A curated collection of datasets for Large Language Models (LLMs), covering medical AI, NLP, multimodal learning, instruction tuning, reasoning, code generation, and evaluation benchmarks.",
       "Data Science || Machine Learning || Deep Learning || Computer Vision || NLP Enthusiast Talks about #datascience, #deeplearning, #dataanalytics, #machinelearning, and #machinelearningalgorithms",
       "The field of Artificial Intelligence (AI) is a frontier of computer science that focuses on creating systems capable of performing tasks that would typically require human intelligence. This encompasses a wide range of capabilities such as visual perception, speech recognition, decision-making, and language translation.",
       "Optimization Methods With Mathematics and Python By Mejbah Ahammad",
@@ -82194,11 +82195,10 @@
       "A curated collection of high-quality learning materials, research papers, datasets, frameworks, and practical guides covering every major area of Artificial Intelligence — including Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, Reinforcement Learning, and MLOps.",
       "Mathematical Foundations of Image Processing and Computer",
       "Scikit Learn Cheat Sheet",
-      "Explore AI with resources like 📚 books, 🎧 podcasts, and 🖥️ online courses! Join forums 💬, attend workshops 🛠️, and read journals 📖 to boost your knowledge! 🚀✨🧠",
-      "Computer Graphics With Mathematics and Python By Mejbah Ahammad"
+      "Explore AI with resources like 📚 books, 🎧 podcasts, and 🖥️ online courses! Join forums 💬, attend workshops 🛠️, and read journals 📖 to boost your knowledge! 🚀✨🧠"
     ],
-    "score": 429.2,
-    "followers": 548
+    "score": 10325.2,
+    "followers": 573
   },
   {
     "id": "RafatMeraz",
@@ -82228,7 +82228,7 @@
       "BoroBhai is a cli tool for creating several code templates",
       "Network caller for the api based application with the help of http package "
     ],
-    "score": 56.8,
+    "score": 58.9,
     "followers": 522
   },
   {
@@ -82244,17 +82244,17 @@
       "Rent-a-car-client-",
       "Kafi-e-commerce",
       "foodmart-cl-",
+      "git-solid",
       "push-git-hub",
       "foyez",
       "clothguidance-clth",
       "cloth-guidance",
       "Clothguidance",
-      "clothguidance--test",
-      "ct-it-e-commerce-react"
+      "clothguidance--test"
     ],
     "r_desc": [],
-    "score": 96.0,
-    "followers": 521
+    "score": 82.6,
+    "followers": 547
   },
   {
     "id": "Moriumnasa-Mim",
@@ -82286,7 +82286,7 @@
       "It's text animate format.",
       "This is the effect of Sea Wave & it has been using CSS."
     ],
-    "score": 6.8,
+    "score": 7.2,
     "followers": 512
   },
   {

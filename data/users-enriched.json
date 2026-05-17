@@ -125472,7 +125472,7 @@
     "following": 43,
     "public_repos": 12,
     "last_active": "2026-05-05T15:45:43Z",
-    "activity_score": 15.6,
+    "activity_score": 11.2,
     "top_languages": [
       "Blade",
       "Java",
@@ -125631,7 +125631,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-10T07:13:17.459396+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:22.396775+00:00",
     "schema_version": "1.0"
   },
   {
@@ -337328,9 +337328,9 @@
     "created_at": "2022-11-17T01:11:20Z",
     "followers": 25,
     "following": 13,
-    "public_repos": 75,
+    "public_repos": 74,
     "last_active": "2025-12-31T12:48:06Z",
-    "activity_score": 35.6,
+    "activity_score": 33.9,
     "top_languages": [
       "Python",
       "Jupyter Notebook",
@@ -337503,7 +337503,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:20:50.335438+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:26.634038+00:00",
     "schema_version": "1.0"
   },
   {
@@ -337699,7 +337699,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:20:50.335463+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:26.634082+00:00",
     "schema_version": "1.0"
   },
   {
@@ -337790,7 +337790,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:20:50.335476+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:26.634103+00:00",
     "schema_version": "1.0"
   },
   {
@@ -337802,19 +337802,19 @@
     "company": "Backend Developer @ SM Technology",
     "blog": "https://nayeem-miah.vercel.app",
     "created_at": "2023-12-31T10:39:34Z",
-    "followers": 428,
-    "following": 66,
-    "public_repos": 91,
+    "followers": 494,
+    "following": 217,
+    "public_repos": 93,
     "last_active": "2026-04-01T10:33:21Z",
-    "activity_score": 383.1,
+    "activity_score": 433.1,
     "top_languages": [
       "JavaScript",
       "TypeScript"
     ],
     "top_topics": [
+      "reactjs",
       "expressjs",
       "mongodb",
-      "reactjs",
       "nodejs",
       "firebase",
       "node-js",
@@ -337828,7 +337828,7 @@
         "name": "quick-buzz-E-Commare-Team",
         "description": "quick buzz BD",
         "url": "https://github.com/nayeem-miah/quick-buzz-E-Commare-Team",
-        "stargazerCount": 4,
+        "stargazerCount": 5,
         "forkCount": 0,
         "primaryLanguage": "TypeScript",
         "topics": [
@@ -337882,6 +337882,27 @@
         "isArchived": false,
         "isFork": false,
         "homepageUrl": "https://b9a12-ontimenews.web.app/",
+        "license": null
+      },
+      {
+        "name": "parcel-delvey-client",
+        "description": null,
+        "url": "https://github.com/nayeem-miah/parcel-delvey-client",
+        "stargazerCount": 2,
+        "forkCount": 0,
+        "primaryLanguage": "TypeScript",
+        "topics": [
+          "reactjs",
+          "redux",
+          "rtk-query",
+          "shadcn-ui",
+          "tailwindcss"
+        ],
+        "createdAt": "2025-09-10T15:37:11Z",
+        "pushedAt": "2026-05-10T13:01:14Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": "https://parcel-delevary-client.vercel.app",
         "license": null
       },
       {
@@ -337978,24 +337999,9 @@
         "isFork": false,
         "homepageUrl": null,
         "license": null
-      },
-      {
-        "name": "my-Blog-server-11",
-        "description": null,
-        "url": "https://github.com/nayeem-miah/my-Blog-server-11",
-        "stargazerCount": 2,
-        "forkCount": 0,
-        "primaryLanguage": "JavaScript",
-        "topics": [],
-        "createdAt": "2024-06-17T08:17:35Z",
-        "pushedAt": "2024-07-02T10:53:43Z",
-        "isArchived": false,
-        "isFork": false,
-        "homepageUrl": null,
-        "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:20:50.335499+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:26.634129+00:00",
     "schema_version": "1.0"
   },
   {
@@ -338007,7 +338013,7 @@
     "company": null,
     "blog": null,
     "created_at": "2023-03-23T17:22:31Z",
-    "followers": 109,
+    "followers": 110,
     "following": 410,
     "public_repos": 18,
     "last_active": "2026-05-03T15:07:49Z",
@@ -338221,7 +338227,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:20:50.335527+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:26.634164+00:00",
     "schema_version": "1.0"
   },
   {
@@ -338367,7 +338373,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:20:50.335544+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:26.634219+00:00",
     "schema_version": "1.0"
   },
   {
@@ -338379,11 +338385,11 @@
     "company": "TechLabs",
     "blog": "https://apurbaroy.netlify.app/",
     "created_at": "2024-09-25T07:14:52Z",
-    "followers": 55,
-    "following": 92,
-    "public_repos": 87,
+    "followers": 65,
+    "following": 99,
+    "public_repos": 89,
     "last_active": "2026-04-27T10:51:31Z",
-    "activity_score": 188.6,
+    "activity_score": 205.0,
     "top_languages": [
       "JavaScript",
       "TypeScript"
@@ -338496,6 +338502,36 @@
         "license": null
       },
       {
+        "name": "wanderlust-server",
+        "description": null,
+        "url": "https://github.com/Apurbaroy01/wanderlust-server",
+        "stargazerCount": 0,
+        "forkCount": 0,
+        "primaryLanguage": "JavaScript",
+        "topics": [],
+        "createdAt": "2026-05-14T06:07:33Z",
+        "pushedAt": "2026-05-17T16:07:19Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": null,
+        "license": null
+      },
+      {
+        "name": "wanderlust",
+        "description": null,
+        "url": "https://github.com/Apurbaroy01/wanderlust",
+        "stargazerCount": 0,
+        "forkCount": 0,
+        "primaryLanguage": "JavaScript",
+        "topics": [],
+        "createdAt": "2026-05-13T17:04:01Z",
+        "pushedAt": "2026-05-17T16:07:02Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": null,
+        "license": null
+      },
+      {
         "name": "Assinment-1",
         "description": null,
         "url": "https://github.com/Apurbaroy01/Assinment-1",
@@ -338509,39 +338545,9 @@
         "isFork": false,
         "homepageUrl": null,
         "license": null
-      },
-      {
-        "name": "gurbani-hat",
-        "description": null,
-        "url": "https://github.com/Apurbaroy01/gurbani-hat",
-        "stargazerCount": 0,
-        "forkCount": 0,
-        "primaryLanguage": "JavaScript",
-        "topics": [],
-        "createdAt": "2026-05-05T06:04:54Z",
-        "pushedAt": "2026-05-06T07:53:37Z",
-        "isArchived": false,
-        "isFork": false,
-        "homepageUrl": "https://gurbani-hat.vercel.app",
-        "license": null
-      },
-      {
-        "name": "b13-dragon-news-next-better-auth",
-        "description": null,
-        "url": "https://github.com/Apurbaroy01/b13-dragon-news-next-better-auth",
-        "stargazerCount": 0,
-        "forkCount": 0,
-        "primaryLanguage": "JavaScript",
-        "topics": [],
-        "createdAt": "2026-05-04T17:02:27Z",
-        "pushedAt": "2026-05-04T20:33:21Z",
-        "isArchived": false,
-        "isFork": false,
-        "homepageUrl": null,
-        "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:20:50.335562+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:26.634254+00:00",
     "schema_version": "1.0"
   },
   {
@@ -338554,10 +338560,10 @@
     "blog": "https://moheshwar.com",
     "created_at": "2020-05-16T18:26:33Z",
     "followers": 53,
-    "following": 49,
+    "following": 51,
     "public_repos": 24,
     "last_active": "2026-03-18T19:57:18Z",
-    "activity_score": 78.5,
+    "activity_score": 73.1,
     "top_languages": [
       "Shell",
       "Batchfile",
@@ -338614,7 +338620,7 @@
           "unlicensed"
         ],
         "createdAt": "2023-05-31T16:30:45Z",
-        "pushedAt": "2026-03-12T08:33:46Z",
+        "pushedAt": "2026-05-15T21:52:33Z",
         "isArchived": false,
         "isFork": false,
         "homepageUrl": "",
@@ -338759,7 +338765,7 @@
         "license": "MIT License"
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:20:50.335589+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:26.634285+00:00",
     "schema_version": "1.0"
   },
   {
@@ -338775,7 +338781,7 @@
     "following": 19,
     "public_repos": 54,
     "last_active": "2022-04-10T16:23:11Z",
-    "activity_score": 5.7,
+    "activity_score": 4.8,
     "top_languages": [
       "Python",
       "Jupyter Notebook"
@@ -338933,7 +338939,7 @@
         "license": "MIT License"
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:20:50.335607+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:26.634310+00:00",
     "schema_version": "1.0"
   },
   {
@@ -338945,16 +338951,16 @@
     "company": null,
     "blog": "https://saikat.com.bd/",
     "created_at": "2017-08-09T13:38:27Z",
-    "followers": 43,
+    "followers": 44,
     "following": 70,
-    "public_repos": 78,
+    "public_repos": 82,
     "last_active": "2023-12-10T17:23:26Z",
-    "activity_score": 908.5,
+    "activity_score": 1080.0,
     "top_languages": [
       "HTML",
       "TypeScript",
-      "JavaScript",
-      "Java"
+      "Java",
+      "JavaScript"
     ],
     "top_topics": [
       "aiub",
@@ -338999,6 +339005,21 @@
         "isFork": false,
         "homepageUrl": "https://mirzasaikatahmmed.github.io/Image-Search/",
         "license": null
+      },
+      {
+        "name": "git-ai-pilot",
+        "description": null,
+        "url": "https://github.com/mirzasaikatahmmed/git-ai-pilot",
+        "stargazerCount": 1,
+        "forkCount": 0,
+        "primaryLanguage": "TypeScript",
+        "topics": [],
+        "createdAt": "2025-11-30T02:04:39Z",
+        "pushedAt": "2026-05-15T15:13:46Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": "https://www.npmjs.com/~mirzasaikatahmmed",
+        "license": "ISC License"
       },
       {
         "name": "LifeConnect_Backend",
@@ -339104,24 +339125,9 @@
         "isFork": false,
         "homepageUrl": "https://mirzasaikatahmmed.github.io/github-profiles/",
         "license": null
-      },
-      {
-        "name": "notes-web",
-        "description": null,
-        "url": "https://github.com/mirzasaikatahmmed/notes-web",
-        "stargazerCount": 1,
-        "forkCount": 0,
-        "primaryLanguage": "JavaScript",
-        "topics": [],
-        "createdAt": "2021-06-08T07:46:33Z",
-        "pushedAt": "2021-06-08T07:47:30Z",
-        "isArchived": false,
-        "isFork": false,
-        "homepageUrl": null,
-        "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:20:50.335631+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424171+00:00",
     "schema_version": "1.0"
   },
   {
@@ -339133,7 +339139,7 @@
     "company": null,
     "blog": "https://fkhushbu754.blogspot.com/",
     "created_at": "2019-08-24T09:08:21Z",
-    "followers": 23,
+    "followers": 24,
     "following": 132,
     "public_repos": 63,
     "last_active": "2020-12-26T20:01:35Z",
@@ -339296,7 +339302,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:20:50.335653+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424236+00:00",
     "schema_version": "1.0"
   },
   {
@@ -339308,11 +339314,11 @@
     "company": null,
     "blog": "https://logicalant.github.io",
     "created_at": "2016-01-01T12:15:19Z",
-    "followers": 108,
+    "followers": 130,
     "following": 168,
     "public_repos": 17,
     "last_active": "2022-07-17T08:55:29Z",
-    "activity_score": 125.2,
+    "activity_score": 127.1,
     "top_languages": [
       "TypeScript",
       "JavaScript",
@@ -339484,7 +339490,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:20:50.335673+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424264+00:00",
     "schema_version": "1.0"
   },
   {
@@ -339496,11 +339502,11 @@
     "company": "Sokrio Technologies",
     "blog": null,
     "created_at": "2017-08-30T19:30:53Z",
-    "followers": 59,
+    "followers": 58,
     "following": 67,
     "public_repos": 94,
     "last_active": "2025-10-12T16:09:42Z",
-    "activity_score": 81.0,
+    "activity_score": 91.5,
     "top_languages": [
       "Dart",
       "MATLAB",
@@ -339688,7 +339694,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:20:50.335696+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424292+00:00",
     "schema_version": "1.0"
   },
   {
@@ -339704,7 +339710,7 @@
     "following": 2,
     "public_repos": 40,
     "last_active": "2025-08-20T10:10:49Z",
-    "activity_score": 40.5,
+    "activity_score": 40.3,
     "top_languages": [
       "JavaScript",
       "C++",
@@ -339884,7 +339890,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:20:56.980451+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424320+00:00",
     "schema_version": "1.0"
   },
   {
@@ -412113,17 +412119,17 @@
   {
     "username": "Nayeem0011",
     "name": "Sk Nayeem",
-    "avatar_url": "https://avatars.githubusercontent.com/u/199944279?u=ac90107b061a6a6f67f555e3f782bc1279a645c2&v=4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/199944279?u=39a724ead8d08698876a8701eed47c78ee6c07e5&v=4",
     "bio": "\r\nHello! I'm a web developer passionate about creating clean and simple websites. I specialize in front-end development, bringing creative ideas to life through",
     "location": "Dhaka, bangladesh",
     "company": null,
     "blog": null,
     "created_at": "2025-02-19T14:19:51Z",
-    "followers": 761,
+    "followers": 770,
     "following": 853,
-    "public_repos": 33,
-    "last_active": "2025-08-25T20:33:36Z",
-    "activity_score": 85.1,
+    "public_repos": 34,
+    "last_active": "2026-05-17T03:34:09Z",
+    "activity_score": 88.1,
     "top_languages": [
       "JavaScript",
       "CSS"
@@ -412139,7 +412145,7 @@
         "primaryLanguage": null,
         "topics": [],
         "createdAt": "2025-04-23T10:39:38Z",
-        "pushedAt": "2025-08-25T20:33:36Z",
+        "pushedAt": "2026-05-17T03:34:09Z",
         "isArchived": false,
         "isFork": false,
         "homepageUrl": null,
@@ -412281,7 +412287,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:28.819071+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424343+00:00",
     "schema_version": "1.0"
   },
   {
@@ -412293,11 +412299,11 @@
     "company": null,
     "blog": "https://afirin.vercel.app",
     "created_at": "2024-10-09T04:00:35Z",
-    "followers": 750,
-    "following": 716,
+    "followers": 778,
+    "following": 715,
     "public_repos": 101,
     "last_active": "2026-03-07T17:52:00Z",
-    "activity_score": 64.7,
+    "activity_score": 52.6,
     "top_languages": [
       "JavaScript",
       "MDX"
@@ -412497,7 +412503,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:28.819102+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424376+00:00",
     "schema_version": "1.0"
   },
   {
@@ -412509,7 +412515,7 @@
     "company": "Bap DaDar AppS TerMux",
     "blog": null,
     "created_at": "2022-07-22T08:51:52Z",
-    "followers": 695,
+    "followers": 697,
     "following": 0,
     "public_repos": 12,
     "last_active": "2026-04-27T17:16:56Z",
@@ -412532,7 +412538,7 @@
         "name": "REFAT-XD",
         "description": "=REFAT-XD ONE OF THE BEST REPOSITORY FOR FACEBOOK ID CRACKING 🔥🧬=",
         "url": "https://github.com/REFAT-156/REFAT-XD",
-        "stargazerCount": 98,
+        "stargazerCount": 99,
         "forkCount": 7,
         "primaryLanguage": null,
         "topics": [
@@ -412688,7 +412694,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:28.819126+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424404+00:00",
     "schema_version": "1.0"
   },
   {
@@ -412700,7 +412706,7 @@
     "company": "MR DARK ORG",
     "blog": "https://mr-dark.xyz",
     "created_at": "2022-05-11T05:24:27Z",
-    "followers": 676,
+    "followers": 677,
     "following": 0,
     "public_repos": 37,
     "last_active": "2025-07-30T06:23:07Z",
@@ -412868,7 +412874,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:28.819149+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424426+00:00",
     "schema_version": "1.0"
   },
   {
@@ -412884,7 +412890,7 @@
     "following": 128,
     "public_repos": 47,
     "last_active": "2025-09-06T20:37:00Z",
-    "activity_score": 12.1,
+    "activity_score": 10.4,
     "top_languages": [
       "PHP",
       "JavaScript",
@@ -413073,7 +413079,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:28.819173+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424452+00:00",
     "schema_version": "1.0"
   },
   {
@@ -413085,11 +413091,11 @@
     "company": null,
     "blog": "https://www.facebook.com/Niki404.Cyber.fb",
     "created_at": "2021-11-02T09:32:14Z",
-    "followers": 661,
+    "followers": 664,
     "following": 1,
     "public_repos": 15,
     "last_active": "2025-11-06T11:49:35Z",
-    "activity_score": 118.2,
+    "activity_score": 123.5,
     "top_languages": [
       "Python"
     ],
@@ -413239,14 +413245,14 @@
         "primaryLanguage": "Python",
         "topics": [],
         "createdAt": "2026-01-12T14:24:49Z",
-        "pushedAt": "2026-05-08T16:08:21Z",
+        "pushedAt": "2026-05-16T08:13:53Z",
         "isArchived": false,
         "isFork": false,
         "homepageUrl": null,
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:28.819191+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424474+00:00",
     "schema_version": "1.0"
   },
   {
@@ -413258,7 +413264,7 @@
     "company": null,
     "blog": "https://www.kaggle.com/skmuzahid",
     "created_at": "2023-10-11T15:09:35Z",
-    "followers": 627,
+    "followers": 652,
     "following": 4570,
     "public_repos": 31,
     "last_active": "2024-03-19T22:28:41Z",
@@ -413276,7 +413282,7 @@
         "name": "Machine-Learning",
         "description": null,
         "url": "https://github.com/muzahid120/Machine-Learning",
-        "stargazerCount": 2,
+        "stargazerCount": 3,
         "forkCount": 0,
         "primaryLanguage": "Jupyter Notebook",
         "topics": [],
@@ -413426,7 +413432,7 @@
         "license": "MIT License"
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:28.819211+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424495+00:00",
     "schema_version": "1.0"
   },
   {
@@ -413438,11 +413444,11 @@
     "company": "@mihon @mihonapp",
     "blog": "antsy.dev",
     "created_at": "2019-12-26T17:11:12Z",
-    "followers": 586,
+    "followers": 597,
     "following": 1,
     "public_repos": 13,
     "last_active": "2024-12-04T16:02:08Z",
-    "activity_score": 71.1,
+    "activity_score": 55.6,
     "top_languages": [
       "Kotlin",
       "Python",
@@ -413601,7 +413607,7 @@
         "license": "Apache License 2.0"
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:28.819231+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424516+00:00",
     "schema_version": "1.0"
   },
   {
@@ -413613,11 +413619,11 @@
     "company": "Bangladesh ",
     "blog": "https://aiwithr.github.io",
     "created_at": "2017-10-14T16:12:51Z",
-    "followers": 1172,
+    "followers": 1176,
     "following": 5,
     "public_repos": 26,
     "last_active": "2025-02-15T12:42:01Z",
-    "activity_score": 12.0,
+    "activity_score": 13.0,
     "top_languages": [
       "Jupyter Notebook",
       "HTML"
@@ -413632,7 +413638,7 @@
         "name": "mltraining",
         "description": "হাতেকলমে মেশিন লার্নিং বই: 'টাইটানিক 'প্রজেক্ট স্ক্রিপ্ট: কে কে বেঁচে থাকবেন জাহাজডুবির পর? বইয়ের অনলাইন লিংক: https://rakibul-hassan.gitbook.io/mlbook-titanic/",
         "url": "https://github.com/raqueeb/mltraining",
-        "stargazerCount": 128,
+        "stargazerCount": 129,
         "forkCount": 166,
         "primaryLanguage": "Jupyter Notebook",
         "topics": [
@@ -413649,7 +413655,7 @@
         "name": "nlp_bangla",
         "description": "হাতেকলমে ন্যাচারাল ল্যাঙ্গুয়েজ প্রসেসিং (এনএলপি) - শুরুর ধারণা",
         "url": "https://github.com/raqueeb/nlp_bangla",
-        "stargazerCount": 100,
+        "stargazerCount": 101,
         "forkCount": 77,
         "primaryLanguage": "Jupyter Notebook",
         "topics": [
@@ -413784,7 +413790,7 @@
         "license": "MIT License"
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:28.819250+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424538+00:00",
     "schema_version": "1.0"
   },
   {
@@ -413796,11 +413802,11 @@
     "company": null,
     "blog": "famimhayat.dev",
     "created_at": "2025-02-17T08:31:40Z",
-    "followers": 579,
+    "followers": 578,
     "following": 6,
     "public_repos": 27,
     "last_active": "2025-03-02T06:20:08Z",
-    "activity_score": 61.0,
+    "activity_score": 48.8,
     "top_languages": [
       "JavaScript",
       "CSS"
@@ -413958,7 +413964,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:28.819268+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:32.424560+00:00",
     "schema_version": "1.0"
   },
   {
@@ -413970,11 +413976,11 @@
     "company": "Staff Software Engineer @optimizely @newscred",
     "blog": "https://muniftanjim.dev",
     "created_at": "2014-07-02T18:10:44Z",
-    "followers": 567,
+    "followers": 569,
     "following": 8,
     "public_repos": 65,
-    "last_active": "2026-05-09T02:39:58Z",
-    "activity_score": 314.2,
+    "last_active": "2026-05-15T14:04:45Z",
+    "activity_score": 263.7,
     "top_languages": [
       "Lua",
       "Shell",
@@ -413999,7 +414005,7 @@
         "name": "copilot.lua",
         "description": "Fully featured & enhanced replacement for copilot.vim complete with API for interacting with Github Copilot",
         "url": "https://github.com/zbirenbaum/copilot.lua",
-        "stargazerCount": 4071,
+        "stargazerCount": 4078,
         "forkCount": 156,
         "primaryLanguage": "Lua",
         "topics": [
@@ -414010,7 +414016,7 @@
           "neovim"
         ],
         "createdAt": "2022-04-02T21:07:51Z",
-        "pushedAt": "2026-05-09T02:39:58Z",
+        "pushedAt": "2026-05-15T14:04:45Z",
         "isArchived": false,
         "isFork": false,
         "homepageUrl": "",
@@ -414020,7 +414026,7 @@
         "name": "nui.nvim",
         "description": "UI Component Library for Neovim.",
         "url": "https://github.com/MunifTanjim/nui.nvim",
-        "stargazerCount": 2066,
+        "stargazerCount": 2073,
         "forkCount": 76,
         "primaryLanguage": "Lua",
         "topics": [
@@ -414059,7 +414065,7 @@
         "name": "stremthru",
         "description": "Companion for Stremio.",
         "url": "https://github.com/MunifTanjim/stremthru",
-        "stargazerCount": 438,
+        "stargazerCount": 454,
         "forkCount": 91,
         "primaryLanguage": "Go",
         "topics": [
@@ -414067,7 +414073,7 @@
           "stremio-addon"
         ],
         "createdAt": "2024-10-23T15:48:16Z",
-        "pushedAt": "2026-05-09T15:51:00Z",
+        "pushedAt": "2026-05-13T18:47:29Z",
         "isArchived": false,
         "isFork": false,
         "homepageUrl": "http://docs.stremthru.13377001.xyz",
@@ -414137,7 +414143,7 @@
         "name": "tmux-suspend",
         "description": "Plugin that lets you suspend local tmux session, so that you can work with nested remote tmux session painlessly.",
         "url": "https://github.com/MunifTanjim/tmux-suspend",
-        "stargazerCount": 173,
+        "stargazerCount": 178,
         "forkCount": 6,
         "primaryLanguage": "Shell",
         "topics": [
@@ -414191,7 +414197,7 @@
         "license": "MIT License"
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:28.819299+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:36.122036+00:00",
     "schema_version": "1.0"
   },
   {
@@ -414200,36 +414206,36 @@
     "avatar_url": "https://avatars.githubusercontent.com/u/56669333?u=004ecfc53f5ff19882dc29cb65e8bafde70a598e&v=4",
     "bio": "Federated Learning Visionary and CTO with expertise in Generative AI and Fusion AI.",
     "location": "Dhaka, Bangladesh",
-    "company": "@Software-Intelligence-AI",
+    "company": "American International University - Bangladesh (AIUB)",
     "blog": "https://intelligenceacademy.ai",
     "created_at": "2019-10-17T06:19:53Z",
-    "followers": 548,
+    "followers": 573,
     "following": 1,
-    "public_repos": 19,
+    "public_repos": 20,
     "last_active": "2025-03-10T17:13:14Z",
-    "activity_score": 429.2,
+    "activity_score": 10325.2,
     "top_languages": [
       "Jupyter Notebook",
       "Python"
     ],
     "top_topics": [
       "data-science",
-      "data-visualization",
       "deep-learning",
+      "data-visualization",
       "data-engineering",
       "machine-learning",
       "data-structures",
       "computer-vision",
       "data-mining",
-      "artificial-intelligence",
-      "database"
+      "benchmark",
+      "benchmarking"
     ],
     "featured_repos": [
       {
         "name": "Fueling-Ambitions-Via-Book-Discoveries",
         "description": "This series uncovers the most valuable insights from groundbreaking books in AI, Machine Learning, and Data Science, helping you accelerate your learning journey. Each episode transforms complex theories into practical knowledge, making advanced topics more accessible and actionable.",
         "url": "https://github.com/ahammadmejbah/Fueling-Ambitions-Via-Book-Discoveries",
-        "stargazerCount": 218,
+        "stargazerCount": 217,
         "forkCount": 96,
         "primaryLanguage": null,
         "topics": [
@@ -414247,6 +414253,27 @@
         "license": null
       },
       {
+        "name": "Awesome-Datasets-Hub",
+        "description": "A curated collection of datasets for Large Language Models (LLMs), covering medical AI, NLP, multimodal learning, instruction tuning, reasoning, code generation, and evaluation benchmarks.",
+        "url": "https://github.com/ahammadmejbah/Awesome-Datasets-Hub",
+        "stargazerCount": 105,
+        "forkCount": 29,
+        "primaryLanguage": null,
+        "topics": [
+          "benchmark",
+          "benchmarking",
+          "deep-learning",
+          "deep-neural-networks",
+          "deeplearning"
+        ],
+        "createdAt": "2026-05-15T14:58:14Z",
+        "pushedAt": "2026-05-17T21:43:51Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": "https://intelligenceacademy.ai/datasets",
+        "license": null
+      },
+      {
         "name": "ahammadmejbah",
         "description": "Data Science || Machine Learning || Deep Learning || Computer Vision || NLP Enthusiast Talks about #datascience, #deeplearning, #dataanalytics, #machinelearning, and #machinelearningalgorithms",
         "url": "https://github.com/ahammadmejbah/ahammadmejbah",
@@ -414261,7 +414288,7 @@
           "machine-learning"
         ],
         "createdAt": "2022-09-13T20:59:14Z",
-        "pushedAt": "2025-10-25T07:38:44Z",
+        "pushedAt": "2026-05-15T18:14:44Z",
         "isArchived": false,
         "isFork": false,
         "homepageUrl": "",
@@ -414271,7 +414298,7 @@
         "name": "Artificial-Intelligence-Research-and-Development-Projects",
         "description": "The field of Artificial Intelligence (AI) is a frontier of computer science that focuses on creating systems capable of performing tasks that would typically require human intelligence. This encompasses a wide range of capabilities such as visual perception, speech recognition, decision-making, and language translation.",
         "url": "https://github.com/ahammadmejbah/Artificial-Intelligence-Research-and-Development-Projects",
-        "stargazerCount": 8,
+        "stargazerCount": 9,
         "forkCount": 1,
         "primaryLanguage": "Jupyter Notebook",
         "topics": [
@@ -414339,7 +414366,7 @@
         "primaryLanguage": "Python",
         "topics": [],
         "createdAt": "2025-10-10T09:44:38Z",
-        "pushedAt": "2026-02-10T17:00:18Z",
+        "pushedAt": "2026-05-17T23:03:35Z",
         "isArchived": false,
         "isFork": false,
         "homepageUrl": null,
@@ -414401,24 +414428,9 @@
         "isFork": false,
         "homepageUrl": "https://www.youtube.com/@BytesOfIntelligences",
         "license": "GNU General Public License v3.0"
-      },
-      {
-        "name": "Computer-Graphics-With-Mathematics-and-Python-By-Mejbah-Ahammad",
-        "description": "Computer Graphics With Mathematics and Python By Mejbah Ahammad",
-        "url": "https://github.com/ahammadmejbah/Computer-Graphics-With-Mathematics-and-Python-By-Mejbah-Ahammad",
-        "stargazerCount": 1,
-        "forkCount": 0,
-        "primaryLanguage": null,
-        "topics": [],
-        "createdAt": "2025-09-27T08:55:45Z",
-        "pushedAt": "2025-10-18T08:00:09Z",
-        "isArchived": false,
-        "isFork": false,
-        "homepageUrl": null,
-        "license": "MIT License"
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:28.819325+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:36.122088+00:00",
     "schema_version": "1.0"
   },
   {
@@ -414434,7 +414446,7 @@
     "following": 34,
     "public_repos": 61,
     "last_active": "2025-02-16T16:34:27Z",
-    "activity_score": 56.8,
+    "activity_score": 58.9,
     "top_languages": [
       "Dart",
       "C++",
@@ -414593,7 +414605,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:28.819342+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:36.122117+00:00",
     "schema_version": "1.0"
   },
   {
@@ -414605,11 +414617,11 @@
     "company": null,
     "blog": "https://foyez-kafi-protfollio.vercel.app/",
     "created_at": "2025-10-05T12:59:09Z",
-    "followers": 521,
+    "followers": 547,
     "following": 1225,
     "public_repos": 52,
     "last_active": "2026-03-23T12:20:57Z",
-    "activity_score": 96.0,
+    "activity_score": 82.6,
     "top_languages": [
       "HTML",
       "JavaScript"
@@ -414656,6 +414668,21 @@
         "topics": [],
         "createdAt": "2026-02-07T16:00:13Z",
         "pushedAt": "2026-03-23T12:19:30Z",
+        "isArchived": false,
+        "isFork": false,
+        "homepageUrl": null,
+        "license": null
+      },
+      {
+        "name": "git-solid",
+        "description": null,
+        "url": "https://github.com/foyezkafi/git-solid",
+        "stargazerCount": 1,
+        "forkCount": 0,
+        "primaryLanguage": null,
+        "topics": [],
+        "createdAt": "2026-05-09T17:16:58Z",
+        "pushedAt": "2026-05-09T17:16:59Z",
         "isArchived": false,
         "isFork": false,
         "homepageUrl": null,
@@ -414750,24 +414777,9 @@
         "isFork": false,
         "homepageUrl": null,
         "license": null
-      },
-      {
-        "name": "ct-it-e-commerce-react",
-        "description": null,
-        "url": "https://github.com/foyezkafi/ct-it-e-commerce-react",
-        "stargazerCount": 1,
-        "forkCount": 0,
-        "primaryLanguage": "JavaScript",
-        "topics": [],
-        "createdAt": "2026-02-12T21:40:04Z",
-        "pushedAt": "2026-02-17T10:42:54Z",
-        "isArchived": false,
-        "isFork": false,
-        "homepageUrl": null,
-        "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:28.819359+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:36.122139+00:00",
     "schema_version": "1.0"
   },
   {
@@ -414783,7 +414795,7 @@
     "following": 7,
     "public_repos": 33,
     "last_active": "2022-08-30T11:53:08Z",
-    "activity_score": 6.8,
+    "activity_score": 7.2,
     "top_languages": [
       "Dart",
       "CSS",
@@ -414944,7 +414956,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-09T19:24:34.097337+00:00",
+    "last_repo_fetched_at": "2026-05-17T23:59:36.122161+00:00",
     "schema_version": "1.0"
   },
   {
