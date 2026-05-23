@@ -67,31 +67,31 @@ Profiles are ranked using a **weighted composite score** based on the last 90 da
 
 This list ranks developers based on a weighted composite score of their GitHub activity over the last 90 days, including contributions, repository stars, followers, and more. It highlights the most consistently active members of the community.
 
-1. [sohag7th](https://github.com/sohag7th?rank=score) - Dhanmondi, Dhaka, Md. Sohag Hossain, 9 followers, 38 public repos, 0 stars.
-2. [SubrotaDebnath](https://github.com/SubrotaDebnath?rank=score) - Dhaka, Bangladesh., Subrota Debnath, 24 followers, 17 public repos, 0 stars.
-3. [rahmat058](https://github.com/rahmat058?rank=score) - Shyamoli, Dhaka, Kazi Rahamatullah, 12 followers, 12 public repos, 9 stars.
-4. [2021331010](https://github.com/2021331010?rank=score) - SUST,Sylhet, Most Khadiza Akther -10, 2 followers, 11 public repos, 1 stars.
-5. [SieamShahriare](https://github.com/SieamShahriare?rank=score) - Dhaka, SamShah, 22 followers, 22 public repos, 8 stars.
-6. [SakibNoman](https://github.com/SakibNoman?rank=score) - Chittagong,Bangladesh, Abdullah Al Noman Sakib, 15 followers, 65 public repos, 1 stars.
-7. [ajoy3700](https://github.com/ajoy3700?rank=score) - Dhaka, Ajoy Deb Nath, 1 followers, 6 public repos, 0 stars.
-8. [hiroksarker](https://github.com/hiroksarker?rank=score) - Dhaka, Bangladesh, Hirok Sarker, 57 followers, 41 public repos, 50 stars.
-9. [Al-Mohasin](https://github.com/Al-Mohasin?rank=score) - Satkhira, Khulna, Bangladesh, Al-Mohasin Mollah, 59 followers, 18 public repos, 37 stars.
-10. [Emrran](https://github.com/Emrran?rank=score) - Dhaka, Imran Hossain Noyan, 8 followers, 4 public repos, 19 stars.
-11. [AAShayon](https://github.com/AAShayon?rank=score) - Dhaka,Bangladesh, MD Asif Afroj Shayon, 7 followers, 59 public repos, 6 stars.
-12. [Shaqibul-Neil](https://github.com/Shaqibul-Neil?rank=score) - Agargaon, Dhaka, Bangladesh., Md. Shaqibul Islam Neil, 11 followers, 137 public repos, 11 stars.
-13. [bappycse](https://github.com/bappycse?rank=score) - Dhaka, Ashad Bappy, 5 followers, 31 public repos, 0 stars.
-14. [anammahmud-me](https://github.com/anammahmud-me?rank=score) - Dhaka, Bangladesh, Anam Mahmud, 8 followers, 21 public repos, 0 stars.
-15. [themdshakibul](https://github.com/themdshakibul?rank=score) - Manikganj,Dhaka,Bangladesh, Md Shakibul Islam, 16 followers, 125 public repos, 2 stars.
-16. [aanzum7](https://github.com/aanzum7?rank=score) - Dhaka, Bangladesh, Tanvir Anzum, 7 followers, 5 public repos, 0 stars.
-17. [RafiAwes](https://github.com/RafiAwes?rank=score) - Bangladesh, Rafi_Awes, 20 followers, 39 public repos, 0 stars.
-18. [Md-Anamul-Haque](https://github.com/Md-Anamul-Haque?rank=score) - Bangladesh, Anamul Haque, 3 followers, 30 public repos, 4 stars.
-19. [naiem75](https://github.com/naiem75?rank=score) - Bangladesh, Naiem Arafat, 11 followers, 25 public repos, 1 stars.
-20. [heera](https://github.com/heera?rank=score) - Sylhet, Bangladesh., Sheikh Heera, 138 followers, 12 public repos, 101 stars.
-21. [akbiplobx](https://github.com/akbiplobx?rank=score) - Rangpur, Bangladesh, A K Biplob, 30 followers, 163 public repos, 0 stars.
-22. [sabbir1991](https://github.com/sabbir1991?rank=score) - Dhaka, Bangladesh, Sabbir Ahmed, 138 followers, 28 public repos, 68 stars.
-23. [habibur899](https://github.com/habibur899?rank=score) - Khulna,Bangladesh, Habibur Rahman, 28 followers, 34 public repos, 4 stars.
-24. [MishukAdhikari](https://github.com/MishukAdhikari?rank=score) - Dhaka, Bangladesh, Mishuk Adhikari, 41 followers, 16 public repos, 18 stars.
-25. [rabbihossain](https://github.com/rabbihossain?rank=score) - Dhaka, Rabbi Hossain, 23 followers, 26 public repos, 4 stars.
+1. [sheikhkawser](https://github.com/sheikhkawser?rank=score) - Dhaka, Bangladesh, Sheikh Kawser, 6 followers, 2 public repos, 1 stars.
+2. [ahmadfiroz](https://github.com/ahmadfiroz?rank=score) - Dhaka,Banngladesh, Ahmad Firoz, 52 followers, 9 public repos, 12 stars.
+3. [kiron0](https://github.com/kiron0?rank=score) - Bangladesh, Toufiq Hasan  Kiron, 36 followers, 148 public repos, 29 stars.
+4. [naieem-bd](https://github.com/naieem-bd?rank=score) - Dhaka, Bangladesh, Naieemur Rahman, 547 followers, 9 public repos, 41 stars.
+5. [taus-if](https://github.com/taus-if?rank=score) - Dhaka, Md Tausiful Haque, 22 followers, 18 public repos, 1 stars.
+6. [fazlarabbi2](https://github.com/fazlarabbi2?rank=score) - Dhaka, Fozle Rabbi, 42 followers, 56 public repos, 4 stars.
+7. [Mouly22](https://github.com/Mouly22?rank=score) - Dhaka, Bangladesh, Umme Abira Azmary, 45 followers, 23 public repos, 15 stars.
+8. [Pavel-Sayekat](https://github.com/Pavel-Sayekat?rank=score) - Bangladesh, Pavel Sayekat, 13 followers, 1 public repos, 3 stars.
+9. [nurislam03](https://github.com/nurislam03?rank=score) - Frankfurt, Germany, Nur Islam, 88 followers, 22 public repos, 110 stars.
+10. [mutarek](https://github.com/mutarek?rank=score) - Chittagong,Agrabad, M Tarek, 70 followers, 208 public repos, 31 stars.
+11. [arifhp86](https://github.com/arifhp86?rank=score) - Dhaka, Bangladesh, Arifur Rahman, 46 followers, 14 public repos, 35 stars.
+12. [mozammel](https://github.com/mozammel?rank=score) - Dhaka, Bangladesh, Mozammel Haque, 312 followers, 14 public repos, 50 stars.
+13. [Rubel-hossain](https://github.com/Rubel-hossain?rank=score) - Dhaka, bangladesh, Rubel Hossain, 21 followers, 146 public repos, 31 stars.
+14. [nazmul-nhb](https://github.com/nazmul-nhb?rank=score) - Sirajganj, Bangladesh, Nazmul Hassan, 54 followers, 162 public repos, 22 stars.
+15. [jsureka](https://github.com/jsureka?rank=score) - Bangladesh, Jitesh Sureka, 53 followers, 46 public repos, 10 stars.
+16. [SadafShahid13](https://github.com/SadafShahid13?rank=score) - Dhaka, Bangladesh, Sad AF, 18 followers, 16 public repos, 1 stars.
+17. [didarulcseiubat17](https://github.com/didarulcseiubat17?rank=score) - Bangladesh, Didarul Amin, 18 followers, 25 public repos, 2 stars.
+18. [Iftakher99](https://github.com/Iftakher99?rank=score) - Dhaka,Bangladesh, Iftakher Mahmud, 25 followers, 71 public repos, 0 stars.
+19. [faisal2410](https://github.com/faisal2410?rank=score) - Bangladesh, Faisal Ahmed, 653 followers, 353 public repos, 147 stars.
+20. [nahian91](https://github.com/nahian91?rank=score) - Sylhet, Bangladesh, Abdullah Nahian, 218 followers, 170 public repos, 27 stars.
+21. [Yasirraiyan](https://github.com/Yasirraiyan?rank=score) - Level 4, 138/1 Tejgaon I/A, 138, 1 Bir Uttam Mir Shawkat Sarak, Dhaka 1208, 8 followers, 106 public repos, 0 stars.
+22. [arfinmilondev](https://github.com/arfinmilondev?rank=score) - Dhaka,Bangladesh, R A Milon, 4 followers, 23 public repos, 0 stars.
+23. [bravotanmoy](https://github.com/bravotanmoy?rank=score) - Dhaka, Bangladesh, Tanmoy Biswas, 20 followers, 14 public repos, 3 stars.
+24. [abdulhasibuddin](https://github.com/abdulhasibuddin?rank=score) - Khulna, Bangladesh, ABDUL HASIB UDDIN, 26 followers, 37 public repos, 6 stars.
+25. [rush1dan](https://github.com/rush1dan?rank=score) - Dhaka, Bangladesh, Rushidan Islam, 3 followers, 10 public repos, 0 stars.
 
 ### 👥 Top 25 Developers by Followers
 
@@ -169,8 +169,8 @@ A high number of public repositories often showcases a developer's diverse portf
 10. [HasibCoderLab](https://github.com/HasibCoderLab?rank=repos) - Rajshahi Bangladesh, Mohammad Hasib Hasan, 114 followers, 291 public repos, 9 stars.
 11. [AnikHaque](https://github.com/AnikHaque?rank=repos) - Dhaka,Bangladesh, Ekramul Haque Anik, 111 followers, 282 public repos, 57 stars.
 12. [sajib689](https://github.com/sajib689?rank=repos) - Muragacha, Manirampur, Jashore, Md Sajib Hossen, 5 followers, 274 public repos, 0 stars.
-13. [AnwarHossainSR](https://github.com/AnwarHossainSR?rank=repos) - Bangladesh, Anwar Hossain, 87 followers, 266 public repos, 203 stars.
-14. [Taanveer22](https://github.com/Taanveer22?rank=repos) - Bangladesh, Taan Veer, 430 followers, 266 public repos, 7 stars.
+13. [Taanveer22](https://github.com/Taanveer22?rank=repos) - Bangladesh, Taan Veer, 430 followers, 266 public repos, 7 stars.
+14. [AnwarHossainSR](https://github.com/AnwarHossainSR?rank=repos) - Bangladesh, Anwar Hossain, 87 followers, 266 public repos, 203 stars.
 15. [IAFahim](https://github.com/IAFahim?rank=repos) - Dhaka, Bangladesh, Md. Ishtiaq Ahamed Fahim, 101 followers, 262 public repos, 15 stars.
 16. [RiyaadHossain](https://github.com/RiyaadHossain?rank=repos) - Dhaka, Bangladesh, Riyad Hossain, 63 followers, 261 public repos, 35 stars.
 17. [abdulmazidakash](https://github.com/abdulmazidakash?rank=repos) - Feni, Bangladesh, Abdul Mazid Akash, 1152 followers, 255 public repos, 38 stars.
@@ -200,9 +200,9 @@ This list highlights developers who have seen the most significant growth in the
 5. [MdShawonForazi](https://github.com/MdShawonForazi?rank=rising_followers) - Dhaka, Bangladesh, 𝙈𝙙. 𝙎𝙝𝙖𝙬𝙤𝙣 𝙁𝙤𝙧𝙖𝙯𝙞, 7265 followers (+28 this month), 6 public repos, 71 stars.
 6. [Ishtiak007](https://github.com/Ishtiak007?rank=rising_followers) - Rangpur, Bangladesh., Ishtiak Ahmed, 1734 followers (+27 this month), 80 public repos, 76 stars.
 7. [raufurislam](https://github.com/raufurislam?rank=rising_followers) - Jamalpur Sadar Upazila, Bangladesh, Raufur Islam, 1829 followers (+26 this month), 74 public repos, 537 stars.
-8. [ashiq72](https://github.com/ashiq72?rank=rising_followers) - Dhaka, Bangladesh, Md Ashiquzzaman, 1442 followers (+24 this month), 57 public repos, 88 stars.
-9. [seo-asif](https://github.com/seo-asif?rank=rising_followers) - Dhaka,Bangladesh, Asif Mosharraf, 1464 followers (+24 this month), 49 public repos, 283 stars.
-10. [JubayerRiyad](https://github.com/JubayerRiyad?rank=rising_followers) - Bangladesh, Jubayer Riyad, 5648 followers (+24 this month), 9 public repos, 139 stars.
+8. [JubayerRiyad](https://github.com/JubayerRiyad?rank=rising_followers) - Bangladesh, Jubayer Riyad, 5648 followers (+24 this month), 9 public repos, 139 stars.
+9. [ashiq72](https://github.com/ashiq72?rank=rising_followers) - Dhaka, Bangladesh, Md Ashiquzzaman, 1442 followers (+24 this month), 57 public repos, 88 stars.
+10. [seo-asif](https://github.com/seo-asif?rank=rising_followers) - Dhaka,Bangladesh, Asif Mosharraf, 1464 followers (+24 this month), 49 public repos, 283 stars.
 11. [sulaimanbiswas](https://github.com/sulaimanbiswas?rank=rising_followers) - 1042, Road: 14/A, Adaboar, Dhaka - 1207, Md Suliman, 2068 followers (+23 this month), 67 public repos, 176 stars.
 12. [shahriar0999](https://github.com/shahriar0999?rank=rising_followers) - Bangladesh, Shahriar Kabir, 1834 followers (+21 this month), 59 public repos, 105 stars.
 13. [rahmantamim11](https://github.com/rahmantamim11?rank=rising_followers) - Bangladesh, Rahman Tamim, 2957 followers (+18 this month), 35 public repos, 85 stars.
@@ -210,9 +210,9 @@ This list highlights developers who have seen the most significant growth in the
 15. [hasinhayder](https://github.com/hasinhayder?rank=rising_followers) - Dhaka, Bangladesh, Hasin Hayder, 6325 followers (+14 this month), 170 public repos, 6140 stars.
 16. [madsdev404](https://github.com/madsdev404?rank=rising_followers) - Khulna, Bangladesh 🇧🇩, MD. Abduss Sobhan, 93 followers (+13 this month), 81 public repos, 0 stars.
 17. [htr-tech](https://github.com/htr-tech?rank=rising_followers) - Dhaka, Bangladesh, Tahmid Rayat, 12621 followers (+11 this month), 38 public repos, 25321 stars.
-18. [shovoalways](https://github.com/shovoalways?rank=rising_followers) - Bangladesh, Ali Hossain, 3561 followers (+10 this month), 42 public repos, 4283 stars.
-19. [KRTirtho](https://github.com/KRTirtho?rank=rising_followers) - Dhaka, Bangladesh, Kingkor Roy Tirtho, 2006 followers (+10 this month), 95 public repos, 47090 stars.
-20. [learnwithsumit](https://github.com/learnwithsumit?rank=rising_followers) - Dhaka, Bangladesh, Learn with Sumit, 7413 followers (+10 this month), 76 public repos, 2816 stars.
+18. [learnwithsumit](https://github.com/learnwithsumit?rank=rising_followers) - Dhaka, Bangladesh, Learn with Sumit, 7413 followers (+10 this month), 76 public repos, 2816 stars.
+19. [shovoalways](https://github.com/shovoalways?rank=rising_followers) - Bangladesh, Ali Hossain, 3561 followers (+10 this month), 42 public repos, 4283 stars.
+20. [KRTirtho](https://github.com/KRTirtho?rank=rising_followers) - Dhaka, Bangladesh, Kingkor Roy Tirtho, 2006 followers (+10 this month), 95 public repos, 47090 stars.
 
 ### ⭐ Most Repository Stars Gained Recently
 
@@ -222,22 +222,22 @@ Highlighting developers whose projects have gained the most stars recently, mark
 2. [sabbir-noyon](https://github.com/sabbir-noyon?rank=rising_stars) - Dhaka, Bangladesh, Md. Sabbir Hossain, 5452 followers (+2 stars this month), 32 public repos, 344 stars.
 3. [NazmusSayad](https://github.com/NazmusSayad?rank=rising_stars) - Khulna, Bangladesh, Nazmus Sayad, 5731 followers (+1 stars this month), 79 public repos, 271 stars.
 4. [shakilahmedatik](https://github.com/shakilahmedatik?rank=rising_stars) - Dhaka, Bangladesh, Shakil Ahmed Atik, 1388 followers (+1 stars this month), 173 public repos, 374 stars.
-5. [sohag7th](https://github.com/sohag7th?rank=rising_stars) - Dhanmondi, Dhaka, Md. Sohag Hossain, 9 followers, 38 public repos, 0 stars.
-6. [SubrotaDebnath](https://github.com/SubrotaDebnath?rank=rising_stars) - Dhaka, Bangladesh., Subrota Debnath, 24 followers, 17 public repos, 0 stars.
-7. [rahmat058](https://github.com/rahmat058?rank=rising_stars) - Shyamoli, Dhaka, Kazi Rahamatullah, 12 followers, 12 public repos, 9 stars.
-8. [2021331010](https://github.com/2021331010?rank=rising_stars) - SUST,Sylhet, Most Khadiza Akther -10, 2 followers, 11 public repos, 1 stars.
-9. [SieamShahriare](https://github.com/SieamShahriare?rank=rising_stars) - Dhaka, SamShah, 22 followers, 22 public repos, 8 stars.
-10. [SakibNoman](https://github.com/SakibNoman?rank=rising_stars) - Chittagong,Bangladesh, Abdullah Al Noman Sakib, 15 followers, 65 public repos, 1 stars.
-11. [ajoy3700](https://github.com/ajoy3700?rank=rising_stars) - Dhaka, Ajoy Deb Nath, 1 followers, 6 public repos, 0 stars.
-12. [hiroksarker](https://github.com/hiroksarker?rank=rising_stars) - Dhaka, Bangladesh, Hirok Sarker, 57 followers, 41 public repos, 50 stars.
-13. [Al-Mohasin](https://github.com/Al-Mohasin?rank=rising_stars) - Satkhira, Khulna, Bangladesh, Al-Mohasin Mollah, 59 followers, 18 public repos, 37 stars.
-14. [Emrran](https://github.com/Emrran?rank=rising_stars) - Dhaka, Imran Hossain Noyan, 8 followers, 4 public repos, 19 stars.
-15. [AAShayon](https://github.com/AAShayon?rank=rising_stars) - Dhaka,Bangladesh, MD Asif Afroj Shayon, 7 followers, 59 public repos, 6 stars.
-16. [Shaqibul-Neil](https://github.com/Shaqibul-Neil?rank=rising_stars) - Agargaon, Dhaka, Bangladesh., Md. Shaqibul Islam Neil, 11 followers, 137 public repos, 11 stars.
-17. [bappycse](https://github.com/bappycse?rank=rising_stars) - Dhaka, Ashad Bappy, 5 followers, 31 public repos, 0 stars.
-18. [anammahmud-me](https://github.com/anammahmud-me?rank=rising_stars) - Dhaka, Bangladesh, Anam Mahmud, 8 followers, 21 public repos, 0 stars.
-19. [themdshakibul](https://github.com/themdshakibul?rank=rising_stars) - Manikganj,Dhaka,Bangladesh, Md Shakibul Islam, 16 followers, 125 public repos, 2 stars.
-20. [aanzum7](https://github.com/aanzum7?rank=rising_stars) - Dhaka, Bangladesh, Tanvir Anzum, 7 followers, 5 public repos, 0 stars.
+5. [sheikhkawser](https://github.com/sheikhkawser?rank=rising_stars) - Dhaka, Bangladesh, Sheikh Kawser, 6 followers, 2 public repos, 1 stars.
+6. [ahmadfiroz](https://github.com/ahmadfiroz?rank=rising_stars) - Dhaka,Banngladesh, Ahmad Firoz, 52 followers, 9 public repos, 12 stars.
+7. [kiron0](https://github.com/kiron0?rank=rising_stars) - Bangladesh, Toufiq Hasan  Kiron, 36 followers, 148 public repos, 29 stars.
+8. [naieem-bd](https://github.com/naieem-bd?rank=rising_stars) - Dhaka, Bangladesh, Naieemur Rahman, 547 followers, 9 public repos, 41 stars.
+9. [taus-if](https://github.com/taus-if?rank=rising_stars) - Dhaka, Md Tausiful Haque, 22 followers, 18 public repos, 1 stars.
+10. [fazlarabbi2](https://github.com/fazlarabbi2?rank=rising_stars) - Dhaka, Fozle Rabbi, 42 followers, 56 public repos, 4 stars.
+11. [Mouly22](https://github.com/Mouly22?rank=rising_stars) - Dhaka, Bangladesh, Umme Abira Azmary, 45 followers, 23 public repos, 15 stars.
+12. [Pavel-Sayekat](https://github.com/Pavel-Sayekat?rank=rising_stars) - Bangladesh, Pavel Sayekat, 13 followers, 1 public repos, 3 stars.
+13. [nurislam03](https://github.com/nurislam03?rank=rising_stars) - Frankfurt, Germany, Nur Islam, 88 followers, 22 public repos, 110 stars.
+14. [mutarek](https://github.com/mutarek?rank=rising_stars) - Chittagong,Agrabad, M Tarek, 70 followers, 208 public repos, 31 stars.
+15. [arifhp86](https://github.com/arifhp86?rank=rising_stars) - Dhaka, Bangladesh, Arifur Rahman, 46 followers, 14 public repos, 35 stars.
+16. [mozammel](https://github.com/mozammel?rank=rising_stars) - Dhaka, Bangladesh, Mozammel Haque, 312 followers, 14 public repos, 50 stars.
+17. [Rubel-hossain](https://github.com/Rubel-hossain?rank=rising_stars) - Dhaka, bangladesh, Rubel Hossain, 21 followers, 146 public repos, 31 stars.
+18. [nazmul-nhb](https://github.com/nazmul-nhb?rank=rising_stars) - Sirajganj, Bangladesh, Nazmul Hassan, 54 followers, 162 public repos, 22 stars.
+19. [jsureka](https://github.com/jsureka?rank=rising_stars) - Bangladesh, Jitesh Sureka, 53 followers, 46 public repos, 10 stars.
+20. [SadafShahid13](https://github.com/SadafShahid13?rank=rising_stars) - Dhaka, Bangladesh, Sad AF, 18 followers, 16 public repos, 1 stars.
 
 ## 📍 Full Directory of Awesome Bangladeshi Developers
 
