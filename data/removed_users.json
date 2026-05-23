@@ -16,5 +16,11 @@
     "reason": "Proven to put malware in client code",
     "removed_by": "sharf-shawon",
     "is_self": false
+  },
+  "sefayet-alam": {
+    "github_username": "Sefayet-Alam",
+    "reason": "Self-Removal",
+    "removed_by": "Sefayet-Alam",
+    "is_self": true
   }
 }
