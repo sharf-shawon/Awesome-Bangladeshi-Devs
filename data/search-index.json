@@ -53786,7 +53786,7 @@
       "react-redux-tutorial",
       "NodeJS, React, Typescript, Socket IO"
     ],
-    "score": 181.7,
+    "score": 181.0,
     "followers": 11
   },
   {
@@ -53832,8 +53832,8 @@
       "Set your preferred timer for pomodoro, short break and long break in your preferred appearance, time to focus.",
       "Just a solution for a challenge from freecodecamp."
     ],
-    "score": 21.6,
-    "followers": 38
+    "score": 17.2,
+    "followers": 37
   },
   {
     "id": "hossainemruz",
@@ -53853,34 +53853,32 @@
       "hugo-theme",
       "example-site",
       "blog",
-      "portfolo",
-      "notes"
+      "portfolo"
     ],
     "r_names": [
       "toha",
+      "dotfiles",
       "toha-docs",
       "k8s-client-go-practice",
       "k8s-initializer-finalizer-practice",
       "linked-issues",
       "hossainemruz.github.io",
-      "notebook",
       "mysql-data-generator",
       "waybar-next-events",
-      "dotfiles"
+      "k8s-course-edge-iict-cuet"
     ],
     "r_desc": [
       "A Hugo theme for personal portfolio",
+      "Configs for different tools I use",
       "Documentation for Toha theme",
       "Simple example using client-go",
       "Practice code for kubernetes initializer and finalizer",
       "Find the issues linked with a Pull Request",
       "My portfolio + Blog",
-      "A notebook for my daily learning.",
       "Insert random data in MySQL",
-      "Show upcoming calendar events in waybar",
-      "Configs for different tools I use"
+      "Show upcoming calendar events in waybar"
     ],
-    "score": 360.1,
+    "score": 360.5,
     "followers": 154
   },
   {
@@ -53964,7 +53962,7 @@
       "This is a video-sharing platform",
       "A small React and Redux project"
     ],
-    "score": 189.4,
+    "score": 182.1,
     "followers": 5
   },
   {
@@ -53998,8 +53996,8 @@
       "I made this resume using html and css just to prove that it is easier and less time consuming to make a resume with html and css than using MS words.",
       "Simulates selections sort now, Hopefully will simulate other sorting algorightms in future."
     ],
-    "score": 304.2,
-    "followers": 114
+    "score": 167.6,
+    "followers": 113
   },
   {
     "id": "suaas21",
@@ -54024,7 +54022,7 @@
       "Hello-gRPC"
     ],
     "r_desc": [],
-    "score": 0.1,
+    "score": 1.1,
     "followers": 62
   },
   {
@@ -54050,7 +54048,7 @@
     ],
     "r_desc": [],
     "score": 0.1,
-    "followers": 55
+    "followers": 56
   },
   {
     "id": "mdhossain-2437",
@@ -54079,7 +54077,7 @@
       "\"A beautiful, thoughtful collection of dark themes, developer fonts, ligatures, and animations for the modern coder.\"",
       "adblocker beta"
     ],
-    "score": 704.1,
+    "score": 694.4,
     "followers": 42
   },
   {
@@ -54156,7 +54154,7 @@
       "With the Resume Builder app, you can create your resume very easily. And you can download that resume for free. You can set the color of your choice for the font add photos if you want and remove them if you don't want. So why delay try the app now.",
       "This is a  aaricle website. The website is fully responsive. Created the website to practice Sass. I have used HTML, CSS and Sass to create this website."
     ],
-    "score": 99.2,
+    "score": 90.8,
     "followers": 201
   },
   {
@@ -54180,7 +54178,7 @@
       "issue-tracker-debugged-solution"
     ],
     "r_desc": [],
-    "score": 73.4,
+    "score": 44.4,
     "followers": 286
   },
   {
@@ -54194,7 +54192,7 @@
       "arafatul-islam"
     ],
     "r_desc": [],
-    "score": 0.3,
+    "score": 2.3,
     "followers": 15
   },
   {
@@ -58348,8 +58346,8 @@
       "Authenticate and retrieve data from @hashicorp-vault via @kubernetes auth method ",
       "Personal Website"
     ],
-    "score": 91.5,
-    "followers": 99
+    "score": 137.6,
+    "followers": 100
   },
   {
     "id": "lemonkazi",
@@ -58378,8 +58376,8 @@
     "r_desc": [
       "doing django api practice with react"
     ],
-    "score": 175.4,
-    "followers": 19
+    "score": 154.8,
+    "followers": 20
   },
   {
     "id": "Dev-SalamSheikh",
@@ -58424,7 +58422,7 @@
       "This is my first project using tailwind Css , I Just Copy and paste the code and tried to learn something"
     ],
     "score": 1.4,
-    "followers": 530
+    "followers": 524
   },
   {
     "id": "nomangazi",
@@ -58453,8 +58451,8 @@
       "bikiran.com projects",
       "BookWave is application to make booking for co-working space or discussion more easy with online booking system with real time monitoring system"
     ],
-    "score": 171.2,
-    "followers": 27
+    "score": 232.1,
+    "followers": 28
   },
   {
     "id": "nwebpro",
@@ -58498,7 +58496,7 @@
       "Module 23.5 Basic JavaScript Bonus Problem",
       "Pro Education - Responsive Landing Page Design Bootstrap 5"
     ],
-    "score": 483.6,
+    "score": 513.9,
     "followers": 26
   },
   {
@@ -58535,7 +58533,7 @@
       "Coronavirus Tracker in Bangladesh Using React JS & REST API",
       "Poll Management Node JS APP, Developed with Node JS, Express JS, MongoDB"
     ],
-    "score": 216.0,
+    "score": 187.9,
     "followers": 16
   },
   {
@@ -58571,8 +58569,8 @@
       "Implementing authentication and authorization",
       "Learning ReactJS"
     ],
-    "score": 1.8,
-    "followers": 38
+    "score": 1.3,
+    "followers": 39
   },
   {
     "id": "hrshadhin",
@@ -58627,7 +58625,7 @@
   {
     "id": "nickgermaine",
     "name": "Nick Germaine",
-    "bio": "God-tier programmer (yes, there is a level beyond \"senior engineer\").\r\n\r\nNative language is Python, but I am fluent in C++, COBOL, Rust, and English.",
+    "bio": "Principal Software Architect\r\n\r\nNative language is Python, but I am fluent in C++, COBOL, Rust, and English.",
     "langs": [
       "JavaScript",
       "QML",
@@ -58657,7 +58655,7 @@
       ":closed_book: Archive - Development has moved to https://github.com/lirios/lirios.github.io"
     ],
     "score": 0.6,
-    "followers": 462
+    "followers": 463
   },
   {
     "id": "tanjinadnanabir",
@@ -58702,7 +58700,7 @@
       "This Inventory Management System (IMS) project is a software application designed to track stock levels, orders, sales, and deliveries.",
       "Efficient Sentiment Classification of Bangla E-Commerce Reviews"
     ],
-    "score": 32.5,
+    "score": 31.8,
     "followers": 57
   },
   {
@@ -58773,7 +58771,7 @@
       "A toy bittorrent client written in C.",
       "Stupid academic project (Sem 1-2)."
     ],
-    "score": 30.0,
+    "score": 31.0,
     "followers": 50
   },
   {
@@ -58806,7 +58804,7 @@
       "We code and we don't judge ._.",
       "Sisimpur is an AI-powered tool that instantly converts PDFs, documents, and notes into practice questions — from MCQs to flashcards — helping users revise better and faster with personalized quizzes and memory boosts."
     ],
-    "score": 13.8,
+    "score": 9.0,
     "followers": 11
   },
   {
@@ -58834,7 +58832,7 @@
       "Movie_Recommernder_System"
     ],
     "r_desc": [],
-    "score": 10.4,
+    "score": 9.9,
     "followers": 7
   },
   {
@@ -58872,8 +58870,8 @@
       "Datatable Axios is a simple and convenient npm package that helps you make GET, POST, and PUT requests with ease, while handling search parameters and pagination seamlessly for ssr datatable. It's built on top of the popular Axios library, making it reliable and efficient for your data fetching needs.",
       "Vue Todo CRUD in localStorage"
     ],
-    "score": 381.3,
-    "followers": 34
+    "score": 405.5,
+    "followers": 35
   },
   {
     "id": "Ilmi-Tabassum",
@@ -63937,7 +63935,7 @@
       "A PDF-based chat application that extracts and delivers information from uploaded PDFs through a user-friendly chat interface.",
       "Social media app backend using express"
     ],
-    "score": 2.6,
+    "score": 0.8,
     "followers": 33
   },
   {
@@ -63966,7 +63964,7 @@
     "r_desc": [
       "Project after learning HTML CSS and JS"
     ],
-    "score": 160.4,
+    "score": 166.4,
     "followers": 28
   },
   {
@@ -63993,7 +63991,7 @@
       "apiserver-with-kubebuilder"
     ],
     "r_desc": [],
-    "score": 402.4,
+    "score": 469.0,
     "followers": 93
   },
   {
@@ -64049,7 +64047,7 @@
       "A project to record all data of all employee of a office",
       "A Golang Backend project."
     ],
-    "score": 52.8,
+    "score": 42.1,
     "followers": 93
   },
   {
@@ -64084,7 +64082,7 @@
       "Blog Full Stack App",
       "danthi123danthi123_patternist1"
     ],
-    "score": 181.2,
+    "score": 142.9,
     "followers": 5
   },
   {
@@ -64120,7 +64118,7 @@
       "AI | ML | DL Fully Covered for Basic",
       "Education Counsellor Portfolio"
     ],
-    "score": 7.4,
+    "score": 7.0,
     "followers": 19
   },
   {
@@ -64153,7 +64151,7 @@
     "r_desc": [
       "Interactive authentication workbench built with Hono, Better Auth, React, and Drizzle to demonstrate secure session-based auth   flows including sign-up, sign-in, email verification, magic links, OTP, password reset, session inspection, and rate limiting."
     ],
-    "score": 37.4,
+    "score": 30.5,
     "followers": 37
   },
   {
@@ -64197,7 +64195,7 @@
       "A simple music player which scans through computer and finds all the audio in home directories. User can play next/previous songs and  see the song list and select a song to play.",
       "A Kubernetes Controller written using Kubebuilder which reconciles a custom resource named Bookstore"
     ],
-    "score": 24.4,
+    "score": 10.0,
     "followers": 60
   },
   {
@@ -64248,7 +64246,7 @@
       "redux-todo"
     ],
     "r_desc": [],
-    "score": 4.7,
+    "score": 5.6,
     "followers": 7
   },
   {
@@ -64276,8 +64274,8 @@
       "typescript-cheatsheet",
       "ds-algo-in-js",
       "society-management-system",
-      "js-interview-preparation",
       "amu-http",
+      "js-interview-preparation",
       "js-promise-tips-tricks",
       "rn-shopping-cart",
       "js-utility-methods",
@@ -64288,15 +64286,15 @@
       "Cheatsheet for TypeScript.",
       "Common and basic Data Structures and Algorithms tutorial in Bangla implemented by JavaScript. ",
       "An application that can gather all the information for a particular society and show it to authenticated users.",
-      "This is a preparation guide for your next JavaScript Interview.",
       "A graceful, ultra-lightweight HTTP client for modern JavaScript and TypeScript. ",
+      "This is a preparation guide for your next JavaScript Interview.",
       "Javascript Promise Tips & Tricks ",
       "A simple shopping cart app using React Native with Context Api.",
       "Native implementation of lodash utility methods.",
       "Nodejs online editor."
     ],
-    "score": 343.9,
-    "followers": 443
+    "score": 392.4,
+    "followers": 445
   },
   {
     "id": "cselabfu",
@@ -64314,7 +64312,7 @@
       "project-fu"
     ],
     "r_desc": [],
-    "score": 0.2,
+    "score": 0.0,
     "followers": 3
   },
   {
@@ -64324,8 +64322,8 @@
     "langs": [
       "Python",
       "JavaScript",
-      "HTML",
       "TypeScript",
+      "HTML",
       "Kotlin"
     ],
     "topics": [
@@ -64335,33 +64333,34 @@
       "edge-extension",
       "discord",
       "rss-feed",
-      "javascript",
-      "css3",
-      "html5",
-      "api"
+      "api",
+      "awesome-list",
+      "cli",
+      "cloud-storage"
     ],
     "r_names": [
       "wallabot",
       "Notation",
       "Previous-Portfolio",
       "DiscoRSS",
+      "awesome-file-hosts",
       "Whistler",
       "Celestial",
-      "awesome-file-hosts",
+      "samsung-ifg-decoder",
       "lore",
-      "Synapse",
-      "aura"
+      "Synapse"
     ],
     "r_desc": [
       "A simple Wall-a-bag Discord Bot!",
       "Notation is a browser extension that uses a special algorithm to highlight the first syllable of a word, allowing readers to focus on the highlighted parts and read up to 1.75x faster. With customizable font-weight and opacity, Notation enhances the reading experience on any website.",
       "A simple Discord RSS Bot!",
-      "Project Whistler is an open-source database that shows the records about the intensity of sound inside the Dhaka Metropolitan Area.",
       "Free-first, source-backed directory of file hosting services with structured JSON data and a spreadsheet-style explorer.",
+      "Project Whistler is an open-source database that shows the records about the intensity of sound inside the Dhaka Metropolitan Area.",
+      "Open-source Samsung IFG / IFEG image decoder for legacy phone firmware assets",
       "AI-powered media tracker for movies, TV, anime, games, books, and custom universes with timeline curation and progress tracking.",
-      "A modern Windows wallpaper app with multi-source browsing, smart slideshows, history tracking, and desktop/lock screen automation."
+      "Micro-trivia Android app for quick curiosity sparks and bite-sized facts."
     ],
-    "score": 871.4,
+    "score": 1060.9,
     "followers": 13
   },
   {
@@ -64395,7 +64394,7 @@
       "This is a boilerplate for getting started with an Express server using Typescript, Prisma, Kysely and ESbuild. It provides a basic setup to quickly kickstart your Express-based projects.",
       "Intranet Communication and File Sharing Application"
     ],
-    "score": 328.1,
+    "score": 376.6,
     "followers": 700
   },
   {
@@ -85116,7 +85115,7 @@
       "Laravel is an open source, model-view-controller (MVC) framework for PHP. This tutorial walks you through the process of generating a Laravel application, deploying it to an AWS Elastic Beanstalk environment, and configuring it to connect to an Amazon Relational Database Service (Amazon RDS) database instance.",
       "Unity 3D Compose for Desktop and Android, a modern UI framework for C ++ , C#  that makes building performant and beautiful user interfaces easy and enjoyable."
     ],
-    "score": 17.9,
+    "score": 17.8,
     "followers": 904
   },
   {
@@ -85141,8 +85140,8 @@
       "mehedishakeel",
       "Hackintosh",
       "HackMKV",
-      "WiFi-Deauther-BW16",
       "WiFi-Pentest-Kit",
+      "WiFi-Deauther-BW16",
       "deface",
       "digispark-badusb",
       "Wallpapers"
@@ -85151,14 +85150,14 @@
       "InjectAPK - Binding Android Payload Into APK and Remotely Hack Into Android Phone.",
       "AMD Ryzen Hackintosh ( Ryzentosh ) AMD Ryzen 7 3700X With RX 5600XT & MSI B450 Mortar MAX",
       "HackMKV - Generate Malacious Video.MKV To Remotely Hack Computer Via Video Files.",
-      "WiFi Deauther For Both 2.4GHz & 5GHz WiFI Networks with BW16 RTL8720DN Module",
       "WiFi Pentest Kit is a toolkit designed for wireless network security testing and auditing. It provides utilities like deauth attack, evil-twin attack, beacon spamming, handshake capturing to help security researchers and ethical hackers analyze wifi networks & identify vulnerabilities with BW16 (RTL8720DN).",
+      "WiFi Deauther For Both 2.4GHz & 5GHz WiFI Networks with BW16 RTL8720DN Module",
       "Website Deface Page",
       "DIY USB Rubber Ducky BadUSB with Digispark ATTiny85",
       "Collection of My Wallpapers"
     ],
-    "score": 37.5,
-    "followers": 845
+    "score": 70.1,
+    "followers": 850
   },
   {
     "id": "Nayeem0011",
@@ -85187,8 +85186,8 @@
       "Visit Site",
       "Visit Site"
     ],
-    "score": 88.1,
-    "followers": 770
+    "score": 91.6,
+    "followers": 759
   },
   {
     "id": "afrinbhuiyan",
@@ -85206,36 +85205,36 @@
       "freelance",
       "fullstack",
       "marketplace",
-      "fullstack-app",
-      "jwt-authentication",
-      "mongodb"
+      "education",
+      "course-management",
+      "javascript"
     ],
     "r_names": [
       "freelance-task-marketplace-client",
-      "kind-hands-client",
       "EduTrack",
-      "gameday-local-platform",
+      "kind-hands-client",
       "afrinbhuiyan",
+      "gameday-local-platform",
       "docs",
-      "EduTrack-Server",
       "bg-remover",
+      "EduTrack-Server",
       "nexuslaunch-client",
       "afrindev-portfolio"
     ],
     "r_desc": [
       "A full-stack freelance task marketplace where users can post tasks, place bids, and collaborate — built with React, Node.js, Firebase, and MongoDB.",
-      "A full-stack volunteer management platform connecting organizations with volunteers. Built with React, Node.js, Firebase, and MongoDB.",
       "EduTrack is a modern Learning Management System (LMS) built with React, designed to provide an intuitive and interactive experience for both students and instructors. Explore courses effortlessly, track your learning progress, and engage with a sleek, user-friendly interface.",
-      "A responsive React app to explore and promote local sports events with Firebase Auth and dynamic features.",
+      "A full-stack volunteer management platform connecting organizations with volunteers. Built with React, Node.js, Firebase, and MongoDB.",
       "My GitHub profile",
+      "A responsive React app to explore and promote local sports events with Firebase Auth and dynamic features.",
       "A web-based digital painting application with layer support and powerful tools.",
-      "Backend API for EduTrack built with Node.js, Express, and MongoDB to manage courses, users, authentication, and student progress tracking.",
       "A professional background removal web application that works completely FREE with no limits. Remove backgrounds from images instantly using AI technology running directly in your browser.",
+      "Backend API for EduTrack built with Node.js, Express, and MongoDB to manage courses, users, authentication, and student progress tracking.",
       "React-based frontend for NexusLaunch a modern product discovery platform featuring authentication, product listings, upvotes, and responsive UI with Tailwind CSS.",
       "Hey, It’s Me!"
     ],
-    "score": 52.6,
-    "followers": 778
+    "score": 48.0,
+    "followers": 787
   },
   {
     "id": "REFAT-156",
@@ -85277,7 +85276,7 @@
       "THIS IS 1 UID TO AUTO FILE MAKING TOOL 💛🥀"
     ],
     "score": 19.6,
-    "followers": 697
+    "followers": 696
   },
   {
     "id": "JISAN-404",
@@ -85360,8 +85359,8 @@
       "Generate SVG backgrounds with custom-sized shapes. :collision:",
       "CLI to check website status in the command line."
     ],
-    "score": 10.4,
-    "followers": 668
+    "score": 75.2,
+    "followers": 669
   },
   {
     "id": "Niki404-Cyber",
@@ -85388,7 +85387,7 @@
       "File Clonnig",
       "facebook automation tools"
     ],
-    "score": 123.5,
+    "score": 147.4,
     "followers": 664
   },
   {
@@ -85420,7 +85419,7 @@
       "Config files for my GitHub profile."
     ],
     "score": 0.0,
-    "followers": 652
+    "followers": 629
   },
   {
     "id": "AntsyLich",
@@ -85448,8 +85447,8 @@
       "MangaDex current seasonal list. Updated daily.",
       "kotlin/js libraries for tachiyomi sources"
     ],
-    "score": 55.6,
-    "followers": 597
+    "score": 42.7,
+    "followers": 602
   },
   {
     "id": "raqueeb",
@@ -85457,6 +85456,7 @@
     "bio": "There are many things you can let go of in life, but NEVER let go of the tiller.",
     "langs": [
       "Jupyter Notebook",
+      "Python",
       "HTML"
     ],
     "topics": [
@@ -85472,9 +85472,9 @@
       "deep_learning_book",
       "TensorFlow2",
       "Intermediate-scikit-learn",
+      "ai_work_flow",
       "mlbook-titanic",
-      "aiwithr",
-      "tf_lite_android"
+      "aiwithr"
     ],
     "r_desc": [
       "হাতেকলমে মেশিন লার্নিং বই: 'টাইটানিক 'প্রজেক্ট স্ক্রিপ্ট: কে কে বেঁচে থাকবেন জাহাজডুবির পর? বইয়ের অনলাইন লিংক: https://rakibul-hassan.gitbook.io/mlbook-titanic/",
@@ -85484,12 +85484,12 @@
       "হাতেকলমে ডীপ লার্নিং বই: http://bit.ly/bn_dl",
       "হাতেকলমে পাইথন ডিপ লার্নিং (TensorFlow 2.x) বইয়ের ব্যবহৃত নোটবুক, লিংক: http://bit.ly/bn_dl",
       "আরেকটা সাইকিট-লার্ন বই, নতুন ডেটাসেট নিয়ে",
+      "Being the CTO of Link3 Technologies, I do lot of tinkering. This is a production-ready collection of local LLM-powered enterprise automations built for an ISP/Telecom environment. Every app runs entirely on-premise using small open-source models (Qwen2.5-1.5B) via LM Studio — keeping sensitive customer, employee data completely private.",
       "মেশিন লার্নিং: হাতে কলমে  'টাইটানিক 'প্রজেক্ট ওয়ার্কবুক",
-      "নতুন সাইট আসছে কৃত্রিম বুদ্ধিমত্তা নিয়ে",
-      "অ্যান্ড্রয়েড অ্যাপের জন্য \"এমনিস্ট\" হাতে লেখা ডিজিট চিনতে মডেল ট্রেনিং"
+      "নতুন সাইট আসছে কৃত্রিম বুদ্ধিমত্তা নিয়ে"
     ],
-    "score": 13.0,
-    "followers": 1176
+    "score": 15.0,
+    "followers": 1180
   },
   {
     "id": "FamimHayat",
@@ -85513,8 +85513,8 @@
       "chatting"
     ],
     "r_desc": [],
-    "score": 48.8,
-    "followers": 578
+    "score": 40.6,
+    "followers": 577
   },
   {
     "id": "MunifTanjim",
@@ -85563,8 +85563,8 @@
       "Bitbucket API client for Browser and Node.js",
       "Lua grammar for tree-sitter"
     ],
-    "score": 263.7,
-    "followers": 569
+    "score": 261.3,
+    "followers": 570
   },
   {
     "id": "ahammadmejbah",
@@ -85593,9 +85593,9 @@
       "Artificial-Intelligence-Research-and-Development-Projects",
       "Optimization-Methods-With-Mathematics-and-Python-By-Mejbah-Ahammad",
       "Becoming-A-Python-Developer",
+      "Scikit-Learn-Cheat-Sheet",
       "Artificial-Intelligence-Resources",
       "Mathematical-Foundations-of-Image-Processing-and-Computer-Vision",
-      "Scikit-Learn-Cheat-Sheet",
       "Supplemental-Materials"
     ],
     "r_desc": [
@@ -85605,13 +85605,13 @@
       "The field of Artificial Intelligence (AI) is a frontier of computer science that focuses on creating systems capable of performing tasks that would typically require human intelligence. This encompasses a wide range of capabilities such as visual perception, speech recognition, decision-making, and language translation.",
       "Optimization Methods With Mathematics and Python By Mejbah Ahammad",
       "This repo contains all my learning projects, scripts, and notes on becoming a professional Python Developer.",
+      "Scikit Learn Cheat Sheet",
       "A curated collection of high-quality learning materials, research papers, datasets, frameworks, and practical guides covering every major area of Artificial Intelligence — including Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, Reinforcement Learning, and MLOps.",
       "Mathematical Foundations of Image Processing and Computer",
-      "Scikit Learn Cheat Sheet",
       "Explore AI with resources like 📚 books, 🎧 podcasts, and 🖥️ online courses! Join forums 💬, attend workshops 🛠️, and read journals 📖 to boost your knowledge! 🚀✨🧠"
     ],
-    "score": 10325.2,
-    "followers": 573
+    "score": 13321.8,
+    "followers": 576
   },
   {
     "id": "RafatMeraz",
@@ -103786,25 +103786,25 @@
       "TypeScript",
       "CSS",
       "JavaScript",
-      "Vue"
+      "Python"
     ],
     "topics": [],
     "r_names": [
       "gns-design-system",
       "gns-ui-kit",
       "restaurant-manaegement",
+      "triage-agent",
+      "tabs-handler",
       "product-management",
       "social-feed",
       "github-issue-finder-mcp-practice",
       "github-explorer",
-      "react-typescript-formik-zod",
-      "vue-pratice",
-      "angular-practice"
+      "react-typescript-formik-zod"
     ],
     "r_desc": [
       "Design system for GN surveys"
     ],
-    "score": 87.6,
+    "score": 72.9,
     "followers": 18
   },
   {
@@ -103836,8 +103836,8 @@
     "r_desc": [
       "Al-Diyar is a state-of-the-art, role-based real estate platform built with the modern web stack. It provides a seamless experience for buyers, sellers, and agents to interact in a secure and high-performance environment."
     ],
-    "score": 1610.8,
-    "followers": 57
+    "score": 1475.5,
+    "followers": 56
   },
   {
     "id": "udoykumar",
@@ -103875,7 +103875,7 @@
       "live link"
     ],
     "score": 57.9,
-    "followers": 126
+    "followers": 129
   },
   {
     "id": "hridoy-ahmmad",
@@ -103891,16 +103891,16 @@
       "GitHub-Issues-Tracker",
       "B13-A01-Knowledge-Vault",
       "before-after",
+      "sportnest-client",
+      "sportnest-server",
       "wanderlust-client",
       "wanderlust-server",
       "simple-crud-client",
       "simple-crud-server",
-      "expressJS",
-      "newRepo",
-      "Big-budget-Shop"
+      "expressJS"
     ],
     "r_desc": [],
-    "score": 102.5,
+    "score": 146.5,
     "followers": 5
   },
   {
@@ -103949,7 +103949,7 @@
       "A support ticket management system built with Node.js and Express. Users can create accounts, log in and log out, submit tickets describing issues, and attach screenshots or files. Each user can view their own submitted tickets, while administrators have access to all tickets with the ability to update their status.",
       "A simple YouTube video downloader built with Python. It provides a clean web interface where users can paste a YouTube link, preview the video thumbnail and title, choose the desired quality (1080p, 720p, 480p, or best available), and download the video directly to their machine."
     ],
-    "score": 66.3,
+    "score": 69.6,
     "followers": 8
   },
   {
@@ -103987,7 +103987,7 @@
       "Online news portal",
       "Food Shop Website"
     ],
-    "score": 122.9,
+    "score": 139.7,
     "followers": 5
   },
   {
@@ -104011,7 +104011,7 @@
       "JS-02"
     ],
     "r_desc": [],
-    "score": 43.2,
+    "score": 27.1,
     "followers": 14
   },
   {
@@ -104052,7 +104052,7 @@
       "Auto ReactionBot is a versatile and efficient Telegram bot that automatically adds predefined emoji reaction to messages, customizing reactions for each word in every group",
       "NGLx - NGL Spammer is a web-based tool for automating message submissions to NGL links. It features a sleek interface, allows customization of message content, count, and delay, and provides a log for tracking message status. Ideal for educational purposes with CORS setup instructions included"
     ],
-    "score": 155.8,
+    "score": 164.4,
     "followers": 26
   },
   {
@@ -104079,7 +104079,7 @@
       "stf-app1"
     ],
     "r_desc": [],
-    "score": 4.7,
+    "score": 2.0,
     "followers": 8
   },
   {
@@ -104141,8 +104141,8 @@
       "Doctor-Portal Website......",
       "JavaScript Conditon"
     ],
-    "score": 127.4,
-    "followers": 4
+    "score": 112.9,
+    "followers": 5
   },
   {
     "id": "swimshahriar",
@@ -104190,7 +104190,7 @@
       "This repository contains the practical part of the session called \"Introduction to Nextjs\" that I took on \"Ollyo dev. talk\".",
       "Go with Fiber and Mongodb api server."
     ],
-    "score": 34.8,
+    "score": 42.9,
     "followers": 50
   },
   {
@@ -104198,35 +104198,35 @@
     "name": "Naimur Reza",
     "bio": "Frontend Software Engineer building full-stack web apps with Next.js, React, TypeScript, and Node.js.",
     "langs": [
-      "JavaScript",
-      "TypeScript"
+      "TypeScript",
+      "JavaScript"
     ],
     "topics": [
       "prisma",
       "expressjs",
-      "fullstack",
       "mongodb",
       "nodejs",
-      "react",
-      "stripe",
       "material-ui",
       "nextjs",
-      "modern-ui"
+      "modern-ui",
+      "reactjs",
+      "tailwindcss",
+      "postgresql"
     ],
     "r_names": [
       "Lost-And-Found-Frontend",
       "Tasty-drop-client",
+      "four-wild-duck",
       "daily-dev-dashboard",
       "Crypto-Critox",
       "Lost-And-Found-Server",
       "PH-University-Client",
       "Campsunshine-Server",
       "Campsunshine-Client",
-      "AirCnc-Server",
-      "AirCnc-Client"
+      "AirCnc-Server"
     ],
     "r_desc": [],
-    "score": 558.4,
+    "score": 513.2,
     "followers": 37
   },
   {
@@ -104252,8 +104252,8 @@
       "usama"
     ],
     "r_desc": [],
-    "score": 90.3,
-    "followers": 10
+    "score": 124.0,
+    "followers": 9
   },
   {
     "id": "fahad1shakil",
@@ -104264,17 +104264,20 @@
       "HTML"
     ],
     "topics": [
-      "api",
       "cors",
-      "daisyui-v5",
       "dotenv",
-      "expressjs",
       "firebase",
-      "jsx",
-      "reactjs",
-      "website"
+      "api",
+      "express",
+      "jwt",
+      "mongodb",
+      "axios",
+      "fra",
+      "daisyui-v5"
     ],
     "r_names": [
+      "LocalChefBazaar-Backend-FahadShakil",
+      "fahad1shakil-LocalChefBazaar-FahadShakil",
       "Home-Nest-Website",
       "MongoDB-Basic3",
       "GreenNest-Website",
@@ -104282,21 +104285,18 @@
       "public-api",
       "React-Concepts-37",
       "Dark-Mode-Portfolio",
-      "LocalChefBazaar-Backend-FahadShakil",
-      "fahad1shakil-LocalChefBazaar-FahadShakil",
       "Backend-CRUD-Auth-Queries-MiddleWare"
     ],
     "r_desc": [
+      "Backend",
       "🏠 HomeNest - Premium Real Estate Platform",
       "ph m55 CRUD with Smart Deals Using MongoDB",
       "🍃 GreenNest – Indoor Plant Care & Store A-9",
       "Module 39 Modules and data storage integration",
       "39-3 Load Fake data, online api",
-      "Backend",
-      "https://localchefbazzar-fahadshakil.netlify.app/",
       "con10"
     ],
-    "score": 40.8,
+    "score": 67.1,
     "followers": 15
   },
   {
