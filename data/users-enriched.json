@@ -618915,11 +618915,11 @@
     "company": "Square Health Ltd.",
     "blog": "https://chayanforyou.github.io",
     "created_at": "2015-05-29T05:01:52Z",
-    "followers": 116,
+    "followers": 107,
     "following": 35,
     "public_repos": 95,
     "last_active": "2026-05-19T02:48:47Z",
-    "activity_score": 103.1,
+    "activity_score": 73.8,
     "top_languages": [
       "Dart",
       "C++",
@@ -618942,7 +618942,7 @@
         "name": "QuickBall",
         "description": "A Quick Action Ball that gives fast access to system controls (volume, brightness, lock) with smart positioning",
         "url": "https://github.com/chayanforyou/QuickBall",
-        "stargazerCount": 148,
+        "stargazerCount": 151,
         "forkCount": 12,
         "primaryLanguage": "Kotlin",
         "topics": [
@@ -619143,7 +619143,7 @@
         "license": null
       }
     ],
-    "last_repo_fetched_at": "2026-05-20T00:09:11.199600+00:00",
+    "last_repo_fetched_at": "2026-05-28T00:01:42.953370+00:00",
     "schema_version": "1.0"
   },
   {
