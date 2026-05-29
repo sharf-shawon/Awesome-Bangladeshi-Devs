@@ -1,0 +1,19 @@
+---
+permalink: /data/projects.json
+---
+{%- set all_repos = [] -%}
+{%- for user in enriched -%}
+    {%- for repo in user.top_repos -%}
+        {%- set all_repos = (all_repos.push({
+            n: repo.name,
+            d: repo.description or "",
+            u: repo.url,
+            s: repo.stars or 0,
+            f: repo.forks or 0,
+            l: repo.language,
+            o: user.github_username,
+            a: user.avatar_url
+        }), all_repos) -%}
+    {%- endfor -%}
+{%- endfor -%}
+{{ all_repos | json | safe }}

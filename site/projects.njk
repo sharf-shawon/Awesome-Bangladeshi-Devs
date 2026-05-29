@@ -1,183 +1,74 @@
 ---
 layout: base.njk
-title: Project Discovery - Awesome Bangladeshi Devs
-description: Explore and discover open-source projects and repositories built by Bangladeshi developers.
+title: Top Community Projects
+permalink: /projects/
 ---
 
-<div class="py-12 text-center">
-  <h1 class="text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">Discover Open Source Projects</h1>
-  <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">A deep look into the software ecosystem built by Bangladeshi developers on GitHub.</p>
+<div class="text-center py-12">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Community Projects</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Discover the most popular open-source repositories built by Bangladeshi developers.</p>
 </div>
 
-<div class="max-w-4xl mx-auto mb-16">
-  <div class="sticky top-4 z-20">
-    <div class="relative">
-      <input type="text" id="project-search" placeholder="Search projects by name, description, language, or topic..." class="w-full px-6 py-4 rounded-full border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:border-purple-500 shadow-xl text-lg transition-all">
-      <div id="project-results-count" class="absolute right-6 top-1/2 -translate-y-1/2 text-sm text-gray-400"></div>
+<div class="max-w-6xl mx-auto mb-12">
+    <!-- Controls Container -->
+    <div class="bg-white dark:bg-slate-800 p-6 rounded-3xl shadow-sm border border-gray-100 dark:border-gray-700 mb-8">
+        <div class="flex flex-col md:flex-row gap-4 mb-6">
+            <div class="relative flex-grow">
+                <input type="text" id="project-search" placeholder="Search by name or description..." 
+                       class="w-full pl-12 pr-4 py-4 rounded-2xl bg-gray-50 dark:bg-slate-900 border-none focus:ring-2 focus:ring-primary outline-none text-lg">
+                <div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <select id="project-sort" class="px-6 py-4 rounded-2xl bg-gray-50 dark:bg-slate-900 border-none focus:ring-2 focus:ring-primary outline-none font-medium">
+                    <option value="stars">Most Stars</option>
+                    <option value="forks">Most Forks</option>
+                    <option value="name">Alphabetical</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex items-center justify-between mb-3">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-gray-400">Filter by Language</h3>
+                <button id="clear-filters" class="text-sm text-primary font-bold hover:underline hidden">Clear All</button>
+            </div>
+            <div id="language-filters" class="flex flex-wrap gap-2">
+                <!-- Language chips populated by JS -->
+                <div class="animate-pulse flex gap-2">
+                    <div class="h-8 w-20 bg-gray-100 dark:bg-gray-700 rounded-full"></div>
+                    <div class="h-8 w-24 bg-gray-100 dark:bg-gray-700 rounded-full"></div>
+                    <div class="h-8 w-16 bg-gray-100 dark:bg-gray-700 rounded-full"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <div class="flex flex-wrap justify-between items-center gap-4 mt-4 px-2">
-      <div class="flex flex-wrap gap-2" id="project-quick-filters">
-        <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-purple-100 dark:hover:bg-purple-900 transition-colors text-sm" data-filter="Python">Python</button>
-        <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-purple-100 dark:hover:bg-purple-900 transition-colors text-sm" data-filter="JavaScript">JavaScript</button>
-        <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-purple-100 dark:hover:bg-purple-900 transition-colors text-sm" data-filter="Go">Go</button>
-        <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-purple-100 dark:hover:bg-purple-900 transition-colors text-sm" data-filter="Rust">Rust</button>
-      </div>
-      
-      <div class="flex items-center gap-2">
-        <label class="text-xs font-bold uppercase text-gray-400">Sort:</label>
-        <select id="project-sort" class="bg-transparent text-sm font-medium focus:outline-none">
-          <option value="stars">Most Stars</option>
-          <option value="updated">Recently Updated</option>
-          <option value="name">Name</option>
-        </select>
-      </div>
+
+    <!-- Results Info -->
+    <div id="project-results-info" class="mb-6 px-2 text-gray-500 font-medium hidden">
+        <span id="project-count">0</span> projects found
     </div>
-  </div>
+
+    <!-- Results Grid -->
+    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Projects populated by JS -->
+    </div>
+
+    <!-- Sentinel for Lazy Loading -->
+    <div id="load-more-sentinel" class="h-20 flex items-center justify-center">
+        <div id="loading-spinner" class="hidden animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+    </div>
+
+    <!-- Empty State -->
+    <div id="no-results" class="hidden text-center py-20">
+        <div class="text-6xl mb-4">🔍</div>
+        <h2 class="text-2xl font-bold mb-2">No projects found</h2>
+        <p class="text-gray-500">Try adjusting your search or filters</p>
+    </div>
 </div>
 
-<div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  <!-- Dynamic Content -->
-</div>
-
-<div id="no-projects" class="hidden py-12 text-center text-gray-500">
-  <p class="text-xl">No projects found matching your search.</p>
-</div>
-
-<div id="project-scroll-status" class="py-12 text-center text-gray-500">
-  <div class="flex items-center justify-center gap-2">
-    <svg class="animate-spin h-5 w-5 text-purple-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-    </svg>
-    <span>Loading projects...</span>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-<script>
-document.addEventListener('DOMContentLoaded', async () => {
-    const grid = document.getElementById('projects-grid');
-    const searchInput = document.getElementById('project-search');
-    const sortSelect = document.getElementById('project-sort');
-    const resultsCount = document.getElementById('project-results-count');
-    const quickFilters = document.querySelectorAll('#project-quick-filters button');
-    const noResults = document.getElementById('no-projects');
-    const scrollStatus = document.getElementById('project-scroll-status');
-
-    let allProjects = [];
-    let filteredProjects = [];
-    let fuse;
-    const itemsPerPage = 24;
-    let isLoading = false;
-
-    async function init() {
-        try {
-            const response = await fetch('/data/users-enriched.json');
-            const users = await response.json();
-            
-            allProjects = users.flatMap(user => (user.featured_repos || []).map(repo => ({
-                ...repo,
-                owner: user.username,
-                owner_name: user.name
-            })));
-
-            const options = {
-                keys: ['name', 'description', 'primaryLanguage', 'topics'],
-                threshold: 0.3,
-                useExtendedSearch: true
-            };
-            fuse = new Fuse(allProjects, options);
-            
-            performSearch('');
-        } catch (e) {
-            console.error(e);
-        }
-    }
-
-    function performSearch(query) {
-        if (!query) {
-            filteredProjects = [...allProjects];
-        } else {
-            filteredProjects = fuse.search(query).map(r => r.item);
-        }
-        sortAndRender();
-    }
-
-    function sortAndRender() {
-        const sortBy = sortSelect.value;
-        filteredProjects.sort((a, b) => {
-            if (sortBy === 'stars') return b.stargazerCount - a.stars;
-            if (sortBy === 'updated') return new Date(b.pushedAt) - new Date(a.pushedAt);
-            if (sortBy === 'name') return a.name.localeCompare(b.name);
-            return 0;
-        });
-
-        grid.innerHTML = '';
-        resultsCount.textContent = `${filteredProjects.length} projects`;
-        
-        if (filteredProjects.length === 0) {
-            noResults.classList.remove('hidden');
-            scrollStatus.style.display = 'none';
-        } else {
-            noResults.classList.add('hidden');
-            loadMore();
-        }
-    }
-
-    function loadMore() {
-        const current = grid.children.length;
-        const toDisplay = filteredProjects.slice(current, current + itemsPerPage);
-        
-        const fragment = document.createDocumentFragment();
-        toDisplay.forEach(repo => {
-            const card = document.createElement('div');
-            card.className = 'border dark:border-gray-800 p-6 rounded-2xl hover:shadow-lg transition-all group bg-white dark:bg-gray-900';
-            card.innerHTML = `
-                <div class="flex justify-between items-start mb-4">
-                    <h3 class="text-xl font-bold"><a href="${repo.url}" target="_blank" class="hover:text-purple-500">${repo.name}</a></h3>
-                    <span class="text-sm text-gray-500">⭐ ${repo.stargazerCount}</span>
-                </div>
-                <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2 h-10">${repo.description || "No description provided."}</p>
-                <div class="flex flex-wrap gap-1 mb-4 h-12 overflow-hidden">
-                    <span class="text-xs px-2 py-1 bg-purple-50 dark:bg-purple-950 text-purple-600 dark:text-purple-300 rounded font-bold">${repo.primaryLanguage || "Plain Text"}</span>
-                    ${(repo.topics || []).slice(0, 2).map(t => `<span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-500 rounded">${t}</span>`).join('')}
-                </div>
-                <div class="flex justify-between items-center text-xs text-gray-400 border-t dark:border-gray-800 pt-4">
-                    <span>By <a href="/dev/${repo.owner.toLowerCase()}/" class="hover:text-purple-500 font-medium">${repo.owner_name || repo.owner}</a></span>
-                    <span>Updated ${new Date(repo.pushedAt).toLocaleDateString()}</span>
-                </div>
-            `;
-            fragment.appendChild(card);
-        });
-        grid.appendChild(fragment);
-
-        if (grid.children.length >= filteredProjects.length) {
-            scrollStatus.style.display = 'none';
-        } else {
-            scrollStatus.style.display = 'block';
-        }
-        isLoading = false;
-    }
-
-    window.addEventListener('scroll', () => {
-        if (isLoading) return;
-        const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-        if (scrollTop + clientHeight >= scrollHeight - 800) {
-            if (grid.children.length < filteredProjects.length) {
-                isLoading = true;
-                loadMore();
-            }
-        }
-    });
-
-    searchInput.addEventListener('input', (e) => performSearch(e.target.value));
-    sortSelect.addEventListener('change', sortAndRender);
-    quickFilters.forEach(b => b.addEventListener('click', () => {
-        searchInput.value = b.dataset.filter;
-        performSearch(searchInput.value);
-    }));
-
-    init();
-});
-</script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+<script src="/assets/projects.js"></script>

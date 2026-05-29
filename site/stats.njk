@@ -1,99 +1,176 @@
 ---
 layout: base.njk
-title: Ecosystem Insights - Awesome Bangladeshi Devs
-description: Explore trends, language distributions, and growth statistics for the Bangladeshi developer community on GitHub.
+title: Community Statistics
 ---
 
-<div class="py-12">
-  <h1 class="text-4xl font-extrabold mb-4 text-center">Community Insights</h1>
-  <p class="text-xl text-gray-600 dark:text-gray-400 text-center max-w-2xl mx-auto mb-12">Deep dive into the trends, activity, and composition of the Bangladeshi developer ecosystem.</p>
-  
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-    <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-2xl text-center border border-blue-100 dark:border-blue-800">
-      <p class="text-4xl font-black text-blue-500 mb-1">{{ stats.totalUsers }}</p>
-      <p class="text-xs uppercase tracking-widest text-gray-500 font-bold">Total Developers</p>
-    </div>
-    <div class="bg-green-50 dark:bg-green-900/20 p-6 rounded-2xl text-center border border-green-100 dark:border-green-800">
-      <p class="text-4xl font-black text-green-500 mb-1">{{ stats.totalStars | default(0) }}</p>
-      <p class="text-xs uppercase tracking-widest text-gray-500 font-bold">Total Stars</p>
-    </div>
-    <div class="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-2xl text-center border border-purple-100 dark:border-purple-800">
-      <p class="text-4xl font-black text-purple-500 mb-1">{{ stats.totalRepos | default(0) }}</p>
-      <p class="text-xs uppercase tracking-widest text-gray-500 font-bold">Total Repositories</p>
-    </div>
-    <div class="bg-orange-50 dark:bg-orange-900/20 p-6 rounded-2xl text-center border border-orange-100 dark:border-orange-800">
-      <p class="text-4xl font-black text-orange-500 mb-1">{{ stats.avgActivity | default(0) }}</p>
-      <p class="text-xs uppercase tracking-widest text-gray-500 font-bold">Avg Activity</p>
-    </div>
-  </div>
-
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl border dark:border-gray-700 shadow-sm">
-      <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-        </svg>
-        Top Languages
-      </h2>
-      <div class="space-y-4">
-        {% for lang in stats.topLanguages %}
-          <div class="flex items-center gap-4">
-            <a href="{{ ('/languages/' + lang.name | slugifyLang + '/') | url }}" class="w-32 hover:text-blue-500 font-medium truncate">{{ lang.name }}</a>
-            <div class="flex-1 bg-gray-100 dark:bg-gray-700 h-3 rounded-full overflow-hidden">
-              <div class="bg-blue-500 h-full transition-all duration-1000" style="width: {{ lang.percentage }}%"></div>
-            </div>
-            <span class="w-12 text-right text-sm text-gray-500 font-mono">{{ lang.percentage }}%</span>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-
-    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl border dark:border-gray-700 shadow-sm">
-      <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 11h.01M7 15h.01M11 7h.01M11 11h.01M11 15h.01M15 7h.01M15 11h.01M15 15h.01" />
-        </svg>
-        Popular Topics
-      </h2>
-      <div class="flex flex-wrap gap-2">
-        {% for topic in stats.topTopics %}
-          <span class="px-3 py-1.5 bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-lg text-sm border dark:border-gray-600">
-            #{{ topic.name }} <span class="ml-1 text-xs text-gray-400">({{ topic.count }})</span>
-          </span>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-
-  <section class="mb-16">
-    <h2 class="text-2xl font-bold mb-8 text-center">Top Contributors This Month</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {% for user in stats.mostActive %}
-        <div class="bg-white dark:bg-gray-800 border dark:border-gray-700 p-6 rounded-2xl flex items-center gap-4 hover:shadow-md transition-all group">
-           <img src="{{ user.avatar_url }}" class="w-14 h-14 rounded-full border-2 border-transparent group-hover:border-green-500 transition-all shadow-sm">
-           <div class="flex-1">
-             <a href="{{ ('/dev/' + user.username | lower + '/') | url }}" class="font-bold hover:text-blue-500 block text-lg">{{ user.name }}</a>
-             <div class="flex items-center gap-2 text-xs text-gray-500 mt-1">
-               <span class="px-2 py-0.5 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full font-bold">{{ user.activity_score }} activity</span>
-               <span>⭐ {{ user.followers }}</span>
-             </div>
-           </div>
-        </div>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section>
-    <h2 class="text-2xl font-bold mb-8 text-center">Location Distribution</h2>
-    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl border dark:border-gray-700 text-center">
-      <div class="flex flex-wrap justify-center gap-4">
-        {% for loc in stats.topLocations %}
-          <div class="p-4 rounded-xl bg-gray-50 dark:bg-gray-700/50 border dark:border-gray-600 min-w-[120px]">
-            <p class="text-2xl font-bold text-gray-900 dark:text-white">{{ loc.count }}</p>
-            <p class="text-xs text-gray-500 uppercase font-bold">{{ loc.name }}</p>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
+<div class="text-center py-12">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Ecosystem Insights</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+        Tracing the story of open source in Bangladesh through data from {{ stats.total_devs | localeString }} developers.
+    </p>
 </div>
+
+<!-- Hero Dashboard -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-20">
+    <div class="bg-white dark:bg-slate-800 p-6 rounded-3xl border border-gray-100 dark:border-gray-700 shadow-sm text-center">
+        <div class="text-3xl md:text-4xl font-black text-primary mb-1">{{ stats.total_devs | localeString }}</div>
+        <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">Developers</div>
+    </div>
+    <div class="bg-white dark:bg-slate-800 p-6 rounded-3xl border border-gray-100 dark:border-gray-700 shadow-sm text-center">
+        <div class="text-3xl md:text-4xl font-black text-secondary mb-1">{{ stats.total_repos | localeString }}</div>
+        <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">Repositories</div>
+    </div>
+    <div class="bg-white dark:bg-slate-800 p-6 rounded-3xl border border-gray-100 dark:border-gray-700 shadow-sm text-center">
+        <div class="text-3xl md:text-4xl font-black text-blue-500 mb-1">{{ stats.total_stars | localeString }}</div>
+        <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">Global Stars</div>
+    </div>
+    <div class="bg-white dark:bg-slate-800 p-6 rounded-3xl border border-gray-100 dark:border-gray-700 shadow-sm text-center">
+        <div class="text-3xl md:text-4xl font-black text-yellow-500 mb-1">{{ stats.total_followers | localeString }}</div>
+        <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">Total Followers</div>
+    </div>
+</div>
+
+<div class="space-y-20 mb-20">
+    <!-- Growth Timeline -->
+    <section>
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+            <div>
+                <h2 class="text-3xl font-extrabold mb-2">Community Growth</h2>
+                <p class="text-gray-500">The number of developers joining GitHub from Bangladesh by year.</p>
+            </div>
+            <div class="text-primary font-bold bg-primary/5 px-4 py-2 rounded-full text-sm">
+                Peak: {{ stats.sorted_join_years[stats.sorted_join_years.length - 1].year }}
+            </div>
+        </div>
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-gray-100 dark:border-gray-700 shadow-sm h-[400px]">
+            <canvas id="growthChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Tech Ecosystem & Topics -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <section>
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <span class="w-2 h-8 bg-primary rounded-full"></span>
+                Language Distribution
+            </h2>
+            <div class="space-y-5">
+                {% for lang in languages | limit(10) %}
+                    {% set percentage = (lang.count / stats.total_devs * 100) | round %}
+                    <div>
+                        <div class="flex justify-between text-sm mb-2">
+                            <span class="font-bold">{{ lang.name }}</span>
+                            <span class="text-gray-500">{{ lang.count }} devs ({{ percentage }}%)</span>
+                        </div>
+                        <div class="h-2 w-full bg-gray-100 dark:bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary" style="width: {{ percentage }}%"></div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <span class="w-2 h-8 bg-secondary rounded-full"></span>
+                Popular Topics
+            </h2>
+            <div class="flex flex-wrap gap-3">
+                {% for topic in stats.top_topics %}
+                    <div class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 rounded-2xl text-sm font-medium hover:border-primary transition-colors cursor-default shadow-sm">
+                        #{{ topic.name }}
+                        <span class="ml-1 text-gray-400 font-normal">{{ topic.count }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+
+    <!-- Hubs & Hall of Fame -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <section>
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <span class="w-2 h-8 bg-blue-500 rounded-full"></span>
+                Talent Hubs
+            </h2>
+            <div class="bg-white dark:bg-slate-800 rounded-3xl border border-gray-100 dark:border-gray-700 shadow-sm overflow-hidden">
+                <div class="divide-y divide-gray-50 dark:divide-gray-700">
+                    {% for hub in stats.top_companies %}
+                        <div class="px-6 py-4 flex items-center justify-between hover:bg-gray-50 dark:hover:bg-slate-700/50 transition-colors">
+                            <span class="font-bold capitalize">{{ hub.name }}</span>
+                            <span class="bg-blue-500/10 text-blue-500 px-3 py-1 rounded-full text-xs font-bold">{{ hub.count }} devs</span>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <span class="w-2 h-8 bg-yellow-500 rounded-full"></span>
+                Hall of Fame
+            </h2>
+            <div class="space-y-4">
+                {% for repo in stats.top_repos %}
+                    <a href="{{ repo.url }}" target="_blank" class="block group p-5 bg-white dark:bg-slate-800 border border-gray-100 dark:border-gray-700 rounded-2xl shadow-sm hover:border-yellow-500 transition-all">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold group-hover:text-yellow-500 transition-colors break-all">
+                                <span class="text-gray-400 font-normal">@{{ repo.owner }}/</span>{{ repo.name }}
+                            </h3>
+                            <span class="flex items-center gap-1 text-sm font-bold text-yellow-500">
+                                ★ {{ repo.stars | localeString }}
+                            </span>
+                        </div>
+                        <p class="text-xs text-gray-500 line-clamp-2">{{ repo.description or "No description." }}</p>
+                    </a>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('growthChart').getContext('2d');
+    
+    // Pass data from Nunjucks to JS
+    const labels = [
+        {% for item in stats.sorted_join_years %}"{{ item.year }}"{% if not loop.last %},{% endif %}{% endfor %}
+    ];
+    const data = [
+        {% for item in stats.sorted_join_years %}{{ item.count }}{% if not loop.last %},{% endif %}{% endfor %}
+    ];
+
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Developers Joined',
+                data: data,
+                fill: true,
+                borderColor: '#006a4e',
+                backgroundColor: 'rgba(0, 106, 78, 0.1)',
+                tension: 0.4,
+                pointRadius: 4,
+                pointBackgroundColor: '#006a4e'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: { color: 'rgba(0,0,0,0.05)' }
+                },
+                x: {
+                    grid: { display: false }
+                }
+            }
+        }
+    });
+</script>

@@ -1,29 +1,15 @@
-name: CI/CD Pipeline
+name: Pipeline
 
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - '**.md'
-      - 'LICENSE'
-      - '.gitignore'
-      - '.pre-commit-config.yaml'
+    paths-ignore: ['**.md', 'LICENSE', '.gitignore']
   pull_request:
     branches: [main]
-    paths-ignore:
-      - '**.md'
-      - 'LICENSE'
-      - '.gitignore'
   issues:
-    types: [opened, labeled, edited, reopened]
+    types: [opened, labeled, reopened, edited]
   workflow_dispatch:
-    inputs:
-      force_release:
-        description: 'Force a monthly release now'
-        type: boolean
-        default: false
 
-# Global permissions
 permissions:
   contents: write
   issues: write
@@ -31,408 +17,141 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
-  # 1. Validation Phase (Run on everything)
-  validation:
-    # On issues, only run if it has the correct labels
-    if: |
-      github.event_name != 'issues' || 
-      contains(github.event.issue.labels.*.name, 'add-developer') || 
-      contains(github.event.issue.labels.*.name, 'remove-developer')
+  validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Lint README
-        run: npx awesome-lint README.md
-
+      - uses: actions/checkout@v4
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
       - name: Install dependencies
         run: pip install -r requirements.txt
-
-      - name: Pull latest changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
-
-      - name: Validate JSON schemas
+      - name: Validate data
         run: python src/validate_data.py
-
-  # 2. Testing Phase (Needs Validation)
-  test:
-    needs: validation
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install pytest pytest-cov
-
-      - name: Pull latest changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
-
-      - name: Run tests with coverage
-        run: pytest --cov=src --cov=tests --cov-report=xml --cov-report=term
-
-      - name: Upload coverage report
-        uses: actions/upload-artifact@v4
-        with:
-          name: coverage-report
-          path: coverage.xml
-
-  # 3. Processing and Deployment Phase (Needs Test)
-  deploy:
-    needs: test
-    concurrency:
-      group: deploy-lock-${{ github.ref }}
-      cancel-in-progress: false
-    if: |
-      github.event_name == 'push' || 
-      github.event_name == 'issues' ||
-      github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Install Node dependencies
+        run: npm ci
 
+  test:
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt pytest pytest-cov
+      - name: Run tests
+        run: pytest --cov=src --cov-report=xml -q
+
+  process:
+    needs: test
+    if: github.event_name == 'issues' && (contains(github.event.issue.labels.*.name, 'add-developer') || contains(github.event.issue.labels.*.name, 'remove-developer'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - name: Install dependencies
         run: pip install -r requirements.txt
-
-      - name: Pull latest data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git reset --hard origin/main
-
-      - name: Process Issue (If issue event)
-        id: process
-        if: github.event_name == 'issues'
+      - name: Process issue
         env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_LABELS: ${{ join(github.event.issue.labels.*.name, ',') }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python src/process_issue.py "${{ github.event.issue.number }}" "${{ github.event.issue.title }}" "${{ github.event.issue.body }}" "${{ github.event.issue.user.login }}" "${{ github.repository_owner }}" > process_output.txt 2>&1
-          cat process_output.txt
-          
-          if grep -q "users.json and removed_users.json updated" process_output.txt; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-          fi
-          
-          if grep -q "MANUAL_REVIEW:" process_output.txt; then
-            echo "status=manual" >> $GITHUB_OUTPUT
-          elif grep -q "REMOVAL_ALERT:" process_output.txt; then
-            echo "status=removed_alert" >> $GITHUB_OUTPUT
-          elif grep -q "Missing required fields" process_output.txt || grep -q "not allowed" process_output.txt || grep -q "Duplicate entry" process_output.txt; then
-            echo "status=failure" >> $GITHUB_OUTPUT
-          else
-            echo "status=success" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Add Manual Review Label
-        if: steps.process.outputs.status == 'manual'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh issue edit "${{ github.event.issue.number }}" --add-label "manual-review"
-
-      - name: Inject Google Analytics ID
-        env:
-          GA_ID: ${{ secrets.GOOGLE_ANALYTICS }}
-        run: |
-          if [ -n "$GA_ID" ]; then
-            # We'll inject this into the base.njk layout for Eleventy
-            sed -i "s/GOOGLE_ANALYTICS_ID/$GA_ID/g" site/_includes/base.njk
-            echo "Google Analytics ID injected."
-          else
-            # Remove the script tag if no ID is found
-            sed -i '/GOOGLE_ANALYTICS_ID/d' site/_includes/base.njk
-            echo "No Google Analytics ID secret found. Cleaning up layout."
-          fi
-
-      - name: Generate README
-        run: |
-          python src/generate_readme.py
-
-      - name: Lint README for Awesome compliance
-        run: npx awesome-lint README.md
-
+          RESULT=$(python src/process_issue.py)
+          echo "PROCESS_RESULT=$RESULT" >> $GITHUB_ENV
+          echo "Process result: $RESULT"
       - name: Commit and push changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/users.json README.md _config.yml
-          if [ -f "data/removed_users.json" ]; then
-            git add data/removed_users.json
-          fi
-          
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: auto-update data and readme [skip ci]"
-            
-            # Robust retry loop for pushing
-            MAX_RETRIES=5
-            for i in $(seq 1 $MAX_RETRIES); do
-              echo "Push attempt $i..."
-              if git push origin main; then
-                echo "Push successful!"
-                exit 0
-              fi
-              echo "Push rejected. Syncing with remote and retrying..."
-              git fetch origin main
-              git rebase origin/main
-              sleep $((i * 2))
-            done
-            echo "Failed to push after $MAX_RETRIES attempts."
-            exit 1
-          else
-            echo "No changes to commit."
-          fi
-
-      - name: Upload updated data
-        uses: actions/upload-artifact@v4
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/users.json data/removed_users.json
+          git diff --cached --quiet || (git commit -m "chore(data): process issue #${{ github.event.issue.number }} [skip ci]" && git push)
+      - name: Comment on issue
+        uses: actions/github-script@v7
         with:
-          name: updated-data
-          path: data/*.json
+          script: |
+            const result = process.env.PROCESS_RESULT;
+            let body = "";
+            if (result === "ADDED") body = "✅ Successfully added to the directory!";
+            else if (result === "REMOVED") body = "👋 Successfully removed from the directory.";
+            else if (result === "DUPLICATE") body = "ℹ️ You are already in the directory.";
+            else if (result === "INVALID_LOCATION") body = "❌ Invalid location. Please ensure you are from Bangladesh or have strong ties.";
+            else if (result === "BLOCKED") body = "🚫 This user is blocked from being added.";
+            else if (result === "PROFILE_NOT_FOUND") body = "❌ GitHub profile not found. Please check the username.";
+            else if (result === "MANUAL_REVIEW") body = "👀 This request requires manual review by a maintainer.";
+            
+            if (body) {
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: body
+              });
+              
+              if (["ADDED", "REMOVED", "DUPLICATE", "INVALID_LOCATION", "BLOCKED", "PROFILE_NOT_FOUND"].includes(result)) {
+                github.rest.issues.update({
+                  issue_number: context.issue.number,
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  state: 'closed'
+                });
+              }
+            }
 
-      - name: Comment and Close Issue
-        if: github.event_name == 'issues' && always()
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # Only comment if we actually got to run the processing script
-          if [ ! -f process_output.txt ]; then
-            echo "Processing script did not run, skipping this comment step."
-            exit 0
-          fi
-          
-          OUTPUT=$(cat process_output.txt)
-          ISSUE_NUMBER="${{ github.event.issue.number }}"
-          
-          # Check current state to avoid double actions
-          STATE=$(gh issue view "$ISSUE_NUMBER" --json state --jq .state)
-          if [ "$STATE" == "CLOSED" ]; then
-            echo "Issue already closed, skipping comment."
-            exit 0
-          fi
-          
-          STATUS="${{ steps.process.outputs.status }}"
-          CHANGED="${{ steps.process.outputs.changed }}"
-          
-          if [ "$STATUS" == "success" ]; then
-            if [ "$CHANGED" == "true" ]; then
-              COMMENT="### ✅ Request Processed Successfully
-              
-              All validations and tests passed. The changes have been applied to the list and the README has been updated.
-              
-              **Logs:**
-              \`\`\`
-              $OUTPUT
-              \`\`\`"
-              gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
-              gh issue close "$ISSUE_NUMBER" --reason "completed"
-            else
-              COMMENT="### ℹ️ No Changes Made
-              
-              The automation processed your request successfully, but no changes were made to the directory. This usually means the developer is already in the list with the same information, or the request didn't require an update.
-              
-              **Logs:**
-              \`\`\`
-              $OUTPUT
-              \`\`\`"
-              gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
-              # We don't necessarily close here, maybe a maintainer wants to see it? 
-              # Actually, for automation, we should probably close it if it's already there.
-              if echo "$OUTPUT" | grep -iq "Duplicate entry"; then
-                 gh issue close "$ISSUE_NUMBER" --reason "not_planned"
-              fi
-            fi
-          elif [ "$STATUS" == "removed_alert" ]; then
-            REASON=$(echo "$OUTPUT" | grep "REMOVAL_ALERT:" | cut -d: -f3-)
-            COMMENT="### ❌ Request Denied
-            
-            This user cannot be added because they were previously removed from the list.
-            
-            **Reason for previous removal:** $REASON
-            
-            If you believe this is an error, please contact a maintainer."
-            gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
-            gh issue close "$ISSUE_NUMBER" --reason "not_planned"
-          elif [ "$STATUS" == "manual" ]; then
-            COMMENT="### ⏳ Request Pending Manual Review
-            
-            This request requires manual intervention from a maintainer (labeled with \`manual-review\`). 
-            
-            **Details:**
-            \`\`\`
-            $OUTPUT
-            \`\`\`"
-            gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
-          elif [ "$STATUS" == "failure" ]; then
-            COMMENT="### ⚠️ Request failed validation
-            
-            The automation could not process your request due to validation errors.
-            
-            **Errors:**
-            \`\`\`
-            $OUTPUT
-            \`\`\`"
-            gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
-          fi
-
-      - name: Create GitHub Release (Monthly Only)
-        # Trigger on scheduled stats OR manual force_release
-        if: |
-          inputs.force_release == true ||
-          (github.event_name == 'workflow_run' && github.event.workflow_run.event == 'schedule')
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # Check if today is the last day of the month, UNLESS force_release is true
-          if [ "${{ inputs.force_release }}" != "true" ] && [ "$(date +%d -d tomorrow)" != "01" ]; then
-            echo "Today is not the last day of the month and not a forced release. Skipping."
-            exit 0
-          fi
-          
-          MONTH_YEAR=$(date +'%B %Y')
-          TAG_NAME="monthly-$(date +'%Y-%m')"
-          
-          # Check if tag already exists (e.g. if re-running manual release)
-          if git rev-parse "$TAG_NAME" >/dev/null 2>&1; then
-            TAG_NAME="${TAG_NAME}-manual-$(date +'%H%M%S')"
-          fi
-          
-          # Create and push tag
-          git tag "$TAG_NAME"
-          git push origin "$TAG_NAME"
-          
-          # Create Release
-          LATEST_DATA=$(ls -t data/????-??-??.json | head -n 1)
-          gh release create "$TAG_NAME" \
-            --title "Awesome ${MONTH_YEAR}" \
-            --notes "Monthly archive of the Top Bangladeshi Developers list and statistics for ${MONTH_YEAR}." \
-            --target main \
-            "$LATEST_DATA" README.md
-
-  # 5. Build and Deploy Site (Only on push or successful issue processing)
-  build_site:
-    needs: deploy
+  build-and-deploy:
+    needs: [process]
     if: |
-      github.event_name == 'push' || 
-      (github.event_name == 'issues' && needs.deploy.result == 'success') ||
-      github.event_name == 'workflow_dispatch'
+      always() &&
+      (github.event_name == 'push' || 
+       github.event_name == 'workflow_dispatch' ||
+       needs.process.result == 'success')
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Download updated data
-        uses: actions/download-artifact@v4
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          name: updated-data
-          path: data/
-
-      - name: Setup Node.js
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Generate README
+        run: python src/generate_readme.py
+      - name: Build search index
+        run: python src/build_search_index.py
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build Eleventy Site
+      - name: Install Node dependencies
+        run: npm ci
+      - name: Build site
         run: npm run build
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './_site'
-
-  deploy_site:
-    needs: build_site
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
+          path: '_site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-  # 4. Global Error Handler for Issues
-  notify_failure:
-    needs: [validation, test, deploy]
-    if: |
-      always() && 
-      github.event_name == 'issues' && 
-      (needs.validation.result == 'failure' || needs.test.result == 'failure' || needs.deploy.result == 'failure')
-    runs-on: ubuntu-latest
-    steps:
-      - name: Comment on Failed Workflow
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          ISSUE_NUMBER="${{ github.event.issue.number }}"
-          
-          # Check if there is already a comment or if it's already handled by deploy
-          # If deploy was skipped, we definitely need to comment here.
-          # If deploy failed, we also comment here with more detail.
-          
-          PHASE=""
-          if [ "${{ needs.validation.result }}" == "failure" ]; then
-            PHASE="Validation"
-          elif [ "${{ needs.test.result }}" == "failure" ]; then
-            PHASE="Testing"
-          else
-            PHASE="Deployment/Processing"
-          fi
-          
-          COMMENT="### ❌ Automation Error: $PHASE Phase Failed
-          
-          The automation workflow failed during the **$PHASE** phase. This could be due to invalid input, a temporary API issue, or a system error.
-          
-          A maintainer has been notified and will review this request manually.
-          
-          **Status:** ${{ needs.validation.result }} (Val) | ${{ needs.test.result }} (Test) | ${{ needs.deploy.result }} (Deploy)"
-          
-          gh issue comment "$ISSUE_NUMBER" --body "$COMMENT"
-          gh issue edit "$ISSUE_NUMBER" --add-label "manual-review"

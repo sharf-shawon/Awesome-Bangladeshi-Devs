@@ -1,20 +1,10 @@
 {
-  "s045pd": {
-    "github_username": "s045pd",
-    "reason": "not bangladeshi",
-    "removed_by": "sharf-shawon",
-    "is_self": false
-  },
-  "ab-noori": {
-    "github_username": "ab-noori",
-    "reason": "not bengladeshi",
-    "removed_by": "sharf-shawon",
-    "is_self": false
-  },
-  "imranbru99": {
-    "github_username": "imranbru99",
-    "reason": "Proven to put malware in client code",
-    "removed_by": "sharf-shawon",
-    "is_self": false
+  "testuser": {
+    "github_username": "testuser",
+    "reason": "Manual removal",
+    "removed_by": "testuser",
+    "removed_at": "2026-05-17T06:48:28.611459+00:00",
+    "is_self": true,
+    "source_issue_number": null
   }
 }

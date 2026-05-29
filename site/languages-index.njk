@@ -1,44 +1,24 @@
 ---
 layout: base.njk
-title: Programming Languages - Awesome Bangladeshi Devs
-description: Explore Bangladeshi developers categorized by their primary programming languages and technologies.
-permalink: /languages/index.html
+title: Programming Languages
+permalink: /languages/
 ---
 
-<div class="py-12">
-  <h1 class="text-4xl font-extrabold mb-4 text-center">Browse by Language</h1>
-  <p class="text-xl text-gray-600 dark:text-gray-400 text-center max-w-2xl mx-auto mb-12">Discover top talent in specific technology stacks from the Bangladeshi GitHub community.</p>
+<div class="text-center py-12">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Programming Languages</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400">
+        Popular languages used by the Bangladeshi developer community.
+    </p>
+</div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-    {% for lang in stats.topLanguages %}
-      <a href="{{ ('/languages/' + lang.name | slugifyLang + '/') | url }}" class="group p-6 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-2xl hover:shadow-xl hover:border-blue-500 transition-all">
-        <div class="flex justify-between items-start mb-4">
-          <h2 class="text-xl font-bold group-hover:text-blue-500 transition-colors">{{ lang.name }}</h2>
-          <span class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-xs font-bold">{{ lang.count }} Devs</span>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-20">
+    {% for lang in languages %}
+    <a href="/languages/{{ lang.slug }}/" class="group p-6 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-primary bg-white dark:bg-slate-800 transition-all hover:shadow-lg">
+        <h2 class="text-xl font-bold group-hover:text-primary transition-colors mb-2">{{ lang.name }}</h2>
+        <div class="flex items-end justify-between">
+            <span class="text-3xl font-black opacity-20 group-hover:opacity-100 transition-opacity">{{ lang.count }}</span>
+            <span class="text-xs text-gray-400 uppercase tracking-widest">Developers</span>
         </div>
-        <div class="w-full bg-gray-100 dark:bg-gray-700 h-2 rounded-full overflow-hidden mb-2">
-          <div class="bg-blue-500 h-full" style="width: {{ lang.percentage }}%"></div>
-        </div>
-        <p class="text-sm text-gray-500">{{ lang.percentage }}% of community</p>
-      </a>
+    </a>
     {% endfor %}
-  </div>
-
-  <div class="mt-16 bg-gray-50 dark:bg-gray-800/50 p-8 rounded-3xl border dark:border-gray-700">
-    <h2 class="text-2xl font-bold mb-6 text-center">Ecosystem Highlights</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-      <div>
-        <p class="text-3xl font-black text-blue-500 mb-1">{{ stats.topLanguages[0].name }}</p>
-        <p class="text-sm text-gray-500 uppercase tracking-widest font-bold">Most Popular</p>
-      </div>
-      <div>
-        <p class="text-3xl font-black text-green-500 mb-1">{{ stats.topLanguages | length }}</p>
-        <p class="text-sm text-gray-500 uppercase tracking-widest font-bold">Primary Tracks</p>
-      </div>
-      <div>
-        <p class="text-3xl font-black text-purple-500 mb-1">{{ stats.totalUsers }}</p>
-        <p class="text-sm text-gray-500 uppercase tracking-widest font-bold">Active Contributors</p>
-      </div>
-    </div>
-  </div>
 </div>

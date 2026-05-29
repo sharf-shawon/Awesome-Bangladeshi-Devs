@@ -1,348 +1,288 @@
 import os
-import sys
 import json
+import sys
 import time
-import yaml
 from datetime import datetime, timedelta, timezone
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
-# Enable unbuffered output for GitHub Actions
-sys.stdout.reconfigure(line_buffering=True)
+class TokenManager:
+    def __init__(self, tokens):
+        self.tokens = [t for t in tokens if t]
+        self.current_index = 0
+        self.limits = {t: 5000 for t in self.tokens} # Default assumption
 
-def log(msg):
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(f"[{timestamp}] {msg}", flush=True)
+    def get_token(self):
+        if not self.tokens: return None
+        return self.tokens[self.current_index]
 
-# Constants
-API_VERSION = "2022-11-28"
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(ROOT, "data")
-USERS_JSON = os.path.join(DATA_DIR, "users.json")
-ENRICHED_JSON = os.path.join(DATA_DIR, "users-enriched.json")
-OVERRIDES_YML = os.path.join(DATA_DIR, "overrides.yml")
+    def update_limit(self, token, remaining):
+        self.limits[token] = int(remaining)
+        if self.limits[token] < 10:
+            self.rotate()
 
-# Token Management
-TOKENS = [t.strip() for t in (os.getenv("GH_TOKENS") or os.getenv("GH_TOKEN") or "").split(",") if t.strip()]
-CURRENT_TOKEN_IDX = 0
+    def rotate(self):
+        if len(self.tokens) > 1:
+            self.current_index = (self.current_index + 1) % len(self.tokens)
+            print(f"Switching to token {self.current_index + 1}/{len(self.tokens)}")
 
-def get_headers():
-    headers = {
-        "Accept": "application/vnd.github+json",
-        "X-GitHub-Api-Version": API_VERSION,
-        "User-Agent": "bd-github-enricher"
-    }
-    if TOKENS:
-        headers["Authorization"] = f"Bearer {TOKENS[CURRENT_TOKEN_IDX]}"
-    return headers
+def load_config():
+    with open('config/metrics.json', 'r') as f:
+        return json.load(f)
 
-def rotate_token():
-    global CURRENT_TOKEN_IDX
-    if not TOKENS or len(TOKENS) <= 1:
-        return False
-    CURRENT_TOKEN_IDX = (CURRENT_TOKEN_IDX + 1) % len(TOKENS)
-    log(f"Rotating to token index {CURRENT_TOKEN_IDX}...")
-    return True
+def load_users():
+    with open('data/users.json', 'r') as f:
+        return json.load(f)
 
-def validate_tokens():
-    valid_tokens = []
-    log(f"Validating {len(TOKENS)} tokens...")
-    for idx, token in enumerate(TOKENS):
-        try:
-            r = requests.get("https://api.github.com/rate_limit", headers={"Authorization": f"Bearer {token}"}, timeout=10)
-            if r.status_code == 200:
-                data = r.json()
-                remaining = data["resources"]["graphql"]["remaining"]
-                if remaining > 100:
-                    valid_tokens.append(token)
-                    log(f"Token {idx} is valid (RL: {remaining})")
-                else:
-                    log(f"Token {idx} is nearly exhausted (RL: {remaining}), skipping.")
-            else:
-                log(f"Token {idx} returned status {r.status_code}, skipping.")
-        except Exception as e:
-            log(f"Error validating token {idx}: {e}")
+def load_enriched():
+    if os.path.exists('data/users-enriched.json'):
+        with open('data/users-enriched.json', 'r') as f:
+            return {u['github_username'].lower(): u for u in json.load(f)}
+    return {}
+
+def save_enriched(enriched_list):
+    with open('data/users-enriched.json', 'w') as f:
+        json.dump(enriched_list, f, indent=2)
     
-    return valid_tokens
+    today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+    with open(f'data/{today}.json', 'w') as f:
+        json.dump(enriched_list, f, indent=2)
 
-# Optimized GraphQL Fragment
-USER_FRAGMENT = """
+GRAPHQL_FRAGMENT = """
 fragment UserProfile on User {
-  login
-  name
-  avatarUrl
-  bio
-  location
-  company
-  websiteUrl
-  createdAt
+  login name avatarUrl bio location company websiteUrl createdAt
   followers { totalCount }
   following { totalCount }
   repositories(first: 10, orderBy: {field: STARGAZERS, direction: DESC}, isFork: false) {
     nodes {
-      name
-      description
-      url
-      stargazerCount
-      forkCount
+      name description url stargazerCount forkCount
       primaryLanguage { name }
-      repositoryTopics(first: 5) {
-        nodes { topic { name } }
-      }
-      createdAt
-      pushedAt
-      isArchived
-      isFork
-      homepageUrl
-      licenseInfo { name }
+      repositoryTopics(first: 5) { nodes { topic { name } } }
+      pushedAt isArchived isFork
     }
     totalCount
   }
-  yearlyContribs: contributionsCollection {
-    contributionCalendar { totalContributions }
-  }
-  recentContribs: contributionsCollection(from: $thirtyDaysAgo) {
+  contributionsCollection {
+    totalCommitContributions totalPullRequestContributions
+    totalIssueContributions totalPullRequestReviewContributions
+    restrictedContributionsCount
     contributionCalendar { totalContributions }
   }
 }
 """
 
-def gql(query, variables=None):
-    max_retries = len(TOKENS)
-    for attempt in range(max_retries):
-        try:
-            r = requests.post(
-                "https://api.github.com/graphql",
-                headers=get_headers(),
-                json={"query": query, "variables": variables or {}},
-                timeout=60,
-            )
-            
-            # Handle rate limiting or secondary rate limits (Abuse detection)
-            if r.status_code == 403 or r.status_code == 429:
-                body = r.text.lower()
-                if "secondary rate limit" in body or "abuse" in body:
-                    log(f"Secondary rate limit hit on token {CURRENT_TOKEN_IDX}. Waiting 30s...")
-                    time.sleep(30)
-                else:
-                    log(f"Primary rate limit hit on token {CURRENT_TOKEN_IDX}.")
-                
-                if rotate_token():
-                    continue
-                else:
-                    r.raise_for_status()
-
-            r.raise_for_status()
-            payload = r.json()
-            
-            if payload.get("errors"):
-                errors_str = str(payload["errors"])
-                if "rate limit" in errors_str.lower():
-                    log(f"GraphQL internal rate limit on token {CURRENT_TOKEN_IDX}.")
-                    if rotate_token():
-                        continue
-                
-                # If it's a validation error or other GraphQL error, we return what we have
-                # but log the first error for debugging
-                log(f"GraphQL partial error: {errors_str[:200]}...")
-            
-            return payload.get("data") or {}
-        except Exception as e:
-            log(f"Request error on token {CURRENT_TOKEN_IDX} (Attempt {attempt+1}/{max_retries}): {e}")
-            if rotate_token():
-                time.sleep(2)
-                continue
-            raise e
-            
-    raise RuntimeError("Failed to complete GraphQL request after trying all available tokens.")
-
-def load_json(path, default=None):
-    if os.path.exists(path):
-        try:
-            with open(path, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception as e:
-            log(f"Error loading {path}: {e}")
-    return default or []
-
-def load_yaml(path):
-    if os.path.exists(path):
-        try:
-            with open(path, "r", encoding="utf-8") as f:
-                return yaml.safe_load(f) or {}
-        except Exception as e:
-            log(f"Error loading {path}: {e}")
-    return {}
-
-def process_user_data(user):
-    if not user: return None
-        
-    repos_nodes = user.get("repositories", {}).get("nodes", [])
-    repos = []
-    for repo in repos_nodes:
-        if not repo: continue
-        repos.append({
-            "name": repo["name"],
-            "description": repo["description"],
-            "url": repo["url"],
-            "stargazerCount": repo["stargazerCount"],
-            "forkCount": repo["forkCount"],
-            "primaryLanguage": repo["primaryLanguage"]["name"] if repo["primaryLanguage"] else None,
-            "topics": [t["topic"]["name"] for t in repo["repositoryTopics"]["nodes"]],
-            "createdAt": repo["createdAt"],
-            "pushedAt": repo["pushedAt"],
-            "isArchived": repo["isArchived"],
-            "isFork": repo["isFork"],
-            "homepageUrl": repo["homepageUrl"],
-            "license": repo["licenseInfo"]["name"] if repo["licenseInfo"] else None
-        })
-
-    langs = {}
-    for r in repos:
-        if r["primaryLanguage"]:
-            langs[r["primaryLanguage"]] = langs.get(r["primaryLanguage"], 0) + 1
-    top_langs = sorted(langs.items(), key=lambda x: x[1], reverse=True)[:5]
-
-    topics = {}
-    for r in repos:
-        for t in r["topics"]:
-            topics[t] = topics.get(t, 0) + 1
-    top_topics = sorted(topics.items(), key=lambda x: x[1], reverse=True)[:10]
-
-    yearly = user.get("yearlyContribs", {})
-    recent = user.get("recentContribs", {})
-    total_y = yearly.get("contributionCalendar", {}).get("totalContributions", 0)
-    total_r = recent.get("contributionCalendar", {}).get("totalContributions", 0)
+def build_query(usernames):
+    nodes = []
+    for i, username in enumerate(usernames):
+        nodes.append(f"user{i}: user(login: \"{username}\") {{ ...UserProfile }}")
     
-    score = (total_y * 0.1) + (total_r * 0.9)
+    return f"""
+    {GRAPHQL_FRAGMENT}
+    query {{
+      {chr(10).join(nodes)}
+    }}
+    """
 
-    return {
-        "username": user["login"],
-        "name": user["name"] or user["login"],
-        "avatar_url": user["avatarUrl"],
-        "bio": user["bio"],
-        "location": user["location"],
-        "company": user["company"],
-        "blog": user["websiteUrl"],
-        "created_at": user["createdAt"],
-        "followers": user["followers"]["totalCount"],
-        "following": user["following"]["totalCount"],
-        "public_repos": user.get("repositories", {}).get("totalCount", len(repos)),
-        "last_active": repos[0]["pushedAt"] if repos else None,
-        "activity_score": round(score, 2),
-        "top_languages": [l[0] for l in top_langs],
-        "top_topics": [t[0] for t in top_topics],
-        "featured_repos": repos,
-        "last_repo_fetched_at": datetime.now(timezone.utc).isoformat(),
-        "schema_version": "1.0"
+def fetch_batch(usernames, token_manager, session):
+    query = build_query(usernames)
+    
+    # Try all tokens if necessary
+    for _ in range(len(token_manager.tokens)):
+        token = token_manager.get_token()
+        headers = {"Authorization": f"Bearer {token}"}
+        
+        try:
+            resp = session.post("https://api.github.com/graphql", json={"query": query}, headers=headers, timeout=45)
+            
+            # Update rate limit info
+            remaining = resp.headers.get('X-RateLimit-Remaining')
+            if remaining:
+                token_manager.update_limit(token, remaining)
+
+            if resp.status_code == 200:
+                data = resp.json().get('data', {})
+                if data: return data
+            elif resp.status_code in [403, 429]:
+                print(f"Token {token[:8]}... rate limited, rotating...")
+                token_manager.rotate()
+                continue
+            else:
+                print(f"Error fetching batch: {resp.status_code} {resp.text[:100]}")
+        except Exception as e:
+            print(f"Request failed: {str(e)}")
+            
+    return None
+
+def fetch_with_recursion(batch, token_manager, session):
+    data = fetch_batch(batch, token_manager, session)
+    if data: return data
+    
+    if len(batch) > 1:
+        print(f"Batch of {len(batch)} failed, splitting into half...")
+        mid = len(batch) // 2
+        d1 = fetch_with_recursion(batch[:mid], token_manager, session)
+        d2 = fetch_with_recursion(batch[mid:], token_manager, session)
+        
+        combined = {}
+        if d1: combined.update(d1)
+        if d2: combined.update(d2)
+        return combined
+    return None
+
+def compute_activity_score(user, config, stats_min_max):
+    weights = config['scoring_weights']
+    metrics = {
+        'contributions': user.get('contributions_last_90d', 0),
+        'followers': user.get('followers', 0),
+        'pull_requests': user.get('prs_last_90d', 0),
+        'stars': user.get('total_stars', 0),
+        'public_repos': user.get('public_repos', 0),
+        'commits': user.get('commits_last_90d', 0),
+        'issues': user.get('issues_last_90d', 0),
+        'reviews': user.get('reviews_last_90d', 0)
     }
+    
+    score = 0
+    for key, weight in weights.items():
+        val = metrics.get(key, 0)
+        min_val = stats_min_max[key]['min']
+        max_val = stats_min_max[key]['max']
+        if max_val > min_val:
+            normalized = (val - min_val) / (max_val - min_val)
+        else:
+            normalized = 0
+        score += normalized * weight
+    return round(score * 100, 2)
 
 def main():
-    global TOKENS
-    if not TOKENS:
-        log("CRITICAL: No GitHub tokens found. Exiting.")
-        return
-
-    # Validate tokens and filter out bad ones
-    TOKENS = validate_tokens()
-    if not TOKENS:
-        log("CRITICAL: No valid GitHub tokens available. Exiting.")
-        return
-
-    log("Loading data files...")
-    users_raw = load_json(USERS_JSON)
-    if not users_raw:
-        log("No users found in users.json. Exiting.")
-        return
-
-    enriched_data = load_json(ENRICHED_JSON, default={})
-    if isinstance(enriched_data, list):
-        enriched_data = {u["username"].lower(): u for u in enriched_data}
-        
-    overrides = load_yaml(OVERRIDES_YML)
-    now = datetime.now(timezone.utc)
-    week_ago = now - timedelta(days=7)
-    thirty_days_ago = (now - timedelta(days=30)).isoformat()
+    force = '--force' in sys.argv
+    raw_tokens = os.getenv('GH_TOKENS', '').split(',')
+    if not any(raw_tokens):
+        raw_tokens = [os.getenv('GITHUB_TOKEN')]
     
-    log("Filtering users...")
+    token_manager = TokenManager(raw_tokens)
+    
+    # Setup resilient session
+    session = requests.Session()
+    retries = Retry(total=3, backoff_factor=1, status_forcelist=[502, 503, 504])
+    session.mount('https://', HTTPAdapter(max_retries=retries))
+
+    config = load_config()
+    users = load_users()
+    enriched_map = load_enriched()
+    
     to_enrich = []
-    for user_entry in users_raw:
-        login = user_entry.get("github_username")
-        if not login: continue
-        existing = enriched_data.get(login.lower())
-        if existing:
-            try:
-                last_fetch = datetime.fromisoformat(existing["last_repo_fetched_at"].replace("Z", "+00:00"))
-                if last_fetch > week_ago: continue
-            except: pass
-        to_enrich.append(login)
-
-    log(f"Total users needing enrichment: {len(to_enrich)}")
-    if not to_enrich:
-        log("All users are up to date.")
-        return
+    now = datetime.now(timezone.utc)
     
-    batch_size = 15 # Reduced for better reliability and faster initial feedback
-    updated_count = 0
-    consecutive_failures = 0
-    total_batches = (len(to_enrich) + batch_size - 1) // batch_size
+    all_users_to_check = {}
+    for user in users:
+        all_users_to_check[user['github_username'].lower()] = user['github_username']
+    for user in enriched_map.values():
+        all_users_to_check[user['github_username'].lower()] = user['github_username']
     
+    for username_lower, username in all_users_to_check.items():
+        if username_lower in enriched_map and not force:
+            user_record = enriched_map[username_lower]
+            enriched_at_str = user_record.get('enriched_at') or user_record.get('last_repo_fetched_at')
+            if enriched_at_str:
+                enriched_at = datetime.fromisoformat(enriched_at_str)
+                if now - enriched_at < timedelta(hours=24):
+                    continue
+        to_enrich.append(username)
+        
+    print(f"Enriching {len(to_enrich)} users...")
+    
+    batch_size = 10 # Reduced for stability
     for i in range(0, len(to_enrich), batch_size):
-        batch_idx = i // batch_size + 1
-        batch = to_enrich[i : i + batch_size]
-        log(f"Processing batch {batch_idx}/{total_batches} ({len(batch)} users)...")
+        batch = to_enrich[i:i+batch_size]
+        data = fetch_with_recursion(batch, token_manager, session)
         
-        query_parts = ["query($thirtyDaysAgo: DateTime!) {"]
-        for idx, login in enumerate(batch):
-            query_parts.append(f"  user{idx}: user(login: \"{login}\") {{ ...UserProfile }}")
-        query_parts.append("  rateLimit { remaining }")
-        query_parts.append("}")
-        query_parts.append(USER_FRAGMENT)
-        
-        try:
-            data = gql("\n".join(query_parts), {"thirtyDaysAgo": thirty_days_ago})
+        if not data:
+            print(f"Failed to fetch batch starting with {batch[0]}, skipping...")
+            continue
             
-            users_processed_in_batch = 0
-            for idx, login in enumerate(batch):
-                user_raw = data.get(f"user{idx}")
-                if user_raw:
-                    enriched = process_user_data(user_raw)
-                    if enriched:
-                        user_overrides = overrides.get(login, {})
-                        enriched.update(user_overrides)
-                        enriched_data[login.lower()] = enriched
-                        updated_count += 1
-                        users_processed_in_batch += 1
+        for key, raw_user in data.items():
+            if not raw_user: continue
             
-            log(f"Batch {batch_idx} complete: {users_processed_in_batch}/{len(batch)} users enriched.")
-            consecutive_failures = 0 # Reset on success
+            login = raw_user['login']
+            repos = [r for r in raw_user['repositories']['nodes'] if r]
+            total_stars = sum(r.get('stargazerCount', 0) for r in repos)
             
-            if data.get("rateLimit"):
-                log(f"Token {CURRENT_TOKEN_IDX} RL Remaining: {data['rateLimit']['remaining']}")
+            langs = set()
+            for r in repos:
+                if r.get('primaryLanguage'):
+                    langs.add(r['primaryLanguage']['name'])
             
-            if updated_count % 300 == 0:
-                log(f"Saving progress... ({len(enriched_data)} users total)")
-                with open(ENRICHED_JSON, "w", encoding="utf-8") as f:
-                    json.dump(list(enriched_data.values()), f, ensure_ascii=False, indent=2)
+            contribs = raw_user.get('contributionsCollection') or {}
             
-            time.sleep(0.5)
-        except Exception as e:
-            log(f"Batch {batch_idx} FAILED fundamentally: {e}")
-            consecutive_failures += 1
-            if consecutive_failures >= 3:
-                log("CRITICAL: Too many consecutive failures. Aborting to prevent infinite loop.")
-                break
-            time.sleep(5)
+            enriched_user = {
+                "github_username": login,
+                "name": raw_user.get('name') or login,
+                "profile_url": f"https://github.com/{login}",
+                "location": raw_user.get('location') or "",
+                "avatar_url": raw_user.get('avatarUrl'),
+                "bio": raw_user.get('bio') or "",
+                "company": raw_user.get('company') or "",
+                "website_url": raw_user.get('websiteUrl') or "",
+                "followers": raw_user['followers']['totalCount'],
+                "following": raw_user['following']['totalCount'],
+                "public_repos": raw_user['repositories']['totalCount'],
+                "total_stars": total_stars,
+                "top_repos": [
+                    {
+                        "name": r.get('name'),
+                        "description": r.get('description') or "",
+                        "url": r.get('url'),
+                        "stars": r.get('stargazerCount', 0),
+                        "forks": r.get('forkCount', 0),
+                        "language": r['primaryLanguage']['name'] if r.get('primaryLanguage') else None,
+                        "topics": [t['topic']['name'] for t in r['repositoryTopics']['nodes'] if t and t.get('topic')],
+                        "pushed_at": r.get('pushedAt')
+                    } for r in repos
+                ],
+                "top_language": list(langs)[0] if langs else None,
+                "all_languages": list(langs),
+                "contributions_last_90d": contribs.get('contributionCalendar', {}).get('totalContributions', 0),
+                "prs_last_90d": contribs.get('totalPullRequestContributions', 0),
+                "issues_last_90d": contribs.get('totalIssueContributions', 0),
+                "reviews_last_90d": contribs.get('totalPullRequestReviewContributions', 0),
+                "commits_last_90d": contribs.get('totalCommitContributions', 0),
+                "enriched_at": now.isoformat()
+            }
+            enriched_map[login.lower()] = enriched_user
 
-    log("Final integrity check...")
-    if len(enriched_data) < (len(users_raw) * 0.9):
-        log(f"CRITICAL: Integrity check failed ({len(enriched_data)}/{len(users_raw)}). Aborting save.")
-        exit(1)
+    if not enriched_map:
+        print("No users to enrich.")
+        return
 
-    log(f"Saving final data to {ENRICHED_JSON}...")
-    with open(ENRICHED_JSON, "w", encoding="utf-8") as f:
-        json.dump(list(enriched_data.values()), f, ensure_ascii=False, indent=2)
+    key_map = {
+        'contributions': 'contributions_last_90d',
+        'followers': 'followers',
+        'pull_requests': 'prs_last_90d',
+        'stars': 'total_stars',
+        'public_repos': 'public_repos',
+        'commits': 'commits_last_90d',
+        'issues': 'issues_last_90d',
+        'reviews': 'reviews_last_90d'
+    }
+
+    stats_min_max = {}
+    for config_key, data_key in key_map.items():
+        vals = [u.get(data_key, 0) for u in enriched_map.values()]
+        stats_min_max[config_key] = {
+            'min': min(vals) if vals else 0,
+            'max': max(vals) if vals else 0
+        }
+
+    enriched_list = []
+    for user in enriched_map.values():
+        user['activity_score'] = compute_activity_score(user, config, stats_min_max)
+        enriched_list.append(user)
         
-    log(f"Success! Enriched {updated_count} users. Total profiles: {len(enriched_data)}")
+    enriched_list.sort(key=lambda x: x['activity_score'], reverse=True)
+    save_enriched(enriched_list)
+    print(f"Successfully enriched {len(enriched_list)} users.")
 
 if __name__ == "__main__":
     main()

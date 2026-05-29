@@ -1,0 +1,15 @@
+## ADDED Requirements
+
+### Requirement: Build static site with Eleventy
+The system SHALL use Eleventy 3.x (ESM) to generate a static website from the `site/` source and `data/users-enriched.json`.
+
+#### Scenario: Site build success
+- **WHEN** `npm run build` is executed
+- **THEN** the `_site/` directory is populated with HTML pages for the homepage, developer profiles, and language indices
+
+### Requirement: Generate search index
+The system SHALL generate a compact `data/search-index.json` optimized for Fuse.js client-side search.
+
+#### Scenario: Search index generation
+- **WHEN** the `build_search_index.py` script is run
+- **THEN** it creates a JSON file with abbreviated keys to minimize payload size

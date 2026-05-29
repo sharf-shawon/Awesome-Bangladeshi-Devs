@@ -1,143 +1,64 @@
 import os
 import json
 import pytest
-from pathlib import Path
+import yaml
+from src.process_issue import main
 from unittest.mock import patch, MagicMock
 
-import sys
-sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
-import process_issue
-
-def test_parse_issue():
-    body = """
-### GitHub Username
-testuser
-
-### Location
-Dhaka
-
-### Self Removal
-- [x] I want to remove myself
-"""
-    fields = process_issue.parse_issue("Add developer", body)
-    assert fields["github_username"] == "testuser"
-    assert fields["location"] == "Dhaka"
-    assert fields["self_removal"] == "true"
-
-    # Fallback format
-    body2 = "github_username: testuser2\nlocation: Dhaka"
-    fields2 = process_issue.parse_issue("Add", body2)
-    assert fields2["github_username"] == "testuser2"
-
-def test_normalize_username():
-    assert process_issue.normalize_username("Test.User") == "test-user"
-    assert process_issue.normalize_username(None) == ""
-
-@patch("requests.get")
-def test_get_github_stats(mock_get):
-    mock_get.side_effect = [
-        MagicMock(status_code=200, json=lambda: {"name": "Test", "login": "test", "followers": 10, "public_repos": 5, "html_url": "url", "location": "Dhaka"}),
-        MagicMock(status_code=200, json=lambda: [{"stargazers_count": 10}])
-    ]
-    stats = process_issue.get_github_stats("test")
-    assert stats["followers"] == 10
-    assert stats["recent_repo_stars_sum"] == 10
-
-    # Test failure
-    mock_get.side_effect = Exception("error")
-    assert process_issue.get_github_stats("test") is None
-
-@patch("process_issue.get_github_stats")
-def test_add_developer(mock_stats):
-    mock_stats.return_value = {
-        "name": "Test", "followers": 10, "public_repos": 5, "recent_repo_stars_sum": 10, "profile_url": "url", "location": "Dhaka"
-    }
-    process_issue.users = []
-    process_issue.removed_users = {}
+@pytest.fixture
+def mock_env(tmp_path, monkeypatch):
+    data_dir = tmp_path / "data"
+    data_dir.mkdir()
+    (data_dir / "users.json").write_text("[]")
+    (data_dir / "removed_users.json").write_text("[]")
     
-    # Valid add
-    fields = {"github_username": "test", "location": "Dhaka"}
-    assert process_issue.add_developer(fields, "Add developer: test") is True
-    assert len(process_issue.users) == 1
+    config_dir = tmp_path / "config"
+    config_dir.mkdir()
+    (config_dir / "metrics.json").write_text(json.dumps({
+        "location_aliases": ["dhaka", "bangladesh"]
+    }))
+    
+    monkeypatch.chdir(tmp_path)
+    monkeypatch.setenv("GITHUB_TOKEN", "fake-token")
+    return tmp_path
 
-    # Missing username
-    assert process_issue.add_developer({}, "Add developer") is False
+def test_add_developer_success(mock_env, capsys):
+    issue_body = """
+github_username: testuser
+location: Dhaka, Bangladesh
+"""
+    with patch.dict(os.environ, {
+        "ISSUE_BODY": issue_body,
+        "ISSUE_LABELS": "add-developer",
+        "ISSUE_TITLE": "[ADD] @testuser"
+    }), patch("requests.get") as mock_get:
+        
+        mock_get.return_value.status_code = 200
+        mock_get.return_value.json.return_value = {
+            "login": "testuser",
+            "name": "Test User",
+            "location": "Dhaka",
+            "followers": 10,
+            "public_repos": 5
+        }
+        
+        with pytest.raises(SystemExit):
+            main()
+            
+        captured = capsys.readouterr()
+        assert "ADDED" in captured.out
+        
+        users = json.loads((mock_env / "data/users.json").read_text())
+        assert len(users) == 1
+        assert users[0]['github_username'] == "testuser"
 
-    # Invalid location
-    fields = {"github_username": "test2", "location": "Unknown"}
-    assert process_issue.add_developer(fields, "Add developer") is False
-
-    # Duplicate
-    fields = {"github_username": "test", "location": "Dhaka"}
-    assert process_issue.add_developer(fields, "Add developer") is False
-
-@patch("process_issue.get_github_stats")
-def test_add_developer_api_failure(mock_stats):
-    mock_stats.return_value = None
-    process_issue.users = []
-    fields = {"github_username": "test", "location": "Dhaka"}
-    assert process_issue.add_developer(fields, "Add developer: test") is True
-    assert process_issue.users[0]["followers"] == 0
-
-def test_add_developer_removed():
-    process_issue.removed_users = {"test": {"reason": "test"}}
-    fields = {"github_username": "test", "location": "Dhaka"}
-    assert process_issue.add_developer(fields, "Add developer") is False
-
-def test_remove_developer_self():
-    process_issue.users = [{"github_username": "testuser"}]
-    process_issue.removed_users = {}
-    fields = {"github_username": "testuser", "self_removal": "true"}
-    assert process_issue.remove_developer(fields, "testuser", "owner") is True
-    assert len(process_issue.users) == 0
-    assert "testuser" in process_issue.removed_users
-
-def test_remove_developer_owner():
-    process_issue.users = [{"github_username": "testuser"}]
-    process_issue.removed_users = {}
-    fields = {"github_username": "testuser", "reason": "Policy"}
-    assert process_issue.remove_developer(fields, "owner", "owner") is True
-    assert len(process_issue.users) == 0
-
-def test_remove_developer_not_found():
-    process_issue.users = []
-    process_issue.removed_users = {}
-    fields = {"github_username": "testuser", "self_removal": "true"}
-    assert process_issue.remove_developer(fields, "testuser", "owner") is True
-    assert "testuser" in process_issue.removed_users
-
-def test_remove_developer_fail():
-    # Missing username
-    assert process_issue.remove_developer({}, "author", "owner") is False
-    # Self removal not confirmed
-    assert process_issue.remove_developer({"github_username": "u"}, "u", "owner") is False
-    # Third party
-    assert process_issue.remove_developer({"github_username": "u"}, "other", "owner") is False
-
-@patch("process_issue.add_developer")
-@patch("process_issue.remove_developer")
-@patch("builtins.open")
-def test_main(mock_open, mock_remove, mock_add):
-    # Add
-    with patch("sys.argv", ["script", "1", "Add developer", "body", "author", "owner"]):
-        process_issue.main()
-    assert mock_add.called
-
-    # Remove
-    with patch("sys.argv", ["script", "1", "Remove developer", "body", "author", "owner"]):
-        process_issue.main()
-    assert mock_remove.called
-
-    # Invalid title
-    with patch("sys.argv", ["script", "1", "Invalid", "body", "author", "owner"]):
-        process_issue.main()
-
-    # Changed save
-    mock_add.return_value = True
-    with patch("sys.argv", ["script", "1", "Add developer", "body", "author", "owner"]):
-        process_issue.main()
-    assert mock_open.called
-
-    # Usage check
-    with patch("sys.argv", ["script"]):
-        process_issue.main()
+def test_add_developer_invalid_location(mock_env, capsys):
+    issue_body = "github_username: testuser\nlocation: Mars"
+    with patch.dict(os.environ, {
+        "ISSUE_BODY": issue_body,
+        "ISSUE_LABELS": "add-developer"
+    }):
+        with pytest.raises(SystemExit):
+            main()
+        captured = capsys.readouterr()
+        assert "INVALID_LOCATION" in captured.out

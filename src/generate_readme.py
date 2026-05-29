@@ -1,326 +1,92 @@
-import os
 import json
-import glob
-from datetime import datetime
+import os
+from datetime import datetime, timezone
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
-README_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "README.md")
-
-AWESOME_BADGE = "[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)"
-VISITOR_BADGE = "![Views Count](https://komarev.com/ghpvc/?username=sharf-shawon-abd&label=Views&color=blue&style=flat-square)"
-BUILD_STATUS = "[![Pipeline Status](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/actions/workflows/pipeline.yml/badge.svg)](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/actions/workflows/pipeline.yml)"
-STATS_STATUS = "[![Stats Collection Status](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/actions/workflows/collect-stats.yml/badge.svg)](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/actions/workflows/collect-stats.yml)"
-LAST_COMMIT = "![Last Commit](https://img.shields.io/github/last-commit/sharf-shawon/Awesome-Bangladeshi-Devs)"
-LICENSE_BADGE = "![License](https://img.shields.io/github/license/sharf-shawon/Awesome-Bangladeshi-Devs)"
-
-GOAL = (
-    "## Goal & Use Case\n\n"
-    "<details>\n"
-    "<summary>Expand to learn more</summary>\n\n"
-    "This repository is a **data-driven directory** of the Bangladeshi developer community on GitHub. "
-    "We aim to highlight impactful contributors, discover rising talent, and provide a platform for developers to showcase their work. "
-    "It serves as a resource for finding collaborators, mentors, and exploring the local open-source ecosystem.\n"
-    "</details>"
-)
-
-HOW_TO_JOIN = (
-    "## How to Join\n\n"
-    "<details>\n"
-    "<summary>Expand for instructions</summary>\n\n"
-    "Adding yourself is **fully automated**. Follow these steps:\n\n"
-    "### 1. Open an Issue\n"
-    "Use the [Add Developer](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/issues/new?template=add_developer.yml) template.\n\n"
-    "### 2. Submit\n"
-    "Our automation fetches your stats and adds you to the list.\n\n"
-    "### 3. Removal\n"
-    "Use the [Remove Developer](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/issues/new?template=remove_developer.yml) template for self-removal.\n"
-    "</details>"
-)
-
-HOW_IT_WORKS = (
-    "## How it Works\n\n"
-    "<details>\n"
-    "<summary>Expand for ranking details</summary>\n\n"
-    "Profiles are ranked using a **weighted composite score** based on the last 90 days of GitHub activity:\n\n"
-    "- 35% Contributions: Total activity (commits, PRs, issues, etc.).\n"
-    "- 20% Followers: Impact and reach.\n"
-    "- 10% Pull Requests: Active collaboration.\n"
-    "- 10% Stars: Community recognition.\n"
-    "- 10% Public Repos: Portfolio size.\n"
-    "- 15% Others: Reviews (5%), Issues (5%), and Commits (5%).\n"
-    "</details>"
-)
-
-def load_json(path):
-    if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as f:
-            try:
-                return json.load(f)
-            except json.JSONDecodeError:
-                return []
-    return []
-
-def get_stats_data():
-    """Returns (latest_stats, previous_stats, latest_date)"""
-    # Prefer users-enriched.json
-    enriched_path = os.path.join(DATA_DIR, "users-enriched.json")
-    if os.path.exists(enriched_path):
-        latest_devs = load_json(enriched_path)
-        # Map username to login for compatibility with existing README generation logic
-        for dev in latest_devs:
-            if "username" in dev:
-                dev["login"] = dev["username"]
-        
-        # Look for the previous dated file for growth calculation
-        files = sorted(glob.glob(os.path.join(DATA_DIR, "????-??-??.json")), reverse=True)
-        previous_devs = []
-        if files:
-            prev_data = load_json(files[0])
-            previous_devs = prev_data.get("developers", []) if isinstance(prev_data, dict) else []
-        
-        latest_date = datetime.now().date().isoformat()
-        return latest_devs, previous_devs, latest_date
-
-    files = sorted(glob.glob(os.path.join(DATA_DIR, "????-??-??.json")), reverse=True)
-    if not files:
-        return [], [], None
+def generate_readme():
+    enriched_path = 'data/users-enriched.json'
+    cname_path = 'CNAME'
     
-    latest_file = files[0]
-    latest_date = os.path.basename(latest_file).replace(".json", "")
-    latest_data = load_json(latest_file)
-    latest_devs = latest_data.get("developers", []) if isinstance(latest_data, dict) else []
-    
-    previous_devs = []
-    if len(files) > 1:
-        prev_data = load_json(files[1])
-        previous_devs = prev_data.get("developers", []) if isinstance(prev_data, dict) else []
-        
-    return latest_devs, previous_devs, latest_date
-
-def calculate_growth(latest_devs, previous_devs):
-    prev_map = {d["login"].lower(): d for d in previous_devs}
-    enriched = []
-    for dev in latest_devs:
-        login_lower = dev["login"].lower()
-        prev = prev_map.get(login_lower, {})
-        
-        # Calculate growth if previous data exists
-        dev["followers_growth"] = dev.get("followers", 0) - prev.get("followers", dev.get("followers", 0))
-        dev["stars_growth"] = dev.get("recent_repo_stars_sum", 0) - prev.get("recent_repo_stars_sum", dev.get("recent_repo_stars_sum", 0))
-        enriched.append(dev)
-    return enriched
-
-def format_list_entry(dev, index, rank_type=None):
-    login = (dev.get("login") or dev.get("github_username") or "").strip()
-    name = (dev.get("name") or "").strip()
-    # Sanitize name for display
-    name = name.replace("<", "").replace(">", "")
-    url = dev.get("profile_url") or f"https://github.com/{login}"
-
-    if rank_type:
-        separator = "&" if "?" in url else "?"
-        url = f"{url}{separator}rank={rank_type}"
-
-    location = (dev.get("location") or "Bangladesh").strip().rstrip(",")
-    # Ensure first character is uppercase for awesome-lint compliance (remark-lint:awesome-list-item)
-    if location:
-        location = location[0].upper() + location[1:]
+    if not os.path.exists(cname_path):
+        _cname_content = "#"
     else:
-        location = "Bangladesh"
-
-    followers = dev.get("followers", 0)
-    repos = dev.get("public_repos", 0)
-    stars = dev.get("recent_repo_stars_sum", 0)
-
-    growth_str = ""
-    if rank_type == "rising_followers" and dev.get("followers_growth", 0) > 0:
-        growth_str = f" (+{dev['followers_growth']} this month)"
-    elif rank_type == "rising_stars" and dev.get("stars_growth", 0) > 0:
-        growth_str = f" (+{dev['stars_growth']} stars this month)"
-
-    name_display = f", {name}" if name and name.lower() != login.lower() else ""
-    return f"{index}. [{login}]({url}) - {location}{name_display}, {followers} followers{growth_str}, {repos} public repos, {stars} stars."
-
-
-
-
-def section(title, entries, level=3):
-    prefix = "#" * level
-    return f"{prefix} {title}\n\n" + "\n".join(entries)
-
-def main():
-    config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config", "metrics.json")
-    cfg = load_json(config_path)
-    if not isinstance(cfg, dict): cfg = {}
-    top_n = cfg.get("top_n", 25)
-
-    latest_devs, previous_devs, latest_date = get_stats_data()
-    user_devs = load_json(os.path.join(DATA_DIR, "users.json"))
-    if not isinstance(user_devs, list): user_devs = []
-
-    # Filter out removed users from all sources
-    removed_data = load_json(os.path.join(DATA_DIR, "removed_users.json"))
-    removed_logins = set(removed_data.keys()) if isinstance(removed_data, dict) else set()
-
-    latest_devs = [d for d in latest_devs if d["login"].lower().replace(".", "-").strip() not in removed_logins]
-    previous_devs = [d for d in previous_devs if d["login"].lower().replace(".", "-").strip() not in removed_logins]
-    user_devs = [d for d in user_devs if d.get("github_username", "").lower().replace(".", "-").strip() not in removed_logins]
-
-    if not latest_devs:
-        # Fallback
-        all_devs_sorted = sorted(user_devs, key=lambda d: (d.get("github_username") or d.get("login", "")).strip().lower())
-        directory_entries = [format_list_entry(d, i+1, "fallback") for i, d in enumerate(all_devs_sorted)]
-        content = [
-            "## Other Awesome Bangladeshi Developers\n\n",
-            "*This list is curated from user inputs.*\n\n",
-            "\n".join(directory_entries)
-        ]
-        has_stats = False
-    else:
-        has_stats = True
-        
-        # Merge developers from both users.json and automated stats
-        stats_map = {d["login"].lower(): d for d in latest_devs}
-        user_map = {d.get("github_username", "").lower(): d for d in user_devs if d.get("github_username")}
-        all_logins = set(stats_map.keys()) | set(user_map.keys())
-        
-        merged_devs = []
-        for login in all_logins:
-            auto_dev = stats_map.get(login)
-            user_dev = user_map.get(login)
+        with open(cname_path, 'r') as f:
+            _cname_content = f.read().strip()
             
-            if auto_dev and user_dev:
-                # Prefer automated stats, but keep user info for fields not in automated
-                merged = user_dev.copy()
-                merged.update(auto_dev)
-            elif auto_dev:
-                merged = auto_dev.copy()
-            else:
-                merged = user_dev.copy()
-            
-            if "login" not in merged: merged["login"] = login
-            if "github_username" not in merged: merged["github_username"] = login
-            if "profile_url" not in merged: merged["profile_url"] = f"https://github.com/{login}"
-            merged_devs.append(merged)
-
-        enriched_devs = calculate_growth(merged_devs, previous_devs)
+    if not os.path.exists(enriched_path):
+        print(f"Error: {enriched_path} not found.")
+        # Create a basic README if no data
+        with open('README.md', 'w') as f:
+            f.write("# Awesome Bangladeshi Devs\n\nData-driven directory of Bangladeshi GitHub developers. Rebuild in progress.")
+        return
         
-        # 1. GOATS Subsections
-        top_score = sorted(enriched_devs, key=lambda d: d.get("composite_score", 0), reverse=True)[:top_n]
-        top_followers = sorted(enriched_devs, key=lambda d: d.get("followers", 0), reverse=True)[:top_n]
-        top_stars = sorted(enriched_devs, key=lambda d: d.get("recent_repo_stars_sum", 0), reverse=True)[:top_n]
-        top_repos = sorted(enriched_devs, key=lambda d: d.get("public_repos", 0), reverse=True)[:top_n]
-
-        goats_content = [
-            section(f"🏆 Top {top_n} Developers by Overall Score", 
-                   ["This list ranks developers based on a weighted composite score of their GitHub activity over the last 90 days, including contributions, repository stars, followers, and more. It highlights the most consistently active members of the community.\n"] + 
-                   [format_list_entry(d, i+1, "score") for i, d in enumerate(top_score)]),
-            "",
-            section(f"👥 Top {top_n} Developers by Followers", 
-                   ["Followers on GitHub indicate a developer's reach and influence within the global open-source ecosystem. These developers have built a significant following through their work and contributions.\n"] + 
-                   [format_list_entry(d, i+1, "followers") for i, d in enumerate(top_followers)]),
-            "",
-            section(f"✨ Top {top_n} Developers by Stars", 
-                   ["Repository stars represent community recognition and the practical utility of a developer's projects. These developers have created tools and libraries that are widely used and appreciated.\n"] + 
-                   [format_list_entry(d, i+1, "stars") for i, d in enumerate(top_stars)]),
-            "",
-            section(f"📁 Top {top_n} Developers by Public Repositories", 
-                   ["A high number of public repositories often showcases a developer's diverse portfolio and commitment to sharing their work openly. This list highlights the most prolific creators in the community.\n"] + 
-                   [format_list_entry(d, i+1, "repos") for i, d in enumerate(top_repos)])
-        ]
-
-        # 2. Rising Stars Subsections
-        rising_followers = sorted(enriched_devs, key=lambda d: d.get("followers_growth", 0), reverse=True)[:20]
-        rising_stars = sorted(enriched_devs, key=lambda d: d.get("stars_growth", 0), reverse=True)[:20]
+    with open(enriched_path, 'r') as f:
+        users = json.load(f)
         
-        rising_content = [
-            section("📈 Most Followers Gained Recently", 
-                   ["This list highlights developers who have seen the most significant growth in their follower count recently, indicating rising interest in their work.\n"] + 
-                   [format_list_entry(d, i+1, "rising_followers") for i, d in enumerate(rising_followers)]),
-            "",
-            section("⭐ Most Repository Stars Gained Recently", 
-                   ["Highlighting developers whose projects have gained the most stars recently, marking their current impact on the community.\n"] + 
-                   [format_list_entry(d, i+1, "rising_stars") for i, d in enumerate(rising_stars)])
-        ]
-
-
-        # 3. All Developers (Numbered List)
-        directory = enriched_devs[:]
-        directory.sort(key=lambda d: (d.get("login") or d.get("github_username", "")).strip().lower())
-        directory_entries = [format_list_entry(d, i+1, "directory") for i, d in enumerate(directory)]
-
-
-
-
-        content = [
-            "## ⭐ Top-Rated Bangladeshi GitHub Developers\n\n",
-            "\n".join(goats_content),
-            "",
-            "## 🚀 Rising Bangladeshi Developers\n\n",
-            "These developers have seen significant growth in their GitHub metrics recently, marking them as emerging talents to watch in the Bangladeshi developer ecosystem.\n\n",
-            "\n".join(rising_content),
-            "",
-            "## 📍 Full Directory of Awesome Bangladeshi Developers\n\n",
-            "A comprehensive list of all developers who have submitted their profiles to this directory, sorted alphabetically. These developers contribute to various fields including web development, mobile apps, AI, and more.\n\n",
-            "\n".join(directory_entries)
-        ]
-
-    # Build README
-    lines = [
-        f"# Awesome Bangladeshi Developers {AWESOME_BADGE}",
-        f"{BUILD_STATUS} {STATS_STATUS} {VISITOR_BADGE} {LAST_COMMIT} {LICENSE_BADGE}",
-        "",
-        "A curated list of the most impactful, active, and rising Bangladeshi developers on GitHub.",
-        "",
-        "## Contents",
-        ""
-    ]
+    last_updated = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
     
-    if has_stats:
-        lines += [
-            "- [Goal & Use Case](#goal--use-case)",
-            "- [How to Join](#how-to-join)",
-            "- [How it Works](#how-it-works)",
-            "- [⭐ Top-Rated Bangladeshi GitHub Developers](#-top-rated-bangladeshi-github-developers)",
-            "  - [🏆 Top 25 Developers by Overall Score](#-top-25-developers-by-overall-score)",
-            "  - [👥 Top 25 Developers by Followers](#-top-25-developers-by-followers)",
-            "  - [✨ Top 25 Developers by Stars](#-top-25-developers-by-stars)",
-            "  - [📁 Top 25 Developers by Public Repositories](#-top-25-developers-by-public-repositories)",
-            "- [🚀 Rising Bangladeshi Developers](#-rising-bangladeshi-developers)",
-            "  - [📈 Most Followers Gained Recently](#-most-followers-gained-recently)",
-            "  - [⭐ Most Repository Stars Gained Recently](#-most-repository-stars-gained-recently)",
-            "- [📍 Full Directory of Awesome Bangladeshi Developers](#-full-directory-of-awesome-bangladeshi-developers)"
-        ]
-    else:
-        lines += [
-            "- [Goal & Use Case](#goal--use-case)",
-            "- [How to Join](#how-to-join)",
-            "- [How it Works](#how-it-works)",
-            "- [📍 Full Directory of Awesome Bangladeshi Developers](#-full-directory-of-awesome-bangladeshi-developers)"
-        ]
+    # Top 500 by overall score
+    top_by_score = sorted(users, key=lambda x: x.get('activity_score', 0), reverse=True)[:500]
+    
+    # Calculate top community language
+    languages = [u.get('top_language') for u in users if u.get('top_language')]
+    top_lang = "N/A"
+    if languages:
+        top_lang = max(set(languages), key=languages.count)
 
-    lines += [
-        "",
-        "",
-        GOAL,
-        "",
-        HOW_TO_JOIN,
-        "",
-        HOW_IT_WORKS,
-        "",
-        ""
-    ]
-    
-    lines.extend(content)
-    lines += [
-        "",
-        "## Contributing",
-        "",
-        f"Contributions welcome! Read our [contribution guidelines](contributing.md) to learn how to add yourself.\n\n Stats last updated: {latest_date or 'N/A'}."
-    ]
-    
-    with open(README_PATH, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines) + "\n")
+    readme_content = f"""# Awesome Bangladeshi Devs
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Pipeline Status](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/actions/workflows/pipeline.yml/badge.svg)](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/actions/workflows/pipeline.yml)
+[![GitHub last commit](https://img.shields.io/github/last-commit/sharf-shawon/Awesome-Bangladeshi-Devs)](#)
+
+## Data-driven directory of **{len(users):,}** Bangladeshi GitHub developers.
+
+## For better experience and finding developers with specific skills around Bangladesh, please visit [{_cname_content}](https://{_cname_content}/).
+
+## Contents
+
+- [Top 500 Developers (by Activity Score)](#top-500-developers-by-activity-score)
+- [Stats](#stats)
+- [How to Add Yourself](#how-to-add-yourself)
+
+---
+
+## Top 500 Developers (by Activity Score)
+
+| Rank | Avatar | User | Score | Followers | Stars | Top Language |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+"""
+
+    for i, user in enumerate(top_by_score):
+        avatar = f"<img src='{user.get('avatar_url', '')}' width='40' height='40'>"
+        username = f"[@{user['github_username']}](https://github.com/{user['github_username']})"
+        score = user.get('activity_score', 0)
+        followers = user.get('followers', 0)
+        stars = user.get('total_stars', 0)
+        lang = user.get('top_language', 'N/A')
+        
+        readme_content += f"| {i+1} | {avatar} | {username} | {score} | {followers} | {stars} | {lang} |\n"
+
+    readme_content += f"""
+---
+
+## Stats
+
+- Total Developers: {len(users):,}
+- Total Stars: {sum(u.get('total_stars', 0) for u in users):,}
+- Top Community Language: {top_lang}
+
+## How to Add Yourself
+
+Please open an [Add Developer Issue](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/issues/new?template=add_developer.yml) and fill in your GitHub username and location. The pipeline will automatically validate and add you to the list!
+
+---
+*Auto-generated by `generate_readme.py` on {last_updated}*
+"""
+
+    with open('README.md', 'w') as f:
+        f.write(readme_content)
+        
+    print("Successfully generated README.md")
 
 if __name__ == "__main__":
-    main()
+    generate_readme()

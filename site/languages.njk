@@ -1,48 +1,49 @@
 ---
 layout: base.njk
 pagination:
-  data: languages
-  size: 1
-  alias: lang
-permalink: "/languages/{{ lang | slugifyLang }}/index.html"
+    data: languages
+    size: 1
+    alias: lang
+permalink: "/languages/{{ lang.slug }}/"
 eleventyComputed:
-  title: "Top {{ lang }} Developers in Bangladesh - Awesome Bangladeshi Devs"
-  description: "Discover the most active {{ lang }} developers from Bangladesh. See their top projects and contributions."
+    title: "{{ lang.name }} Developers in Bangladesh"
 ---
 
-<div class="py-12">
-  <nav class="text-sm mb-8 text-gray-500">
-    <a href="/" class="hover:text-blue-500">Home</a> &raquo; <span class="text-gray-900 dark:text-gray-100">Languages</span> &raquo; {{ lang }}
-  </nav>
+<div class="mb-12">
+    <div class="flex items-center gap-4 mb-4">
+        <a href="/languages/" class="text-gray-500 hover:text-primary transition-colors">Languages</a>
+        <span class="text-gray-300">/</span>
+        <h1 class="text-4xl font-black">{{ lang.name }}</h1>
+    </div>
+    <p class="text-xl text-gray-600 dark:text-gray-400">
+        Showing {{ lang.count }} developers who use {{ lang.name }}.
+    </p>
+</div>
 
-  <h1 class="text-4xl font-bold mb-4">Top {{ lang }} Developers in Bangladesh</h1>
-  <p class="text-xl text-gray-600 dark:text-gray-400 mb-12">Showing developers who primarily work with {{ lang }}.</p>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {% set count = 0 %}
-    {% for user in enriched | sort(true, false, 'activity_score') %}
-      {% if lang in user.top_languages %}
-        {% set count = count + 1 %}
-        <div class="dev-card border dark:border-gray-800 p-6 rounded-2xl hover:shadow-lg transition-all group">
-          <div class="flex items-center gap-4 mb-4">
-            <img src="{{ user.avatar_url }}" alt="{{ user.name }}" class="w-16 h-16 rounded-full group-hover:scale-110 transition-transform">
-            <div>
-              <h3 class="font-bold text-lg"><a href="{{ ('/dev/' + user.username | lower + '/') | url }}" class="hover:text-blue-500">{{ user.name }}</a></h3>
-              <p class="text-sm text-gray-500">@{{ user.username }}</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {% for dev in lang.devs | sortBy("activity_score") %}
+        <a href="/dev/{{ dev.github_username | lower }}/" class="group block p-6 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-primary transition-all hover:shadow-lg bg-white dark:bg-slate-800">
+            <div class="flex items-center gap-4 mb-4">
+                <img src="{{ dev.avatar_url }}" alt="{{ dev.github_username }}" class="w-16 h-16 rounded-full border-2 border-primary/20 group-hover:scale-105 transition-transform">
+                <div>
+                    <h3 class="font-bold text-lg group-hover:text-primary transition-colors">{{ dev.name }}</h3>
+                    <p class="text-gray-500 text-sm">@{{ dev.github_username }}</p>
+                </div>
             </div>
-          </div>
-          <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2 h-10">{{ user.bio or "No bio available." }}</p>
-          <div class="flex flex-wrap gap-1 mb-4 h-12 overflow-hidden">
-            {% for l in user.top_languages | limit(3) %}
-              <span class="text-xs px-2 py-1 {% if l == lang %}bg-blue-500 text-white{% else %}bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300{% endif %} rounded">{{ l }}</span>
-            {% endfor %}
-          </div>
-          <div class="flex justify-between items-center text-xs text-gray-400 border-t dark:border-gray-800 pt-4">
-            <span>⭐ {{ user.followers }} followers</span>
-            <span class="font-bold text-green-500">{{ user.activity_score }} activity</span>
-          </div>
-        </div>
-      {% endif %}
+            <div class="grid grid-cols-3 gap-2 text-center text-sm border-t border-gray-100 dark:border-gray-700 pt-4">
+                <div>
+                    <div class="font-bold">{{ dev.activity_score }}</div>
+                    <div class="text-xs text-gray-400">Score</div>
+                </div>
+                <div>
+                    <div class="font-bold">{{ dev.followers }}</div>
+                    <div class="text-xs text-gray-400">Followers</div>
+                </div>
+                <div>
+                    <div class="font-bold">{{ dev.total_stars }}</div>
+                    <div class="text-xs text-gray-400">Stars</div>
+                </div>
+            </div>
+        </a>
     {% endfor %}
-  </div>
 </div>

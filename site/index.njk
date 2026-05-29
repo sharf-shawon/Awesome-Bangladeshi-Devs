@@ -1,104 +1,197 @@
 ---
 layout: base.njk
-title: Awesome Bangladeshi Devs - Discover Top GitHub Talent
-description: Explore, search, and discover the most active and talented Bangladeshi developers on GitHub.
+title: Home
 ---
 
-<div class="py-12 text-center">
-  <h1 class="text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">Discover Bangladeshi GitHub Talent</h1>
-  <div class="text-6xl font-black mb-6 text-gray-900 dark:text-white" id="total-count">
-    {{ enriched | length }}
-  </div>
-  <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Explore a curated directory of thousands of Bangladeshi developers, ranked by activity, contributions, and project impact.</p>
+<div class="text-center py-12">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
+        Discover <span class="text-primary">{{ stats.total_devs | localeString }}</span> Bangladeshi GitHub Developers
+    </h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        A curated, data-driven list of the most active developers from Bangladesh.
+    </p>
 </div>
 
-<!-- Search Section -->
-<div class="max-w-4xl mx-auto mb-16">
-  <div class="sticky top-4 z-20">
+<div class="max-w-3xl mx-auto mb-12 sticky top-20 z-40">
     <div class="relative">
-      <input type="text" id="search-input" placeholder="Search by name, username, bio, language (e.g. 'python'), or topic (e.g. 'web')..." class="w-full px-6 py-4 rounded-full border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:border-blue-500 shadow-xl text-lg transition-all">
-      <div id="search-results-count" class="absolute right-6 top-1/2 -translate-y-1/2 text-sm text-gray-400"></div>
+        <input type="text" id="search-input" placeholder="Search by name, username, bio, or language..." 
+               class="w-full px-6 py-4 rounded-2xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-800 text-lg focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all shadow-xl">
+        <div id="search-results-count" class="absolute right-6 top-1/2 -translate-y-1/2 text-gray-400"></div>
     </div>
-    
-    <div class="flex flex-wrap justify-between items-center gap-4 mt-4 px-2">
-      <div class="flex flex-wrap gap-2" id="quick-filters">
-        <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="Python">Python</button>
-        <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="JavaScript">JavaScript</button>
-        <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="TypeScript">TypeScript</button>
-        <button class="px-4 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-sm" data-filter="Go">Go</button>
-      </div>
-      
-      <button id="toggle-advanced" class="text-sm font-medium text-blue-500 hover:text-blue-600 flex items-center gap-1">
-        <span>Advanced Filters</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-        </svg>
-      </button>
-    </div>
-  </div>
-
-  <!-- Advanced Search Panel -->
-  <div id="advanced-search-panel" class="hidden bg-gray-50 dark:bg-gray-800/50 p-6 rounded-2xl mt-4 border dark:border-gray-700">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div>
-        <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Sort By</label>
-        <select id="sort-by" class="w-full bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg p-2 text-sm">
-          <option value="relevance">Relevance</option>
-          <option value="activity_score">Activity Score</option>
-          <option value="followers">Followers</option>
-          <option value="public_repos">Public Repos</option>
-          <option value="name">Name</option>
-        </select>
-      </div>
-      <div>
-        <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Min Followers</label>
-        <input type="number" id="min-followers" placeholder="0" class="w-full bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg p-2 text-sm">
-      </div>
-      <div>
-        <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Language</label>
-        <input type="text" id="lang-filter" placeholder="Filter by language..." class="w-full bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg p-2 text-sm">
-      </div>
-    </div>
-  </div>
 </div>
 
-<!-- Results Grid -->
-<div id="dev-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  {% for user in enriched | sort(true, false, 'activity_score') | limit(24) %}
-    <div class="dev-card border dark:border-gray-800 p-6 rounded-2xl hover:shadow-lg transition-all group">
-      <div class="flex items-center gap-4 mb-4">
-        <img src="{{ user.avatar_url }}" alt="{{ user.name }}" class="w-16 h-16 rounded-full group-hover:scale-110 transition-transform">
-        <div>
-          <h3 class="font-bold text-lg"><a href="{{ ('/dev/' + user.username | lower + '/') | url }}" class="hover:text-blue-500">{{ user.name }}</a></h3>
-          <p class="text-sm text-gray-500">@{{ user.username }}</p>
+<div id="default-content">
+    <section class="mb-16">
+        <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+            <span class="w-2 h-8 bg-primary rounded-full"></span>
+            Top Contributors
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for dev in enriched | sortBy("activity_score") | limit(6) %}
+                <a href="/dev/{{ dev.github_username | lower }}/" class="group block p-6 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-primary transition-all hover:shadow-lg bg-white dark:bg-slate-800">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="{{ dev.avatar_url }}" alt="{{ dev.github_username }}" class="w-16 h-16 rounded-full border-2 border-primary/20 group-hover:scale-105 transition-transform">
+                        <div>
+                            <h3 class="font-bold text-lg group-hover:text-primary transition-colors">{{ dev.name }}</h3>
+                            <p class="text-gray-500 text-sm">@{{ dev.github_username }}</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        {% if dev.top_language %}
+                            <span class="px-2 py-1 bg-primary/10 text-primary text-xs font-medium rounded-md">{{ dev.top_language }}</span>
+                        {% endif %}
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 text-center text-sm border-t border-gray-100 dark:border-gray-700 pt-4">
+                        <div>
+                            <div class="font-bold">{{ dev.activity_score }}</div>
+                            <div class="text-xs text-gray-400">Score</div>
+                        </div>
+                        <div>
+                            <div class="font-bold">{{ dev.followers }}</div>
+                            <div class="text-xs text-gray-400">Followers</div>
+                        </div>
+                        <div>
+                            <div class="font-bold">{{ dev.total_stars }}</div>
+                            <div class="text-xs text-gray-400">Stars</div>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
         </div>
-      </div>
-      <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2 h-10">{{ user.bio or "No bio available." }}</p>
-      <div class="flex flex-wrap gap-1 mb-4 h-12 overflow-hidden">
-        {% for lang in user.top_languages | limit(3) %}
-          <span class="text-xs px-2 py-1 bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 rounded">{{ lang }}</span>
-        {% endfor %}
-      </div>
-      <div class="flex justify-between items-center text-xs text-gray-400 border-t dark:border-gray-800 pt-4">
-        <span>⭐ {{ user.followers }} followers</span>
-        <span class="font-bold text-green-500">{{ user.activity_score }} activity</span>
-      </div>
-    </div>
-  {% endfor %}
+        <div class="text-center mt-10">
+            <a href="/all/" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-colors shadow-lg">
+                View All Developers
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </a>
+        </div>
+    </section>
 </div>
 
-<div id="no-results" class="hidden py-12 text-center text-gray-500">
-  <p class="text-xl">No developers found matching your search.</p>
+<div id="search-results" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+    <!-- Results populated by JS -->
 </div>
 
-<div id="infinite-scroll-status" class="infinite-scroll-status mb-12">
-  <div class="flex items-center justify-center gap-2">
-    <svg class="animate-spin h-5 w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-    </svg>
-    <span>Loading more developers...</span>
-  </div>
+<!-- Sentinel for Lazy Loading -->
+<div id="load-more-sentinel" class="h-20 flex items-center justify-center">
+    <div id="loading-spinner" class="hidden animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+<script>
+    let fuse;
+    let allDevs = [];
+    const searchInput = document.getElementById('search-input');
+    const defaultContent = document.getElementById('default-content');
+    const searchResults = document.getElementById('search-results');
+    const resultsCount = document.getElementById('search-results-count');
+    const sentinel = document.getElementById('load-more-sentinel');
+    const loadingSpinner = document.getElementById('loading-spinner');
+
+    // Batch rendering state
+    const BATCH_SIZE = 48;
+    let currentIndex = 0;
+    let isLazyLoadingEnabled = true;
+
+    function createDevCard(item) {
+        return `
+            <a href="/dev/${item.u.toLowerCase()}/" class="group block p-6 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-primary transition-all hover:shadow-lg bg-white dark:bg-slate-800">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-xl font-bold text-primary overflow-hidden">
+                        ${item.u[0].toUpperCase()}
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg group-hover:text-primary transition-colors">${item.n || item.u}</h3>
+                        <p class="text-gray-500 text-sm">@${item.u}</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-4 h-10">${item.b || 'No bio available'}</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    ${item.l ? `<span class="px-2 py-1 bg-primary/10 text-primary text-xs font-medium rounded-md">${item.l}</span>` : ''}
+                </div>
+                <div class="grid grid-cols-3 gap-2 text-center text-sm border-t border-gray-100 dark:border-gray-700 pt-4">
+                    <div>
+                        <div class="font-bold">${item.s}</div>
+                        <div class="text-xs text-gray-400">Score</div>
+                    </div>
+                    <div>
+                        <div class="font-bold">${item.f}</div>
+                        <div class="text-xs text-gray-400">Followers</div>
+                    </div>
+                    <div>
+                        <div class="font-bold">${item.r}</div>
+                        <div class="text-xs text-gray-400">Repos</div>
+                    </div>
+                </div>
+            </a>
+        `;
+    }
+
+    function renderNextBatch() {
+        if (!isLazyLoadingEnabled || currentIndex >= allDevs.length) {
+            loadingSpinner.classList.add('hidden');
+            return;
+        }
+
+        loadingSpinner.classList.remove('hidden');
+        const nextBatch = allDevs.slice(currentIndex, currentIndex + BATCH_SIZE);
+        
+        const fragment = document.createDocumentFragment();
+        const container = document.createElement('div');
+        container.innerHTML = nextBatch.map(item => createDevCard(item)).join('');
+        
+        while (container.firstChild) {
+            fragment.appendChild(container.firstChild);
+        }
+
+        searchResults.appendChild(fragment);
+        currentIndex += BATCH_SIZE;
+        
+        if (currentIndex >= allDevs.length) {
+            loadingSpinner.classList.add('hidden');
+        }
+    }
+
+    // Fetch search index
+    fetch('/data/search-index.json')
+        .then(res => res.json())
+        .then(data => {
+            allDevs = data.sort((a, b) => b.s - a.s);
+            fuse = new Fuse(allDevs, {
+                keys: ['u', 'n', 'b', 'l', 'al', 't'],
+                threshold: 0.3,
+                includeScore: true
+            });
+
+            // Setup Infinite Scroll
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    renderNextBatch();
+                }
+            }, { rootMargin: '200px' });
+            
+            observer.observe(sentinel);
+        });
+
+    searchInput.addEventListener('input', (e) => {
+        const query = e.target.value;
+        
+        if (query.length < 2) {
+            defaultContent.classList.remove('hidden');
+            searchResults.innerHTML = '';
+            currentIndex = 0;
+            isLazyLoadingEnabled = true;
+            renderNextBatch();
+            searchResults.classList.remove('hidden'); // Show lazy loaded devs by default when no search
+            resultsCount.textContent = '';
+            return;
+        }
+
+        isLazyLoadingEnabled = false;
+        loadingSpinner.classList.add('hidden');
+        const results = fuse.search(query);
+        defaultContent.classList.add('hidden');
+        searchResults.classList.remove('hidden');
+        resultsCount.textContent = `${results.length} found`;
+
+        searchResults.innerHTML = results.map(({ item }) => createDevCard(item)).join('');
+    });
+</script>

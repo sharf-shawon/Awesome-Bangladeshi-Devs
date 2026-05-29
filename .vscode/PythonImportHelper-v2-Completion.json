@@ -1,0 +1,378 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPAdapter",
+        "importPath": "requests.adapters",
+        "description": "requests.adapters",
+        "isExtraImport": true,
+        "detail": "requests.adapters",
+        "documentation": {}
+    },
+    {
+        "label": "Retry",
+        "importPath": "urllib3.util.retry",
+        "description": "urllib3.util.retry",
+        "isExtraImport": true,
+        "detail": "urllib3.util.retry",
+        "documentation": {}
+    },
+    {
+        "label": "yaml",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "yaml",
+        "description": "yaml",
+        "detail": "yaml",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "src.process_issue",
+        "description": "src.process_issue",
+        "isExtraImport": true,
+        "detail": "src.process_issue",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "MagicMock",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "validate_data",
+        "importPath": "src.validate_data",
+        "description": "src.validate_data",
+        "isExtraImport": true,
+        "detail": "src.validate_data",
+        "documentation": {}
+    },
+    {
+        "label": "build_index",
+        "kind": 2,
+        "importPath": "src.build_search_index",
+        "description": "src.build_search_index",
+        "peekOfCode": "def build_index():\n    enriched_path = 'data/users-enriched.json'\n    index_path = 'data/search-index.json'\n    if not os.path.exists(enriched_path):\n        print(f\"Error: {enriched_path} not found.\")\n        return\n    with open(enriched_path, 'r') as f:\n        users = json.load(f)\n    search_index = []\n    for user in users:",
+        "detail": "src.build_search_index",
+        "documentation": {}
+    },
+    {
+        "label": "TokenManager",
+        "kind": 6,
+        "importPath": "src.enrich_data",
+        "description": "src.enrich_data",
+        "peekOfCode": "class TokenManager:\n    def __init__(self, tokens):\n        self.tokens = [t for t in tokens if t]\n        self.current_index = 0\n        self.limits = {t: 5000 for t in self.tokens} # Default assumption\n    def get_token(self):\n        if not self.tokens: return None\n        return self.tokens[self.current_index]\n    def update_limit(self, token, remaining):\n        self.limits[token] = int(remaining)",
+        "detail": "src.enrich_data",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "kind": 2,
+        "importPath": "src.enrich_data",
+        "description": "src.enrich_data",
+        "peekOfCode": "def load_config():\n    with open('config/metrics.json', 'r') as f:\n        return json.load(f)\ndef load_users():\n    with open('data/users.json', 'r') as f:\n        return json.load(f)\ndef load_enriched():\n    if os.path.exists('data/users-enriched.json'):\n        with open('data/users-enriched.json', 'r') as f:\n            return {u['github_username'].lower(): u for u in json.load(f)}",
+        "detail": "src.enrich_data",
+        "documentation": {}
+    },
+    {
+        "label": "load_users",
+        "kind": 2,
+        "importPath": "src.enrich_data",
+        "description": "src.enrich_data",
+        "peekOfCode": "def load_users():\n    with open('data/users.json', 'r') as f:\n        return json.load(f)\ndef load_enriched():\n    if os.path.exists('data/users-enriched.json'):\n        with open('data/users-enriched.json', 'r') as f:\n            return {u['github_username'].lower(): u for u in json.load(f)}\n    return {}\ndef save_enriched(enriched_list):\n    with open('data/users-enriched.json', 'w') as f:",
+        "detail": "src.enrich_data",
+        "documentation": {}
+    },
+    {
+        "label": "load_enriched",
+        "kind": 2,
+        "importPath": "src.enrich_data",
+        "description": "src.enrich_data",
+        "peekOfCode": "def load_enriched():\n    if os.path.exists('data/users-enriched.json'):\n        with open('data/users-enriched.json', 'r') as f:\n            return {u['github_username'].lower(): u for u in json.load(f)}\n    return {}\ndef save_enriched(enriched_list):\n    with open('data/users-enriched.json', 'w') as f:\n        json.dump(enriched_list, f, indent=2)\n    today = datetime.now(timezone.utc).strftime('%Y-%m-%d')\n    with open(f'data/{today}.json', 'w') as f:",
+        "detail": "src.enrich_data",
+        "documentation": {}
+    },
+    {
+        "label": "save_enriched",
+        "kind": 2,
+        "importPath": "src.enrich_data",
+        "description": "src.enrich_data",
+        "peekOfCode": "def save_enriched(enriched_list):\n    with open('data/users-enriched.json', 'w') as f:\n        json.dump(enriched_list, f, indent=2)\n    today = datetime.now(timezone.utc).strftime('%Y-%m-%d')\n    with open(f'data/{today}.json', 'w') as f:\n        json.dump(enriched_list, f, indent=2)\nGRAPHQL_FRAGMENT = \"\"\"\nfragment UserProfile on User {\n  login name avatarUrl bio location company websiteUrl createdAt\n  followers { totalCount }",
+        "detail": "src.enrich_data",
+        "documentation": {}
+    },
+    {
+        "label": "build_query",
+        "kind": 2,
+        "importPath": "src.enrich_data",
+        "description": "src.enrich_data",
+        "peekOfCode": "def build_query(usernames):\n    nodes = []\n    for i, username in enumerate(usernames):\n        nodes.append(f\"user{i}: user(login: \\\"{username}\\\") {{ ...UserProfile }}\")\n    return f\"\"\"\n    {GRAPHQL_FRAGMENT}\n    query {{\n      {chr(10).join(nodes)}\n    }}\n    \"\"\"",
+        "detail": "src.enrich_data",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_batch",
+        "kind": 2,
+        "importPath": "src.enrich_data",
+        "description": "src.enrich_data",
+        "peekOfCode": "def fetch_batch(usernames, token_manager, session):\n    query = build_query(usernames)\n    # Try all tokens if necessary\n    for _ in range(len(token_manager.tokens)):\n        token = token_manager.get_token()\n        headers = {\"Authorization\": f\"Bearer {token}\"}\n        try:\n            resp = session.post(\"https://api.github.com/graphql\", json={\"query\": query}, headers=headers, timeout=45)\n            # Update rate limit info\n            remaining = resp.headers.get('X-RateLimit-Remaining')",
+        "detail": "src.enrich_data",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_with_recursion",
+        "kind": 2,
+        "importPath": "src.enrich_data",
+        "description": "src.enrich_data",
+        "peekOfCode": "def fetch_with_recursion(batch, token_manager, session):\n    data = fetch_batch(batch, token_manager, session)\n    if data: return data\n    if len(batch) > 1:\n        print(f\"Batch of {len(batch)} failed, splitting into half...\")\n        mid = len(batch) // 2\n        d1 = fetch_with_recursion(batch[:mid], token_manager, session)\n        d2 = fetch_with_recursion(batch[mid:], token_manager, session)\n        combined = {}\n        if d1: combined.update(d1)",
+        "detail": "src.enrich_data",
+        "documentation": {}
+    },
+    {
+        "label": "compute_activity_score",
+        "kind": 2,
+        "importPath": "src.enrich_data",
+        "description": "src.enrich_data",
+        "peekOfCode": "def compute_activity_score(user, config, stats_min_max):\n    weights = config['scoring_weights']\n    metrics = {\n        'contributions': user.get('contributions_last_90d', 0),\n        'followers': user.get('followers', 0),\n        'pull_requests': user.get('prs_last_90d', 0),\n        'stars': user.get('total_stars', 0),\n        'public_repos': user.get('public_repos', 0),\n        'commits': user.get('commits_last_90d', 0),\n        'issues': user.get('issues_last_90d', 0),",
+        "detail": "src.enrich_data",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.enrich_data",
+        "description": "src.enrich_data",
+        "peekOfCode": "def main():\n    force = '--force' in sys.argv\n    raw_tokens = os.getenv('GH_TOKENS', '').split(',')\n    if not any(raw_tokens):\n        raw_tokens = [os.getenv('GITHUB_TOKEN')]\n    token_manager = TokenManager(raw_tokens)\n    # Setup resilient session\n    session = requests.Session()\n    retries = Retry(total=3, backoff_factor=1, status_forcelist=[502, 503, 504])\n    session.mount('https://', HTTPAdapter(max_retries=retries))",
+        "detail": "src.enrich_data",
+        "documentation": {}
+    },
+    {
+        "label": "GRAPHQL_FRAGMENT",
+        "kind": 5,
+        "importPath": "src.enrich_data",
+        "description": "src.enrich_data",
+        "peekOfCode": "GRAPHQL_FRAGMENT = \"\"\"\nfragment UserProfile on User {\n  login name avatarUrl bio location company websiteUrl createdAt\n  followers { totalCount }\n  following { totalCount }\n  repositories(first: 10, orderBy: {field: STARGAZERS, direction: DESC}, isFork: false) {\n    nodes {\n      name description url stargazerCount forkCount\n      primaryLanguage { name }\n      repositoryTopics(first: 5) { nodes { topic { name } } }",
+        "detail": "src.enrich_data",
+        "documentation": {}
+    },
+    {
+        "label": "generate_readme",
+        "kind": 2,
+        "importPath": "src.generate_readme",
+        "description": "src.generate_readme",
+        "peekOfCode": "def generate_readme():\n    enriched_path = 'data/users-enriched.json'\n    cname_path = 'CNAME'\n    if not os.path.exists(cname_path):\n        _cname_content = \"#\"\n    else:\n        with open(cname_path, 'r') as f:\n            _cname_content = f.read().strip()\n    if not os.path.exists(enriched_path):\n        print(f\"Error: {enriched_path} not found.\")",
+        "detail": "src.generate_readme",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "kind": 2,
+        "importPath": "src.process_issue",
+        "description": "src.process_issue",
+        "peekOfCode": "def load_config():\n    with open('config/metrics.json', 'r') as f:\n        return json.load(f)\ndef load_data(file_path):\n    if os.path.exists(file_path):\n        with open(file_path, 'r') as f:\n            return json.load(f)\n    return []\ndef save_data(file_path, data):\n    with open(file_path, 'w') as f:",
+        "detail": "src.process_issue",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "kind": 2,
+        "importPath": "src.process_issue",
+        "description": "src.process_issue",
+        "peekOfCode": "def load_data(file_path):\n    if os.path.exists(file_path):\n        with open(file_path, 'r') as f:\n            return json.load(f)\n    return []\ndef save_data(file_path, data):\n    with open(file_path, 'w') as f:\n        json.dump(data, f, indent=2)\ndef parse_issue_body(body):\n    # GitHub issue form YAML format is often wrapped in markdown or just plain YAML",
+        "detail": "src.process_issue",
+        "documentation": {}
+    },
+    {
+        "label": "save_data",
+        "kind": 2,
+        "importPath": "src.process_issue",
+        "description": "src.process_issue",
+        "peekOfCode": "def save_data(file_path, data):\n    with open(file_path, 'w') as f:\n        json.dump(data, f, indent=2)\ndef parse_issue_body(body):\n    # GitHub issue form YAML format is often wrapped in markdown or just plain YAML\n    # We'll try to parse it using yaml library\n    try:\n        return yaml.safe_load(body)\n    except Exception:\n        return {}",
+        "detail": "src.process_issue",
+        "documentation": {}
+    },
+    {
+        "label": "parse_issue_body",
+        "kind": 2,
+        "importPath": "src.process_issue",
+        "description": "src.process_issue",
+        "peekOfCode": "def parse_issue_body(body):\n    # GitHub issue form YAML format is often wrapped in markdown or just plain YAML\n    # We'll try to parse it using yaml library\n    try:\n        return yaml.safe_load(body)\n    except Exception:\n        return {}\ndef main():\n    issue_number = os.getenv('ISSUE_NUMBER')\n    issue_title = os.getenv('ISSUE_TITLE')",
+        "detail": "src.process_issue",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.process_issue",
+        "description": "src.process_issue",
+        "peekOfCode": "def main():\n    issue_number = os.getenv('ISSUE_NUMBER')\n    issue_title = os.getenv('ISSUE_TITLE')\n    issue_body = os.getenv('ISSUE_BODY')\n    labels = os.getenv('ISSUE_LABELS', '').split(',')\n    github_token = os.getenv('GITHUB_TOKEN')\n    if not issue_body:\n        print(\"Error: ISSUE_BODY not set\")\n        sys.exit(1)\n    config = load_config()",
+        "detail": "src.process_issue",
+        "documentation": {}
+    },
+    {
+        "label": "validate_data",
+        "kind": 2,
+        "importPath": "src.validate_data",
+        "description": "src.validate_data",
+        "peekOfCode": "def validate_data():\n    file_path = 'data/users.json'\n    if not os.path.exists(file_path):\n        print(f\"Error: {file_path} not found.\")\n        sys.exit(1)\n    try:\n        with open(file_path, 'r', encoding='utf-8') as f:\n            users = json.load(f)\n    except json.JSONDecodeError as e:\n        print(f\"Error: Failed to parse {file_path}: {e}\")",
+        "detail": "src.validate_data",
+        "documentation": {}
+    },
+    {
+        "label": "mock_env",
+        "kind": 2,
+        "importPath": "tests.test_process_issue",
+        "description": "tests.test_process_issue",
+        "peekOfCode": "def mock_env(tmp_path, monkeypatch):\n    data_dir = tmp_path / \"data\"\n    data_dir.mkdir()\n    (data_dir / \"users.json\").write_text(\"[]\")\n    (data_dir / \"removed_users.json\").write_text(\"[]\")\n    config_dir = tmp_path / \"config\"\n    config_dir.mkdir()\n    (config_dir / \"metrics.json\").write_text(json.dumps({\n        \"location_aliases\": [\"dhaka\", \"bangladesh\"]\n    }))",
+        "detail": "tests.test_process_issue",
+        "documentation": {}
+    },
+    {
+        "label": "test_add_developer_success",
+        "kind": 2,
+        "importPath": "tests.test_process_issue",
+        "description": "tests.test_process_issue",
+        "peekOfCode": "def test_add_developer_success(mock_env, capsys):\n    issue_body = \"\"\"\ngithub_username: testuser\nlocation: Dhaka, Bangladesh\n\"\"\"\n    with patch.dict(os.environ, {\n        \"ISSUE_BODY\": issue_body,\n        \"ISSUE_LABELS\": \"add-developer\",\n        \"ISSUE_TITLE\": \"[ADD] @testuser\"\n    }), patch(\"requests.get\") as mock_get:",
+        "detail": "tests.test_process_issue",
+        "documentation": {}
+    },
+    {
+        "label": "test_add_developer_invalid_location",
+        "kind": 2,
+        "importPath": "tests.test_process_issue",
+        "description": "tests.test_process_issue",
+        "peekOfCode": "def test_add_developer_invalid_location(mock_env, capsys):\n    issue_body = \"github_username: testuser\\nlocation: Mars\"\n    with patch.dict(os.environ, {\n        \"ISSUE_BODY\": issue_body,\n        \"ISSUE_LABELS\": \"add-developer\"\n    }):\n        with pytest.raises(SystemExit):\n            main()\n        captured = capsys.readouterr()\n        assert \"INVALID_LOCATION\" in captured.out",
+        "detail": "tests.test_process_issue",
+        "documentation": {}
+    },
+    {
+        "label": "test_validate_data_success",
+        "kind": 2,
+        "importPath": "tests.test_validate_data",
+        "description": "tests.test_validate_data",
+        "peekOfCode": "def test_validate_data_success(tmp_path, monkeypatch):\n    data_dir = tmp_path / \"data\"\n    data_dir.mkdir()\n    users_file = data_dir / \"users.json\"\n    users = [\n        {\n            \"github_username\": \"user1\",\n            \"profile_url\": \"https://github.com/user1\"\n        }\n    ]",
+        "detail": "tests.test_validate_data",
+        "documentation": {}
+    },
+    {
+        "label": "test_validate_data_duplicate",
+        "kind": 2,
+        "importPath": "tests.test_validate_data",
+        "description": "tests.test_validate_data",
+        "peekOfCode": "def test_validate_data_duplicate(tmp_path, monkeypatch):\n    data_dir = tmp_path / \"data\"\n    data_dir.mkdir()\n    users_file = data_dir / \"users.json\"\n    users = [\n        {\"github_username\": \"user1\", \"profile_url\": \"https://github.com/user1\"},\n        {\"github_username\": \"user1\", \"profile_url\": \"https://github.com/user1\"}\n    ]\n    users_file.write_text(json.dumps(users))\n    monkeypatch.chdir(tmp_path)",
+        "detail": "tests.test_validate_data",
+        "documentation": {}
+    },
+    {
+        "label": "test_validate_data_url_mismatch",
+        "kind": 2,
+        "importPath": "tests.test_validate_data",
+        "description": "tests.test_validate_data",
+        "peekOfCode": "def test_validate_data_url_mismatch(tmp_path, monkeypatch):\n    data_dir = tmp_path / \"data\"\n    data_dir.mkdir()\n    users_file = data_dir / \"users.json\"\n    users = [\n        {\"github_username\": \"user1\", \"profile_url\": \"https://github.com/wrong\"}\n    ]\n    users_file.write_text(json.dumps(users))\n    monkeypatch.chdir(tmp_path)\n    with pytest.raises(SystemExit) as e:",
+        "detail": "tests.test_validate_data",
+        "documentation": {}
+    }
+]

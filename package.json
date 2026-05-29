@@ -1,14 +1,15 @@
 {
   "name": "awesome-bangladeshi-devs",
   "version": "2.0.0",
-  "description": "Professional developer discovery platform for Bangladeshi GitHub developers.",
+  "type": "module",
+  "description": "Bangladeshi GitHub developer discovery platform",
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
     "debug": "DEBUG=Eleventy* eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
     "luxon": "^3.4.4"
   }
 }

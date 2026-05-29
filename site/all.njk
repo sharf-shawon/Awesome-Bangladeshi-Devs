@@ -1,0 +1,69 @@
+---
+layout: base.njk
+title: All Developers
+pagination:
+  data: enriched
+  size: 50
+  alias: devs
+permalink: "/all/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+---
+
+<div class="text-center py-12">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Community Directory</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        Complete list of Bangladeshi GitHub developers, ranked by activity.
+    </p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+    {% for dev in devs %}
+        <a href="/dev/{{ dev.github_username | lower }}/" class="group block p-6 rounded-2xl border border-gray-200 dark:border-gray-700 hover:border-primary transition-all hover:shadow-lg bg-white dark:bg-slate-800">
+            <div class="flex items-center gap-4 mb-4">
+                <img src="{{ dev.avatar_url }}" alt="{{ dev.github_username }}" class="w-16 h-16 rounded-full border-2 border-primary/20 group-hover:scale-105 transition-transform" loading="lazy">
+                <div>
+                    <h3 class="font-bold text-lg group-hover:text-primary transition-colors">{{ dev.name }}</h3>
+                    <p class="text-gray-500 text-sm">@{{ dev.github_username }}</p>
+                </div>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-4 h-10">{{ dev.bio or 'No bio available' }}</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                {% if dev.top_language %}
+                    <span class="px-2 py-1 bg-primary/10 text-primary text-xs font-medium rounded-md">{{ dev.top_language }}</span>
+                {% endif %}
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center text-sm border-t border-gray-100 dark:border-gray-700 pt-4">
+                <div>
+                    <div class="font-bold">{{ dev.activity_score }}</div>
+                    <div class="text-xs text-gray-400">Score</div>
+                </div>
+                <div>
+                    <div class="font-bold">{{ dev.followers }}</div>
+                    <div class="text-xs text-gray-400">Followers</div>
+                </div>
+                <div>
+                    <div class="font-bold">{{ dev.total_stars }}</div>
+                    <div class="text-xs text-gray-400">Stars</div>
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+</div>
+
+<!-- Pagination Nav -->
+<nav class="flex justify-center gap-4 items-center mt-12 mb-20" aria-label="Pagination">
+    {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}" class="px-4 py-2 rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 font-bold hover:border-primary transition-colors">← Previous</a>
+    {% else %}
+        <span class="px-4 py-2 rounded-xl opacity-50 bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 font-bold">← Previous</span>
+    {% endif %}
+
+    <span class="text-sm font-medium text-gray-500">
+        Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}
+    </span>
+
+    {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}" class="px-4 py-2 rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 font-bold hover:border-primary transition-colors">Next →</a>
+    {% else %}
+        <span class="px-4 py-2 rounded-xl opacity-50 bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 font-bold">Next →</span>
+    {% endif %}
+</nav>

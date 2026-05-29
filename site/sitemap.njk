@@ -4,30 +4,12 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for page in collections.all %}
+  {%- if page.url %}
   <url>
-    <loc>https://awesome-bangladeshi-devs.shawon.me/</loc>
-    <lastmod>{{ "" | readableDate }}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <loc>{{ site.url }}{{ page.url }}</loc>
+    <lastmod>{{ stats.last_updated | readableDate }}</lastmod>
   </url>
-  <url>
-    <loc>https://awesome-bangladeshi-devs.shawon.me/stats/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  {% for user in enriched %}
-  <url>
-    <loc>https://awesome-bangladeshi-devs.shawon.me/dev/{{ user.username | lower }}/</loc>
-    <lastmod>{{ user.last_repo_fetched_at | readableDate }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  {% endfor %}
-  {% for lang in languages %}
-  <url>
-    <loc>https://awesome-bangladeshi-devs.shawon.me/languages/{{ lang | slugifyLang }}/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  {% endfor %}
+  {%- endif %}
+{%- endfor %}
 </urlset>

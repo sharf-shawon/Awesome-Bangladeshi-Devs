@@ -1,43 +1,58 @@
-import os
 import json
+import os
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(ROOT, "data")
-ENRICHED_JSON = os.path.join(DATA_DIR, "users-enriched.json")
-SEARCH_INDEX_JSON = os.path.join(DATA_DIR, "search-index.json")
-
-def main():
-    if not os.path.exists(ENRICHED_JSON):
-        print(f"Enriched data not found at {ENRICHED_JSON}")
+def build_index():
+    enriched_path = 'data/users-enriched.json'
+    index_path = 'data/search-index.json'
+    
+    if not os.path.exists(enriched_path):
+        print(f"Error: {enriched_path} not found.")
         return
-
-    with open(ENRICHED_JSON, "r", encoding="utf-8") as f:
+        
+    with open(enriched_path, 'r') as f:
         users = json.load(f)
-
+        
     search_index = []
     for user in users:
-        # Extract only necessary fields for search to keep the index light
-        entry = {
-            "id": user["username"],
-            "name": user["name"],
-            "bio": user["bio"],
-            "langs": user["top_languages"],
-            "topics": user["top_topics"],
-            "r_names": [r["name"] for r in user.get("featured_repos", [])],
-            "r_desc": [r["description"] for r in user.get("featured_repos", []) if r.get("description")],
-            "score": user["activity_score"],
-            "followers": user["followers"]
-        }
-        # Add aliases if they exist in user object (from overrides)
-        if "aliases" in user:
-            entry["aliases"] = user["aliases"]
+        # Normalize fields
+        username = user.get('github_username') or user.get('username')
+        name = user.get('name') or username
+        bio = user.get('bio', '')
+        
+        # Handle repos and stars
+        repos = user.get('top_repos') or user.get('featured_repos') or []
+        total_stars = user.get('total_stars')
+        if total_stars is None:
+            total_stars = sum((r.get('stars') or r.get('stargazerCount') or 0) for r in repos)
             
-        search_index.append(entry)
-
-    with open(SEARCH_INDEX_JSON, "w", encoding="utf-8") as f:
-        json.dump(search_index, f, ensure_ascii=False, indent=2)
-
+        # Handle languages
+        all_langs = user.get('all_languages') or user.get('top_languages') or []
+        top_lang = user.get('top_language')
+        if not top_lang and all_langs:
+            top_lang = all_langs[0]
+            
+        topics = set()
+        for repo in repos:
+            for topic in repo.get('topics', []):
+                topics.add(topic)
+                
+        search_index.append({
+            "u": username,
+            "n": name,
+            "b": bio,
+            "l": top_lang or '',
+            "al": all_langs,
+            "t": list(topics),
+            "s": user.get('activity_score', 0),
+            "f": user.get('followers', 0),
+            "r": user.get('public_repos', 0)
+        })
+        
+    with open(index_path, 'w') as f:
+        json.dump(search_index, f, separators=(',', ':'))
+        
     print(f"Successfully built search index with {len(search_index)} users.")
+    print(f"Index size: {os.path.getsize(index_path) / 1024:.2f} KB")
 
 if __name__ == "__main__":
-    main()
+    build_index()

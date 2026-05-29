@@ -1,45 +1,29 @@
-name: "Add Developer to Awesome List"
-description: "Request to add a Bangladeshi developer to the Awesome list."
-title: "Add Developer"
-labels: ["add-developer", "automation"]
+name: Add Developer to Awesome List
+description: Add a Bangladeshi developer to the directory
+title: "[ADD] @{github_username}"
+labels: ["add-developer"]
 body:
   - type: input
     id: github_username
     attributes:
-      label: "GitHub Username"
-      description: "The GitHub username of the developer (case-sensitive)."
-      placeholder: "e.g. johndoe"
+      label: GitHub Username
+      placeholder: "e.g. torvalds"
     validations:
       required: true
   - type: input
     id: location
     attributes:
-      label: "Location"
-      description: "Location as shown on the GitHub profile (must match config/metrics.json location aliases)."
+      label: Location
+      description: "Must include Bangladesh or a Bangladeshi city"
       placeholder: "e.g. Dhaka, Bangladesh"
     validations:
       required: true
-  - type: textarea
-    id: reason
-    attributes:
-      label: "Why should this developer be added?"
-      description: "Briefly explain why this developer should be included (impact, activity, etc.)."
-      placeholder: "Active open source contributor, impactful projects, etc."
-    validations:
-      required: true
-  - type: input
-    id: evidence
-    attributes:
-      label: "Evidence (optional)"
-      description: "Links to notable repos, contributions, or stats (optional)."
-      placeholder: "https://github.com/johndoe/repo"
-    validations:
-      required: false
   - type: checkboxes
-    id: agreement
+    id: terms
     attributes:
-      label: "Agreement"
-      description: "I confirm that the information provided is accurate and complies with the Awesome list guidelines."
+      label: Confirmation
       options:
-        - label: "I have read and agree to the contribution guidelines and understand that duplicate or ineligible entries will be rejected."
+        - label: "I confirm this developer is from Bangladesh or has strong ties to Bangladesh"
+          required: true
+        - label: "I have read the contributing guidelines"
           required: true
