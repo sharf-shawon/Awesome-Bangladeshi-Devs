@@ -9,9 +9,9 @@ permalink: "/all/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 
 ---
 
 <div class="text-center py-12">
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Community Directory</h1>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Developer Directory</h1>
     <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-        Complete list of Bangladeshi GitHub developers, ranked by activity.
+        Complete list of <span class="text-primary">{{ stats.total_devs | localeString }}</span> Bangladeshi GitHub developers, ranked by activity.
     </p>
 </div>
 

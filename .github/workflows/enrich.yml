@@ -40,8 +40,8 @@ jobs:
       - name: Commit and push changes
         id: commit_step
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "Sharfuddin Shawon"
+          git config --global user.email "sharfuddin.shawon@gmail.com"
           git add data/users-enriched.json data/search-index.json data/*.json README.md
           if git diff --cached --quiet; then
             echo "No changes to commit"
