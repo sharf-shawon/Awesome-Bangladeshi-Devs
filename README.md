@@ -1,7 +1,11 @@
 # Awesome Bangladeshi Devs
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Pipeline Status](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/actions/workflows/pipeline.yml/badge.svg)](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/actions/workflows/pipeline.yml)
-[![GitHub last commit](https://img.shields.io/github/last-commit/sharf-shawon/Awesome-Bangladeshi-Devs)](#)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/sharf-shawon/awesome-bangladeshi-devs/main)
+
+
+
+
 
 ## Data-driven directory of **3,673** Bangladeshi GitHub developers.
 
