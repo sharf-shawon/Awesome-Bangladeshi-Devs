@@ -1,11 +1,7 @@
 # Awesome Bangladeshi Devs
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Pipeline Status](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/actions/workflows/pipeline.yml/badge.svg)](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/actions/workflows/pipeline.yml)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/sharf-shawon/awesome-bangladeshi-devs/main)
-
-
-
-
+[![GitHub last commit](https://img.shields.io/github/last-commit/sharf-shawon/Awesome-Bangladeshi-Devs)](#)
 
 ## Data-driven directory of **3,673** Bangladeshi GitHub developers.
 
@@ -537,4 +533,4 @@
 Please open an [Add Developer Issue](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/issues/new?template=add_developer.yml) and fill in your GitHub username and location. The pipeline will automatically validate and add you to the list!
 
 ---
-*Last updated on 2026-06-08 04:00 UTC*
+*Last updated on 2026-06-09 02:49 UTC*
