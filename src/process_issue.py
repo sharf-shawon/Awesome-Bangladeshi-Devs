@@ -1,5 +1,6 @@
 import os
 import json
+import re
 import sys
 import yaml
 import requests
@@ -18,13 +19,36 @@ def save_data(file_path, data):
     with open(file_path, 'w') as f:
         json.dump(data, f, indent=2)
 
+CHECKBOX_RE = re.compile(r'^- \[( |x|X)\]\s*(.*)$')
+
 def parse_issue_body(body):
-    # GitHub issue form YAML format is often wrapped in markdown or just plain YAML
-    # We'll try to parse it using yaml library
+    # parse Markdown issue form bodies before falling back to YAML
+    if '###' in body:
+        return _parse_markdown_sections(body)
     try:
-        return yaml.safe_load(body)
+        parsed = yaml.safe_load(body)
     except Exception:
         return {}
+    return parsed if isinstance(parsed, dict) else {}
+
+def _parse_markdown_sections(body):
+    result = {}
+    for section in re.split(r'^###\s+', body, flags=re.MULTILINE)[1:]:
+        lines = section.strip().splitlines()
+        if not lines:
+            continue
+        # Normalize issue form labels to snake_case form IDs
+        key = re.sub(r'[\s-]+', '_', lines[0].strip().lower())
+        values = [line.strip() for line in lines[1:] if line.strip()]
+        checkbox_matches = [CHECKBOX_RE.match(value) for value in values]
+        if values and all(checkbox_matches):
+            result[key] = {
+                match.group(2).strip(): match.group(1).lower() == 'x'
+                for match in checkbox_matches
+            }
+        else:
+            result[key] = '\n'.join(values)
+    return result
 
 def main():
     issue_number = os.getenv('ISSUE_NUMBER')
@@ -94,7 +118,11 @@ def main():
     elif 'remove-developer' in labels:
         # ...
         username = parsed_body.get('github_username', '').strip()
-        self_removal = parsed_body.get('self_removal') # Checkboxes are usually list of labels or boolean
+        self_removal_raw = parsed_body.get('self_removal')
+        if isinstance(self_removal_raw, dict):
+            self_removal = any(self_removal_raw.values())
+        else:
+            self_removal = bool(self_removal_raw)
         
         user_to_remove = next((u for u in users if u['github_username'].lower() == username.lower()), None)
         
