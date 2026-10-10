@@ -49,13 +49,13 @@
 | 28 | <img src='https://avatars.githubusercontent.com/u/13703461?u=865445bb19fad8624b3a542494d10b0abc8beaed&v=4' width='40' height='40'> | [@cyantarek](https://github.com/cyantarek) | 9.85 | 205 | 197 | Ruby |
 | 29 | <img src='https://avatars.githubusercontent.com/u/37816541?u=484dd07471b45c4f9d4c7022e0cbd3d8a7cab036&v=4' width='40' height='40'> | [@sadekur](https://github.com/sadekur) | 9.28 | 6 | 32 | Python |
 | 30 | <img src='https://avatars.githubusercontent.com/u/11497423?v=4' width='40' height='40'> | [@imranhsayed](https://github.com/imranhsayed) | 9.08 | 2331 | 4772 | PHP |
-| 31 | <img src='https://avatars.githubusercontent.com/u/81983264?u=22ae958d9f25a092be105f43a1c0a7264cadd5c0&v=4' width='40' height='40'> | [@JubayerRiyad](https://github.com/JubayerRiyad) | 8.91 | 5622 | 128 | CSS |
-| 32 | <img src='https://avatars.githubusercontent.com/u/7238675?u=702a5cb5aea157eff431215e2de1748dd76d3c06&v=4' width='40' height='40'> | [@audacioustux](https://github.com/audacioustux) | 8.87 | 223 | 72 | C# |
-| 33 | <img src='https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4' width='40' height='40'> | [@johnefemer](https://github.com/johnefemer) | 8.85 | 57 | 2 | PHP |
-| 34 | <img src='https://avatars.githubusercontent.com/u/12933820?u=7544991cab2a70672e81e67541bbaa19efb26b9f&v=4' width='40' height='40'> | [@i-rocky](https://github.com/i-rocky) | 8.69 | 61 | 79 | Rust |
-| 35 | <img src='https://avatars.githubusercontent.com/u/99077742?u=77e9c1dd41713c45abfe50442497014c10b9019b&v=4' width='40' height='40'> | [@muj-i](https://github.com/muj-i) | 8.64 | 15 | 12 | Dart |
-| 36 | <img src='https://avatars.githubusercontent.com/u/107450069?u=7527593d38570a120549cca28538d8e78548f986&v=4' width='40' height='40'> | [@swadhinbiswas](https://github.com/swadhinbiswas) | 8.51 | 107 | 484 | Rust |
-| 37 | <img src='https://avatars.githubusercontent.com/u/53598781?u=c76b2be73e00e1a86f2ce094485a7074b1808f31&v=4' width='40' height='40'> | [@ArnobKumarSaha](https://github.com/ArnobKumarSaha) | 8.46 | 94 | 16 | Shell |
+| 31 | <img src='https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4' width='40' height='40'> | [@johnefemer](https://github.com/johnefemer) | 8.98 | 57 | 2 | PHP |
+| 32 | <img src='https://avatars.githubusercontent.com/u/12933820?u=7544991cab2a70672e81e67541bbaa19efb26b9f&v=4' width='40' height='40'> | [@i-rocky](https://github.com/i-rocky) | 8.97 | 61 | 79 | PHP |
+| 33 | <img src='https://avatars.githubusercontent.com/u/81983264?u=22ae958d9f25a092be105f43a1c0a7264cadd5c0&v=4' width='40' height='40'> | [@JubayerRiyad](https://github.com/JubayerRiyad) | 8.91 | 5621 | 128 | CSS |
+| 34 | <img src='https://avatars.githubusercontent.com/u/7238675?u=702a5cb5aea157eff431215e2de1748dd76d3c06&v=4' width='40' height='40'> | [@audacioustux](https://github.com/audacioustux) | 8.87 | 223 | 72 | C# |
+| 35 | <img src='https://avatars.githubusercontent.com/u/99077742?u=77e9c1dd41713c45abfe50442497014c10b9019b&v=4' width='40' height='40'> | [@muj-i](https://github.com/muj-i) | 8.67 | 15 | 12 | Python |
+| 36 | <img src='https://avatars.githubusercontent.com/u/53598781?u=c76b2be73e00e1a86f2ce094485a7074b1808f31&v=4' width='40' height='40'> | [@ArnobKumarSaha](https://github.com/ArnobKumarSaha) | 8.55 | 94 | 16 | C++ |
+| 37 | <img src='https://avatars.githubusercontent.com/u/107450069?u=7527593d38570a120549cca28538d8e78548f986&v=4' width='40' height='40'> | [@swadhinbiswas](https://github.com/swadhinbiswas) | 8.51 | 107 | 484 | Rust |
 | 38 | <img src='https://avatars.githubusercontent.com/u/82939905?u=ce65f9bbc4eb75bba74660544fcf5ae89a449b41&v=4' width='40' height='40'> | [@devlopersabbir](https://github.com/devlopersabbir) | 8.39 | 73 | 64 | JavaScript |
 | 39 | <img src='https://avatars.githubusercontent.com/u/121896275?u=dd4f184d86e0dc42cb91fb52499935552fb12a04&v=4' width='40' height='40'> | [@sashiqurzamman](https://github.com/sashiqurzamman) | 8.26 | 10 | 1 | HTML |
 | 40 | <img src='https://avatars.githubusercontent.com/u/15819498?u=dbc9afeb11a6d3ea86f816426e4447ee987fe528&v=4' width='40' height='40'> | [@EQuimper](https://github.com/EQuimper) | 8.24 | 1421 | 1936 | Go |
@@ -533,4 +533,4 @@
 Please open an [Add Developer Issue](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/issues/new?template=add_developer.yml) and fill in your GitHub username and location. The pipeline will automatically validate and add you to the list!
 
 ---
-*Last updated on 2026-10-09 04:56 UTC*
+*Last updated on 2026-10-10 04:11 UTC*
