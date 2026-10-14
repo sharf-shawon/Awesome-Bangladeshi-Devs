@@ -4503,6 +4503,300 @@
     "activity_score": 9.4
   },
   {
+    "github_username": "i-rocky",
+    "name": "Rasel Rana Rocky",
+    "profile_url": "https://github.com/i-rocky",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12933820?u=7544991cab2a70672e81e67541bbaa19efb26b9f&v=4",
+    "bio": "huh!",
+    "company": "Hydra Inc.",
+    "website_url": "",
+    "followers": 61,
+    "following": 24,
+    "public_repos": 46,
+    "total_stars": 79,
+    "top_repos": [
+      {
+        "name": "country-list-js",
+        "description": "Country list with name, continent, capital, currency, dialing code, ISO-2 code, ISO-3 code and search",
+        "url": "https://github.com/i-rocky/country-list-js",
+        "stars": 42,
+        "forks": 29,
+        "language": "JavaScript",
+        "topics": [
+          "country",
+          "currency",
+          "dialing",
+          "continent",
+          "capital"
+        ],
+        "pushed_at": "2026-10-08T02:24:59Z"
+      },
+      {
+        "name": "eloquent-dynamic-relation",
+        "description": "Adds dynamic relationship to eloquent ORM models",
+        "url": "https://github.com/i-rocky/eloquent-dynamic-relation",
+        "stars": 21,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2021-06-10T11:40:48Z"
+      },
+      {
+        "name": "just-a-moment",
+        "description": "Spinners, progress bars and progress rings as one tiny custom element \u2014 CSS, unicode and terminal-style, determinate or not, isolated in Shadow DOM. ~5.6 KB, zero config, no dependencies.",
+        "url": "https://github.com/i-rocky/just-a-moment",
+        "stars": 5,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [
+          "css-loader",
+          "custom-element",
+          "loader",
+          "progress-bar",
+          "progress-ring"
+        ],
+        "pushed_at": "2026-06-09T13:08:51Z"
+      },
+      {
+        "name": "laravel-twilio",
+        "description": "Laravel package for twilio integration for sending and receiving SMS, MMS, Fax, and calling with recording support for both inbound and outbound.",
+        "url": "https://github.com/i-rocky/laravel-twilio",
+        "stars": 4,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [
+          "twilio",
+          "twilio-api",
+          "twilio-api-wrapper",
+          "laravel-twilio",
+          "incoming-faxes"
+        ],
+        "pushed_at": "2019-11-30T08:36:37Z"
+      },
+      {
+        "name": "core",
+        "description": ":rocket: Open Source React File Manager ",
+        "url": "https://github.com/reactfilemanager/core",
+        "stars": 2,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2024-11-13T07:35:29Z"
+      },
+      {
+        "name": "github-worker",
+        "description": "gw \u2014 a CLI to manage a fleet of GitHub Actions self-hosted runners",
+        "url": "https://github.com/i-rocky/github-worker",
+        "stars": 1,
+        "forks": 0,
+        "language": "Go",
+        "topics": [],
+        "pushed_at": "2026-09-02T11:51:37Z"
+      },
+      {
+        "name": "corvid-node",
+        "description": "Node.js bindings for corvid \u2014 typed FFI via napi-rs, zero serialization, OOP surface.",
+        "url": "https://github.com/corvid-db/corvid-node",
+        "stars": 1,
+        "forks": 0,
+        "language": "Rust",
+        "topics": [],
+        "pushed_at": "2026-09-03T14:51:03Z"
+      },
+      {
+        "name": "x-zsh",
+        "description": "Animated terminal walkthroughs as an HTML custom element. Write a session in plain text; <x-zsh> renders an animated p10k-style zsh, isolated in Shadow DOM. Zero config, no build, not an emulator.",
+        "url": "https://github.com/i-rocky/x-zsh",
+        "stars": 1,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [
+          "animation",
+          "cli",
+          "console",
+          "custom-elements",
+          "documentation"
+        ],
+        "pushed_at": "2026-06-10T10:22:42Z"
+      },
+      {
+        "name": "corvid",
+        "description": "Embedded multi-modal data store for AI applications: vector + full-text + graph + geo behind one fluent Rust API, a typed C ABI, and native bindings.",
+        "url": "https://github.com/corvid-db/corvid",
+        "stars": 1,
+        "forks": 0,
+        "language": "Rust",
+        "topics": [
+          "ai",
+          "bm25",
+          "database",
+          "embedded-database",
+          "embeddings"
+        ],
+        "pushed_at": "2026-09-03T15:46:53Z"
+      },
+      {
+        "name": "docker-win-net-connect",
+        "description": "Reach Docker Desktop container networks from the Windows host over a WireGuard tunnel",
+        "url": "https://github.com/i-rocky/docker-win-net-connect",
+        "stars": 1,
+        "forks": 0,
+        "language": "Go",
+        "topics": [],
+        "pushed_at": "2026-02-16T05:09:10Z"
+      }
+    ],
+    "top_language": "Go",
+    "all_languages": [
+      "Go",
+      "HTML",
+      "Rust",
+      "JavaScript",
+      "PHP"
+    ],
+    "contributions_last_90d": 12116,
+    "prs_last_90d": 175,
+    "issues_last_90d": 55,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 1936,
+    "enriched_at": "2026-10-14T03:24:42.985033+00:00",
+    "activity_score": 9.2
+  },
+  {
+    "github_username": "johnefemer",
+    "name": "John Efemer",
+    "profile_url": "https://github.com/johnefemer",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4",
+    "bio": "",
+    "company": "@mevriklabs ",
+    "website_url": "https://johnefemer.com",
+    "followers": 57,
+    "following": 207,
+    "public_repos": 13,
+    "total_stars": 2,
+    "top_repos": [
+      {
+        "name": "skillfish",
+        "description": "Multi-skill repository for AI coding agents",
+        "url": "https://github.com/johnefemer/skillfish",
+        "stars": 2,
+        "forks": 3,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-04-12T16:00:17Z"
+      },
+      {
+        "name": "imran-site",
+        "description": "",
+        "url": "https://github.com/mosimran/imran-site",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-09-09T23:24:09Z"
+      },
+      {
+        "name": "recritement_dev",
+        "description": "",
+        "url": "https://github.com/Data-Insight-LLC/recritement_dev",
+        "stars": 0,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-08-24T10:15:07Z"
+      },
+      {
+        "name": "mevrik-laravel-assessment",
+        "description": "",
+        "url": "https://github.com/murad0cs/mevrik-laravel-assessment",
+        "stars": 0,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2025-10-28T06:38:45Z"
+      },
+      {
+        "name": "feat-tracking-example",
+        "description": "A comprehensive Next.js feature tracking library with journey-based analytics, supporting Mixpanel, Firebase, Segment, and BigQuery integrations. Built for measuring the 20% of features that drive 80% of business value.",
+        "url": "https://github.com/johnefemer/feat-tracking-example",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2025-09-30T21:44:37Z"
+      },
+      {
+        "name": "nawha-portfolio",
+        "description": "",
+        "url": "https://github.com/johnefemer/nawha-portfolio",
+        "stars": 0,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2023-12-01T11:57:02Z"
+      },
+      {
+        "name": "docs",
+        "description": "",
+        "url": "https://github.com/johnefemer/docs",
+        "stars": 0,
+        "forks": 0,
+        "language": "MDX",
+        "topics": [],
+        "pushed_at": "2023-11-07T14:37:14Z"
+      },
+      {
+        "name": "gpt-feedback",
+        "description": "",
+        "url": "https://github.com/johnefemer/gpt-feedback",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2023-07-20T18:43:27Z"
+      },
+      {
+        "name": "cf-image-resize-worker",
+        "description": "Cloudflare worker script to resize image",
+        "url": "https://github.com/johnefemer/cf-image-resize-worker",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2022-08-19T19:15:32Z"
+      },
+      {
+        "name": "jekyll-mundana-forestry",
+        "description": "",
+        "url": "https://github.com/johnefemer/jekyll-mundana-forestry",
+        "stars": 0,
+        "forks": 0,
+        "language": "CSS",
+        "topics": [],
+        "pushed_at": "2022-03-18T05:57:37Z"
+      }
+    ],
+    "top_language": "CSS",
+    "all_languages": [
+      "CSS",
+      "HTML",
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "MDX",
+      "PHP"
+    ],
+    "contributions_last_90d": 14576,
+    "prs_last_90d": 74,
+    "issues_last_90d": 266,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 337,
+    "enriched_at": "2026-10-14T03:24:42.985033+00:00",
+    "activity_score": 9.18
+  },
+  {
     "github_username": "imranhsayed",
     "name": "Imran Sayed",
     "profile_url": "https://github.com/imranhsayed",
@@ -4511,7 +4805,7 @@
     "bio": "\ud83d\udc64  Full Stack Developer ...\r\n  \ud83d\udce3 Speaker, Blogger, YouTuber, Writer \ud83d\udcbb Wordpress,\r\nReact, Node, Laravel Developer",
     "company": "",
     "website_url": "https://profiles.wordpress.org/gsayed786",
-    "followers": 2331,
+    "followers": 2330,
     "following": 7,
     "public_repos": 185,
     "total_stars": 4772,
@@ -4671,179 +4965,18 @@
         "pushed_at": "2021-05-29T12:13:57Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "PHP",
     "all_languages": [
-      "JavaScript",
-      "PHP"
+      "PHP",
+      "JavaScript"
     ],
-    "contributions_last_90d": 2671,
+    "contributions_last_90d": 2689,
     "prs_last_90d": 1,
     "issues_last_90d": 0,
     "reviews_last_90d": 1,
     "commits_last_90d": 46,
-    "enriched_at": "2026-10-11T03:48:58.841019+00:00",
-    "activity_score": 9.07
-  },
-  {
-    "github_username": "i-rocky",
-    "name": "Rasel Rana Rocky",
-    "profile_url": "https://github.com/i-rocky",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/12933820?u=7544991cab2a70672e81e67541bbaa19efb26b9f&v=4",
-    "bio": "huh!",
-    "company": "Hydra Inc.",
-    "website_url": "",
-    "followers": 61,
-    "following": 24,
-    "public_repos": 46,
-    "total_stars": 79,
-    "top_repos": [
-      {
-        "name": "country-list-js",
-        "description": "Country list with name, continent, capital, currency, dialing code, ISO-2 code, ISO-3 code and search",
-        "url": "https://github.com/i-rocky/country-list-js",
-        "stars": 42,
-        "forks": 29,
-        "language": "JavaScript",
-        "topics": [
-          "country",
-          "currency",
-          "dialing",
-          "continent",
-          "capital"
-        ],
-        "pushed_at": "2026-10-08T02:24:59Z"
-      },
-      {
-        "name": "eloquent-dynamic-relation",
-        "description": "Adds dynamic relationship to eloquent ORM models",
-        "url": "https://github.com/i-rocky/eloquent-dynamic-relation",
-        "stars": 21,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2021-06-10T11:40:48Z"
-      },
-      {
-        "name": "just-a-moment",
-        "description": "Spinners, progress bars and progress rings as one tiny custom element \u2014 CSS, unicode and terminal-style, determinate or not, isolated in Shadow DOM. ~5.6 KB, zero config, no dependencies.",
-        "url": "https://github.com/i-rocky/just-a-moment",
-        "stars": 5,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [
-          "css-loader",
-          "custom-element",
-          "loader",
-          "progress-bar",
-          "progress-ring"
-        ],
-        "pushed_at": "2026-06-09T13:08:51Z"
-      },
-      {
-        "name": "laravel-twilio",
-        "description": "Laravel package for twilio integration for sending and receiving SMS, MMS, Fax, and calling with recording support for both inbound and outbound.",
-        "url": "https://github.com/i-rocky/laravel-twilio",
-        "stars": 4,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [
-          "twilio",
-          "twilio-api",
-          "twilio-api-wrapper",
-          "laravel-twilio",
-          "incoming-faxes"
-        ],
-        "pushed_at": "2019-11-30T08:36:37Z"
-      },
-      {
-        "name": "core",
-        "description": ":rocket: Open Source React File Manager ",
-        "url": "https://github.com/reactfilemanager/core",
-        "stars": 2,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2024-11-13T07:35:29Z"
-      },
-      {
-        "name": "github-worker",
-        "description": "gw \u2014 a CLI to manage a fleet of GitHub Actions self-hosted runners",
-        "url": "https://github.com/i-rocky/github-worker",
-        "stars": 1,
-        "forks": 0,
-        "language": "Go",
-        "topics": [],
-        "pushed_at": "2026-09-02T11:51:37Z"
-      },
-      {
-        "name": "x-zsh",
-        "description": "Animated terminal walkthroughs as an HTML custom element. Write a session in plain text; <x-zsh> renders an animated p10k-style zsh, isolated in Shadow DOM. Zero config, no build, not an emulator.",
-        "url": "https://github.com/i-rocky/x-zsh",
-        "stars": 1,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [
-          "animation",
-          "cli",
-          "console",
-          "custom-elements",
-          "documentation"
-        ],
-        "pushed_at": "2026-06-10T10:22:42Z"
-      },
-      {
-        "name": "corvid",
-        "description": "Embedded multi-modal data store for AI applications: vector + full-text + graph + geo behind one fluent Rust API, a typed C ABI, and native bindings.",
-        "url": "https://github.com/corvid-db/corvid",
-        "stars": 1,
-        "forks": 0,
-        "language": "Rust",
-        "topics": [
-          "ai",
-          "bm25",
-          "database",
-          "embedded-database",
-          "embeddings"
-        ],
-        "pushed_at": "2026-09-03T15:46:53Z"
-      },
-      {
-        "name": "docker-win-net-connect",
-        "description": "Reach Docker Desktop container networks from the Windows host over a WireGuard tunnel",
-        "url": "https://github.com/i-rocky/docker-win-net-connect",
-        "stars": 1,
-        "forks": 0,
-        "language": "Go",
-        "topics": [],
-        "pushed_at": "2026-02-16T05:09:10Z"
-      },
-      {
-        "name": "mailgun-mailer",
-        "description": "",
-        "url": "https://github.com/i-rocky/mailgun-mailer",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2019-09-14T05:51:51Z"
-      }
-    ],
-    "top_language": "PHP",
-    "all_languages": [
-      "PHP",
-      "Rust",
-      "HTML",
-      "Go",
-      "JavaScript"
-    ],
-    "contributions_last_90d": 11622,
-    "prs_last_90d": 175,
-    "issues_last_90d": 55,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 1936,
-    "enriched_at": "2026-10-10T04:11:10.303033+00:00",
-    "activity_score": 8.94
+    "enriched_at": "2026-10-14T03:24:42.985033+00:00",
+    "activity_score": 9.08
   },
   {
     "github_username": "JubayerRiyad",
@@ -4855,7 +4988,7 @@
     "company": "Jubayer Riyad",
     "website_url": "https://www.behance.net/JubayerRiyad",
     "followers": 5621,
-    "following": 16035,
+    "following": 16037,
     "public_repos": 9,
     "total_stars": 128,
     "top_repos": [
@@ -4999,149 +5132,16 @@
     "top_language": "CSS",
     "all_languages": [
       "CSS",
-      "JavaScript",
-      "HTML"
+      "HTML",
+      "JavaScript"
     ],
     "contributions_last_90d": 0,
     "prs_last_90d": 0,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 0,
-    "enriched_at": "2026-10-10T04:11:10.303033+00:00",
+    "enriched_at": "2026-10-14T03:24:42.985033+00:00",
     "activity_score": 8.9
-  },
-  {
-    "github_username": "johnefemer",
-    "name": "John Efemer",
-    "profile_url": "https://github.com/johnefemer",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4",
-    "bio": "",
-    "company": "@mevriklabs ",
-    "website_url": "https://johnefemer.com",
-    "followers": 57,
-    "following": 207,
-    "public_repos": 13,
-    "total_stars": 2,
-    "top_repos": [
-      {
-        "name": "skillfish",
-        "description": "Multi-skill repository for AI coding agents",
-        "url": "https://github.com/johnefemer/skillfish",
-        "stars": 2,
-        "forks": 2,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-04-12T16:00:17Z"
-      },
-      {
-        "name": "imran-site",
-        "description": "",
-        "url": "https://github.com/mosimran/imran-site",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-09-09T23:24:09Z"
-      },
-      {
-        "name": "recritement_dev",
-        "description": "",
-        "url": "https://github.com/Data-Insight-LLC/recritement_dev",
-        "stars": 0,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-08-24T10:15:07Z"
-      },
-      {
-        "name": "mevrik-laravel-assessment",
-        "description": "",
-        "url": "https://github.com/murad0cs/mevrik-laravel-assessment",
-        "stars": 0,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2025-10-28T06:38:45Z"
-      },
-      {
-        "name": "feat-tracking-example",
-        "description": "A comprehensive Next.js feature tracking library with journey-based analytics, supporting Mixpanel, Firebase, Segment, and BigQuery integrations. Built for measuring the 20% of features that drive 80% of business value.",
-        "url": "https://github.com/johnefemer/feat-tracking-example",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2025-09-30T21:44:37Z"
-      },
-      {
-        "name": "nawha-portfolio",
-        "description": "",
-        "url": "https://github.com/johnefemer/nawha-portfolio",
-        "stars": 0,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2023-12-01T11:57:02Z"
-      },
-      {
-        "name": "docs",
-        "description": "",
-        "url": "https://github.com/johnefemer/docs",
-        "stars": 0,
-        "forks": 0,
-        "language": "MDX",
-        "topics": [],
-        "pushed_at": "2023-11-07T14:37:14Z"
-      },
-      {
-        "name": "gpt-feedback",
-        "description": "",
-        "url": "https://github.com/johnefemer/gpt-feedback",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2023-07-20T18:43:27Z"
-      },
-      {
-        "name": "cf-image-resize-worker",
-        "description": "Cloudflare worker script to resize image",
-        "url": "https://github.com/johnefemer/cf-image-resize-worker",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2022-08-19T19:15:32Z"
-      },
-      {
-        "name": "jekyll-mundana-forestry",
-        "description": "",
-        "url": "https://github.com/johnefemer/jekyll-mundana-forestry",
-        "stars": 0,
-        "forks": 0,
-        "language": "CSS",
-        "topics": [],
-        "pushed_at": "2022-03-18T05:57:37Z"
-      }
-    ],
-    "top_language": "PHP",
-    "all_languages": [
-      "PHP",
-      "Python",
-      "TypeScript",
-      "HTML",
-      "MDX",
-      "CSS",
-      "JavaScript"
-    ],
-    "contributions_last_90d": 13883,
-    "prs_last_90d": 74,
-    "issues_last_90d": 266,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 337,
-    "enriched_at": "2026-10-10T04:11:10.303033+00:00",
-    "activity_score": 8.81
   },
   {
     "github_username": "ArnobKumarSaha",
@@ -5544,7 +5544,7 @@
         "forks": 0,
         "language": "Shell",
         "topics": [],
-        "pushed_at": "2026-09-26T13:09:50Z"
+        "pushed_at": "2026-10-13T06:57:30Z"
       },
       {
         "name": "claude-memory-sync",
@@ -5564,22 +5564,22 @@
         "forks": 0,
         "language": "Python",
         "topics": [],
-        "pushed_at": "2026-07-10T09:24:33Z"
+        "pushed_at": "2026-10-13T20:29:21Z"
       }
     ],
-    "top_language": "Python",
+    "top_language": "Dart",
     "all_languages": [
-      "Python",
       "Dart",
+      "Python",
       "Shell"
     ],
-    "contributions_last_90d": 14113,
+    "contributions_last_90d": 13950,
     "prs_last_90d": 0,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 88,
-    "enriched_at": "2026-10-10T04:11:10.303033+00:00",
-    "activity_score": 8.66
+    "enriched_at": "2026-10-14T03:24:42.985033+00:00",
+    "activity_score": 8.58
   },
   {
     "github_username": "swadhinbiswas",
@@ -169117,6 +169117,135 @@
     "activity_score": 1.61
   },
   {
+    "github_username": "FahimNuman",
+    "name": "FahimNuman87",
+    "profile_url": "https://github.com/FahimNuman",
+    "location": "Dhaka Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/53372580?u=48148a1d99452aec670cbfe44e0d286c1005563f&v=4",
+    "bio": "I am Full-Stack web developer with 1.5 years of working experience. I love to work with logic and build it by programming.",
+    "company": " Demi UI",
+    "website_url": "https://abdullah-al-numan-portfolio.netlify.app/",
+    "followers": 3,
+    "following": 4,
+    "public_repos": 81,
+    "total_stars": 4,
+    "top_repos": [
+      {
+        "name": "DoctorApp-Asp.NetCoreMvc",
+        "description": "",
+        "url": "https://github.com/FahimNuman/DoctorApp-Asp.NetCoreMvc",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2023-05-28T05:16:06Z"
+      },
+      {
+        "name": "javascript-problem",
+        "description": "",
+        "url": "https://github.com/FahimNuman/javascript-problem",
+        "stars": 1,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2022-08-09T05:16:38Z"
+      },
+      {
+        "name": "javascript",
+        "description": "",
+        "url": "https://github.com/FahimNuman/javascript",
+        "stars": 1,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2022-08-09T05:12:26Z"
+      },
+      {
+        "name": "PMHO-First-repo",
+        "description": "",
+        "url": "https://github.com/FahimNuman/PMHO-First-repo",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2022-08-09T05:13:49Z"
+      },
+      {
+        "name": "totala",
+        "description": "",
+        "url": "https://github.com/FahimNuman/totala",
+        "stars": 0,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2026-09-25T17:56:45Z"
+      },
+      {
+        "name": "demiecom_admindashboard",
+        "description": "",
+        "url": "https://github.com/FahimNuman/demiecom_admindashboard",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-10-12T22:24:16Z"
+      },
+      {
+        "name": "demiuiecom_backend",
+        "description": "",
+        "url": "https://github.com/FahimNuman/demiuiecom_backend",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-10-12T22:24:27Z"
+      },
+      {
+        "name": "demiecom_frontend",
+        "description": "",
+        "url": "https://github.com/FahimNuman/demiecom_frontend",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-10-12T22:24:23Z"
+      },
+      {
+        "name": "DakDin",
+        "description": "",
+        "url": "https://github.com/FahimNuman/DakDin",
+        "stars": 0,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2026-10-12T22:24:13Z"
+      },
+      {
+        "name": "invoice",
+        "description": "",
+        "url": "https://github.com/FahimNuman/invoice",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-10-12T22:25:25Z"
+      }
+    ],
+    "top_language": "HTML",
+    "all_languages": [
+      "HTML",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "contributions_last_90d": 32,
+    "prs_last_90d": 0,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 26,
+    "enriched_at": "2026-10-14T03:24:42.985033+00:00",
+    "activity_score": 1.61
+  },
+  {
     "github_username": "EmamSaimon592",
     "name": "Emam Saimon",
     "profile_url": "https://github.com/EmamSaimon592",
@@ -181168,136 +181297,6 @@
     "reviews_last_90d": 0,
     "commits_last_90d": 214,
     "enriched_at": "2026-10-13T05:20:08.976896+00:00",
-    "activity_score": 1.52
-  },
-  {
-    "github_username": "FahimNuman",
-    "name": "FahimNuman87",
-    "profile_url": "https://github.com/FahimNuman",
-    "location": "Dhaka Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/53372580?u=48148a1d99452aec670cbfe44e0d286c1005563f&v=4",
-    "bio": "I am Full-Stack web developer with 1.5 years of working experience. I love to work with logic and build it by programming.",
-    "company": " Demi UI",
-    "website_url": "https://abdullah-al-numan-portfolio.netlify.app/",
-    "followers": 3,
-    "following": 4,
-    "public_repos": 77,
-    "total_stars": 4,
-    "top_repos": [
-      {
-        "name": "DoctorApp-Asp.NetCoreMvc",
-        "description": "",
-        "url": "https://github.com/FahimNuman/DoctorApp-Asp.NetCoreMvc",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2023-05-28T05:16:06Z"
-      },
-      {
-        "name": "javascript-problem",
-        "description": "",
-        "url": "https://github.com/FahimNuman/javascript-problem",
-        "stars": 1,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2022-08-09T05:16:38Z"
-      },
-      {
-        "name": "javascript",
-        "description": "",
-        "url": "https://github.com/FahimNuman/javascript",
-        "stars": 1,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2022-08-09T05:12:26Z"
-      },
-      {
-        "name": "PMHO-First-repo",
-        "description": "",
-        "url": "https://github.com/FahimNuman/PMHO-First-repo",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2022-08-09T05:13:49Z"
-      },
-      {
-        "name": "DakDin",
-        "description": "",
-        "url": "https://github.com/FahimNuman/DakDin",
-        "stars": 0,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2026-09-07T18:04:48Z"
-      },
-      {
-        "name": "invoice",
-        "description": "",
-        "url": "https://github.com/FahimNuman/invoice",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-08-22T00:04:51Z"
-      },
-      {
-        "name": "goldapp",
-        "description": "",
-        "url": "https://github.com/FahimNuman/goldapp",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-08-22T00:04:44Z"
-      },
-      {
-        "name": "goldecom-project",
-        "description": "",
-        "url": "https://github.com/FahimNuman/goldecom-project",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-08-22T00:04:48Z"
-      },
-      {
-        "name": "rskdrfront",
-        "description": "",
-        "url": "https://github.com/FahimNuman/rskdrfront",
-        "stars": 0,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2025-03-11T16:27:38Z"
-      },
-      {
-        "name": "AnonDetectDashboard",
-        "description": "",
-        "url": "https://github.com/FahimNuman/AnonDetectDashboard",
-        "stars": 0,
-        "forks": 0,
-        "language": "SCSS",
-        "topics": [],
-        "pushed_at": "2024-09-15T12:45:21Z"
-      }
-    ],
-    "top_language": "JavaScript",
-    "all_languages": [
-      "JavaScript",
-      "TypeScript",
-      "SCSS",
-      "HTML"
-    ],
-    "contributions_last_90d": 11,
-    "prs_last_90d": 0,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 9,
-    "enriched_at": "2026-09-17T03:16:23.334993+00:00",
     "activity_score": 1.52
   },
   {
