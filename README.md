@@ -49,17 +49,17 @@
 | 28 | <img src='https://avatars.githubusercontent.com/u/68515168?u=4c3a3051b43081fd460d30a91b312f7cee14c150&v=4' width='40' height='40'> | [@devSahinur](https://github.com/devSahinur) | 9.98 | 1109 | 83 | TypeScript |
 | 29 | <img src='https://avatars.githubusercontent.com/u/13703461?u=865445bb19fad8624b3a542494d10b0abc8beaed&v=4' width='40' height='40'> | [@cyantarek](https://github.com/cyantarek) | 9.85 | 204 | 197 | Ruby |
 | 30 | <img src='https://avatars.githubusercontent.com/u/37816541?u=484dd07471b45c4f9d4c7022e0cbd3d8a7cab036&v=4' width='40' height='40'> | [@sadekur](https://github.com/sadekur) | 9.57 | 6 | 32 | TypeScript |
-| 31 | <img src='https://avatars.githubusercontent.com/u/12933820?u=7544991cab2a70672e81e67541bbaa19efb26b9f&v=4' width='40' height='40'> | [@i-rocky](https://github.com/i-rocky) | 9.19 | 61 | 79 | Go |
-| 32 | <img src='https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4' width='40' height='40'> | [@johnefemer](https://github.com/johnefemer) | 9.14 | 57 | 2 | CSS |
-| 33 | <img src='https://avatars.githubusercontent.com/u/11497423?v=4' width='40' height='40'> | [@imranhsayed](https://github.com/imranhsayed) | 9.08 | 2330 | 4772 | PHP |
-| 34 | <img src='https://avatars.githubusercontent.com/u/81983264?u=22ae958d9f25a092be105f43a1c0a7264cadd5c0&v=4' width='40' height='40'> | [@JubayerRiyad](https://github.com/JubayerRiyad) | 8.9 | 5621 | 128 | CSS |
-| 35 | <img src='https://avatars.githubusercontent.com/u/53598781?u=c76b2be73e00e1a86f2ce094485a7074b1808f31&v=4' width='40' height='40'> | [@ArnobKumarSaha](https://github.com/ArnobKumarSaha) | 8.7 | 94 | 16 | JavaScript |
-| 36 | <img src='https://avatars.githubusercontent.com/u/3125771?u=a1d57571dd4eb59e8363cf1ac5e880ef0641fbcd&v=4' width='40' height='40'> | [@nadimtuhin](https://github.com/nadimtuhin) | 8.66 | 176 | 1158 | JavaScript |
-| 37 | <img src='https://avatars.githubusercontent.com/u/99077742?u=77e9c1dd41713c45abfe50442497014c10b9019b&v=4' width='40' height='40'> | [@muj-i](https://github.com/muj-i) | 8.58 | 15 | 12 | Dart |
-| 38 | <img src='https://avatars.githubusercontent.com/u/107450069?u=f8750f856483099271df36051a5f4db72f8ebf9c&v=4' width='40' height='40'> | [@swadhinbiswas](https://github.com/swadhinbiswas) | 8.52 | 108 | 485 | Astro |
-| 39 | <img src='https://avatars.githubusercontent.com/u/82939905?u=ce65f9bbc4eb75bba74660544fcf5ae89a449b41&v=4' width='40' height='40'> | [@devlopersabbir](https://github.com/devlopersabbir) | 8.38 | 73 | 64 | Java |
-| 40 | <img src='https://avatars.githubusercontent.com/u/15819498?u=dbc9afeb11a6d3ea86f816426e4447ee987fe528&v=4' width='40' height='40'> | [@EQuimper](https://github.com/EQuimper) | 8.33 | 1421 | 1935 | Go |
-| 41 | <img src='https://avatars.githubusercontent.com/u/5576949?u=bd0a411a86e0f4ce4ed9afa25c6b1338431dd2bf&v=4' width='40' height='40'> | [@thesabbir](https://github.com/thesabbir) | 8.28 | 262 | 1999 | Go |
+| 31 | <img src='https://avatars.githubusercontent.com/u/12933820?u=7544991cab2a70672e81e67541bbaa19efb26b9f&v=4' width='40' height='40'> | [@i-rocky](https://github.com/i-rocky) | 9.24 | 61 | 79 | Rust |
+| 32 | <img src='https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4' width='40' height='40'> | [@johnefemer](https://github.com/johnefemer) | 9.18 | 57 | 2 | MDX |
+| 33 | <img src='https://avatars.githubusercontent.com/u/3125771?u=3f74590bb87c3c369e56ec3898946fb8fbddc935&v=4' width='40' height='40'> | [@nadimtuhin](https://github.com/nadimtuhin) | 9.14 | 176 | 1159 | TypeScript |
+| 34 | <img src='https://avatars.githubusercontent.com/u/11497423?v=4' width='40' height='40'> | [@imranhsayed](https://github.com/imranhsayed) | 9.09 | 2329 | 4770 | JavaScript |
+| 35 | <img src='https://avatars.githubusercontent.com/u/81983264?u=22ae958d9f25a092be105f43a1c0a7264cadd5c0&v=4' width='40' height='40'> | [@JubayerRiyad](https://github.com/JubayerRiyad) | 8.9 | 5619 | 128 | CSS |
+| 36 | <img src='https://avatars.githubusercontent.com/u/53598781?u=c76b2be73e00e1a86f2ce094485a7074b1808f31&v=4' width='40' height='40'> | [@ArnobKumarSaha](https://github.com/ArnobKumarSaha) | 8.79 | 94 | 16 | Shell |
+| 37 | <img src='https://avatars.githubusercontent.com/u/99077742?u=77e9c1dd41713c45abfe50442497014c10b9019b&v=4' width='40' height='40'> | [@muj-i](https://github.com/muj-i) | 8.61 | 15 | 12 | Shell |
+| 38 | <img src='https://avatars.githubusercontent.com/u/107450069?u=f8750f856483099271df36051a5f4db72f8ebf9c&v=4' width='40' height='40'> | [@swadhinbiswas](https://github.com/swadhinbiswas) | 8.53 | 110 | 486 | Rust |
+| 39 | <img src='https://avatars.githubusercontent.com/u/5576949?u=bd0a411a86e0f4ce4ed9afa25c6b1338431dd2bf&v=4' width='40' height='40'> | [@thesabbir](https://github.com/thesabbir) | 8.5 | 262 | 1999 | JavaScript |
+| 40 | <img src='https://avatars.githubusercontent.com/u/82939905?u=ce65f9bbc4eb75bba74660544fcf5ae89a449b41&v=4' width='40' height='40'> | [@devlopersabbir](https://github.com/devlopersabbir) | 8.43 | 73 | 65 | Java |
+| 41 | <img src='https://avatars.githubusercontent.com/u/15819498?u=dbc9afeb11a6d3ea86f816426e4447ee987fe528&v=4' width='40' height='40'> | [@EQuimper](https://github.com/EQuimper) | 8.33 | 1421 | 1935 | Go |
 | 42 | <img src='https://avatars.githubusercontent.com/u/121896275?u=dd4f184d86e0dc42cb91fb52499935552fb12a04&v=4' width='40' height='40'> | [@sashiqurzamman](https://github.com/sashiqurzamman) | 8.25 | 10 | 1 | HTML |
 | 43 | <img src='https://avatars.githubusercontent.com/u/66651961?u=77f017c8767dd45d07decc4fc2ae2a7e8aadf787&v=4' width='40' height='40'> | [@hasan1119](https://github.com/hasan1119) | 8.22 | 163 | 23 | HTML |
 | 44 | <img src='https://avatars.githubusercontent.com/u/230638080?u=6f4957eedb96aaac7774d200a6cebbd38b42b859&v=4' width='40' height='40'> | [@mhhridoy7907](https://github.com/mhhridoy7907) | 8.18 | 2597 | 183 | C++ |
@@ -525,7 +525,7 @@
 ## Stats
 
 - Total Developers: 3,673
-- Total Stars: 673,478
+- Total Stars: 673,470
 - Top Community Language: HTML
 
 ## How to Add Yourself
@@ -533,4 +533,4 @@
 Please open an [Add Developer Issue](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/issues/new?template=add_developer.yml) and fill in your GitHub username and location. The pipeline will automatically validate and add you to the list!
 
 ---
-*Last updated on 2026-10-15 03:32 UTC*
+*Last updated on 2026-10-16 03:01 UTC*

@@ -4647,21 +4647,21 @@
         "pushed_at": "2026-02-16T05:09:10Z"
       }
     ],
-    "top_language": "Go",
+    "top_language": "Rust",
     "all_languages": [
-      "Go",
-      "HTML",
       "Rust",
       "JavaScript",
+      "Go",
+      "HTML",
       "PHP"
     ],
-    "contributions_last_90d": 12116,
+    "contributions_last_90d": 12216,
     "prs_last_90d": 175,
     "issues_last_90d": 55,
     "reviews_last_90d": 0,
     "commits_last_90d": 1936,
-    "enriched_at": "2026-10-14T03:24:42.985033+00:00",
-    "activity_score": 9.19
+    "enriched_at": "2026-10-16T03:00:17.251184+00:00",
+    "activity_score": 9.24
   },
   {
     "github_username": "johnefemer",
@@ -4700,7 +4700,7 @@
       {
         "name": "recritement_dev",
         "description": "",
-        "url": "https://github.com/Data-Insight-LLC/recritement_dev",
+        "url": "https://github.com/betopia-corp/recritement_dev",
         "stars": 0,
         "forks": 0,
         "language": "Python",
@@ -4778,22 +4778,201 @@
         "pushed_at": "2022-03-18T05:57:37Z"
       }
     ],
-    "top_language": "CSS",
+    "top_language": "MDX",
     "all_languages": [
-      "CSS",
-      "HTML",
-      "Python",
-      "TypeScript",
-      "JavaScript",
       "MDX",
+      "JavaScript",
+      "CSS",
+      "Python",
+      "HTML",
+      "TypeScript",
       "PHP"
     ],
-    "contributions_last_90d": 14576,
+    "contributions_last_90d": 14649,
     "prs_last_90d": 74,
     "issues_last_90d": 266,
     "reviews_last_90d": 0,
     "commits_last_90d": 337,
-    "enriched_at": "2026-10-14T03:24:42.985033+00:00",
+    "enriched_at": "2026-10-16T03:00:17.251184+00:00",
+    "activity_score": 9.18
+  },
+  {
+    "github_username": "nadimtuhin",
+    "name": "Nadim Tuhin (Omar Faruque Tuhin)",
+    "profile_url": "https://github.com/nadimtuhin",
+    "location": "Dhaka",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3125771?u=3f74590bb87c3c369e56ec3898946fb8fbddc935&v=4",
+    "bio": "Software Engineer | Browser automation, AI agents, backend systems | https://calendly.com/nadimtuhin/30min",
+    "company": "",
+    "website_url": "nadimtuhin.com",
+    "followers": 176,
+    "following": 67,
+    "public_repos": 131,
+    "total_stars": 1159,
+    "top_repos": [
+      {
+        "name": "claude-token-optimizer",
+        "description": "Cut the tokens Claude Code loads at session start. CLI that sets up a small CLAUDE.md with on-demand docs, measures startup tokens, and keeps them small.",
+        "url": "https://github.com/nadimtuhin/claude-token-optimizer",
+        "stars": 620,
+        "forks": 80,
+        "language": "JavaScript",
+        "topics": [
+          "ai-assistant",
+          "automation",
+          "claude-code",
+          "developer-tools",
+          "documentation"
+        ],
+        "pushed_at": "2026-10-14T12:50:05Z"
+      },
+      {
+        "name": "onepager",
+        "description": "Onepage Theme/Website Builder for WordPress",
+        "url": "https://github.com/themexpert/onepager",
+        "stars": 307,
+        "forks": 98,
+        "language": "PHP",
+        "topics": [
+          "onepage",
+          "wordpress",
+          "react",
+          "reactjs",
+          "pagebuilder"
+        ],
+        "pushed_at": "2021-02-17T21:01:05Z"
+      },
+      {
+        "name": "schema-designer",
+        "description": "Database schema designer for Laravel & Lumen",
+        "url": "https://github.com/Agontuk/schema-designer",
+        "stars": 123,
+        "forks": 52,
+        "language": "JavaScript",
+        "topics": [
+          "database",
+          "schema",
+          "design",
+          "laravel",
+          "lumen"
+        ],
+        "pushed_at": "2023-01-25T23:13:16Z"
+      },
+      {
+        "name": "Facebook-Request-Throttle-WordPress-Plugin",
+        "description": "WordPress plugin that rate-limits Facebook/Meta web crawlers to prevent server overload",
+        "url": "https://github.com/nadimtuhin/Facebook-Request-Throttle-WordPress-Plugin",
+        "stars": 25,
+        "forks": 10,
+        "language": "PHP",
+        "topics": [
+          "crawler",
+          "facebook",
+          "meta",
+          "php",
+          "rate-limiting"
+        ],
+        "pushed_at": "2026-10-14T13:13:16Z"
+      },
+      {
+        "name": "tax-calculator",
+        "description": "Tax calculation utility",
+        "url": "https://github.com/nadimtuhin/tax-calculator",
+        "stars": 20,
+        "forks": 4,
+        "language": "JavaScript",
+        "topics": [
+          "vue",
+          "vuex",
+          "bootstrap",
+          "tax",
+          "bdtax"
+        ],
+        "pushed_at": "2026-10-14T13:13:49Z"
+      },
+      {
+        "name": "redux-vue",
+        "description": "Redux-style state management for Vue.js",
+        "url": "https://github.com/nadimtuhin/redux-vue",
+        "stars": 19,
+        "forks": 9,
+        "language": "JavaScript",
+        "topics": [
+          "vue",
+          "redux",
+          "redux-vue",
+          "vue-redux",
+          "higher-order-component"
+        ],
+        "pushed_at": "2026-10-14T13:13:45Z"
+      },
+      {
+        "name": "devutils",
+        "description": "DevUtils is a collection of essential developer utilities that work entirely in your browser. No data leaves your computer - everything works offline!",
+        "url": "https://github.com/nadimtuhin/devutils",
+        "stars": 14,
+        "forks": 3,
+        "language": "TypeScript",
+        "topics": [
+          "browser-tools",
+          "developer-tools",
+          "devtools",
+          "offline",
+          "privacy"
+        ],
+        "pushed_at": "2026-10-14T16:40:12Z"
+      },
+      {
+        "name": "react-pure-component",
+        "description": "React pure component examples and utilities",
+        "url": "https://github.com/nadimtuhin/react-pure-component",
+        "stars": 13,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [
+          "opensource"
+        ],
+        "pushed_at": "2026-10-14T13:13:37Z"
+      },
+      {
+        "name": "dse-scrapper",
+        "description": "Dhaka Stock Exchange Scrapper",
+        "url": "https://github.com/nadimtuhin/dse-scrapper",
+        "stars": 11,
+        "forks": 4,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2026-10-14T13:13:12Z"
+      },
+      {
+        "name": "ytranscript",
+        "description": "YouTube transcript extractor",
+        "url": "https://github.com/nadimtuhin/ytranscript",
+        "stars": 7,
+        "forks": 1,
+        "language": "TypeScript",
+        "topics": [
+          "bulk-processing",
+          "bun",
+          "cli",
+          "developer-tools",
+          "google-takeout"
+        ],
+        "pushed_at": "2026-10-14T13:13:53Z"
+      }
+    ],
+    "top_language": "TypeScript",
+    "all_languages": [
+      "TypeScript",
+      "JavaScript",
+      "PHP"
+    ],
+    "contributions_last_90d": 9619,
+    "prs_last_90d": 68,
+    "issues_last_90d": 147,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 1902,
+    "enriched_at": "2026-10-16T03:00:17.251184+00:00",
     "activity_score": 9.14
   },
   {
@@ -4805,10 +4984,10 @@
     "bio": "\ud83d\udc64  Full Stack Developer ...\r\n  \ud83d\udce3 Speaker, Blogger, YouTuber, Writer \ud83d\udcbb Wordpress,\r\nReact, Node, Laravel Developer",
     "company": "",
     "website_url": "https://profiles.wordpress.org/gsayed786",
-    "followers": 2330,
+    "followers": 2329,
     "following": 7,
     "public_repos": 185,
-    "total_stars": 4772,
+    "total_stars": 4770,
     "top_repos": [
       {
         "name": "aquila",
@@ -4846,8 +5025,8 @@
         "name": "nextjs-headless-wordpress",
         "description": "\ud83d\udd25 Nextjs Headless WordPress",
         "url": "https://github.com/imranhsayed/nextjs-headless-wordpress",
-        "stars": 672,
-        "forks": 168,
+        "stars": 671,
+        "forks": 167,
         "language": "JavaScript",
         "topics": [
           "nextjs",
@@ -4878,7 +5057,7 @@
         "name": "nextjs-woocommerce-restapi",
         "description": "A React WooCommerce Project Example With REST API",
         "url": "https://github.com/imranhsayed/nextjs-woocommerce-restapi",
-        "stars": 353,
+        "stars": 352,
         "forks": 107,
         "language": "JavaScript",
         "topics": [
@@ -4895,7 +5074,7 @@
         "description": "\ud83c\udfa8 Gatsby WordPress Theme",
         "url": "https://github.com/imranhsayed/gatsby-wordpress-themes",
         "stars": 346,
-        "forks": 86,
+        "forks": 85,
         "language": "JavaScript",
         "topics": [
           "gatsby-plugin",
@@ -4965,18 +5144,18 @@
         "pushed_at": "2021-05-29T12:13:57Z"
       }
     ],
-    "top_language": "PHP",
+    "top_language": "JavaScript",
     "all_languages": [
-      "PHP",
-      "JavaScript"
+      "JavaScript",
+      "PHP"
     ],
-    "contributions_last_90d": 2689,
+    "contributions_last_90d": 2703,
     "prs_last_90d": 1,
     "issues_last_90d": 0,
     "reviews_last_90d": 1,
     "commits_last_90d": 46,
-    "enriched_at": "2026-10-14T03:24:42.985033+00:00",
-    "activity_score": 9.08
+    "enriched_at": "2026-10-16T03:00:17.251184+00:00",
+    "activity_score": 9.09
   },
   {
     "github_username": "JubayerRiyad",
@@ -4987,8 +5166,8 @@
     "bio": "Hello, I am Jubayer Riyad. I am an Expert in Wix, Shopify, WordPress & Woocommerce with several years of Experience And as same as in all types of design.",
     "company": "Jubayer Riyad",
     "website_url": "https://www.behance.net/JubayerRiyad",
-    "followers": 5621,
-    "following": 16037,
+    "followers": 5619,
+    "following": 16035,
     "public_repos": 9,
     "total_stars": 128,
     "top_repos": [
@@ -5140,7 +5319,7 @@
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 0,
-    "enriched_at": "2026-10-14T03:24:42.985033+00:00",
+    "enriched_at": "2026-10-16T03:00:17.251184+00:00",
     "activity_score": 8.9
   },
   {
@@ -5154,7 +5333,7 @@
     "website_url": "",
     "followers": 94,
     "following": 83,
-    "public_repos": 76,
+    "public_repos": 75,
     "total_stars": 16,
     "top_repos": [
       {
@@ -5258,199 +5437,20 @@
         "pushed_at": "2021-10-25T06:07:07Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "Shell",
     "all_languages": [
-      "JavaScript",
       "Shell",
       "Go",
-      "C++"
+      "C++",
+      "JavaScript"
     ],
-    "contributions_last_90d": 3460,
-    "prs_last_90d": 511,
+    "contributions_last_90d": 3510,
+    "prs_last_90d": 521,
     "issues_last_90d": 0,
-    "reviews_last_90d": 300,
-    "commits_last_90d": 945,
-    "enriched_at": "2026-10-13T05:20:08.976896+00:00",
-    "activity_score": 8.7
-  },
-  {
-    "github_username": "nadimtuhin",
-    "name": "Nadim Tuhin (Omar Faruque Tuhin)",
-    "profile_url": "https://github.com/nadimtuhin",
-    "location": "Dhaka",
-    "avatar_url": "https://avatars.githubusercontent.com/u/3125771?u=a1d57571dd4eb59e8363cf1ac5e880ef0641fbcd&v=4",
-    "bio": "Staff Software Engineer | Systems Architecture, Developer Tooling & Agent Infrastructure | https://calendly.com/nadimtuhin/30min",
-    "company": "",
-    "website_url": "nadimtuhin.com",
-    "followers": 176,
-    "following": 67,
-    "public_repos": 128,
-    "total_stars": 1158,
-    "top_repos": [
-      {
-        "name": "claude-token-optimizer",
-        "description": "Optimize token usage for Claude API calls",
-        "url": "https://github.com/nadimtuhin/claude-token-optimizer",
-        "stars": 619,
-        "forks": 80,
-        "language": "JavaScript",
-        "topics": [
-          "ai-assistant",
-          "automation",
-          "claude-code",
-          "developer-tools",
-          "documentation"
-        ],
-        "pushed_at": "2026-10-06T21:23:11Z"
-      },
-      {
-        "name": "onepager",
-        "description": "Onepage Theme/Website Builder for WordPress",
-        "url": "https://github.com/themexpert/onepager",
-        "stars": 307,
-        "forks": 98,
-        "language": "PHP",
-        "topics": [
-          "onepage",
-          "wordpress",
-          "react",
-          "reactjs",
-          "pagebuilder"
-        ],
-        "pushed_at": "2021-02-17T21:01:05Z"
-      },
-      {
-        "name": "schema-designer",
-        "description": "Database schema designer for Laravel & Lumen",
-        "url": "https://github.com/Agontuk/schema-designer",
-        "stars": 123,
-        "forks": 52,
-        "language": "JavaScript",
-        "topics": [
-          "database",
-          "schema",
-          "design",
-          "laravel",
-          "lumen"
-        ],
-        "pushed_at": "2023-01-25T23:13:16Z"
-      },
-      {
-        "name": "Facebook-Request-Throttle-WordPress-Plugin",
-        "description": "WordPress plugin that rate-limits Facebook/Meta web crawlers to prevent server overload",
-        "url": "https://github.com/nadimtuhin/Facebook-Request-Throttle-WordPress-Plugin",
-        "stars": 25,
-        "forks": 10,
-        "language": "PHP",
-        "topics": [
-          "crawler",
-          "facebook",
-          "meta",
-          "php",
-          "rate-limiting"
-        ],
-        "pushed_at": "2026-10-08T13:04:53Z"
-      },
-      {
-        "name": "tax-calculator",
-        "description": "Tax calculation utility",
-        "url": "https://github.com/nadimtuhin/tax-calculator",
-        "stars": 20,
-        "forks": 4,
-        "language": "JavaScript",
-        "topics": [
-          "vue",
-          "vuex",
-          "bootstrap",
-          "tax",
-          "bdtax"
-        ],
-        "pushed_at": "2026-09-12T07:20:11Z"
-      },
-      {
-        "name": "redux-vue",
-        "description": "Redux-style state management for Vue.js",
-        "url": "https://github.com/nadimtuhin/redux-vue",
-        "stars": 19,
-        "forks": 9,
-        "language": "JavaScript",
-        "topics": [
-          "vue",
-          "redux",
-          "redux-vue",
-          "vue-redux",
-          "higher-order-component"
-        ],
-        "pushed_at": "2026-07-04T08:08:02Z"
-      },
-      {
-        "name": "devutils",
-        "description": "DevUtils is a collection of essential developer utilities that work entirely in your browser. No data leaves your computer - everything works offline!",
-        "url": "https://github.com/nadimtuhin/devutils",
-        "stars": 14,
-        "forks": 3,
-        "language": "TypeScript",
-        "topics": [
-          "browser-tools",
-          "developer-tools",
-          "devtools",
-          "offline",
-          "privacy"
-        ],
-        "pushed_at": "2026-08-30T04:08:08Z"
-      },
-      {
-        "name": "react-pure-component",
-        "description": "React pure component examples and utilities",
-        "url": "https://github.com/nadimtuhin/react-pure-component",
-        "stars": 13,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [
-          "opensource"
-        ],
-        "pushed_at": "2026-06-28T17:55:56Z"
-      },
-      {
-        "name": "dse-scrapper",
-        "description": "Dhaka Stock Exchange Scrapper",
-        "url": "https://github.com/nadimtuhin/dse-scrapper",
-        "stars": 11,
-        "forks": 4,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2026-06-28T18:02:55Z"
-      },
-      {
-        "name": "ytranscript",
-        "description": "YouTube transcript extractor",
-        "url": "https://github.com/nadimtuhin/ytranscript",
-        "stars": 7,
-        "forks": 1,
-        "language": "TypeScript",
-        "topics": [
-          "bulk-processing",
-          "bun",
-          "cli",
-          "developer-tools",
-          "google-takeout"
-        ],
-        "pushed_at": "2026-07-12T15:28:54Z"
-      }
-    ],
-    "top_language": "JavaScript",
-    "all_languages": [
-      "JavaScript",
-      "PHP",
-      "TypeScript"
-    ],
-    "contributions_last_90d": 9065,
-    "prs_last_90d": 58,
-    "issues_last_90d": 147,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 1613,
-    "enriched_at": "2026-10-13T05:20:08.976896+00:00",
-    "activity_score": 8.66
+    "reviews_last_90d": 303,
+    "commits_last_90d": 952,
+    "enriched_at": "2026-10-16T03:00:17.251184+00:00",
+    "activity_score": 8.79
   },
   {
     "github_username": "muj-i",
@@ -5567,19 +5567,19 @@
         "pushed_at": "2026-10-13T20:29:21Z"
       }
     ],
-    "top_language": "Dart",
+    "top_language": "Shell",
     "all_languages": [
-      "Dart",
+      "Shell",
       "Python",
-      "Shell"
+      "Dart"
     ],
-    "contributions_last_90d": 13950,
+    "contributions_last_90d": 14012,
     "prs_last_90d": 0,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
-    "commits_last_90d": 88,
-    "enriched_at": "2026-10-14T03:24:42.985033+00:00",
-    "activity_score": 8.58
+    "commits_last_90d": 90,
+    "enriched_at": "2026-10-16T03:00:17.251184+00:00",
+    "activity_score": 8.61
   },
   {
     "github_username": "swadhinbiswas",
@@ -5590,10 +5590,10 @@
     "bio": "MLOps & Data Engineer | Python \u00b7 Spark \u00b7 Kubernetes | Pipeline Automation | Open to EU Relocation",
     "company": "@TheOpenCodeHub",
     "website_url": "https://swadhin.cv",
-    "followers": 108,
+    "followers": 110,
     "following": 80,
     "public_repos": 94,
-    "total_stars": 485,
+    "total_stars": 486,
     "top_repos": [
       {
         "name": "veet",
@@ -5667,7 +5667,7 @@
         "forks": 10,
         "language": "Astro",
         "topics": [],
-        "pushed_at": "2026-10-12T21:19:02Z"
+        "pushed_at": "2026-10-15T21:28:57Z"
       },
       {
         "name": "AIBOT",
@@ -5686,6 +5686,21 @@
         "pushed_at": "2025-07-12T14:53:10Z"
       },
       {
+        "name": "linuxy",
+        "description": "One click AppImage Runner",
+        "url": "https://github.com/swadhinbiswas/linuxy",
+        "stars": 17,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [
+          "appimage",
+          "linux",
+          "linux-app",
+          "linuxapplication"
+        ],
+        "pushed_at": "2026-10-13T03:10:06Z"
+      },
+      {
         "name": "OpencodeHub",
         "description": "self-hosted Git platform built for You. Features SSH, Actions-compatible pipelines, and AI code reviews in a beautiful interface.Your code your control ",
         "url": "https://github.com/swadhinbiswas/OpencodeHub",
@@ -5700,21 +5715,6 @@
           "github"
         ],
         "pushed_at": "2026-08-28T16:35:16Z"
-      },
-      {
-        "name": "linuxy",
-        "description": "One click AppImage Runner",
-        "url": "https://github.com/swadhinbiswas/linuxy",
-        "stars": 16,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [
-          "appimage",
-          "linux",
-          "linux-app",
-          "linuxapplication"
-        ],
-        "pushed_at": "2026-10-13T03:10:06Z"
       },
       {
         "name": "lsf",
@@ -5743,22 +5743,165 @@
         "pushed_at": "2026-08-27T11:23:46Z"
       }
     ],
-    "top_language": "Astro",
+    "top_language": "Rust",
     "all_languages": [
-      "Astro",
-      "Go",
       "Rust",
-      "TypeScript",
+      "Astro",
       "QML",
-      "HTML"
+      "Go",
+      "HTML",
+      "TypeScript"
     ],
-    "contributions_last_90d": 8671,
+    "contributions_last_90d": 8682,
     "prs_last_90d": 108,
     "issues_last_90d": 2,
     "reviews_last_90d": 17,
-    "commits_last_90d": 5474,
-    "enriched_at": "2026-10-13T05:20:08.976896+00:00",
-    "activity_score": 8.52
+    "commits_last_90d": 5485,
+    "enriched_at": "2026-10-16T03:00:17.251184+00:00",
+    "activity_score": 8.53
+  },
+  {
+    "github_username": "thesabbir",
+    "name": "Sabbir Ahmed",
+    "profile_url": "https://github.com/thesabbir",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5576949?u=bd0a411a86e0f4ce4ed9afa25c6b1338431dd2bf&v=4",
+    "bio": "Ledger Goblin. Ex: Webaholic.",
+    "company": "Entrepreneur",
+    "website_url": "",
+    "followers": 262,
+    "following": 124,
+    "public_repos": 67,
+    "total_stars": 1999,
+    "top_repos": [
+      {
+        "name": "simple-line-icons",
+        "description": "Simple and Minimal Line Icons",
+        "url": "https://github.com/thesabbir/simple-line-icons",
+        "stars": 1862,
+        "forks": 817,
+        "language": "CSS",
+        "topics": [
+          "icons",
+          "line",
+          "icons-pack",
+          "font",
+          "css"
+        ],
+        "pushed_at": "2026-05-11T10:36:17Z"
+      },
+      {
+        "name": "wrtapi",
+        "description": "OpenWRT administration HTTP api written in go",
+        "url": "https://github.com/thesabbir/wrtapi",
+        "stars": 25,
+        "forks": 9,
+        "language": "Go",
+        "topics": [
+          "openwrt",
+          "go",
+          "golang",
+          "rest-api",
+          "ubus"
+        ],
+        "pushed_at": "2020-01-08T07:01:37Z"
+      },
+      {
+        "name": "node-nginx",
+        "description": "A simple command-line tool to create & manage ngninx proxy/virtualhost configuaration for node.js based app",
+        "url": "https://github.com/thesabbir/node-nginx",
+        "stars": 19,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2016-10-04T17:15:58Z"
+      },
+      {
+        "name": "jquery-slim",
+        "description": "Slim version of jquery that excludes ajax, effects and currently deprecated code",
+        "url": "https://github.com/thesabbir/jquery-slim",
+        "stars": 17,
+        "forks": 2,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2016-12-28T05:27:16Z"
+      },
+      {
+        "name": "e2bdict",
+        "description": "English to Bengali dictionary for Linux using GTK3",
+        "url": "https://github.com/thesabbir/e2bdict",
+        "stars": 17,
+        "forks": 3,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2014-10-22T23:26:00Z"
+      },
+      {
+        "name": "carsav",
+        "description": "fun little html5 game",
+        "url": "https://github.com/thesabbir/carsav",
+        "stars": 14,
+        "forks": 4,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2015-12-31T06:47:25Z"
+      },
+      {
+        "name": "aiub-api",
+        "description": "An unofficial JSON API service for http://aiub.edu",
+        "url": "https://github.com/thesabbir/aiub-api",
+        "stars": 14,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2016-12-12T11:57:16Z"
+      },
+      {
+        "name": "get-query",
+        "description": "Get \"get request parameter\" from browser",
+        "url": "https://github.com/thesabbir/get-query",
+        "stars": 13,
+        "forks": 2,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2016-07-20T16:24:26Z"
+      },
+      {
+        "name": "dell-n5110-installer",
+        "description": "DELL N5110 OS X installer (Clover)",
+        "url": "https://github.com/thesabbir/dell-n5110-installer",
+        "stars": 9,
+        "forks": 3,
+        "language": "Shell",
+        "topics": [],
+        "pushed_at": "2015-06-19T01:49:11Z"
+      },
+      {
+        "name": "sql.howtocode.dev",
+        "description": "\u09ac\u09be\u0982\u09b2\u09be\u09df SQL \u099f\u09bf\u0989\u099f\u09cb\u09b0\u09bf\u09df\u09be\u09b2",
+        "url": "https://github.com/howtocode-dev/sql.howtocode.dev",
+        "stars": 9,
+        "forks": 11,
+        "language": "CSS",
+        "topics": [],
+        "pushed_at": "2020-07-07T04:08:43Z"
+      }
+    ],
+    "top_language": "JavaScript",
+    "all_languages": [
+      "JavaScript",
+      "Shell",
+      "CSS",
+      "Python",
+      "Go"
+    ],
+    "contributions_last_90d": 12429,
+    "prs_last_90d": 4,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 12,
+    "enriched_at": "2026-10-16T03:00:17.251184+00:00",
+    "activity_score": 8.5
   },
   {
     "github_username": "devlopersabbir",
@@ -5772,7 +5915,7 @@
     "followers": 73,
     "following": 0,
     "public_repos": 193,
-    "total_stars": 64,
+    "total_stars": 65,
     "top_repos": [
       {
         "name": "python-api-development",
@@ -5846,7 +5989,7 @@
           "random",
           "swing"
         ],
-        "pushed_at": "2026-09-20T12:33:42Z"
+        "pushed_at": "2026-10-14T12:50:05Z"
       },
       {
         "name": "javascript-basic-to-advance-course",
@@ -5877,6 +6020,16 @@
         "pushed_at": "2026-10-10T04:39:08Z"
       },
       {
+        "name": "digital-marketplace",
+        "description": "Multi-vendor Digital Product Selling Website With Next 14",
+        "url": "https://github.com/devlopersabbir/digital-marketplace",
+        "stars": 4,
+        "forks": 2,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-08-31T10:58:44Z"
+      },
+      {
         "name": "dev-http-logger",
         "description": "We can able to log our http all history like METHOD request PATH etc with this middleware",
         "url": "https://github.com/devlopersabbir/dev-http-logger",
@@ -5893,16 +6046,6 @@
         "pushed_at": "2026-08-20T03:49:46Z"
       },
       {
-        "name": "digital-marketplace",
-        "description": "Multi-vendor Digital Product Selling Website With Next 14",
-        "url": "https://github.com/devlopersabbir/digital-marketplace",
-        "stars": 3,
-        "forks": 2,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-08-31T10:58:44Z"
-      },
-      {
         "name": "tab-refresher-pro",
         "description": "Tab Refresher Pro is a browser extension for configuring reliable per-tab auto-refresh jobs with presets, countdown badges, page overlays, and saved refresh profiles.",
         "url": "https://github.com/devlopersabbir/tab-refresher-pro",
@@ -5916,17 +6059,17 @@
     "top_language": "Java",
     "all_languages": [
       "Java",
-      "JavaScript",
       "Python",
+      "JavaScript",
       "TypeScript"
     ],
-    "contributions_last_90d": 4984,
-    "prs_last_90d": 160,
+    "contributions_last_90d": 5052,
+    "prs_last_90d": 161,
     "issues_last_90d": 10,
     "reviews_last_90d": 16,
-    "commits_last_90d": 3070,
-    "enriched_at": "2026-10-13T05:20:08.976896+00:00",
-    "activity_score": 8.38
+    "commits_last_90d": 3120,
+    "enriched_at": "2026-10-16T03:00:17.251184+00:00",
+    "activity_score": 8.43
   },
   {
     "github_username": "EQuimper",
@@ -6103,149 +6246,6 @@
     "commits_last_90d": 92,
     "enriched_at": "2026-10-15T03:03:26.865297+00:00",
     "activity_score": 8.33
-  },
-  {
-    "github_username": "thesabbir",
-    "name": "Sabbir Ahmed",
-    "profile_url": "https://github.com/thesabbir",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/5576949?u=bd0a411a86e0f4ce4ed9afa25c6b1338431dd2bf&v=4",
-    "bio": "Ledger Goblin. Ex: Webaholic.",
-    "company": "Entrepreneur",
-    "website_url": "",
-    "followers": 262,
-    "following": 123,
-    "public_repos": 67,
-    "total_stars": 1999,
-    "top_repos": [
-      {
-        "name": "simple-line-icons",
-        "description": "Simple and Minimal Line Icons",
-        "url": "https://github.com/thesabbir/simple-line-icons",
-        "stars": 1862,
-        "forks": 817,
-        "language": "CSS",
-        "topics": [
-          "icons",
-          "line",
-          "icons-pack",
-          "font",
-          "css"
-        ],
-        "pushed_at": "2026-05-11T10:36:17Z"
-      },
-      {
-        "name": "wrtapi",
-        "description": "OpenWRT administration HTTP api written in go",
-        "url": "https://github.com/thesabbir/wrtapi",
-        "stars": 25,
-        "forks": 9,
-        "language": "Go",
-        "topics": [
-          "openwrt",
-          "go",
-          "golang",
-          "rest-api",
-          "ubus"
-        ],
-        "pushed_at": "2020-01-08T07:01:37Z"
-      },
-      {
-        "name": "node-nginx",
-        "description": "A simple command-line tool to create & manage ngninx proxy/virtualhost configuaration for node.js based app",
-        "url": "https://github.com/thesabbir/node-nginx",
-        "stars": 19,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2016-10-04T17:15:58Z"
-      },
-      {
-        "name": "jquery-slim",
-        "description": "Slim version of jquery that excludes ajax, effects and currently deprecated code",
-        "url": "https://github.com/thesabbir/jquery-slim",
-        "stars": 17,
-        "forks": 2,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2016-12-28T05:27:16Z"
-      },
-      {
-        "name": "e2bdict",
-        "description": "English to Bengali dictionary for Linux using GTK3",
-        "url": "https://github.com/thesabbir/e2bdict",
-        "stars": 17,
-        "forks": 3,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2014-10-22T23:26:00Z"
-      },
-      {
-        "name": "carsav",
-        "description": "fun little html5 game",
-        "url": "https://github.com/thesabbir/carsav",
-        "stars": 14,
-        "forks": 4,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2015-12-31T06:47:25Z"
-      },
-      {
-        "name": "aiub-api",
-        "description": "An unofficial JSON API service for http://aiub.edu",
-        "url": "https://github.com/thesabbir/aiub-api",
-        "stars": 14,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2016-12-12T11:57:16Z"
-      },
-      {
-        "name": "get-query",
-        "description": "Get \"get request parameter\" from browser",
-        "url": "https://github.com/thesabbir/get-query",
-        "stars": 13,
-        "forks": 2,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2016-07-20T16:24:26Z"
-      },
-      {
-        "name": "dell-n5110-installer",
-        "description": "DELL N5110 OS X installer (Clover)",
-        "url": "https://github.com/thesabbir/dell-n5110-installer",
-        "stars": 9,
-        "forks": 3,
-        "language": "Shell",
-        "topics": [],
-        "pushed_at": "2015-06-19T01:49:11Z"
-      },
-      {
-        "name": "sql.howtocode.dev",
-        "description": "\u09ac\u09be\u0982\u09b2\u09be\u09df SQL \u099f\u09bf\u0989\u099f\u09cb\u09b0\u09bf\u09df\u09be\u09b2",
-        "url": "https://github.com/howtocode-dev/sql.howtocode.dev",
-        "stars": 9,
-        "forks": 11,
-        "language": "CSS",
-        "topics": [],
-        "pushed_at": "2020-07-07T04:08:43Z"
-      }
-    ],
-    "top_language": "Go",
-    "all_languages": [
-      "Go",
-      "JavaScript",
-      "CSS",
-      "Shell",
-      "Python"
-    ],
-    "contributions_last_90d": 12014,
-    "prs_last_90d": 4,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 12,
-    "enriched_at": "2026-10-13T05:20:08.976896+00:00",
-    "activity_score": 8.28
   },
   {
     "github_username": "sashiqurzamman",
@@ -165111,6 +165111,134 @@
     "activity_score": 1.64
   },
   {
+    "github_username": "FahimNuman",
+    "name": "FahimNuman87",
+    "profile_url": "https://github.com/FahimNuman",
+    "location": "Dhaka Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/53372580?u=48148a1d99452aec670cbfe44e0d286c1005563f&v=4",
+    "bio": "I am Full-Stack web developer with 1.5 years of working experience. I love to work with logic and build it by programming.",
+    "company": " Demi UI",
+    "website_url": "https://abdullah-al-numan-portfolio.netlify.app/",
+    "followers": 3,
+    "following": 4,
+    "public_repos": 83,
+    "total_stars": 4,
+    "top_repos": [
+      {
+        "name": "DoctorApp-Asp.NetCoreMvc",
+        "description": "",
+        "url": "https://github.com/FahimNuman/DoctorApp-Asp.NetCoreMvc",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2023-05-28T05:16:06Z"
+      },
+      {
+        "name": "javascript-problem",
+        "description": "",
+        "url": "https://github.com/FahimNuman/javascript-problem",
+        "stars": 1,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2022-08-09T05:16:38Z"
+      },
+      {
+        "name": "javascript",
+        "description": "",
+        "url": "https://github.com/FahimNuman/javascript",
+        "stars": 1,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2022-08-09T05:12:26Z"
+      },
+      {
+        "name": "PMHO-First-repo",
+        "description": "",
+        "url": "https://github.com/FahimNuman/PMHO-First-repo",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2022-08-09T05:13:49Z"
+      },
+      {
+        "name": "totala",
+        "description": "",
+        "url": "https://github.com/FahimNuman/totala",
+        "stars": 0,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2026-09-25T17:56:45Z"
+      },
+      {
+        "name": "demiecom_admindashboard",
+        "description": "",
+        "url": "https://github.com/FahimNuman/demiecom_admindashboard",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-10-12T22:24:16Z"
+      },
+      {
+        "name": "demiuiecom_backend",
+        "description": "",
+        "url": "https://github.com/FahimNuman/demiuiecom_backend",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-10-12T22:24:27Z"
+      },
+      {
+        "name": "demiecom_frontend",
+        "description": "",
+        "url": "https://github.com/FahimNuman/demiecom_frontend",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-10-12T22:24:23Z"
+      },
+      {
+        "name": "invoice",
+        "description": "",
+        "url": "https://github.com/FahimNuman/invoice",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-10-12T22:25:25Z"
+      },
+      {
+        "name": "goldapp",
+        "description": "",
+        "url": "https://github.com/FahimNuman/goldapp",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-10-12T22:25:18Z"
+      }
+    ],
+    "top_language": "TypeScript",
+    "all_languages": [
+      "TypeScript",
+      "JavaScript"
+    ],
+    "contributions_last_90d": 25,
+    "prs_last_90d": 0,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 20,
+    "enriched_at": "2026-10-16T03:00:17.251184+00:00",
+    "activity_score": 1.64
+  },
+  {
     "github_username": "al-amin-khan",
     "name": "Al Amin Khan",
     "profile_url": "https://github.com/al-amin-khan",
@@ -169591,135 +169719,6 @@
     "reviews_last_90d": 0,
     "commits_last_90d": 43,
     "enriched_at": "2026-10-15T03:03:26.865297+00:00",
-    "activity_score": 1.61
-  },
-  {
-    "github_username": "FahimNuman",
-    "name": "FahimNuman87",
-    "profile_url": "https://github.com/FahimNuman",
-    "location": "Dhaka Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/53372580?u=48148a1d99452aec670cbfe44e0d286c1005563f&v=4",
-    "bio": "I am Full-Stack web developer with 1.5 years of working experience. I love to work with logic and build it by programming.",
-    "company": " Demi UI",
-    "website_url": "https://abdullah-al-numan-portfolio.netlify.app/",
-    "followers": 3,
-    "following": 4,
-    "public_repos": 81,
-    "total_stars": 4,
-    "top_repos": [
-      {
-        "name": "DoctorApp-Asp.NetCoreMvc",
-        "description": "",
-        "url": "https://github.com/FahimNuman/DoctorApp-Asp.NetCoreMvc",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2023-05-28T05:16:06Z"
-      },
-      {
-        "name": "javascript-problem",
-        "description": "",
-        "url": "https://github.com/FahimNuman/javascript-problem",
-        "stars": 1,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2022-08-09T05:16:38Z"
-      },
-      {
-        "name": "javascript",
-        "description": "",
-        "url": "https://github.com/FahimNuman/javascript",
-        "stars": 1,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2022-08-09T05:12:26Z"
-      },
-      {
-        "name": "PMHO-First-repo",
-        "description": "",
-        "url": "https://github.com/FahimNuman/PMHO-First-repo",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2022-08-09T05:13:49Z"
-      },
-      {
-        "name": "totala",
-        "description": "",
-        "url": "https://github.com/FahimNuman/totala",
-        "stars": 0,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2026-09-25T17:56:45Z"
-      },
-      {
-        "name": "demiecom_admindashboard",
-        "description": "",
-        "url": "https://github.com/FahimNuman/demiecom_admindashboard",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-10-12T22:24:16Z"
-      },
-      {
-        "name": "demiuiecom_backend",
-        "description": "",
-        "url": "https://github.com/FahimNuman/demiuiecom_backend",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-10-12T22:24:27Z"
-      },
-      {
-        "name": "demiecom_frontend",
-        "description": "",
-        "url": "https://github.com/FahimNuman/demiecom_frontend",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-10-12T22:24:23Z"
-      },
-      {
-        "name": "DakDin",
-        "description": "",
-        "url": "https://github.com/FahimNuman/DakDin",
-        "stars": 0,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2026-10-12T22:24:13Z"
-      },
-      {
-        "name": "invoice",
-        "description": "",
-        "url": "https://github.com/FahimNuman/invoice",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-10-12T22:25:25Z"
-      }
-    ],
-    "top_language": "HTML",
-    "all_languages": [
-      "HTML",
-      "TypeScript",
-      "JavaScript"
-    ],
-    "contributions_last_90d": 32,
-    "prs_last_90d": 0,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 26,
-    "enriched_at": "2026-10-14T03:24:42.985033+00:00",
     "activity_score": 1.61
   },
   {
@@ -269874,16 +269873,16 @@
     "bio": "Software Developer proficient in building quality websites and apps with various technologies such as Node.js, Astro, Python and others. ",
     "company": "",
     "website_url": "https://moheshwar.com",
-    "followers": 59,
+    "followers": 60,
     "following": 53,
     "public_repos": 26,
-    "total_stars": 35,
+    "total_stars": 26,
     "top_repos": [
       {
         "name": "useful-tools",
         "description": "It's a collection of handy tools, scripts and shortcuts that will make your Windows experience more efficient and fun. You can tweak your settings or access hidden features with ease.",
         "url": "https://github.com/fluentmoheshwar/useful-tools",
-        "stars": 13,
+        "stars": 12,
         "forks": 1,
         "language": "Python",
         "topics": [
@@ -269899,7 +269898,7 @@
         "name": "shell",
         "description": "Shell setup for 10x developers",
         "url": "https://github.com/fluentmoheshwar/shell",
-        "stars": 9,
+        "stars": 8,
         "forks": 0,
         "language": "Shell",
         "topics": [
@@ -269912,10 +269911,20 @@
         "pushed_at": "2026-10-06T13:49:14Z"
       },
       {
+        "name": "jobs-social-media",
+        "description": "Job Social Media Platform A comprehensive job platform built with Node.js (backend), Flutter (frontend), and MongoDB (database), allowing users, employers, and admins to interact efficiently in a job marketplace with rich features like job search, applications, interviews, and Q&A.",
+        "url": "https://github.com/jahidhasanme/jobs-social-media",
+        "stars": 2,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-10-06T13:49:33Z"
+      },
+      {
         "name": "puja-bloom",
         "description": "Puja Bloom is a Visual Studio / Visual Studio Code Theme designed for programmers with accessibility and cuteness in mind.",
         "url": "https://github.com/fluentmoheshwar/puja-bloom",
-        "stars": 2,
+        "stars": 1,
         "forks": 0,
         "language": "C#",
         "topics": [
@@ -269931,7 +269940,7 @@
         "name": "infinixhot30overlay",
         "description": "Magisk Module to install Infinix Hot 30 Overlay for TD Based GSIs.",
         "url": "https://github.com/fluentmoheshwar/infinixhot30overlay",
-        "stars": 2,
+        "stars": 1,
         "forks": 0,
         "language": "Shell",
         "topics": [
@@ -269942,20 +269951,10 @@
         "pushed_at": "2026-10-06T13:48:45Z"
       },
       {
-        "name": "jobs-social-media",
-        "description": "Job Social Media Platform A comprehensive job platform built with Node.js (backend), Flutter (frontend), and MongoDB (database), allowing users, employers, and admins to interact efficiently in a job marketplace with rich features like job search, applications, interviews, and Q&A.",
-        "url": "https://github.com/jahidhasanme/jobs-social-media",
-        "stars": 2,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-10-06T13:49:33Z"
-      },
-      {
         "name": "VMwareAudioFix",
         "description": "Eliminate VMware sound distortion",
         "url": "https://github.com/fluentmoheshwar/VMwareAudioFix",
-        "stars": 2,
+        "stars": 1,
         "forks": 0,
         "language": "Batchfile",
         "topics": [],
@@ -269965,7 +269964,7 @@
         "name": "dotnet-3.5-installer",
         "description": "This script allows you to install .NET Framework 3.5 from your Windows installation media. You may need this to run some legacy applications that depend on this version of the framework.",
         "url": "https://github.com/fluentmoheshwar/dotnet-3.5-installer",
-        "stars": 2,
+        "stars": 1,
         "forks": 0,
         "language": "Batchfile",
         "topics": [
@@ -269976,67 +269975,52 @@
         "pushed_at": "2026-10-06T13:48:14Z"
       },
       {
-        "name": "openperiods",
-        "description": "OpenPeriods is an Open-Source Browser based Period (menstruation) Tracking System for women written in Svelte.",
-        "url": "https://github.com/fluentmoheshwar/openperiods",
-        "stars": 1,
+        "name": "compromised",
+        "description": "My @github account has been compromised, and I\u2019ve noticed malicious releases being posted. I\u2019ve already reached out to support and updated my password. Please avoid downloading any release binaries from my account until further notice.... ",
+        "url": "https://github.com/fluentmoheshwar/compromised",
+        "stars": 0,
         "forks": 0,
-        "language": "Svelte",
-        "topics": [
-          "menstrual-tracking",
-          "periods",
-          "pwa",
-          "svelte"
-        ],
-        "pushed_at": "2026-10-06T13:48:58Z"
+        "language": null,
+        "topics": [],
+        "pushed_at": "2026-10-06T16:06:41Z"
       },
       {
-        "name": "dse-scraper",
-        "description": "Download Dhaka Stock Exchange Data for using with AmiBroker.",
-        "url": "https://github.com/fluentmoheshwar/dse-scraper",
-        "stars": 1,
+        "name": "somudre-npm",
+        "description": "",
+        "url": "https://github.com/fluentmoheshwar/somudre-npm",
+        "stars": 0,
         "forks": 0,
-        "language": "HTML",
-        "topics": [
-          "dhaka-stock-exchange",
-          "dse",
-          "stock-data",
-          "stock-market"
-        ],
-        "pushed_at": "2026-10-06T13:48:19Z"
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-10-06T13:49:17Z"
       },
       {
-        "name": "getdislikes",
-        "description": "It allows you to get dislikes of a YouTube video.",
-        "url": "https://github.com/fluentmoheshwar/getdislikes",
-        "stars": 1,
+        "name": "sscprep",
+        "description": "",
+        "url": "https://github.com/fluentmoheshwar/sscprep",
+        "stars": 0,
         "forks": 0,
-        "language": "HTML",
-        "topics": [
-          "dislikes-count",
-          "return-youtube-dislikes",
-          "get-dislike"
-        ],
-        "pushed_at": "2026-10-06T13:48:34Z"
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-10-06T13:49:16Z"
       }
     ],
-    "top_language": "Svelte",
+    "top_language": "JavaScript",
     "all_languages": [
-      "Svelte",
-      "Batchfile",
-      "TypeScript",
-      "HTML",
+      "JavaScript",
       "Shell",
+      "C#",
+      "Batchfile",
       "Python",
-      "C#"
+      "TypeScript"
     ],
     "contributions_last_90d": 368,
     "prs_last_90d": 14,
     "issues_last_90d": 12,
     "reviews_last_90d": 7,
     "commits_last_90d": 237,
-    "enriched_at": "2026-10-13T05:20:08.976896+00:00",
-    "activity_score": 0.99
+    "enriched_at": "2026-10-16T03:00:17.251184+00:00",
+    "activity_score": 1.0
   },
   {
     "github_username": "Emon-Ahmed",
