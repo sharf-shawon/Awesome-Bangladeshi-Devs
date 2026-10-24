@@ -4193,6 +4193,185 @@
     "activity_score": 10.36
   },
   {
+    "github_username": "nadimtuhin",
+    "name": "Nadim Tuhin (Omar Faruque Tuhin)",
+    "profile_url": "https://github.com/nadimtuhin",
+    "location": "Dhaka",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3125771?u=3f74590bb87c3c369e56ec3898946fb8fbddc935&v=4",
+    "bio": "Software Engineer | Browser automation, AI agents, backend systems | https://calendly.com/nadimtuhin/30min",
+    "company": "",
+    "website_url": "nadimtuhin.com",
+    "followers": 174,
+    "following": 67,
+    "public_repos": 136,
+    "total_stars": 1168,
+    "top_repos": [
+      {
+        "name": "claude-token-optimizer",
+        "description": "Cut the tokens Claude Code loads at session start. CLI that sets up a small CLAUDE.md with on-demand docs, measures startup tokens, and keeps them small.",
+        "url": "https://github.com/nadimtuhin/claude-token-optimizer",
+        "stars": 629,
+        "forks": 83,
+        "language": "JavaScript",
+        "topics": [
+          "ai-assistant",
+          "automation",
+          "claude-code",
+          "developer-tools",
+          "documentation"
+        ],
+        "pushed_at": "2026-10-20T10:34:00Z"
+      },
+      {
+        "name": "onepager",
+        "description": "Onepage Theme/Website Builder for WordPress",
+        "url": "https://github.com/themexpert/onepager",
+        "stars": 306,
+        "forks": 98,
+        "language": "PHP",
+        "topics": [
+          "onepage",
+          "wordpress",
+          "react",
+          "reactjs",
+          "pagebuilder"
+        ],
+        "pushed_at": "2021-02-17T21:01:05Z"
+      },
+      {
+        "name": "schema-designer",
+        "description": "Database schema designer for Laravel & Lumen",
+        "url": "https://github.com/Agontuk/schema-designer",
+        "stars": 123,
+        "forks": 52,
+        "language": "JavaScript",
+        "topics": [
+          "database",
+          "schema",
+          "design",
+          "laravel",
+          "lumen"
+        ],
+        "pushed_at": "2023-01-25T23:13:16Z"
+      },
+      {
+        "name": "Facebook-Request-Throttle-WordPress-Plugin",
+        "description": "WordPress plugin that rate-limits Facebook/Meta web crawlers to prevent server overload",
+        "url": "https://github.com/nadimtuhin/Facebook-Request-Throttle-WordPress-Plugin",
+        "stars": 25,
+        "forks": 10,
+        "language": "PHP",
+        "topics": [
+          "crawler",
+          "facebook",
+          "meta",
+          "php",
+          "rate-limiting"
+        ],
+        "pushed_at": "2026-10-14T13:13:16Z"
+      },
+      {
+        "name": "tax-calculator",
+        "description": "Tax calculation utility",
+        "url": "https://github.com/nadimtuhin/tax-calculator",
+        "stars": 20,
+        "forks": 4,
+        "language": "JavaScript",
+        "topics": [
+          "vue",
+          "vuex",
+          "bootstrap",
+          "tax",
+          "bdtax"
+        ],
+        "pushed_at": "2026-10-20T20:12:30Z"
+      },
+      {
+        "name": "redux-vue",
+        "description": "Redux-style state management for Vue.js",
+        "url": "https://github.com/nadimtuhin/redux-vue",
+        "stars": 19,
+        "forks": 9,
+        "language": "JavaScript",
+        "topics": [
+          "vue",
+          "redux",
+          "redux-vue",
+          "vue-redux",
+          "higher-order-component"
+        ],
+        "pushed_at": "2026-10-14T13:13:45Z"
+      },
+      {
+        "name": "devutils",
+        "description": "DevUtils is a collection of essential developer utilities that work entirely in your browser. No data leaves your computer - everything works offline!",
+        "url": "https://github.com/nadimtuhin/devutils",
+        "stars": 14,
+        "forks": 3,
+        "language": "TypeScript",
+        "topics": [
+          "browser-tools",
+          "developer-tools",
+          "devtools",
+          "offline",
+          "privacy"
+        ],
+        "pushed_at": "2026-10-14T16:40:12Z"
+      },
+      {
+        "name": "react-pure-component",
+        "description": "React pure component examples and utilities",
+        "url": "https://github.com/nadimtuhin/react-pure-component",
+        "stars": 13,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [
+          "opensource"
+        ],
+        "pushed_at": "2026-10-14T13:13:37Z"
+      },
+      {
+        "name": "dse-scrapper",
+        "description": "Dhaka Stock Exchange Scrapper",
+        "url": "https://github.com/nadimtuhin/dse-scrapper",
+        "stars": 11,
+        "forks": 4,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2026-10-14T13:13:12Z"
+      },
+      {
+        "name": "ytranscript",
+        "description": "YouTube transcript extractor",
+        "url": "https://github.com/nadimtuhin/ytranscript",
+        "stars": 8,
+        "forks": 1,
+        "language": "TypeScript",
+        "topics": [
+          "bulk-processing",
+          "bun",
+          "cli",
+          "developer-tools",
+          "google-takeout"
+        ],
+        "pushed_at": "2026-10-14T13:13:53Z"
+      }
+    ],
+    "top_language": "TypeScript",
+    "all_languages": [
+      "TypeScript",
+      "PHP",
+      "JavaScript"
+    ],
+    "contributions_last_90d": 10918,
+    "prs_last_90d": 70,
+    "issues_last_90d": 167,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 2036,
+    "enriched_at": "2026-10-24T03:09:04.197226+00:00",
+    "activity_score": 10.22
+  },
+  {
     "github_username": "KRTirtho",
     "name": "Kingkor Roy Tirtho",
     "profile_url": "https://github.com/KRTirtho",
@@ -4364,319 +4543,6 @@
     "activity_score": 10.11
   },
   {
-    "github_username": "cyantarek",
-    "name": "Cyan Tarek",
-    "profile_url": "https://github.com/cyantarek",
-    "location": "Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/13703461?u=865445bb19fad8624b3a542494d10b0abc8beaed&v=4",
-    "bio": "Software Engineer - Gopher, Backend, DevOps, Microservices",
-    "company": "Big Idea",
-    "website_url": "cyantarek.me",
-    "followers": 204,
-    "following": 17,
-    "public_repos": 487,
-    "total_stars": 197,
-    "top_repos": [
-      {
-        "name": "django-microservices",
-        "description": "UNMAINTAINED",
-        "url": "https://github.com/cyantarek/django-microservices",
-        "stars": 164,
-        "forks": 88,
-        "language": "JavaScript",
-        "topics": [
-          "python",
-          "django",
-          "django-rest-framework",
-          "mongodb",
-          "docker"
-        ],
-        "pushed_at": "2020-06-06T11:52:25Z"
-      },
-      {
-        "name": "your-first-lab-cb-gh-000",
-        "description": "",
-        "url": "https://github.com/learn-co-students/your-first-lab-cb-gh-000",
-        "stars": 9,
-        "forks": 2269,
-        "language": "Ruby",
-        "topics": [],
-        "pushed_at": "2021-05-20T08:13:06Z"
-      },
-      {
-        "name": "go-playground-revamped",
-        "description": "",
-        "url": "https://github.com/cyantarek/go-playground-revamped",
-        "stars": 7,
-        "forks": 2,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2023-01-05T11:01:09Z"
-      },
-      {
-        "name": "hello-world-ruby-cb-gh-000",
-        "description": "",
-        "url": "https://github.com/learn-co-students/hello-world-ruby-cb-gh-000",
-        "stars": 5,
-        "forks": 1281,
-        "language": "Ruby",
-        "topics": [],
-        "pushed_at": "2023-05-30T19:02:39Z"
-      },
-      {
-        "name": "javascript-objects-cb-gh-000",
-        "description": "",
-        "url": "https://github.com/learn-co-students/javascript-objects-cb-gh-000",
-        "stars": 2,
-        "forks": 59,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2021-06-11T11:03:01Z"
-      },
-      {
-        "name": "html-album-cover-cb-gh-000",
-        "description": "",
-        "url": "https://github.com/learn-co-students/html-album-cover-cb-gh-000",
-        "stars": 2,
-        "forks": 206,
-        "language": "Ruby",
-        "topics": [],
-        "pushed_at": "2021-03-08T06:38:37Z"
-      },
-      {
-        "name": "ruby-object-attributes-lab-cb-gh-000",
-        "description": "",
-        "url": "https://github.com/learn-co-students/ruby-object-attributes-lab-cb-gh-000",
-        "stars": 2,
-        "forks": 191,
-        "language": "Ruby",
-        "topics": [],
-        "pushed_at": "2021-03-15T17:47:57Z"
-      },
-      {
-        "name": "ttt-game-status-cb-gh-000",
-        "description": "",
-        "url": "https://github.com/learn-co-students/ttt-game-status-cb-gh-000",
-        "stars": 2,
-        "forks": 230,
-        "language": "Ruby",
-        "topics": [],
-        "pushed_at": "2020-07-07T15:18:04Z"
-      },
-      {
-        "name": "rspec-fizzbuzz-cb-gh-000",
-        "description": "",
-        "url": "https://github.com/learn-co-students/rspec-fizzbuzz-cb-gh-000",
-        "stars": 2,
-        "forks": 317,
-        "language": "Ruby",
-        "topics": [],
-        "pushed_at": "2021-05-06T11:39:16Z"
-      },
-      {
-        "name": "ruby-lecture-reading-error-messages-cb-gh-000",
-        "description": "",
-        "url": "https://github.com/learn-co-students/ruby-lecture-reading-error-messages-cb-gh-000",
-        "stars": 2,
-        "forks": 1041,
-        "language": "Ruby",
-        "topics": [],
-        "pushed_at": "2021-07-31T06:32:43Z"
-      }
-    ],
-    "top_language": "JavaScript",
-    "all_languages": [
-      "JavaScript",
-      "Ruby"
-    ],
-    "contributions_last_90d": 0,
-    "prs_last_90d": 0,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 0,
-    "enriched_at": "2026-10-23T03:15:22.713495+00:00",
-    "activity_score": 9.84
-  },
-  {
-    "github_username": "nadimtuhin",
-    "name": "Nadim Tuhin (Omar Faruque Tuhin)",
-    "profile_url": "https://github.com/nadimtuhin",
-    "location": "Dhaka",
-    "avatar_url": "https://avatars.githubusercontent.com/u/3125771?u=3f74590bb87c3c369e56ec3898946fb8fbddc935&v=4",
-    "bio": "Software Engineer | Browser automation, AI agents, backend systems | https://calendly.com/nadimtuhin/30min",
-    "company": "",
-    "website_url": "nadimtuhin.com",
-    "followers": 174,
-    "following": 67,
-    "public_repos": 134,
-    "total_stars": 1165,
-    "top_repos": [
-      {
-        "name": "claude-token-optimizer",
-        "description": "Cut the tokens Claude Code loads at session start. CLI that sets up a small CLAUDE.md with on-demand docs, measures startup tokens, and keeps them small.",
-        "url": "https://github.com/nadimtuhin/claude-token-optimizer",
-        "stars": 626,
-        "forks": 84,
-        "language": "JavaScript",
-        "topics": [
-          "ai-assistant",
-          "automation",
-          "claude-code",
-          "developer-tools",
-          "documentation"
-        ],
-        "pushed_at": "2026-10-20T10:34:00Z"
-      },
-      {
-        "name": "onepager",
-        "description": "Onepage Theme/Website Builder for WordPress",
-        "url": "https://github.com/themexpert/onepager",
-        "stars": 306,
-        "forks": 98,
-        "language": "PHP",
-        "topics": [
-          "onepage",
-          "wordpress",
-          "react",
-          "reactjs",
-          "pagebuilder"
-        ],
-        "pushed_at": "2021-02-17T21:01:05Z"
-      },
-      {
-        "name": "schema-designer",
-        "description": "Database schema designer for Laravel & Lumen",
-        "url": "https://github.com/Agontuk/schema-designer",
-        "stars": 123,
-        "forks": 52,
-        "language": "JavaScript",
-        "topics": [
-          "database",
-          "schema",
-          "design",
-          "laravel",
-          "lumen"
-        ],
-        "pushed_at": "2023-01-25T23:13:16Z"
-      },
-      {
-        "name": "Facebook-Request-Throttle-WordPress-Plugin",
-        "description": "WordPress plugin that rate-limits Facebook/Meta web crawlers to prevent server overload",
-        "url": "https://github.com/nadimtuhin/Facebook-Request-Throttle-WordPress-Plugin",
-        "stars": 25,
-        "forks": 10,
-        "language": "PHP",
-        "topics": [
-          "crawler",
-          "facebook",
-          "meta",
-          "php",
-          "rate-limiting"
-        ],
-        "pushed_at": "2026-10-14T13:13:16Z"
-      },
-      {
-        "name": "tax-calculator",
-        "description": "Tax calculation utility",
-        "url": "https://github.com/nadimtuhin/tax-calculator",
-        "stars": 20,
-        "forks": 4,
-        "language": "JavaScript",
-        "topics": [
-          "vue",
-          "vuex",
-          "bootstrap",
-          "tax",
-          "bdtax"
-        ],
-        "pushed_at": "2026-10-20T20:12:30Z"
-      },
-      {
-        "name": "redux-vue",
-        "description": "Redux-style state management for Vue.js",
-        "url": "https://github.com/nadimtuhin/redux-vue",
-        "stars": 19,
-        "forks": 9,
-        "language": "JavaScript",
-        "topics": [
-          "vue",
-          "redux",
-          "redux-vue",
-          "vue-redux",
-          "higher-order-component"
-        ],
-        "pushed_at": "2026-10-14T13:13:45Z"
-      },
-      {
-        "name": "devutils",
-        "description": "DevUtils is a collection of essential developer utilities that work entirely in your browser. No data leaves your computer - everything works offline!",
-        "url": "https://github.com/nadimtuhin/devutils",
-        "stars": 14,
-        "forks": 3,
-        "language": "TypeScript",
-        "topics": [
-          "browser-tools",
-          "developer-tools",
-          "devtools",
-          "offline",
-          "privacy"
-        ],
-        "pushed_at": "2026-10-14T16:40:12Z"
-      },
-      {
-        "name": "react-pure-component",
-        "description": "React pure component examples and utilities",
-        "url": "https://github.com/nadimtuhin/react-pure-component",
-        "stars": 13,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [
-          "opensource"
-        ],
-        "pushed_at": "2026-10-14T13:13:37Z"
-      },
-      {
-        "name": "dse-scrapper",
-        "description": "Dhaka Stock Exchange Scrapper",
-        "url": "https://github.com/nadimtuhin/dse-scrapper",
-        "stars": 11,
-        "forks": 4,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2026-10-14T13:13:12Z"
-      },
-      {
-        "name": "ytranscript",
-        "description": "YouTube transcript extractor",
-        "url": "https://github.com/nadimtuhin/ytranscript",
-        "stars": 8,
-        "forks": 1,
-        "language": "TypeScript",
-        "topics": [
-          "bulk-processing",
-          "bun",
-          "cli",
-          "developer-tools",
-          "google-takeout"
-        ],
-        "pushed_at": "2026-10-14T13:13:53Z"
-      }
-    ],
-    "top_language": "TypeScript",
-    "all_languages": [
-      "TypeScript",
-      "JavaScript",
-      "PHP"
-    ],
-    "contributions_last_90d": 10141,
-    "prs_last_90d": 69,
-    "issues_last_90d": 166,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 1947,
-    "enriched_at": "2026-10-21T03:11:33.139217+00:00",
-    "activity_score": 9.73
-  },
-  {
     "github_username": "johnefemer",
     "name": "John Efemer",
     "profile_url": "https://github.com/johnefemer",
@@ -4685,7 +4551,7 @@
     "bio": "",
     "company": "@mevriklabs ",
     "website_url": "https://johnefemer.com",
-    "followers": 57,
+    "followers": 58,
     "following": 207,
     "public_repos": 13,
     "total_stars": 2,
@@ -4794,20 +4660,20 @@
     "top_language": "TypeScript",
     "all_languages": [
       "TypeScript",
-      "MDX",
-      "HTML",
-      "Python",
+      "PHP",
       "JavaScript",
       "CSS",
-      "PHP"
+      "Python",
+      "HTML",
+      "MDX"
     ],
-    "contributions_last_90d": 15103,
+    "contributions_last_90d": 15805,
     "prs_last_90d": 74,
     "issues_last_90d": 266,
     "reviews_last_90d": 0,
     "commits_last_90d": 338,
-    "enriched_at": "2026-10-21T03:11:33.139217+00:00",
-    "activity_score": 9.72
+    "enriched_at": "2026-10-24T03:09:04.197226+00:00",
+    "activity_score": 10.11
   },
   {
     "github_username": "i-rocky",
@@ -4954,21 +4820,155 @@
         "pushed_at": "2026-02-16T05:09:10Z"
       }
     ],
-    "top_language": "HTML",
+    "top_language": "Rust",
     "all_languages": [
-      "HTML",
+      "Rust",
+      "PHP",
       "JavaScript",
       "Go",
-      "PHP",
-      "Rust"
+      "HTML"
     ],
-    "contributions_last_90d": 12311,
+    "contributions_last_90d": 13057,
     "prs_last_90d": 175,
     "issues_last_90d": 55,
     "reviews_last_90d": 0,
-    "commits_last_90d": 1936,
-    "enriched_at": "2026-10-21T03:11:33.139217+00:00",
-    "activity_score": 9.61
+    "commits_last_90d": 1937,
+    "enriched_at": "2026-10-24T03:09:04.197226+00:00",
+    "activity_score": 10.02
+  },
+  {
+    "github_username": "cyantarek",
+    "name": "Cyan Tarek",
+    "profile_url": "https://github.com/cyantarek",
+    "location": "Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13703461?u=865445bb19fad8624b3a542494d10b0abc8beaed&v=4",
+    "bio": "Software Engineer - Gopher, Backend, DevOps, Microservices",
+    "company": "Big Idea",
+    "website_url": "cyantarek.me",
+    "followers": 204,
+    "following": 17,
+    "public_repos": 487,
+    "total_stars": 197,
+    "top_repos": [
+      {
+        "name": "django-microservices",
+        "description": "UNMAINTAINED",
+        "url": "https://github.com/cyantarek/django-microservices",
+        "stars": 164,
+        "forks": 88,
+        "language": "JavaScript",
+        "topics": [
+          "python",
+          "django",
+          "django-rest-framework",
+          "mongodb",
+          "docker"
+        ],
+        "pushed_at": "2020-06-06T11:52:25Z"
+      },
+      {
+        "name": "your-first-lab-cb-gh-000",
+        "description": "",
+        "url": "https://github.com/learn-co-students/your-first-lab-cb-gh-000",
+        "stars": 9,
+        "forks": 2269,
+        "language": "Ruby",
+        "topics": [],
+        "pushed_at": "2021-05-20T08:13:06Z"
+      },
+      {
+        "name": "go-playground-revamped",
+        "description": "",
+        "url": "https://github.com/cyantarek/go-playground-revamped",
+        "stars": 7,
+        "forks": 2,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2023-01-05T11:01:09Z"
+      },
+      {
+        "name": "hello-world-ruby-cb-gh-000",
+        "description": "",
+        "url": "https://github.com/learn-co-students/hello-world-ruby-cb-gh-000",
+        "stars": 5,
+        "forks": 1281,
+        "language": "Ruby",
+        "topics": [],
+        "pushed_at": "2023-05-30T19:02:39Z"
+      },
+      {
+        "name": "javascript-objects-cb-gh-000",
+        "description": "",
+        "url": "https://github.com/learn-co-students/javascript-objects-cb-gh-000",
+        "stars": 2,
+        "forks": 59,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2021-06-11T11:03:01Z"
+      },
+      {
+        "name": "html-album-cover-cb-gh-000",
+        "description": "",
+        "url": "https://github.com/learn-co-students/html-album-cover-cb-gh-000",
+        "stars": 2,
+        "forks": 206,
+        "language": "Ruby",
+        "topics": [],
+        "pushed_at": "2021-03-08T06:38:37Z"
+      },
+      {
+        "name": "ruby-object-attributes-lab-cb-gh-000",
+        "description": "",
+        "url": "https://github.com/learn-co-students/ruby-object-attributes-lab-cb-gh-000",
+        "stars": 2,
+        "forks": 191,
+        "language": "Ruby",
+        "topics": [],
+        "pushed_at": "2021-03-15T17:47:57Z"
+      },
+      {
+        "name": "ttt-game-status-cb-gh-000",
+        "description": "",
+        "url": "https://github.com/learn-co-students/ttt-game-status-cb-gh-000",
+        "stars": 2,
+        "forks": 230,
+        "language": "Ruby",
+        "topics": [],
+        "pushed_at": "2020-07-07T15:18:04Z"
+      },
+      {
+        "name": "rspec-fizzbuzz-cb-gh-000",
+        "description": "",
+        "url": "https://github.com/learn-co-students/rspec-fizzbuzz-cb-gh-000",
+        "stars": 2,
+        "forks": 317,
+        "language": "Ruby",
+        "topics": [],
+        "pushed_at": "2021-05-06T11:39:16Z"
+      },
+      {
+        "name": "ruby-lecture-reading-error-messages-cb-gh-000",
+        "description": "",
+        "url": "https://github.com/learn-co-students/ruby-lecture-reading-error-messages-cb-gh-000",
+        "stars": 2,
+        "forks": 1041,
+        "language": "Ruby",
+        "topics": [],
+        "pushed_at": "2021-07-31T06:32:43Z"
+      }
+    ],
+    "top_language": "JavaScript",
+    "all_languages": [
+      "JavaScript",
+      "Ruby"
+    ],
+    "contributions_last_90d": 0,
+    "prs_last_90d": 0,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 0,
+    "enriched_at": "2026-10-23T03:15:22.713495+00:00",
+    "activity_score": 9.84
   },
   {
     "github_username": "thesabbir",
@@ -4979,7 +4979,7 @@
     "bio": "Ledger Goblin. Ex: Webaholic.",
     "company": "Entrepreneur",
     "website_url": "",
-    "followers": 262,
+    "followers": 263,
     "following": 124,
     "public_repos": 67,
     "total_stars": 1998,
@@ -5097,21 +5097,21 @@
         "pushed_at": "2020-07-07T04:08:43Z"
       }
     ],
-    "top_language": "Shell",
+    "top_language": "CSS",
     "all_languages": [
-      "Shell",
-      "Python",
-      "JavaScript",
       "CSS",
-      "Go"
+      "JavaScript",
+      "Python",
+      "Go",
+      "Shell"
     ],
-    "contributions_last_90d": 13054,
+    "contributions_last_90d": 13336,
     "prs_last_90d": 4,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 12,
-    "enriched_at": "2026-10-21T03:11:33.139217+00:00",
-    "activity_score": 9.18
+    "enriched_at": "2026-10-24T03:09:04.197226+00:00",
+    "activity_score": 9.34
   },
   {
     "github_username": "imranhsayed",
@@ -5122,7 +5122,7 @@
     "bio": "\ud83d\udc64  Full Stack Developer ...\r\n  \ud83d\udce3 Speaker, Blogger, YouTuber, Writer \ud83d\udcbb Wordpress,\r\nReact, Node, Laravel Developer",
     "company": "",
     "website_url": "https://profiles.wordpress.org/gsayed786",
-    "followers": 2329,
+    "followers": 2328,
     "following": 7,
     "public_repos": 185,
     "total_stars": 4769,
@@ -5282,18 +5282,18 @@
         "pushed_at": "2021-05-29T12:13:57Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "PHP",
     "all_languages": [
-      "JavaScript",
-      "PHP"
+      "PHP",
+      "JavaScript"
     ],
-    "contributions_last_90d": 2726,
+    "contributions_last_90d": 2767,
     "prs_last_90d": 1,
     "issues_last_90d": 0,
     "reviews_last_90d": 1,
     "commits_last_90d": 46,
-    "enriched_at": "2026-10-21T03:11:33.139217+00:00",
-    "activity_score": 9.17
+    "enriched_at": "2026-10-24T03:09:04.197226+00:00",
+    "activity_score": 9.19
   },
   {
     "github_username": "muj-i",
