@@ -3881,6 +3881,185 @@
     "activity_score": 10.87
   },
   {
+    "github_username": "nadimtuhin",
+    "name": "Nadim Tuhin (Omar Faruque Tuhin)",
+    "profile_url": "https://github.com/nadimtuhin",
+    "location": "Dhaka",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3125771?u=3f74590bb87c3c369e56ec3898946fb8fbddc935&v=4",
+    "bio": "Software Engineer | Browser automation, AI agents, backend systems | https://calendly.com/nadimtuhin/30min",
+    "company": "",
+    "website_url": "nadimtuhin.com",
+    "followers": 174,
+    "following": 67,
+    "public_repos": 139,
+    "total_stars": 1170,
+    "top_repos": [
+      {
+        "name": "claude-token-optimizer",
+        "description": "Cut the tokens Claude Code loads at session start. CLI that sets up a small CLAUDE.md with on-demand docs, measures startup tokens, and keeps them small.",
+        "url": "https://github.com/nadimtuhin/claude-token-optimizer",
+        "stars": 631,
+        "forks": 84,
+        "language": "JavaScript",
+        "topics": [
+          "ai-assistant",
+          "automation",
+          "claude-code",
+          "developer-tools",
+          "documentation"
+        ],
+        "pushed_at": "2026-10-20T10:34:00Z"
+      },
+      {
+        "name": "onepager",
+        "description": "Onepage Theme/Website Builder for WordPress",
+        "url": "https://github.com/themexpert/onepager",
+        "stars": 306,
+        "forks": 98,
+        "language": "PHP",
+        "topics": [
+          "onepage",
+          "wordpress",
+          "react",
+          "reactjs",
+          "pagebuilder"
+        ],
+        "pushed_at": "2021-02-17T21:01:05Z"
+      },
+      {
+        "name": "schema-designer",
+        "description": "Database schema designer for Laravel & Lumen",
+        "url": "https://github.com/Agontuk/schema-designer",
+        "stars": 123,
+        "forks": 52,
+        "language": "JavaScript",
+        "topics": [
+          "database",
+          "schema",
+          "design",
+          "laravel",
+          "lumen"
+        ],
+        "pushed_at": "2023-01-25T23:13:16Z"
+      },
+      {
+        "name": "Facebook-Request-Throttle-WordPress-Plugin",
+        "description": "WordPress plugin that rate-limits Facebook/Meta web crawlers to prevent server overload",
+        "url": "https://github.com/nadimtuhin/Facebook-Request-Throttle-WordPress-Plugin",
+        "stars": 25,
+        "forks": 10,
+        "language": "PHP",
+        "topics": [
+          "crawler",
+          "facebook",
+          "meta",
+          "php",
+          "rate-limiting"
+        ],
+        "pushed_at": "2026-10-14T13:13:16Z"
+      },
+      {
+        "name": "tax-calculator",
+        "description": "Tax calculation utility",
+        "url": "https://github.com/nadimtuhin/tax-calculator",
+        "stars": 20,
+        "forks": 4,
+        "language": "JavaScript",
+        "topics": [
+          "vue",
+          "vuex",
+          "bootstrap",
+          "tax",
+          "bdtax"
+        ],
+        "pushed_at": "2026-10-20T20:12:30Z"
+      },
+      {
+        "name": "redux-vue",
+        "description": "Redux-style state management for Vue.js",
+        "url": "https://github.com/nadimtuhin/redux-vue",
+        "stars": 19,
+        "forks": 9,
+        "language": "JavaScript",
+        "topics": [
+          "vue",
+          "redux",
+          "redux-vue",
+          "vue-redux",
+          "higher-order-component"
+        ],
+        "pushed_at": "2026-10-14T13:13:45Z"
+      },
+      {
+        "name": "devutils",
+        "description": "DevUtils is a collection of essential developer utilities that work entirely in your browser. No data leaves your computer - everything works offline!",
+        "url": "https://github.com/nadimtuhin/devutils",
+        "stars": 14,
+        "forks": 3,
+        "language": "TypeScript",
+        "topics": [
+          "browser-tools",
+          "developer-tools",
+          "devtools",
+          "offline",
+          "privacy"
+        ],
+        "pushed_at": "2026-10-14T16:40:12Z"
+      },
+      {
+        "name": "react-pure-component",
+        "description": "React pure component examples and utilities",
+        "url": "https://github.com/nadimtuhin/react-pure-component",
+        "stars": 13,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [
+          "opensource"
+        ],
+        "pushed_at": "2026-10-14T13:13:37Z"
+      },
+      {
+        "name": "dse-scrapper",
+        "description": "Dhaka Stock Exchange Scrapper",
+        "url": "https://github.com/nadimtuhin/dse-scrapper",
+        "stars": 11,
+        "forks": 4,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2026-10-14T13:13:12Z"
+      },
+      {
+        "name": "ytranscript",
+        "description": "YouTube transcript extractor",
+        "url": "https://github.com/nadimtuhin/ytranscript",
+        "stars": 8,
+        "forks": 1,
+        "language": "TypeScript",
+        "topics": [
+          "bulk-processing",
+          "bun",
+          "cli",
+          "developer-tools",
+          "google-takeout"
+        ],
+        "pushed_at": "2026-10-14T13:13:53Z"
+      }
+    ],
+    "top_language": "JavaScript",
+    "all_languages": [
+      "JavaScript",
+      "TypeScript",
+      "PHP"
+    ],
+    "contributions_last_90d": 11440,
+    "prs_last_90d": 70,
+    "issues_last_90d": 174,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 2057,
+    "enriched_at": "2026-10-26T03:03:51.356423+00:00",
+    "activity_score": 10.58
+  },
+  {
     "github_username": "sadekur",
     "name": "Sadekur Rahman",
     "profile_url": "https://github.com/sadekur",
@@ -4022,6 +4201,167 @@
     "commits_last_90d": 7500,
     "enriched_at": "2026-10-25T03:04:08.717434+00:00",
     "activity_score": 10.55
+  },
+  {
+    "github_username": "i-rocky",
+    "name": "Rasel Rana Rocky",
+    "profile_url": "https://github.com/i-rocky",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12933820?u=7544991cab2a70672e81e67541bbaa19efb26b9f&v=4",
+    "bio": "huh!",
+    "company": "Hydra Inc.",
+    "website_url": "",
+    "followers": 61,
+    "following": 24,
+    "public_repos": 46,
+    "total_stars": 79,
+    "top_repos": [
+      {
+        "name": "country-list-js",
+        "description": "Country list with name, continent, capital, currency, dialing code, ISO-2 code, ISO-3 code and search",
+        "url": "https://github.com/i-rocky/country-list-js",
+        "stars": 42,
+        "forks": 29,
+        "language": "JavaScript",
+        "topics": [
+          "country",
+          "currency",
+          "dialing",
+          "continent",
+          "capital"
+        ],
+        "pushed_at": "2026-10-08T02:24:59Z"
+      },
+      {
+        "name": "eloquent-dynamic-relation",
+        "description": "Adds dynamic relationship to eloquent ORM models",
+        "url": "https://github.com/i-rocky/eloquent-dynamic-relation",
+        "stars": 21,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2021-06-10T11:40:48Z"
+      },
+      {
+        "name": "just-a-moment",
+        "description": "Spinners, progress bars and progress rings as one tiny custom element \u2014 CSS, unicode and terminal-style, determinate or not, isolated in Shadow DOM. ~5.6 KB, zero config, no dependencies.",
+        "url": "https://github.com/i-rocky/just-a-moment",
+        "stars": 5,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [
+          "css-loader",
+          "custom-element",
+          "loader",
+          "progress-bar",
+          "progress-ring"
+        ],
+        "pushed_at": "2026-06-09T13:08:51Z"
+      },
+      {
+        "name": "laravel-twilio",
+        "description": "Laravel package for twilio integration for sending and receiving SMS, MMS, Fax, and calling with recording support for both inbound and outbound.",
+        "url": "https://github.com/i-rocky/laravel-twilio",
+        "stars": 4,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [
+          "twilio",
+          "twilio-api",
+          "twilio-api-wrapper",
+          "laravel-twilio",
+          "incoming-faxes"
+        ],
+        "pushed_at": "2019-11-30T08:36:37Z"
+      },
+      {
+        "name": "core",
+        "description": ":rocket: Open Source React File Manager ",
+        "url": "https://github.com/reactfilemanager/core",
+        "stars": 2,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2024-11-13T07:35:29Z"
+      },
+      {
+        "name": "github-worker",
+        "description": "gw \u2014 a CLI to manage a fleet of GitHub Actions self-hosted runners",
+        "url": "https://github.com/i-rocky/github-worker",
+        "stars": 1,
+        "forks": 0,
+        "language": "Go",
+        "topics": [],
+        "pushed_at": "2026-09-02T11:51:37Z"
+      },
+      {
+        "name": "corvid-node",
+        "description": "Node.js bindings for corvid \u2014 typed FFI via napi-rs, zero serialization, OOP surface.",
+        "url": "https://github.com/corvid-db/corvid-node",
+        "stars": 1,
+        "forks": 0,
+        "language": "Rust",
+        "topics": [],
+        "pushed_at": "2026-09-03T14:51:03Z"
+      },
+      {
+        "name": "x-zsh",
+        "description": "Animated terminal walkthroughs as an HTML custom element. Write a session in plain text; <x-zsh> renders an animated p10k-style zsh, isolated in Shadow DOM. Zero config, no build, not an emulator.",
+        "url": "https://github.com/i-rocky/x-zsh",
+        "stars": 1,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [
+          "animation",
+          "cli",
+          "console",
+          "custom-elements",
+          "documentation"
+        ],
+        "pushed_at": "2026-06-10T10:22:42Z"
+      },
+      {
+        "name": "corvid",
+        "description": "Embedded multi-modal data store for AI applications: vector + full-text + graph + geo behind one fluent Rust API, a typed C ABI, and native bindings.",
+        "url": "https://github.com/corvid-db/corvid",
+        "stars": 1,
+        "forks": 0,
+        "language": "Rust",
+        "topics": [
+          "ai",
+          "bm25",
+          "database",
+          "embedded-database",
+          "embeddings"
+        ],
+        "pushed_at": "2026-09-03T15:46:53Z"
+      },
+      {
+        "name": "docker-win-net-connect",
+        "description": "Reach Docker Desktop container networks from the Windows host over a WireGuard tunnel",
+        "url": "https://github.com/i-rocky/docker-win-net-connect",
+        "stars": 1,
+        "forks": 0,
+        "language": "Go",
+        "topics": [],
+        "pushed_at": "2026-02-16T05:09:10Z"
+      }
+    ],
+    "top_language": "PHP",
+    "all_languages": [
+      "PHP",
+      "HTML",
+      "JavaScript",
+      "Go",
+      "Rust"
+    ],
+    "contributions_last_90d": 13905,
+    "prs_last_90d": 177,
+    "issues_last_90d": 55,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 1940,
+    "enriched_at": "2026-10-26T03:03:51.356423+00:00",
+    "activity_score": 10.51
   },
   {
     "github_username": "devSahinur",
@@ -4193,183 +4533,136 @@
     "activity_score": 10.36
   },
   {
-    "github_username": "nadimtuhin",
-    "name": "Nadim Tuhin (Omar Faruque Tuhin)",
-    "profile_url": "https://github.com/nadimtuhin",
-    "location": "Dhaka",
-    "avatar_url": "https://avatars.githubusercontent.com/u/3125771?u=3f74590bb87c3c369e56ec3898946fb8fbddc935&v=4",
-    "bio": "Software Engineer | Browser automation, AI agents, backend systems | https://calendly.com/nadimtuhin/30min",
-    "company": "",
-    "website_url": "nadimtuhin.com",
-    "followers": 174,
-    "following": 67,
-    "public_repos": 136,
-    "total_stars": 1168,
+    "github_username": "johnefemer",
+    "name": "John Efemer",
+    "profile_url": "https://github.com/johnefemer",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4",
+    "bio": "",
+    "company": "@mevriklabs ",
+    "website_url": "https://johnefemer.com",
+    "followers": 58,
+    "following": 207,
+    "public_repos": 14,
+    "total_stars": 4,
     "top_repos": [
       {
-        "name": "claude-token-optimizer",
-        "description": "Cut the tokens Claude Code loads at session start. CLI that sets up a small CLAUDE.md with on-demand docs, measures startup tokens, and keeps them small.",
-        "url": "https://github.com/nadimtuhin/claude-token-optimizer",
-        "stars": 629,
-        "forks": 83,
-        "language": "JavaScript",
-        "topics": [
-          "ai-assistant",
-          "automation",
-          "claude-code",
-          "developer-tools",
-          "documentation"
-        ],
-        "pushed_at": "2026-10-20T10:34:00Z"
-      },
-      {
-        "name": "onepager",
-        "description": "Onepage Theme/Website Builder for WordPress",
-        "url": "https://github.com/themexpert/onepager",
-        "stars": 306,
-        "forks": 98,
-        "language": "PHP",
-        "topics": [
-          "onepage",
-          "wordpress",
-          "react",
-          "reactjs",
-          "pagebuilder"
-        ],
-        "pushed_at": "2021-02-17T21:01:05Z"
-      },
-      {
-        "name": "schema-designer",
-        "description": "Database schema designer for Laravel & Lumen",
-        "url": "https://github.com/Agontuk/schema-designer",
-        "stars": 123,
-        "forks": 52,
-        "language": "JavaScript",
-        "topics": [
-          "database",
-          "schema",
-          "design",
-          "laravel",
-          "lumen"
-        ],
-        "pushed_at": "2023-01-25T23:13:16Z"
-      },
-      {
-        "name": "Facebook-Request-Throttle-WordPress-Plugin",
-        "description": "WordPress plugin that rate-limits Facebook/Meta web crawlers to prevent server overload",
-        "url": "https://github.com/nadimtuhin/Facebook-Request-Throttle-WordPress-Plugin",
-        "stars": 25,
-        "forks": 10,
-        "language": "PHP",
-        "topics": [
-          "crawler",
-          "facebook",
-          "meta",
-          "php",
-          "rate-limiting"
-        ],
-        "pushed_at": "2026-10-14T13:13:16Z"
-      },
-      {
-        "name": "tax-calculator",
-        "description": "Tax calculation utility",
-        "url": "https://github.com/nadimtuhin/tax-calculator",
-        "stars": 20,
-        "forks": 4,
-        "language": "JavaScript",
-        "topics": [
-          "vue",
-          "vuex",
-          "bootstrap",
-          "tax",
-          "bdtax"
-        ],
-        "pushed_at": "2026-10-20T20:12:30Z"
-      },
-      {
-        "name": "redux-vue",
-        "description": "Redux-style state management for Vue.js",
-        "url": "https://github.com/nadimtuhin/redux-vue",
-        "stars": 19,
-        "forks": 9,
-        "language": "JavaScript",
-        "topics": [
-          "vue",
-          "redux",
-          "redux-vue",
-          "vue-redux",
-          "higher-order-component"
-        ],
-        "pushed_at": "2026-10-14T13:13:45Z"
-      },
-      {
-        "name": "devutils",
-        "description": "DevUtils is a collection of essential developer utilities that work entirely in your browser. No data leaves your computer - everything works offline!",
-        "url": "https://github.com/nadimtuhin/devutils",
-        "stars": 14,
+        "name": "skillfish",
+        "description": "Multi-skill repository for AI coding agents",
+        "url": "https://github.com/johnefemer/skillfish",
+        "stars": 4,
         "forks": 3,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-04-12T16:00:17Z"
+      },
+      {
+        "name": "business-brain-web",
+        "description": "",
+        "url": "https://github.com/business-brain-24/business-brain-web",
+        "stars": 0,
+        "forks": 0,
         "language": "TypeScript",
-        "topics": [
-          "browser-tools",
-          "developer-tools",
-          "devtools",
-          "offline",
-          "privacy"
-        ],
-        "pushed_at": "2026-10-14T16:40:12Z"
+        "topics": [],
+        "pushed_at": "2026-10-25T21:52:03Z"
       },
       {
-        "name": "react-pure-component",
-        "description": "React pure component examples and utilities",
-        "url": "https://github.com/nadimtuhin/react-pure-component",
-        "stars": 13,
-        "forks": 1,
+        "name": "imran-site",
+        "description": "",
+        "url": "https://github.com/mosimran/imran-site",
+        "stars": 0,
+        "forks": 0,
         "language": "JavaScript",
-        "topics": [
-          "opensource"
-        ],
-        "pushed_at": "2026-10-14T13:13:37Z"
+        "topics": [],
+        "pushed_at": "2026-09-09T23:24:09Z"
       },
       {
-        "name": "dse-scrapper",
-        "description": "Dhaka Stock Exchange Scrapper",
-        "url": "https://github.com/nadimtuhin/dse-scrapper",
-        "stars": 11,
-        "forks": 4,
+        "name": "recritement_dev",
+        "description": "",
+        "url": "https://github.com/betopia-corp/recritement_dev",
+        "stars": 0,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-08-24T10:15:07Z"
+      },
+      {
+        "name": "mevrik-laravel-assessment",
+        "description": "",
+        "url": "https://github.com/murad0cs/mevrik-laravel-assessment",
+        "stars": 0,
+        "forks": 0,
         "language": "PHP",
         "topics": [],
-        "pushed_at": "2026-10-14T13:13:12Z"
+        "pushed_at": "2025-10-28T06:38:45Z"
       },
       {
-        "name": "ytranscript",
-        "description": "YouTube transcript extractor",
-        "url": "https://github.com/nadimtuhin/ytranscript",
-        "stars": 8,
-        "forks": 1,
+        "name": "feat-tracking-example",
+        "description": "A comprehensive Next.js feature tracking library with journey-based analytics, supporting Mixpanel, Firebase, Segment, and BigQuery integrations. Built for measuring the 20% of features that drive 80% of business value.",
+        "url": "https://github.com/johnefemer/feat-tracking-example",
+        "stars": 0,
+        "forks": 0,
         "language": "TypeScript",
-        "topics": [
-          "bulk-processing",
-          "bun",
-          "cli",
-          "developer-tools",
-          "google-takeout"
-        ],
-        "pushed_at": "2026-10-14T13:13:53Z"
+        "topics": [],
+        "pushed_at": "2025-09-30T21:44:37Z"
+      },
+      {
+        "name": "nawha-portfolio",
+        "description": "",
+        "url": "https://github.com/johnefemer/nawha-portfolio",
+        "stars": 0,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2023-12-01T11:57:02Z"
+      },
+      {
+        "name": "docs",
+        "description": "",
+        "url": "https://github.com/johnefemer/docs",
+        "stars": 0,
+        "forks": 0,
+        "language": "MDX",
+        "topics": [],
+        "pushed_at": "2023-11-07T14:37:14Z"
+      },
+      {
+        "name": "gpt-feedback",
+        "description": "",
+        "url": "https://github.com/johnefemer/gpt-feedback",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2023-07-20T18:43:27Z"
+      },
+      {
+        "name": "cf-image-resize-worker",
+        "description": "Cloudflare worker script to resize image",
+        "url": "https://github.com/johnefemer/cf-image-resize-worker",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2022-08-19T19:15:32Z"
       }
     ],
-    "top_language": "TypeScript",
+    "top_language": "PHP",
     "all_languages": [
-      "TypeScript",
       "PHP",
-      "JavaScript"
+      "Python",
+      "HTML",
+      "TypeScript",
+      "JavaScript",
+      "MDX"
     ],
-    "contributions_last_90d": 10918,
-    "prs_last_90d": 70,
-    "issues_last_90d": 167,
+    "contributions_last_90d": 15917,
+    "prs_last_90d": 74,
+    "issues_last_90d": 266,
     "reviews_last_90d": 0,
-    "commits_last_90d": 2036,
-    "enriched_at": "2026-10-24T03:09:04.197226+00:00",
-    "activity_score": 10.21
+    "commits_last_90d": 338,
+    "enriched_at": "2026-10-26T03:03:51.356423+00:00",
+    "activity_score": 10.18
   },
   {
     "github_username": "KRTirtho",
@@ -4541,300 +4834,6 @@
     "commits_last_90d": 249,
     "enriched_at": "2026-10-25T03:04:08.717434+00:00",
     "activity_score": 10.12
-  },
-  {
-    "github_username": "johnefemer",
-    "name": "John Efemer",
-    "profile_url": "https://github.com/johnefemer",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4",
-    "bio": "",
-    "company": "@mevriklabs ",
-    "website_url": "https://johnefemer.com",
-    "followers": 58,
-    "following": 207,
-    "public_repos": 13,
-    "total_stars": 2,
-    "top_repos": [
-      {
-        "name": "skillfish",
-        "description": "Multi-skill repository for AI coding agents",
-        "url": "https://github.com/johnefemer/skillfish",
-        "stars": 2,
-        "forks": 3,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-04-12T16:00:17Z"
-      },
-      {
-        "name": "imran-site",
-        "description": "",
-        "url": "https://github.com/mosimran/imran-site",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-09-09T23:24:09Z"
-      },
-      {
-        "name": "recritement_dev",
-        "description": "",
-        "url": "https://github.com/betopia-corp/recritement_dev",
-        "stars": 0,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-08-24T10:15:07Z"
-      },
-      {
-        "name": "mevrik-laravel-assessment",
-        "description": "",
-        "url": "https://github.com/murad0cs/mevrik-laravel-assessment",
-        "stars": 0,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2025-10-28T06:38:45Z"
-      },
-      {
-        "name": "feat-tracking-example",
-        "description": "A comprehensive Next.js feature tracking library with journey-based analytics, supporting Mixpanel, Firebase, Segment, and BigQuery integrations. Built for measuring the 20% of features that drive 80% of business value.",
-        "url": "https://github.com/johnefemer/feat-tracking-example",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2025-09-30T21:44:37Z"
-      },
-      {
-        "name": "nawha-portfolio",
-        "description": "",
-        "url": "https://github.com/johnefemer/nawha-portfolio",
-        "stars": 0,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2023-12-01T11:57:02Z"
-      },
-      {
-        "name": "docs",
-        "description": "",
-        "url": "https://github.com/johnefemer/docs",
-        "stars": 0,
-        "forks": 0,
-        "language": "MDX",
-        "topics": [],
-        "pushed_at": "2023-11-07T14:37:14Z"
-      },
-      {
-        "name": "gpt-feedback",
-        "description": "",
-        "url": "https://github.com/johnefemer/gpt-feedback",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2023-07-20T18:43:27Z"
-      },
-      {
-        "name": "cf-image-resize-worker",
-        "description": "Cloudflare worker script to resize image",
-        "url": "https://github.com/johnefemer/cf-image-resize-worker",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2022-08-19T19:15:32Z"
-      },
-      {
-        "name": "jekyll-mundana-forestry",
-        "description": "",
-        "url": "https://github.com/johnefemer/jekyll-mundana-forestry",
-        "stars": 0,
-        "forks": 0,
-        "language": "CSS",
-        "topics": [],
-        "pushed_at": "2022-03-18T05:57:37Z"
-      }
-    ],
-    "top_language": "TypeScript",
-    "all_languages": [
-      "TypeScript",
-      "PHP",
-      "JavaScript",
-      "CSS",
-      "Python",
-      "HTML",
-      "MDX"
-    ],
-    "contributions_last_90d": 15805,
-    "prs_last_90d": 74,
-    "issues_last_90d": 266,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 338,
-    "enriched_at": "2026-10-24T03:09:04.197226+00:00",
-    "activity_score": 10.1
-  },
-  {
-    "github_username": "i-rocky",
-    "name": "Rasel Rana Rocky",
-    "profile_url": "https://github.com/i-rocky",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/12933820?u=7544991cab2a70672e81e67541bbaa19efb26b9f&v=4",
-    "bio": "huh!",
-    "company": "Hydra Inc.",
-    "website_url": "",
-    "followers": 61,
-    "following": 24,
-    "public_repos": 46,
-    "total_stars": 79,
-    "top_repos": [
-      {
-        "name": "country-list-js",
-        "description": "Country list with name, continent, capital, currency, dialing code, ISO-2 code, ISO-3 code and search",
-        "url": "https://github.com/i-rocky/country-list-js",
-        "stars": 42,
-        "forks": 29,
-        "language": "JavaScript",
-        "topics": [
-          "country",
-          "currency",
-          "dialing",
-          "continent",
-          "capital"
-        ],
-        "pushed_at": "2026-10-08T02:24:59Z"
-      },
-      {
-        "name": "eloquent-dynamic-relation",
-        "description": "Adds dynamic relationship to eloquent ORM models",
-        "url": "https://github.com/i-rocky/eloquent-dynamic-relation",
-        "stars": 21,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2021-06-10T11:40:48Z"
-      },
-      {
-        "name": "just-a-moment",
-        "description": "Spinners, progress bars and progress rings as one tiny custom element \u2014 CSS, unicode and terminal-style, determinate or not, isolated in Shadow DOM. ~5.6 KB, zero config, no dependencies.",
-        "url": "https://github.com/i-rocky/just-a-moment",
-        "stars": 5,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [
-          "css-loader",
-          "custom-element",
-          "loader",
-          "progress-bar",
-          "progress-ring"
-        ],
-        "pushed_at": "2026-06-09T13:08:51Z"
-      },
-      {
-        "name": "laravel-twilio",
-        "description": "Laravel package for twilio integration for sending and receiving SMS, MMS, Fax, and calling with recording support for both inbound and outbound.",
-        "url": "https://github.com/i-rocky/laravel-twilio",
-        "stars": 4,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [
-          "twilio",
-          "twilio-api",
-          "twilio-api-wrapper",
-          "laravel-twilio",
-          "incoming-faxes"
-        ],
-        "pushed_at": "2019-11-30T08:36:37Z"
-      },
-      {
-        "name": "core",
-        "description": ":rocket: Open Source React File Manager ",
-        "url": "https://github.com/reactfilemanager/core",
-        "stars": 2,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2024-11-13T07:35:29Z"
-      },
-      {
-        "name": "github-worker",
-        "description": "gw \u2014 a CLI to manage a fleet of GitHub Actions self-hosted runners",
-        "url": "https://github.com/i-rocky/github-worker",
-        "stars": 1,
-        "forks": 0,
-        "language": "Go",
-        "topics": [],
-        "pushed_at": "2026-09-02T11:51:37Z"
-      },
-      {
-        "name": "corvid-node",
-        "description": "Node.js bindings for corvid \u2014 typed FFI via napi-rs, zero serialization, OOP surface.",
-        "url": "https://github.com/corvid-db/corvid-node",
-        "stars": 1,
-        "forks": 0,
-        "language": "Rust",
-        "topics": [],
-        "pushed_at": "2026-09-03T14:51:03Z"
-      },
-      {
-        "name": "x-zsh",
-        "description": "Animated terminal walkthroughs as an HTML custom element. Write a session in plain text; <x-zsh> renders an animated p10k-style zsh, isolated in Shadow DOM. Zero config, no build, not an emulator.",
-        "url": "https://github.com/i-rocky/x-zsh",
-        "stars": 1,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [
-          "animation",
-          "cli",
-          "console",
-          "custom-elements",
-          "documentation"
-        ],
-        "pushed_at": "2026-06-10T10:22:42Z"
-      },
-      {
-        "name": "corvid",
-        "description": "Embedded multi-modal data store for AI applications: vector + full-text + graph + geo behind one fluent Rust API, a typed C ABI, and native bindings.",
-        "url": "https://github.com/corvid-db/corvid",
-        "stars": 1,
-        "forks": 0,
-        "language": "Rust",
-        "topics": [
-          "ai",
-          "bm25",
-          "database",
-          "embedded-database",
-          "embeddings"
-        ],
-        "pushed_at": "2026-09-03T15:46:53Z"
-      },
-      {
-        "name": "docker-win-net-connect",
-        "description": "Reach Docker Desktop container networks from the Windows host over a WireGuard tunnel",
-        "url": "https://github.com/i-rocky/docker-win-net-connect",
-        "stars": 1,
-        "forks": 0,
-        "language": "Go",
-        "topics": [],
-        "pushed_at": "2026-02-16T05:09:10Z"
-      }
-    ],
-    "top_language": "Rust",
-    "all_languages": [
-      "Rust",
-      "PHP",
-      "JavaScript",
-      "Go",
-      "HTML"
-    ],
-    "contributions_last_90d": 13057,
-    "prs_last_90d": 175,
-    "issues_last_90d": 55,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 1937,
-    "enriched_at": "2026-10-24T03:09:04.197226+00:00",
-    "activity_score": 10.02
   },
   {
     "github_username": "cyantarek",
@@ -5097,21 +5096,21 @@
         "pushed_at": "2020-07-07T04:08:43Z"
       }
     ],
-    "top_language": "CSS",
+    "top_language": "Python",
     "all_languages": [
+      "Python",
+      "Shell",
       "CSS",
       "JavaScript",
-      "Python",
-      "Go",
-      "Shell"
+      "Go"
     ],
-    "contributions_last_90d": 13336,
+    "contributions_last_90d": 13471,
     "prs_last_90d": 4,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 12,
-    "enriched_at": "2026-10-24T03:09:04.197226+00:00",
-    "activity_score": 9.34
+    "enriched_at": "2026-10-26T03:03:51.356423+00:00",
+    "activity_score": 9.42
   },
   {
     "github_username": "imranhsayed",
@@ -5292,7 +5291,7 @@
     "issues_last_90d": 0,
     "reviews_last_90d": 1,
     "commits_last_90d": 46,
-    "enriched_at": "2026-10-24T03:09:04.197226+00:00",
+    "enriched_at": "2026-10-26T03:03:51.356423+00:00",
     "activity_score": 9.19
   },
   {
