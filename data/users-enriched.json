@@ -3906,6 +3906,145 @@
     "activity_score": 11.31
   },
   {
+    "github_username": "noruzzamans",
+    "name": "Noruzzaman",
+    "profile_url": "https://github.com/noruzzamans",
+    "location": "Bogura, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/46926901?u=47cbc7ec010b05210106f1d1b83d945fd6d8bce6&v=4",
+    "bio": "WordPress Core Contributor & Full-Stack Dev. Building advanced Gutenberg blocks, FSE themes & high-performance plugins.",
+    "company": "",
+    "website_url": "https://profiles.wordpress.org/noruzzaman/",
+    "followers": 36,
+    "following": 86,
+    "public_repos": 99,
+    "total_stars": 22,
+    "top_repos": [
+      {
+        "name": "gslider-blocks",
+        "description": "Modern WordPress Gutenberg slider & carousel blocks with Swiper.js & Headless API. \ud83c\udfa8 Storybook: https://noruzzamans.github.io/gslider-blocks/",
+        "url": "https://github.com/noruzzamans/gslider-blocks",
+        "stars": 9,
+        "forks": 17,
+        "language": "JavaScript",
+        "topics": [
+          "carousel",
+          "good-first-issue",
+          "gutenberg",
+          "gutenberg-blocks",
+          "hacktoberfest"
+        ],
+        "pushed_at": "2026-10-29T21:58:59Z"
+      },
+      {
+        "name": "Elementor-Pro-Forms-MailChimp-Conditional-Opt-in-Field",
+        "description": "Follow this readme file instruction",
+        "url": "https://github.com/noruzzamans/Elementor-Pro-Forms-MailChimp-Conditional-Opt-in-Field",
+        "stars": 4,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [
+          "elementor",
+          "elementorpro",
+          "mailchimp",
+          "form"
+        ],
+        "pushed_at": "2021-11-05T04:58:14Z"
+      },
+      {
+        "name": "ajax-wp-form",
+        "description": "A lightweight, AJAX-powered form submission handler for WordPress to improve user experience without page reloads.",
+        "url": "https://github.com/noruzzamans/ajax-wp-form",
+        "stars": 2,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2022-10-23T11:42:57Z"
+      },
+      {
+        "name": "post-grid-block",
+        "description": "",
+        "url": "https://github.com/noruzzamans/post-grid-block",
+        "stars": 1,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2024-12-04T17:45:40Z"
+      },
+      {
+        "name": "php-dynamic-forms",
+        "description": "",
+        "url": "https://github.com/noruzzamans/php-dynamic-forms",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2024-02-28T16:43:15Z"
+      },
+      {
+        "name": "plugin-license-demo-checker",
+        "description": "",
+        "url": "https://github.com/noruzzamans/plugin-license-demo-checker",
+        "stars": 1,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2023-12-12T07:50:34Z"
+      },
+      {
+        "name": "Web-Scraping-with-PHP",
+        "description": "",
+        "url": "https://github.com/noruzzamans/Web-Scraping-with-PHP",
+        "stars": 1,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2022-12-27T13:03:24Z"
+      },
+      {
+        "name": "custom-product-designer",
+        "description": "",
+        "url": "https://github.com/noruzzamans/custom-product-designer",
+        "stars": 1,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2022-12-15T03:52:51Z"
+      },
+      {
+        "name": "sortable-delivery-date-column-in-woocommerce-order-table",
+        "description": "",
+        "url": "https://github.com/noruzzamans/sortable-delivery-date-column-in-woocommerce-order-table",
+        "stars": 1,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2022-04-02T07:38:07Z"
+      },
+      {
+        "name": "Add-sortable-delivery-date-column-in-woocommerce-order-table",
+        "description": "",
+        "url": "https://github.com/noruzzamans/Add-sortable-delivery-date-column-in-woocommerce-order-table",
+        "stars": 1,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2022-01-29T07:53:07Z"
+      }
+    ],
+    "top_language": "JavaScript",
+    "all_languages": [
+      "JavaScript",
+      "PHP"
+    ],
+    "contributions_last_90d": 6720,
+    "prs_last_90d": 492,
+    "issues_last_90d": 241,
+    "reviews_last_90d": 132,
+    "commits_last_90d": 3253,
+    "enriched_at": "2026-10-30T04:14:15.927410+00:00",
+    "activity_score": 10.86
+  },
+  {
     "github_username": "jobayer977",
     "name": "Jobayer Hossain",
     "profile_url": "https://github.com/jobayer977",
@@ -4363,6 +4502,138 @@
     "activity_score": 10.71
   },
   {
+    "github_username": "johnefemer",
+    "name": "John Efemer",
+    "profile_url": "https://github.com/johnefemer",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4",
+    "bio": "",
+    "company": "@mevriklabs ",
+    "website_url": "https://johnefemer.com",
+    "followers": 56,
+    "following": 207,
+    "public_repos": 14,
+    "total_stars": 4,
+    "top_repos": [
+      {
+        "name": "skillfish",
+        "description": "Multi-skill repository for AI coding agents",
+        "url": "https://github.com/johnefemer/skillfish",
+        "stars": 4,
+        "forks": 3,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-04-12T16:00:17Z"
+      },
+      {
+        "name": "business-brain-web",
+        "description": "",
+        "url": "https://github.com/business-brain-24/business-brain-web",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-10-29T10:44:30Z"
+      },
+      {
+        "name": "imran-site",
+        "description": "",
+        "url": "https://github.com/mosimran/imran-site",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-09-09T23:24:09Z"
+      },
+      {
+        "name": "recritement_dev",
+        "description": "",
+        "url": "https://github.com/betopia-corp/recritement_dev",
+        "stars": 0,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-08-24T10:15:07Z"
+      },
+      {
+        "name": "mevrik-laravel-assessment",
+        "description": "",
+        "url": "https://github.com/murad0cs/mevrik-laravel-assessment",
+        "stars": 0,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2025-10-28T06:38:45Z"
+      },
+      {
+        "name": "feat-tracking-example",
+        "description": "A comprehensive Next.js feature tracking library with journey-based analytics, supporting Mixpanel, Firebase, Segment, and BigQuery integrations. Built for measuring the 20% of features that drive 80% of business value.",
+        "url": "https://github.com/johnefemer/feat-tracking-example",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2025-09-30T21:44:37Z"
+      },
+      {
+        "name": "nawha-portfolio",
+        "description": "",
+        "url": "https://github.com/johnefemer/nawha-portfolio",
+        "stars": 0,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2023-12-01T11:57:02Z"
+      },
+      {
+        "name": "docs",
+        "description": "",
+        "url": "https://github.com/johnefemer/docs",
+        "stars": 0,
+        "forks": 0,
+        "language": "MDX",
+        "topics": [],
+        "pushed_at": "2023-11-07T14:37:14Z"
+      },
+      {
+        "name": "gpt-feedback",
+        "description": "",
+        "url": "https://github.com/johnefemer/gpt-feedback",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2023-07-20T18:43:27Z"
+      },
+      {
+        "name": "cf-image-resize-worker",
+        "description": "Cloudflare worker script to resize image",
+        "url": "https://github.com/johnefemer/cf-image-resize-worker",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2022-08-19T19:15:32Z"
+      }
+    ],
+    "top_language": "MDX",
+    "all_languages": [
+      "MDX",
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "PHP"
+    ],
+    "contributions_last_90d": 16093,
+    "prs_last_90d": 87,
+    "issues_last_90d": 279,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 364,
+    "enriched_at": "2026-10-30T04:14:15.927410+00:00",
+    "activity_score": 10.37
+  },
+  {
     "github_username": "devSahinur",
     "name": "Sahinur",
     "profile_url": "https://github.com/devSahinur",
@@ -4532,138 +4803,6 @@
     "activity_score": 10.36
   },
   {
-    "github_username": "johnefemer",
-    "name": "John Efemer",
-    "profile_url": "https://github.com/johnefemer",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4",
-    "bio": "",
-    "company": "@mevriklabs ",
-    "website_url": "https://johnefemer.com",
-    "followers": 58,
-    "following": 207,
-    "public_repos": 14,
-    "total_stars": 4,
-    "top_repos": [
-      {
-        "name": "skillfish",
-        "description": "Multi-skill repository for AI coding agents",
-        "url": "https://github.com/johnefemer/skillfish",
-        "stars": 4,
-        "forks": 3,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-04-12T16:00:17Z"
-      },
-      {
-        "name": "business-brain-web",
-        "description": "",
-        "url": "https://github.com/business-brain-24/business-brain-web",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-10-25T21:52:03Z"
-      },
-      {
-        "name": "imran-site",
-        "description": "",
-        "url": "https://github.com/mosimran/imran-site",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-09-09T23:24:09Z"
-      },
-      {
-        "name": "recritement_dev",
-        "description": "",
-        "url": "https://github.com/betopia-corp/recritement_dev",
-        "stars": 0,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-08-24T10:15:07Z"
-      },
-      {
-        "name": "mevrik-laravel-assessment",
-        "description": "",
-        "url": "https://github.com/murad0cs/mevrik-laravel-assessment",
-        "stars": 0,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2025-10-28T06:38:45Z"
-      },
-      {
-        "name": "feat-tracking-example",
-        "description": "A comprehensive Next.js feature tracking library with journey-based analytics, supporting Mixpanel, Firebase, Segment, and BigQuery integrations. Built for measuring the 20% of features that drive 80% of business value.",
-        "url": "https://github.com/johnefemer/feat-tracking-example",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2025-09-30T21:44:37Z"
-      },
-      {
-        "name": "nawha-portfolio",
-        "description": "",
-        "url": "https://github.com/johnefemer/nawha-portfolio",
-        "stars": 0,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2023-12-01T11:57:02Z"
-      },
-      {
-        "name": "docs",
-        "description": "",
-        "url": "https://github.com/johnefemer/docs",
-        "stars": 0,
-        "forks": 0,
-        "language": "MDX",
-        "topics": [],
-        "pushed_at": "2023-11-07T14:37:14Z"
-      },
-      {
-        "name": "gpt-feedback",
-        "description": "",
-        "url": "https://github.com/johnefemer/gpt-feedback",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2023-07-20T18:43:27Z"
-      },
-      {
-        "name": "cf-image-resize-worker",
-        "description": "Cloudflare worker script to resize image",
-        "url": "https://github.com/johnefemer/cf-image-resize-worker",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2022-08-19T19:15:32Z"
-      }
-    ],
-    "top_language": "PHP",
-    "all_languages": [
-      "PHP",
-      "Python",
-      "HTML",
-      "TypeScript",
-      "JavaScript",
-      "MDX"
-    ],
-    "contributions_last_90d": 15917,
-    "prs_last_90d": 74,
-    "issues_last_90d": 266,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 338,
-    "enriched_at": "2026-10-26T03:03:51.356423+00:00",
-    "activity_score": 10.16
-  },
-  {
     "github_username": "KRTirtho",
     "name": "Kingkor Roy Tirtho",
     "profile_url": "https://github.com/KRTirtho",
@@ -4672,18 +4811,18 @@
     "bio": "",
     "company": "Maxint Inc. (@maxint-app)",
     "website_url": "krtirtho.dev",
-    "followers": 2112,
+    "followers": 2115,
     "following": 36,
     "public_repos": 94,
-    "total_stars": 51246,
+    "total_stars": 51433,
     "top_repos": [
       {
         "name": "spotube",
         "description": "\ud83c\udfa7 Open source music streaming app! Available for both desktop & mobile!",
         "url": "https://github.com/team-spotube/spotube",
-        "stars": 50284,
-        "forks": 2363,
-        "language": "Dart",
+        "stars": 50470,
+        "forks": 2369,
+        "language": "Kotlin",
         "topics": [
           "youtube",
           "desktop-client",
@@ -4691,7 +4830,7 @@
           "music",
           "flutter"
         ],
-        "pushed_at": "2026-10-23T05:54:34Z"
+        "pushed_at": "2026-10-29T11:36:52Z"
       },
       {
         "name": "flemozi",
@@ -4729,8 +4868,8 @@
         "name": "spotube-plugin-musicbrainz-listenbrainz",
         "description": "Spotube metadata provider plugin for Musicbrainz and Listenbrainz",
         "url": "https://github.com/KRTirtho/spotube-plugin-musicbrainz-listenbrainz",
-        "stars": 144,
-        "forks": 67,
+        "stars": 145,
+        "forks": 66,
         "language": "Dart",
         "topics": [
           "spotube",
@@ -4744,7 +4883,7 @@
         "description": "YouTube audio source plugin for Spotube",
         "url": "https://github.com/KRTirtho/spotube-plugin-youtube-audio",
         "stars": 113,
-        "forks": 40,
+        "forks": 42,
         "language": "C++",
         "topics": [
           "spotube",
@@ -4820,19 +4959,20 @@
         "pushed_at": "2023-10-30T15:59:24Z"
       }
     ],
-    "top_language": "Rust",
+    "top_language": "Kotlin",
     "all_languages": [
+      "Kotlin",
       "Rust",
       "Dart",
       "C++"
     ],
-    "contributions_last_90d": 770,
-    "prs_last_90d": 20,
+    "contributions_last_90d": 979,
+    "prs_last_90d": 23,
     "issues_last_90d": 1,
     "reviews_last_90d": 3,
-    "commits_last_90d": 249,
-    "enriched_at": "2026-10-25T03:04:08.717434+00:00",
-    "activity_score": 10.1
+    "commits_last_90d": 459,
+    "enriched_at": "2026-10-30T04:14:15.927410+00:00",
+    "activity_score": 10.3
   },
   {
     "github_username": "cyantarek",
@@ -4843,7 +4983,7 @@
     "bio": "Software Engineer - Gopher, Backend, DevOps, Microservices",
     "company": "Big Idea",
     "website_url": "cyantarek.me",
-    "followers": 204,
+    "followers": 203,
     "following": 17,
     "public_repos": 487,
     "total_stars": 197,
@@ -4869,7 +5009,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/your-first-lab-cb-gh-000",
         "stars": 9,
-        "forks": 2267,
+        "forks": 2266,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-05-20T08:13:06Z"
@@ -4889,7 +5029,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/hello-world-ruby-cb-gh-000",
         "stars": 5,
-        "forks": 1279,
+        "forks": 1278,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2023-05-30T19:02:39Z"
@@ -4899,7 +5039,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/javascript-objects-cb-gh-000",
         "stars": 2,
-        "forks": 59,
+        "forks": 58,
         "language": "JavaScript",
         "topics": [],
         "pushed_at": "2021-06-11T11:03:01Z"
@@ -4909,7 +5049,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/html-album-cover-cb-gh-000",
         "stars": 2,
-        "forks": 206,
+        "forks": 205,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-03-08T06:38:37Z"
@@ -4919,7 +5059,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/ruby-object-attributes-lab-cb-gh-000",
         "stars": 2,
-        "forks": 191,
+        "forks": 190,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-03-15T17:47:57Z"
@@ -4929,7 +5069,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/ttt-game-status-cb-gh-000",
         "stars": 2,
-        "forks": 230,
+        "forks": 229,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2020-07-07T15:18:04Z"
@@ -4939,7 +5079,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/rspec-fizzbuzz-cb-gh-000",
         "stars": 2,
-        "forks": 317,
+        "forks": 316,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-05-06T11:39:16Z"
@@ -4949,7 +5089,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/ruby-lecture-reading-error-messages-cb-gh-000",
         "stars": 2,
-        "forks": 1039,
+        "forks": 1038,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-07-31T06:32:43Z"
@@ -4965,141 +5105,8 @@
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 0,
-    "enriched_at": "2026-10-25T03:04:08.717434+00:00",
+    "enriched_at": "2026-10-30T04:14:15.927410+00:00",
     "activity_score": 9.84
-  },
-  {
-    "github_username": "noruzzamans",
-    "name": "Noruzzaman",
-    "profile_url": "https://github.com/noruzzamans",
-    "location": "Bogura, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/46926901?u=47cbc7ec010b05210106f1d1b83d945fd6d8bce6&v=4",
-    "bio": "WordPress Core Contributor & Full-Stack Dev. Building advanced Gutenberg blocks, FSE themes & high-performance plugins.",
-    "company": "",
-    "website_url": "https://profiles.wordpress.org/noruzzaman/",
-    "followers": 35,
-    "following": 86,
-    "public_repos": 98,
-    "total_stars": 13,
-    "top_repos": [
-      {
-        "name": "Elementor-Pro-Forms-MailChimp-Conditional-Opt-in-Field",
-        "description": "Follow this readme file instruction",
-        "url": "https://github.com/noruzzamans/Elementor-Pro-Forms-MailChimp-Conditional-Opt-in-Field",
-        "stars": 4,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [
-          "elementor",
-          "elementorpro",
-          "mailchimp",
-          "form"
-        ],
-        "pushed_at": "2021-11-05T04:58:14Z"
-      },
-      {
-        "name": "ajax-wp-form",
-        "description": "A lightweight, AJAX-powered form submission handler for WordPress to improve user experience without page reloads.",
-        "url": "https://github.com/noruzzamans/ajax-wp-form",
-        "stars": 2,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2022-10-23T11:42:57Z"
-      },
-      {
-        "name": "post-grid-block",
-        "description": "",
-        "url": "https://github.com/noruzzamans/post-grid-block",
-        "stars": 1,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2024-12-04T17:45:40Z"
-      },
-      {
-        "name": "php-dynamic-forms",
-        "description": "",
-        "url": "https://github.com/noruzzamans/php-dynamic-forms",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2024-02-28T16:43:15Z"
-      },
-      {
-        "name": "plugin-license-demo-checker",
-        "description": "",
-        "url": "https://github.com/noruzzamans/plugin-license-demo-checker",
-        "stars": 1,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2023-12-12T07:50:34Z"
-      },
-      {
-        "name": "Web-Scraping-with-PHP",
-        "description": "",
-        "url": "https://github.com/noruzzamans/Web-Scraping-with-PHP",
-        "stars": 1,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2022-12-27T13:03:24Z"
-      },
-      {
-        "name": "custom-product-designer",
-        "description": "",
-        "url": "https://github.com/noruzzamans/custom-product-designer",
-        "stars": 1,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2022-12-15T03:52:51Z"
-      },
-      {
-        "name": "sortable-delivery-date-column-in-woocommerce-order-table",
-        "description": "",
-        "url": "https://github.com/noruzzamans/sortable-delivery-date-column-in-woocommerce-order-table",
-        "stars": 1,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2022-04-02T07:38:07Z"
-      },
-      {
-        "name": "Add-sortable-delivery-date-column-in-woocommerce-order-table",
-        "description": "",
-        "url": "https://github.com/noruzzamans/Add-sortable-delivery-date-column-in-woocommerce-order-table",
-        "stars": 1,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2022-01-29T07:53:07Z"
-      },
-      {
-        "name": "wordpress-theme-contribution-guide",
-        "description": "",
-        "url": "https://github.com/noruzzamans/wordpress-theme-contribution-guide",
-        "stars": 0,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2026-09-29T12:02:46Z"
-      }
-    ],
-    "top_language": "PHP",
-    "all_languages": [
-      "PHP",
-      "JavaScript"
-    ],
-    "contributions_last_90d": 5313,
-    "prs_last_90d": 488,
-    "issues_last_90d": 236,
-    "reviews_last_90d": 122,
-    "commits_last_90d": 1953,
-    "enriched_at": "2026-10-27T03:35:07.527314+00:00",
-    "activity_score": 9.74
   },
   {
     "github_username": "thesabbir",
@@ -5113,13 +5120,13 @@
     "followers": 263,
     "following": 124,
     "public_repos": 67,
-    "total_stars": 1998,
+    "total_stars": 1996,
     "top_repos": [
       {
         "name": "simple-line-icons",
         "description": "Simple and Minimal Line Icons",
         "url": "https://github.com/thesabbir/simple-line-icons",
-        "stars": 1861,
+        "stars": 1859,
         "forks": 817,
         "language": "CSS",
         "topics": [
@@ -5231,18 +5238,18 @@
     "top_language": "Python",
     "all_languages": [
       "Python",
-      "Shell",
       "CSS",
-      "JavaScript",
-      "Go"
+      "Shell",
+      "Go",
+      "JavaScript"
     ],
-    "contributions_last_90d": 13471,
+    "contributions_last_90d": 13901,
     "prs_last_90d": 4,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 12,
-    "enriched_at": "2026-10-26T03:03:51.356423+00:00",
-    "activity_score": 9.42
+    "enriched_at": "2026-10-30T04:14:15.927410+00:00",
+    "activity_score": 9.66
   },
   {
     "github_username": "imranhsayed",
