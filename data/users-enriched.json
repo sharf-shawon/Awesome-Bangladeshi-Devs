@@ -4323,6 +4323,138 @@
     "activity_score": 10.77
   },
   {
+    "github_username": "johnefemer",
+    "name": "John Efemer",
+    "profile_url": "https://github.com/johnefemer",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4",
+    "bio": "",
+    "company": "@mevriklabs ",
+    "website_url": "https://johnefemer.com",
+    "followers": 57,
+    "following": 207,
+    "public_repos": 14,
+    "total_stars": 4,
+    "top_repos": [
+      {
+        "name": "skillfish",
+        "description": "Multi-skill repository for AI coding agents",
+        "url": "https://github.com/johnefemer/skillfish",
+        "stars": 4,
+        "forks": 3,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-11-02T10:45:17Z"
+      },
+      {
+        "name": "business-brain-web",
+        "description": "",
+        "url": "https://github.com/business-brain-24/business-brain-web",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-11-03T11:42:25Z"
+      },
+      {
+        "name": "imran-site",
+        "description": "",
+        "url": "https://github.com/mosimran/imran-site",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-09-09T23:24:09Z"
+      },
+      {
+        "name": "recritement_dev",
+        "description": "",
+        "url": "https://github.com/betopia-corp/recritement_dev",
+        "stars": 0,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-08-24T10:15:07Z"
+      },
+      {
+        "name": "mevrik-laravel-assessment",
+        "description": "",
+        "url": "https://github.com/murad0cs/mevrik-laravel-assessment",
+        "stars": 0,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2025-10-28T06:38:45Z"
+      },
+      {
+        "name": "feat-tracking-example",
+        "description": "A comprehensive Next.js feature tracking library with journey-based analytics, supporting Mixpanel, Firebase, Segment, and BigQuery integrations. Built for measuring the 20% of features that drive 80% of business value.",
+        "url": "https://github.com/johnefemer/feat-tracking-example",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2025-09-30T21:44:37Z"
+      },
+      {
+        "name": "nawha-portfolio",
+        "description": "",
+        "url": "https://github.com/johnefemer/nawha-portfolio",
+        "stars": 0,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2023-12-01T11:57:02Z"
+      },
+      {
+        "name": "docs",
+        "description": "",
+        "url": "https://github.com/johnefemer/docs",
+        "stars": 0,
+        "forks": 0,
+        "language": "MDX",
+        "topics": [],
+        "pushed_at": "2023-11-07T14:37:14Z"
+      },
+      {
+        "name": "gpt-feedback",
+        "description": "",
+        "url": "https://github.com/johnefemer/gpt-feedback",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2023-07-20T18:43:27Z"
+      },
+      {
+        "name": "cf-image-resize-worker",
+        "description": "Cloudflare worker script to resize image",
+        "url": "https://github.com/johnefemer/cf-image-resize-worker",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2022-08-19T19:15:32Z"
+      }
+    ],
+    "top_language": "JavaScript",
+    "all_languages": [
+      "JavaScript",
+      "Python",
+      "HTML",
+      "MDX",
+      "PHP",
+      "TypeScript"
+    ],
+    "contributions_last_90d": 16767,
+    "prs_last_90d": 91,
+    "issues_last_90d": 279,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 371,
+    "enriched_at": "2026-11-04T04:43:28.806776+00:00",
+    "activity_score": 10.76
+  },
+  {
     "github_username": "nadimtuhin",
     "name": "Nadim Tuhin (Omar Faruque Tuhin)",
     "profile_url": "https://github.com/nadimtuhin",
@@ -4502,136 +4634,176 @@
     "activity_score": 10.69
   },
   {
-    "github_username": "johnefemer",
-    "name": "John Efemer",
-    "profile_url": "https://github.com/johnefemer",
+    "github_username": "KRTirtho",
+    "name": "Kingkor Roy Tirtho",
+    "profile_url": "https://github.com/KRTirtho",
     "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/61944859?u=6f88948d6a9ec474bf9bf358f23975052e6d5514&v=4",
     "bio": "",
-    "company": "@mevriklabs ",
-    "website_url": "https://johnefemer.com",
-    "followers": 56,
-    "following": 207,
-    "public_repos": 14,
-    "total_stars": 4,
+    "company": "Maxint Inc. (@maxint-app)",
+    "website_url": "krtirtho.dev",
+    "followers": 2118,
+    "following": 36,
+    "public_repos": 94,
+    "total_stars": 51536,
     "top_repos": [
       {
-        "name": "skillfish",
-        "description": "Multi-skill repository for AI coding agents",
-        "url": "https://github.com/johnefemer/skillfish",
-        "stars": 4,
-        "forks": 3,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-04-12T16:00:17Z"
+        "name": "spotube",
+        "description": "\ud83c\udfa7 Open source music streaming app! Available for both desktop & mobile!",
+        "url": "https://github.com/team-spotube/spotube",
+        "stars": 50574,
+        "forks": 2384,
+        "language": "Kotlin",
+        "topics": [
+          "youtube",
+          "desktop-client",
+          "music-player",
+          "music",
+          "flutter"
+        ],
+        "pushed_at": "2026-11-03T14:24:03Z"
       },
       {
-        "name": "business-brain-web",
-        "description": "",
-        "url": "https://github.com/business-brain-24/business-brain-web",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-10-29T10:44:30Z"
+        "name": "flemozi",
+        "description": "Advanced\u26a1 Emoji Picker\ud83d\ude00 for Linux\ud83d\udc27, Windows\ud83e\ude9f and macOS\ud83c\udf4e",
+        "url": "https://github.com/KRTirtho/flemozi",
+        "stars": 327,
+        "forks": 17,
+        "language": "Rust",
+        "topics": [
+          "characters",
+          "emoji-picker",
+          "flutter",
+          "gif",
+          "keyboard"
+        ],
+        "pushed_at": "2026-07-01T12:55:10Z"
       },
       {
-        "name": "imran-site",
-        "description": "",
-        "url": "https://github.com/mosimran/imran-site",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-09-09T23:24:09Z"
+        "name": "wives",
+        "description": "A beautiful, modern & feature-rich Terminal Emulator",
+        "url": "https://github.com/workhog-app/wives",
+        "stars": 165,
+        "forks": 12,
+        "language": "Dart",
+        "topics": [
+          "flutter",
+          "terminal",
+          "windows",
+          "linux",
+          "macos"
+        ],
+        "pushed_at": "2023-07-07T16:40:08Z"
       },
       {
-        "name": "recritement_dev",
-        "description": "",
-        "url": "https://github.com/betopia-corp/recritement_dev",
-        "stars": 0,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-08-24T10:15:07Z"
+        "name": "spotube-plugin-musicbrainz-listenbrainz",
+        "description": "Spotube metadata provider plugin for Musicbrainz and Listenbrainz",
+        "url": "https://github.com/KRTirtho/spotube-plugin-musicbrainz-listenbrainz",
+        "stars": 145,
+        "forks": 67,
+        "language": "Dart",
+        "topics": [
+          "spotube",
+          "spotube-plugin",
+          "spotube-metadata-plugin"
+        ],
+        "pushed_at": "2025-11-14T10:32:26Z"
       },
       {
-        "name": "mevrik-laravel-assessment",
-        "description": "",
-        "url": "https://github.com/murad0cs/mevrik-laravel-assessment",
-        "stars": 0,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2025-10-28T06:38:45Z"
+        "name": "spotube-plugin-youtube-audio",
+        "description": "YouTube audio source plugin for Spotube",
+        "url": "https://github.com/KRTirtho/spotube-plugin-youtube-audio",
+        "stars": 112,
+        "forks": 42,
+        "language": "C++",
+        "topics": [
+          "spotube",
+          "spotube-plugin",
+          "spotube-audio-source-plugin"
+        ],
+        "pushed_at": "2025-12-09T18:06:31Z"
       },
       {
-        "name": "feat-tracking-example",
-        "description": "A comprehensive Next.js feature tracking library with journey-based analytics, supporting Mixpanel, Firebase, Segment, and BigQuery integrations. Built for measuring the 20% of features that drive 80% of business value.",
-        "url": "https://github.com/johnefemer/feat-tracking-example",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
+        "name": "fl-query",
+        "description": "Asynchronous data fetching & data invalidation libraries for Flutter",
+        "url": "https://github.com/KRTirtho/fl-query",
+        "stars": 68,
+        "forks": 12,
+        "language": "Dart",
         "topics": [],
-        "pushed_at": "2025-09-30T21:44:37Z"
+        "pushed_at": "2026-01-31T23:11:55Z"
       },
       {
-        "name": "nawha-portfolio",
-        "description": "",
-        "url": "https://github.com/johnefemer/nawha-portfolio",
-        "stars": 0,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2023-12-01T11:57:02Z"
+        "name": "platform_ui",
+        "description": "Flutter platform specific Widgets and abstractions",
+        "url": "https://github.com/KRTirtho/platform_ui",
+        "stars": 53,
+        "forks": 5,
+        "language": "Dart",
+        "topics": [
+          "android",
+          "dart",
+          "flutter",
+          "ios",
+          "linux"
+        ],
+        "pushed_at": "2023-05-24T13:27:21Z"
       },
       {
-        "name": "docs",
-        "description": "",
-        "url": "https://github.com/johnefemer/docs",
-        "stars": 0,
-        "forks": 0,
-        "language": "MDX",
-        "topics": [],
-        "pushed_at": "2023-11-07T14:37:14Z"
+        "name": "spotube-plugin-dab-music",
+        "description": "DAB Music (HiFi, upto 24-bit 96kHZ) audio source plugin for Spotube",
+        "url": "https://github.com/KRTirtho/spotube-plugin-dab-music",
+        "stars": 42,
+        "forks": 14,
+        "language": "C++",
+        "topics": [
+          "spotube",
+          "spotube-plugin",
+          "spotube-audio-source-plugin"
+        ],
+        "pushed_at": "2025-11-14T07:11:48Z"
       },
       {
-        "name": "gpt-feedback",
-        "description": "",
-        "url": "https://github.com/johnefemer/gpt-feedback",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2023-07-20T18:43:27Z"
+        "name": "metadata_god",
+        "description": "Audio file Metadata reading and writing library for Flutter",
+        "url": "https://github.com/KRTirtho/metadata_god",
+        "stars": 25,
+        "forks": 12,
+        "language": "Dart",
+        "topics": [
+          "audio",
+          "flac",
+          "id3",
+          "ogg-tags",
+          "m4a"
+        ],
+        "pushed_at": "2025-08-16T06:30:03Z"
       },
       {
-        "name": "cf-image-resize-worker",
-        "description": "Cloudflare worker script to resize image",
-        "url": "https://github.com/johnefemer/cf-image-resize-worker",
-        "stars": 0,
+        "name": "wallywiz",
+        "description": "A Random Wallpaper shuffler application",
+        "url": "https://github.com/KRTirtho/wallywiz",
+        "stars": 25,
         "forks": 0,
-        "language": "JavaScript",
+        "language": "Dart",
         "topics": [],
-        "pushed_at": "2022-08-19T19:15:32Z"
+        "pushed_at": "2023-10-30T15:59:24Z"
       }
     ],
-    "top_language": "MDX",
+    "top_language": "Kotlin",
     "all_languages": [
-      "MDX",
-      "Python",
-      "JavaScript",
-      "TypeScript",
-      "HTML",
-      "PHP"
+      "Kotlin",
+      "C++",
+      "Dart",
+      "Rust"
     ],
-    "contributions_last_90d": 16093,
-    "prs_last_90d": 87,
-    "issues_last_90d": 279,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 364,
-    "enriched_at": "2026-10-30T04:14:15.927410+00:00",
-    "activity_score": 10.35
+    "contributions_last_90d": 1007,
+    "prs_last_90d": 31,
+    "issues_last_90d": 1,
+    "reviews_last_90d": 4,
+    "commits_last_90d": 482,
+    "enriched_at": "2026-11-04T04:43:28.806776+00:00",
+    "activity_score": 10.37
   },
   {
     "github_username": "devSahinur",
@@ -4803,176 +4975,147 @@
     "activity_score": 10.35
   },
   {
-    "github_username": "KRTirtho",
-    "name": "Kingkor Roy Tirtho",
-    "profile_url": "https://github.com/KRTirtho",
+    "github_username": "thesabbir",
+    "name": "Sabbir Ahmed",
+    "profile_url": "https://github.com/thesabbir",
     "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/61944859?u=6f88948d6a9ec474bf9bf358f23975052e6d5514&v=4",
-    "bio": "",
-    "company": "Maxint Inc. (@maxint-app)",
-    "website_url": "krtirtho.dev",
-    "followers": 2115,
-    "following": 36,
-    "public_repos": 94,
-    "total_stars": 51433,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5576949?u=bd0a411a86e0f4ce4ed9afa25c6b1338431dd2bf&v=4",
+    "bio": "Ledger Goblin. Ex: Webaholic.",
+    "company": "Entrepreneur",
+    "website_url": "",
+    "followers": 262,
+    "following": 124,
+    "public_repos": 68,
+    "total_stars": 1995,
     "top_repos": [
       {
-        "name": "spotube",
-        "description": "\ud83c\udfa7 Open source music streaming app! Available for both desktop & mobile!",
-        "url": "https://github.com/team-spotube/spotube",
-        "stars": 50470,
-        "forks": 2369,
-        "language": "Kotlin",
+        "name": "simple-line-icons",
+        "description": "Simple and Minimal Line Icons",
+        "url": "https://github.com/thesabbir/simple-line-icons",
+        "stars": 1858,
+        "forks": 817,
+        "language": "CSS",
         "topics": [
-          "youtube",
-          "desktop-client",
-          "music-player",
-          "music",
-          "flutter"
+          "icons",
+          "line",
+          "icons-pack",
+          "font",
+          "css"
         ],
-        "pushed_at": "2026-10-29T11:36:52Z"
+        "pushed_at": "2026-05-11T10:36:17Z"
       },
       {
-        "name": "flemozi",
-        "description": "Advanced\u26a1 Emoji Picker\ud83d\ude00 for Linux\ud83d\udc27, Windows\ud83e\ude9f and macOS\ud83c\udf4e",
-        "url": "https://github.com/KRTirtho/flemozi",
-        "stars": 327,
-        "forks": 17,
-        "language": "Rust",
-        "topics": [
-          "characters",
-          "emoji-picker",
-          "flutter",
-          "gif",
-          "keyboard"
-        ],
-        "pushed_at": "2026-07-01T12:55:10Z"
-      },
-      {
-        "name": "wives",
-        "description": "A beautiful, modern & feature-rich Terminal Emulator",
-        "url": "https://github.com/workhog-app/wives",
-        "stars": 165,
-        "forks": 12,
-        "language": "Dart",
-        "topics": [
-          "flutter",
-          "terminal",
-          "windows",
-          "linux",
-          "macos"
-        ],
-        "pushed_at": "2023-07-07T16:40:08Z"
-      },
-      {
-        "name": "spotube-plugin-musicbrainz-listenbrainz",
-        "description": "Spotube metadata provider plugin for Musicbrainz and Listenbrainz",
-        "url": "https://github.com/KRTirtho/spotube-plugin-musicbrainz-listenbrainz",
-        "stars": 145,
-        "forks": 66,
-        "language": "Dart",
-        "topics": [
-          "spotube",
-          "spotube-plugin",
-          "spotube-metadata-plugin"
-        ],
-        "pushed_at": "2025-11-14T10:32:26Z"
-      },
-      {
-        "name": "spotube-plugin-youtube-audio",
-        "description": "YouTube audio source plugin for Spotube",
-        "url": "https://github.com/KRTirtho/spotube-plugin-youtube-audio",
-        "stars": 113,
-        "forks": 42,
-        "language": "C++",
-        "topics": [
-          "spotube",
-          "spotube-plugin",
-          "spotube-audio-source-plugin"
-        ],
-        "pushed_at": "2025-12-09T18:06:31Z"
-      },
-      {
-        "name": "fl-query",
-        "description": "Asynchronous data fetching & data invalidation libraries for Flutter",
-        "url": "https://github.com/KRTirtho/fl-query",
-        "stars": 68,
-        "forks": 12,
-        "language": "Dart",
-        "topics": [],
-        "pushed_at": "2026-01-31T23:11:55Z"
-      },
-      {
-        "name": "platform_ui",
-        "description": "Flutter platform specific Widgets and abstractions",
-        "url": "https://github.com/KRTirtho/platform_ui",
-        "stars": 53,
-        "forks": 5,
-        "language": "Dart",
-        "topics": [
-          "android",
-          "dart",
-          "flutter",
-          "ios",
-          "linux"
-        ],
-        "pushed_at": "2023-05-24T13:27:21Z"
-      },
-      {
-        "name": "spotube-plugin-dab-music",
-        "description": "DAB Music (HiFi, upto 24-bit 96kHZ) audio source plugin for Spotube",
-        "url": "https://github.com/KRTirtho/spotube-plugin-dab-music",
-        "stars": 42,
-        "forks": 14,
-        "language": "C++",
-        "topics": [
-          "spotube",
-          "spotube-plugin",
-          "spotube-audio-source-plugin"
-        ],
-        "pushed_at": "2025-11-14T07:11:48Z"
-      },
-      {
-        "name": "metadata_god",
-        "description": "Audio file Metadata reading and writing library for Flutter",
-        "url": "https://github.com/KRTirtho/metadata_god",
+        "name": "wrtapi",
+        "description": "OpenWRT administration HTTP api written in go",
+        "url": "https://github.com/thesabbir/wrtapi",
         "stars": 25,
-        "forks": 12,
-        "language": "Dart",
+        "forks": 9,
+        "language": "Go",
         "topics": [
-          "audio",
-          "flac",
-          "id3",
-          "ogg-tags",
-          "m4a"
+          "openwrt",
+          "go",
+          "golang",
+          "rest-api",
+          "ubus"
         ],
-        "pushed_at": "2025-08-16T06:30:03Z"
+        "pushed_at": "2020-01-08T07:01:37Z"
       },
       {
-        "name": "wallywiz",
-        "description": "A Random Wallpaper shuffler application",
-        "url": "https://github.com/KRTirtho/wallywiz",
-        "stars": 25,
+        "name": "node-nginx",
+        "description": "A simple command-line tool to create & manage ngninx proxy/virtualhost configuaration for node.js based app",
+        "url": "https://github.com/thesabbir/node-nginx",
+        "stars": 19,
         "forks": 0,
-        "language": "Dart",
+        "language": "JavaScript",
         "topics": [],
-        "pushed_at": "2023-10-30T15:59:24Z"
+        "pushed_at": "2016-10-04T17:15:58Z"
+      },
+      {
+        "name": "jquery-slim",
+        "description": "Slim version of jquery that excludes ajax, effects and currently deprecated code",
+        "url": "https://github.com/thesabbir/jquery-slim",
+        "stars": 17,
+        "forks": 2,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2016-12-28T05:27:16Z"
+      },
+      {
+        "name": "e2bdict",
+        "description": "English to Bengali dictionary for Linux using GTK3",
+        "url": "https://github.com/thesabbir/e2bdict",
+        "stars": 17,
+        "forks": 3,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2014-10-22T23:26:00Z"
+      },
+      {
+        "name": "carsav",
+        "description": "fun little html5 game",
+        "url": "https://github.com/thesabbir/carsav",
+        "stars": 14,
+        "forks": 4,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2015-12-31T06:47:25Z"
+      },
+      {
+        "name": "aiub-api",
+        "description": "An unofficial JSON API service for http://aiub.edu",
+        "url": "https://github.com/thesabbir/aiub-api",
+        "stars": 14,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2016-12-12T11:57:16Z"
+      },
+      {
+        "name": "get-query",
+        "description": "Get \"get request parameter\" from browser",
+        "url": "https://github.com/thesabbir/get-query",
+        "stars": 13,
+        "forks": 2,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2016-07-20T16:24:26Z"
+      },
+      {
+        "name": "dell-n5110-installer",
+        "description": "DELL N5110 OS X installer (Clover)",
+        "url": "https://github.com/thesabbir/dell-n5110-installer",
+        "stars": 9,
+        "forks": 3,
+        "language": "Shell",
+        "topics": [],
+        "pushed_at": "2015-06-19T01:49:11Z"
+      },
+      {
+        "name": "sql.howtocode.dev",
+        "description": "\u09ac\u09be\u0982\u09b2\u09be\u09df SQL \u099f\u09bf\u0989\u099f\u09cb\u09b0\u09bf\u09df\u09be\u09b2",
+        "url": "https://github.com/howtocode-dev/sql.howtocode.dev",
+        "stars": 9,
+        "forks": 11,
+        "language": "CSS",
+        "topics": [],
+        "pushed_at": "2020-07-07T04:08:43Z"
       }
     ],
-    "top_language": "Kotlin",
+    "top_language": "CSS",
     "all_languages": [
-      "Kotlin",
-      "Rust",
-      "Dart",
-      "C++"
+      "CSS",
+      "JavaScript",
+      "Python",
+      "Go",
+      "Shell"
     ],
-    "contributions_last_90d": 979,
-    "prs_last_90d": 23,
-    "issues_last_90d": 1,
-    "reviews_last_90d": 3,
-    "commits_last_90d": 459,
-    "enriched_at": "2026-10-30T04:14:15.927410+00:00",
-    "activity_score": 10.27
+    "contributions_last_90d": 14233,
+    "prs_last_90d": 4,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 13,
+    "enriched_at": "2026-11-04T04:43:28.806776+00:00",
+    "activity_score": 9.86
   },
   {
     "github_username": "cyantarek",
@@ -5105,151 +5248,8 @@
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 0,
-    "enriched_at": "2026-10-30T04:14:15.927410+00:00",
+    "enriched_at": "2026-11-04T04:43:28.806776+00:00",
     "activity_score": 9.84
-  },
-  {
-    "github_username": "thesabbir",
-    "name": "Sabbir Ahmed",
-    "profile_url": "https://github.com/thesabbir",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/5576949?u=bd0a411a86e0f4ce4ed9afa25c6b1338431dd2bf&v=4",
-    "bio": "Ledger Goblin. Ex: Webaholic.",
-    "company": "Entrepreneur",
-    "website_url": "",
-    "followers": 263,
-    "following": 124,
-    "public_repos": 67,
-    "total_stars": 1996,
-    "top_repos": [
-      {
-        "name": "simple-line-icons",
-        "description": "Simple and Minimal Line Icons",
-        "url": "https://github.com/thesabbir/simple-line-icons",
-        "stars": 1859,
-        "forks": 817,
-        "language": "CSS",
-        "topics": [
-          "icons",
-          "line",
-          "icons-pack",
-          "font",
-          "css"
-        ],
-        "pushed_at": "2026-05-11T10:36:17Z"
-      },
-      {
-        "name": "wrtapi",
-        "description": "OpenWRT administration HTTP api written in go",
-        "url": "https://github.com/thesabbir/wrtapi",
-        "stars": 25,
-        "forks": 9,
-        "language": "Go",
-        "topics": [
-          "openwrt",
-          "go",
-          "golang",
-          "rest-api",
-          "ubus"
-        ],
-        "pushed_at": "2020-01-08T07:01:37Z"
-      },
-      {
-        "name": "node-nginx",
-        "description": "A simple command-line tool to create & manage ngninx proxy/virtualhost configuaration for node.js based app",
-        "url": "https://github.com/thesabbir/node-nginx",
-        "stars": 19,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2016-10-04T17:15:58Z"
-      },
-      {
-        "name": "jquery-slim",
-        "description": "Slim version of jquery that excludes ajax, effects and currently deprecated code",
-        "url": "https://github.com/thesabbir/jquery-slim",
-        "stars": 17,
-        "forks": 2,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2016-12-28T05:27:16Z"
-      },
-      {
-        "name": "e2bdict",
-        "description": "English to Bengali dictionary for Linux using GTK3",
-        "url": "https://github.com/thesabbir/e2bdict",
-        "stars": 17,
-        "forks": 3,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2014-10-22T23:26:00Z"
-      },
-      {
-        "name": "carsav",
-        "description": "fun little html5 game",
-        "url": "https://github.com/thesabbir/carsav",
-        "stars": 14,
-        "forks": 4,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2015-12-31T06:47:25Z"
-      },
-      {
-        "name": "aiub-api",
-        "description": "An unofficial JSON API service for http://aiub.edu",
-        "url": "https://github.com/thesabbir/aiub-api",
-        "stars": 14,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2016-12-12T11:57:16Z"
-      },
-      {
-        "name": "get-query",
-        "description": "Get \"get request parameter\" from browser",
-        "url": "https://github.com/thesabbir/get-query",
-        "stars": 13,
-        "forks": 2,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2016-07-20T16:24:26Z"
-      },
-      {
-        "name": "dell-n5110-installer",
-        "description": "DELL N5110 OS X installer (Clover)",
-        "url": "https://github.com/thesabbir/dell-n5110-installer",
-        "stars": 9,
-        "forks": 3,
-        "language": "Shell",
-        "topics": [],
-        "pushed_at": "2015-06-19T01:49:11Z"
-      },
-      {
-        "name": "sql.howtocode.dev",
-        "description": "\u09ac\u09be\u0982\u09b2\u09be\u09df SQL \u099f\u09bf\u0989\u099f\u09cb\u09b0\u09bf\u09df\u09be\u09b2",
-        "url": "https://github.com/howtocode-dev/sql.howtocode.dev",
-        "stars": 9,
-        "forks": 11,
-        "language": "CSS",
-        "topics": [],
-        "pushed_at": "2020-07-07T04:08:43Z"
-      }
-    ],
-    "top_language": "Python",
-    "all_languages": [
-      "Python",
-      "CSS",
-      "Shell",
-      "Go",
-      "JavaScript"
-    ],
-    "contributions_last_90d": 13901,
-    "prs_last_90d": 4,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 12,
-    "enriched_at": "2026-10-30T04:14:15.927410+00:00",
-    "activity_score": 9.65
   },
   {
     "github_username": "rupok",
