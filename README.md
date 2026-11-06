@@ -29,11 +29,11 @@
 | 8 | <img src='https://avatars.githubusercontent.com/u/138643922?u=bf24bb7b36df6389386080fcfa034029acbeb9a8&v=4' width='40' height='40'> | [@enayetsyl](https://github.com/enayetsyl) | 17.55 | 9 | 12 | CSS |
 | 9 | <img src='https://avatars.githubusercontent.com/u/490779?u=4f7e21c31a733b927a8774585036c60d607af50c&v=4' width='40' height='40'> | [@hasinhayder](https://github.com/hasinhayder) | 17.07 | 6428 | 4267 | CSS |
 | 10 | <img src='https://avatars.githubusercontent.com/u/22114787?u=7aec009a946fb21fc7b634b4a2ac64e80bc40a30&v=4' width='40' height='40'> | [@santoshakil](https://github.com/santoshakil) | 16.91 | 131 | 118416 | C++ |
-| 11 | <img src='https://avatars.githubusercontent.com/u/4245521?u=35e3217fb2d5c2f16b263d3e6a298dd61995044a&v=4' width='40' height='40'> | [@tareq89](https://github.com/tareq89) | 15.62 | 61 | 79 | HTML |
-| 12 | <img src='https://avatars.githubusercontent.com/u/2099592?u=84b17e52e499cb2b91edfcb4a835f1d07f2beb83&v=4' width='40' height='40'> | [@Asif2BD](https://github.com/Asif2BD) | 14.81 | 95 | 423 | JavaScript |
-| 13 | <img src='https://avatars.githubusercontent.com/u/9308275?u=aa56c0eb40405b379a30ccd64143a89f63204d83&v=4' width='40' height='40'> | [@creativehabib](https://github.com/creativehabib) | 14.77 | 6 | 8 | Blade |
-| 14 | <img src='https://avatars.githubusercontent.com/u/72186095?u=4e74e2ecb35a64899f74e1f46a796263d1137968&v=4' width='40' height='40'> | [@codewithsadee](https://github.com/codewithsadee) | 14.77 | 7075 | 12543 | HTML |
-| 15 | <img src='https://avatars.githubusercontent.com/u/18002761?u=fdb8ecf9ec1eb4dcebee14dbc0d8068bf3d97dc8&v=4' width='40' height='40'> | [@akram02](https://github.com/akram02) | 14.69 | 110 | 86 | JavaScript |
+| 11 | <img src='https://avatars.githubusercontent.com/u/4245521?u=35e3217fb2d5c2f16b263d3e6a298dd61995044a&v=4' width='40' height='40'> | [@tareq89](https://github.com/tareq89) | 15.93 | 62 | 79 | C# |
+| 12 | <img src='https://avatars.githubusercontent.com/u/2099592?u=84b17e52e499cb2b91edfcb4a835f1d07f2beb83&v=4' width='40' height='40'> | [@Asif2BD](https://github.com/Asif2BD) | 14.84 | 95 | 424 | Python |
+| 13 | <img src='https://avatars.githubusercontent.com/u/72186095?u=4e74e2ecb35a64899f74e1f46a796263d1137968&v=4' width='40' height='40'> | [@codewithsadee](https://github.com/codewithsadee) | 14.78 | 7077 | 12547 | HTML |
+| 14 | <img src='https://avatars.githubusercontent.com/u/9308275?u=aa56c0eb40405b379a30ccd64143a89f63204d83&v=4' width='40' height='40'> | [@creativehabib](https://github.com/creativehabib) | 14.77 | 6 | 8 | JavaScript |
+| 15 | <img src='https://avatars.githubusercontent.com/u/18002761?u=fdb8ecf9ec1eb4dcebee14dbc0d8068bf3d97dc8&v=4' width='40' height='40'> | [@akram02](https://github.com/akram02) | 14.72 | 113 | 97 | Ruby |
 | 16 | <img src='https://avatars.githubusercontent.com/u/6212603?u=6dbb158b3066c5efe7c3e2b009899c92d9c1902b&v=4' width='40' height='40'> | [@auvipy](https://github.com/auvipy) | 14.66 | 979 | 53427 | Python |
 | 17 | <img src='https://avatars.githubusercontent.com/u/97046016?u=2d932fb3dc17a5d7f3df615a451f75f428d87d0b&v=4' width='40' height='40'> | [@mdrifat05](https://github.com/mdrifat05) | 14.58 | 10 | 12 | PHP |
 | 18 | <img src='https://avatars.githubusercontent.com/u/22579419?u=63cb546594598def63e08a465f8d306aa66e84fd&v=4' width='40' height='40'> | [@developerjillur](https://github.com/developerjillur) | 14.4 | 191 | 18 | HTML |
@@ -47,13 +47,13 @@
 | 26 | <img src='https://avatars.githubusercontent.com/u/100969574?u=581318dba72d26e1f20dd541b79174d5e0ae74b9&v=4' width='40' height='40'> | [@sabbir-noyon](https://github.com/sabbir-noyon) | 11.28 | 6590 | 211 | PHP |
 | 27 | <img src='https://avatars.githubusercontent.com/u/46926901?u=47cbc7ec010b05210106f1d1b83d945fd6d8bce6&v=4' width='40' height='40'> | [@noruzzamans](https://github.com/noruzzamans) | 11.28 | 36 | 25 | JavaScript |
 | 28 | <img src='https://avatars.githubusercontent.com/u/43861146?u=bfa88567002711a1fdb2154555d7a39ff8cbefb6&v=4' width='40' height='40'> | [@AnwarHossainSR](https://github.com/AnwarHossainSR) | 11.17 | 89 | 205 | JavaScript |
-| 29 | <img src='https://avatars.githubusercontent.com/u/37816541?u=484dd07471b45c4f9d4c7022e0cbd3d8a7cab036&v=4' width='40' height='40'> | [@sadekur](https://github.com/sadekur) | 10.86 | 6 | 32 | CSS |
-| 30 | <img src='https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4' width='40' height='40'> | [@johnefemer](https://github.com/johnefemer) | 10.8 | 57 | 4 | JavaScript |
-| 31 | <img src='https://avatars.githubusercontent.com/u/3125771?u=38b95dcd1ce905f2c8fff553105974c92d26c7ba&v=4' width='40' height='40'> | [@nadimtuhin](https://github.com/nadimtuhin) | 10.67 | 173 | 1182 | JavaScript |
-| 32 | <img src='https://avatars.githubusercontent.com/u/61944859?u=6f88948d6a9ec474bf9bf358f23975052e6d5514&v=4' width='40' height='40'> | [@KRTirtho](https://github.com/KRTirtho) | 10.35 | 2118 | 51536 | Kotlin |
+| 29 | <img src='https://avatars.githubusercontent.com/u/3125771?u=38b95dcd1ce905f2c8fff553105974c92d26c7ba&v=4' width='40' height='40'> | [@nadimtuhin](https://github.com/nadimtuhin) | 11.08 | 174 | 1183 | TypeScript |
+| 30 | <img src='https://avatars.githubusercontent.com/u/37816541?u=484dd07471b45c4f9d4c7022e0cbd3d8a7cab036&v=4' width='40' height='40'> | [@sadekur](https://github.com/sadekur) | 10.86 | 6 | 32 | CSS |
+| 31 | <img src='https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4' width='40' height='40'> | [@johnefemer](https://github.com/johnefemer) | 10.8 | 57 | 4 | JavaScript |
+| 32 | <img src='https://avatars.githubusercontent.com/u/61944859?u=6f88948d6a9ec474bf9bf358f23975052e6d5514&v=4' width='40' height='40'> | [@KRTirtho](https://github.com/KRTirtho) | 10.36 | 2117 | 51583 | C++ |
 | 33 | <img src='https://avatars.githubusercontent.com/u/68515168?u=4c3a3051b43081fd460d30a91b312f7cee14c150&v=4' width='40' height='40'> | [@devSahinur](https://github.com/devSahinur) | 10.35 | 1109 | 83 | TypeScript |
-| 34 | <img src='https://avatars.githubusercontent.com/u/5576949?u=bd0a411a86e0f4ce4ed9afa25c6b1338431dd2bf&v=4' width='40' height='40'> | [@thesabbir](https://github.com/thesabbir) | 9.85 | 262 | 1995 | CSS |
-| 35 | <img src='https://avatars.githubusercontent.com/u/13703461?u=865445bb19fad8624b3a542494d10b0abc8beaed&v=4' width='40' height='40'> | [@cyantarek](https://github.com/cyantarek) | 9.84 | 203 | 197 | JavaScript |
+| 34 | <img src='https://avatars.githubusercontent.com/u/5576949?u=bd0a411a86e0f4ce4ed9afa25c6b1338431dd2bf&v=4' width='40' height='40'> | [@thesabbir](https://github.com/thesabbir) | 9.93 | 262 | 1995 | Shell |
+| 35 | <img src='https://avatars.githubusercontent.com/u/13703461?u=865445bb19fad8624b3a542494d10b0abc8beaed&v=4' width='40' height='40'> | [@cyantarek](https://github.com/cyantarek) | 9.84 | 203 | 197 | Ruby |
 | 36 | <img src='https://avatars.githubusercontent.com/u/3213988?u=055f9cd047f401e479b204df6ac38a40e78691cc&v=4' width='40' height='40'> | [@rupok](https://github.com/rupok) | 9.41 | 96 | 321 | CSS |
 | 37 | <img src='https://avatars.githubusercontent.com/u/66651961?u=77f017c8767dd45d07decc4fc2ae2a7e8aadf787&v=4' width='40' height='40'> | [@hasan1119](https://github.com/hasan1119) | 9.32 | 162 | 23 | JavaScript |
 | 38 | <img src='https://avatars.githubusercontent.com/u/11497423?v=4' width='40' height='40'> | [@imranhsayed](https://github.com/imranhsayed) | 9.21 | 2325 | 4765 | PHP |
@@ -525,7 +525,7 @@
 ## Stats
 
 - Total Developers: 3,673
-- Total Stars: 678,468
+- Total Stars: 678,532
 - Top Community Language: JavaScript
 
 ## How to Add Yourself
@@ -533,4 +533,4 @@
 Please open an [Add Developer Issue](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/issues/new?template=add_developer.yml) and fill in your GitHub username and location. The pipeline will automatically validate and add you to the list!
 
 ---
-*Last updated on 2026-11-05 05:27 UTC*
+*Last updated on 2026-11-06 04:58 UTC*

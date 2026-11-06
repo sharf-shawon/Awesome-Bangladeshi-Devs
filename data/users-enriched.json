@@ -1639,7 +1639,7 @@
     "bio": "",
     "company": "",
     "website_url": "",
-    "followers": 61,
+    "followers": 62,
     "following": 6,
     "public_repos": 46,
     "total_stars": 79,
@@ -1751,21 +1751,21 @@
         "pushed_at": "2026-06-23T10:03:41Z"
       }
     ],
-    "top_language": "HTML",
+    "top_language": "C#",
     "all_languages": [
-      "HTML",
       "C#",
-      "Java",
+      "Vue",
+      "HTML",
       "JavaScript",
-      "Vue"
+      "Java"
     ],
-    "contributions_last_90d": 8757,
-    "prs_last_90d": 714,
-    "issues_last_90d": 2773,
+    "contributions_last_90d": 8995,
+    "prs_last_90d": 723,
+    "issues_last_90d": 2843,
     "reviews_last_90d": 147,
-    "commits_last_90d": 4868,
-    "enriched_at": "2026-11-03T05:13:02.745477+00:00",
-    "activity_score": 15.62
+    "commits_last_90d": 5027,
+    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
+    "activity_score": 15.93
   },
   {
     "github_username": "Asif2BD",
@@ -1779,7 +1779,7 @@
     "followers": 95,
     "following": 3,
     "public_repos": 34,
-    "total_stars": 423,
+    "total_stars": 424,
     "top_repos": [
       {
         "name": "disable-comments",
@@ -1813,14 +1813,14 @@
           "wordpress-plugin",
           "wordpress-development"
         ],
-        "pushed_at": "2026-10-28T11:25:07Z"
+        "pushed_at": "2026-11-05T11:29:15Z"
       },
       {
         "name": "JARVIS-Mission-Control-OpenClaw",
         "description": "",
         "url": "https://github.com/Asif2BD/JARVIS-Mission-Control-OpenClaw",
-        "stars": 41,
-        "forks": 29,
+        "stars": 42,
+        "forks": 30,
         "language": "JavaScript",
         "topics": [],
         "pushed_at": "2026-08-17T23:22:07Z"
@@ -1859,7 +1859,7 @@
         "forks": 11,
         "language": "PHP",
         "topics": [],
-        "pushed_at": "2026-11-02T10:47:41Z"
+        "pushed_at": "2026-11-05T06:49:17Z"
       },
       {
         "name": "xCloud-Docker-Deploy-Skill",
@@ -1903,20 +1903,181 @@
         "pushed_at": "2023-03-06T17:22:44Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "Python",
     "all_languages": [
-      "JavaScript",
       "Python",
-      "PHP",
-      "Dockerfile"
+      "JavaScript",
+      "Dockerfile",
+      "PHP"
     ],
-    "contributions_last_90d": 13142,
+    "contributions_last_90d": 13183,
     "prs_last_90d": 213,
     "issues_last_90d": 4386,
     "reviews_last_90d": 2,
     "commits_last_90d": 597,
-    "enriched_at": "2026-11-03T05:13:02.745477+00:00",
-    "activity_score": 14.81
+    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
+    "activity_score": 14.84
+  },
+  {
+    "github_username": "codewithsadee",
+    "name": "Sadee",
+    "profile_url": "https://github.com/codewithsadee",
+    "location": "Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72186095?u=4e74e2ecb35a64899f74e1f46a796263d1137968&v=4",
+    "bio": "Software Developer",
+    "company": "codewithsadee",
+    "website_url": "",
+    "followers": 7077,
+    "following": 28,
+    "public_repos": 132,
+    "total_stars": 12547,
+    "top_repos": [
+      {
+        "name": "vcard-personal-portfolio",
+        "description": "vCard is a fully responsive personal portfolio website, responsive for all devices.",
+        "url": "https://github.com/codewithsadee/vcard-personal-portfolio",
+        "stars": 8161,
+        "forks": 4485,
+        "language": "HTML",
+        "topics": [
+          "personal-website",
+          "portfolio-website",
+          "css",
+          "css3",
+          "html"
+        ],
+        "pushed_at": "2025-06-12T16:43:59Z"
+      },
+      {
+        "name": "anon-ecommerce-website",
+        "description": "Fully responsive ecommerce website, built using HTML CSS and JavaScript.",
+        "url": "https://github.com/codewithsadee/anon-ecommerce-website",
+        "stars": 1630,
+        "forks": 1101,
+        "language": "HTML",
+        "topics": [
+          "ecommerce-website",
+          "responsive-website"
+        ],
+        "pushed_at": "2024-08-07T14:51:57Z"
+      },
+      {
+        "name": "grilli",
+        "description": "Grilli is a fully responsive restaurant website, Responsive for all devices, build using HTML, CSS, and JavaScript.",
+        "url": "https://github.com/codewithsadee/grilli",
+        "stars": 577,
+        "forks": 311,
+        "language": "HTML",
+        "topics": [
+          "responsive-website",
+          "restaurant-website"
+        ],
+        "pushed_at": "2025-02-15T21:15:27Z"
+      },
+      {
+        "name": "portfolio",
+        "description": "Fully responsive personal portfolio website",
+        "url": "https://github.com/codewithsadee/portfolio",
+        "stars": 465,
+        "forks": 128,
+        "language": "CSS",
+        "topics": [
+          "personal-portfolio",
+          "responsive-website"
+        ],
+        "pushed_at": "2024-04-11T22:24:11Z"
+      },
+      {
+        "name": "homeverse",
+        "description": "Homeverse is fully responsive Real estate website",
+        "url": "https://github.com/codewithsadee/homeverse",
+        "stars": 313,
+        "forks": 150,
+        "language": "HTML",
+        "topics": [
+          "real-estate-website",
+          "responsive-website"
+        ],
+        "pushed_at": "2023-08-31T11:03:56Z"
+      },
+      {
+        "name": "jack-portfolio",
+        "description": "This website is fully responsive personal portfolio",
+        "url": "https://github.com/codewithsadee/jack-portfolio",
+        "stars": 303,
+        "forks": 101,
+        "language": "HTML",
+        "topics": [
+          "personal-portfolio",
+          "responsive-website"
+        ],
+        "pushed_at": "2024-04-14T13:00:42Z"
+      },
+      {
+        "name": "tourly",
+        "description": "Tourly is fully responsive travel website",
+        "url": "https://github.com/codewithsadee/tourly",
+        "stars": 295,
+        "forks": 151,
+        "language": "HTML",
+        "topics": [
+          "responsive-website",
+          "travel-website"
+        ],
+        "pushed_at": "2023-08-31T11:51:02Z"
+      },
+      {
+        "name": "foodie",
+        "description": "Foodie is a fully responsive fast food website.",
+        "url": "https://github.com/codewithsadee/foodie",
+        "stars": 281,
+        "forks": 140,
+        "language": "HTML",
+        "topics": [
+          "responsive-website",
+          "restaurant-website"
+        ],
+        "pushed_at": "2024-07-25T08:58:26Z"
+      },
+      {
+        "name": "filmlane",
+        "description": "Filmlane is a fully responsive movie website page",
+        "url": "https://github.com/codewithsadee/filmlane",
+        "stars": 267,
+        "forks": 134,
+        "language": "HTML",
+        "topics": [
+          "movie-website",
+          "responsive-website"
+        ],
+        "pushed_at": "2023-08-31T11:01:58Z"
+      },
+      {
+        "name": "richard-ryan",
+        "description": "Richard Ryan is a fully responsive portfolio website, Responsive for all devices, build using HTML, CSS, and JavaScript.",
+        "url": "https://github.com/codewithsadee/richard-ryan",
+        "stars": 255,
+        "forks": 64,
+        "language": "HTML",
+        "topics": [
+          "personal-portfolio",
+          "responsive-website"
+        ],
+        "pushed_at": "2023-11-05T22:40:30Z"
+      }
+    ],
+    "top_language": "HTML",
+    "all_languages": [
+      "HTML",
+      "CSS"
+    ],
+    "contributions_last_90d": 355,
+    "prs_last_90d": 0,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 3,
+    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
+    "activity_score": 14.78
   },
   {
     "github_username": "creativehabib",
@@ -2044,179 +2205,18 @@
         "pushed_at": "2026-10-15T18:43:39Z"
       }
     ],
-    "top_language": "Blade",
+    "top_language": "JavaScript",
     "all_languages": [
-      "Blade",
       "JavaScript",
-      "PHP"
+      "PHP",
+      "Blade"
     ],
-    "contributions_last_90d": 5088,
+    "contributions_last_90d": 5090,
     "prs_last_90d": 1275,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
-    "commits_last_90d": 3787,
-    "enriched_at": "2026-11-03T05:13:02.745477+00:00",
-    "activity_score": 14.77
-  },
-  {
-    "github_username": "codewithsadee",
-    "name": "Sadee",
-    "profile_url": "https://github.com/codewithsadee",
-    "location": "Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/72186095?u=4e74e2ecb35a64899f74e1f46a796263d1137968&v=4",
-    "bio": "Software Developer",
-    "company": "codewithsadee",
-    "website_url": "",
-    "followers": 7075,
-    "following": 28,
-    "public_repos": 132,
-    "total_stars": 12543,
-    "top_repos": [
-      {
-        "name": "vcard-personal-portfolio",
-        "description": "vCard is a fully responsive personal portfolio website, responsive for all devices.",
-        "url": "https://github.com/codewithsadee/vcard-personal-portfolio",
-        "stars": 8159,
-        "forks": 4478,
-        "language": "HTML",
-        "topics": [
-          "personal-website",
-          "portfolio-website",
-          "css",
-          "css3",
-          "html"
-        ],
-        "pushed_at": "2025-06-12T16:43:59Z"
-      },
-      {
-        "name": "anon-ecommerce-website",
-        "description": "Fully responsive ecommerce website, built using HTML CSS and JavaScript.",
-        "url": "https://github.com/codewithsadee/anon-ecommerce-website",
-        "stars": 1630,
-        "forks": 1098,
-        "language": "HTML",
-        "topics": [
-          "ecommerce-website",
-          "responsive-website"
-        ],
-        "pushed_at": "2024-08-07T14:51:57Z"
-      },
-      {
-        "name": "grilli",
-        "description": "Grilli is a fully responsive restaurant website, Responsive for all devices, build using HTML, CSS, and JavaScript.",
-        "url": "https://github.com/codewithsadee/grilli",
-        "stars": 575,
-        "forks": 312,
-        "language": "HTML",
-        "topics": [
-          "responsive-website",
-          "restaurant-website"
-        ],
-        "pushed_at": "2025-02-15T21:15:27Z"
-      },
-      {
-        "name": "portfolio",
-        "description": "Fully responsive personal portfolio website",
-        "url": "https://github.com/codewithsadee/portfolio",
-        "stars": 465,
-        "forks": 128,
-        "language": "CSS",
-        "topics": [
-          "personal-portfolio",
-          "responsive-website"
-        ],
-        "pushed_at": "2024-04-11T22:24:11Z"
-      },
-      {
-        "name": "homeverse",
-        "description": "Homeverse is fully responsive Real estate website",
-        "url": "https://github.com/codewithsadee/homeverse",
-        "stars": 313,
-        "forks": 150,
-        "language": "HTML",
-        "topics": [
-          "real-estate-website",
-          "responsive-website"
-        ],
-        "pushed_at": "2023-08-31T11:03:56Z"
-      },
-      {
-        "name": "jack-portfolio",
-        "description": "This website is fully responsive personal portfolio",
-        "url": "https://github.com/codewithsadee/jack-portfolio",
-        "stars": 303,
-        "forks": 101,
-        "language": "HTML",
-        "topics": [
-          "personal-portfolio",
-          "responsive-website"
-        ],
-        "pushed_at": "2024-04-14T13:00:42Z"
-      },
-      {
-        "name": "tourly",
-        "description": "Tourly is fully responsive travel website",
-        "url": "https://github.com/codewithsadee/tourly",
-        "stars": 296,
-        "forks": 151,
-        "language": "HTML",
-        "topics": [
-          "responsive-website",
-          "travel-website"
-        ],
-        "pushed_at": "2023-08-31T11:51:02Z"
-      },
-      {
-        "name": "foodie",
-        "description": "Foodie is a fully responsive fast food website.",
-        "url": "https://github.com/codewithsadee/foodie",
-        "stars": 280,
-        "forks": 140,
-        "language": "HTML",
-        "topics": [
-          "responsive-website",
-          "restaurant-website"
-        ],
-        "pushed_at": "2024-07-25T08:58:26Z"
-      },
-      {
-        "name": "filmlane",
-        "description": "Filmlane is a fully responsive movie website page",
-        "url": "https://github.com/codewithsadee/filmlane",
-        "stars": 267,
-        "forks": 134,
-        "language": "HTML",
-        "topics": [
-          "movie-website",
-          "responsive-website"
-        ],
-        "pushed_at": "2023-08-31T11:01:58Z"
-      },
-      {
-        "name": "richard-ryan",
-        "description": "Richard Ryan is a fully responsive portfolio website, Responsive for all devices, build using HTML, CSS, and JavaScript.",
-        "url": "https://github.com/codewithsadee/richard-ryan",
-        "stars": 255,
-        "forks": 64,
-        "language": "HTML",
-        "topics": [
-          "personal-portfolio",
-          "responsive-website"
-        ],
-        "pushed_at": "2023-11-05T22:40:30Z"
-      }
-    ],
-    "top_language": "HTML",
-    "all_languages": [
-      "HTML",
-      "CSS"
-    ],
-    "contributions_last_90d": 355,
-    "prs_last_90d": 0,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 3,
-    "enriched_at": "2026-11-03T05:13:02.745477+00:00",
+    "commits_last_90d": 3789,
+    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
     "activity_score": 14.77
   },
   {
@@ -2228,17 +2228,17 @@
     "bio": "",
     "company": "SmartIDE",
     "website_url": "",
-    "followers": 110,
+    "followers": 113,
     "following": 71,
     "public_repos": 512,
-    "total_stars": 86,
+    "total_stars": 97,
     "top_repos": [
       {
         "name": "build-your-own-processor",
         "description": "\u09a4\u09cb\u09ae\u09be\u09b0 \u09a8\u09bf\u099c\u09c7\u09b0 \u09aa\u09cd\u09b0\u09b8\u09c7\u09b8\u09b0 \u09ac\u09be\u09a8\u09be\u0993 - \u09b6\u09c2\u09a8\u09cd\u09af \u09a5\u09c7\u0995\u09c7 \u0986\u09b8\u09b2 \u099a\u09bf\u09aa \u09a4\u09c8\u09b0\u09bf \u09aa\u09b0\u09cd\u09af\u09a8\u09cd\u09a4!",
         "url": "https://github.com/akram02/build-your-own-processor",
-        "stars": 57,
-        "forks": 21,
+        "stars": 68,
+        "forks": 26,
         "language": null,
         "topics": [],
         "pushed_at": "2026-06-21T05:26:15Z"
@@ -2248,7 +2248,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/your-first-lab-cb-gh-000",
         "stars": 9,
-        "forks": 2266,
+        "forks": 2264,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-05-20T08:13:06Z"
@@ -2258,7 +2258,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/hello-world-ruby-cb-gh-000",
         "stars": 5,
-        "forks": 1278,
+        "forks": 1277,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2023-05-30T19:02:39Z"
@@ -2324,7 +2324,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/html-album-cover-cb-gh-000",
         "stars": 2,
-        "forks": 205,
+        "forks": 204,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-03-08T06:38:37Z"
@@ -2334,25 +2334,25 @@
         "description": "",
         "url": "https://github.com/learn-co-students/ruby-object-attributes-lab-cb-gh-000",
         "stars": 2,
-        "forks": 190,
+        "forks": 189,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-03-15T17:47:57Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "Ruby",
     "all_languages": [
-      "JavaScript",
       "Ruby",
+      "JavaScript",
       "Java"
     ],
-    "contributions_last_90d": 7854,
+    "contributions_last_90d": 7889,
     "prs_last_90d": 19,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 43,
-    "enriched_at": "2026-11-03T05:13:02.745477+00:00",
-    "activity_score": 14.69
+    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
+    "activity_score": 14.72
   },
   {
     "github_username": "auvipy",
@@ -4186,6 +4186,185 @@
     "activity_score": 11.17
   },
   {
+    "github_username": "nadimtuhin",
+    "name": "Nadim Tuhin (Omar Faruque Tuhin)",
+    "profile_url": "https://github.com/nadimtuhin",
+    "location": "Dhaka",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3125771?u=38b95dcd1ce905f2c8fff553105974c92d26c7ba&v=4",
+    "bio": "Full Stack Tech Lead | I build products and help engineers ship them. TypeScript, Go, Node.js, Python, PostgreSQL. 10+ years.",
+    "company": "",
+    "website_url": "https://nadimtuhin.com",
+    "followers": 174,
+    "following": 68,
+    "public_repos": 142,
+    "total_stars": 1183,
+    "top_repos": [
+      {
+        "name": "claude-token-optimizer",
+        "description": "Cut the tokens Claude Code loads at session start. CLI that sets up a small CLAUDE.md with on-demand docs, measures startup tokens, and keeps them small.",
+        "url": "https://github.com/nadimtuhin/claude-token-optimizer",
+        "stars": 644,
+        "forks": 86,
+        "language": "JavaScript",
+        "topics": [
+          "ai-assistant",
+          "automation",
+          "claude-code",
+          "developer-tools",
+          "documentation"
+        ],
+        "pushed_at": "2026-11-02T06:15:32Z"
+      },
+      {
+        "name": "onepager",
+        "description": "Onepage Theme/Website Builder for WordPress",
+        "url": "https://github.com/themexpert/onepager",
+        "stars": 306,
+        "forks": 98,
+        "language": "PHP",
+        "topics": [
+          "onepage",
+          "wordpress",
+          "react",
+          "reactjs",
+          "pagebuilder"
+        ],
+        "pushed_at": "2021-02-17T21:01:05Z"
+      },
+      {
+        "name": "schema-designer",
+        "description": "Database schema designer for Laravel & Lumen",
+        "url": "https://github.com/Agontuk/schema-designer",
+        "stars": 123,
+        "forks": 52,
+        "language": "JavaScript",
+        "topics": [
+          "database",
+          "schema",
+          "design",
+          "laravel",
+          "lumen"
+        ],
+        "pushed_at": "2023-01-25T23:13:16Z"
+      },
+      {
+        "name": "Facebook-Request-Throttle-WordPress-Plugin",
+        "description": "WordPress plugin that rate-limits Facebook/Meta web crawlers to prevent server overload",
+        "url": "https://github.com/nadimtuhin/Facebook-Request-Throttle-WordPress-Plugin",
+        "stars": 25,
+        "forks": 10,
+        "language": "PHP",
+        "topics": [
+          "crawler",
+          "facebook",
+          "meta",
+          "php",
+          "rate-limiting"
+        ],
+        "pushed_at": "2026-10-14T13:13:16Z"
+      },
+      {
+        "name": "tax-calculator",
+        "description": "Tax calculation utility",
+        "url": "https://github.com/nadimtuhin/tax-calculator",
+        "stars": 20,
+        "forks": 4,
+        "language": "JavaScript",
+        "topics": [
+          "vue",
+          "vuex",
+          "bootstrap",
+          "tax",
+          "bdtax"
+        ],
+        "pushed_at": "2026-11-05T17:25:51Z"
+      },
+      {
+        "name": "redux-vue",
+        "description": "Redux-style state management for Vue.js",
+        "url": "https://github.com/nadimtuhin/redux-vue",
+        "stars": 19,
+        "forks": 9,
+        "language": "JavaScript",
+        "topics": [
+          "vue",
+          "redux",
+          "redux-vue",
+          "vue-redux",
+          "higher-order-component"
+        ],
+        "pushed_at": "2026-10-14T13:13:45Z"
+      },
+      {
+        "name": "devutils",
+        "description": "DevUtils is a collection of essential developer utilities that work entirely in your browser. No data leaves your computer - everything works offline!",
+        "url": "https://github.com/nadimtuhin/devutils",
+        "stars": 14,
+        "forks": 3,
+        "language": "TypeScript",
+        "topics": [
+          "browser-tools",
+          "developer-tools",
+          "devtools",
+          "offline",
+          "privacy"
+        ],
+        "pushed_at": "2026-10-28T04:58:13Z"
+      },
+      {
+        "name": "react-pure-component",
+        "description": "React pure component examples and utilities",
+        "url": "https://github.com/nadimtuhin/react-pure-component",
+        "stars": 13,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [
+          "opensource"
+        ],
+        "pushed_at": "2026-10-14T13:13:37Z"
+      },
+      {
+        "name": "dse-scrapper",
+        "description": "Dhaka Stock Exchange Scrapper",
+        "url": "https://github.com/nadimtuhin/dse-scrapper",
+        "stars": 11,
+        "forks": 4,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2026-10-14T13:13:12Z"
+      },
+      {
+        "name": "ytranscript",
+        "description": "YouTube transcript extractor",
+        "url": "https://github.com/nadimtuhin/ytranscript",
+        "stars": 8,
+        "forks": 1,
+        "language": "TypeScript",
+        "topics": [
+          "bulk-processing",
+          "bun",
+          "cli",
+          "developer-tools",
+          "google-takeout"
+        ],
+        "pushed_at": "2026-10-14T13:13:53Z"
+      }
+    ],
+    "top_language": "TypeScript",
+    "all_languages": [
+      "TypeScript",
+      "JavaScript",
+      "PHP"
+    ],
+    "contributions_last_90d": 12137,
+    "prs_last_90d": 82,
+    "issues_last_90d": 174,
+    "reviews_last_90d": 2,
+    "commits_last_90d": 2102,
+    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
+    "activity_score": 11.08
+  },
+  {
     "github_username": "sadekur",
     "name": "Sadekur Rahman",
     "profile_url": "https://github.com/sadekur",
@@ -4461,185 +4640,6 @@
     "activity_score": 10.8
   },
   {
-    "github_username": "nadimtuhin",
-    "name": "Nadim Tuhin (Omar Faruque Tuhin)",
-    "profile_url": "https://github.com/nadimtuhin",
-    "location": "Dhaka",
-    "avatar_url": "https://avatars.githubusercontent.com/u/3125771?u=38b95dcd1ce905f2c8fff553105974c92d26c7ba&v=4",
-    "bio": "Full Stack Tech Lead | I build products and help engineers ship them. TypeScript, Go, Node.js, Python, PostgreSQL. 10+ years.",
-    "company": "",
-    "website_url": "https://nadimtuhin.com",
-    "followers": 173,
-    "following": 68,
-    "public_repos": 142,
-    "total_stars": 1182,
-    "top_repos": [
-      {
-        "name": "claude-token-optimizer",
-        "description": "Cut the tokens Claude Code loads at session start. CLI that sets up a small CLAUDE.md with on-demand docs, measures startup tokens, and keeps them small.",
-        "url": "https://github.com/nadimtuhin/claude-token-optimizer",
-        "stars": 643,
-        "forks": 85,
-        "language": "JavaScript",
-        "topics": [
-          "ai-assistant",
-          "automation",
-          "claude-code",
-          "developer-tools",
-          "documentation"
-        ],
-        "pushed_at": "2026-11-02T06:15:32Z"
-      },
-      {
-        "name": "onepager",
-        "description": "Onepage Theme/Website Builder for WordPress",
-        "url": "https://github.com/themexpert/onepager",
-        "stars": 306,
-        "forks": 98,
-        "language": "PHP",
-        "topics": [
-          "onepage",
-          "wordpress",
-          "react",
-          "reactjs",
-          "pagebuilder"
-        ],
-        "pushed_at": "2021-02-17T21:01:05Z"
-      },
-      {
-        "name": "schema-designer",
-        "description": "Database schema designer for Laravel & Lumen",
-        "url": "https://github.com/Agontuk/schema-designer",
-        "stars": 123,
-        "forks": 52,
-        "language": "JavaScript",
-        "topics": [
-          "database",
-          "schema",
-          "design",
-          "laravel",
-          "lumen"
-        ],
-        "pushed_at": "2023-01-25T23:13:16Z"
-      },
-      {
-        "name": "Facebook-Request-Throttle-WordPress-Plugin",
-        "description": "WordPress plugin that rate-limits Facebook/Meta web crawlers to prevent server overload",
-        "url": "https://github.com/nadimtuhin/Facebook-Request-Throttle-WordPress-Plugin",
-        "stars": 25,
-        "forks": 10,
-        "language": "PHP",
-        "topics": [
-          "crawler",
-          "facebook",
-          "meta",
-          "php",
-          "rate-limiting"
-        ],
-        "pushed_at": "2026-10-14T13:13:16Z"
-      },
-      {
-        "name": "tax-calculator",
-        "description": "Tax calculation utility",
-        "url": "https://github.com/nadimtuhin/tax-calculator",
-        "stars": 20,
-        "forks": 4,
-        "language": "JavaScript",
-        "topics": [
-          "vue",
-          "vuex",
-          "bootstrap",
-          "tax",
-          "bdtax"
-        ],
-        "pushed_at": "2026-11-01T10:17:11Z"
-      },
-      {
-        "name": "redux-vue",
-        "description": "Redux-style state management for Vue.js",
-        "url": "https://github.com/nadimtuhin/redux-vue",
-        "stars": 19,
-        "forks": 9,
-        "language": "JavaScript",
-        "topics": [
-          "vue",
-          "redux",
-          "redux-vue",
-          "vue-redux",
-          "higher-order-component"
-        ],
-        "pushed_at": "2026-10-14T13:13:45Z"
-      },
-      {
-        "name": "devutils",
-        "description": "DevUtils is a collection of essential developer utilities that work entirely in your browser. No data leaves your computer - everything works offline!",
-        "url": "https://github.com/nadimtuhin/devutils",
-        "stars": 14,
-        "forks": 3,
-        "language": "TypeScript",
-        "topics": [
-          "browser-tools",
-          "developer-tools",
-          "devtools",
-          "offline",
-          "privacy"
-        ],
-        "pushed_at": "2026-10-28T04:58:13Z"
-      },
-      {
-        "name": "react-pure-component",
-        "description": "React pure component examples and utilities",
-        "url": "https://github.com/nadimtuhin/react-pure-component",
-        "stars": 13,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [
-          "opensource"
-        ],
-        "pushed_at": "2026-10-14T13:13:37Z"
-      },
-      {
-        "name": "dse-scrapper",
-        "description": "Dhaka Stock Exchange Scrapper",
-        "url": "https://github.com/nadimtuhin/dse-scrapper",
-        "stars": 11,
-        "forks": 4,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2026-10-14T13:13:12Z"
-      },
-      {
-        "name": "ytranscript",
-        "description": "YouTube transcript extractor",
-        "url": "https://github.com/nadimtuhin/ytranscript",
-        "stars": 8,
-        "forks": 1,
-        "language": "TypeScript",
-        "topics": [
-          "bulk-processing",
-          "bun",
-          "cli",
-          "developer-tools",
-          "google-takeout"
-        ],
-        "pushed_at": "2026-10-14T13:13:53Z"
-      }
-    ],
-    "top_language": "JavaScript",
-    "all_languages": [
-      "JavaScript",
-      "PHP",
-      "TypeScript"
-    ],
-    "contributions_last_90d": 11588,
-    "prs_last_90d": 70,
-    "issues_last_90d": 174,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 2091,
-    "enriched_at": "2026-11-03T05:13:02.745477+00:00",
-    "activity_score": 10.67
-  },
-  {
     "github_username": "KRTirtho",
     "name": "Kingkor Roy Tirtho",
     "profile_url": "https://github.com/KRTirtho",
@@ -4648,17 +4648,17 @@
     "bio": "",
     "company": "Maxint Inc. (@maxint-app)",
     "website_url": "krtirtho.dev",
-    "followers": 2118,
+    "followers": 2117,
     "following": 36,
     "public_repos": 94,
-    "total_stars": 51536,
+    "total_stars": 51583,
     "top_repos": [
       {
         "name": "spotube",
         "description": "\ud83c\udfa7 Open source music streaming app! Available for both desktop & mobile!",
         "url": "https://github.com/team-spotube/spotube",
-        "stars": 50574,
-        "forks": 2384,
+        "stars": 50621,
+        "forks": 2389,
         "language": "Kotlin",
         "topics": [
           "youtube",
@@ -4667,7 +4667,7 @@
           "music",
           "flutter"
         ],
-        "pushed_at": "2026-11-03T14:24:03Z"
+        "pushed_at": "2026-11-06T04:53:52Z"
       },
       {
         "name": "flemozi",
@@ -4796,20 +4796,20 @@
         "pushed_at": "2023-10-30T15:59:24Z"
       }
     ],
-    "top_language": "Kotlin",
+    "top_language": "C++",
     "all_languages": [
-      "Kotlin",
       "C++",
-      "Dart",
-      "Rust"
+      "Rust",
+      "Kotlin",
+      "Dart"
     ],
-    "contributions_last_90d": 1007,
+    "contributions_last_90d": 1008,
     "prs_last_90d": 31,
     "issues_last_90d": 1,
-    "reviews_last_90d": 4,
+    "reviews_last_90d": 5,
     "commits_last_90d": 482,
-    "enriched_at": "2026-11-04T04:43:28.806776+00:00",
-    "activity_score": 10.35
+    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
+    "activity_score": 10.36
   },
   {
     "github_username": "devSahinur",
@@ -5107,21 +5107,21 @@
         "pushed_at": "2020-07-07T04:08:43Z"
       }
     ],
-    "top_language": "CSS",
+    "top_language": "Shell",
     "all_languages": [
-      "CSS",
-      "JavaScript",
-      "Python",
+      "Shell",
       "Go",
-      "Shell"
+      "CSS",
+      "Python",
+      "JavaScript"
     ],
-    "contributions_last_90d": 14233,
+    "contributions_last_90d": 14362,
     "prs_last_90d": 4,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 13,
-    "enriched_at": "2026-11-04T04:43:28.806776+00:00",
-    "activity_score": 9.85
+    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
+    "activity_score": 9.93
   },
   {
     "github_username": "cyantarek",
@@ -5158,7 +5158,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/your-first-lab-cb-gh-000",
         "stars": 9,
-        "forks": 2266,
+        "forks": 2264,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-05-20T08:13:06Z"
@@ -5178,7 +5178,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/hello-world-ruby-cb-gh-000",
         "stars": 5,
-        "forks": 1278,
+        "forks": 1277,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2023-05-30T19:02:39Z"
@@ -5198,7 +5198,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/html-album-cover-cb-gh-000",
         "stars": 2,
-        "forks": 205,
+        "forks": 204,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-03-08T06:38:37Z"
@@ -5208,7 +5208,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/ruby-object-attributes-lab-cb-gh-000",
         "stars": 2,
-        "forks": 190,
+        "forks": 189,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-03-15T17:47:57Z"
@@ -5218,7 +5218,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/ttt-game-status-cb-gh-000",
         "stars": 2,
-        "forks": 229,
+        "forks": 228,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2020-07-07T15:18:04Z"
@@ -5228,7 +5228,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/rspec-fizzbuzz-cb-gh-000",
         "stars": 2,
-        "forks": 316,
+        "forks": 315,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-05-06T11:39:16Z"
@@ -5238,23 +5238,23 @@
         "description": "",
         "url": "https://github.com/learn-co-students/ruby-lecture-reading-error-messages-cb-gh-000",
         "stars": 2,
-        "forks": 1038,
+        "forks": 1037,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-07-31T06:32:43Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "Ruby",
     "all_languages": [
-      "JavaScript",
-      "Ruby"
+      "Ruby",
+      "JavaScript"
     ],
     "contributions_last_90d": 0,
     "prs_last_90d": 0,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 0,
-    "enriched_at": "2026-11-04T04:43:28.806776+00:00",
+    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
     "activity_score": 9.84
   },
   {
