@@ -344,7 +344,7 @@
     "reviews_last_90d": 0,
     "commits_last_90d": 5701,
     "enriched_at": "2026-10-19T03:07:19.626965+00:00",
-    "activity_score": 32.57
+    "activity_score": 32.56
   },
   {
     "github_username": "ahammadmejbah",
@@ -1029,7 +1029,7 @@
     "reviews_last_90d": 43,
     "commits_last_90d": 6111,
     "enriched_at": "2026-11-05T04:58:06.461615+00:00",
-    "activity_score": 22.84
+    "activity_score": 22.82
   },
   {
     "github_username": "audacioustux",
@@ -1751,182 +1751,21 @@
         "pushed_at": "2026-06-23T10:03:41Z"
       }
     ],
-    "top_language": "C#",
+    "top_language": "JavaScript",
     "all_languages": [
-      "C#",
-      "Vue",
-      "HTML",
       "JavaScript",
-      "Java"
+      "Vue",
+      "Java",
+      "C#",
+      "HTML"
     ],
-    "contributions_last_90d": 8995,
-    "prs_last_90d": 723,
-    "issues_last_90d": 2843,
-    "reviews_last_90d": 147,
-    "commits_last_90d": 5027,
-    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
-    "activity_score": 15.68
-  },
-  {
-    "github_username": "codewithsadee",
-    "name": "Sadee",
-    "profile_url": "https://github.com/codewithsadee",
-    "location": "Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/72186095?u=4e74e2ecb35a64899f74e1f46a796263d1137968&v=4",
-    "bio": "Software Developer",
-    "company": "codewithsadee",
-    "website_url": "",
-    "followers": 7077,
-    "following": 28,
-    "public_repos": 132,
-    "total_stars": 12547,
-    "top_repos": [
-      {
-        "name": "vcard-personal-portfolio",
-        "description": "vCard is a fully responsive personal portfolio website, responsive for all devices.",
-        "url": "https://github.com/codewithsadee/vcard-personal-portfolio",
-        "stars": 8161,
-        "forks": 4485,
-        "language": "HTML",
-        "topics": [
-          "personal-website",
-          "portfolio-website",
-          "css",
-          "css3",
-          "html"
-        ],
-        "pushed_at": "2025-06-12T16:43:59Z"
-      },
-      {
-        "name": "anon-ecommerce-website",
-        "description": "Fully responsive ecommerce website, built using HTML CSS and JavaScript.",
-        "url": "https://github.com/codewithsadee/anon-ecommerce-website",
-        "stars": 1630,
-        "forks": 1101,
-        "language": "HTML",
-        "topics": [
-          "ecommerce-website",
-          "responsive-website"
-        ],
-        "pushed_at": "2024-08-07T14:51:57Z"
-      },
-      {
-        "name": "grilli",
-        "description": "Grilli is a fully responsive restaurant website, Responsive for all devices, build using HTML, CSS, and JavaScript.",
-        "url": "https://github.com/codewithsadee/grilli",
-        "stars": 577,
-        "forks": 311,
-        "language": "HTML",
-        "topics": [
-          "responsive-website",
-          "restaurant-website"
-        ],
-        "pushed_at": "2025-02-15T21:15:27Z"
-      },
-      {
-        "name": "portfolio",
-        "description": "Fully responsive personal portfolio website",
-        "url": "https://github.com/codewithsadee/portfolio",
-        "stars": 465,
-        "forks": 128,
-        "language": "CSS",
-        "topics": [
-          "personal-portfolio",
-          "responsive-website"
-        ],
-        "pushed_at": "2024-04-11T22:24:11Z"
-      },
-      {
-        "name": "homeverse",
-        "description": "Homeverse is fully responsive Real estate website",
-        "url": "https://github.com/codewithsadee/homeverse",
-        "stars": 313,
-        "forks": 150,
-        "language": "HTML",
-        "topics": [
-          "real-estate-website",
-          "responsive-website"
-        ],
-        "pushed_at": "2023-08-31T11:03:56Z"
-      },
-      {
-        "name": "jack-portfolio",
-        "description": "This website is fully responsive personal portfolio",
-        "url": "https://github.com/codewithsadee/jack-portfolio",
-        "stars": 303,
-        "forks": 101,
-        "language": "HTML",
-        "topics": [
-          "personal-portfolio",
-          "responsive-website"
-        ],
-        "pushed_at": "2024-04-14T13:00:42Z"
-      },
-      {
-        "name": "tourly",
-        "description": "Tourly is fully responsive travel website",
-        "url": "https://github.com/codewithsadee/tourly",
-        "stars": 295,
-        "forks": 151,
-        "language": "HTML",
-        "topics": [
-          "responsive-website",
-          "travel-website"
-        ],
-        "pushed_at": "2023-08-31T11:51:02Z"
-      },
-      {
-        "name": "foodie",
-        "description": "Foodie is a fully responsive fast food website.",
-        "url": "https://github.com/codewithsadee/foodie",
-        "stars": 281,
-        "forks": 140,
-        "language": "HTML",
-        "topics": [
-          "responsive-website",
-          "restaurant-website"
-        ],
-        "pushed_at": "2024-07-25T08:58:26Z"
-      },
-      {
-        "name": "filmlane",
-        "description": "Filmlane is a fully responsive movie website page",
-        "url": "https://github.com/codewithsadee/filmlane",
-        "stars": 267,
-        "forks": 134,
-        "language": "HTML",
-        "topics": [
-          "movie-website",
-          "responsive-website"
-        ],
-        "pushed_at": "2023-08-31T11:01:58Z"
-      },
-      {
-        "name": "richard-ryan",
-        "description": "Richard Ryan is a fully responsive portfolio website, Responsive for all devices, build using HTML, CSS, and JavaScript.",
-        "url": "https://github.com/codewithsadee/richard-ryan",
-        "stars": 255,
-        "forks": 64,
-        "language": "HTML",
-        "topics": [
-          "personal-portfolio",
-          "responsive-website"
-        ],
-        "pushed_at": "2023-11-05T22:40:30Z"
-      }
-    ],
-    "top_language": "HTML",
-    "all_languages": [
-      "HTML",
-      "CSS"
-    ],
-    "contributions_last_90d": 355,
-    "prs_last_90d": 0,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 3,
-    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
-    "activity_score": 14.77
+    "contributions_last_90d": 9208,
+    "prs_last_90d": 746,
+    "issues_last_90d": 2942,
+    "reviews_last_90d": 149,
+    "commits_last_90d": 5114,
+    "enriched_at": "2026-11-08T04:15:48.825363+00:00",
+    "activity_score": 15.94
   },
   {
     "github_username": "Asif2BD",
@@ -1974,7 +1813,7 @@
           "wordpress-plugin",
           "wordpress-development"
         ],
-        "pushed_at": "2026-11-05T11:29:15Z"
+        "pushed_at": "2026-11-07T10:08:05Z"
       },
       {
         "name": "JARVIS-Mission-Control-OpenClaw",
@@ -2064,20 +1903,181 @@
         "pushed_at": "2023-03-06T17:22:44Z"
       }
     ],
-    "top_language": "Python",
+    "top_language": "PHP",
     "all_languages": [
+      "PHP",
       "Python",
-      "JavaScript",
       "Dockerfile",
-      "PHP"
+      "JavaScript"
     ],
-    "contributions_last_90d": 13183,
-    "prs_last_90d": 213,
-    "issues_last_90d": 4386,
+    "contributions_last_90d": 13508,
+    "prs_last_90d": 214,
+    "issues_last_90d": 4590,
     "reviews_last_90d": 2,
-    "commits_last_90d": 597,
-    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
-    "activity_score": 14.76
+    "commits_last_90d": 598,
+    "enriched_at": "2026-11-08T04:15:48.825363+00:00",
+    "activity_score": 14.95
+  },
+  {
+    "github_username": "codewithsadee",
+    "name": "Sadee",
+    "profile_url": "https://github.com/codewithsadee",
+    "location": "Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72186095?u=4e74e2ecb35a64899f74e1f46a796263d1137968&v=4",
+    "bio": "Software Developer",
+    "company": "codewithsadee",
+    "website_url": "",
+    "followers": 7075,
+    "following": 28,
+    "public_repos": 132,
+    "total_stars": 12549,
+    "top_repos": [
+      {
+        "name": "vcard-personal-portfolio",
+        "description": "vCard is a fully responsive personal portfolio website, responsive for all devices.",
+        "url": "https://github.com/codewithsadee/vcard-personal-portfolio",
+        "stars": 8161,
+        "forks": 4488,
+        "language": "HTML",
+        "topics": [
+          "personal-website",
+          "portfolio-website",
+          "css",
+          "css3",
+          "html"
+        ],
+        "pushed_at": "2025-06-12T16:43:59Z"
+      },
+      {
+        "name": "anon-ecommerce-website",
+        "description": "Fully responsive ecommerce website, built using HTML CSS and JavaScript.",
+        "url": "https://github.com/codewithsadee/anon-ecommerce-website",
+        "stars": 1630,
+        "forks": 1103,
+        "language": "HTML",
+        "topics": [
+          "ecommerce-website",
+          "responsive-website"
+        ],
+        "pushed_at": "2024-08-07T14:51:57Z"
+      },
+      {
+        "name": "grilli",
+        "description": "Grilli is a fully responsive restaurant website, Responsive for all devices, build using HTML, CSS, and JavaScript.",
+        "url": "https://github.com/codewithsadee/grilli",
+        "stars": 578,
+        "forks": 311,
+        "language": "HTML",
+        "topics": [
+          "responsive-website",
+          "restaurant-website"
+        ],
+        "pushed_at": "2025-02-15T21:15:27Z"
+      },
+      {
+        "name": "portfolio",
+        "description": "Fully responsive personal portfolio website",
+        "url": "https://github.com/codewithsadee/portfolio",
+        "stars": 465,
+        "forks": 128,
+        "language": "CSS",
+        "topics": [
+          "personal-portfolio",
+          "responsive-website"
+        ],
+        "pushed_at": "2024-04-11T22:24:11Z"
+      },
+      {
+        "name": "homeverse",
+        "description": "Homeverse is fully responsive Real estate website",
+        "url": "https://github.com/codewithsadee/homeverse",
+        "stars": 313,
+        "forks": 150,
+        "language": "HTML",
+        "topics": [
+          "real-estate-website",
+          "responsive-website"
+        ],
+        "pushed_at": "2023-08-31T11:03:56Z"
+      },
+      {
+        "name": "jack-portfolio",
+        "description": "This website is fully responsive personal portfolio",
+        "url": "https://github.com/codewithsadee/jack-portfolio",
+        "stars": 303,
+        "forks": 101,
+        "language": "HTML",
+        "topics": [
+          "personal-portfolio",
+          "responsive-website"
+        ],
+        "pushed_at": "2024-04-14T13:00:42Z"
+      },
+      {
+        "name": "tourly",
+        "description": "Tourly is fully responsive travel website",
+        "url": "https://github.com/codewithsadee/tourly",
+        "stars": 295,
+        "forks": 151,
+        "language": "HTML",
+        "topics": [
+          "responsive-website",
+          "travel-website"
+        ],
+        "pushed_at": "2023-08-31T11:51:02Z"
+      },
+      {
+        "name": "foodie",
+        "description": "Foodie is a fully responsive fast food website.",
+        "url": "https://github.com/codewithsadee/foodie",
+        "stars": 282,
+        "forks": 141,
+        "language": "HTML",
+        "topics": [
+          "responsive-website",
+          "restaurant-website"
+        ],
+        "pushed_at": "2024-07-25T08:58:26Z"
+      },
+      {
+        "name": "filmlane",
+        "description": "Filmlane is a fully responsive movie website page",
+        "url": "https://github.com/codewithsadee/filmlane",
+        "stars": 267,
+        "forks": 134,
+        "language": "HTML",
+        "topics": [
+          "movie-website",
+          "responsive-website"
+        ],
+        "pushed_at": "2023-08-31T11:01:58Z"
+      },
+      {
+        "name": "richard-ryan",
+        "description": "Richard Ryan is a fully responsive portfolio website, Responsive for all devices, build using HTML, CSS, and JavaScript.",
+        "url": "https://github.com/codewithsadee/richard-ryan",
+        "stars": 255,
+        "forks": 64,
+        "language": "HTML",
+        "topics": [
+          "personal-portfolio",
+          "responsive-website"
+        ],
+        "pushed_at": "2023-11-05T22:40:30Z"
+      }
+    ],
+    "top_language": "HTML",
+    "all_languages": [
+      "HTML",
+      "CSS"
+    ],
+    "contributions_last_90d": 355,
+    "prs_last_90d": 0,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 3,
+    "enriched_at": "2026-11-08T04:15:48.825363+00:00",
+    "activity_score": 14.77
   },
   {
     "github_username": "akram02",
@@ -2091,14 +2091,14 @@
     "followers": 113,
     "following": 71,
     "public_repos": 512,
-    "total_stars": 97,
+    "total_stars": 109,
     "top_repos": [
       {
         "name": "build-your-own-processor",
         "description": "\u09a4\u09cb\u09ae\u09be\u09b0 \u09a8\u09bf\u099c\u09c7\u09b0 \u09aa\u09cd\u09b0\u09b8\u09c7\u09b8\u09b0 \u09ac\u09be\u09a8\u09be\u0993 - \u09b6\u09c2\u09a8\u09cd\u09af \u09a5\u09c7\u0995\u09c7 \u0986\u09b8\u09b2 \u099a\u09bf\u09aa \u09a4\u09c8\u09b0\u09bf \u09aa\u09b0\u09cd\u09af\u09a8\u09cd\u09a4!",
         "url": "https://github.com/akram02/build-your-own-processor",
-        "stars": 68,
-        "forks": 26,
+        "stars": 80,
+        "forks": 30,
         "language": null,
         "topics": [],
         "pushed_at": "2026-06-21T05:26:15Z"
@@ -2200,19 +2200,19 @@
         "pushed_at": "2021-03-15T17:47:57Z"
       }
     ],
-    "top_language": "Ruby",
+    "top_language": "JavaScript",
     "all_languages": [
-      "Ruby",
       "JavaScript",
-      "Java"
+      "Java",
+      "Ruby"
     ],
-    "contributions_last_90d": 7889,
+    "contributions_last_90d": 7925,
     "prs_last_90d": 19,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 43,
-    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
-    "activity_score": 14.71
+    "enriched_at": "2026-11-08T04:15:48.825363+00:00",
+    "activity_score": 14.73
   },
   {
     "github_username": "auvipy",
@@ -2763,18 +2763,18 @@
         "pushed_at": "2026-10-15T18:43:39Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "PHP",
     "all_languages": [
-      "JavaScript",
       "PHP",
-      "Blade"
+      "Blade",
+      "JavaScript"
     ],
     "contributions_last_90d": 5090,
     "prs_last_90d": 1275,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 3789,
-    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
+    "enriched_at": "2026-11-08T04:15:48.825363+00:00",
     "activity_score": 14.33
   },
   {
@@ -3216,7 +3216,7 @@
     "reviews_last_90d": 0,
     "commits_last_90d": 1940,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 13.44
+    "activity_score": 13.43
   },
   {
     "github_username": "jobayer977",
@@ -4029,7 +4029,7 @@
     "reviews_last_90d": 181,
     "commits_last_90d": 3283,
     "enriched_at": "2026-11-05T04:58:06.461615+00:00",
-    "activity_score": 11.1
+    "activity_score": 11.08
   },
   {
     "github_username": "AnwarHossainSR",
@@ -4362,7 +4362,139 @@
     "reviews_last_90d": 2,
     "commits_last_90d": 2102,
     "enriched_at": "2026-11-06T04:57:42.247707+00:00",
-    "activity_score": 11.05
+    "activity_score": 11.04
+  },
+  {
+    "github_username": "johnefemer",
+    "name": "John Efemer",
+    "profile_url": "https://github.com/johnefemer",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4",
+    "bio": "",
+    "company": "@mevriklabs ",
+    "website_url": "https://johnefemer.com",
+    "followers": 58,
+    "following": 207,
+    "public_repos": 14,
+    "total_stars": 4,
+    "top_repos": [
+      {
+        "name": "skillfish",
+        "description": "Multi-skill repository for AI coding agents",
+        "url": "https://github.com/johnefemer/skillfish",
+        "stars": 4,
+        "forks": 3,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-11-02T10:45:17Z"
+      },
+      {
+        "name": "business-brain-web",
+        "description": "",
+        "url": "https://github.com/business-brain-24/business-brain-web",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-11-06T09:32:42Z"
+      },
+      {
+        "name": "imran-site",
+        "description": "",
+        "url": "https://github.com/mosimran/imran-site",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-09-09T23:24:09Z"
+      },
+      {
+        "name": "recritement_dev",
+        "description": "",
+        "url": "https://github.com/betopia-corp/recritement_dev",
+        "stars": 0,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-08-24T10:15:07Z"
+      },
+      {
+        "name": "mevrik-laravel-assessment",
+        "description": "",
+        "url": "https://github.com/murad0cs/mevrik-laravel-assessment",
+        "stars": 0,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2025-10-28T06:38:45Z"
+      },
+      {
+        "name": "feat-tracking-example",
+        "description": "A comprehensive Next.js feature tracking library with journey-based analytics, supporting Mixpanel, Firebase, Segment, and BigQuery integrations. Built for measuring the 20% of features that drive 80% of business value.",
+        "url": "https://github.com/johnefemer/feat-tracking-example",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2025-09-30T21:44:37Z"
+      },
+      {
+        "name": "nawha-portfolio",
+        "description": "",
+        "url": "https://github.com/johnefemer/nawha-portfolio",
+        "stars": 0,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2023-12-01T11:57:02Z"
+      },
+      {
+        "name": "docs",
+        "description": "",
+        "url": "https://github.com/johnefemer/docs",
+        "stars": 0,
+        "forks": 0,
+        "language": "MDX",
+        "topics": [],
+        "pushed_at": "2023-11-07T14:37:14Z"
+      },
+      {
+        "name": "gpt-feedback",
+        "description": "",
+        "url": "https://github.com/johnefemer/gpt-feedback",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2023-07-20T18:43:27Z"
+      },
+      {
+        "name": "cf-image-resize-worker",
+        "description": "Cloudflare worker script to resize image",
+        "url": "https://github.com/johnefemer/cf-image-resize-worker",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2022-08-19T19:15:32Z"
+      }
+    ],
+    "top_language": "MDX",
+    "all_languages": [
+      "MDX",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "PHP",
+      "HTML"
+    ],
+    "contributions_last_90d": 17039,
+    "prs_last_90d": 95,
+    "issues_last_90d": 279,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 380,
+    "enriched_at": "2026-11-08T04:15:48.825363+00:00",
+    "activity_score": 10.87
   },
   {
     "github_username": "sadekur",
@@ -4506,138 +4638,6 @@
     "commits_last_90d": 7546,
     "enriched_at": "2026-11-05T04:58:06.461615+00:00",
     "activity_score": 10.85
-  },
-  {
-    "github_username": "johnefemer",
-    "name": "John Efemer",
-    "profile_url": "https://github.com/johnefemer",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4",
-    "bio": "",
-    "company": "@mevriklabs ",
-    "website_url": "https://johnefemer.com",
-    "followers": 57,
-    "following": 207,
-    "public_repos": 14,
-    "total_stars": 4,
-    "top_repos": [
-      {
-        "name": "skillfish",
-        "description": "Multi-skill repository for AI coding agents",
-        "url": "https://github.com/johnefemer/skillfish",
-        "stars": 4,
-        "forks": 3,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-11-02T10:45:17Z"
-      },
-      {
-        "name": "business-brain-web",
-        "description": "",
-        "url": "https://github.com/business-brain-24/business-brain-web",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-11-04T23:58:42Z"
-      },
-      {
-        "name": "imran-site",
-        "description": "",
-        "url": "https://github.com/mosimran/imran-site",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-09-09T23:24:09Z"
-      },
-      {
-        "name": "recritement_dev",
-        "description": "",
-        "url": "https://github.com/betopia-corp/recritement_dev",
-        "stars": 0,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-08-24T10:15:07Z"
-      },
-      {
-        "name": "mevrik-laravel-assessment",
-        "description": "",
-        "url": "https://github.com/murad0cs/mevrik-laravel-assessment",
-        "stars": 0,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2025-10-28T06:38:45Z"
-      },
-      {
-        "name": "feat-tracking-example",
-        "description": "A comprehensive Next.js feature tracking library with journey-based analytics, supporting Mixpanel, Firebase, Segment, and BigQuery integrations. Built for measuring the 20% of features that drive 80% of business value.",
-        "url": "https://github.com/johnefemer/feat-tracking-example",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2025-09-30T21:44:37Z"
-      },
-      {
-        "name": "nawha-portfolio",
-        "description": "",
-        "url": "https://github.com/johnefemer/nawha-portfolio",
-        "stars": 0,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2023-12-01T11:57:02Z"
-      },
-      {
-        "name": "docs",
-        "description": "",
-        "url": "https://github.com/johnefemer/docs",
-        "stars": 0,
-        "forks": 0,
-        "language": "MDX",
-        "topics": [],
-        "pushed_at": "2023-11-07T14:37:14Z"
-      },
-      {
-        "name": "gpt-feedback",
-        "description": "",
-        "url": "https://github.com/johnefemer/gpt-feedback",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2023-07-20T18:43:27Z"
-      },
-      {
-        "name": "cf-image-resize-worker",
-        "description": "Cloudflare worker script to resize image",
-        "url": "https://github.com/johnefemer/cf-image-resize-worker",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2022-08-19T19:15:32Z"
-      }
-    ],
-    "top_language": "JavaScript",
-    "all_languages": [
-      "JavaScript",
-      "PHP",
-      "MDX",
-      "HTML",
-      "Python",
-      "TypeScript"
-    ],
-    "contributions_last_90d": 16873,
-    "prs_last_90d": 91,
-    "issues_last_90d": 279,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 371,
-    "enriched_at": "2026-11-05T04:58:06.461615+00:00",
-    "activity_score": 10.76
   },
   {
     "github_username": "devSahinur",
@@ -4817,17 +4817,17 @@
     "bio": "",
     "company": "Maxint Inc. (@maxint-app)",
     "website_url": "krtirtho.dev",
-    "followers": 2117,
+    "followers": 2115,
     "following": 36,
     "public_repos": 94,
-    "total_stars": 51583,
+    "total_stars": 51622,
     "top_repos": [
       {
         "name": "spotube",
         "description": "\ud83c\udfa7 Open source music streaming app! Available for both desktop & mobile!",
         "url": "https://github.com/team-spotube/spotube",
-        "stars": 50621,
-        "forks": 2389,
+        "stars": 50660,
+        "forks": 2386,
         "language": "Kotlin",
         "topics": [
           "youtube",
@@ -4836,7 +4836,7 @@
           "music",
           "flutter"
         ],
-        "pushed_at": "2026-11-06T04:53:52Z"
+        "pushed_at": "2026-11-07T10:27:12Z"
       },
       {
         "name": "flemozi",
@@ -4965,20 +4965,20 @@
         "pushed_at": "2023-10-30T15:59:24Z"
       }
     ],
-    "top_language": "C++",
+    "top_language": "Rust",
     "all_languages": [
-      "C++",
       "Rust",
       "Kotlin",
-      "Dart"
+      "Dart",
+      "C++"
     ],
-    "contributions_last_90d": 1008,
-    "prs_last_90d": 31,
+    "contributions_last_90d": 1011,
+    "prs_last_90d": 32,
     "issues_last_90d": 1,
     "reviews_last_90d": 5,
     "commits_last_90d": 482,
-    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
-    "activity_score": 10.34
+    "enriched_at": "2026-11-08T04:15:48.825363+00:00",
+    "activity_score": 10.35
   },
   {
     "github_username": "thesabbir",
@@ -4990,7 +4990,7 @@
     "company": "Entrepreneur",
     "website_url": "",
     "followers": 262,
-    "following": 124,
+    "following": 130,
     "public_repos": 68,
     "total_stars": 1995,
     "top_repos": [
@@ -5107,21 +5107,21 @@
         "pushed_at": "2020-07-07T04:08:43Z"
       }
     ],
-    "top_language": "Shell",
+    "top_language": "Go",
     "all_languages": [
-      "Shell",
       "Go",
-      "CSS",
+      "Shell",
       "Python",
-      "JavaScript"
+      "JavaScript",
+      "CSS"
     ],
-    "contributions_last_90d": 14362,
+    "contributions_last_90d": 14692,
     "prs_last_90d": 4,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 13,
-    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
-    "activity_score": 9.92
+    "enriched_at": "2026-11-08T04:15:48.825363+00:00",
+    "activity_score": 10.11
   },
   {
     "github_username": "cyantarek",
@@ -5254,7 +5254,7 @@
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 0,
-    "enriched_at": "2026-11-06T04:57:42.247707+00:00",
+    "enriched_at": "2026-11-08T04:15:48.825363+00:00",
     "activity_score": 9.84
   },
   {
@@ -6152,7 +6152,7 @@
     "reviews_last_90d": 5,
     "commits_last_90d": 1027,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 8.96
+    "activity_score": 8.95
   },
   {
     "github_username": "JubayerRiyad",
@@ -8341,7 +8341,7 @@
     "reviews_last_90d": 3,
     "commits_last_90d": 670,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 7.93
+    "activity_score": 7.92
   },
   {
     "github_username": "shahriar-shojib",
@@ -12505,7 +12505,7 @@
     "reviews_last_90d": 6,
     "commits_last_90d": 507,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 6.89
+    "activity_score": 6.88
   },
   {
     "github_username": "saifulapm",
@@ -13607,7 +13607,7 @@
     "reviews_last_90d": 59,
     "commits_last_90d": 2242,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 6.6
+    "activity_score": 6.58
   },
   {
     "github_username": "Jisan-mia",
@@ -15578,7 +15578,7 @@
     "reviews_last_90d": 22,
     "commits_last_90d": 1662,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 6.08
+    "activity_score": 6.07
   },
   {
     "github_username": "ImRanKhan81m",
@@ -16524,6 +16524,149 @@
     "activity_score": 5.9
   },
   {
+    "github_username": "sulaimanbiswas",
+    "name": "Md Suliman",
+    "profile_url": "https://github.com/sulaimanbiswas",
+    "location": "1042, Road: 14/A, Adaboar, Dhaka - 1207",
+    "avatar_url": "https://avatars.githubusercontent.com/u/68651945?v=4",
+    "bio": "Front-End Web Developer | React.js | Next.js",
+    "company": "AB Infotech LTD.",
+    "website_url": "",
+    "followers": 2052,
+    "following": 4852,
+    "public_repos": 67,
+    "total_stars": 85,
+    "top_repos": [
+      {
+        "name": "fully-responsive-sidebar",
+        "description": "A fully responsive sidebar built with Next.js, TypeScript, Tailwind CSS, ShadCN, and Lucide Icons. This sidebar is easily customizable, adapts to different screen sizes, and includes smooth animations and a toggle button for enhanced usability on smaller devices.",
+        "url": "https://github.com/sulaimanbiswas/fully-responsive-sidebar",
+        "stars": 17,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [
+          "lucide-react",
+          "nextjs14",
+          "shadcn-ui",
+          "tailwind-css",
+          "typescript"
+        ],
+        "pushed_at": "2024-08-25T18:09:38Z"
+      },
+      {
+        "name": "sulaimanbiswas",
+        "description": "",
+        "url": "https://github.com/sulaimanbiswas/sulaimanbiswas",
+        "stars": 15,
+        "forks": 1,
+        "language": null,
+        "topics": [
+          "github-profile",
+          "github-portfolio",
+          "portfolio"
+        ],
+        "pushed_at": "2026-11-06T13:42:02Z"
+      },
+      {
+        "name": "digitic-ecommerce-admin",
+        "description": "",
+        "url": "https://github.com/sulaimanbiswas/digitic-ecommerce-admin",
+        "stars": 12,
+        "forks": 2,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2024-03-30T21:29:58Z"
+      },
+      {
+        "name": "Ema-John-eCommerce-React",
+        "description": "Live Website Link",
+        "url": "https://github.com/sulaimanbiswas/Ema-John-eCommerce-React",
+        "stars": 10,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2022-10-20T04:44:22Z"
+      },
+      {
+        "name": "nemesis-blog-nextjs",
+        "description": "",
+        "url": "https://github.com/sulaimanbiswas/nemesis-blog-nextjs",
+        "stars": 7,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2024-08-15T08:12:24Z"
+      },
+      {
+        "name": "oh-my-posh-gitbash-setup",
+        "description": "How to setup Oh My Posh on Git Bash",
+        "url": "https://github.com/sulaimanbiswas/oh-my-posh-gitbash-setup",
+        "stars": 7,
+        "forks": 0,
+        "language": null,
+        "topics": [
+          "git-bash",
+          "oh-my-posh",
+          "firacoda"
+        ],
+        "pushed_at": "2024-07-02T03:40:25Z"
+      },
+      {
+        "name": "doctors-portal-client-react",
+        "description": "",
+        "url": "https://github.com/sulaimanbiswas/doctors-portal-client-react",
+        "stars": 5,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2023-05-04T19:10:39Z"
+      },
+      {
+        "name": "typescript-learning-lws",
+        "description": "",
+        "url": "https://github.com/sulaimanbiswas/typescript-learning-lws",
+        "stars": 4,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2024-11-21T13:00:29Z"
+      },
+      {
+        "name": "the-bridge-portfolio-website",
+        "description": "",
+        "url": "https://github.com/sulaimanbiswas/the-bridge-portfolio-website",
+        "stars": 4,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2024-03-08T04:22:52Z"
+      },
+      {
+        "name": "digitic-ecommerce-api",
+        "description": "",
+        "url": "https://github.com/sulaimanbiswas/digitic-ecommerce-api",
+        "stars": 4,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2024-02-20T16:16:27Z"
+      }
+    ],
+    "top_language": "HTML",
+    "all_languages": [
+      "HTML",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "contributions_last_90d": 2477,
+    "prs_last_90d": 1,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 15,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 5.88
+  },
+  {
     "github_username": "fahimfaisaal",
     "name": "Fahim Faisaal",
     "profile_url": "https://github.com/fahimfaisaal",
@@ -16673,150 +16816,7 @@
     "reviews_last_90d": 55,
     "commits_last_90d": 773,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 5.88
-  },
-  {
-    "github_username": "sulaimanbiswas",
-    "name": "Md Suliman",
-    "profile_url": "https://github.com/sulaimanbiswas",
-    "location": "1042, Road: 14/A, Adaboar, Dhaka - 1207",
-    "avatar_url": "https://avatars.githubusercontent.com/u/68651945?v=4",
-    "bio": "Front-End Web Developer | React.js | Next.js",
-    "company": "AB Infotech LTD.",
-    "website_url": "",
-    "followers": 2052,
-    "following": 4852,
-    "public_repos": 67,
-    "total_stars": 85,
-    "top_repos": [
-      {
-        "name": "fully-responsive-sidebar",
-        "description": "A fully responsive sidebar built with Next.js, TypeScript, Tailwind CSS, ShadCN, and Lucide Icons. This sidebar is easily customizable, adapts to different screen sizes, and includes smooth animations and a toggle button for enhanced usability on smaller devices.",
-        "url": "https://github.com/sulaimanbiswas/fully-responsive-sidebar",
-        "stars": 17,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [
-          "lucide-react",
-          "nextjs14",
-          "shadcn-ui",
-          "tailwind-css",
-          "typescript"
-        ],
-        "pushed_at": "2024-08-25T18:09:38Z"
-      },
-      {
-        "name": "sulaimanbiswas",
-        "description": "",
-        "url": "https://github.com/sulaimanbiswas/sulaimanbiswas",
-        "stars": 15,
-        "forks": 1,
-        "language": null,
-        "topics": [
-          "github-profile",
-          "github-portfolio",
-          "portfolio"
-        ],
-        "pushed_at": "2026-11-06T13:42:02Z"
-      },
-      {
-        "name": "digitic-ecommerce-admin",
-        "description": "",
-        "url": "https://github.com/sulaimanbiswas/digitic-ecommerce-admin",
-        "stars": 12,
-        "forks": 2,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2024-03-30T21:29:58Z"
-      },
-      {
-        "name": "Ema-John-eCommerce-React",
-        "description": "Live Website Link",
-        "url": "https://github.com/sulaimanbiswas/Ema-John-eCommerce-React",
-        "stars": 10,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2022-10-20T04:44:22Z"
-      },
-      {
-        "name": "nemesis-blog-nextjs",
-        "description": "",
-        "url": "https://github.com/sulaimanbiswas/nemesis-blog-nextjs",
-        "stars": 7,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2024-08-15T08:12:24Z"
-      },
-      {
-        "name": "oh-my-posh-gitbash-setup",
-        "description": "How to setup Oh My Posh on Git Bash",
-        "url": "https://github.com/sulaimanbiswas/oh-my-posh-gitbash-setup",
-        "stars": 7,
-        "forks": 0,
-        "language": null,
-        "topics": [
-          "git-bash",
-          "oh-my-posh",
-          "firacoda"
-        ],
-        "pushed_at": "2024-07-02T03:40:25Z"
-      },
-      {
-        "name": "doctors-portal-client-react",
-        "description": "",
-        "url": "https://github.com/sulaimanbiswas/doctors-portal-client-react",
-        "stars": 5,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2023-05-04T19:10:39Z"
-      },
-      {
-        "name": "typescript-learning-lws",
-        "description": "",
-        "url": "https://github.com/sulaimanbiswas/typescript-learning-lws",
-        "stars": 4,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2024-11-21T13:00:29Z"
-      },
-      {
-        "name": "the-bridge-portfolio-website",
-        "description": "",
-        "url": "https://github.com/sulaimanbiswas/the-bridge-portfolio-website",
-        "stars": 4,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2024-03-08T04:22:52Z"
-      },
-      {
-        "name": "digitic-ecommerce-api",
-        "description": "",
-        "url": "https://github.com/sulaimanbiswas/digitic-ecommerce-api",
-        "stars": 4,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2024-02-20T16:16:27Z"
-      }
-    ],
-    "top_language": "HTML",
-    "all_languages": [
-      "HTML",
-      "TypeScript",
-      "JavaScript"
-    ],
-    "contributions_last_90d": 2477,
-    "prs_last_90d": 1,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 15,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 5.88
+    "activity_score": 5.87
   },
   {
     "github_username": "kmtusher97",
@@ -21057,7 +21057,7 @@
     "reviews_last_90d": 75,
     "commits_last_90d": 523,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 5.33
+    "activity_score": 5.32
   },
   {
     "github_username": "GourangaDasSamrat",
@@ -21246,7 +21246,7 @@
     "reviews_last_90d": 51,
     "commits_last_90d": 2877,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 5.32
+    "activity_score": 5.31
   },
   {
     "github_username": "hasancse91",
@@ -32620,195 +32620,6 @@
     "activity_score": 4.47
   },
   {
-    "github_username": "arifszn",
-    "name": "Ariful Alam",
-    "profile_url": "https://github.com/arifszn",
-    "location": "Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/45073703?u=2f594d18403b9f08b9a5ab60a57a5793e9357d3b&v=4",
-    "bio": "Sr. Software Engineer | Distributed Systems Specialist | Microservices Architecture",
-    "company": "",
-    "website_url": "www.arifszn.com",
-    "followers": 841,
-    "following": 485,
-    "public_repos": 35,
-    "total_stars": 3186,
-    "top_repos": [
-      {
-        "name": "gitprofile",
-        "description": "\ud83d\ude80 Create and publish a GitHub-synced portfolio by just providing your GitHub username.",
-        "url": "https://github.com/arifszn/gitprofile",
-        "stars": 2326,
-        "forks": 2156,
-        "language": "TypeScript",
-        "topics": [
-          "portfolio",
-          "personal-site",
-          "react-portfolio",
-          "github-portfolio",
-          "personal-website"
-        ],
-        "pushed_at": "2026-09-01T08:18:09Z"
-      },
-      {
-        "name": "ezfolio",
-        "description": "Open Source Portfolio/Resume CMS built using Laravel, React and Ant Design.",
-        "url": "https://github.com/arifszn/ezfolio",
-        "stars": 293,
-        "forks": 85,
-        "language": "PHP",
-        "topics": [
-          "portfolio",
-          "portfolio-builder",
-          "laravel-portfolio",
-          "react-portfolio",
-          "portfolio-cms"
-        ],
-        "pushed_at": "2024-04-21T09:59:10Z"
-      },
-      {
-        "name": "reactive-button",
-        "description": "3D animated react button component with progress bar.",
-        "url": "https://github.com/arifszn/reactive-button",
-        "stars": 141,
-        "forks": 23,
-        "language": "CSS",
-        "topics": [
-          "react",
-          "button",
-          "component",
-          "react-button",
-          "react-component"
-        ],
-        "pushed_at": "2026-01-20T07:16:17Z"
-      },
-      {
-        "name": "OneClick",
-        "description": "Navigate to your favorite actions on the websites you love with just one click.",
-        "url": "https://github.com/arifszn/OneClick",
-        "stars": 97,
-        "forks": 20,
-        "language": "JavaScript",
-        "topics": [
-          "shortcuts",
-          "new",
-          "create-new-item",
-          "create-new",
-          "actions"
-        ],
-        "pushed_at": "2025-07-08T05:29:12Z"
-      },
-      {
-        "name": "reforge",
-        "description": "\ud83c\udfb2 An out-of-box UI solution for enterprise applications as a React boilerplate.",
-        "url": "https://github.com/arifszn/reforge",
-        "stars": 69,
-        "forks": 18,
-        "language": "TypeScript",
-        "topics": [
-          "admin",
-          "admin-dashboard",
-          "ant-admin",
-          "ant-design",
-          "ant-design-pro"
-        ],
-        "pushed_at": "2025-07-08T05:37:32Z"
-      },
-      {
-        "name": "slide-wright",
-        "description": "Make a presentation with your coding agent. Preview two slides, approve, then build and export to PowerPoint or PDF. Works with Claude Code, Codex, Gemini CLI, OpenCode, Cursor, and other SKILL.md agents.",
-        "url": "https://github.com/arifszn/slide-wright",
-        "stars": 67,
-        "forks": 5,
-        "language": "JavaScript",
-        "topics": [
-          "agent-skills",
-          "presentations",
-          "skill-md",
-          "skills",
-          "slide-deck"
-        ],
-        "pushed_at": "2026-10-24T07:43:45Z"
-      },
-      {
-        "name": "react-laravel",
-        "description": "A simple crud based laravel app to learn how to use react with laravel.",
-        "url": "https://github.com/arifszn/react-laravel",
-        "stars": 61,
-        "forks": 28,
-        "language": "PHP",
-        "topics": [
-          "laravel",
-          "react",
-          "react-router",
-          "react-redux",
-          "react-hooks"
-        ],
-        "pushed_at": "2021-08-25T18:14:59Z"
-      },
-      {
-        "name": "reddit-image-fetcher",
-        "description": "A JavaScript package for fetching reddit images, memes, wallpapers and more.",
-        "url": "https://github.com/arifszn/reddit-image-fetcher",
-        "stars": 50,
-        "forks": 9,
-        "language": "JavaScript",
-        "topics": [
-          "reddit",
-          "reddit-api",
-          "memes",
-          "wallpapers"
-        ],
-        "pushed_at": "2025-07-08T05:33:16Z"
-      },
-      {
-        "name": "blog.js",
-        "description": "JavaScript client to get recent blog posts from your blogging platforms.",
-        "url": "https://github.com/arifszn/blog.js",
-        "stars": 43,
-        "forks": 10,
-        "language": "JavaScript",
-        "topics": [
-          "medium",
-          "medium-article",
-          "devto",
-          "article-api",
-          "medium-api"
-        ],
-        "pushed_at": "2024-07-01T23:13:52Z"
-      },
-      {
-        "name": "pandora",
-        "description": "\ud83e\udd62 REST API starter kit powered by Laravel, OpenAPI, Sanctum.",
-        "url": "https://github.com/arifszn/pandora",
-        "stars": 39,
-        "forks": 15,
-        "language": "CSS",
-        "topics": [
-          "api",
-          "api-boilerplate",
-          "api-rest",
-          "api-starter-kit",
-          "framework"
-        ],
-        "pushed_at": "2025-07-08T05:28:39Z"
-      }
-    ],
-    "top_language": "PHP",
-    "all_languages": [
-      "PHP",
-      "TypeScript",
-      "JavaScript",
-      "CSS"
-    ],
-    "contributions_last_90d": 2852,
-    "prs_last_90d": 61,
-    "issues_last_90d": 17,
-    "reviews_last_90d": 7,
-    "commits_last_90d": 832,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 4.46
-  },
-  {
     "github_username": "fardoush",
     "name": "Jahanara Fardoush",
     "profile_url": "https://github.com/fardoush",
@@ -33063,6 +32874,195 @@
     "commits_last_90d": 0,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
     "activity_score": 4.46
+  },
+  {
+    "github_username": "arifszn",
+    "name": "Ariful Alam",
+    "profile_url": "https://github.com/arifszn",
+    "location": "Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/45073703?u=2f594d18403b9f08b9a5ab60a57a5793e9357d3b&v=4",
+    "bio": "Sr. Software Engineer | Distributed Systems Specialist | Microservices Architecture",
+    "company": "",
+    "website_url": "www.arifszn.com",
+    "followers": 841,
+    "following": 485,
+    "public_repos": 35,
+    "total_stars": 3186,
+    "top_repos": [
+      {
+        "name": "gitprofile",
+        "description": "\ud83d\ude80 Create and publish a GitHub-synced portfolio by just providing your GitHub username.",
+        "url": "https://github.com/arifszn/gitprofile",
+        "stars": 2326,
+        "forks": 2156,
+        "language": "TypeScript",
+        "topics": [
+          "portfolio",
+          "personal-site",
+          "react-portfolio",
+          "github-portfolio",
+          "personal-website"
+        ],
+        "pushed_at": "2026-09-01T08:18:09Z"
+      },
+      {
+        "name": "ezfolio",
+        "description": "Open Source Portfolio/Resume CMS built using Laravel, React and Ant Design.",
+        "url": "https://github.com/arifszn/ezfolio",
+        "stars": 293,
+        "forks": 85,
+        "language": "PHP",
+        "topics": [
+          "portfolio",
+          "portfolio-builder",
+          "laravel-portfolio",
+          "react-portfolio",
+          "portfolio-cms"
+        ],
+        "pushed_at": "2024-04-21T09:59:10Z"
+      },
+      {
+        "name": "reactive-button",
+        "description": "3D animated react button component with progress bar.",
+        "url": "https://github.com/arifszn/reactive-button",
+        "stars": 141,
+        "forks": 23,
+        "language": "CSS",
+        "topics": [
+          "react",
+          "button",
+          "component",
+          "react-button",
+          "react-component"
+        ],
+        "pushed_at": "2026-01-20T07:16:17Z"
+      },
+      {
+        "name": "OneClick",
+        "description": "Navigate to your favorite actions on the websites you love with just one click.",
+        "url": "https://github.com/arifszn/OneClick",
+        "stars": 97,
+        "forks": 20,
+        "language": "JavaScript",
+        "topics": [
+          "shortcuts",
+          "new",
+          "create-new-item",
+          "create-new",
+          "actions"
+        ],
+        "pushed_at": "2025-07-08T05:29:12Z"
+      },
+      {
+        "name": "reforge",
+        "description": "\ud83c\udfb2 An out-of-box UI solution for enterprise applications as a React boilerplate.",
+        "url": "https://github.com/arifszn/reforge",
+        "stars": 69,
+        "forks": 18,
+        "language": "TypeScript",
+        "topics": [
+          "admin",
+          "admin-dashboard",
+          "ant-admin",
+          "ant-design",
+          "ant-design-pro"
+        ],
+        "pushed_at": "2025-07-08T05:37:32Z"
+      },
+      {
+        "name": "slide-wright",
+        "description": "Make a presentation with your coding agent. Preview two slides, approve, then build and export to PowerPoint or PDF. Works with Claude Code, Codex, Gemini CLI, OpenCode, Cursor, and other SKILL.md agents.",
+        "url": "https://github.com/arifszn/slide-wright",
+        "stars": 67,
+        "forks": 5,
+        "language": "JavaScript",
+        "topics": [
+          "agent-skills",
+          "presentations",
+          "skill-md",
+          "skills",
+          "slide-deck"
+        ],
+        "pushed_at": "2026-10-24T07:43:45Z"
+      },
+      {
+        "name": "react-laravel",
+        "description": "A simple crud based laravel app to learn how to use react with laravel.",
+        "url": "https://github.com/arifszn/react-laravel",
+        "stars": 61,
+        "forks": 28,
+        "language": "PHP",
+        "topics": [
+          "laravel",
+          "react",
+          "react-router",
+          "react-redux",
+          "react-hooks"
+        ],
+        "pushed_at": "2021-08-25T18:14:59Z"
+      },
+      {
+        "name": "reddit-image-fetcher",
+        "description": "A JavaScript package for fetching reddit images, memes, wallpapers and more.",
+        "url": "https://github.com/arifszn/reddit-image-fetcher",
+        "stars": 50,
+        "forks": 9,
+        "language": "JavaScript",
+        "topics": [
+          "reddit",
+          "reddit-api",
+          "memes",
+          "wallpapers"
+        ],
+        "pushed_at": "2025-07-08T05:33:16Z"
+      },
+      {
+        "name": "blog.js",
+        "description": "JavaScript client to get recent blog posts from your blogging platforms.",
+        "url": "https://github.com/arifszn/blog.js",
+        "stars": 43,
+        "forks": 10,
+        "language": "JavaScript",
+        "topics": [
+          "medium",
+          "medium-article",
+          "devto",
+          "article-api",
+          "medium-api"
+        ],
+        "pushed_at": "2024-07-01T23:13:52Z"
+      },
+      {
+        "name": "pandora",
+        "description": "\ud83e\udd62 REST API starter kit powered by Laravel, OpenAPI, Sanctum.",
+        "url": "https://github.com/arifszn/pandora",
+        "stars": 39,
+        "forks": 15,
+        "language": "CSS",
+        "topics": [
+          "api",
+          "api-boilerplate",
+          "api-rest",
+          "api-starter-kit",
+          "framework"
+        ],
+        "pushed_at": "2025-07-08T05:28:39Z"
+      }
+    ],
+    "top_language": "PHP",
+    "all_languages": [
+      "PHP",
+      "TypeScript",
+      "JavaScript",
+      "CSS"
+    ],
+    "contributions_last_90d": 2852,
+    "prs_last_90d": 61,
+    "issues_last_90d": 17,
+    "reviews_last_90d": 7,
+    "commits_last_90d": 832,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 4.45
   },
   {
     "github_username": "humam-hossain",
@@ -33343,136 +33343,6 @@
     "activity_score": 4.43
   },
   {
-    "github_username": "tanzinabd23",
-    "name": "Tanzina Akter",
-    "profile_url": "https://github.com/tanzinabd23",
-    "location": "Chittagong",
-    "avatar_url": "https://avatars.githubusercontent.com/u/135050964?u=3c23fc6c8ee9974cb38e90faee31b4320b018f35&v=4",
-    "bio": "Programmer web3",
-    "company": "Khanbd",
-    "website_url": "https://twitter.com/tanzinabd",
-    "followers": 286,
-    "following": 487,
-    "public_repos": 95,
-    "total_stars": 100,
-    "top_repos": [
-      {
-        "name": "Tanzina4",
-        "description": "Tani",
-        "url": "https://github.com/tanzinabd23/Tanzina4",
-        "stars": 47,
-        "forks": 2,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2023-07-05T08:13:40Z"
-      },
-      {
-        "name": "Sazzad",
-        "description": "Sazzad",
-        "url": "https://github.com/bdsazzad3/Sazzad",
-        "stars": 10,
-        "forks": 4,
-        "language": null,
-        "topics": [
-          "java"
-        ],
-        "pushed_at": "2024-01-07T02:11:37Z"
-      },
-      {
-        "name": "Tanzina-day-35",
-        "description": "Day 35",
-        "url": "https://github.com/tanzinabd23/Tanzina-day-35",
-        "stars": 8,
-        "forks": 2,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2026-03-05T23:46:54Z"
-      },
-      {
-        "name": "Tanzina-dao-3",
-        "description": "Dao 3",
-        "url": "https://github.com/Riduwan-venture/Tanzina-dao-3",
-        "stars": 5,
-        "forks": 3,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2025-12-12T11:59:08Z"
-      },
-      {
-        "name": "Tanzina-dao-day-3",
-        "description": "Day 3",
-        "url": "https://github.com/Parvin-Meta/Tanzina-dao-day-3",
-        "stars": 5,
-        "forks": 2,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2025-12-06T09:26:05Z"
-      },
-      {
-        "name": "Tanzina-Dao-day-4",
-        "description": "Day 14",
-        "url": "https://github.com/Coinbase-Base/Tanzina-Dao-day-4",
-        "stars": 5,
-        "forks": 3,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2025-11-30T23:31:57Z"
-      },
-      {
-        "name": "Tanzina-Day-17",
-        "description": "Day 17",
-        "url": "https://github.com/tanzinabd23/Tanzina-Day-17",
-        "stars": 5,
-        "forks": 3,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2025-12-04T21:30:19Z"
-      },
-      {
-        "name": "Tanzina-Day-16",
-        "description": "Day 16",
-        "url": "https://github.com/tanzinabd23/Tanzina-Day-16",
-        "stars": 5,
-        "forks": 3,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2025-12-04T21:33:14Z"
-      },
-      {
-        "name": "Tanzina-New-version-day-6",
-        "description": "Day 6",
-        "url": "https://github.com/tanzinabd23/Tanzina-New-version-day-6",
-        "stars": 5,
-        "forks": 3,
-        "language": null,
-        "topics": [
-          "java",
-          "paython"
-        ],
-        "pushed_at": "2025-11-10T10:24:35Z"
-      },
-      {
-        "name": "Tanzina-New-version-day-5",
-        "description": "Day 5",
-        "url": "https://github.com/tanzinabd23/Tanzina-New-version-day-5",
-        "stars": 5,
-        "forks": 3,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2025-11-01T01:58:22Z"
-      }
-    ],
-    "top_language": null,
-    "all_languages": [],
-    "contributions_last_90d": 953,
-    "prs_last_90d": 162,
-    "issues_last_90d": 146,
-    "reviews_last_90d": 58,
-    "commits_last_90d": 479,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 4.42
-  },
-  {
     "github_username": "orun-sunny",
     "name": "orun sunny",
     "profile_url": "https://github.com/orun-sunny",
@@ -33605,6 +33475,136 @@
     "commits_last_90d": 148,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
     "activity_score": 4.42
+  },
+  {
+    "github_username": "tanzinabd23",
+    "name": "Tanzina Akter",
+    "profile_url": "https://github.com/tanzinabd23",
+    "location": "Chittagong",
+    "avatar_url": "https://avatars.githubusercontent.com/u/135050964?u=3c23fc6c8ee9974cb38e90faee31b4320b018f35&v=4",
+    "bio": "Programmer web3",
+    "company": "Khanbd",
+    "website_url": "https://twitter.com/tanzinabd",
+    "followers": 286,
+    "following": 487,
+    "public_repos": 95,
+    "total_stars": 100,
+    "top_repos": [
+      {
+        "name": "Tanzina4",
+        "description": "Tani",
+        "url": "https://github.com/tanzinabd23/Tanzina4",
+        "stars": 47,
+        "forks": 2,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2023-07-05T08:13:40Z"
+      },
+      {
+        "name": "Sazzad",
+        "description": "Sazzad",
+        "url": "https://github.com/bdsazzad3/Sazzad",
+        "stars": 10,
+        "forks": 4,
+        "language": null,
+        "topics": [
+          "java"
+        ],
+        "pushed_at": "2024-01-07T02:11:37Z"
+      },
+      {
+        "name": "Tanzina-day-35",
+        "description": "Day 35",
+        "url": "https://github.com/tanzinabd23/Tanzina-day-35",
+        "stars": 8,
+        "forks": 2,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2026-03-05T23:46:54Z"
+      },
+      {
+        "name": "Tanzina-dao-3",
+        "description": "Dao 3",
+        "url": "https://github.com/Riduwan-venture/Tanzina-dao-3",
+        "stars": 5,
+        "forks": 3,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2025-12-12T11:59:08Z"
+      },
+      {
+        "name": "Tanzina-dao-day-3",
+        "description": "Day 3",
+        "url": "https://github.com/Parvin-Meta/Tanzina-dao-day-3",
+        "stars": 5,
+        "forks": 2,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2025-12-06T09:26:05Z"
+      },
+      {
+        "name": "Tanzina-Dao-day-4",
+        "description": "Day 14",
+        "url": "https://github.com/Coinbase-Base/Tanzina-Dao-day-4",
+        "stars": 5,
+        "forks": 3,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2025-11-30T23:31:57Z"
+      },
+      {
+        "name": "Tanzina-Day-17",
+        "description": "Day 17",
+        "url": "https://github.com/tanzinabd23/Tanzina-Day-17",
+        "stars": 5,
+        "forks": 3,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2025-12-04T21:30:19Z"
+      },
+      {
+        "name": "Tanzina-Day-16",
+        "description": "Day 16",
+        "url": "https://github.com/tanzinabd23/Tanzina-Day-16",
+        "stars": 5,
+        "forks": 3,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2025-12-04T21:33:14Z"
+      },
+      {
+        "name": "Tanzina-New-version-day-6",
+        "description": "Day 6",
+        "url": "https://github.com/tanzinabd23/Tanzina-New-version-day-6",
+        "stars": 5,
+        "forks": 3,
+        "language": null,
+        "topics": [
+          "java",
+          "paython"
+        ],
+        "pushed_at": "2025-11-10T10:24:35Z"
+      },
+      {
+        "name": "Tanzina-New-version-day-5",
+        "description": "Day 5",
+        "url": "https://github.com/tanzinabd23/Tanzina-New-version-day-5",
+        "stars": 5,
+        "forks": 3,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2025-11-01T01:58:22Z"
+      }
+    ],
+    "top_language": null,
+    "all_languages": [],
+    "contributions_last_90d": 953,
+    "prs_last_90d": 162,
+    "issues_last_90d": 146,
+    "reviews_last_90d": 58,
+    "commits_last_90d": 479,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 4.41
   },
   {
     "github_username": "mahtamun-hoque-fahim",
@@ -34919,6 +34919,137 @@
     "activity_score": 4.37
   },
   {
+    "github_username": "Baizidmdashadzzaman",
+    "name": "Baizid MD Ashadzzaman",
+    "profile_url": "https://github.com/Baizidmdashadzzaman",
+    "location": "Chittagong ,Bangladesh.",
+    "avatar_url": "https://avatars.githubusercontent.com/u/86706204?u=4ad711e4973c8648f9841a2a7958018ad1b72509&v=4",
+    "bio": "",
+    "company": "",
+    "website_url": "https://baizidmdashadzzaman-next.vercel.app/",
+    "followers": 38,
+    "following": 17,
+    "public_repos": 198,
+    "total_stars": 76,
+    "top_repos": [
+      {
+        "name": "Laravel-Vue-Js-Point-on-Sell-POS-System",
+        "description": "",
+        "url": "https://github.com/Baizidmdashadzzaman/Laravel-Vue-Js-Point-on-Sell-POS-System",
+        "stars": 20,
+        "forks": 14,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2022-08-06T07:55:54Z"
+      },
+      {
+        "name": "Laravel-zkteco-iclock9000-G-machine-attendance-system",
+        "description": "",
+        "url": "https://github.com/Baizidmdashadzzaman/Laravel-zkteco-iclock9000-G-machine-attendance-system",
+        "stars": 17,
+        "forks": 12,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2023-01-24T11:31:37Z"
+      },
+      {
+        "name": "protfolio-for-developer-using-nuxt-js",
+        "description": "",
+        "url": "https://github.com/Baizidmdashadzzaman/protfolio-for-developer-using-nuxt-js",
+        "stars": 14,
+        "forks": 17,
+        "language": "CSS",
+        "topics": [],
+        "pushed_at": "2021-09-10T08:01:36Z"
+      },
+      {
+        "name": "Laravel-Vue-Js-Barcode-QRcode-Scanner-Using-Webcam",
+        "description": "",
+        "url": "https://github.com/Baizidmdashadzzaman/Laravel-Vue-Js-Barcode-QRcode-Scanner-Using-Webcam",
+        "stars": 12,
+        "forks": 7,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2023-03-04T04:37:31Z"
+      },
+      {
+        "name": "React-Js-face-land-mark-detection-using-MediaPipe",
+        "description": "",
+        "url": "https://github.com/Baizidmdashadzzaman/React-Js-face-land-mark-detection-using-MediaPipe",
+        "stars": 4,
+        "forks": 2,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2023-10-22T07:19:10Z"
+      },
+      {
+        "name": "Faceshape-detection-using-MediaPipe-React-Js",
+        "description": "",
+        "url": "https://github.com/Baizidmdashadzzaman/Faceshape-detection-using-MediaPipe-React-Js",
+        "stars": 2,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2023-10-24T06:14:01Z"
+      },
+      {
+        "name": "Laravel-React-IP-TV-Application",
+        "description": "",
+        "url": "https://github.com/Baizidmdashadzzaman/Laravel-React-IP-TV-Application",
+        "stars": 2,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2022-08-03T15:58:10Z"
+      },
+      {
+        "name": "Laravel-9-React-Music-App",
+        "description": "",
+        "url": "https://github.com/Baizidmdashadzzaman/Laravel-9-React-Music-App",
+        "stars": 2,
+        "forks": 3,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2024-04-11T08:52:48Z"
+      },
+      {
+        "name": "laravel-9-vue-3-scantum-spa-authentication",
+        "description": "",
+        "url": "https://github.com/Baizidmdashadzzaman/laravel-9-vue-3-scantum-spa-authentication",
+        "stars": 2,
+        "forks": 1,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2022-03-05T06:56:07Z"
+      },
+      {
+        "name": "Real-Time-OMR-Quiz-Evaluation-System-Using-Image-Processing-AI-In-Schools-Universities-For-Teachers",
+        "description": "",
+        "url": "https://github.com/Baizidmdashadzzaman/Real-Time-OMR-Quiz-Evaluation-System-Using-Image-Processing-AI-In-Schools-Universities-For-Teachers",
+        "stars": 1,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-10-31T05:44:32Z"
+      }
+    ],
+    "top_language": "PHP",
+    "all_languages": [
+      "PHP",
+      "CSS",
+      "Python",
+      "JavaScript",
+      "HTML"
+    ],
+    "contributions_last_90d": 693,
+    "prs_last_90d": 0,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 245,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 4.36
+  },
+  {
     "github_username": "0xTanzim",
     "name": " Tanzim Hossain",
     "profile_url": "https://github.com/0xTanzim",
@@ -35062,138 +35193,7 @@
     "reviews_last_90d": 2,
     "commits_last_90d": 1258,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 4.36
-  },
-  {
-    "github_username": "Baizidmdashadzzaman",
-    "name": "Baizid MD Ashadzzaman",
-    "profile_url": "https://github.com/Baizidmdashadzzaman",
-    "location": "Chittagong ,Bangladesh.",
-    "avatar_url": "https://avatars.githubusercontent.com/u/86706204?u=4ad711e4973c8648f9841a2a7958018ad1b72509&v=4",
-    "bio": "",
-    "company": "",
-    "website_url": "https://baizidmdashadzzaman-next.vercel.app/",
-    "followers": 38,
-    "following": 17,
-    "public_repos": 198,
-    "total_stars": 76,
-    "top_repos": [
-      {
-        "name": "Laravel-Vue-Js-Point-on-Sell-POS-System",
-        "description": "",
-        "url": "https://github.com/Baizidmdashadzzaman/Laravel-Vue-Js-Point-on-Sell-POS-System",
-        "stars": 20,
-        "forks": 14,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2022-08-06T07:55:54Z"
-      },
-      {
-        "name": "Laravel-zkteco-iclock9000-G-machine-attendance-system",
-        "description": "",
-        "url": "https://github.com/Baizidmdashadzzaman/Laravel-zkteco-iclock9000-G-machine-attendance-system",
-        "stars": 17,
-        "forks": 12,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2023-01-24T11:31:37Z"
-      },
-      {
-        "name": "protfolio-for-developer-using-nuxt-js",
-        "description": "",
-        "url": "https://github.com/Baizidmdashadzzaman/protfolio-for-developer-using-nuxt-js",
-        "stars": 14,
-        "forks": 17,
-        "language": "CSS",
-        "topics": [],
-        "pushed_at": "2021-09-10T08:01:36Z"
-      },
-      {
-        "name": "Laravel-Vue-Js-Barcode-QRcode-Scanner-Using-Webcam",
-        "description": "",
-        "url": "https://github.com/Baizidmdashadzzaman/Laravel-Vue-Js-Barcode-QRcode-Scanner-Using-Webcam",
-        "stars": 12,
-        "forks": 7,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2023-03-04T04:37:31Z"
-      },
-      {
-        "name": "React-Js-face-land-mark-detection-using-MediaPipe",
-        "description": "",
-        "url": "https://github.com/Baizidmdashadzzaman/React-Js-face-land-mark-detection-using-MediaPipe",
-        "stars": 4,
-        "forks": 2,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2023-10-22T07:19:10Z"
-      },
-      {
-        "name": "Faceshape-detection-using-MediaPipe-React-Js",
-        "description": "",
-        "url": "https://github.com/Baizidmdashadzzaman/Faceshape-detection-using-MediaPipe-React-Js",
-        "stars": 2,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2023-10-24T06:14:01Z"
-      },
-      {
-        "name": "Laravel-React-IP-TV-Application",
-        "description": "",
-        "url": "https://github.com/Baizidmdashadzzaman/Laravel-React-IP-TV-Application",
-        "stars": 2,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2022-08-03T15:58:10Z"
-      },
-      {
-        "name": "Laravel-9-React-Music-App",
-        "description": "",
-        "url": "https://github.com/Baizidmdashadzzaman/Laravel-9-React-Music-App",
-        "stars": 2,
-        "forks": 3,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2024-04-11T08:52:48Z"
-      },
-      {
-        "name": "laravel-9-vue-3-scantum-spa-authentication",
-        "description": "",
-        "url": "https://github.com/Baizidmdashadzzaman/laravel-9-vue-3-scantum-spa-authentication",
-        "stars": 2,
-        "forks": 1,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2022-03-05T06:56:07Z"
-      },
-      {
-        "name": "Real-Time-OMR-Quiz-Evaluation-System-Using-Image-Processing-AI-In-Schools-Universities-For-Teachers",
-        "description": "",
-        "url": "https://github.com/Baizidmdashadzzaman/Real-Time-OMR-Quiz-Evaluation-System-Using-Image-Processing-AI-In-Schools-Universities-For-Teachers",
-        "stars": 1,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-10-31T05:44:32Z"
-      }
-    ],
-    "top_language": "PHP",
-    "all_languages": [
-      "PHP",
-      "CSS",
-      "Python",
-      "JavaScript",
-      "HTML"
-    ],
-    "contributions_last_90d": 693,
-    "prs_last_90d": 0,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 245,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 4.36
+    "activity_score": 4.35
   },
   {
     "github_username": "Sumonta056",
@@ -37882,7 +37882,7 @@
     "reviews_last_90d": 0,
     "commits_last_90d": 534,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 4.2
+    "activity_score": 4.19
   },
   {
     "github_username": "mejba13",
@@ -45922,6 +45922,144 @@
     "activity_score": 3.82
   },
   {
+    "github_username": "raykibul",
+    "name": "Rakibul Islam",
+    "profile_url": "https://github.com/raykibul",
+    "location": "Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/33988342?u=c50c4931d79102ce2018c701629558a2b19ec3b8&v=4",
+    "bio": "Software Engineer |  App Developer | Youtuber\r\n",
+    "company": "Optimizely",
+    "website_url": "raykibul.com",
+    "followers": 134,
+    "following": 55,
+    "public_repos": 45,
+    "total_stars": 16,
+    "top_repos": [
+      {
+        "name": "ai-agent-development-course",
+        "description": "This repository will be used to maintain the content of the AI Agent Development course offered by Interactive Cares.",
+        "url": "https://github.com/Rafi99769/ai-agent-development-course",
+        "stars": 5,
+        "forks": 3,
+        "language": "Jupyter Notebook",
+        "topics": [],
+        "pushed_at": "2026-01-21T11:44:13Z"
+      },
+      {
+        "name": "CGPA_Calculation_and_save_Android_APP_using_room_database",
+        "description": "this was my CGPA app on playstore. I can remember it was my first app on playstore. design is not so good . First i used simple Sharedpreferences to save . later i used Room Database to save the value. Helpfull App. You can Download the source code. And use it.  ",
+        "url": "https://github.com/raykibul/CGPA_Calculation_and_save_Android_APP_using_room_database",
+        "stars": 3,
+        "forks": 1,
+        "language": "Java",
+        "topics": [
+          "android",
+          "mvvm-android",
+          "room-database",
+          "java"
+        ],
+        "pushed_at": "2020-01-07T19:10:38Z"
+      },
+      {
+        "name": "Daraz-Scraper",
+        "description": "it's a python based web scraper to parse data from daraz web site! ",
+        "url": "https://github.com/raykibul/Daraz-Scraper",
+        "stars": 1,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2022-07-23T11:43:24Z"
+      },
+      {
+        "name": "DataPackerApp",
+        "description": "Android app for Datapacker",
+        "url": "https://github.com/raykibul/DataPackerApp",
+        "stars": 1,
+        "forks": 0,
+        "language": "Kotlin",
+        "topics": [],
+        "pushed_at": "2022-02-19T01:24:56Z"
+      },
+      {
+        "name": "DataPacker",
+        "description": "Industrial attachment project",
+        "url": "https://github.com/raykibul/DataPacker",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2022-02-14T19:48:54Z"
+      },
+      {
+        "name": "CUETmart",
+        "description": "Software lab project - android app where Cuetian can buy or sell any products",
+        "url": "https://github.com/raykibul/CUETmart",
+        "stars": 1,
+        "forks": 0,
+        "language": "Kotlin",
+        "topics": [],
+        "pushed_at": "2022-01-24T04:34:40Z"
+      },
+      {
+        "name": "TicTacToe",
+        "description": "this was an android app , i tried to complete the app withing 30 minutes. but i failed. sometimes we failed not because we were not perfect but because of we were not well prepared. I am uploading this project so that any of my subscriber can run it on there pc. IF you need any explanation , feel free to send me mail, or send a messeage on facebook.com/raykibul",
+        "url": "https://github.com/raykibul/TicTacToe",
+        "stars": 1,
+        "forks": 0,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2020-01-30T17:24:30Z"
+      },
+      {
+        "name": "ROOMDATABASE",
+        "description": "This is an android app to teach MVVM and Room Database to my Youtube subscribers. They love my videos a lot. If you are one of my well wishers please , follow my github. And Work hard . I wish you get success in your life",
+        "url": "https://github.com/raykibul/ROOMDATABASE",
+        "stars": 1,
+        "forks": 0,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2020-01-16T16:19:20Z"
+      },
+      {
+        "name": "Bulk-Sms-Vb.net-project",
+        "description": "this is a Simple VB.net Project for sending sms through GSM modem port",
+        "url": "https://github.com/raykibul/Bulk-Sms-Vb.net-project",
+        "stars": 1,
+        "forks": 0,
+        "language": "Visual Basic",
+        "topics": [],
+        "pushed_at": "2019-10-17T18:34:16Z"
+      },
+      {
+        "name": "project-cse-144-OOP",
+        "description": "A project on Store Management System",
+        "url": "https://github.com/ZephyrStormZero/project-cse-144-OOP",
+        "stars": 1,
+        "forks": 1,
+        "language": "C++",
+        "topics": [],
+        "pushed_at": "2017-12-16T11:17:52Z"
+      }
+    ],
+    "top_language": "Python",
+    "all_languages": [
+      "Python",
+      "C++",
+      "JavaScript",
+      "Kotlin",
+      "Jupyter Notebook",
+      "Visual Basic",
+      "Java"
+    ],
+    "contributions_last_90d": 4392,
+    "prs_last_90d": 33,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 1,
+    "commits_last_90d": 216,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 3.8
+  },
+  {
     "github_username": "riadafridishibly",
     "name": "Riad Afridi Shibly",
     "profile_url": "https://github.com/riadafridishibly",
@@ -46060,145 +46198,7 @@
     "reviews_last_90d": 4,
     "commits_last_90d": 467,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 3.8
-  },
-  {
-    "github_username": "raykibul",
-    "name": "Rakibul Islam",
-    "profile_url": "https://github.com/raykibul",
-    "location": "Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/33988342?u=c50c4931d79102ce2018c701629558a2b19ec3b8&v=4",
-    "bio": "Software Engineer |  App Developer | Youtuber\r\n",
-    "company": "Optimizely",
-    "website_url": "raykibul.com",
-    "followers": 134,
-    "following": 55,
-    "public_repos": 45,
-    "total_stars": 16,
-    "top_repos": [
-      {
-        "name": "ai-agent-development-course",
-        "description": "This repository will be used to maintain the content of the AI Agent Development course offered by Interactive Cares.",
-        "url": "https://github.com/Rafi99769/ai-agent-development-course",
-        "stars": 5,
-        "forks": 3,
-        "language": "Jupyter Notebook",
-        "topics": [],
-        "pushed_at": "2026-01-21T11:44:13Z"
-      },
-      {
-        "name": "CGPA_Calculation_and_save_Android_APP_using_room_database",
-        "description": "this was my CGPA app on playstore. I can remember it was my first app on playstore. design is not so good . First i used simple Sharedpreferences to save . later i used Room Database to save the value. Helpfull App. You can Download the source code. And use it.  ",
-        "url": "https://github.com/raykibul/CGPA_Calculation_and_save_Android_APP_using_room_database",
-        "stars": 3,
-        "forks": 1,
-        "language": "Java",
-        "topics": [
-          "android",
-          "mvvm-android",
-          "room-database",
-          "java"
-        ],
-        "pushed_at": "2020-01-07T19:10:38Z"
-      },
-      {
-        "name": "Daraz-Scraper",
-        "description": "it's a python based web scraper to parse data from daraz web site! ",
-        "url": "https://github.com/raykibul/Daraz-Scraper",
-        "stars": 1,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2022-07-23T11:43:24Z"
-      },
-      {
-        "name": "DataPackerApp",
-        "description": "Android app for Datapacker",
-        "url": "https://github.com/raykibul/DataPackerApp",
-        "stars": 1,
-        "forks": 0,
-        "language": "Kotlin",
-        "topics": [],
-        "pushed_at": "2022-02-19T01:24:56Z"
-      },
-      {
-        "name": "DataPacker",
-        "description": "Industrial attachment project",
-        "url": "https://github.com/raykibul/DataPacker",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2022-02-14T19:48:54Z"
-      },
-      {
-        "name": "CUETmart",
-        "description": "Software lab project - android app where Cuetian can buy or sell any products",
-        "url": "https://github.com/raykibul/CUETmart",
-        "stars": 1,
-        "forks": 0,
-        "language": "Kotlin",
-        "topics": [],
-        "pushed_at": "2022-01-24T04:34:40Z"
-      },
-      {
-        "name": "TicTacToe",
-        "description": "this was an android app , i tried to complete the app withing 30 minutes. but i failed. sometimes we failed not because we were not perfect but because of we were not well prepared. I am uploading this project so that any of my subscriber can run it on there pc. IF you need any explanation , feel free to send me mail, or send a messeage on facebook.com/raykibul",
-        "url": "https://github.com/raykibul/TicTacToe",
-        "stars": 1,
-        "forks": 0,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2020-01-30T17:24:30Z"
-      },
-      {
-        "name": "ROOMDATABASE",
-        "description": "This is an android app to teach MVVM and Room Database to my Youtube subscribers. They love my videos a lot. If you are one of my well wishers please , follow my github. And Work hard . I wish you get success in your life",
-        "url": "https://github.com/raykibul/ROOMDATABASE",
-        "stars": 1,
-        "forks": 0,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2020-01-16T16:19:20Z"
-      },
-      {
-        "name": "Bulk-Sms-Vb.net-project",
-        "description": "this is a Simple VB.net Project for sending sms through GSM modem port",
-        "url": "https://github.com/raykibul/Bulk-Sms-Vb.net-project",
-        "stars": 1,
-        "forks": 0,
-        "language": "Visual Basic",
-        "topics": [],
-        "pushed_at": "2019-10-17T18:34:16Z"
-      },
-      {
-        "name": "project-cse-144-OOP",
-        "description": "A project on Store Management System",
-        "url": "https://github.com/ZephyrStormZero/project-cse-144-OOP",
-        "stars": 1,
-        "forks": 1,
-        "language": "C++",
-        "topics": [],
-        "pushed_at": "2017-12-16T11:17:52Z"
-      }
-    ],
-    "top_language": "Python",
-    "all_languages": [
-      "Python",
-      "C++",
-      "JavaScript",
-      "Kotlin",
-      "Jupyter Notebook",
-      "Visual Basic",
-      "Java"
-    ],
-    "contributions_last_90d": 4392,
-    "prs_last_90d": 33,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 1,
-    "commits_last_90d": 216,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 3.8
+    "activity_score": 3.79
   },
   {
     "github_username": "SOURAV-ROY",
@@ -50265,6 +50265,140 @@
     "activity_score": 3.62
   },
   {
+    "github_username": "emdidar",
+    "name": "Mohammad Didarul Alam",
+    "profile_url": "https://github.com/emdidar",
+    "location": "Chittagong, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17897757?u=47eb17bace47774e0e82124d36a4f56ddefa6f31&v=4",
+    "bio": "Software Engineer. Loves Java, PHP & JS. Big time fan of Laravel",
+    "company": "Coding Help BD",
+    "website_url": "www.codinghelpbd.com",
+    "followers": 41,
+    "following": 90,
+    "public_repos": 31,
+    "total_stars": 30,
+    "top_repos": [
+      {
+        "name": "DesignPatternsUsingPHP",
+        "description": "Design Patterns Using PHP",
+        "url": "https://github.com/emdidar/DesignPatternsUsingPHP",
+        "stars": 7,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2022-02-01T17:22:04Z"
+      },
+      {
+        "name": "chrome-image-hider",
+        "description": "Image Hider Extension For Google Chrome",
+        "url": "https://github.com/emdidar/chrome-image-hider",
+        "stars": 5,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2025-08-03T04:54:54Z"
+      },
+      {
+        "name": "easy-admin-template-tailwind",
+        "description": "Admin Template (Tailwind CSS)",
+        "url": "https://github.com/emdidar/easy-admin-template-tailwind",
+        "stars": 4,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [
+          "admin-dashboard",
+          "admin-template",
+          "tailwind"
+        ],
+        "pushed_at": "2022-05-27T18:51:01Z"
+      },
+      {
+        "name": "EnglishAvroUnijoyKeyboard",
+        "description": "English Avro and Unijoy Keyboard ",
+        "url": "https://github.com/emdidar/EnglishAvroUnijoyKeyboard",
+        "stars": 4,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2023-01-03T04:21:59Z"
+      },
+      {
+        "name": "api",
+        "description": "",
+        "url": "https://github.com/emdidar/api",
+        "stars": 3,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2020-06-16T09:41:19Z"
+      },
+      {
+        "name": "LearnVue3",
+        "description": "LearnVue3",
+        "url": "https://github.com/emdidar/LearnVue3",
+        "stars": 2,
+        "forks": 0,
+        "language": "Vue",
+        "topics": [],
+        "pushed_at": "2025-07-19T12:32:12Z"
+      },
+      {
+        "name": "portfolio",
+        "description": "portfolio",
+        "url": "https://github.com/emdidar/portfolio",
+        "stars": 2,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2022-05-10T20:26:01Z"
+      },
+      {
+        "name": "Simple-NextApp",
+        "description": "",
+        "url": "https://github.com/jahedul-hasan-edu/Simple-NextApp",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2023-07-16T10:17:43Z"
+      },
+      {
+        "name": "chat-app",
+        "description": "Chat App",
+        "url": "https://github.com/emdidar/chat-app",
+        "stars": 1,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2023-01-10T12:47:12Z"
+      },
+      {
+        "name": "AmountInWordBangla",
+        "description": "AmountInWordBangla",
+        "url": "https://github.com/emdidar/AmountInWordBangla",
+        "stars": 1,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2021-11-09T12:30:11Z"
+      }
+    ],
+    "top_language": "Vue",
+    "all_languages": [
+      "Vue",
+      "HTML",
+      "PHP",
+      "JavaScript"
+    ],
+    "contributions_last_90d": 5281,
+    "prs_last_90d": 0,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 1,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 3.61
+  },
+  {
     "github_username": "al-imam",
     "name": "Al Imam",
     "profile_url": "https://github.com/al-imam",
@@ -50402,141 +50536,7 @@
     "reviews_last_90d": 1,
     "commits_last_90d": 143,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 3.61
-  },
-  {
-    "github_username": "emdidar",
-    "name": "Mohammad Didarul Alam",
-    "profile_url": "https://github.com/emdidar",
-    "location": "Chittagong, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/17897757?u=47eb17bace47774e0e82124d36a4f56ddefa6f31&v=4",
-    "bio": "Software Engineer. Loves Java, PHP & JS. Big time fan of Laravel",
-    "company": "Coding Help BD",
-    "website_url": "www.codinghelpbd.com",
-    "followers": 41,
-    "following": 90,
-    "public_repos": 31,
-    "total_stars": 30,
-    "top_repos": [
-      {
-        "name": "DesignPatternsUsingPHP",
-        "description": "Design Patterns Using PHP",
-        "url": "https://github.com/emdidar/DesignPatternsUsingPHP",
-        "stars": 7,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2022-02-01T17:22:04Z"
-      },
-      {
-        "name": "chrome-image-hider",
-        "description": "Image Hider Extension For Google Chrome",
-        "url": "https://github.com/emdidar/chrome-image-hider",
-        "stars": 5,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2025-08-03T04:54:54Z"
-      },
-      {
-        "name": "easy-admin-template-tailwind",
-        "description": "Admin Template (Tailwind CSS)",
-        "url": "https://github.com/emdidar/easy-admin-template-tailwind",
-        "stars": 4,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [
-          "admin-dashboard",
-          "admin-template",
-          "tailwind"
-        ],
-        "pushed_at": "2022-05-27T18:51:01Z"
-      },
-      {
-        "name": "EnglishAvroUnijoyKeyboard",
-        "description": "English Avro and Unijoy Keyboard ",
-        "url": "https://github.com/emdidar/EnglishAvroUnijoyKeyboard",
-        "stars": 4,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2023-01-03T04:21:59Z"
-      },
-      {
-        "name": "api",
-        "description": "",
-        "url": "https://github.com/emdidar/api",
-        "stars": 3,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2020-06-16T09:41:19Z"
-      },
-      {
-        "name": "LearnVue3",
-        "description": "LearnVue3",
-        "url": "https://github.com/emdidar/LearnVue3",
-        "stars": 2,
-        "forks": 0,
-        "language": "Vue",
-        "topics": [],
-        "pushed_at": "2025-07-19T12:32:12Z"
-      },
-      {
-        "name": "portfolio",
-        "description": "portfolio",
-        "url": "https://github.com/emdidar/portfolio",
-        "stars": 2,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2022-05-10T20:26:01Z"
-      },
-      {
-        "name": "Simple-NextApp",
-        "description": "",
-        "url": "https://github.com/jahedul-hasan-edu/Simple-NextApp",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2023-07-16T10:17:43Z"
-      },
-      {
-        "name": "chat-app",
-        "description": "Chat App",
-        "url": "https://github.com/emdidar/chat-app",
-        "stars": 1,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2023-01-10T12:47:12Z"
-      },
-      {
-        "name": "AmountInWordBangla",
-        "description": "AmountInWordBangla",
-        "url": "https://github.com/emdidar/AmountInWordBangla",
-        "stars": 1,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2021-11-09T12:30:11Z"
-      }
-    ],
-    "top_language": "Vue",
-    "all_languages": [
-      "Vue",
-      "HTML",
-      "PHP",
-      "JavaScript"
-    ],
-    "contributions_last_90d": 5281,
-    "prs_last_90d": 0,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 1,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 3.61
+    "activity_score": 3.6
   },
   {
     "github_username": "shahnewaztameem",
@@ -55241,7 +55241,7 @@
     "reviews_last_90d": 24,
     "commits_last_90d": 2243,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 3.46
+    "activity_score": 3.45
   },
   {
     "github_username": "SaymanRabbi",
@@ -60073,7 +60073,7 @@
     "reviews_last_90d": 1,
     "commits_last_90d": 423,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 3.34
+    "activity_score": 3.33
   },
   {
     "github_username": "mujibulhaquetanim",
@@ -74024,7 +74024,7 @@
     "reviews_last_90d": 0,
     "commits_last_90d": 1236,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 2.9
+    "activity_score": 2.89
   },
   {
     "github_username": "shiuly-28",
@@ -86129,149 +86129,6 @@
     "activity_score": 2.62
   },
   {
-    "github_username": "khayrul25",
-    "name": "Khayrul",
-    "profile_url": "https://github.com/khayrul25",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/86622751?u=12080da8f68857366de89a796a33dd7efd0617b8&v=4",
-    "bio": "Front-End Developer @Technext | Full-Stack Developer | JavaScript, React, Node.js",
-    "company": "Technext Limited",
-    "website_url": "https://khayrulislam.vercel.app/",
-    "followers": 6,
-    "following": 1,
-    "public_repos": 75,
-    "total_stars": 58,
-    "top_repos": [
-      {
-        "name": "hummingbird",
-        "description": "The most sensible component system for Tailwind.",
-        "url": "https://github.com/hummingbirdui/hummingbird",
-        "stars": 49,
-        "forks": 14,
-        "language": "MDX",
-        "topics": [
-          "component",
-          "css",
-          "html",
-          "javascript",
-          "tailwind"
-        ],
-        "pushed_at": "2026-11-01T14:08:56Z"
-      },
-      {
-        "name": "hummingbird-react",
-        "description": "React components for Hummingbird, built with Tailwind CSS.",
-        "url": "https://github.com/hummingbirdui/hummingbird-react",
-        "stars": 4,
-        "forks": 4,
-        "language": "TypeScript",
-        "topics": [
-          "components",
-          "hummingbird",
-          "radix-ui",
-          "react",
-          "tailwindcss"
-        ],
-        "pushed_at": "2026-11-03T21:33:04Z"
-      },
-      {
-        "name": "ajker-barta",
-        "description": "Online news portal",
-        "url": "https://github.com/md-emran-hossain/ajker-barta",
-        "stars": 3,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2025-09-30T07:55:43Z"
-      },
-      {
-        "name": "boldo",
-        "description": "",
-        "url": "https://github.com/technext/boldo",
-        "stars": 1,
-        "forks": 3,
-        "language": "CSS",
-        "topics": [],
-        "pushed_at": "2022-08-03T04:13:17Z"
-      },
-      {
-        "name": "FoodShop",
-        "description": "Food Shop Website",
-        "url": "https://github.com/khayrul25/FoodShop",
-        "stars": 1,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2021-07-11T05:13:15Z"
-      },
-      {
-        "name": "phoenix-tailwind-react",
-        "description": "",
-        "url": "https://github.com/prium/phoenix-tailwind-react",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-09-21T18:57:51Z"
-      },
-      {
-        "name": "staging-react",
-        "description": "",
-        "url": "https://github.com/hummingbirdui/staging-react",
-        "stars": 0,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2026-08-23T09:11:29Z"
-      },
-      {
-        "name": "wavemart",
-        "description": "",
-        "url": "https://github.com/khayrul25/wavemart",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-09-21T19:42:38Z"
-      },
-      {
-        "name": "bs-tw-converter",
-        "description": "",
-        "url": "https://github.com/khayrul25/bs-tw-converter",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2025-12-02T04:36:26Z"
-      },
-      {
-        "name": "staging",
-        "description": "",
-        "url": "https://github.com/hummingbirdui/staging",
-        "stars": 0,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2026-08-09T10:27:24Z"
-      }
-    ],
-    "top_language": "CSS",
-    "all_languages": [
-      "CSS",
-      "JavaScript",
-      "MDX",
-      "TypeScript",
-      "HTML"
-    ],
-    "contributions_last_90d": 1159,
-    "prs_last_90d": 28,
-    "issues_last_90d": 18,
-    "reviews_last_90d": 22,
-    "commits_last_90d": 1086,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 2.62
-  },
-  {
     "github_username": "moshiuzzaman",
     "name": "Shozon Raj",
     "profile_url": "https://github.com/moshiuzzaman",
@@ -86972,6 +86829,149 @@
     "commits_last_90d": 113,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
     "activity_score": 2.62
+  },
+  {
+    "github_username": "khayrul25",
+    "name": "Khayrul",
+    "profile_url": "https://github.com/khayrul25",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/86622751?u=12080da8f68857366de89a796a33dd7efd0617b8&v=4",
+    "bio": "Front-End Developer @Technext | Full-Stack Developer | JavaScript, React, Node.js",
+    "company": "Technext Limited",
+    "website_url": "https://khayrulislam.vercel.app/",
+    "followers": 6,
+    "following": 1,
+    "public_repos": 75,
+    "total_stars": 58,
+    "top_repos": [
+      {
+        "name": "hummingbird",
+        "description": "The most sensible component system for Tailwind.",
+        "url": "https://github.com/hummingbirdui/hummingbird",
+        "stars": 49,
+        "forks": 14,
+        "language": "MDX",
+        "topics": [
+          "component",
+          "css",
+          "html",
+          "javascript",
+          "tailwind"
+        ],
+        "pushed_at": "2026-11-01T14:08:56Z"
+      },
+      {
+        "name": "hummingbird-react",
+        "description": "React components for Hummingbird, built with Tailwind CSS.",
+        "url": "https://github.com/hummingbirdui/hummingbird-react",
+        "stars": 4,
+        "forks": 4,
+        "language": "TypeScript",
+        "topics": [
+          "components",
+          "hummingbird",
+          "radix-ui",
+          "react",
+          "tailwindcss"
+        ],
+        "pushed_at": "2026-11-03T21:33:04Z"
+      },
+      {
+        "name": "ajker-barta",
+        "description": "Online news portal",
+        "url": "https://github.com/md-emran-hossain/ajker-barta",
+        "stars": 3,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2025-09-30T07:55:43Z"
+      },
+      {
+        "name": "boldo",
+        "description": "",
+        "url": "https://github.com/technext/boldo",
+        "stars": 1,
+        "forks": 3,
+        "language": "CSS",
+        "topics": [],
+        "pushed_at": "2022-08-03T04:13:17Z"
+      },
+      {
+        "name": "FoodShop",
+        "description": "Food Shop Website",
+        "url": "https://github.com/khayrul25/FoodShop",
+        "stars": 1,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2021-07-11T05:13:15Z"
+      },
+      {
+        "name": "phoenix-tailwind-react",
+        "description": "",
+        "url": "https://github.com/prium/phoenix-tailwind-react",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-09-21T18:57:51Z"
+      },
+      {
+        "name": "staging-react",
+        "description": "",
+        "url": "https://github.com/hummingbirdui/staging-react",
+        "stars": 0,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2026-08-23T09:11:29Z"
+      },
+      {
+        "name": "wavemart",
+        "description": "",
+        "url": "https://github.com/khayrul25/wavemart",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-09-21T19:42:38Z"
+      },
+      {
+        "name": "bs-tw-converter",
+        "description": "",
+        "url": "https://github.com/khayrul25/bs-tw-converter",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2025-12-02T04:36:26Z"
+      },
+      {
+        "name": "staging",
+        "description": "",
+        "url": "https://github.com/hummingbirdui/staging",
+        "stars": 0,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2026-08-09T10:27:24Z"
+      }
+    ],
+    "top_language": "CSS",
+    "all_languages": [
+      "CSS",
+      "JavaScript",
+      "MDX",
+      "TypeScript",
+      "HTML"
+    ],
+    "contributions_last_90d": 1159,
+    "prs_last_90d": 28,
+    "issues_last_90d": 18,
+    "reviews_last_90d": 22,
+    "commits_last_90d": 1086,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 2.61
   },
   {
     "github_username": "NurAlam123",
@@ -95266,149 +95266,6 @@
     "activity_score": 2.48
   },
   {
-    "github_username": "gazi-faysal-jubayer",
-    "name": "Gazi Faysal Jubayer",
-    "profile_url": "https://github.com/gazi-faysal-jubayer",
-    "location": "Khulna,Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/118408822?u=c4abb03fe706e3c7092128ed2e6d166f83028075&v=4",
-    "bio": "I'm a passionate developer with expertise in Python, Flutter, and Computer Vision. I enjoy creating innovative solutions and learning new technology.",
-    "company": "3D Bytes",
-    "website_url": "gazifaysaljubayer.tech",
-    "followers": 30,
-    "following": 14,
-    "public_repos": 78,
-    "total_stars": 15,
-    "top_repos": [
-      {
-        "name": "ExoBengal",
-        "description": "",
-        "url": "https://github.com/gazi-faysal-jubayer/ExoBengal",
-        "stars": 3,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2025-12-31T12:48:06Z"
-      },
-      {
-        "name": "virtual-keyboard-opnCV",
-        "description": "Imagine typing without touching a keyboard - that's exactly what this AI-Powered Virtual Keyboard allows you to do! This cutting-edge project combines computer vision, hand tracking, and gesture recognition to create a futuristic typing experience. Using just your webcam, you can type by moving your hands in the air.",
-        "url": "https://github.com/gazi-faysal-jubayer/virtual-keyboard-opnCV",
-        "stars": 3,
-        "forks": 1,
-        "language": "Python",
-        "topics": [
-          "computer-vision",
-          "cv2",
-          "gesture-recognition",
-          "hand-tracking",
-          "human-computer-interaction"
-        ],
-        "pushed_at": "2024-07-12T16:14:52Z"
-      },
-      {
-        "name": "WealthPilot",
-        "description": "",
-        "url": "https://github.com/aseerawsaf45-dev/WealthPilot",
-        "stars": 2,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-10-20T10:41:57Z"
-      },
-      {
-        "name": "shapebridge",
-        "description": "Lightweight open-source CAD viewer, format converter and parametric designer with live peer-to-peer sharing. Windows, macOS, Linux and web.",
-        "url": "https://github.com/gazi-faysal-jubayer/shapebridge",
-        "stars": 1,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [
-          "3d-viewer",
-          "cad",
-          "cad-viewer",
-          "freecad",
-          "open-source"
-        ],
-        "pushed_at": "2026-11-06T12:10:57Z"
-      },
-      {
-        "name": "human-body-blur",
-        "description": "",
-        "url": "https://github.com/gazi-faysal-jubayer/human-body-blur",
-        "stars": 1,
-        "forks": 0,
-        "language": "Jupyter Notebook",
-        "topics": [],
-        "pushed_at": "2026-03-06T15:26:16Z"
-      },
-      {
-        "name": "mybookshelf",
-        "description": "",
-        "url": "https://github.com/gazi-faysal-jubayer/mybookshelf",
-        "stars": 1,
-        "forks": 1,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-11-02T17:28:21Z"
-      },
-      {
-        "name": "computer-vision-roadmap",
-        "description": "",
-        "url": "https://github.com/gazi-faysal-jubayer/computer-vision-roadmap",
-        "stars": 1,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2025-10-24T13:15:18Z"
-      },
-      {
-        "name": "rxdf",
-        "description": "",
-        "url": "https://github.com/gazi-faysal-jubayer/rxdf",
-        "stars": 1,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2025-09-08T16:33:40Z"
-      },
-      {
-        "name": "webp-converter",
-        "description": "",
-        "url": "https://github.com/gazi-faysal-jubayer/webp-converter",
-        "stars": 1,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2025-07-28T05:55:26Z"
-      },
-      {
-        "name": "BengalSub-web",
-        "description": "",
-        "url": "https://github.com/gazi-faysal-jubayer/BengalSub-web",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2025-08-15T03:51:27Z"
-      }
-    ],
-    "top_language": "Python",
-    "all_languages": [
-      "Python",
-      "JavaScript",
-      "TypeScript",
-      "Jupyter Notebook",
-      "HTML"
-    ],
-    "contributions_last_90d": 611,
-    "prs_last_90d": 28,
-    "issues_last_90d": 283,
-    "reviews_last_90d": 2,
-    "commits_last_90d": 239,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 2.48
-  },
-  {
     "github_username": "Julfikar-Haidar",
     "name": "Julfikar Haidar",
     "profile_url": "https://github.com/Julfikar-Haidar",
@@ -96105,6 +95962,149 @@
     "commits_last_90d": 28,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
     "activity_score": 2.47
+  },
+  {
+    "github_username": "gazi-faysal-jubayer",
+    "name": "Gazi Faysal Jubayer",
+    "profile_url": "https://github.com/gazi-faysal-jubayer",
+    "location": "Khulna,Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/118408822?u=c4abb03fe706e3c7092128ed2e6d166f83028075&v=4",
+    "bio": "I'm a passionate developer with expertise in Python, Flutter, and Computer Vision. I enjoy creating innovative solutions and learning new technology.",
+    "company": "3D Bytes",
+    "website_url": "gazifaysaljubayer.tech",
+    "followers": 30,
+    "following": 14,
+    "public_repos": 78,
+    "total_stars": 15,
+    "top_repos": [
+      {
+        "name": "ExoBengal",
+        "description": "",
+        "url": "https://github.com/gazi-faysal-jubayer/ExoBengal",
+        "stars": 3,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2025-12-31T12:48:06Z"
+      },
+      {
+        "name": "virtual-keyboard-opnCV",
+        "description": "Imagine typing without touching a keyboard - that's exactly what this AI-Powered Virtual Keyboard allows you to do! This cutting-edge project combines computer vision, hand tracking, and gesture recognition to create a futuristic typing experience. Using just your webcam, you can type by moving your hands in the air.",
+        "url": "https://github.com/gazi-faysal-jubayer/virtual-keyboard-opnCV",
+        "stars": 3,
+        "forks": 1,
+        "language": "Python",
+        "topics": [
+          "computer-vision",
+          "cv2",
+          "gesture-recognition",
+          "hand-tracking",
+          "human-computer-interaction"
+        ],
+        "pushed_at": "2024-07-12T16:14:52Z"
+      },
+      {
+        "name": "WealthPilot",
+        "description": "",
+        "url": "https://github.com/aseerawsaf45-dev/WealthPilot",
+        "stars": 2,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-10-20T10:41:57Z"
+      },
+      {
+        "name": "shapebridge",
+        "description": "Lightweight open-source CAD viewer, format converter and parametric designer with live peer-to-peer sharing. Windows, macOS, Linux and web.",
+        "url": "https://github.com/gazi-faysal-jubayer/shapebridge",
+        "stars": 1,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [
+          "3d-viewer",
+          "cad",
+          "cad-viewer",
+          "freecad",
+          "open-source"
+        ],
+        "pushed_at": "2026-11-06T12:10:57Z"
+      },
+      {
+        "name": "human-body-blur",
+        "description": "",
+        "url": "https://github.com/gazi-faysal-jubayer/human-body-blur",
+        "stars": 1,
+        "forks": 0,
+        "language": "Jupyter Notebook",
+        "topics": [],
+        "pushed_at": "2026-03-06T15:26:16Z"
+      },
+      {
+        "name": "mybookshelf",
+        "description": "",
+        "url": "https://github.com/gazi-faysal-jubayer/mybookshelf",
+        "stars": 1,
+        "forks": 1,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-11-02T17:28:21Z"
+      },
+      {
+        "name": "computer-vision-roadmap",
+        "description": "",
+        "url": "https://github.com/gazi-faysal-jubayer/computer-vision-roadmap",
+        "stars": 1,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2025-10-24T13:15:18Z"
+      },
+      {
+        "name": "rxdf",
+        "description": "",
+        "url": "https://github.com/gazi-faysal-jubayer/rxdf",
+        "stars": 1,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2025-09-08T16:33:40Z"
+      },
+      {
+        "name": "webp-converter",
+        "description": "",
+        "url": "https://github.com/gazi-faysal-jubayer/webp-converter",
+        "stars": 1,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2025-07-28T05:55:26Z"
+      },
+      {
+        "name": "BengalSub-web",
+        "description": "",
+        "url": "https://github.com/gazi-faysal-jubayer/BengalSub-web",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2025-08-15T03:51:27Z"
+      }
+    ],
+    "top_language": "Python",
+    "all_languages": [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "Jupyter Notebook",
+      "HTML"
+    ],
+    "contributions_last_90d": 611,
+    "prs_last_90d": 28,
+    "issues_last_90d": 283,
+    "reviews_last_90d": 2,
+    "commits_last_90d": 239,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 2.46
   },
   {
     "github_username": "Ruhulcse",
@@ -100964,173 +100964,6 @@
     "activity_score": 2.4
   },
   {
-    "github_username": "raihankhan",
-    "name": "Raihan Khan",
-    "profile_url": "https://github.com/raihankhan",
-    "location": "Dhaka",
-    "avatar_url": "https://avatars.githubusercontent.com/u/25270629?u=0d10e1bba56fb110612684c20e5896cf0223a87f&v=4",
-    "bio": "Senior Platform Engineer @MakroPro | Ex- @Appscode  Kubernetes | IDP | GitOps | Agent First Platform Automation",
-    "company": "MakroPro",
-    "website_url": "https://raihankhan.github.io/",
-    "followers": 81,
-    "following": 68,
-    "public_repos": 68,
-    "total_stars": 71,
-    "top_repos": [
-      {
-        "name": "Useful-Algorithms-For-Competetive-Programming",
-        "description": "",
-        "url": "https://github.com/raihankhan/Useful-Algorithms-For-Competetive-Programming",
-        "stars": 25,
-        "forks": 4,
-        "language": "C++",
-        "topics": [
-          "prime-factorizations",
-          "factorials",
-          "fibonacci",
-          "knapsack-problem",
-          "tower-of-hanoi"
-        ],
-        "pushed_at": "2020-06-01T11:21:18Z"
-      },
-      {
-        "name": "DSA-drill",
-        "description": "",
-        "url": "https://github.com/raihankhan/DSA-drill",
-        "stars": 15,
-        "forks": 1,
-        "language": "C++",
-        "topics": [
-          "data-structures",
-          "algorithms-and-data-structures",
-          "algorithms",
-          "competetive-programming-resources",
-          "dynamic-programming"
-        ],
-        "pushed_at": "2022-08-12T08:35:07Z"
-      },
-      {
-        "name": "COVID-19-Update",
-        "description": "COVID-19 Update application is an android application that extracts data like total affected, total deaths, deaths today all over the world using open source REST API. It also shows separate overview of data in each of the affected countries, most affected countries, vaccine research advancements in details, FAQ\u2019s regarding COVID-19 and coronavirus as well as information about what to do to stay healthy, launches URL on user\u2019s browser linking WHO donation website and Myth Busters segment.",
-        "url": "https://github.com/raihankhan/COVID-19-Update",
-        "stars": 9,
-        "forks": 0,
-        "language": "Dart",
-        "topics": [
-          "covid-19",
-          "coronavirus-info",
-          "flutter",
-          "dart",
-          "deaths-today"
-        ],
-        "pushed_at": "2021-02-07T17:43:50Z"
-      },
-      {
-        "name": "JAVA-projects",
-        "description": "These are my projects for Java Technologies Lab course at university. ",
-        "url": "https://github.com/raihankhan/JAVA-projects",
-        "stars": 5,
-        "forks": 1,
-        "language": "Java",
-        "topics": [
-          "java-socket-programming",
-          "game",
-          "server-frame",
-          "client-frame",
-          "socket"
-        ],
-        "pushed_at": "2021-01-19T22:35:52Z"
-      },
-      {
-        "name": "kafka-monitoring",
-        "description": "Provision Apache Kafka in KRaft mode on kubernetes along with prometheus monitoring configs and jmx exporter for scraping Kafka metrics ",
-        "url": "https://github.com/raihankhan/kafka-monitoring",
-        "stars": 4,
-        "forks": 0,
-        "language": "Dockerfile",
-        "topics": [
-          "docker",
-          "grafana-dashboard",
-          "kafka",
-          "prometheus",
-          "kafka-kraft"
-        ],
-        "pushed_at": "2023-02-07T12:08:13Z"
-      },
-      {
-        "name": "EcommerceApi",
-        "description": "Docker Image : https://hub.docker.com/r/raihankhanraka/ecommerce-api",
-        "url": "https://github.com/raihankhan/EcommerceApi",
-        "stars": 4,
-        "forks": 0,
-        "language": "Go",
-        "topics": [
-          "golang",
-          "jwt-authentication",
-          "kubernetes",
-          "dockerfile",
-          "go-chi"
-        ],
-        "pushed_at": "2022-07-15T11:33:14Z"
-      },
-      {
-        "name": "order-processing-workflow",
-        "description": "This is a demo project for temporal workflow execution",
-        "url": "https://github.com/raihankhan/order-processing-workflow",
-        "stars": 3,
-        "forks": 3,
-        "language": "Go",
-        "topics": [],
-        "pushed_at": "2026-07-28T04:49:50Z"
-      },
-      {
-        "name": "Kafka-go-pubsub",
-        "description": "A simple publisher/subscriber for Apache Kafka broker implemented in Golang",
-        "url": "https://github.com/raihankhan/Kafka-go-pubsub",
-        "stars": 2,
-        "forks": 0,
-        "language": "Go",
-        "topics": [],
-        "pushed_at": "2022-12-01T11:20:18Z"
-      },
-      {
-        "name": "jarvis",
-        "description": "jarvis is a cli tool that enables several useful command line operations from terminal",
-        "url": "https://github.com/raihankhan/jarvis",
-        "stars": 2,
-        "forks": 0,
-        "language": "Go",
-        "topics": [],
-        "pushed_at": "2025-02-27T18:39:20Z"
-      },
-      {
-        "name": "Go-drill",
-        "description": "A repository of useful go codes!",
-        "url": "https://github.com/raihankhan/Go-drill",
-        "stars": 2,
-        "forks": 0,
-        "language": "Go",
-        "topics": [],
-        "pushed_at": "2025-02-27T18:37:49Z"
-      }
-    ],
-    "top_language": "Dart",
-    "all_languages": [
-      "Dart",
-      "C++",
-      "Dockerfile",
-      "Go",
-      "Java"
-    ],
-    "contributions_last_90d": 617,
-    "prs_last_90d": 64,
-    "issues_last_90d": 98,
-    "reviews_last_90d": 1,
-    "commits_last_90d": 174,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 2.39
-  },
-  {
     "github_username": "Tufahel",
     "name": "Tufahel Ahmed",
     "profile_url": "https://github.com/Tufahel",
@@ -101443,6 +101276,173 @@
     "commits_last_90d": 7,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
     "activity_score": 2.39
+  },
+  {
+    "github_username": "raihankhan",
+    "name": "Raihan Khan",
+    "profile_url": "https://github.com/raihankhan",
+    "location": "Dhaka",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25270629?u=0d10e1bba56fb110612684c20e5896cf0223a87f&v=4",
+    "bio": "Senior Platform Engineer @MakroPro | Ex- @Appscode  Kubernetes | IDP | GitOps | Agent First Platform Automation",
+    "company": "MakroPro",
+    "website_url": "https://raihankhan.github.io/",
+    "followers": 81,
+    "following": 68,
+    "public_repos": 68,
+    "total_stars": 71,
+    "top_repos": [
+      {
+        "name": "Useful-Algorithms-For-Competetive-Programming",
+        "description": "",
+        "url": "https://github.com/raihankhan/Useful-Algorithms-For-Competetive-Programming",
+        "stars": 25,
+        "forks": 4,
+        "language": "C++",
+        "topics": [
+          "prime-factorizations",
+          "factorials",
+          "fibonacci",
+          "knapsack-problem",
+          "tower-of-hanoi"
+        ],
+        "pushed_at": "2020-06-01T11:21:18Z"
+      },
+      {
+        "name": "DSA-drill",
+        "description": "",
+        "url": "https://github.com/raihankhan/DSA-drill",
+        "stars": 15,
+        "forks": 1,
+        "language": "C++",
+        "topics": [
+          "data-structures",
+          "algorithms-and-data-structures",
+          "algorithms",
+          "competetive-programming-resources",
+          "dynamic-programming"
+        ],
+        "pushed_at": "2022-08-12T08:35:07Z"
+      },
+      {
+        "name": "COVID-19-Update",
+        "description": "COVID-19 Update application is an android application that extracts data like total affected, total deaths, deaths today all over the world using open source REST API. It also shows separate overview of data in each of the affected countries, most affected countries, vaccine research advancements in details, FAQ\u2019s regarding COVID-19 and coronavirus as well as information about what to do to stay healthy, launches URL on user\u2019s browser linking WHO donation website and Myth Busters segment.",
+        "url": "https://github.com/raihankhan/COVID-19-Update",
+        "stars": 9,
+        "forks": 0,
+        "language": "Dart",
+        "topics": [
+          "covid-19",
+          "coronavirus-info",
+          "flutter",
+          "dart",
+          "deaths-today"
+        ],
+        "pushed_at": "2021-02-07T17:43:50Z"
+      },
+      {
+        "name": "JAVA-projects",
+        "description": "These are my projects for Java Technologies Lab course at university. ",
+        "url": "https://github.com/raihankhan/JAVA-projects",
+        "stars": 5,
+        "forks": 1,
+        "language": "Java",
+        "topics": [
+          "java-socket-programming",
+          "game",
+          "server-frame",
+          "client-frame",
+          "socket"
+        ],
+        "pushed_at": "2021-01-19T22:35:52Z"
+      },
+      {
+        "name": "kafka-monitoring",
+        "description": "Provision Apache Kafka in KRaft mode on kubernetes along with prometheus monitoring configs and jmx exporter for scraping Kafka metrics ",
+        "url": "https://github.com/raihankhan/kafka-monitoring",
+        "stars": 4,
+        "forks": 0,
+        "language": "Dockerfile",
+        "topics": [
+          "docker",
+          "grafana-dashboard",
+          "kafka",
+          "prometheus",
+          "kafka-kraft"
+        ],
+        "pushed_at": "2023-02-07T12:08:13Z"
+      },
+      {
+        "name": "EcommerceApi",
+        "description": "Docker Image : https://hub.docker.com/r/raihankhanraka/ecommerce-api",
+        "url": "https://github.com/raihankhan/EcommerceApi",
+        "stars": 4,
+        "forks": 0,
+        "language": "Go",
+        "topics": [
+          "golang",
+          "jwt-authentication",
+          "kubernetes",
+          "dockerfile",
+          "go-chi"
+        ],
+        "pushed_at": "2022-07-15T11:33:14Z"
+      },
+      {
+        "name": "order-processing-workflow",
+        "description": "This is a demo project for temporal workflow execution",
+        "url": "https://github.com/raihankhan/order-processing-workflow",
+        "stars": 3,
+        "forks": 3,
+        "language": "Go",
+        "topics": [],
+        "pushed_at": "2026-07-28T04:49:50Z"
+      },
+      {
+        "name": "Kafka-go-pubsub",
+        "description": "A simple publisher/subscriber for Apache Kafka broker implemented in Golang",
+        "url": "https://github.com/raihankhan/Kafka-go-pubsub",
+        "stars": 2,
+        "forks": 0,
+        "language": "Go",
+        "topics": [],
+        "pushed_at": "2022-12-01T11:20:18Z"
+      },
+      {
+        "name": "jarvis",
+        "description": "jarvis is a cli tool that enables several useful command line operations from terminal",
+        "url": "https://github.com/raihankhan/jarvis",
+        "stars": 2,
+        "forks": 0,
+        "language": "Go",
+        "topics": [],
+        "pushed_at": "2025-02-27T18:39:20Z"
+      },
+      {
+        "name": "Go-drill",
+        "description": "A repository of useful go codes!",
+        "url": "https://github.com/raihankhan/Go-drill",
+        "stars": 2,
+        "forks": 0,
+        "language": "Go",
+        "topics": [],
+        "pushed_at": "2025-02-27T18:37:49Z"
+      }
+    ],
+    "top_language": "Dart",
+    "all_languages": [
+      "Dart",
+      "C++",
+      "Dockerfile",
+      "Go",
+      "Java"
+    ],
+    "contributions_last_90d": 617,
+    "prs_last_90d": 64,
+    "issues_last_90d": 98,
+    "reviews_last_90d": 1,
+    "commits_last_90d": 174,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 2.38
   },
   {
     "github_username": "rajibyo",
@@ -113421,138 +113421,6 @@
     "activity_score": 2.21
   },
   {
-    "github_username": "SayefReyadh",
-    "name": "Sayef Reyadh",
-    "profile_url": "https://github.com/SayefReyadh",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/16350038?u=942efb5f07a778e3610e5416a54ccd419f850bc9&v=4",
-    "bio": "Believe in your infinite potential. Your only limitations are those you set upon yourself. - Roy T. Bennett",
-    "company": "Optimizely",
-    "website_url": "https://www.sayefreyadh.com/",
-    "followers": 230,
-    "following": 169,
-    "public_repos": 27,
-    "total_stars": 22,
-    "top_repos": [
-      {
-        "name": "Hospital-Management-AUST_CSE-3104-SoftwareProject",
-        "description": "A hospital management system using JAVA GUI and MySQL Database",
-        "url": "https://github.com/SayefReyadh/Hospital-Management-AUST_CSE-3104-SoftwareProject",
-        "stars": 6,
-        "forks": 7,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2017-12-06T12:31:34Z"
-      },
-      {
-        "name": "smart-todo",
-        "description": "A comprehensive academic and industry-oriented Requirements Engineering project demonstrating the complete software development documentation lifecycle using a Smart ToDo Application case study.",
-        "url": "https://github.com/sayef-reyadh/smart-todo",
-        "stars": 4,
-        "forks": 6,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-10-01T06:21:49Z"
-      },
-      {
-        "name": "data-structures-and-algorithms",
-        "description": "Implementations of different data structures and algorithms in C++",
-        "url": "https://github.com/SayefReyadh/data-structures-and-algorithms",
-        "stars": 4,
-        "forks": 4,
-        "language": "C++",
-        "topics": [],
-        "pushed_at": "2018-01-04T09:10:05Z"
-      },
-      {
-        "name": "tutorials",
-        "description": "Sayef Reyadh - Programming Made Simple Hi, myself Sayef, this is my channel about Computer Programming. I make different videos of various cse related topics which will be helpful for academic purpose and those who are doing programming contest.",
-        "url": "https://github.com/SayefReyadh/tutorials",
-        "stars": 3,
-        "forks": 0,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2025-12-14T04:09:21Z"
-      },
-      {
-        "name": "social-media-video-automation",
-        "description": "",
-        "url": "https://github.com/SayefReyadh/social-media-video-automation",
-        "stars": 2,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-07-06T07:50:52Z"
-      },
-      {
-        "name": "MedicAid-Distributed-Database-Lab-Project-CSE-4126",
-        "description": "The project \u201cMedicAid\u201d is distributed database project using PL/SQL which is aimed to provide medical information at different branchs of hospital  so that not only people can easily get all information in one place but also can compare information and find out which is best for themselves. ",
-        "url": "https://github.com/FarzanaEva/MedicAid-Distributed-Database-Lab-Project-CSE-4126",
-        "stars": 2,
-        "forks": 2,
-        "language": "PLSQL",
-        "topics": [],
-        "pushed_at": "2018-10-12T20:46:21Z"
-      },
-      {
-        "name": "SayefReyadh",
-        "description": "",
-        "url": "https://github.com/SayefReyadh/SayefReyadh",
-        "stars": 1,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [],
-        "pushed_at": "2025-08-22T16:04:57Z"
-      },
-      {
-        "name": "smarter-todo",
-        "description": "",
-        "url": "https://github.com/sayef-reyadh-labs/smarter-todo",
-        "stars": 0,
-        "forks": 1,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-10-29T06:47:40Z"
-      },
-      {
-        "name": "fastapi-vite-react-vercel-template",
-        "description": "",
-        "url": "https://github.com/SayefReyadh/fastapi-vite-react-vercel-template",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-10-02T19:42:18Z"
-      },
-      {
-        "name": "web-application-and-internet",
-        "description": "CSE309 Web Application & Internet",
-        "url": "https://github.com/sayef-reyadh/web-application-and-internet",
-        "stars": 0,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2026-08-15T16:43:53Z"
-      }
-    ],
-    "top_language": "Java",
-    "all_languages": [
-      "Java",
-      "Python",
-      "C++",
-      "PLSQL",
-      "TypeScript",
-      "HTML"
-    ],
-    "contributions_last_90d": 1801,
-    "prs_last_90d": 37,
-    "issues_last_90d": 37,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 122,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 2.21
-  },
-  {
     "github_username": "AlMamunTalukder",
     "name": "Al Mamun Talukder",
     "profile_url": "https://github.com/AlMamunTalukder",
@@ -114280,6 +114148,138 @@
     "commits_last_90d": 2,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
     "activity_score": 2.21
+  },
+  {
+    "github_username": "SayefReyadh",
+    "name": "Sayef Reyadh",
+    "profile_url": "https://github.com/SayefReyadh",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16350038?u=942efb5f07a778e3610e5416a54ccd419f850bc9&v=4",
+    "bio": "Believe in your infinite potential. Your only limitations are those you set upon yourself. - Roy T. Bennett",
+    "company": "Optimizely",
+    "website_url": "https://www.sayefreyadh.com/",
+    "followers": 230,
+    "following": 169,
+    "public_repos": 27,
+    "total_stars": 22,
+    "top_repos": [
+      {
+        "name": "Hospital-Management-AUST_CSE-3104-SoftwareProject",
+        "description": "A hospital management system using JAVA GUI and MySQL Database",
+        "url": "https://github.com/SayefReyadh/Hospital-Management-AUST_CSE-3104-SoftwareProject",
+        "stars": 6,
+        "forks": 7,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2017-12-06T12:31:34Z"
+      },
+      {
+        "name": "smart-todo",
+        "description": "A comprehensive academic and industry-oriented Requirements Engineering project demonstrating the complete software development documentation lifecycle using a Smart ToDo Application case study.",
+        "url": "https://github.com/sayef-reyadh/smart-todo",
+        "stars": 4,
+        "forks": 6,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-10-01T06:21:49Z"
+      },
+      {
+        "name": "data-structures-and-algorithms",
+        "description": "Implementations of different data structures and algorithms in C++",
+        "url": "https://github.com/SayefReyadh/data-structures-and-algorithms",
+        "stars": 4,
+        "forks": 4,
+        "language": "C++",
+        "topics": [],
+        "pushed_at": "2018-01-04T09:10:05Z"
+      },
+      {
+        "name": "tutorials",
+        "description": "Sayef Reyadh - Programming Made Simple Hi, myself Sayef, this is my channel about Computer Programming. I make different videos of various cse related topics which will be helpful for academic purpose and those who are doing programming contest.",
+        "url": "https://github.com/SayefReyadh/tutorials",
+        "stars": 3,
+        "forks": 0,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2025-12-14T04:09:21Z"
+      },
+      {
+        "name": "social-media-video-automation",
+        "description": "",
+        "url": "https://github.com/SayefReyadh/social-media-video-automation",
+        "stars": 2,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-07-06T07:50:52Z"
+      },
+      {
+        "name": "MedicAid-Distributed-Database-Lab-Project-CSE-4126",
+        "description": "The project \u201cMedicAid\u201d is distributed database project using PL/SQL which is aimed to provide medical information at different branchs of hospital  so that not only people can easily get all information in one place but also can compare information and find out which is best for themselves. ",
+        "url": "https://github.com/FarzanaEva/MedicAid-Distributed-Database-Lab-Project-CSE-4126",
+        "stars": 2,
+        "forks": 2,
+        "language": "PLSQL",
+        "topics": [],
+        "pushed_at": "2018-10-12T20:46:21Z"
+      },
+      {
+        "name": "SayefReyadh",
+        "description": "",
+        "url": "https://github.com/SayefReyadh/SayefReyadh",
+        "stars": 1,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2025-08-22T16:04:57Z"
+      },
+      {
+        "name": "smarter-todo",
+        "description": "",
+        "url": "https://github.com/sayef-reyadh-labs/smarter-todo",
+        "stars": 0,
+        "forks": 1,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-10-29T06:47:40Z"
+      },
+      {
+        "name": "fastapi-vite-react-vercel-template",
+        "description": "",
+        "url": "https://github.com/SayefReyadh/fastapi-vite-react-vercel-template",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-10-02T19:42:18Z"
+      },
+      {
+        "name": "web-application-and-internet",
+        "description": "CSE309 Web Application & Internet",
+        "url": "https://github.com/sayef-reyadh/web-application-and-internet",
+        "stars": 0,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2026-08-15T16:43:53Z"
+      }
+    ],
+    "top_language": "Java",
+    "all_languages": [
+      "Java",
+      "Python",
+      "C++",
+      "PLSQL",
+      "TypeScript",
+      "HTML"
+    ],
+    "contributions_last_90d": 1801,
+    "prs_last_90d": 37,
+    "issues_last_90d": 37,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 122,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 2.2
   },
   {
     "github_username": "salmanshahriar",
@@ -127086,7 +127086,7 @@
     "reviews_last_90d": 59,
     "commits_last_90d": 559,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 2.06
+    "activity_score": 2.05
   },
   {
     "github_username": "jhimi01",
@@ -130405,172 +130405,6 @@
     "activity_score": 2.02
   },
   {
-    "github_username": "ai-naymul",
-    "name": "Naymul Islam",
-    "profile_url": "https://github.com/ai-naymul",
-    "location": "Chittagong,Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/68547750?u=8d6a54a5b9b8fdee5eac2eebad4d1f74a89a42ae&v=4",
-    "bio": "Hacking browsers and ai",
-    "company": "",
-    "website_url": "naymul504@gmail.com",
-    "followers": 96,
-    "following": 147,
-    "public_repos": 71,
-    "total_stars": 210,
-    "top_repos": [
-      {
-        "name": "BrowserPilot",
-        "description": "Open\u2011source alternative to Perplexity Comet, director.ai and firecrawl combined",
-        "url": "https://github.com/ai-naymul/BrowserPilot",
-        "stars": 180,
-        "forks": 32,
-        "language": "TypeScript",
-        "topics": [
-          "ai",
-          "ai-agent",
-          "ai-agents",
-          "browser",
-          "browser-agent"
-        ],
-        "pushed_at": "2026-07-26T13:30:03Z"
-      },
-      {
-        "name": "ATS-Catalyst",
-        "description": "ATS Catalyst is an innovative platform designed to empower job seekers and streamline the hiring process. Leveraging advanced AI technologies, our suite of tools offers personalized feedback, resume evaluation, and job description matching to enhance your job application process.",
-        "url": "https://github.com/ai-naymul/ATS-Catalyst",
-        "stars": 9,
-        "forks": 1,
-        "language": "Python",
-        "topics": [
-          "ai",
-          "application-tracking-system",
-          "ats",
-          "data-science",
-          "langchain"
-        ],
-        "pushed_at": "2025-06-25T12:12:45Z"
-      },
-      {
-        "name": "DocuVisQA",
-        "description": "DocuVisQA(Document Visual Question Answering) is a Python project that leverages Google's Generative AI and Langchain for document processing, text splitting, and question answering. It also supports image processing with Streamlit for interactive UI.",
-        "url": "https://github.com/ai-naymul/DocuVisQA",
-        "stars": 5,
-        "forks": 0,
-        "language": "Python",
-        "topics": [
-          "document",
-          "documentretrieval-exe",
-          "langchain",
-          "langchain-python",
-          "open-source"
-        ],
-        "pushed_at": "2024-04-08T09:29:33Z"
-      },
-      {
-        "name": "TechShikhi",
-        "description": "TechShikhi\u201d \ud83c\udf10\ud83d\udcda: Defining tech concepts in Bengali \ud83d\udde3\ufe0f\ud83c\udde7\ud83c\udde9. Making tech accessible to all, regardless of background \ud83d\udcbb\ud83d\ude80. Contributions welcome! \ud83e\udd1d",
-        "url": "https://github.com/ai-naymul/TechShikhi",
-        "stars": 4,
-        "forks": 0,
-        "language": null,
-        "topics": [
-          "ai",
-          "artificial-intelligence",
-          "bengali",
-          "machine-learning",
-          "machine-learning-algorithms"
-        ],
-        "pushed_at": "2023-12-16T16:02:15Z"
-      },
-      {
-        "name": "WebConverseAI",
-        "description": "It is an AI-powered conversational interface that allows users to chat with websites.",
-        "url": "https://github.com/ai-naymul/WebConverseAI",
-        "stars": 3,
-        "forks": 0,
-        "language": "Python",
-        "topics": [
-          "ai",
-          "chatbot",
-          "chromadb",
-          "gemini-ai",
-          "gemini-api"
-        ],
-        "pushed_at": "2025-04-02T05:32:23Z"
-      },
-      {
-        "name": "clawpy",
-        "description": "Claude code in python",
-        "url": "https://github.com/AIScienceStudio/clawpy",
-        "stars": 2,
-        "forks": 1,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-07-22T06:28:43Z"
-      },
-      {
-        "name": "safebubble",
-        "description": "scan tokens before you swap.",
-        "url": "https://github.com/ai-naymul/safebubble",
-        "stars": 2,
-        "forks": 1,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2025-11-06T10:50:15Z"
-      },
-      {
-        "name": "wellness-navigator",
-        "description": "a web application that automates customer support ticket handling and provides personalized fitness routines. It uses Flask for the backend, Kestra for workflow orchestration, and Discord for notifications. Users can submit support tickets and receive fitness plans tailored to their personal details, with updates sent via Discord.",
-        "url": "https://github.com/ai-naymul/wellness-navigator",
-        "stars": 2,
-        "forks": 0,
-        "language": "CSS",
-        "topics": [
-          "application",
-          "hackathon",
-          "hackfrost2024",
-          "kestra",
-          "open-source"
-        ],
-        "pushed_at": "2024-12-03T04:58:33Z"
-      },
-      {
-        "name": "protom_alo-newspaper-scraper",
-        "description": "",
-        "url": "https://github.com/ai-naymul/protom_alo-newspaper-scraper",
-        "stars": 2,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2024-08-06T17:01:15Z"
-      },
-      {
-        "name": "solstream",
-        "description": "RPCv2 Streaming and Observability (Cypherpunk Infrastructure Track)",
-        "url": "https://github.com/ai-naymul/solstream",
-        "stars": 1,
-        "forks": 0,
-        "language": "Makefile",
-        "topics": [],
-        "pushed_at": "2025-10-02T09:32:28Z"
-      }
-    ],
-    "top_language": "Python",
-    "all_languages": [
-      "Python",
-      "TypeScript",
-      "CSS",
-      "Makefile"
-    ],
-    "contributions_last_90d": 411,
-    "prs_last_90d": 21,
-    "issues_last_90d": 23,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 352,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 2.02
-  },
-  {
     "github_username": "fuadhasanemon",
     "name": "Fuad_Hasan_Emon",
     "profile_url": "https://github.com/fuadhasanemon",
@@ -130828,6 +130662,172 @@
     "commits_last_90d": 123,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
     "activity_score": 2.02
+  },
+  {
+    "github_username": "ai-naymul",
+    "name": "Naymul Islam",
+    "profile_url": "https://github.com/ai-naymul",
+    "location": "Chittagong,Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/68547750?u=8d6a54a5b9b8fdee5eac2eebad4d1f74a89a42ae&v=4",
+    "bio": "Hacking browsers and ai",
+    "company": "",
+    "website_url": "naymul504@gmail.com",
+    "followers": 96,
+    "following": 147,
+    "public_repos": 71,
+    "total_stars": 210,
+    "top_repos": [
+      {
+        "name": "BrowserPilot",
+        "description": "Open\u2011source alternative to Perplexity Comet, director.ai and firecrawl combined",
+        "url": "https://github.com/ai-naymul/BrowserPilot",
+        "stars": 180,
+        "forks": 32,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "ai-agent",
+          "ai-agents",
+          "browser",
+          "browser-agent"
+        ],
+        "pushed_at": "2026-07-26T13:30:03Z"
+      },
+      {
+        "name": "ATS-Catalyst",
+        "description": "ATS Catalyst is an innovative platform designed to empower job seekers and streamline the hiring process. Leveraging advanced AI technologies, our suite of tools offers personalized feedback, resume evaluation, and job description matching to enhance your job application process.",
+        "url": "https://github.com/ai-naymul/ATS-Catalyst",
+        "stars": 9,
+        "forks": 1,
+        "language": "Python",
+        "topics": [
+          "ai",
+          "application-tracking-system",
+          "ats",
+          "data-science",
+          "langchain"
+        ],
+        "pushed_at": "2025-06-25T12:12:45Z"
+      },
+      {
+        "name": "DocuVisQA",
+        "description": "DocuVisQA(Document Visual Question Answering) is a Python project that leverages Google's Generative AI and Langchain for document processing, text splitting, and question answering. It also supports image processing with Streamlit for interactive UI.",
+        "url": "https://github.com/ai-naymul/DocuVisQA",
+        "stars": 5,
+        "forks": 0,
+        "language": "Python",
+        "topics": [
+          "document",
+          "documentretrieval-exe",
+          "langchain",
+          "langchain-python",
+          "open-source"
+        ],
+        "pushed_at": "2024-04-08T09:29:33Z"
+      },
+      {
+        "name": "TechShikhi",
+        "description": "TechShikhi\u201d \ud83c\udf10\ud83d\udcda: Defining tech concepts in Bengali \ud83d\udde3\ufe0f\ud83c\udde7\ud83c\udde9. Making tech accessible to all, regardless of background \ud83d\udcbb\ud83d\ude80. Contributions welcome! \ud83e\udd1d",
+        "url": "https://github.com/ai-naymul/TechShikhi",
+        "stars": 4,
+        "forks": 0,
+        "language": null,
+        "topics": [
+          "ai",
+          "artificial-intelligence",
+          "bengali",
+          "machine-learning",
+          "machine-learning-algorithms"
+        ],
+        "pushed_at": "2023-12-16T16:02:15Z"
+      },
+      {
+        "name": "WebConverseAI",
+        "description": "It is an AI-powered conversational interface that allows users to chat with websites.",
+        "url": "https://github.com/ai-naymul/WebConverseAI",
+        "stars": 3,
+        "forks": 0,
+        "language": "Python",
+        "topics": [
+          "ai",
+          "chatbot",
+          "chromadb",
+          "gemini-ai",
+          "gemini-api"
+        ],
+        "pushed_at": "2025-04-02T05:32:23Z"
+      },
+      {
+        "name": "clawpy",
+        "description": "Claude code in python",
+        "url": "https://github.com/AIScienceStudio/clawpy",
+        "stars": 2,
+        "forks": 1,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-07-22T06:28:43Z"
+      },
+      {
+        "name": "safebubble",
+        "description": "scan tokens before you swap.",
+        "url": "https://github.com/ai-naymul/safebubble",
+        "stars": 2,
+        "forks": 1,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2025-11-06T10:50:15Z"
+      },
+      {
+        "name": "wellness-navigator",
+        "description": "a web application that automates customer support ticket handling and provides personalized fitness routines. It uses Flask for the backend, Kestra for workflow orchestration, and Discord for notifications. Users can submit support tickets and receive fitness plans tailored to their personal details, with updates sent via Discord.",
+        "url": "https://github.com/ai-naymul/wellness-navigator",
+        "stars": 2,
+        "forks": 0,
+        "language": "CSS",
+        "topics": [
+          "application",
+          "hackathon",
+          "hackfrost2024",
+          "kestra",
+          "open-source"
+        ],
+        "pushed_at": "2024-12-03T04:58:33Z"
+      },
+      {
+        "name": "protom_alo-newspaper-scraper",
+        "description": "",
+        "url": "https://github.com/ai-naymul/protom_alo-newspaper-scraper",
+        "stars": 2,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2024-08-06T17:01:15Z"
+      },
+      {
+        "name": "solstream",
+        "description": "RPCv2 Streaming and Observability (Cypherpunk Infrastructure Track)",
+        "url": "https://github.com/ai-naymul/solstream",
+        "stars": 1,
+        "forks": 0,
+        "language": "Makefile",
+        "topics": [],
+        "pushed_at": "2025-10-02T09:32:28Z"
+      }
+    ],
+    "top_language": "Python",
+    "all_languages": [
+      "Python",
+      "TypeScript",
+      "CSS",
+      "Makefile"
+    ],
+    "contributions_last_90d": 411,
+    "prs_last_90d": 21,
+    "issues_last_90d": 23,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 352,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 2.01
   },
   {
     "github_username": "mohasinakonda",
@@ -138868,146 +138868,6 @@
     "activity_score": 1.93
   },
   {
-    "github_username": "hamedzurat",
-    "name": "hamed zurat bin hashem",
-    "profile_url": "https://github.com/hamedzurat",
-    "location": "Dhaka, Bnagladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/38398613?u=4363cc7258e88614be8a642b78a615c04db5e312&v=4",
-    "bio": ":)",
-    "company": "",
-    "website_url": "https://zurat.dev",
-    "followers": 16,
-    "following": 28,
-    "public_repos": 24,
-    "total_stars": 22,
-    "top_repos": [
-      {
-        "name": "Enrollium",
-        "description": "ENROLIUM is a system designed to make section selection smoother, fairer, and more user-friendly. Built with a focus on both Frontend and Backend, it ensures an efficient and stress-free enrollment experience for students.",
-        "url": "https://github.com/hamedzurat/Enrollium",
-        "stars": 5,
-        "forks": 3,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2025-02-02T09:08:12Z"
-      },
-      {
-        "name": "SpectraFog",
-        "description": "Transform conventional vehicles into smart one through an external sensor array and intuitive web interface.",
-        "url": "https://github.com/hamedzurat/SpectraFog",
-        "stars": 3,
-        "forks": 0,
-        "language": "C++",
-        "topics": [],
-        "pushed_at": "2025-11-16T14:01:31Z"
-      },
-      {
-        "name": "contest-code-archive",
-        "description": "This repository archives my code for coding practice and contests from various platforms.",
-        "url": "https://github.com/hamedzurat/contest-code-archive",
-        "stars": 3,
-        "forks": 0,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2025-07-14T21:49:20Z"
-      },
-      {
-        "name": "uiu-code-archive",
-        "description": "This repository archives my code from coursework, assignments, and homework at UIU.",
-        "url": "https://github.com/hamedzurat/uiu-code-archive",
-        "stars": 3,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-10-07T07:14:46Z"
-      },
-      {
-        "name": "stride",
-        "description": "A secure, cheat-resistant academic coding assessment platform designed to eliminate exam plagiarism in real-time. Stride replaces paper tests and messy local setups with advanced anti-cheating monitoring, AI-generated questions, built-in coding environments, and automated grading.",
-        "url": "https://github.com/hamedzurat/stride",
-        "stars": 2,
-        "forks": 3,
-        "language": "Svelte",
-        "topics": [],
-        "pushed_at": "2026-07-04T19:19:44Z"
-      },
-      {
-        "name": "bash_commands",
-        "description": "all bash command",
-        "url": "https://github.com/hamedzurat/bash_commands",
-        "stars": 2,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2018-04-28T05:01:35Z"
-      },
-      {
-        "name": "silicon-operator",
-        "description": "A small, non-pipelined 32-bit CPU built as an educational VLSI project. It has 16 general-purpose registers, a 256-word instruction ROM, a 256-word data RAM, and 16-bit input and output ports. Instructions are 32 bits wide, with an 8-bit opcode.",
-        "url": "https://github.com/hamedzurat/silicon-operator",
-        "stars": 1,
-        "forks": 1,
-        "language": "Verilog",
-        "topics": [],
-        "pushed_at": "2026-10-08T15:18:00Z"
-      },
-      {
-        "name": "dotted",
-        "description": "A simple, templateless, multi-[device|repo|user|distro] dotfile manager that is highly shareable and tracks system packages & services.",
-        "url": "https://github.com/z00rat/dotted",
-        "stars": 1,
-        "forks": 0,
-        "language": "Rust",
-        "topics": [
-          "archlinux",
-          "configuration-management",
-          "dotefiles",
-          "dotfile",
-          "dotfile-manager"
-        ],
-        "pushed_at": "2026-10-19T09:16:12Z"
-      },
-      {
-        "name": "neo-retro",
-        "description": "An oxymoronic design system: not modern, yet not old-school.",
-        "url": "https://github.com/z00rat/neo-retro",
-        "stars": 1,
-        "forks": 0,
-        "language": "CSS",
-        "topics": [],
-        "pushed_at": "2026-11-03T16:45:42Z"
-      },
-      {
-        "name": "codecrafters-bittorrent-c",
-        "description": "full bittorrent client implementation with C",
-        "url": "https://github.com/hamedzurat/codecrafters-bittorrent-c",
-        "stars": 1,
-        "forks": 0,
-        "language": "C",
-        "topics": [],
-        "pushed_at": "2024-12-20T15:32:39Z"
-      }
-    ],
-    "top_language": "Verilog",
-    "all_languages": [
-      "Verilog",
-      "C",
-      "CSS",
-      "C++",
-      "JavaScript",
-      "Svelte",
-      "Rust",
-      "Java"
-    ],
-    "contributions_last_90d": 1217,
-    "prs_last_90d": 59,
-    "issues_last_90d": 68,
-    "reviews_last_90d": 26,
-    "commits_last_90d": 970,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 1.93
-  },
-  {
     "github_username": "ikamal7",
     "name": "Kamal Hosen",
     "profile_url": "https://github.com/ikamal7",
@@ -139691,6 +139551,146 @@
     "commits_last_90d": 106,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
     "activity_score": 1.93
+  },
+  {
+    "github_username": "hamedzurat",
+    "name": "hamed zurat bin hashem",
+    "profile_url": "https://github.com/hamedzurat",
+    "location": "Dhaka, Bnagladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/38398613?u=4363cc7258e88614be8a642b78a615c04db5e312&v=4",
+    "bio": ":)",
+    "company": "",
+    "website_url": "https://zurat.dev",
+    "followers": 16,
+    "following": 28,
+    "public_repos": 24,
+    "total_stars": 22,
+    "top_repos": [
+      {
+        "name": "Enrollium",
+        "description": "ENROLIUM is a system designed to make section selection smoother, fairer, and more user-friendly. Built with a focus on both Frontend and Backend, it ensures an efficient and stress-free enrollment experience for students.",
+        "url": "https://github.com/hamedzurat/Enrollium",
+        "stars": 5,
+        "forks": 3,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2025-02-02T09:08:12Z"
+      },
+      {
+        "name": "SpectraFog",
+        "description": "Transform conventional vehicles into smart one through an external sensor array and intuitive web interface.",
+        "url": "https://github.com/hamedzurat/SpectraFog",
+        "stars": 3,
+        "forks": 0,
+        "language": "C++",
+        "topics": [],
+        "pushed_at": "2025-11-16T14:01:31Z"
+      },
+      {
+        "name": "contest-code-archive",
+        "description": "This repository archives my code for coding practice and contests from various platforms.",
+        "url": "https://github.com/hamedzurat/contest-code-archive",
+        "stars": 3,
+        "forks": 0,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2025-07-14T21:49:20Z"
+      },
+      {
+        "name": "uiu-code-archive",
+        "description": "This repository archives my code from coursework, assignments, and homework at UIU.",
+        "url": "https://github.com/hamedzurat/uiu-code-archive",
+        "stars": 3,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-10-07T07:14:46Z"
+      },
+      {
+        "name": "stride",
+        "description": "A secure, cheat-resistant academic coding assessment platform designed to eliminate exam plagiarism in real-time. Stride replaces paper tests and messy local setups with advanced anti-cheating monitoring, AI-generated questions, built-in coding environments, and automated grading.",
+        "url": "https://github.com/hamedzurat/stride",
+        "stars": 2,
+        "forks": 3,
+        "language": "Svelte",
+        "topics": [],
+        "pushed_at": "2026-07-04T19:19:44Z"
+      },
+      {
+        "name": "bash_commands",
+        "description": "all bash command",
+        "url": "https://github.com/hamedzurat/bash_commands",
+        "stars": 2,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2018-04-28T05:01:35Z"
+      },
+      {
+        "name": "silicon-operator",
+        "description": "A small, non-pipelined 32-bit CPU built as an educational VLSI project. It has 16 general-purpose registers, a 256-word instruction ROM, a 256-word data RAM, and 16-bit input and output ports. Instructions are 32 bits wide, with an 8-bit opcode.",
+        "url": "https://github.com/hamedzurat/silicon-operator",
+        "stars": 1,
+        "forks": 1,
+        "language": "Verilog",
+        "topics": [],
+        "pushed_at": "2026-10-08T15:18:00Z"
+      },
+      {
+        "name": "dotted",
+        "description": "A simple, templateless, multi-[device|repo|user|distro] dotfile manager that is highly shareable and tracks system packages & services.",
+        "url": "https://github.com/z00rat/dotted",
+        "stars": 1,
+        "forks": 0,
+        "language": "Rust",
+        "topics": [
+          "archlinux",
+          "configuration-management",
+          "dotefiles",
+          "dotfile",
+          "dotfile-manager"
+        ],
+        "pushed_at": "2026-10-19T09:16:12Z"
+      },
+      {
+        "name": "neo-retro",
+        "description": "An oxymoronic design system: not modern, yet not old-school.",
+        "url": "https://github.com/z00rat/neo-retro",
+        "stars": 1,
+        "forks": 0,
+        "language": "CSS",
+        "topics": [],
+        "pushed_at": "2026-11-03T16:45:42Z"
+      },
+      {
+        "name": "codecrafters-bittorrent-c",
+        "description": "full bittorrent client implementation with C",
+        "url": "https://github.com/hamedzurat/codecrafters-bittorrent-c",
+        "stars": 1,
+        "forks": 0,
+        "language": "C",
+        "topics": [],
+        "pushed_at": "2024-12-20T15:32:39Z"
+      }
+    ],
+    "top_language": "Verilog",
+    "all_languages": [
+      "Verilog",
+      "C",
+      "CSS",
+      "C++",
+      "JavaScript",
+      "Svelte",
+      "Rust",
+      "Java"
+    ],
+    "contributions_last_90d": 1217,
+    "prs_last_90d": 59,
+    "issues_last_90d": 68,
+    "reviews_last_90d": 26,
+    "commits_last_90d": 970,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 1.92
   },
   {
     "github_username": "ShifatJahanShifa",
@@ -142199,6 +142199,138 @@
     "activity_score": 1.89
   },
   {
+    "github_username": "joha546",
+    "name": "Md Khaled Bin Joha",
+    "profile_url": "https://github.com/joha546",
+    "location": "Comilla, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/126011074?u=204e1d5329001bf605e290d5c22aaa0ba4de77f9&v=4",
+    "bio": "CSE undergrad at BAIUST | Independent Software Engineer | 3X Hackathon Winner",
+    "company": "",
+    "website_url": "",
+    "followers": 15,
+    "following": 66,
+    "public_repos": 33,
+    "total_stars": 8,
+    "top_repos": [
+      {
+        "name": "CookSync-backend",
+        "description": "",
+        "url": "https://github.com/joha546/CookSync-backend",
+        "stars": 2,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-06-12T13:18:10Z"
+      },
+      {
+        "name": "capstone-project",
+        "description": "",
+        "url": "https://github.com/joha546/capstone-project",
+        "stars": 1,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-07-17T20:29:01Z"
+      },
+      {
+        "name": "Hackathon_baiust_cse_fest",
+        "description": "hublu dublus",
+        "url": "https://github.com/Moneemabdullah/Hackathon_baiust_cse_fest",
+        "stars": 1,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2025-06-21T06:54:45Z"
+      },
+      {
+        "name": "Numerical-Methods-Performance-Analysis",
+        "description": "",
+        "url": "https://github.com/joha546/Numerical-Methods-Performance-Analysis",
+        "stars": 1,
+        "forks": 1,
+        "language": "C++",
+        "topics": [],
+        "pushed_at": "2024-08-30T16:09:46Z"
+      },
+      {
+        "name": "End-to-End-Text-Summarizer",
+        "description": "",
+        "url": "https://github.com/joha546/End-to-End-Text-Summarizer",
+        "stars": 1,
+        "forks": 0,
+        "language": "PowerShell",
+        "topics": [],
+        "pushed_at": "2024-02-14T10:31:50Z"
+      },
+      {
+        "name": "Space-Mission",
+        "description": "",
+        "url": "https://github.com/joha546/Space-Mission",
+        "stars": 1,
+        "forks": 0,
+        "language": "Jupyter Notebook",
+        "topics": [],
+        "pushed_at": "2024-02-03T13:42:03Z"
+      },
+      {
+        "name": "Dog-Breed-Classifier",
+        "description": "",
+        "url": "https://github.com/joha546/Dog-Breed-Classifier",
+        "stars": 1,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2023-11-11T05:51:38Z"
+      },
+      {
+        "name": "khaled-bin-joha",
+        "description": "",
+        "url": "https://github.com/joha546/khaled-bin-joha",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-08-25T20:39:54Z"
+      },
+      {
+        "name": "forge-os",
+        "description": "",
+        "url": "https://github.com/joha546/forge-os",
+        "stars": 0,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-07-24T10:12:38Z"
+      },
+      {
+        "name": "joha546",
+        "description": "",
+        "url": "https://github.com/joha546/joha546",
+        "stars": 0,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2026-08-15T17:09:10Z"
+      }
+    ],
+    "top_language": "Python",
+    "all_languages": [
+      "Python",
+      "C++",
+      "PowerShell",
+      "JavaScript",
+      "TypeScript",
+      "Jupyter Notebook"
+    ],
+    "contributions_last_90d": 2074,
+    "prs_last_90d": 5,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 156,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 1.89
+  },
+  {
     "github_username": "sajibsrs",
     "name": "Sajidur Rahman",
     "profile_url": "https://github.com/sajibsrs",
@@ -142370,139 +142502,7 @@
     "reviews_last_90d": 0,
     "commits_last_90d": 1082,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 1.89
-  },
-  {
-    "github_username": "joha546",
-    "name": "Md Khaled Bin Joha",
-    "profile_url": "https://github.com/joha546",
-    "location": "Comilla, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/126011074?u=204e1d5329001bf605e290d5c22aaa0ba4de77f9&v=4",
-    "bio": "CSE undergrad at BAIUST | Independent Software Engineer | 3X Hackathon Winner",
-    "company": "",
-    "website_url": "",
-    "followers": 15,
-    "following": 66,
-    "public_repos": 33,
-    "total_stars": 8,
-    "top_repos": [
-      {
-        "name": "CookSync-backend",
-        "description": "",
-        "url": "https://github.com/joha546/CookSync-backend",
-        "stars": 2,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-06-12T13:18:10Z"
-      },
-      {
-        "name": "capstone-project",
-        "description": "",
-        "url": "https://github.com/joha546/capstone-project",
-        "stars": 1,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-07-17T20:29:01Z"
-      },
-      {
-        "name": "Hackathon_baiust_cse_fest",
-        "description": "hublu dublus",
-        "url": "https://github.com/Moneemabdullah/Hackathon_baiust_cse_fest",
-        "stars": 1,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2025-06-21T06:54:45Z"
-      },
-      {
-        "name": "Numerical-Methods-Performance-Analysis",
-        "description": "",
-        "url": "https://github.com/joha546/Numerical-Methods-Performance-Analysis",
-        "stars": 1,
-        "forks": 1,
-        "language": "C++",
-        "topics": [],
-        "pushed_at": "2024-08-30T16:09:46Z"
-      },
-      {
-        "name": "End-to-End-Text-Summarizer",
-        "description": "",
-        "url": "https://github.com/joha546/End-to-End-Text-Summarizer",
-        "stars": 1,
-        "forks": 0,
-        "language": "PowerShell",
-        "topics": [],
-        "pushed_at": "2024-02-14T10:31:50Z"
-      },
-      {
-        "name": "Space-Mission",
-        "description": "",
-        "url": "https://github.com/joha546/Space-Mission",
-        "stars": 1,
-        "forks": 0,
-        "language": "Jupyter Notebook",
-        "topics": [],
-        "pushed_at": "2024-02-03T13:42:03Z"
-      },
-      {
-        "name": "Dog-Breed-Classifier",
-        "description": "",
-        "url": "https://github.com/joha546/Dog-Breed-Classifier",
-        "stars": 1,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2023-11-11T05:51:38Z"
-      },
-      {
-        "name": "khaled-bin-joha",
-        "description": "",
-        "url": "https://github.com/joha546/khaled-bin-joha",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-08-25T20:39:54Z"
-      },
-      {
-        "name": "forge-os",
-        "description": "",
-        "url": "https://github.com/joha546/forge-os",
-        "stars": 0,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-07-24T10:12:38Z"
-      },
-      {
-        "name": "joha546",
-        "description": "",
-        "url": "https://github.com/joha546/joha546",
-        "stars": 0,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2026-08-15T17:09:10Z"
-      }
-    ],
-    "top_language": "Python",
-    "all_languages": [
-      "Python",
-      "C++",
-      "PowerShell",
-      "JavaScript",
-      "TypeScript",
-      "Jupyter Notebook"
-    ],
-    "contributions_last_90d": 2074,
-    "prs_last_90d": 5,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 156,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 1.89
+    "activity_score": 1.88
   },
   {
     "github_username": "ChowdhuryFatema",
@@ -179845,136 +179845,6 @@
     "activity_score": 1.56
   },
   {
-    "github_username": "kazimdsaidul",
-    "name": "Kazi Md. Saidul",
-    "profile_url": "https://github.com/kazimdsaidul",
-    "location": "Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/7722028?u=a5639faeb3c9657f7d422374f7fc9f350cf1d442&v=4",
-    "bio": "Android | Flutter | IOS| React Native",
-    "company": "",
-    "website_url": "https://www.linkedin.com/in/kazimdsaidul/",
-    "followers": 43,
-    "following": 397,
-    "public_repos": 74,
-    "total_stars": 17,
-    "top_repos": [
-      {
-        "name": "android-engineering-ai-skill",
-        "description": "",
-        "url": "https://github.com/kazimdsaidul/android-engineering-ai-skill",
-        "stars": 5,
-        "forks": 1,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2026-10-19T11:27:12Z"
-      },
-      {
-        "name": "Foreground-Service-Android-Example",
-        "description": "Foreground Service Android Example",
-        "url": "https://github.com/kazimdsaidul/Foreground-Service-Android-Example",
-        "stars": 5,
-        "forks": 0,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2020-01-01T11:49:48Z"
-      },
-      {
-        "name": "awesome-mobile-sdks",
-        "description": "Awesome Mobile SDKs \u2014 A curated collection of full SDK-based solutions for mobile app developers, organized by category (Payment, Maps, Audio/Video Call, Chat, AR, Analytics & more) with platform support for Android, iOS, Flutter & React Native.",
-        "url": "https://github.com/kazimdsaidul/awesome-mobile-sdks",
-        "stars": 2,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2026-03-11T06:12:09Z"
-      },
-      {
-        "name": "VU-Mobile-Technical-Test",
-        "description": "",
-        "url": "https://github.com/kazimdsaidul/VU-Mobile-Technical-Test",
-        "stars": 1,
-        "forks": 0,
-        "language": "Kotlin",
-        "topics": [],
-        "pushed_at": "2020-05-10T13:41:24Z"
-      },
-      {
-        "name": "AndroidCodingTestOceanize",
-        "description": "Android Coding Test Oceanize Bangladesh",
-        "url": "https://github.com/kazimdsaidul/AndroidCodingTestOceanize",
-        "stars": 1,
-        "forks": 0,
-        "language": "Kotlin",
-        "topics": [],
-        "pushed_at": "2021-01-14T06:11:11Z"
-      },
-      {
-        "name": "NavigationViewAndroid",
-        "description": "Demo NavigationViewAndroid",
-        "url": "https://github.com/kazimdsaidul/NavigationViewAndroid",
-        "stars": 1,
-        "forks": 0,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2018-04-10T13:32:44Z"
-      },
-      {
-        "name": "CISSPSecurityProfessional",
-        "description": "",
-        "url": "https://github.com/rezaulkarim94/CISSPSecurityProfessional",
-        "stars": 1,
-        "forks": 0,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2018-03-30T19:23:09Z"
-      },
-      {
-        "name": "DynamicMaterialTheme",
-        "description": "Change Material Theme Dynamic",
-        "url": "https://github.com/kazimdsaidul/DynamicMaterialTheme",
-        "stars": 1,
-        "forks": 0,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2018-01-02T05:00:22Z"
-      },
-      {
-        "name": "TechnicalAssessment",
-        "description": "",
-        "url": "https://github.com/kazimdsaidul/TechnicalAssessment",
-        "stars": 0,
-        "forks": 0,
-        "language": "Dart",
-        "topics": [],
-        "pushed_at": "2026-10-13T10:53:21Z"
-      },
-      {
-        "name": "CourseApp",
-        "description": "",
-        "url": "https://github.com/kazimdsaidul/CourseApp",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-06-06T18:07:40Z"
-      }
-    ],
-    "top_language": "Java",
-    "all_languages": [
-      "Java",
-      "Dart",
-      "Kotlin",
-      "TypeScript"
-    ],
-    "contributions_last_90d": 50,
-    "prs_last_90d": 1,
-    "issues_last_90d": 1,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 33,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 1.56
-  },
-  {
     "github_username": "devShamim",
     "name": "Shamim Ahmed",
     "profile_url": "https://github.com/devShamim",
@@ -180103,6 +179973,136 @@
     "commits_last_90d": 131,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
     "activity_score": 1.56
+  },
+  {
+    "github_username": "kazimdsaidul",
+    "name": "Kazi Md. Saidul",
+    "profile_url": "https://github.com/kazimdsaidul",
+    "location": "Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7722028?u=a5639faeb3c9657f7d422374f7fc9f350cf1d442&v=4",
+    "bio": "Android | Flutter | IOS| React Native",
+    "company": "",
+    "website_url": "https://www.linkedin.com/in/kazimdsaidul/",
+    "followers": 43,
+    "following": 397,
+    "public_repos": 74,
+    "total_stars": 17,
+    "top_repos": [
+      {
+        "name": "android-engineering-ai-skill",
+        "description": "",
+        "url": "https://github.com/kazimdsaidul/android-engineering-ai-skill",
+        "stars": 5,
+        "forks": 1,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2026-10-19T11:27:12Z"
+      },
+      {
+        "name": "Foreground-Service-Android-Example",
+        "description": "Foreground Service Android Example",
+        "url": "https://github.com/kazimdsaidul/Foreground-Service-Android-Example",
+        "stars": 5,
+        "forks": 0,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2020-01-01T11:49:48Z"
+      },
+      {
+        "name": "awesome-mobile-sdks",
+        "description": "Awesome Mobile SDKs \u2014 A curated collection of full SDK-based solutions for mobile app developers, organized by category (Payment, Maps, Audio/Video Call, Chat, AR, Analytics & more) with platform support for Android, iOS, Flutter & React Native.",
+        "url": "https://github.com/kazimdsaidul/awesome-mobile-sdks",
+        "stars": 2,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2026-03-11T06:12:09Z"
+      },
+      {
+        "name": "VU-Mobile-Technical-Test",
+        "description": "",
+        "url": "https://github.com/kazimdsaidul/VU-Mobile-Technical-Test",
+        "stars": 1,
+        "forks": 0,
+        "language": "Kotlin",
+        "topics": [],
+        "pushed_at": "2020-05-10T13:41:24Z"
+      },
+      {
+        "name": "AndroidCodingTestOceanize",
+        "description": "Android Coding Test Oceanize Bangladesh",
+        "url": "https://github.com/kazimdsaidul/AndroidCodingTestOceanize",
+        "stars": 1,
+        "forks": 0,
+        "language": "Kotlin",
+        "topics": [],
+        "pushed_at": "2021-01-14T06:11:11Z"
+      },
+      {
+        "name": "NavigationViewAndroid",
+        "description": "Demo NavigationViewAndroid",
+        "url": "https://github.com/kazimdsaidul/NavigationViewAndroid",
+        "stars": 1,
+        "forks": 0,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2018-04-10T13:32:44Z"
+      },
+      {
+        "name": "CISSPSecurityProfessional",
+        "description": "",
+        "url": "https://github.com/rezaulkarim94/CISSPSecurityProfessional",
+        "stars": 1,
+        "forks": 0,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2018-03-30T19:23:09Z"
+      },
+      {
+        "name": "DynamicMaterialTheme",
+        "description": "Change Material Theme Dynamic",
+        "url": "https://github.com/kazimdsaidul/DynamicMaterialTheme",
+        "stars": 1,
+        "forks": 0,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2018-01-02T05:00:22Z"
+      },
+      {
+        "name": "TechnicalAssessment",
+        "description": "",
+        "url": "https://github.com/kazimdsaidul/TechnicalAssessment",
+        "stars": 0,
+        "forks": 0,
+        "language": "Dart",
+        "topics": [],
+        "pushed_at": "2026-10-13T10:53:21Z"
+      },
+      {
+        "name": "CourseApp",
+        "description": "",
+        "url": "https://github.com/kazimdsaidul/CourseApp",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-06-06T18:07:40Z"
+      }
+    ],
+    "top_language": "Java",
+    "all_languages": [
+      "Java",
+      "Dart",
+      "Kotlin",
+      "TypeScript"
+    ],
+    "contributions_last_90d": 50,
+    "prs_last_90d": 1,
+    "issues_last_90d": 1,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 33,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 1.55
   },
   {
     "github_username": "syedfahimabrar",
@@ -308041,188 +308041,6 @@
     "activity_score": 0.84
   },
   {
-    "github_username": "sabbirrahman",
-    "name": "Sabbir Rahman",
-    "profile_url": "https://github.com/sabbirrahman",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/7347085?u=22f5dd73daca58f0aa309db50dbd6e6683a66d88&v=4",
-    "bio": "Senior Fullstack Software Engineer with 10+ years of experience building scalable, high-performance web applications in startup and product-led environments.",
-    "company": "",
-    "website_url": "",
-    "followers": 29,
-    "following": 28,
-    "public_repos": 15,
-    "total_stars": 56,
-    "top_repos": [
-      {
-        "name": "ng2-mdl",
-        "description": "An Angular 2+ component library for Material Design Lite",
-        "url": "https://github.com/sabbirrahman/ng2-mdl",
-        "stars": 18,
-        "forks": 6,
-        "language": "TypeScript",
-        "topics": [
-          "angular2",
-          "material-design-lite",
-          "mdl"
-        ],
-        "pushed_at": "2017-09-07T10:52:13Z"
-      },
-      {
-        "name": "ng-restly",
-        "description": "ng-restly - Resource (REST) Service for Angular 2+",
-        "url": "https://github.com/sabbirrahman/ng-restly",
-        "stars": 11,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [
-          "angular",
-          "angular2",
-          "angular4",
-          "resource",
-          "rest-api"
-        ],
-        "pushed_at": "2017-12-13T05:35:42Z"
-      },
-      {
-        "name": "creative",
-        "description": "Student training center management.",
-        "url": "https://github.com/Kryptonitesoft/creative",
-        "stars": 11,
-        "forks": 4,
-        "language": "PHP",
-        "topics": [
-          "laravel",
-          "students",
-          "management-system"
-        ],
-        "pushed_at": "2023-04-19T18:29:54Z"
-      },
-      {
-        "name": "reddit-magazine",
-        "description": "A simple reddit magazine app using web components",
-        "url": "https://github.com/sabbirrahman/reddit-magazine",
-        "stars": 4,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [
-          "webcomponents",
-          "fetch-api",
-          "async-await",
-          "cssgrid"
-        ],
-        "pushed_at": "2018-03-04T20:34:00Z"
-      },
-      {
-        "name": "bman",
-        "description": "B-Man - The Superhero of Bookmarking ;)",
-        "url": "https://github.com/sabbirrahman/bman",
-        "stars": 4,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [
-          "html",
-          "css",
-          "javascript",
-          "angular",
-          "angular2"
-        ],
-        "pushed_at": "2017-08-11T16:17:13Z"
-      },
-      {
-        "name": "rock-paper-scissors",
-        "description": "Classical Game Rock! Paper! Scissors!",
-        "url": "https://github.com/sabbirrahman/rock-paper-scissors",
-        "stars": 3,
-        "forks": 1,
-        "language": "CSS",
-        "topics": [
-          "html",
-          "game",
-          "css",
-          "javascript",
-          "es6"
-        ],
-        "pushed_at": "2017-08-29T16:46:57Z"
-      },
-      {
-        "name": "UVa-Solutions",
-        "description": "My solutions of problems in UVa Online Judge",
-        "url": "https://github.com/sabbirrahman/UVa-Solutions",
-        "stars": 2,
-        "forks": 0,
-        "language": "C++",
-        "topics": [
-          "cpp",
-          "c-plus-plus",
-          "uva",
-          "uva-solutions",
-          "uva-online-judge"
-        ],
-        "pushed_at": "2015-12-24T18:22:57Z"
-      },
-      {
-        "name": "ng-socializer",
-        "description": "ng-socializer - A Collection of Angular Services for Social Network Integration",
-        "url": "https://github.com/sabbirrahman/ng-socializer",
-        "stars": 1,
-        "forks": 1,
-        "language": "TypeScript",
-        "topics": [
-          "angular",
-          "service",
-          "social",
-          "social-network"
-        ],
-        "pushed_at": "2018-03-15T18:48:16Z"
-      },
-      {
-        "name": "javascript30",
-        "description": "30 Day Vanilla JS Coding Challenge",
-        "url": "https://github.com/sabbirrahman/javascript30",
-        "stars": 1,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [
-          "javacript",
-          "vanilla-javascript",
-          "javascript30"
-        ],
-        "pushed_at": "2017-09-07T11:26:29Z"
-      },
-      {
-        "name": "quizapp",
-        "description": "Quizapp - Quiz Application for Teacher & Student",
-        "url": "https://github.com/sabbirrahman/quizapp",
-        "stars": 1,
-        "forks": 1,
-        "language": "PHP",
-        "topics": [
-          "laravel-framework",
-          "php",
-          "laravel",
-          "quizapp"
-        ],
-        "pushed_at": "2017-06-13T08:47:45Z"
-      }
-    ],
-    "top_language": "PHP",
-    "all_languages": [
-      "PHP",
-      "CSS",
-      "C++",
-      "TypeScript",
-      "HTML"
-    ],
-    "contributions_last_90d": 863,
-    "prs_last_90d": 1,
-    "issues_last_90d": 1,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 23,
-    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
-    "activity_score": 0.84
-  },
-  {
     "github_username": "Shawon325",
     "name": "Md Shahidul Bhuiyan ( Shawon )",
     "profile_url": "https://github.com/Shawon325",
@@ -309964,6 +309782,188 @@
     "commits_last_90d": 20,
     "enriched_at": "2026-11-07T04:30:15.248947+00:00",
     "activity_score": 0.84
+  },
+  {
+    "github_username": "sabbirrahman",
+    "name": "Sabbir Rahman",
+    "profile_url": "https://github.com/sabbirrahman",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7347085?u=22f5dd73daca58f0aa309db50dbd6e6683a66d88&v=4",
+    "bio": "Senior Fullstack Software Engineer with 10+ years of experience building scalable, high-performance web applications in startup and product-led environments.",
+    "company": "",
+    "website_url": "",
+    "followers": 29,
+    "following": 28,
+    "public_repos": 15,
+    "total_stars": 56,
+    "top_repos": [
+      {
+        "name": "ng2-mdl",
+        "description": "An Angular 2+ component library for Material Design Lite",
+        "url": "https://github.com/sabbirrahman/ng2-mdl",
+        "stars": 18,
+        "forks": 6,
+        "language": "TypeScript",
+        "topics": [
+          "angular2",
+          "material-design-lite",
+          "mdl"
+        ],
+        "pushed_at": "2017-09-07T10:52:13Z"
+      },
+      {
+        "name": "ng-restly",
+        "description": "ng-restly - Resource (REST) Service for Angular 2+",
+        "url": "https://github.com/sabbirrahman/ng-restly",
+        "stars": 11,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [
+          "angular",
+          "angular2",
+          "angular4",
+          "resource",
+          "rest-api"
+        ],
+        "pushed_at": "2017-12-13T05:35:42Z"
+      },
+      {
+        "name": "creative",
+        "description": "Student training center management.",
+        "url": "https://github.com/Kryptonitesoft/creative",
+        "stars": 11,
+        "forks": 4,
+        "language": "PHP",
+        "topics": [
+          "laravel",
+          "students",
+          "management-system"
+        ],
+        "pushed_at": "2023-04-19T18:29:54Z"
+      },
+      {
+        "name": "reddit-magazine",
+        "description": "A simple reddit magazine app using web components",
+        "url": "https://github.com/sabbirrahman/reddit-magazine",
+        "stars": 4,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [
+          "webcomponents",
+          "fetch-api",
+          "async-await",
+          "cssgrid"
+        ],
+        "pushed_at": "2018-03-04T20:34:00Z"
+      },
+      {
+        "name": "bman",
+        "description": "B-Man - The Superhero of Bookmarking ;)",
+        "url": "https://github.com/sabbirrahman/bman",
+        "stars": 4,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [
+          "html",
+          "css",
+          "javascript",
+          "angular",
+          "angular2"
+        ],
+        "pushed_at": "2017-08-11T16:17:13Z"
+      },
+      {
+        "name": "rock-paper-scissors",
+        "description": "Classical Game Rock! Paper! Scissors!",
+        "url": "https://github.com/sabbirrahman/rock-paper-scissors",
+        "stars": 3,
+        "forks": 1,
+        "language": "CSS",
+        "topics": [
+          "html",
+          "game",
+          "css",
+          "javascript",
+          "es6"
+        ],
+        "pushed_at": "2017-08-29T16:46:57Z"
+      },
+      {
+        "name": "UVa-Solutions",
+        "description": "My solutions of problems in UVa Online Judge",
+        "url": "https://github.com/sabbirrahman/UVa-Solutions",
+        "stars": 2,
+        "forks": 0,
+        "language": "C++",
+        "topics": [
+          "cpp",
+          "c-plus-plus",
+          "uva",
+          "uva-solutions",
+          "uva-online-judge"
+        ],
+        "pushed_at": "2015-12-24T18:22:57Z"
+      },
+      {
+        "name": "ng-socializer",
+        "description": "ng-socializer - A Collection of Angular Services for Social Network Integration",
+        "url": "https://github.com/sabbirrahman/ng-socializer",
+        "stars": 1,
+        "forks": 1,
+        "language": "TypeScript",
+        "topics": [
+          "angular",
+          "service",
+          "social",
+          "social-network"
+        ],
+        "pushed_at": "2018-03-15T18:48:16Z"
+      },
+      {
+        "name": "javascript30",
+        "description": "30 Day Vanilla JS Coding Challenge",
+        "url": "https://github.com/sabbirrahman/javascript30",
+        "stars": 1,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [
+          "javacript",
+          "vanilla-javascript",
+          "javascript30"
+        ],
+        "pushed_at": "2017-09-07T11:26:29Z"
+      },
+      {
+        "name": "quizapp",
+        "description": "Quizapp - Quiz Application for Teacher & Student",
+        "url": "https://github.com/sabbirrahman/quizapp",
+        "stars": 1,
+        "forks": 1,
+        "language": "PHP",
+        "topics": [
+          "laravel-framework",
+          "php",
+          "laravel",
+          "quizapp"
+        ],
+        "pushed_at": "2017-06-13T08:47:45Z"
+      }
+    ],
+    "top_language": "PHP",
+    "all_languages": [
+      "PHP",
+      "CSS",
+      "C++",
+      "TypeScript",
+      "HTML"
+    ],
+    "contributions_last_90d": 863,
+    "prs_last_90d": 1,
+    "issues_last_90d": 1,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 23,
+    "enriched_at": "2026-11-07T04:30:15.248947+00:00",
+    "activity_score": 0.83
   },
   {
     "github_username": "iamahnaf",
