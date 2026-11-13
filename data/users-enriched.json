@@ -839,7 +839,7 @@
     "reviews_last_90d": 44,
     "commits_last_90d": 6399,
     "enriched_at": "2026-11-09T04:30:26.545216+00:00",
-    "activity_score": 23.09
+    "activity_score": 23.08
   },
   {
     "github_username": "htr-tech",
@@ -1638,7 +1638,7 @@
     "bio": "",
     "company": "",
     "website_url": "",
-    "followers": 61,
+    "followers": 62,
     "following": 6,
     "public_repos": 46,
     "total_stars": 79,
@@ -1750,21 +1750,21 @@
         "pushed_at": "2026-06-23T10:03:41Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "Java",
     "all_languages": [
-      "JavaScript",
-      "Vue",
       "Java",
+      "HTML",
       "C#",
-      "HTML"
+      "Vue",
+      "JavaScript"
     ],
-    "contributions_last_90d": 9444,
-    "prs_last_90d": 758,
-    "issues_last_90d": 3130,
-    "reviews_last_90d": 149,
-    "commits_last_90d": 5151,
-    "enriched_at": "2026-11-11T04:34:11.584473+00:00",
-    "activity_score": 15.93
+    "contributions_last_90d": 9680,
+    "prs_last_90d": 787,
+    "issues_last_90d": 3303,
+    "reviews_last_90d": 150,
+    "commits_last_90d": 5184,
+    "enriched_at": "2026-11-13T04:55:43.516400+00:00",
+    "activity_score": 16.39
   },
   {
     "github_username": "Asif2BD",
@@ -1777,8 +1777,8 @@
     "website_url": "https://ar.bd",
     "followers": 95,
     "following": 3,
-    "public_repos": 35,
-    "total_stars": 424,
+    "public_repos": 34,
+    "total_stars": 426,
     "top_repos": [
       {
         "name": "disable-comments",
@@ -1812,17 +1812,17 @@
           "wordpress-plugin",
           "wordpress-development"
         ],
-        "pushed_at": "2026-11-10T11:46:04Z"
+        "pushed_at": "2026-11-12T11:51:24Z"
       },
       {
         "name": "JARVIS-Mission-Control-OpenClaw",
         "description": "",
         "url": "https://github.com/Asif2BD/JARVIS-Mission-Control-OpenClaw",
-        "stars": 42,
+        "stars": 44,
         "forks": 30,
         "language": "JavaScript",
         "topics": [],
-        "pushed_at": "2026-08-17T23:22:07Z"
+        "pushed_at": "2026-11-11T08:16:12Z"
       },
       {
         "name": "WordPress-Publishing-Skill-For-Claude",
@@ -1858,7 +1858,7 @@
         "forks": 11,
         "language": "PHP",
         "topics": [],
-        "pushed_at": "2026-11-10T13:36:00Z"
+        "pushed_at": "2026-11-12T09:26:09Z"
       },
       {
         "name": "xCloud-Docker-Deploy-Skill",
@@ -1902,20 +1902,20 @@
         "pushed_at": "2023-03-06T17:22:44Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "PHP",
     "all_languages": [
+      "PHP",
       "JavaScript",
       "Dockerfile",
-      "Python",
-      "PHP"
+      "Python"
     ],
-    "contributions_last_90d": 14000,
-    "prs_last_90d": 214,
-    "issues_last_90d": 4908,
+    "contributions_last_90d": 14244,
+    "prs_last_90d": 198,
+    "issues_last_90d": 4986,
     "reviews_last_90d": 2,
-    "commits_last_90d": 599,
-    "enriched_at": "2026-11-11T04:34:11.584473+00:00",
-    "activity_score": 15.19
+    "commits_last_90d": 598,
+    "enriched_at": "2026-11-13T04:55:43.516400+00:00",
+    "activity_score": 15.2
   },
   {
     "github_username": "developerjillur",
@@ -2005,7 +2005,7 @@
         "forks": 0,
         "language": "HTML",
         "topics": [],
-        "pushed_at": "2026-11-10T18:12:54Z"
+        "pushed_at": "2026-11-11T17:07:27Z"
       },
       {
         "name": "origen-healthcare-redesign",
@@ -2044,20 +2044,20 @@
         "pushed_at": "2026-10-20T15:05:36Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "PHP",
     "all_languages": [
+      "PHP",
       "JavaScript",
-      "Python",
       "HTML",
-      "PHP"
+      "Python"
     ],
-    "contributions_last_90d": 23138,
+    "contributions_last_90d": 23579,
     "prs_last_90d": 81,
     "issues_last_90d": 9,
     "reviews_last_90d": 0,
-    "commits_last_90d": 723,
-    "enriched_at": "2026-11-11T04:34:11.584473+00:00",
-    "activity_score": 14.92
+    "commits_last_90d": 725,
+    "enriched_at": "2026-11-13T04:55:43.516400+00:00",
+    "activity_score": 15.17
   },
   {
     "github_username": "akram02",
@@ -2088,7 +2088,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/your-first-lab-cb-gh-000",
         "stars": 9,
-        "forks": 2264,
+        "forks": 2263,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-05-20T08:13:06Z"
@@ -2180,19 +2180,19 @@
         "pushed_at": "2021-03-15T17:47:57Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "Java",
     "all_languages": [
-      "JavaScript",
       "Java",
+      "JavaScript",
       "Ruby"
     ],
-    "contributions_last_90d": 8045,
+    "contributions_last_90d": 8386,
     "prs_last_90d": 18,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 41,
-    "enriched_at": "2026-11-11T04:34:11.584473+00:00",
-    "activity_score": 14.79
+    "enriched_at": "2026-11-13T04:55:43.516400+00:00",
+    "activity_score": 14.98
   },
   {
     "github_username": "codewithsadee",
@@ -2203,17 +2203,17 @@
     "bio": "Software Developer",
     "company": "codewithsadee",
     "website_url": "",
-    "followers": 7076,
+    "followers": 7079,
     "following": 28,
     "public_repos": 132,
-    "total_stars": 12552,
+    "total_stars": 12558,
     "top_repos": [
       {
         "name": "vcard-personal-portfolio",
         "description": "vCard is a fully responsive personal portfolio website, responsive for all devices.",
         "url": "https://github.com/codewithsadee/vcard-personal-portfolio",
-        "stars": 8163,
-        "forks": 4491,
+        "stars": 8165,
+        "forks": 4492,
         "language": "HTML",
         "topics": [
           "personal-website",
@@ -2228,7 +2228,7 @@
         "name": "anon-ecommerce-website",
         "description": "Fully responsive ecommerce website, built using HTML CSS and JavaScript.",
         "url": "https://github.com/codewithsadee/anon-ecommerce-website",
-        "stars": 1629,
+        "stars": 1632,
         "forks": 1105,
         "language": "HTML",
         "topics": [
@@ -2242,7 +2242,7 @@
         "description": "Grilli is a fully responsive restaurant website, Responsive for all devices, build using HTML, CSS, and JavaScript.",
         "url": "https://github.com/codewithsadee/grilli",
         "stars": 580,
-        "forks": 311,
+        "forks": 312,
         "language": "HTML",
         "topics": [
           "responsive-website",
@@ -2306,7 +2306,7 @@
         "name": "foodie",
         "description": "Foodie is a fully responsive fast food website.",
         "url": "https://github.com/codewithsadee/foodie",
-        "stars": 282,
+        "stars": 283,
         "forks": 141,
         "language": "HTML",
         "topics": [
@@ -2352,8 +2352,8 @@
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 3,
-    "enriched_at": "2026-11-11T04:34:11.584473+00:00",
-    "activity_score": 14.75
+    "enriched_at": "2026-11-13T04:55:43.516400+00:00",
+    "activity_score": 14.76
   },
   {
     "github_username": "mdrifat05",
@@ -3651,7 +3651,7 @@
     "reviews_last_90d": 234,
     "commits_last_90d": 3307,
     "enriched_at": "2026-11-12T05:38:56.842980+00:00",
-    "activity_score": 11.48
+    "activity_score": 11.47
   },
   {
     "github_username": "MdShawonForazi",
@@ -4623,20 +4623,20 @@
         "pushed_at": "2023-04-19T19:13:58Z"
       }
     ],
-    "top_language": "PHP",
+    "top_language": "Blade",
     "all_languages": [
+      "Blade",
       "PHP",
-      "Dart",
       "JavaScript",
-      "Blade"
+      "Dart"
     ],
-    "contributions_last_90d": 15361,
+    "contributions_last_90d": 15424,
     "prs_last_90d": 0,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
-    "commits_last_90d": 4869,
-    "enriched_at": "2026-11-11T04:34:11.584473+00:00",
-    "activity_score": 10.74
+    "commits_last_90d": 4909,
+    "enriched_at": "2026-11-13T04:55:43.516400+00:00",
+    "activity_score": 10.78
   },
   {
     "github_username": "KRTirtho",
@@ -4650,14 +4650,14 @@
     "followers": 2115,
     "following": 36,
     "public_repos": 95,
-    "total_stars": 51680,
+    "total_stars": 51721,
     "top_repos": [
       {
         "name": "spotube",
         "description": "\ud83c\udfa7 Open source music streaming app! Available for both desktop & mobile!",
         "url": "https://github.com/team-spotube/spotube",
-        "stars": 50714,
-        "forks": 2395,
+        "stars": 50753,
+        "forks": 2398,
         "language": "Kotlin",
         "topics": [
           "youtube",
@@ -4666,13 +4666,13 @@
           "music",
           "flutter"
         ],
-        "pushed_at": "2026-11-10T08:05:32Z"
+        "pushed_at": "2026-11-12T04:29:59Z"
       },
       {
         "name": "flemozi",
         "description": "Advanced\u26a1 Emoji Picker\ud83d\ude00 for Linux\ud83d\udc27, Windows\ud83e\ude9f and macOS\ud83c\udf4e",
         "url": "https://github.com/KRTirtho/flemozi",
-        "stars": 330,
+        "stars": 331,
         "forks": 18,
         "language": "Rust",
         "topics": [
@@ -4718,7 +4718,7 @@
         "name": "spotube-plugin-youtube-audio",
         "description": "YouTube audio source plugin for Spotube",
         "url": "https://github.com/KRTirtho/spotube-plugin-youtube-audio",
-        "stars": 113,
+        "stars": 114,
         "forks": 42,
         "language": "C++",
         "topics": [
@@ -4795,20 +4795,20 @@
         "pushed_at": "2023-10-30T15:59:24Z"
       }
     ],
-    "top_language": "Dart",
+    "top_language": "Kotlin",
     "all_languages": [
-      "Dart",
-      "C++",
+      "Kotlin",
       "Rust",
-      "Kotlin"
+      "C++",
+      "Dart"
     ],
-    "contributions_last_90d": 1028,
+    "contributions_last_90d": 1031,
     "prs_last_90d": 42,
     "issues_last_90d": 4,
     "reviews_last_90d": 5,
-    "commits_last_90d": 497,
-    "enriched_at": "2026-11-11T04:34:11.584473+00:00",
-    "activity_score": 10.42
+    "commits_last_90d": 500,
+    "enriched_at": "2026-11-13T04:55:43.516400+00:00",
+    "activity_score": 10.43
   },
   {
     "github_username": "devSahinur",
@@ -4988,7 +4988,7 @@
     "bio": "Ledger Goblin. Ex: Webaholic.",
     "company": "Entrepreneur",
     "website_url": "",
-    "followers": 262,
+    "followers": 261,
     "following": 130,
     "public_repos": 68,
     "total_stars": 1995,
@@ -4998,7 +4998,7 @@
         "description": "Simple and Minimal Line Icons",
         "url": "https://github.com/thesabbir/simple-line-icons",
         "stars": 1858,
-        "forks": 815,
+        "forks": 814,
         "language": "CSS",
         "topics": [
           "icons",
@@ -5106,21 +5106,21 @@
         "pushed_at": "2020-07-07T04:08:43Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "Python",
     "all_languages": [
-      "JavaScript",
-      "CSS",
       "Python",
       "Shell",
-      "Go"
+      "Go",
+      "CSS",
+      "JavaScript"
     ],
-    "contributions_last_90d": 14776,
+    "contributions_last_90d": 14881,
     "prs_last_90d": 4,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 13,
-    "enriched_at": "2026-11-11T04:34:11.584473+00:00",
-    "activity_score": 10.15
+    "enriched_at": "2026-11-13T04:55:43.516400+00:00",
+    "activity_score": 10.21
   },
   {
     "github_username": "Moonomo",
@@ -5236,7 +5236,7 @@
         "description": "",
         "url": "https://github.com/learn-co-students/your-first-lab-cb-gh-000",
         "stars": 9,
-        "forks": 2264,
+        "forks": 2263,
         "language": "Ruby",
         "topics": [],
         "pushed_at": "2021-05-20T08:13:06Z"
@@ -5332,7 +5332,7 @@
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 0,
-    "enriched_at": "2026-11-11T04:34:11.584473+00:00",
+    "enriched_at": "2026-11-13T04:55:43.516400+00:00",
     "activity_score": 9.84
   },
   {
@@ -15258,7 +15258,7 @@
     "reviews_last_90d": 56,
     "commits_last_90d": 802,
     "enriched_at": "2026-11-12T05:38:56.842980+00:00",
-    "activity_score": 6.13
+    "activity_score": 6.12
   },
   {
     "github_username": "ImRanKhan81m",
@@ -23203,7 +23203,7 @@
     "reviews_last_90d": 65,
     "commits_last_90d": 509,
     "enriched_at": "2026-11-12T05:38:56.842980+00:00",
-    "activity_score": 5.13
+    "activity_score": 5.12
   },
   {
     "github_username": "fazleyrabby",
@@ -52102,7 +52102,7 @@
     "reviews_last_90d": 5,
     "commits_last_90d": 485,
     "enriched_at": "2026-11-12T05:38:56.842980+00:00",
-    "activity_score": 3.59
+    "activity_score": 3.58
   },
   {
     "github_username": "developeralamgirbd",
@@ -58494,6 +58494,152 @@
     "activity_score": 3.39
   },
   {
+    "github_username": "Infan-Jioun",
+    "name": "Infan Jioun Rahman",
+    "profile_url": "https://github.com/Infan-Jioun",
+    "location": "Chittagong, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/138320292?u=0b0d302550128c81f07292f521ca6e9569102f48&v=4",
+    "bio": "I'm Infan Jioun Rahman, a Junior Software Engineer from Chittagong, Bangladesh. I build scalable web apps with an intuitive UI and a secure backend.",
+    "company": "",
+    "website_url": "https://infan-jioun.vercel.app",
+    "followers": 32,
+    "following": 32,
+    "public_repos": 94,
+    "total_stars": 12,
+    "top_repos": [
+      {
+        "name": "Infan-Jioun",
+        "description": "",
+        "url": "https://github.com/Infan-Jioun/Infan-Jioun",
+        "stars": 3,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-09-15T14:58:17Z"
+      },
+      {
+        "name": "FreightAgent-Backend",
+        "description": "Enterprise-grade Digital Freight Forwarding OS & Backend Engine featuring automated multi-component maritime/air pricing, corridor auto-dispatch, Stripe payments, real-time Socket.IO chat, and OpenRouter AI dynamic RAG assistant.",
+        "url": "https://github.com/Infan-Jioun/FreightAgent-Backend",
+        "stars": 2,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-11-10T03:17:51Z"
+      },
+      {
+        "name": "Nestify-Projects",
+        "description": "Nestify is a modern real estate platform built with Next.js, providing users with property listings, agent profiles, and various real estate services.",
+        "url": "https://github.com/Infan-Jioun/Nestify-Projects",
+        "stars": 2,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [
+          "mongodb",
+          "mongosse",
+          "next-auth",
+          "nextjs15",
+          "react-hook-form"
+        ],
+        "pushed_at": "2026-05-10T17:05:46Z"
+      },
+      {
+        "name": "FoodHub-Frontend-Projects",
+        "description": "FoodHub is a modern, responsive food delivery web application designed to provide a seamless food ordering experience for users. Built using React.js, Firebase, and Tailwind CSS, this project simulates a real-world food ordering system with dynamic routing, authentication, role-based dashboards, and Stripe/SSLCommerz payment integration. ",
+        "url": "https://github.com/Infan-Jioun/FoodHub-Frontend-Projects",
+        "stars": 2,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [
+          "axios-react",
+          "firebase-auth",
+          "food-delivery-application",
+          "javascript",
+          "mern-stack-development"
+        ],
+        "pushed_at": "2026-08-08T17:10:24Z"
+      },
+      {
+        "name": "FreightAgent-Frontend",
+        "description": "Enterprise-grade multi-modal freight forwarding platform featuring real-time GPS tracking, 3D WebGL visuals, live dispatch chat, Stripe payments & AI assistant.",
+        "url": "https://github.com/Infan-Jioun/FreightAgent-Frontend",
+        "stars": 1,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-11-02T07:40:58Z"
+      },
+      {
+        "name": "infan-ecommerce-backend",
+        "description": "Ecommerce Website",
+        "url": "https://github.com/Infan-Jioun/infan-ecommerce-backend",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [
+          "backend",
+          "ecommerce-website"
+        ],
+        "pushed_at": "2025-01-20T14:53:52Z"
+      },
+      {
+        "name": "infan-ecommerce-frontend",
+        "description": "Ecommerce Website Link",
+        "url": "https://github.com/Infan-Jioun/infan-ecommerce-frontend",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [
+          "ecommerce-website"
+        ],
+        "pushed_at": "2024-11-20T13:05:11Z"
+      },
+      {
+        "name": "help-desk-backend-with-nest.js",
+        "description": "",
+        "url": "https://github.com/Infan-Jioun/help-desk-backend-with-nest.js",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-10-01T06:22:37Z"
+      },
+      {
+        "name": "unishot-backend",
+        "description": "",
+        "url": "https://github.com/Infan-Jioun/unishot-backend",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-08-08T23:16:49Z"
+      },
+      {
+        "name": "spotsync-api",
+        "description": "",
+        "url": "https://github.com/Infan-Jioun/spotsync-api",
+        "stars": 0,
+        "forks": 0,
+        "language": "Go",
+        "topics": [],
+        "pushed_at": "2026-06-27T10:13:56Z"
+      }
+    ],
+    "top_language": "Go",
+    "all_languages": [
+      "Go",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "contributions_last_90d": 1792,
+    "prs_last_90d": 39,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 1326,
+    "enriched_at": "2026-11-12T05:38:56.842980+00:00",
+    "activity_score": 3.38
+  },
+  {
     "github_username": "nurulhudaapon",
     "name": "Nurul Huda (Apon)",
     "profile_url": "https://github.com/nurulhudaapon",
@@ -58646,295 +58792,6 @@
     "issues_last_90d": 115,
     "reviews_last_90d": 24,
     "commits_last_90d": 2182,
-    "enriched_at": "2026-11-12T05:38:56.842980+00:00",
-    "activity_score": 3.38
-  },
-  {
-    "github_username": "Infan-Jioun",
-    "name": "Infan Jioun Rahman",
-    "profile_url": "https://github.com/Infan-Jioun",
-    "location": "Chittagong, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/138320292?u=0b0d302550128c81f07292f521ca6e9569102f48&v=4",
-    "bio": "I'm Infan Jioun Rahman, a Junior Software Engineer from Chittagong, Bangladesh. I build scalable web apps with an intuitive UI and a secure backend.",
-    "company": "",
-    "website_url": "https://infan-jioun.vercel.app",
-    "followers": 32,
-    "following": 32,
-    "public_repos": 94,
-    "total_stars": 12,
-    "top_repos": [
-      {
-        "name": "Infan-Jioun",
-        "description": "",
-        "url": "https://github.com/Infan-Jioun/Infan-Jioun",
-        "stars": 3,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-09-15T14:58:17Z"
-      },
-      {
-        "name": "FreightAgent-Backend",
-        "description": "Enterprise-grade Digital Freight Forwarding OS & Backend Engine featuring automated multi-component maritime/air pricing, corridor auto-dispatch, Stripe payments, real-time Socket.IO chat, and OpenRouter AI dynamic RAG assistant.",
-        "url": "https://github.com/Infan-Jioun/FreightAgent-Backend",
-        "stars": 2,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-11-10T03:17:51Z"
-      },
-      {
-        "name": "Nestify-Projects",
-        "description": "Nestify is a modern real estate platform built with Next.js, providing users with property listings, agent profiles, and various real estate services.",
-        "url": "https://github.com/Infan-Jioun/Nestify-Projects",
-        "stars": 2,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [
-          "mongodb",
-          "mongosse",
-          "next-auth",
-          "nextjs15",
-          "react-hook-form"
-        ],
-        "pushed_at": "2026-05-10T17:05:46Z"
-      },
-      {
-        "name": "FoodHub-Frontend-Projects",
-        "description": "FoodHub is a modern, responsive food delivery web application designed to provide a seamless food ordering experience for users. Built using React.js, Firebase, and Tailwind CSS, this project simulates a real-world food ordering system with dynamic routing, authentication, role-based dashboards, and Stripe/SSLCommerz payment integration. ",
-        "url": "https://github.com/Infan-Jioun/FoodHub-Frontend-Projects",
-        "stars": 2,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [
-          "axios-react",
-          "firebase-auth",
-          "food-delivery-application",
-          "javascript",
-          "mern-stack-development"
-        ],
-        "pushed_at": "2026-08-08T17:10:24Z"
-      },
-      {
-        "name": "FreightAgent-Frontend",
-        "description": "Enterprise-grade multi-modal freight forwarding platform featuring real-time GPS tracking, 3D WebGL visuals, live dispatch chat, Stripe payments & AI assistant.",
-        "url": "https://github.com/Infan-Jioun/FreightAgent-Frontend",
-        "stars": 1,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-11-02T07:40:58Z"
-      },
-      {
-        "name": "infan-ecommerce-backend",
-        "description": "Ecommerce Website",
-        "url": "https://github.com/Infan-Jioun/infan-ecommerce-backend",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [
-          "backend",
-          "ecommerce-website"
-        ],
-        "pushed_at": "2025-01-20T14:53:52Z"
-      },
-      {
-        "name": "infan-ecommerce-frontend",
-        "description": "Ecommerce Website Link",
-        "url": "https://github.com/Infan-Jioun/infan-ecommerce-frontend",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [
-          "ecommerce-website"
-        ],
-        "pushed_at": "2024-11-20T13:05:11Z"
-      },
-      {
-        "name": "help-desk-backend-with-nest.js",
-        "description": "",
-        "url": "https://github.com/Infan-Jioun/help-desk-backend-with-nest.js",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-10-01T06:22:37Z"
-      },
-      {
-        "name": "unishot-backend",
-        "description": "",
-        "url": "https://github.com/Infan-Jioun/unishot-backend",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-08-08T23:16:49Z"
-      },
-      {
-        "name": "spotsync-api",
-        "description": "",
-        "url": "https://github.com/Infan-Jioun/spotsync-api",
-        "stars": 0,
-        "forks": 0,
-        "language": "Go",
-        "topics": [],
-        "pushed_at": "2026-06-27T10:13:56Z"
-      }
-    ],
-    "top_language": "Go",
-    "all_languages": [
-      "Go",
-      "TypeScript",
-      "JavaScript"
-    ],
-    "contributions_last_90d": 1792,
-    "prs_last_90d": 39,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 1326,
-    "enriched_at": "2026-11-12T05:38:56.842980+00:00",
-    "activity_score": 3.38
-  },
-  {
-    "github_username": "Jerald-tonmoy-dias",
-    "name": "Jerald Tonmoy Dias",
-    "profile_url": "https://github.com/Jerald-tonmoy-dias",
-    "location": "Uttara, Dhaka ,Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/59910969?u=99d120f93d08276bb205013f40f4d1a6f55a0a39&v=4",
-    "bio": "Software Developer with a frontend/fullstack foundation. Building my own products while going deeper into backend, Python, and applied AI",
-    "company": "Independent",
-    "website_url": "https://new-portfolio-eta-two.vercel.app/",
-    "followers": 133,
-    "following": 158,
-    "public_repos": 110,
-    "total_stars": 17,
-    "top_repos": [
-      {
-        "name": "vueFlowbite",
-        "description": "vue js with flowbite",
-        "url": "https://github.com/Jerald-tonmoy-dias/vueFlowbite",
-        "stars": 4,
-        "forks": 0,
-        "language": "Vue",
-        "topics": [],
-        "pushed_at": "2022-06-12T17:58:59Z"
-      },
-      {
-        "name": "react-laravel-starter-kit",
-        "description": "React laravel starter kit with tailwind css and vite js(laravel 9)",
-        "url": "https://github.com/Jerald-tonmoy-dias/react-laravel-starter-kit",
-        "stars": 3,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [
-          "laravel-framework",
-          "react",
-          "spa",
-          "tailwindcss",
-          "vitejs"
-        ],
-        "pushed_at": "2022-08-14T16:37:16Z"
-      },
-      {
-        "name": "country-select-with-flag",
-        "description": "Customizable country select with flag",
-        "url": "https://github.com/Jerald-tonmoy-dias/country-select-with-flag",
-        "stars": 2,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2025-04-07T11:46:01Z"
-      },
-      {
-        "name": "html-includer",
-        "description": "HTML Includer is a lightweight and powerful JavaScript utility for dynamically loading reusable HTML components into your web pages. It is designed for frontend developers who prefer a component-based workflow in static projects, enabling them to include headers, footers, sidebars, and other shared components easily",
-        "url": "https://github.com/Jerald-tonmoy-dias/html-includer",
-        "stars": 2,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2025-01-21T06:22:55Z"
-      },
-      {
-        "name": "frontend-system-design-guide",
-        "description": "A practical framework for approaching front-end system design \u2014 architecture, performance, and trade-offs.",
-        "url": "https://github.com/Jerald-tonmoy-dias/frontend-system-design-guide",
-        "stars": 1,
-        "forks": 0,
-        "language": null,
-        "topics": [
-          "frontend",
-          "interview-preparation",
-          "react",
-          "system-design",
-          "web-performance"
-        ],
-        "pushed_at": "2026-06-30T15:14:18Z"
-      },
-      {
-        "name": "schedule-slot-picker",
-        "description": "A lightweight, customizable **week-view calendar** JavaScript plugin that allows users to select available time slots, view booked slots, and navigate through weeks with past time slots disabled. Ideal for booking appointments, lessons, or scheduling tasks.",
-        "url": "https://github.com/Jerald-tonmoy-dias/schedule-slot-picker",
-        "stars": 1,
-        "forks": 0,
-        "language": "CSS",
-        "topics": [],
-        "pushed_at": "2025-06-08T14:54:33Z"
-      },
-      {
-        "name": "jtd_flutter_ecom_app",
-        "description": "FLUTTER ECOM UI",
-        "url": "https://github.com/Jerald-tonmoy-dias/jtd_flutter_ecom_app",
-        "stars": 1,
-        "forks": 0,
-        "language": "C++",
-        "topics": [],
-        "pushed_at": "2024-05-24T19:36:07Z"
-      },
-      {
-        "name": "jtd_todosapp",
-        "description": "Flutter app",
-        "url": "https://github.com/Jerald-tonmoy-dias/jtd_todosapp",
-        "stars": 1,
-        "forks": 0,
-        "language": "C++",
-        "topics": [],
-        "pushed_at": "2024-05-22T20:50:25Z"
-      },
-      {
-        "name": "react-nice-select-tsx",
-        "description": "React Nice Select TSX, Specifically Designed for tsx Projects",
-        "url": "https://github.com/Jerald-tonmoy-dias/react-nice-select-tsx",
-        "stars": 1,
-        "forks": 0,
-        "language": "CSS",
-        "topics": [],
-        "pushed_at": "2024-02-04T11:53:33Z"
-      },
-      {
-        "name": "temp",
-        "description": "",
-        "url": "https://github.com/Jerald-tonmoy-dias/temp",
-        "stars": 1,
-        "forks": 0,
-        "language": "CSS",
-        "topics": [],
-        "pushed_at": "2023-02-28T20:00:35Z"
-      }
-    ],
-    "top_language": "JavaScript",
-    "all_languages": [
-      "JavaScript",
-      "C++",
-      "Vue",
-      "PHP",
-      "CSS"
-    ],
-    "contributions_last_90d": 908,
-    "prs_last_90d": 62,
-    "issues_last_90d": 50,
-    "reviews_last_90d": 1,
-    "commits_last_90d": 228,
     "enriched_at": "2026-11-12T05:38:56.842980+00:00",
     "activity_score": 3.37
   },
@@ -59197,6 +59054,149 @@
     "commits_last_90d": 78,
     "enriched_at": "2026-11-12T05:38:56.842980+00:00",
     "activity_score": 3.37
+  },
+  {
+    "github_username": "Jerald-tonmoy-dias",
+    "name": "Jerald Tonmoy Dias",
+    "profile_url": "https://github.com/Jerald-tonmoy-dias",
+    "location": "Uttara, Dhaka ,Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/59910969?u=99d120f93d08276bb205013f40f4d1a6f55a0a39&v=4",
+    "bio": "Software Developer with a frontend/fullstack foundation. Building my own products while going deeper into backend, Python, and applied AI",
+    "company": "Independent",
+    "website_url": "https://new-portfolio-eta-two.vercel.app/",
+    "followers": 133,
+    "following": 158,
+    "public_repos": 110,
+    "total_stars": 17,
+    "top_repos": [
+      {
+        "name": "vueFlowbite",
+        "description": "vue js with flowbite",
+        "url": "https://github.com/Jerald-tonmoy-dias/vueFlowbite",
+        "stars": 4,
+        "forks": 0,
+        "language": "Vue",
+        "topics": [],
+        "pushed_at": "2022-06-12T17:58:59Z"
+      },
+      {
+        "name": "react-laravel-starter-kit",
+        "description": "React laravel starter kit with tailwind css and vite js(laravel 9)",
+        "url": "https://github.com/Jerald-tonmoy-dias/react-laravel-starter-kit",
+        "stars": 3,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [
+          "laravel-framework",
+          "react",
+          "spa",
+          "tailwindcss",
+          "vitejs"
+        ],
+        "pushed_at": "2022-08-14T16:37:16Z"
+      },
+      {
+        "name": "country-select-with-flag",
+        "description": "Customizable country select with flag",
+        "url": "https://github.com/Jerald-tonmoy-dias/country-select-with-flag",
+        "stars": 2,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2025-04-07T11:46:01Z"
+      },
+      {
+        "name": "html-includer",
+        "description": "HTML Includer is a lightweight and powerful JavaScript utility for dynamically loading reusable HTML components into your web pages. It is designed for frontend developers who prefer a component-based workflow in static projects, enabling them to include headers, footers, sidebars, and other shared components easily",
+        "url": "https://github.com/Jerald-tonmoy-dias/html-includer",
+        "stars": 2,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2025-01-21T06:22:55Z"
+      },
+      {
+        "name": "frontend-system-design-guide",
+        "description": "A practical framework for approaching front-end system design \u2014 architecture, performance, and trade-offs.",
+        "url": "https://github.com/Jerald-tonmoy-dias/frontend-system-design-guide",
+        "stars": 1,
+        "forks": 0,
+        "language": null,
+        "topics": [
+          "frontend",
+          "interview-preparation",
+          "react",
+          "system-design",
+          "web-performance"
+        ],
+        "pushed_at": "2026-06-30T15:14:18Z"
+      },
+      {
+        "name": "schedule-slot-picker",
+        "description": "A lightweight, customizable **week-view calendar** JavaScript plugin that allows users to select available time slots, view booked slots, and navigate through weeks with past time slots disabled. Ideal for booking appointments, lessons, or scheduling tasks.",
+        "url": "https://github.com/Jerald-tonmoy-dias/schedule-slot-picker",
+        "stars": 1,
+        "forks": 0,
+        "language": "CSS",
+        "topics": [],
+        "pushed_at": "2025-06-08T14:54:33Z"
+      },
+      {
+        "name": "jtd_flutter_ecom_app",
+        "description": "FLUTTER ECOM UI",
+        "url": "https://github.com/Jerald-tonmoy-dias/jtd_flutter_ecom_app",
+        "stars": 1,
+        "forks": 0,
+        "language": "C++",
+        "topics": [],
+        "pushed_at": "2024-05-24T19:36:07Z"
+      },
+      {
+        "name": "jtd_todosapp",
+        "description": "Flutter app",
+        "url": "https://github.com/Jerald-tonmoy-dias/jtd_todosapp",
+        "stars": 1,
+        "forks": 0,
+        "language": "C++",
+        "topics": [],
+        "pushed_at": "2024-05-22T20:50:25Z"
+      },
+      {
+        "name": "react-nice-select-tsx",
+        "description": "React Nice Select TSX, Specifically Designed for tsx Projects",
+        "url": "https://github.com/Jerald-tonmoy-dias/react-nice-select-tsx",
+        "stars": 1,
+        "forks": 0,
+        "language": "CSS",
+        "topics": [],
+        "pushed_at": "2024-02-04T11:53:33Z"
+      },
+      {
+        "name": "temp",
+        "description": "",
+        "url": "https://github.com/Jerald-tonmoy-dias/temp",
+        "stars": 1,
+        "forks": 0,
+        "language": "CSS",
+        "topics": [],
+        "pushed_at": "2023-02-28T20:00:35Z"
+      }
+    ],
+    "top_language": "JavaScript",
+    "all_languages": [
+      "JavaScript",
+      "C++",
+      "Vue",
+      "PHP",
+      "CSS"
+    ],
+    "contributions_last_90d": 908,
+    "prs_last_90d": 62,
+    "issues_last_90d": 50,
+    "reviews_last_90d": 1,
+    "commits_last_90d": 228,
+    "enriched_at": "2026-11-12T05:38:56.842980+00:00",
+    "activity_score": 3.36
   },
   {
     "github_username": "fhsinchy",
@@ -95402,6 +95402,140 @@
     "activity_score": 2.47
   },
   {
+    "github_username": "moshiur25524",
+    "name": "Moshiur Rahman",
+    "profile_url": "https://github.com/moshiur25524",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/97011430?u=630e145e3c05175898e6599b2559e281c5cace6b&v=4",
+    "bio": "Hi, I am a full-stack react developer. I have experience in HTML, CSS, JavaScript, node.js, and React. ",
+    "company": "",
+    "website_url": "https://moshiur-portfolio-60cccc.netlify.app/",
+    "followers": 6,
+    "following": 21,
+    "public_repos": 126,
+    "total_stars": 0,
+    "top_repos": [
+      {
+        "name": "laravel-crud-bootstrap",
+        "description": "",
+        "url": "https://github.com/moshiur25524/laravel-crud-bootstrap",
+        "stars": 0,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2025-09-07T14:48:00Z"
+      },
+      {
+        "name": "CRUD-on-Client",
+        "description": "It is a PHP and MySQL base CRUD opertion Application",
+        "url": "https://github.com/moshiur25524/CRUD-on-Client",
+        "stars": 0,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2025-08-13T12:02:01Z"
+      },
+      {
+        "name": "WoodCraft-Studio",
+        "description": "",
+        "url": "https://github.com/moshiur25524/WoodCraft-Studio",
+        "stars": 0,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2025-08-07T17:44:19Z"
+      },
+      {
+        "name": "Explore_react_native",
+        "description": "",
+        "url": "https://github.com/moshiur25524/Explore_react_native",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2024-04-08T18:23:39Z"
+      },
+      {
+        "name": "kacha_bazar_frontend",
+        "description": "",
+        "url": "https://github.com/moshiur25524/kacha_bazar_frontend",
+        "stars": 0,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2024-02-05T06:34:27Z"
+      },
+      {
+        "name": "News-portal-frontend",
+        "description": "",
+        "url": "https://github.com/SaqlineShabbir/News-portal-frontend",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2023-12-13T08:55:20Z"
+      },
+      {
+        "name": "SincereShop_BD",
+        "description": "",
+        "url": "https://github.com/moshiur25524/SincereShop_BD",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2023-10-11T13:55:18Z"
+      },
+      {
+        "name": "bistro-server",
+        "description": "",
+        "url": "https://github.com/moshiur25524/bistro-server",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2023-11-27T06:51:54Z"
+      },
+      {
+        "name": "Blog_App_Server",
+        "description": "",
+        "url": "https://github.com/moshiur25524/Blog_App_Server",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2023-09-05T13:11:28Z"
+      },
+      {
+        "name": "Blog_App_Client",
+        "description": "Blog_App_Client",
+        "url": "https://github.com/moshiur25524/Blog_App_Client",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [
+          "express",
+          "mongodb",
+          "mongoose",
+          "nodejs",
+          "react"
+        ],
+        "pushed_at": "2023-09-06T04:35:58Z"
+      }
+    ],
+    "top_language": "PHP",
+    "all_languages": [
+      "PHP",
+      "JavaScript"
+    ],
+    "contributions_last_90d": 0,
+    "prs_last_90d": 0,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 0,
+    "enriched_at": "2026-11-12T05:38:56.842980+00:00",
+    "activity_score": 2.47
+  },
+  {
     "github_username": "aaneloy",
     "name": "Asif Ahmed Neloy",
     "profile_url": "https://github.com/aaneloy",
@@ -95551,141 +95685,7 @@
     "reviews_last_90d": 0,
     "commits_last_90d": 87,
     "enriched_at": "2026-11-12T05:38:56.842980+00:00",
-    "activity_score": 2.47
-  },
-  {
-    "github_username": "moshiur25524",
-    "name": "Moshiur Rahman",
-    "profile_url": "https://github.com/moshiur25524",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/97011430?u=630e145e3c05175898e6599b2559e281c5cace6b&v=4",
-    "bio": "Hi, I am a full-stack react developer. I have experience in HTML, CSS, JavaScript, node.js, and React. ",
-    "company": "",
-    "website_url": "https://moshiur-portfolio-60cccc.netlify.app/",
-    "followers": 6,
-    "following": 21,
-    "public_repos": 126,
-    "total_stars": 0,
-    "top_repos": [
-      {
-        "name": "laravel-crud-bootstrap",
-        "description": "",
-        "url": "https://github.com/moshiur25524/laravel-crud-bootstrap",
-        "stars": 0,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2025-09-07T14:48:00Z"
-      },
-      {
-        "name": "CRUD-on-Client",
-        "description": "It is a PHP and MySQL base CRUD opertion Application",
-        "url": "https://github.com/moshiur25524/CRUD-on-Client",
-        "stars": 0,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2025-08-13T12:02:01Z"
-      },
-      {
-        "name": "WoodCraft-Studio",
-        "description": "",
-        "url": "https://github.com/moshiur25524/WoodCraft-Studio",
-        "stars": 0,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2025-08-07T17:44:19Z"
-      },
-      {
-        "name": "Explore_react_native",
-        "description": "",
-        "url": "https://github.com/moshiur25524/Explore_react_native",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2024-04-08T18:23:39Z"
-      },
-      {
-        "name": "kacha_bazar_frontend",
-        "description": "",
-        "url": "https://github.com/moshiur25524/kacha_bazar_frontend",
-        "stars": 0,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2024-02-05T06:34:27Z"
-      },
-      {
-        "name": "News-portal-frontend",
-        "description": "",
-        "url": "https://github.com/SaqlineShabbir/News-portal-frontend",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2023-12-13T08:55:20Z"
-      },
-      {
-        "name": "SincereShop_BD",
-        "description": "",
-        "url": "https://github.com/moshiur25524/SincereShop_BD",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2023-10-11T13:55:18Z"
-      },
-      {
-        "name": "bistro-server",
-        "description": "",
-        "url": "https://github.com/moshiur25524/bistro-server",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2023-11-27T06:51:54Z"
-      },
-      {
-        "name": "Blog_App_Server",
-        "description": "",
-        "url": "https://github.com/moshiur25524/Blog_App_Server",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2023-09-05T13:11:28Z"
-      },
-      {
-        "name": "Blog_App_Client",
-        "description": "Blog_App_Client",
-        "url": "https://github.com/moshiur25524/Blog_App_Client",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [
-          "express",
-          "mongodb",
-          "mongoose",
-          "nodejs",
-          "react"
-        ],
-        "pushed_at": "2023-09-06T04:35:58Z"
-      }
-    ],
-    "top_language": "PHP",
-    "all_languages": [
-      "PHP",
-      "JavaScript"
-    ],
-    "contributions_last_90d": 0,
-    "prs_last_90d": 0,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 0,
-    "enriched_at": "2026-11-12T05:38:56.842980+00:00",
-    "activity_score": 2.47
+    "activity_score": 2.46
   },
   {
     "github_username": "mirzaazwad",
@@ -141912,141 +141912,6 @@
     "activity_score": 1.91
   },
   {
-    "github_username": "naimur1046",
-    "name": "Naimur Rahman Rumel",
-    "profile_url": "https://github.com/naimur1046",
-    "location": "Sylhet",
-    "avatar_url": "https://avatars.githubusercontent.com/u/88675051?u=7b5a3015d2d02709d07944269a9071551cadc692&v=4",
-    "bio": "I'm Naimur Rahman, an Assistant Software Engineer at OnnoRokom Projukti Limited, working in the R&D team with a strong passion for Full-Stack Development.",
-    "company": "",
-    "website_url": "",
-    "followers": 21,
-    "following": 37,
-    "public_repos": 40,
-    "total_stars": 11,
-    "top_repos": [
-      {
-        "name": "mini-library-management-system",
-        "description": "A secure .NET 9 Web API for a Mini Library Management System featuring book/member management, borrow/return operations with business rules, JWT authentication, and reporting \u2014 built with EF Core",
-        "url": "https://github.com/naimur1046/mini-library-management-system",
-        "stars": 2,
-        "forks": 0,
-        "language": "C#",
-        "topics": [
-          "asp-net-core",
-          "webapi"
-        ],
-        "pushed_at": "2025-11-26T03:08:38Z"
-      },
-      {
-        "name": "Shared_Task1_HateSpeech",
-        "description": "",
-        "url": "https://github.com/SyedT1/Shared_Task1_HateSpeech",
-        "stars": 2,
-        "forks": 0,
-        "language": "Jupyter Notebook",
-        "topics": [],
-        "pushed_at": "2025-11-09T02:56:19Z"
-      },
-      {
-        "name": "FluentNHibernateExample",
-        "description": "",
-        "url": "https://github.com/naimur1046/FluentNHibernateExample",
-        "stars": 2,
-        "forks": 0,
-        "language": "C#",
-        "topics": [],
-        "pushed_at": "2024-10-09T11:33:13Z"
-      },
-      {
-        "name": "Android-With-Java",
-        "description": "This is for my self learn",
-        "url": "https://github.com/naimur1046/Android-With-Java",
-        "stars": 1,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2024-07-04T14:01:23Z"
-      },
-      {
-        "name": "Producer-Consumer-Management-System",
-        "description": "This project is built using gRPC with java. We used Bloom RPC for checking the request.",
-        "url": "https://github.com/naimur1046/Producer-Consumer-Management-System",
-        "stars": 1,
-        "forks": 0,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2024-06-10T16:49:05Z"
-      },
-      {
-        "name": "Project-350-RCBBMS",
-        "description": "",
-        "url": "https://github.com/naimur1046/Project-350-RCBBMS",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2024-06-27T16:38:16Z"
-      },
-      {
-        "name": "Health-Zone",
-        "description": "",
-        "url": "https://github.com/naimur1046/Health-Zone",
-        "stars": 1,
-        "forks": 1,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2024-06-27T16:26:29Z"
-      },
-      {
-        "name": "Brick-Breaker-Game",
-        "description": "This Project is completed by Abu Bakar Siddique and Naimur Rahman",
-        "url": "https://github.com/naimur1046/Brick-Breaker-Game",
-        "stars": 1,
-        "forks": 1,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2022-08-17T18:12:22Z"
-      },
-      {
-        "name": "employee-shift-analytics",
-        "description": "A React-based dashboard for visualizing employee shift patterns, analyzing operational performance, detecting breakdown streaks, and generating actionable insights from shift records.",
-        "url": "https://github.com/naimur1046/employee-shift-analytics",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-06-24T07:03:28Z"
-      },
-      {
-        "name": "employee-management-system",
-        "description": "Employee Management System (EMS) built with Angular and ASP.NET Core with full CRUD functionality.",
-        "url": "https://github.com/naimur1046/employee-management-system",
-        "stars": 0,
-        "forks": 0,
-        "language": "CSS",
-        "topics": [],
-        "pushed_at": "2026-03-31T02:58:05Z"
-      }
-    ],
-    "top_language": "Java",
-    "all_languages": [
-      "Java",
-      "JavaScript",
-      "TypeScript",
-      "Jupyter Notebook",
-      "C#",
-      "CSS"
-    ],
-    "contributions_last_90d": 605,
-    "prs_last_90d": 89,
-    "issues_last_90d": 76,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 435,
-    "enriched_at": "2026-11-12T05:38:56.842980+00:00",
-    "activity_score": 1.9
-  },
-  {
     "github_username": "ShifatJahanShifa",
     "name": "Shifa",
     "profile_url": "https://github.com/ShifatJahanShifa",
@@ -142492,6 +142357,141 @@
     "commits_last_90d": 66,
     "enriched_at": "2026-11-12T05:38:56.842980+00:00",
     "activity_score": 1.9
+  },
+  {
+    "github_username": "naimur1046",
+    "name": "Naimur Rahman Rumel",
+    "profile_url": "https://github.com/naimur1046",
+    "location": "Sylhet",
+    "avatar_url": "https://avatars.githubusercontent.com/u/88675051?u=7b5a3015d2d02709d07944269a9071551cadc692&v=4",
+    "bio": "I'm Naimur Rahman, an Assistant Software Engineer at OnnoRokom Projukti Limited, working in the R&D team with a strong passion for Full-Stack Development.",
+    "company": "",
+    "website_url": "",
+    "followers": 21,
+    "following": 37,
+    "public_repos": 40,
+    "total_stars": 11,
+    "top_repos": [
+      {
+        "name": "mini-library-management-system",
+        "description": "A secure .NET 9 Web API for a Mini Library Management System featuring book/member management, borrow/return operations with business rules, JWT authentication, and reporting \u2014 built with EF Core",
+        "url": "https://github.com/naimur1046/mini-library-management-system",
+        "stars": 2,
+        "forks": 0,
+        "language": "C#",
+        "topics": [
+          "asp-net-core",
+          "webapi"
+        ],
+        "pushed_at": "2025-11-26T03:08:38Z"
+      },
+      {
+        "name": "Shared_Task1_HateSpeech",
+        "description": "",
+        "url": "https://github.com/SyedT1/Shared_Task1_HateSpeech",
+        "stars": 2,
+        "forks": 0,
+        "language": "Jupyter Notebook",
+        "topics": [],
+        "pushed_at": "2025-11-09T02:56:19Z"
+      },
+      {
+        "name": "FluentNHibernateExample",
+        "description": "",
+        "url": "https://github.com/naimur1046/FluentNHibernateExample",
+        "stars": 2,
+        "forks": 0,
+        "language": "C#",
+        "topics": [],
+        "pushed_at": "2024-10-09T11:33:13Z"
+      },
+      {
+        "name": "Android-With-Java",
+        "description": "This is for my self learn",
+        "url": "https://github.com/naimur1046/Android-With-Java",
+        "stars": 1,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2024-07-04T14:01:23Z"
+      },
+      {
+        "name": "Producer-Consumer-Management-System",
+        "description": "This project is built using gRPC with java. We used Bloom RPC for checking the request.",
+        "url": "https://github.com/naimur1046/Producer-Consumer-Management-System",
+        "stars": 1,
+        "forks": 0,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2024-06-10T16:49:05Z"
+      },
+      {
+        "name": "Project-350-RCBBMS",
+        "description": "",
+        "url": "https://github.com/naimur1046/Project-350-RCBBMS",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2024-06-27T16:38:16Z"
+      },
+      {
+        "name": "Health-Zone",
+        "description": "",
+        "url": "https://github.com/naimur1046/Health-Zone",
+        "stars": 1,
+        "forks": 1,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2024-06-27T16:26:29Z"
+      },
+      {
+        "name": "Brick-Breaker-Game",
+        "description": "This Project is completed by Abu Bakar Siddique and Naimur Rahman",
+        "url": "https://github.com/naimur1046/Brick-Breaker-Game",
+        "stars": 1,
+        "forks": 1,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2022-08-17T18:12:22Z"
+      },
+      {
+        "name": "employee-shift-analytics",
+        "description": "A React-based dashboard for visualizing employee shift patterns, analyzing operational performance, detecting breakdown streaks, and generating actionable insights from shift records.",
+        "url": "https://github.com/naimur1046/employee-shift-analytics",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-06-24T07:03:28Z"
+      },
+      {
+        "name": "employee-management-system",
+        "description": "Employee Management System (EMS) built with Angular and ASP.NET Core with full CRUD functionality.",
+        "url": "https://github.com/naimur1046/employee-management-system",
+        "stars": 0,
+        "forks": 0,
+        "language": "CSS",
+        "topics": [],
+        "pushed_at": "2026-03-31T02:58:05Z"
+      }
+    ],
+    "top_language": "Java",
+    "all_languages": [
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "Jupyter Notebook",
+      "C#",
+      "CSS"
+    ],
+    "contributions_last_90d": 605,
+    "prs_last_90d": 89,
+    "issues_last_90d": 76,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 435,
+    "enriched_at": "2026-11-12T05:38:56.842980+00:00",
+    "activity_score": 1.89
   },
   {
     "github_username": "safwansatil",
@@ -169342,7 +169342,7 @@
     "reviews_last_90d": 1,
     "commits_last_90d": 51,
     "enriched_at": "2026-11-12T05:38:56.842980+00:00",
-    "activity_score": 1.65
+    "activity_score": 1.64
   },
   {
     "github_username": "Neaj-Morshad-101",
@@ -404259,6 +404259,30 @@
     "activity_score": 0.47
   },
   {
+    "github_username": "touhidulemroz",
+    "name": "Touhidul Emroz",
+    "profile_url": "https://github.com/touhidulemroz",
+    "location": "Mymensingh, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/33710175?u=90774a59505b2e60fa7b590f65f8bf5b17a23c32&v=4",
+    "bio": "",
+    "company": "",
+    "website_url": "www.touhidulemroz.com",
+    "followers": 19,
+    "following": 86,
+    "public_repos": 0,
+    "total_stars": 0,
+    "top_repos": [],
+    "top_language": null,
+    "all_languages": [],
+    "contributions_last_90d": 794,
+    "prs_last_90d": 0,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 0,
+    "enriched_at": "2026-11-12T05:38:56.842980+00:00",
+    "activity_score": 0.47
+  },
+  {
     "github_username": "hoshiya4522",
     "name": "Gourob Dev",
     "profile_url": "https://github.com/hoshiya4522",
@@ -404395,31 +404419,7 @@
     "reviews_last_90d": 0,
     "commits_last_90d": 87,
     "enriched_at": "2026-11-12T05:38:56.842980+00:00",
-    "activity_score": 0.47
-  },
-  {
-    "github_username": "touhidulemroz",
-    "name": "Touhidul Emroz",
-    "profile_url": "https://github.com/touhidulemroz",
-    "location": "Mymensingh, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/33710175?u=90774a59505b2e60fa7b590f65f8bf5b17a23c32&v=4",
-    "bio": "",
-    "company": "",
-    "website_url": "www.touhidulemroz.com",
-    "followers": 19,
-    "following": 86,
-    "public_repos": 0,
-    "total_stars": 0,
-    "top_repos": [],
-    "top_language": null,
-    "all_languages": [],
-    "contributions_last_90d": 794,
-    "prs_last_90d": 0,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 0,
-    "enriched_at": "2026-11-12T05:38:56.842980+00:00",
-    "activity_score": 0.47
+    "activity_score": 0.46
   },
   {
     "github_username": "T4snimul",
