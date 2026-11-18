@@ -1491,6 +1491,143 @@
     "activity_score": 17.09
   },
   {
+    "github_username": "tareq89",
+    "name": "Muhammed Tareq Aziz",
+    "profile_url": "https://github.com/tareq89",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4245521?u=35e3217fb2d5c2f16b263d3e6a298dd61995044a&v=4",
+    "bio": "",
+    "company": "",
+    "website_url": "",
+    "followers": 61,
+    "following": 6,
+    "public_repos": 46,
+    "total_stars": 79,
+    "top_repos": [
+      {
+        "name": "spring-tx-board",
+        "description": "spring-tx-board is a developer-friendly tool that provides deep insights into transactional behavior within Spring-based applications. With real-time logging, intuitive dashboards, and powerful filtering, you can easily monitor and debug transaction commits, rollbacks, and performance issues.",
+        "url": "https://github.com/Mamun-Al-Babu-Shikder/spring-tx-board",
+        "stars": 57,
+        "forks": 28,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2026-03-04T04:44:31Z"
+      },
+      {
+        "name": "vue-electron-serialport",
+        "description": "",
+        "url": "https://github.com/tareq89/vue-electron-serialport",
+        "stars": 5,
+        "forks": 3,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2018-06-07T09:57:07Z"
+      },
+      {
+        "name": "moshla-bazar",
+        "description": "A NuxtJs app ECommerce Site",
+        "url": "https://github.com/tareq89/moshla-bazar",
+        "stars": 5,
+        "forks": 0,
+        "language": "Vue",
+        "topics": [
+          "vuejs2",
+          "vuex",
+          "vuerouter",
+          "nuxtjs",
+          "express-js"
+        ],
+        "pushed_at": "2023-06-01T17:57:50Z"
+      },
+      {
+        "name": "How-to-motivate-your-Mentor",
+        "description": "",
+        "url": "https://github.com/tareq89/How-to-motivate-your-Mentor",
+        "stars": 4,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2016-03-05T15:51:29Z"
+      },
+      {
+        "name": "Algorithms-and-Data-Structures",
+        "description": "When a 3 years experienced web developer feels the importance of forgotten Algorithms and Data Structures",
+        "url": "https://github.com/tareq89/Algorithms-and-Data-Structures",
+        "stars": 3,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2017-11-25T03:51:02Z"
+      },
+      {
+        "name": "Wp8.1CompleteReference",
+        "description": "Windows Phone 8.1 Complete Reference",
+        "url": "https://github.com/thehoneymad/Wp8.1CompleteReference",
+        "stars": 2,
+        "forks": 10,
+        "language": "C#",
+        "topics": [],
+        "pushed_at": "2015-01-27T17:38:30Z"
+      },
+      {
+        "name": "simple-todo",
+        "description": "A very simple todo app using only html, javascript and css",
+        "url": "https://github.com/tareq89/simple-todo",
+        "stars": 1,
+        "forks": 19,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2024-05-12T08:55:44Z"
+      },
+      {
+        "name": "mern-lab-2200",
+        "description": "",
+        "url": "https://github.com/tareq89/mern-lab-2200",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2024-07-16T18:11:34Z"
+      },
+      {
+        "name": "thesis_scrapper",
+        "description": "",
+        "url": "https://github.com/tareq89/thesis_scrapper",
+        "stars": 1,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [],
+        "pushed_at": "2015-03-28T18:43:45Z"
+      },
+      {
+        "name": "technical-notes",
+        "description": "",
+        "url": "https://github.com/tareq89/technical-notes",
+        "stars": 0,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2026-06-23T10:03:41Z"
+      }
+    ],
+    "top_language": "C#",
+    "all_languages": [
+      "C#",
+      "Java",
+      "Vue",
+      "HTML",
+      "JavaScript"
+    ],
+    "contributions_last_90d": 9982,
+    "prs_last_90d": 838,
+    "issues_last_90d": 3511,
+    "reviews_last_90d": 150,
+    "commits_last_90d": 5231,
+    "enriched_at": "2026-11-18T05:48:14.623595+00:00",
+    "activity_score": 16.76
+  },
+  {
     "github_username": "santoshakil",
     "name": "Santo Shakil",
     "profile_url": "https://github.com/santoshakil",
@@ -1630,141 +1767,139 @@
     "activity_score": 16.71
   },
   {
-    "github_username": "tareq89",
-    "name": "Muhammed Tareq Aziz",
-    "profile_url": "https://github.com/tareq89",
+    "github_username": "akram02",
+    "name": "Akram Khan",
+    "profile_url": "https://github.com/akram02",
     "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/4245521?u=35e3217fb2d5c2f16b263d3e6a298dd61995044a&v=4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/18002761?u=fdb8ecf9ec1eb4dcebee14dbc0d8068bf3d97dc8&v=4",
     "bio": "",
-    "company": "",
+    "company": "SmartIDE",
     "website_url": "",
-    "followers": 62,
-    "following": 6,
-    "public_repos": 46,
-    "total_stars": 79,
+    "followers": 114,
+    "following": 71,
+    "public_repos": 512,
+    "total_stars": 111,
     "top_repos": [
       {
-        "name": "spring-tx-board",
-        "description": "spring-tx-board is a developer-friendly tool that provides deep insights into transactional behavior within Spring-based applications. With real-time logging, intuitive dashboards, and powerful filtering, you can easily monitor and debug transaction commits, rollbacks, and performance issues.",
-        "url": "https://github.com/Mamun-Al-Babu-Shikder/spring-tx-board",
-        "stars": 57,
-        "forks": 28,
+        "name": "build-your-own-processor",
+        "description": "\u09a4\u09cb\u09ae\u09be\u09b0 \u09a8\u09bf\u099c\u09c7\u09b0 \u09aa\u09cd\u09b0\u09b8\u09c7\u09b8\u09b0 \u09ac\u09be\u09a8\u09be\u0993 - \u09b6\u09c2\u09a8\u09cd\u09af \u09a5\u09c7\u0995\u09c7 \u0986\u09b8\u09b2 \u099a\u09bf\u09aa \u09a4\u09c8\u09b0\u09bf \u09aa\u09b0\u09cd\u09af\u09a8\u09cd\u09a4!",
+        "url": "https://github.com/akram02/build-your-own-processor",
+        "stars": 82,
+        "forks": 30,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2026-06-21T05:26:15Z"
+      },
+      {
+        "name": "your-first-lab-cb-gh-000",
+        "description": "",
+        "url": "https://github.com/learn-co-students/your-first-lab-cb-gh-000",
+        "stars": 9,
+        "forks": 2262,
+        "language": "Ruby",
+        "topics": [],
+        "pushed_at": "2021-05-20T08:13:06Z"
+      },
+      {
+        "name": "hello-world-ruby-cb-gh-000",
+        "description": "",
+        "url": "https://github.com/learn-co-students/hello-world-ruby-cb-gh-000",
+        "stars": 5,
+        "forks": 1276,
+        "language": "Ruby",
+        "topics": [],
+        "pushed_at": "2023-05-30T19:02:39Z"
+      },
+      {
+        "name": "AloFlashLight",
+        "description": "\u09a8\u09a4\u09c1\u09a8\u09a6\u09c7\u09b0 \u099c\u09a8\u09cd\u09af Android FlashLight",
+        "url": "https://github.com/akram02/AloFlashLight",
+        "stars": 3,
+        "forks": 2,
         "language": "Java",
         "topics": [],
-        "pushed_at": "2026-03-04T04:44:31Z"
+        "pushed_at": "2016-03-22T09:14:34Z"
       },
       {
-        "name": "vue-electron-serialport",
+        "name": "gRPC-Test-Server",
         "description": "",
-        "url": "https://github.com/tareq89/vue-electron-serialport",
-        "stars": 5,
-        "forks": 3,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2018-06-07T09:57:07Z"
-      },
-      {
-        "name": "moshla-bazar",
-        "description": "A NuxtJs app ECommerce Site",
-        "url": "https://github.com/tareq89/moshla-bazar",
-        "stars": 5,
-        "forks": 0,
-        "language": "Vue",
-        "topics": [
-          "vuejs2",
-          "vuex",
-          "vuerouter",
-          "nuxtjs",
-          "express-js"
-        ],
-        "pushed_at": "2023-06-01T17:57:50Z"
-      },
-      {
-        "name": "How-to-motivate-your-Mentor",
-        "description": "",
-        "url": "https://github.com/tareq89/How-to-motivate-your-Mentor",
-        "stars": 4,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2016-03-05T15:51:29Z"
-      },
-      {
-        "name": "Algorithms-and-Data-Structures",
-        "description": "When a 3 years experienced web developer feels the importance of forgotten Algorithms and Data Structures",
-        "url": "https://github.com/tareq89/Algorithms-and-Data-Structures",
-        "stars": 3,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2017-11-25T03:51:02Z"
-      },
-      {
-        "name": "Wp8.1CompleteReference",
-        "description": "Windows Phone 8.1 Complete Reference",
-        "url": "https://github.com/thehoneymad/Wp8.1CompleteReference",
+        "url": "https://github.com/akram02/gRPC-Test-Server",
         "stars": 2,
-        "forks": 10,
-        "language": "C#",
+        "forks": 0,
+        "language": "Java",
         "topics": [],
-        "pushed_at": "2015-01-27T17:38:30Z"
+        "pushed_at": "2021-11-02T10:32:06Z"
       },
       {
-        "name": "simple-todo",
-        "description": "A very simple todo app using only html, javascript and css",
-        "url": "https://github.com/tareq89/simple-todo",
-        "stars": 1,
-        "forks": 19,
+        "name": "ChatBot",
+        "description": "",
+        "url": "https://github.com/akram02/ChatBot",
+        "stars": 2,
+        "forks": 0,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2023-01-07T18:50:39Z"
+      },
+      {
+        "name": "rent-a-car",
+        "description": "A microservice application using Spring Boot, Angular, and many more latest trending technologies.",
+        "url": "https://github.com/akram02/rent-a-car",
+        "stars": 2,
+        "forks": 1,
+        "language": "Java",
+        "topics": [
+          "spring-boot",
+          "spring-security",
+          "spring-cloud",
+          "angular6",
+          "typescript"
+        ],
+        "pushed_at": "2018-09-02T14:59:45Z"
+      },
+      {
+        "name": "javascript-objects-cb-gh-000",
+        "description": "",
+        "url": "https://github.com/learn-co-students/javascript-objects-cb-gh-000",
+        "stars": 2,
+        "forks": 58,
         "language": "JavaScript",
         "topics": [],
-        "pushed_at": "2024-05-12T08:55:44Z"
+        "pushed_at": "2021-06-11T11:03:01Z"
       },
       {
-        "name": "mern-lab-2200",
+        "name": "html-album-cover-cb-gh-000",
         "description": "",
-        "url": "https://github.com/tareq89/mern-lab-2200",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
+        "url": "https://github.com/learn-co-students/html-album-cover-cb-gh-000",
+        "stars": 2,
+        "forks": 204,
+        "language": "Ruby",
         "topics": [],
-        "pushed_at": "2024-07-16T18:11:34Z"
+        "pushed_at": "2021-03-08T06:38:37Z"
       },
       {
-        "name": "thesis_scrapper",
+        "name": "ruby-object-attributes-lab-cb-gh-000",
         "description": "",
-        "url": "https://github.com/tareq89/thesis_scrapper",
-        "stars": 1,
-        "forks": 0,
-        "language": "HTML",
+        "url": "https://github.com/learn-co-students/ruby-object-attributes-lab-cb-gh-000",
+        "stars": 2,
+        "forks": 189,
+        "language": "Ruby",
         "topics": [],
-        "pushed_at": "2015-03-28T18:43:45Z"
-      },
-      {
-        "name": "technical-notes",
-        "description": "",
-        "url": "https://github.com/tareq89/technical-notes",
-        "stars": 0,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2026-06-23T10:03:41Z"
+        "pushed_at": "2021-03-15T17:47:57Z"
       }
     ],
-    "top_language": "HTML",
+    "top_language": "JavaScript",
     "all_languages": [
-      "HTML",
       "JavaScript",
-      "Vue",
-      "C#",
-      "Java"
+      "Java",
+      "Ruby"
     ],
-    "contributions_last_90d": 9810,
-    "prs_last_90d": 806,
-    "issues_last_90d": 3391,
-    "reviews_last_90d": 150,
-    "commits_last_90d": 5207,
-    "enriched_at": "2026-11-15T04:41:06.041691+00:00",
-    "activity_score": 16.36
+    "contributions_last_90d": 9912,
+    "prs_last_90d": 18,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 41,
+    "enriched_at": "2026-11-18T05:48:14.623595+00:00",
+    "activity_score": 15.82
   },
   {
     "github_username": "developerjillur",
@@ -1775,16 +1910,16 @@
     "bio": "Web Design & Development is my passion, I give full time in development. I love to do this, it\u2019s my life everything. I learn new things every day. ",
     "company": "DevsSquad",
     "website_url": "www.developerjillur.me",
-    "followers": 190,
+    "followers": 191,
     "following": 85,
     "public_repos": 55,
-    "total_stars": 18,
+    "total_stars": 19,
     "top_repos": [
       {
         "name": "day33",
         "description": "",
         "url": "https://github.com/developerjillur/day33",
-        "stars": 7,
+        "stars": 8,
         "forks": 21,
         "language": "HTML",
         "topics": [],
@@ -1893,155 +2028,20 @@
         "pushed_at": "2026-10-20T15:05:36Z"
       }
     ],
-    "top_language": "Python",
+    "top_language": "JavaScript",
     "all_languages": [
-      "Python",
       "JavaScript",
       "HTML",
+      "Python",
       "PHP"
     ],
-    "contributions_last_90d": 23817,
+    "contributions_last_90d": 24006,
     "prs_last_90d": 81,
     "issues_last_90d": 9,
     "reviews_last_90d": 0,
     "commits_last_90d": 725,
-    "enriched_at": "2026-11-15T04:41:06.041691+00:00",
-    "activity_score": 15.27
-  },
-  {
-    "github_username": "akram02",
-    "name": "Akram Khan",
-    "profile_url": "https://github.com/akram02",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/18002761?u=fdb8ecf9ec1eb4dcebee14dbc0d8068bf3d97dc8&v=4",
-    "bio": "",
-    "company": "SmartIDE",
-    "website_url": "",
-    "followers": 114,
-    "following": 71,
-    "public_repos": 512,
-    "total_stars": 111,
-    "top_repos": [
-      {
-        "name": "build-your-own-processor",
-        "description": "\u09a4\u09cb\u09ae\u09be\u09b0 \u09a8\u09bf\u099c\u09c7\u09b0 \u09aa\u09cd\u09b0\u09b8\u09c7\u09b8\u09b0 \u09ac\u09be\u09a8\u09be\u0993 - \u09b6\u09c2\u09a8\u09cd\u09af \u09a5\u09c7\u0995\u09c7 \u0986\u09b8\u09b2 \u099a\u09bf\u09aa \u09a4\u09c8\u09b0\u09bf \u09aa\u09b0\u09cd\u09af\u09a8\u09cd\u09a4!",
-        "url": "https://github.com/akram02/build-your-own-processor",
-        "stars": 82,
-        "forks": 30,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2026-06-21T05:26:15Z"
-      },
-      {
-        "name": "your-first-lab-cb-gh-000",
-        "description": "",
-        "url": "https://github.com/learn-co-students/your-first-lab-cb-gh-000",
-        "stars": 9,
-        "forks": 2263,
-        "language": "Ruby",
-        "topics": [],
-        "pushed_at": "2021-05-20T08:13:06Z"
-      },
-      {
-        "name": "hello-world-ruby-cb-gh-000",
-        "description": "",
-        "url": "https://github.com/learn-co-students/hello-world-ruby-cb-gh-000",
-        "stars": 5,
-        "forks": 1277,
-        "language": "Ruby",
-        "topics": [],
-        "pushed_at": "2023-05-30T19:02:39Z"
-      },
-      {
-        "name": "AloFlashLight",
-        "description": "\u09a8\u09a4\u09c1\u09a8\u09a6\u09c7\u09b0 \u099c\u09a8\u09cd\u09af Android FlashLight",
-        "url": "https://github.com/akram02/AloFlashLight",
-        "stars": 3,
-        "forks": 2,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2016-03-22T09:14:34Z"
-      },
-      {
-        "name": "gRPC-Test-Server",
-        "description": "",
-        "url": "https://github.com/akram02/gRPC-Test-Server",
-        "stars": 2,
-        "forks": 0,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2021-11-02T10:32:06Z"
-      },
-      {
-        "name": "ChatBot",
-        "description": "",
-        "url": "https://github.com/akram02/ChatBot",
-        "stars": 2,
-        "forks": 0,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2023-01-07T18:50:39Z"
-      },
-      {
-        "name": "rent-a-car",
-        "description": "A microservice application using Spring Boot, Angular, and many more latest trending technologies.",
-        "url": "https://github.com/akram02/rent-a-car",
-        "stars": 2,
-        "forks": 1,
-        "language": "Java",
-        "topics": [
-          "spring-boot",
-          "spring-security",
-          "spring-cloud",
-          "angular6",
-          "typescript"
-        ],
-        "pushed_at": "2018-09-02T14:59:45Z"
-      },
-      {
-        "name": "javascript-objects-cb-gh-000",
-        "description": "",
-        "url": "https://github.com/learn-co-students/javascript-objects-cb-gh-000",
-        "stars": 2,
-        "forks": 58,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2021-06-11T11:03:01Z"
-      },
-      {
-        "name": "html-album-cover-cb-gh-000",
-        "description": "",
-        "url": "https://github.com/learn-co-students/html-album-cover-cb-gh-000",
-        "stars": 2,
-        "forks": 204,
-        "language": "Ruby",
-        "topics": [],
-        "pushed_at": "2021-03-08T06:38:37Z"
-      },
-      {
-        "name": "ruby-object-attributes-lab-cb-gh-000",
-        "description": "",
-        "url": "https://github.com/learn-co-students/ruby-object-attributes-lab-cb-gh-000",
-        "stars": 2,
-        "forks": 189,
-        "language": "Ruby",
-        "topics": [],
-        "pushed_at": "2021-03-15T17:47:57Z"
-      }
-    ],
-    "top_language": "JavaScript",
-    "all_languages": [
-      "JavaScript",
-      "Ruby",
-      "Java"
-    ],
-    "contributions_last_90d": 8874,
-    "prs_last_90d": 18,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 41,
-    "enriched_at": "2026-11-15T04:41:06.041691+00:00",
-    "activity_score": 15.24
+    "enriched_at": "2026-11-18T05:48:14.623595+00:00",
+    "activity_score": 15.38
   },
   {
     "github_username": "Asif2BD",
@@ -2089,7 +2089,7 @@
           "wordpress-plugin",
           "wordpress-development"
         ],
-        "pushed_at": "2026-11-13T13:29:12Z"
+        "pushed_at": "2026-11-15T12:03:24Z"
       },
       {
         "name": "JARVIS-Mission-Control-OpenClaw",
@@ -2135,7 +2135,7 @@
         "forks": 11,
         "language": "PHP",
         "topics": [],
-        "pushed_at": "2026-11-12T09:26:09Z"
+        "pushed_at": "2026-11-18T04:30:14Z"
       },
       {
         "name": "xCloud-Docker-Deploy-Skill",
@@ -2179,20 +2179,20 @@
         "pushed_at": "2023-03-06T17:22:44Z"
       }
     ],
-    "top_language": "Python",
+    "top_language": "JavaScript",
     "all_languages": [
-      "Python",
       "JavaScript",
       "Dockerfile",
+      "Python",
       "PHP"
     ],
-    "contributions_last_90d": 14407,
+    "contributions_last_90d": 14475,
     "prs_last_90d": 198,
-    "issues_last_90d": 5037,
+    "issues_last_90d": 5068,
     "reviews_last_90d": 2,
     "commits_last_90d": 598,
-    "enriched_at": "2026-11-15T04:41:06.041691+00:00",
-    "activity_score": 15.22
+    "enriched_at": "2026-11-18T05:48:14.623595+00:00",
+    "activity_score": 15.26
   },
   {
     "github_username": "i-rocky",
@@ -2367,14 +2367,14 @@
     "followers": 7083,
     "following": 28,
     "public_repos": 132,
-    "total_stars": 12563,
+    "total_stars": 12571,
     "top_repos": [
       {
         "name": "vcard-personal-portfolio",
         "description": "vCard is a fully responsive personal portfolio website, responsive for all devices.",
         "url": "https://github.com/codewithsadee/vcard-personal-portfolio",
-        "stars": 8171,
-        "forks": 4491,
+        "stars": 8174,
+        "forks": 4496,
         "language": "HTML",
         "topics": [
           "personal-website",
@@ -2389,8 +2389,8 @@
         "name": "anon-ecommerce-website",
         "description": "Fully responsive ecommerce website, built using HTML CSS and JavaScript.",
         "url": "https://github.com/codewithsadee/anon-ecommerce-website",
-        "stars": 1632,
-        "forks": 1105,
+        "stars": 1635,
+        "forks": 1104,
         "language": "HTML",
         "topics": [
           "ecommerce-website",
@@ -2402,8 +2402,8 @@
         "name": "grilli",
         "description": "Grilli is a fully responsive restaurant website, Responsive for all devices, build using HTML, CSS, and JavaScript.",
         "url": "https://github.com/codewithsadee/grilli",
-        "stars": 579,
-        "forks": 312,
+        "stars": 580,
+        "forks": 314,
         "language": "HTML",
         "topics": [
           "responsive-website",
@@ -2480,7 +2480,7 @@
         "name": "filmlane",
         "description": "Filmlane is a fully responsive movie website page",
         "url": "https://github.com/codewithsadee/filmlane",
-        "stars": 267,
+        "stars": 268,
         "forks": 134,
         "language": "HTML",
         "topics": [
@@ -2513,7 +2513,7 @@
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 3,
-    "enriched_at": "2026-11-15T04:41:06.041691+00:00",
+    "enriched_at": "2026-11-18T05:48:14.623595+00:00",
     "activity_score": 14.75
   },
   {
@@ -4327,6 +4327,257 @@
     "activity_score": 11.3
   },
   {
+    "github_username": "Moonomo",
+    "name": "Omaar Osmaan",
+    "profile_url": "https://github.com/Moonomo",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7054823?u=175f0d467732aeaa297fbca810a40a2f8b14b9c9&v=4",
+    "bio": "Senior Full-Stack Product Engineer | React \u2022 TypeScript \u2022 Flutter",
+    "company": "@elegantthemes ",
+    "website_url": "https://osmaan.dev/",
+    "followers": 35,
+    "following": 2,
+    "public_repos": 5,
+    "total_stars": 0,
+    "top_repos": [
+      {
+        "name": "phpass",
+        "description": "",
+        "url": "https://github.com/Moonomo/phpass",
+        "stars": 0,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2021-09-13T17:33:39Z"
+      },
+      {
+        "name": "National-Safari-Park-PHP-MySQL",
+        "description": "This is a PHP, MySQL CRUD coding web application project for the CIS-331 Web Engineering course at Daffodil International University's department of CIS (COMPUTING AND INFORMATION SYSTEM).",
+        "url": "https://github.com/Fahim16-360/National-Safari-Park-PHP-MySQL",
+        "stars": 0,
+        "forks": 0,
+        "language": "CSS",
+        "topics": [],
+        "pushed_at": "2021-09-01T14:05:57Z"
+      },
+      {
+        "name": "react-todo",
+        "description": "Learning React, Flux and ES6.",
+        "url": "https://github.com/Moonomo/react-todo",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2018-08-30T20:00:36Z"
+      },
+      {
+        "name": "xf-customers",
+        "description": "",
+        "url": "https://github.com/Moonomo/xf-customers",
+        "stars": 0,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2018-07-11T23:09:16Z"
+      },
+      {
+        "name": "xf-woocommerce-apartment",
+        "description": "",
+        "url": "https://github.com/Moonomo/xf-woocommerce-apartment",
+        "stars": 0,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2018-06-29T01:32:56Z"
+      }
+    ],
+    "top_language": "JavaScript",
+    "all_languages": [
+      "JavaScript",
+      "CSS",
+      "PHP"
+    ],
+    "contributions_last_90d": 19801,
+    "prs_last_90d": 1,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 1,
+    "commits_last_90d": 0,
+    "enriched_at": "2026-11-18T05:48:14.623595+00:00",
+    "activity_score": 11.18
+  },
+  {
+    "github_username": "KRTirtho",
+    "name": "Kingkor Roy Tirtho",
+    "profile_url": "https://github.com/KRTirtho",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/61944859?u=6f88948d6a9ec474bf9bf358f23975052e6d5514&v=4",
+    "bio": "",
+    "company": "Maxint Inc. (@maxint-app)",
+    "website_url": "krtirtho.dev",
+    "followers": 2113,
+    "following": 36,
+    "public_repos": 95,
+    "total_stars": 51781,
+    "top_repos": [
+      {
+        "name": "spotube",
+        "description": "\ud83c\udfa7 Open source music streaming app! Available for both desktop & mobile!",
+        "url": "https://github.com/team-spotube/spotube",
+        "stars": 50814,
+        "forks": 2408,
+        "language": "Kotlin",
+        "topics": [
+          "youtube",
+          "desktop-client",
+          "music-player",
+          "music",
+          "flutter"
+        ],
+        "pushed_at": "2026-11-18T05:34:04Z"
+      },
+      {
+        "name": "flemozi",
+        "description": "Advanced\u26a1 Emoji Picker\ud83d\ude00 for Linux\ud83d\udc27, Windows\ud83e\ude9f and macOS\ud83c\udf4e",
+        "url": "https://github.com/KRTirtho/flemozi",
+        "stars": 331,
+        "forks": 18,
+        "language": "Rust",
+        "topics": [
+          "characters",
+          "emoji-picker",
+          "flutter",
+          "gif",
+          "keyboard"
+        ],
+        "pushed_at": "2026-07-01T12:55:10Z"
+      },
+      {
+        "name": "wives",
+        "description": "A beautiful, modern & feature-rich Terminal Emulator",
+        "url": "https://github.com/workhog-app/wives",
+        "stars": 165,
+        "forks": 12,
+        "language": "Dart",
+        "topics": [
+          "flutter",
+          "terminal",
+          "windows",
+          "linux",
+          "macos"
+        ],
+        "pushed_at": "2023-07-07T16:40:08Z"
+      },
+      {
+        "name": "spotube-plugin-musicbrainz-listenbrainz",
+        "description": "Spotube metadata provider plugin for Musicbrainz and Listenbrainz",
+        "url": "https://github.com/KRTirtho/spotube-plugin-musicbrainz-listenbrainz",
+        "stars": 145,
+        "forks": 66,
+        "language": "Dart",
+        "topics": [
+          "spotube",
+          "spotube-plugin",
+          "spotube-metadata-plugin"
+        ],
+        "pushed_at": "2025-11-14T10:32:26Z"
+      },
+      {
+        "name": "spotube-plugin-youtube-audio",
+        "description": "YouTube audio source plugin for Spotube",
+        "url": "https://github.com/KRTirtho/spotube-plugin-youtube-audio",
+        "stars": 114,
+        "forks": 41,
+        "language": "C++",
+        "topics": [
+          "spotube",
+          "spotube-plugin",
+          "spotube-audio-source-plugin"
+        ],
+        "pushed_at": "2025-12-09T18:06:31Z"
+      },
+      {
+        "name": "fl-query",
+        "description": "Asynchronous data fetching & data invalidation libraries for Flutter",
+        "url": "https://github.com/KRTirtho/fl-query",
+        "stars": 68,
+        "forks": 12,
+        "language": "Dart",
+        "topics": [],
+        "pushed_at": "2026-01-31T23:11:55Z"
+      },
+      {
+        "name": "platform_ui",
+        "description": "Flutter platform specific Widgets and abstractions",
+        "url": "https://github.com/KRTirtho/platform_ui",
+        "stars": 53,
+        "forks": 5,
+        "language": "Dart",
+        "topics": [
+          "android",
+          "dart",
+          "flutter",
+          "ios",
+          "linux"
+        ],
+        "pushed_at": "2023-05-24T13:27:21Z"
+      },
+      {
+        "name": "spotube-plugin-dab-music",
+        "description": "DAB Music (HiFi, upto 24-bit 96kHZ) audio source plugin for Spotube",
+        "url": "https://github.com/KRTirtho/spotube-plugin-dab-music",
+        "stars": 42,
+        "forks": 13,
+        "language": "C++",
+        "topics": [
+          "spotube",
+          "spotube-plugin",
+          "spotube-audio-source-plugin"
+        ],
+        "pushed_at": "2025-11-14T07:11:48Z"
+      },
+      {
+        "name": "metadata_god",
+        "description": "Audio file Metadata reading and writing library for Flutter",
+        "url": "https://github.com/KRTirtho/metadata_god",
+        "stars": 25,
+        "forks": 12,
+        "language": "Dart",
+        "topics": [
+          "audio",
+          "flac",
+          "id3",
+          "ogg-tags",
+          "m4a"
+        ],
+        "pushed_at": "2025-08-16T06:30:03Z"
+      },
+      {
+        "name": "wallywiz",
+        "description": "A Random Wallpaper shuffler application",
+        "url": "https://github.com/KRTirtho/wallywiz",
+        "stars": 24,
+        "forks": 0,
+        "language": "Dart",
+        "topics": [],
+        "pushed_at": "2023-10-30T15:59:24Z"
+      }
+    ],
+    "top_language": "C++",
+    "all_languages": [
+      "C++",
+      "Dart",
+      "Kotlin",
+      "Rust"
+    ],
+    "contributions_last_90d": 1545,
+    "prs_last_90d": 41,
+    "issues_last_90d": 4,
+    "reviews_last_90d": 4,
+    "commits_last_90d": 485,
+    "enriched_at": "2026-11-18T05:48:14.623595+00:00",
+    "activity_score": 10.67
+  },
+  {
     "github_username": "Azimul-Haque",
     "name": "A. H. M. Azimul Haque",
     "profile_url": "https://github.com/Azimul-Haque",
@@ -4469,271 +4720,20 @@
         "pushed_at": "2023-04-19T19:13:58Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "Blade",
     "all_languages": [
-      "JavaScript",
       "Blade",
+      "JavaScript",
       "Dart",
       "PHP"
     ],
-    "contributions_last_90d": 15424,
+    "contributions_last_90d": 15073,
     "prs_last_90d": 0,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
-    "commits_last_90d": 4909,
-    "enriched_at": "2026-11-15T04:41:06.041691+00:00",
-    "activity_score": 10.78
-  },
-  {
-    "github_username": "Moonomo",
-    "name": "Omaar Osmaan",
-    "profile_url": "https://github.com/Moonomo",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/7054823?u=175f0d467732aeaa297fbca810a40a2f8b14b9c9&v=4",
-    "bio": "Senior Full-Stack Product Engineer | React \u2022 TypeScript \u2022 Flutter",
-    "company": "@elegantthemes ",
-    "website_url": "https://osmaan.dev/",
-    "followers": 35,
-    "following": 2,
-    "public_repos": 5,
-    "total_stars": 0,
-    "top_repos": [
-      {
-        "name": "phpass",
-        "description": "",
-        "url": "https://github.com/Moonomo/phpass",
-        "stars": 0,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2021-09-13T17:33:39Z"
-      },
-      {
-        "name": "National-Safari-Park-PHP-MySQL",
-        "description": "This is a PHP, MySQL CRUD coding web application project for the CIS-331 Web Engineering course at Daffodil International University's department of CIS (COMPUTING AND INFORMATION SYSTEM).",
-        "url": "https://github.com/Fahim16-360/National-Safari-Park-PHP-MySQL",
-        "stars": 0,
-        "forks": 0,
-        "language": "CSS",
-        "topics": [],
-        "pushed_at": "2021-09-01T14:05:57Z"
-      },
-      {
-        "name": "react-todo",
-        "description": "Learning React, Flux and ES6.",
-        "url": "https://github.com/Moonomo/react-todo",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2018-08-30T20:00:36Z"
-      },
-      {
-        "name": "xf-customers",
-        "description": "",
-        "url": "https://github.com/Moonomo/xf-customers",
-        "stars": 0,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2018-07-11T23:09:16Z"
-      },
-      {
-        "name": "xf-woocommerce-apartment",
-        "description": "",
-        "url": "https://github.com/Moonomo/xf-woocommerce-apartment",
-        "stars": 0,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2018-06-29T01:32:56Z"
-      }
-    ],
-    "top_language": "PHP",
-    "all_languages": [
-      "PHP",
-      "CSS",
-      "JavaScript"
-    ],
-    "contributions_last_90d": 18741,
-    "prs_last_90d": 1,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 1,
-    "commits_last_90d": 0,
-    "enriched_at": "2026-11-14T04:49:03.537158+00:00",
-    "activity_score": 10.59
-  },
-  {
-    "github_username": "KRTirtho",
-    "name": "Kingkor Roy Tirtho",
-    "profile_url": "https://github.com/KRTirtho",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/61944859?u=6f88948d6a9ec474bf9bf358f23975052e6d5514&v=4",
-    "bio": "",
-    "company": "Maxint Inc. (@maxint-app)",
-    "website_url": "krtirtho.dev",
-    "followers": 2114,
-    "following": 36,
-    "public_repos": 95,
-    "total_stars": 51741,
-    "top_repos": [
-      {
-        "name": "spotube",
-        "description": "\ud83c\udfa7 Open source music streaming app! Available for both desktop & mobile!",
-        "url": "https://github.com/team-spotube/spotube",
-        "stars": 50773,
-        "forks": 2406,
-        "language": "Kotlin",
-        "topics": [
-          "youtube",
-          "desktop-client",
-          "music-player",
-          "music",
-          "flutter"
-        ],
-        "pushed_at": "2026-11-12T04:29:59Z"
-      },
-      {
-        "name": "flemozi",
-        "description": "Advanced\u26a1 Emoji Picker\ud83d\ude00 for Linux\ud83d\udc27, Windows\ud83e\ude9f and macOS\ud83c\udf4e",
-        "url": "https://github.com/KRTirtho/flemozi",
-        "stars": 331,
-        "forks": 18,
-        "language": "Rust",
-        "topics": [
-          "characters",
-          "emoji-picker",
-          "flutter",
-          "gif",
-          "keyboard"
-        ],
-        "pushed_at": "2026-07-01T12:55:10Z"
-      },
-      {
-        "name": "wives",
-        "description": "A beautiful, modern & feature-rich Terminal Emulator",
-        "url": "https://github.com/workhog-app/wives",
-        "stars": 165,
-        "forks": 12,
-        "language": "Dart",
-        "topics": [
-          "flutter",
-          "terminal",
-          "windows",
-          "linux",
-          "macos"
-        ],
-        "pushed_at": "2023-07-07T16:40:08Z"
-      },
-      {
-        "name": "spotube-plugin-musicbrainz-listenbrainz",
-        "description": "Spotube metadata provider plugin for Musicbrainz and Listenbrainz",
-        "url": "https://github.com/KRTirtho/spotube-plugin-musicbrainz-listenbrainz",
-        "stars": 145,
-        "forks": 66,
-        "language": "Dart",
-        "topics": [
-          "spotube",
-          "spotube-plugin",
-          "spotube-metadata-plugin"
-        ],
-        "pushed_at": "2025-11-14T10:32:26Z"
-      },
-      {
-        "name": "spotube-plugin-youtube-audio",
-        "description": "YouTube audio source plugin for Spotube",
-        "url": "https://github.com/KRTirtho/spotube-plugin-youtube-audio",
-        "stars": 114,
-        "forks": 40,
-        "language": "C++",
-        "topics": [
-          "spotube",
-          "spotube-plugin",
-          "spotube-audio-source-plugin"
-        ],
-        "pushed_at": "2025-12-09T18:06:31Z"
-      },
-      {
-        "name": "fl-query",
-        "description": "Asynchronous data fetching & data invalidation libraries for Flutter",
-        "url": "https://github.com/KRTirtho/fl-query",
-        "stars": 68,
-        "forks": 12,
-        "language": "Dart",
-        "topics": [],
-        "pushed_at": "2026-01-31T23:11:55Z"
-      },
-      {
-        "name": "platform_ui",
-        "description": "Flutter platform specific Widgets and abstractions",
-        "url": "https://github.com/KRTirtho/platform_ui",
-        "stars": 53,
-        "forks": 5,
-        "language": "Dart",
-        "topics": [
-          "android",
-          "dart",
-          "flutter",
-          "ios",
-          "linux"
-        ],
-        "pushed_at": "2023-05-24T13:27:21Z"
-      },
-      {
-        "name": "spotube-plugin-dab-music",
-        "description": "DAB Music (HiFi, upto 24-bit 96kHZ) audio source plugin for Spotube",
-        "url": "https://github.com/KRTirtho/spotube-plugin-dab-music",
-        "stars": 42,
-        "forks": 13,
-        "language": "C++",
-        "topics": [
-          "spotube",
-          "spotube-plugin",
-          "spotube-audio-source-plugin"
-        ],
-        "pushed_at": "2025-11-14T07:11:48Z"
-      },
-      {
-        "name": "metadata_god",
-        "description": "Audio file Metadata reading and writing library for Flutter",
-        "url": "https://github.com/KRTirtho/metadata_god",
-        "stars": 25,
-        "forks": 12,
-        "language": "Dart",
-        "topics": [
-          "audio",
-          "flac",
-          "id3",
-          "ogg-tags",
-          "m4a"
-        ],
-        "pushed_at": "2025-08-16T06:30:03Z"
-      },
-      {
-        "name": "wallywiz",
-        "description": "A Random Wallpaper shuffler application",
-        "url": "https://github.com/KRTirtho/wallywiz",
-        "stars": 25,
-        "forks": 0,
-        "language": "Dart",
-        "topics": [],
-        "pushed_at": "2023-10-30T15:59:24Z"
-      }
-    ],
-    "top_language": "Kotlin",
-    "all_languages": [
-      "Kotlin",
-      "C++",
-      "Dart",
-      "Rust"
-    ],
-    "contributions_last_90d": 1288,
-    "prs_last_90d": 44,
-    "issues_last_90d": 4,
-    "reviews_last_90d": 5,
-    "commits_last_90d": 501,
-    "enriched_at": "2026-11-15T04:41:06.041691+00:00",
-    "activity_score": 10.55
+    "commits_last_90d": 4611,
+    "enriched_at": "2026-11-18T05:48:14.623595+00:00",
+    "activity_score": 10.53
   },
   {
     "github_username": "AnwarHossainSR",
@@ -5067,17 +5067,17 @@
     "bio": "Ledger Goblin. Ex: Webaholic.",
     "company": "Entrepreneur",
     "website_url": "",
-    "followers": 262,
+    "followers": 261,
     "following": 130,
     "public_repos": 68,
-    "total_stars": 1995,
+    "total_stars": 1994,
     "top_repos": [
       {
         "name": "simple-line-icons",
         "description": "Simple and Minimal Line Icons",
         "url": "https://github.com/thesabbir/simple-line-icons",
-        "stars": 1858,
-        "forks": 814,
+        "stars": 1857,
+        "forks": 813,
         "language": "CSS",
         "topics": [
           "icons",
@@ -5188,18 +5188,18 @@
     "top_language": "Python",
     "all_languages": [
       "Python",
-      "JavaScript",
+      "Go",
       "Shell",
-      "CSS",
-      "Go"
+      "JavaScript",
+      "CSS"
     ],
-    "contributions_last_90d": 14887,
+    "contributions_last_90d": 14953,
     "prs_last_90d": 5,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 14,
-    "enriched_at": "2026-11-15T04:41:06.041691+00:00",
-    "activity_score": 10.22
+    "enriched_at": "2026-11-18T05:48:14.623595+00:00",
+    "activity_score": 10.25
   },
   {
     "github_username": "NHTanvir",
@@ -7235,6 +7235,142 @@
     "activity_score": 8.85
   },
   {
+    "github_username": "MishukAdhikari",
+    "name": "Mishuk Adhikari",
+    "profile_url": "https://github.com/MishukAdhikari",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/23618865?u=379053eb6c46749dea55c3f3e56a0afebcd44b12&v=4",
+    "bio": "Lead Engineer at @xCloudDev ",
+    "company": "@WPDevelopers",
+    "website_url": "https://mishuk.me",
+    "followers": 46,
+    "following": 112,
+    "public_repos": 24,
+    "total_stars": 42,
+    "top_repos": [
+      {
+        "name": "xCloud-Pulse",
+        "description": "",
+        "url": "https://github.com/xCloudDev/xCloud-Pulse",
+        "stars": 22,
+        "forks": 2,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2026-09-11T07:36:10Z"
+      },
+      {
+        "name": "xcloud-agent-skills",
+        "description": "Portable skills for xCloud agent workflows. Works with Claude Code, OpenCode, and any agent that reads markdown prompts.",
+        "url": "https://github.com/xCloudDev/xcloud-agent-skills",
+        "stars": 8,
+        "forks": 3,
+        "language": "Shell",
+        "topics": [],
+        "pushed_at": "2026-11-17T14:58:24Z"
+      },
+      {
+        "name": "next-term",
+        "description": "A native macOS terminal for the AI era: tabs that show which agents are working, done or waiting for you, plus an IDE-style project sidebar.",
+        "url": "https://github.com/MishukAdhikari/next-term",
+        "stars": 5,
+        "forks": 0,
+        "language": "Swift",
+        "topics": [
+          "ai-agents",
+          "appkit",
+          "claude-code",
+          "code-editor",
+          "codex"
+        ],
+        "pushed_at": "2026-11-18T05:39:49Z"
+      },
+      {
+        "name": "www-skill",
+        "description": "Agent skill: What / Where / Why + future impact analysis",
+        "url": "https://github.com/MishukAdhikari/www-skill",
+        "stars": 1,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2026-11-12T07:30:09Z"
+      },
+      {
+        "name": "xCloud-cli",
+        "description": "Agent-ready CLI for xCloud Public and Enterprise APIs",
+        "url": "https://github.com/xCloudDev/xCloud-cli",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-06-01T09:15:24Z"
+      },
+      {
+        "name": "tombstone",
+        "description": "tombstone",
+        "url": "https://github.com/MishukAdhikari/tombstone",
+        "stars": 1,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2022-10-18T13:06:55Z"
+      },
+      {
+        "name": "wp-dev-assignment",
+        "description": "WP Developer Interface Assignment",
+        "url": "https://github.com/MishukAdhikari/wp-dev-assignment",
+        "stars": 1,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2021-09-11T20:36:30Z"
+      },
+      {
+        "name": "cv-generator",
+        "description": "cvgenerator",
+        "url": "https://github.com/Sabir001/cv-generator",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2021-10-31T10:31:28Z"
+      },
+      {
+        "name": "messmanagement",
+        "description": "Web app for running a shared mess: members, meals, bazaar entries and monthly cost splitting (2019).",
+        "url": "https://github.com/MishukAdhikari/messmanagement",
+        "stars": 1,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2019-05-19T17:50:34Z"
+      },
+      {
+        "name": "nova-menu-builder",
+        "description": "Drag-and-drop menu builder for Laravel Nova (2018).",
+        "url": "https://github.com/MishukAdhikari/nova-menu-builder",
+        "stars": 1,
+        "forks": 0,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2018-11-12T06:18:58Z"
+      }
+    ],
+    "top_language": "JavaScript",
+    "all_languages": [
+      "JavaScript",
+      "PHP",
+      "Shell",
+      "Swift"
+    ],
+    "contributions_last_90d": 12755,
+    "prs_last_90d": 116,
+    "issues_last_90d": 2,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 2330,
+    "enriched_at": "2026-11-18T05:48:14.623595+00:00",
+    "activity_score": 8.79
+  },
+  {
     "github_username": "ArnobKumarSaha",
     "name": "Arnob Kumar Saha",
     "profile_url": "https://github.com/ArnobKumarSaha",
@@ -7619,157 +7755,21 @@
         "pushed_at": "2026-09-24T15:46:09Z"
       }
     ],
-    "top_language": "Go",
-    "all_languages": [
-      "Go",
-      "TypeScript",
-      "PHP",
-      "HTML",
-      "Java"
-    ],
-    "contributions_last_90d": 9352,
-    "prs_last_90d": 178,
-    "issues_last_90d": 32,
-    "reviews_last_90d": 1,
-    "commits_last_90d": 2125,
-    "enriched_at": "2026-11-16T04:37:34.871929+00:00",
-    "activity_score": 8.56
-  },
-  {
-    "github_username": "MishukAdhikari",
-    "name": "Mishuk Adhikari",
-    "profile_url": "https://github.com/MishukAdhikari",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/23618865?u=379053eb6c46749dea55c3f3e56a0afebcd44b12&v=4",
-    "bio": "Lead Engineer at @xCloudDev ",
-    "company": "@WPDevelopers",
-    "website_url": "https://mishuk.me",
-    "followers": 46,
-    "following": 112,
-    "public_repos": 23,
-    "total_stars": 42,
-    "top_repos": [
-      {
-        "name": "xCloud-Pulse",
-        "description": "",
-        "url": "https://github.com/xCloudDev/xCloud-Pulse",
-        "stars": 22,
-        "forks": 2,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2026-09-11T07:36:10Z"
-      },
-      {
-        "name": "xcloud-agent-skills",
-        "description": "Portable skills for xCloud agent workflows. Works with Claude Code, OpenCode, and any agent that reads markdown prompts.",
-        "url": "https://github.com/xCloudDev/xcloud-agent-skills",
-        "stars": 8,
-        "forks": 3,
-        "language": "Shell",
-        "topics": [],
-        "pushed_at": "2026-09-29T20:49:59Z"
-      },
-      {
-        "name": "next-term",
-        "description": "A native macOS terminal for the AI era: tabs that show which agents are working, done or waiting for you, plus an IDE-style project sidebar.",
-        "url": "https://github.com/MishukAdhikari/next-term",
-        "stars": 5,
-        "forks": 0,
-        "language": "Swift",
-        "topics": [
-          "ai-agents",
-          "appkit",
-          "claude-code",
-          "code-editor",
-          "codex"
-        ],
-        "pushed_at": "2026-11-15T20:03:33Z"
-      },
-      {
-        "name": "www-skill",
-        "description": "Agent skill: What / Where / Why + future impact analysis",
-        "url": "https://github.com/MishukAdhikari/www-skill",
-        "stars": 1,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2026-11-12T07:30:09Z"
-      },
-      {
-        "name": "xCloud-cli",
-        "description": "Agent-ready CLI for xCloud Public and Enterprise APIs",
-        "url": "https://github.com/xCloudDev/xCloud-cli",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-06-01T09:15:24Z"
-      },
-      {
-        "name": "tombstone",
-        "description": "tombstone",
-        "url": "https://github.com/MishukAdhikari/tombstone",
-        "stars": 1,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2022-10-18T13:06:55Z"
-      },
-      {
-        "name": "wp-dev-assignment",
-        "description": "WP Developer Interface Assignment",
-        "url": "https://github.com/MishukAdhikari/wp-dev-assignment",
-        "stars": 1,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2021-09-11T20:36:30Z"
-      },
-      {
-        "name": "cv-generator",
-        "description": "cvgenerator",
-        "url": "https://github.com/Sabir001/cv-generator",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2021-10-31T10:31:28Z"
-      },
-      {
-        "name": "messmanagement",
-        "description": "Web app for running a shared mess: members, meals, bazaar entries and monthly cost splitting (2019).",
-        "url": "https://github.com/MishukAdhikari/messmanagement",
-        "stars": 1,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2019-05-19T17:50:34Z"
-      },
-      {
-        "name": "nova-menu-builder",
-        "description": "Drag-and-drop menu builder for Laravel Nova (2018).",
-        "url": "https://github.com/MishukAdhikari/nova-menu-builder",
-        "stars": 1,
-        "forks": 0,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2018-11-12T06:18:58Z"
-      }
-    ],
     "top_language": "PHP",
     "all_languages": [
       "PHP",
-      "Swift",
-      "JavaScript",
-      "Shell"
+      "Java",
+      "Go",
+      "HTML",
+      "TypeScript"
     ],
-    "contributions_last_90d": 12629,
-    "prs_last_90d": 96,
-    "issues_last_90d": 2,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 2257,
-    "enriched_at": "2026-11-16T04:37:34.871929+00:00",
-    "activity_score": 8.56
+    "contributions_last_90d": 9416,
+    "prs_last_90d": 178,
+    "issues_last_90d": 32,
+    "reviews_last_90d": 1,
+    "commits_last_90d": 2130,
+    "enriched_at": "2026-11-18T05:48:14.623595+00:00",
+    "activity_score": 8.6
   },
   {
     "github_username": "anisAronno",
@@ -7922,150 +7922,21 @@
         "pushed_at": "2021-01-30T12:26:02Z"
       }
     ],
-    "top_language": "Vue",
+    "top_language": "Blade",
     "all_languages": [
-      "Vue",
-      "PHP",
-      "HTML",
       "Blade",
+      "PHP",
+      "Vue",
+      "HTML",
       "JavaScript"
     ],
-    "contributions_last_90d": 10463,
+    "contributions_last_90d": 10363,
     "prs_last_90d": 0,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 33,
-    "enriched_at": "2026-11-16T04:37:34.871929+00:00",
-    "activity_score": 8.46
-  },
-  {
-    "github_username": "muj-i",
-    "name": "Mujahedul Islam",
-    "profile_url": "https://github.com/muj-i",
-    "location": "Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/99077742?u=77e9c1dd41713c45abfe50442497014c10b9019b&v=4",
-    "bio": "Senior Software Engineer | Flutter Specialist | Backend Systems \u2014 Django, NestJS & Express.js",
-    "company": "@AGAM-International-BD-Limited ",
-    "website_url": "muj-i.github.io",
-    "followers": 15,
-    "following": 12,
-    "public_repos": 59,
-    "total_stars": 12,
-    "top_repos": [
-      {
-        "name": "flutter_talk",
-        "description": "",
-        "url": "https://github.com/muj-i/flutter_talk",
-        "stars": 4,
-        "forks": 1,
-        "language": "Dart",
-        "topics": [],
-        "pushed_at": "2023-12-10T18:03:15Z"
-      },
-      {
-        "name": "snap_share_t3",
-        "description": "",
-        "url": "https://github.com/muj-i/snap_share_t3",
-        "stars": 2,
-        "forks": 1,
-        "language": "Dart",
-        "topics": [],
-        "pushed_at": "2023-12-14T15:08:52Z"
-      },
-      {
-        "name": "crafty_bay",
-        "description": "CraftyBay: An E-Commerce App",
-        "url": "https://github.com/muj-i/crafty_bay",
-        "stars": 2,
-        "forks": 1,
-        "language": "Dart",
-        "topics": [],
-        "pushed_at": "2024-05-01T15:03:09Z"
-      },
-      {
-        "name": "Rajdhani-Tv",
-        "description": "",
-        "url": "https://github.com/Abirul-Islam-Abir/Rajdhani-Tv",
-        "stars": 1,
-        "forks": 0,
-        "language": "Dart",
-        "topics": [],
-        "pushed_at": "2024-08-27T09:31:35Z"
-      },
-      {
-        "name": "ask_gemini",
-        "description": "",
-        "url": "https://github.com/muj-i/ask_gemini",
-        "stars": 1,
-        "forks": 0,
-        "language": "Dart",
-        "topics": [],
-        "pushed_at": "2024-06-05T01:29:58Z"
-      },
-      {
-        "name": "Snap-Share",
-        "description": "",
-        "url": "https://github.com/moniruzzaman76/Snap-Share",
-        "stars": 1,
-        "forks": 4,
-        "language": "Dart",
-        "topics": [],
-        "pushed_at": "2023-12-24T17:12:45Z"
-      },
-      {
-        "name": "E-Bazar",
-        "description": "",
-        "url": "https://github.com/Abirul-Islam-Abir/E-Bazar",
-        "stars": 1,
-        "forks": 3,
-        "language": "Dart",
-        "topics": [],
-        "pushed_at": "2024-02-10T05:04:10Z"
-      },
-      {
-        "name": "assets",
-        "description": "Static assets for muj-i.github.io and the muj-i profile README",
-        "url": "https://github.com/muj-i/assets",
-        "stars": 0,
-        "forks": 0,
-        "language": "Shell",
-        "topics": [],
-        "pushed_at": "2026-10-13T06:57:30Z"
-      },
-      {
-        "name": "claude-memory-sync",
-        "description": "",
-        "url": "https://github.com/muj-i/claude-memory-sync",
-        "stars": 0,
-        "forks": 0,
-        "language": "Shell",
-        "topics": [],
-        "pushed_at": "2026-07-22T13:53:56Z"
-      },
-      {
-        "name": "gitbot",
-        "description": "",
-        "url": "https://github.com/muj-i/gitbot",
-        "stars": 0,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-10-19T10:05:04Z"
-      }
-    ],
-    "top_language": "Python",
-    "all_languages": [
-      "Python",
-      "Dart",
-      "Shell"
-    ],
-    "contributions_last_90d": 12889,
-    "prs_last_90d": 0,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 74,
-    "enriched_at": "2026-11-16T04:37:34.871929+00:00",
-    "activity_score": 8.36
+    "enriched_at": "2026-11-18T05:48:14.623595+00:00",
+    "activity_score": 8.41
   },
   {
     "github_username": "saifulapm",
@@ -8210,6 +8081,135 @@
     "activity_score": 8.28
   },
   {
+    "github_username": "muj-i",
+    "name": "Mujahedul Islam",
+    "profile_url": "https://github.com/muj-i",
+    "location": "Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/99077742?u=77e9c1dd41713c45abfe50442497014c10b9019b&v=4",
+    "bio": "Senior Software Engineer | Flutter Specialist | Backend Systems \u2014 Django, NestJS & Express.js",
+    "company": "@AGAM-International-BD-Limited ",
+    "website_url": "muj-i.github.io",
+    "followers": 15,
+    "following": 12,
+    "public_repos": 59,
+    "total_stars": 12,
+    "top_repos": [
+      {
+        "name": "flutter_talk",
+        "description": "",
+        "url": "https://github.com/muj-i/flutter_talk",
+        "stars": 4,
+        "forks": 1,
+        "language": "Dart",
+        "topics": [],
+        "pushed_at": "2023-12-10T18:03:15Z"
+      },
+      {
+        "name": "snap_share_t3",
+        "description": "",
+        "url": "https://github.com/muj-i/snap_share_t3",
+        "stars": 2,
+        "forks": 1,
+        "language": "Dart",
+        "topics": [],
+        "pushed_at": "2023-12-14T15:08:52Z"
+      },
+      {
+        "name": "crafty_bay",
+        "description": "CraftyBay: An E-Commerce App",
+        "url": "https://github.com/muj-i/crafty_bay",
+        "stars": 2,
+        "forks": 1,
+        "language": "Dart",
+        "topics": [],
+        "pushed_at": "2024-05-01T15:03:09Z"
+      },
+      {
+        "name": "Rajdhani-Tv",
+        "description": "",
+        "url": "https://github.com/Abirul-Islam-Abir/Rajdhani-Tv",
+        "stars": 1,
+        "forks": 0,
+        "language": "Dart",
+        "topics": [],
+        "pushed_at": "2024-08-27T09:31:35Z"
+      },
+      {
+        "name": "ask_gemini",
+        "description": "",
+        "url": "https://github.com/muj-i/ask_gemini",
+        "stars": 1,
+        "forks": 0,
+        "language": "Dart",
+        "topics": [],
+        "pushed_at": "2024-06-05T01:29:58Z"
+      },
+      {
+        "name": "Snap-Share",
+        "description": "",
+        "url": "https://github.com/moniruzzaman76/Snap-Share",
+        "stars": 1,
+        "forks": 4,
+        "language": "Dart",
+        "topics": [],
+        "pushed_at": "2023-12-24T17:12:45Z"
+      },
+      {
+        "name": "E-Bazar",
+        "description": "",
+        "url": "https://github.com/Abirul-Islam-Abir/E-Bazar",
+        "stars": 1,
+        "forks": 3,
+        "language": "Dart",
+        "topics": [],
+        "pushed_at": "2024-02-10T05:04:10Z"
+      },
+      {
+        "name": "assets",
+        "description": "Static assets for muj-i.github.io and the muj-i profile README",
+        "url": "https://github.com/muj-i/assets",
+        "stars": 0,
+        "forks": 0,
+        "language": "Shell",
+        "topics": [],
+        "pushed_at": "2026-10-13T06:57:30Z"
+      },
+      {
+        "name": "claude-memory-sync",
+        "description": "",
+        "url": "https://github.com/muj-i/claude-memory-sync",
+        "stars": 0,
+        "forks": 0,
+        "language": "Shell",
+        "topics": [],
+        "pushed_at": "2026-07-22T13:53:56Z"
+      },
+      {
+        "name": "gitbot",
+        "description": "",
+        "url": "https://github.com/muj-i/gitbot",
+        "stars": 0,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-10-19T10:05:04Z"
+      }
+    ],
+    "top_language": "Dart",
+    "all_languages": [
+      "Dart",
+      "Python",
+      "Shell"
+    ],
+    "contributions_last_90d": 12673,
+    "prs_last_90d": 0,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 74,
+    "enriched_at": "2026-11-18T05:48:14.623595+00:00",
+    "activity_score": 8.24
+  },
+  {
     "github_username": "Tahsin005",
     "name": "MD. Tahsin Ferdous",
     "profile_url": "https://github.com/Tahsin005",
@@ -8219,7 +8219,7 @@
     "company": "",
     "website_url": "https://tahsinferdous.vercel.app/",
     "followers": 66,
-    "following": 57,
+    "following": 56,
     "public_repos": 249,
     "total_stars": 15,
     "top_repos": [
@@ -8247,7 +8247,7 @@
           "javascript",
           "problem-solving"
         ],
-        "pushed_at": "2026-11-16T02:09:06Z"
+        "pushed_at": "2026-11-18T05:32:42Z"
       },
       {
         "name": "cyberdeck",
@@ -8345,20 +8345,20 @@
         "pushed_at": "2025-11-06T09:47:14Z"
       }
     ],
-    "top_language": "Go",
+    "top_language": "C++",
     "all_languages": [
-      "Go",
-      "TypeScript",
       "C++",
-      "JavaScript"
+      "JavaScript",
+      "Go",
+      "TypeScript"
     ],
-    "contributions_last_90d": 3661,
+    "contributions_last_90d": 3750,
     "prs_last_90d": 112,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
-    "commits_last_90d": 2682,
-    "enriched_at": "2026-11-16T04:37:34.871929+00:00",
-    "activity_score": 8.19
+    "commits_last_90d": 2662,
+    "enriched_at": "2026-11-18T05:48:14.623595+00:00",
+    "activity_score": 8.24
   },
   {
     "github_username": "shahriar-shojib",
@@ -8677,7 +8677,7 @@
     "reviews_last_90d": 1,
     "commits_last_90d": 1032,
     "enriched_at": "2026-11-17T06:23:50.279978+00:00",
-    "activity_score": 7.96
+    "activity_score": 7.95
   },
   {
     "github_username": "mrx-arafat",
@@ -35408,7 +35408,7 @@
     "reviews_last_90d": 1,
     "commits_last_90d": 774,
     "enriched_at": "2026-11-17T06:23:50.279978+00:00",
-    "activity_score": 4.39
+    "activity_score": 4.38
   },
   {
     "github_username": "sajiiid09",
@@ -130856,7 +130856,7 @@
     "reviews_last_90d": 0,
     "commits_last_90d": 59,
     "enriched_at": "2026-11-17T06:23:50.279978+00:00",
-    "activity_score": 2.03
+    "activity_score": 2.02
   },
   {
     "github_username": "tufikhasan",
