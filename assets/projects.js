@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function renderFilters(langs) {
         langFilters.innerHTML = langs.map(lang => `
-            <button class="lang-chip px-3 py-1 rounded-full text-sm font-medium border border-gray-200 dark:border-gray-700 hover:border-primary transition-all" data-lang="${lang}">
+            <button class="lang-chip px-3 py-1 rounded-full text-sm font-medium text-slate-700 dark:text-slate-200 border border-gray-300 dark:border-gray-700 hover:border-primary transition-all" data-lang="${lang}">
                 ${lang}
             </button>
         `).join('');

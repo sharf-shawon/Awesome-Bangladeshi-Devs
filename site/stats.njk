@@ -141,7 +141,7 @@ title: Community Statistics
         {% for item in stats.sorted_join_years %}{{ item.count }}{% if not loop.last %},{% endif %}{% endfor %}
     ];
 
-    new Chart(ctx, {
+    const growthChart = new Chart(ctx, {
         type: 'line',
         data: {
             labels: labels,
@@ -165,12 +165,28 @@ title: Community Statistics
             scales: {
                 y: {
                     beginAtZero: true,
-                    grid: { color: 'rgba(0,0,0,0.05)' }
+                    grid: { color: 'rgba(100,116,139,0.25)' },
+                    ticks: { color: '#475569' }
                 },
                 x: {
-                    grid: { display: false }
+                    grid: { display: false },
+                    ticks: { color: '#475569' }
                 }
             }
         }
     });
+
+    function syncGrowthChartTheme() {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const tickColor = isDark ? '#cbd5e1' : '#475569';
+        const gridColor = isDark ? 'rgba(148,163,184,0.25)' : 'rgba(100,116,139,0.25)';
+
+        growthChart.options.scales.x.ticks.color = tickColor;
+        growthChart.options.scales.y.ticks.color = tickColor;
+        growthChart.options.scales.y.grid.color = gridColor;
+        growthChart.update();
+    }
+
+    syncGrowthChartTheme();
+    window.addEventListener('themechange', syncGrowthChartTheme);
 </script>

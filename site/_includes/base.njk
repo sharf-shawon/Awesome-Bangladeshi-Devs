@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light dark">
     
     {% set current_title = title or "Awesome Bangladeshi Devs" %}
     {% if current_title != "Home" %}
@@ -39,14 +41,74 @@
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@7/dist/fuse.min.js"></script>
     
     <style type="text/tailwindcss">
+        @custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
         @theme {
             --color-primary: #006a4e; /* Bangladesh Green */
             --color-secondary: #f42a41; /* Bangladesh Red */
         }
-        
+
+        [data-theme='light'] {
+            color-scheme: light;
+            background-color: #ffffff;
+            color: #0f172a;
+        }
+
         [data-theme='dark'] {
+            color-scheme: dark;
             background-color: #0f172a;
             color: #f8fafc;
+        }
+
+        [data-theme='light'] .text-gray-300,
+        [data-theme='light'] .text-gray-400 {
+            color: #475569 !important;
+        }
+
+        [data-theme='light'] .text-gray-500 {
+            color: #475569 !important;
+        }
+
+        [data-theme='light'] .text-gray-600 {
+            color: #334155 !important;
+        }
+
+        [data-theme='light'] .text-yellow-500 {
+            color: #854d0e !important;
+        }
+
+        [data-theme='dark'] .text-gray-400,
+        [data-theme='dark'] .text-gray-500,
+        [data-theme='dark'] .text-gray-600 {
+            color: #cbd5e1 !important;
+        }
+
+        [data-theme='dark'] .text-primary {
+            color: #34d399 !important;
+        }
+
+        [data-theme='dark'] .text-secondary {
+            color: #fb7185 !important;
+        }
+
+        [data-theme='dark'] .text-blue-500 {
+            color: #60a5fa !important;
+        }
+
+        [data-theme='dark'] .text-yellow-500 {
+            color: #fde047 !important;
+        }
+
+        input,
+        select,
+        textarea {
+            color: inherit;
+        }
+
+        [data-theme='light'] input::placeholder,
+        [data-theme='light'] textarea::placeholder {
+            color: #64748b;
+            opacity: 1;
         }
     </style>
     
@@ -57,17 +119,35 @@
         } else {
             document.documentElement.setAttribute('data-theme', 'light');
         }
-        
+
+        const themeMeta = document.querySelector('meta[name="theme-color"]');
+
+        function syncThemeControls() {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            const toggle = document.querySelector('[aria-label="Toggle theme"]');
+            if (toggle) {
+                toggle.setAttribute('aria-pressed', String(isDark));
+                toggle.setAttribute('title', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+            }
+            if (themeMeta) {
+                themeMeta.setAttribute('content', isDark ? '#0f172a' : '#ffffff');
+            }
+        }
+
         function toggleTheme() {
             const html = document.documentElement;
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
             html.setAttribute('data-theme', newTheme);
             localStorage.theme = newTheme;
+            syncThemeControls();
+            window.dispatchEvent(new CustomEvent('themechange', { detail: { theme: newTheme } }));
         }
+
+        document.addEventListener('DOMContentLoaded', syncThemeControls);
     </script>
 </head>
-<body class="min-h-screen transition-colors duration-200">
+<body class="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-200">
     <header class="border-b border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-slate-900/80 backdrop-blur sticky top-0 z-50">
         <nav class="container mx-auto px-4 h-16 flex items-center justify-between">
             <a href="/" class="text-xl font-bold flex items-center gap-2">

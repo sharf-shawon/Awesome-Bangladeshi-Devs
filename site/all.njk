@@ -54,7 +54,7 @@ permalink: "/all/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 
     {% if pagination.href.previous %}
         <a href="{{ pagination.href.previous }}" class="px-4 py-2 rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 font-bold hover:border-primary transition-colors">← Previous</a>
     {% else %}
-        <span class="px-4 py-2 rounded-xl opacity-50 bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 font-bold">← Previous</span>
+        <span class="px-4 py-2 rounded-xl bg-slate-100 text-slate-500 dark:bg-slate-800 dark:text-slate-400 border border-gray-200 dark:border-gray-700 font-bold" aria-disabled="true">← Previous</span>
     {% endif %}
 
     <span class="text-sm font-medium text-gray-500">
@@ -64,6 +64,6 @@ permalink: "/all/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 
     {% if pagination.href.next %}
         <a href="{{ pagination.href.next }}" class="px-4 py-2 rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 font-bold hover:border-primary transition-colors">Next →</a>
     {% else %}
-        <span class="px-4 py-2 rounded-xl opacity-50 bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 font-bold">Next →</span>
+        <span class="px-4 py-2 rounded-xl bg-slate-100 text-slate-500 dark:bg-slate-800 dark:text-slate-400 border border-gray-200 dark:border-gray-700 font-bold" aria-disabled="true">Next →</span>
     {% endif %}
 </nav>
