@@ -28,23 +28,23 @@
 | 7 | <img src='https://avatars.githubusercontent.com/u/7238675?u=702a5cb5aea157eff431215e2de1748dd76d3c06&v=4' width='40' height='40'> | [@audacioustux](https://github.com/audacioustux) | 21.59 | 225 | 72 | Scala |
 | 8 | <img src='https://avatars.githubusercontent.com/u/138643922?u=bf24bb7b36df6389386080fcfa034029acbeb9a8&v=4' width='40' height='40'> | [@enayetsyl](https://github.com/enayetsyl) | 18.29 | 9 | 12 | JavaScript |
 | 9 | <img src='https://avatars.githubusercontent.com/u/490779?u=4f7e21c31a733b927a8774585036c60d607af50c&v=4' width='40' height='40'> | [@hasinhayder](https://github.com/hasinhayder) | 17.09 | 6436 | 4275 | Blade |
-| 10 | <img src='https://avatars.githubusercontent.com/u/22114787?u=7aec009a946fb21fc7b634b4a2ac64e80bc40a30&v=4' width='40' height='40'> | [@santoshakil](https://github.com/santoshakil) | 16.73 | 133 | 120281 | Svelte |
-| 11 | <img src='https://avatars.githubusercontent.com/u/4245521?u=35e3217fb2d5c2f16b263d3e6a298dd61995044a&v=4' width='40' height='40'> | [@tareq89](https://github.com/tareq89) | 16.46 | 61 | 79 | Vue |
-| 12 | <img src='https://avatars.githubusercontent.com/u/12933820?u=7544991cab2a70672e81e67541bbaa19efb26b9f&v=4' width='40' height='40'> | [@i-rocky](https://github.com/i-rocky) | 16.39 | 59 | 78 | Go |
-| 13 | <img src='https://avatars.githubusercontent.com/u/18002761?u=fdb8ecf9ec1eb4dcebee14dbc0d8068bf3d97dc8&v=4' width='40' height='40'> | [@akram02](https://github.com/akram02) | 16.07 | 114 | 112 | JavaScript |
-| 14 | <img src='https://avatars.githubusercontent.com/u/2099592?u=84b17e52e499cb2b91edfcb4a835f1d07f2beb83&v=4' width='40' height='40'> | [@Asif2BD](https://github.com/Asif2BD) | 15.71 | 97 | 426 | JavaScript |
-| 15 | <img src='https://avatars.githubusercontent.com/u/22579419?u=63cb546594598def63e08a465f8d306aa66e84fd&v=4' width='40' height='40'> | [@developerjillur](https://github.com/developerjillur) | 15.41 | 192 | 19 | PHP |
+| 10 | <img src='https://avatars.githubusercontent.com/u/12933820?u=7544991cab2a70672e81e67541bbaa19efb26b9f&v=4' width='40' height='40'> | [@i-rocky](https://github.com/i-rocky) | 16.81 | 59 | 78 | HTML |
+| 11 | <img src='https://avatars.githubusercontent.com/u/22114787?u=7aec009a946fb21fc7b634b4a2ac64e80bc40a30&v=4' width='40' height='40'> | [@santoshakil](https://github.com/santoshakil) | 16.73 | 133 | 120281 | Svelte |
+| 12 | <img src='https://avatars.githubusercontent.com/u/4245521?u=35e3217fb2d5c2f16b263d3e6a298dd61995044a&v=4' width='40' height='40'> | [@tareq89](https://github.com/tareq89) | 16.46 | 61 | 79 | Java |
+| 13 | <img src='https://avatars.githubusercontent.com/u/18002761?u=fdb8ecf9ec1eb4dcebee14dbc0d8068bf3d97dc8&v=4' width='40' height='40'> | [@akram02](https://github.com/akram02) | 16.11 | 114 | 112 | Java |
+| 14 | <img src='https://avatars.githubusercontent.com/u/2099592?u=84b17e52e499cb2b91edfcb4a835f1d07f2beb83&v=4' width='40' height='40'> | [@Asif2BD](https://github.com/Asif2BD) | 15.93 | 97 | 426 | PHP |
+| 15 | <img src='https://avatars.githubusercontent.com/u/22579419?u=63cb546594598def63e08a465f8d306aa66e84fd&v=4' width='40' height='40'> | [@developerjillur](https://github.com/developerjillur) | 15.43 | 193 | 19 | PHP |
 | 16 | <img src='https://avatars.githubusercontent.com/u/72186095?u=4e74e2ecb35a64899f74e1f46a796263d1137968&v=4' width='40' height='40'> | [@codewithsadee](https://github.com/codewithsadee) | 14.71 | 7079 | 12573 | CSS |
 | 17 | <img src='https://avatars.githubusercontent.com/u/6212603?u=6dbb158b3066c5efe7c3e2b009899c92d9c1902b&v=4' width='40' height='40'> | [@auvipy](https://github.com/auvipy) | 14.69 | 986 | 53461 | Python |
 | 18 | <img src='https://avatars.githubusercontent.com/u/97046016?u=2d932fb3dc17a5d7f3df615a451f75f428d87d0b&v=4' width='40' height='40'> | [@mdrifat05](https://github.com/mdrifat05) | 14.67 | 10 | 12 | Java |
 | 19 | <img src='https://avatars.githubusercontent.com/u/978907?u=303f51de92eb313c9304649244167ef2bf80022d&v=4' width='40' height='40'> | [@johnefemer](https://github.com/johnefemer) | 14.53 | 56 | 4 | MDX |
 | 20 | <img src='https://avatars.githubusercontent.com/u/73503432?u=eba945cc587f74b62386878e4681a2b46b799216&v=4' width='40' height='40'> | [@learnwithsumit](https://github.com/learnwithsumit) | 14.02 | 7571 | 1928 | JavaScript |
-| 21 | <img src='https://avatars.githubusercontent.com/u/70368615?u=531e5c76b8d49dde2850e8785e6f298c88acf320&v=4' width='40' height='40'> | [@KnockOutEZ](https://github.com/KnockOutEZ) | 13.26 | 151 | 5630 | TypeScript |
-| 22 | <img src='https://avatars.githubusercontent.com/u/3125771?u=38b95dcd1ce905f2c8fff553105974c92d26c7ba&v=4' width='40' height='40'> | [@nadimtuhin](https://github.com/nadimtuhin) | 12.85 | 175 | 1211 | JavaScript |
-| 23 | <img src='https://avatars.githubusercontent.com/u/7054823?u=175f0d467732aeaa297fbca810a40a2f8b14b9c9&v=4' width='40' height='40'> | [@Moonomo](https://github.com/Moonomo) | 12.66 | 35 | 0 | JavaScript |
-| 24 | <img src='https://avatars.githubusercontent.com/u/9308275?u=aa56c0eb40405b379a30ccd64143a89f63204d83&v=4' width='40' height='40'> | [@creativehabib](https://github.com/creativehabib) | 12.53 | 6 | 8 | JavaScript |
-| 25 | <img src='https://avatars.githubusercontent.com/u/34404032?u=94caba839b62bbfe4b8d689dd7792128c57e09b6&v=4' width='40' height='40'> | [@jobayer977](https://github.com/jobayer977) | 12.5 | 63 | 48 | TypeScript |
-| 26 | <img src='https://avatars.githubusercontent.com/u/72651977?u=75d6c3e2817e7e7cd4fbd08874480c3f458343bc&v=4' width='40' height='40'> | [@cbHasib](https://github.com/cbHasib) | 12.19 | 43 | 12 | TypeScript |
+| 21 | <img src='https://avatars.githubusercontent.com/u/70368615?u=531e5c76b8d49dde2850e8785e6f298c88acf320&v=4' width='40' height='40'> | [@KnockOutEZ](https://github.com/KnockOutEZ) | 13.29 | 151 | 5632 | Go |
+| 22 | <img src='https://avatars.githubusercontent.com/u/7054823?u=175f0d467732aeaa297fbca810a40a2f8b14b9c9&v=4' width='40' height='40'> | [@Moonomo](https://github.com/Moonomo) | 13.07 | 35 | 0 | PHP |
+| 23 | <img src='https://avatars.githubusercontent.com/u/3125771?u=38b95dcd1ce905f2c8fff553105974c92d26c7ba&v=4' width='40' height='40'> | [@nadimtuhin](https://github.com/nadimtuhin) | 12.85 | 175 | 1211 | JavaScript |
+| 24 | <img src='https://avatars.githubusercontent.com/u/34404032?u=94caba839b62bbfe4b8d689dd7792128c57e09b6&v=4' width='40' height='40'> | [@jobayer977](https://github.com/jobayer977) | 12.6 | 63 | 48 | CSS |
+| 25 | <img src='https://avatars.githubusercontent.com/u/9308275?u=aa56c0eb40405b379a30ccd64143a89f63204d83&v=4' width='40' height='40'> | [@creativehabib](https://github.com/creativehabib) | 12.53 | 6 | 8 | PHP |
+| 26 | <img src='https://avatars.githubusercontent.com/u/72651977?u=75d6c3e2817e7e7cd4fbd08874480c3f458343bc&v=4' width='40' height='40'> | [@cbHasib](https://github.com/cbHasib) | 12.37 | 43 | 13 | HTML |
 | 27 | <img src='https://avatars.githubusercontent.com/u/7611746?u=5b0cd1f7adf228e0cfcd77088162cbbfa841e18d&v=4' width='40' height='40'> | [@kingRayhan](https://github.com/kingRayhan) | 12.09 | 362 | 193 | JavaScript |
 | 28 | <img src='https://avatars.githubusercontent.com/u/37816541?u=484dd07471b45c4f9d4c7022e0cbd3d8a7cab036&v=4' width='40' height='40'> | [@sadekur](https://github.com/sadekur) | 12.06 | 6 | 32 | TypeScript |
 | 29 | <img src='https://avatars.githubusercontent.com/u/46926901?u=47cbc7ec010b05210106f1d1b83d945fd6d8bce6&v=4' width='40' height='40'> | [@noruzzamans](https://github.com/noruzzamans) | 11.62 | 40 | 28 | JavaScript |
@@ -55,13 +55,13 @@
 | 34 | <img src='https://avatars.githubusercontent.com/u/5453740?u=0bd04da3b5de09cb1727018bfe1e0b4ea0b0f772&v=4' width='40' height='40'> | [@Azimul-Haque](https://github.com/Azimul-Haque) | 10.52 | 88 | 19 | Dart |
 | 35 | <img src='https://avatars.githubusercontent.com/u/5576949?u=bd0a411a86e0f4ce4ed9afa25c6b1338431dd2bf&v=4' width='40' height='40'> | [@thesabbir](https://github.com/thesabbir) | 10.45 | 261 | 1994 | Go |
 | 36 | <img src='https://avatars.githubusercontent.com/u/68515168?u=4c3a3051b43081fd460d30a91b312f7cee14c150&v=4' width='40' height='40'> | [@devSahinur](https://github.com/devSahinur) | 10.34 | 1109 | 83 | TypeScript |
-| 37 | <img src='https://avatars.githubusercontent.com/u/43861146?u=bfa88567002711a1fdb2154555d7a39ff8cbefb6&v=4' width='40' height='40'> | [@AnwarHossainSR](https://github.com/AnwarHossainSR) | 10.27 | 90 | 206 | PHP |
-| 38 | <img src='https://avatars.githubusercontent.com/u/75292632?u=cdbdbf2b5b328cd7288bb2209ddb08f3aae705d3&v=4' width='40' height='40'> | [@FahadBinHussain](https://github.com/FahadBinHussain) | 9.98 | 20 | 84 | JavaScript |
-| 39 | <img src='https://avatars.githubusercontent.com/u/15819498?u=dbc9afeb11a6d3ea86f816426e4447ee987fe528&v=4' width='40' height='40'> | [@EQuimper](https://github.com/EQuimper) | 9.9 | 1421 | 1936 | JavaScript |
-| 40 | <img src='https://avatars.githubusercontent.com/u/3213988?u=055f9cd047f401e479b204df6ac38a40e78691cc&v=4' width='40' height='40'> | [@rupok](https://github.com/rupok) | 9.89 | 97 | 321 | JavaScript |
+| 37 | <img src='https://avatars.githubusercontent.com/u/43861146?u=bfa88567002711a1fdb2154555d7a39ff8cbefb6&v=4' width='40' height='40'> | [@AnwarHossainSR](https://github.com/AnwarHossainSR) | 10.28 | 89 | 206 | PHP |
+| 38 | <img src='https://avatars.githubusercontent.com/u/75292632?u=cdbdbf2b5b328cd7288bb2209ddb08f3aae705d3&v=4' width='40' height='40'> | [@FahadBinHussain](https://github.com/FahadBinHussain) | 10.1 | 20 | 85 | HTML |
+| 39 | <img src='https://avatars.githubusercontent.com/u/3213988?u=055f9cd047f401e479b204df6ac38a40e78691cc&v=4' width='40' height='40'> | [@rupok](https://github.com/rupok) | 9.93 | 98 | 321 | Java |
+| 40 | <img src='https://avatars.githubusercontent.com/u/15819498?u=dbc9afeb11a6d3ea86f816426e4447ee987fe528&v=4' width='40' height='40'> | [@EQuimper](https://github.com/EQuimper) | 9.9 | 1421 | 1936 | JavaScript |
 | 41 | <img src='https://avatars.githubusercontent.com/u/66651961?u=77f017c8767dd45d07decc4fc2ae2a7e8aadf787&v=4' width='40' height='40'> | [@hasan1119](https://github.com/hasan1119) | 9.87 | 163 | 23 | JavaScript |
 | 42 | <img src='https://avatars.githubusercontent.com/u/15268903?u=1302e5128801abc38601a042c7cabb57eef77943&v=4' width='40' height='40'> | [@ShakilAhmedShaj](https://github.com/ShakilAhmedShaj) | 9.87 | 289 | 195 | Kotlin |
-| 43 | <img src='https://avatars.githubusercontent.com/u/13703461?u=865445bb19fad8624b3a542494d10b0abc8beaed&v=4' width='40' height='40'> | [@cyantarek](https://github.com/cyantarek) | 9.84 | 203 | 197 | JavaScript |
+| 43 | <img src='https://avatars.githubusercontent.com/u/13703461?u=865445bb19fad8624b3a542494d10b0abc8beaed&v=4' width='40' height='40'> | [@cyantarek](https://github.com/cyantarek) | 9.84 | 203 | 197 | Ruby |
 | 44 | <img src='https://avatars.githubusercontent.com/u/43857625?u=91e349d5590ea2b21cb3bceace36cc0e28b1488a&v=4' width='40' height='40'> | [@mprince2k18](https://github.com/mprince2k18) | 9.65 | 67 | 16 | Blade |
 | 45 | <img src='https://avatars.githubusercontent.com/u/23618865?u=379053eb6c46749dea55c3f3e56a0afebcd44b12&v=4' width='40' height='40'> | [@MishukAdhikari](https://github.com/MishukAdhikari) | 9.57 | 45 | 42 | JavaScript |
 | 46 | <img src='https://avatars.githubusercontent.com/u/11497423?v=4' width='40' height='40'> | [@imranhsayed](https://github.com/imranhsayed) | 9.27 | 2324 | 4767 | JavaScript |
@@ -73,7 +73,7 @@
 | 52 | <img src='https://avatars.githubusercontent.com/u/38912435?v=4' width='40' height='40'> | [@anisAronno](https://github.com/anisAronno) | 8.59 | 44 | 61 | Vue |
 | 53 | <img src='https://avatars.githubusercontent.com/u/53598781?u=c76b2be73e00e1a86f2ce094485a7074b1808f31&v=4' width='40' height='40'> | [@ArnobKumarSaha](https://github.com/ArnobKumarSaha) | 8.56 | 94 | 16 | C++ |
 | 54 | <img src='https://avatars.githubusercontent.com/u/3833316?u=3fafe94b26fe31e2f3491ecee04fa548d5d04401&v=4' width='40' height='40'> | [@saifulapm](https://github.com/saifulapm) | 8.48 | 59 | 588 | KakouneScript |
-| 55 | <img src='https://avatars.githubusercontent.com/u/30868301?u=b0eaa2ae4fe9154bd037b9409fb61411a61cd0cc&v=4' width='40' height='40'> | [@mirzasaikatahmmed](https://github.com/mirzasaikatahmmed) | 8.43 | 41 | 14 | Go |
+| 55 | <img src='https://avatars.githubusercontent.com/u/30868301?u=b0eaa2ae4fe9154bd037b9409fb61411a61cd0cc&v=4' width='40' height='40'> | [@mirzasaikatahmmed](https://github.com/mirzasaikatahmmed) | 8.45 | 41 | 14 | Java |
 | 56 | <img src='https://avatars.githubusercontent.com/u/124136023?u=500429c3f1f711f36fea3d8090846530a5cc9312&v=4' width='40' height='40'> | [@Tahsin005](https://github.com/Tahsin005) | 8.4 | 66 | 15 | JavaScript |
 | 57 | <img src='https://avatars.githubusercontent.com/u/99077742?u=77e9c1dd41713c45abfe50442497014c10b9019b&v=4' width='40' height='40'> | [@muj-i](https://github.com/muj-i) | 8.3 | 15 | 12 | Python |
 | 58 | <img src='https://avatars.githubusercontent.com/u/10533912?u=edc35b1d510c1c7ed2dd0c5994692811ee967def&v=4' width='40' height='40'> | [@TriptoAfsin](https://github.com/TriptoAfsin) | 8.28 | 92 | 83 | JavaScript |
@@ -147,19 +147,19 @@
 | 126 | <img src='https://avatars.githubusercontent.com/u/32199888?u=d699e0b87f5e34a97d9542bc9fc87c30722e1b6a&v=4' width='40' height='40'> | [@shahi5472](https://github.com/shahi5472) | 5.84 | 61 | 64 | C++ |
 | 127 | <img src='https://avatars.githubusercontent.com/u/17213478?u=23e42ebb5485c6c1690f17237f011893940f4a7e&v=4' width='40' height='40'> | [@arif98741](https://github.com/arif98741) | 5.82 | 435 | 283 | JavaScript |
 | 128 | <img src='https://avatars.githubusercontent.com/u/22752556?u=4b62e8bfef3a1f7d3c4252504140af8127e656f1&v=4' width='40' height='40'> | [@SmanSayeed](https://github.com/SmanSayeed) | 5.8 | 51 | 7 | JavaScript |
-| 129 | <img src='https://avatars.githubusercontent.com/u/121648135?u=1f194821d97fec5eb28d0646c681d9bb428180bf&v=4' width='40' height='40'> | [@NahidAhmed47](https://github.com/NahidAhmed47) | 5.77 | 33 | 22 | JavaScript |
-| 130 | <img src='https://avatars.githubusercontent.com/u/11135732?u=3cac184c5ec7cedcb885be4fea36621d7a178f6f&v=4' width='40' height='40'> | [@Iamsdt](https://github.com/Iamsdt) | 5.76 | 67 | 197 | Dart |
-| 131 | <img src='https://avatars.githubusercontent.com/u/15651792?u=269fef1d7d06a72285b041c15fa1e5db13a595a5&v=4' width='40' height='40'> | [@manjurulhoque](https://github.com/manjurulhoque) | 5.74 | 695 | 1939 | Python |
-| 132 | <img src='https://avatars.githubusercontent.com/u/44812376?u=427d7758ab6b80d6a562544953980c4434c62a6c&v=4' width='40' height='40'> | [@imhayatunnabi](https://github.com/imhayatunnabi) | 5.71 | 30 | 16 | JavaScript |
-| 133 | <img src='https://avatars.githubusercontent.com/u/191543?v=4' width='40' height='40'> | [@masnun](https://github.com/masnun) | 5.67 | 1325 | 539 | JavaScript |
-| 134 | <img src='https://avatars.githubusercontent.com/u/22824948?u=532a11295775003b19b712178992865ec1163f4c&v=4' width='40' height='40'> | [@kmtusher97](https://github.com/kmtusher97) | 5.66 | 251 | 96 | Dart |
-| 135 | <img src='https://avatars.githubusercontent.com/u/78620963?u=c7898547bc479c9c82192ee4f7526c9e2fc3e3b0&v=4' width='40' height='40'> | [@mdrijoanmaruf](https://github.com/mdrijoanmaruf) | 5.65 | 771 | 121 | JavaScript |
-| 136 | <img src='https://avatars.githubusercontent.com/u/118790117?u=6ddf04fa8e6d55596028cc950cf7e8e5e965e7af&v=4' width='40' height='40'> | [@arman-miaa](https://github.com/arman-miaa) | 5.63 | 38 | 7 | Shell |
-| 137 | <img src='https://avatars.githubusercontent.com/u/8166346?u=761017b95d26dc8086bed7813ce2546af9223eae&v=4' width='40' height='40'> | [@nazmulpcc](https://github.com/nazmulpcc) | 5.62 | 73 | 195 | C |
-| 138 | <img src='https://avatars.githubusercontent.com/u/134803050?u=9c75193698192c08be895e2de06d03bbad23daf9&v=4' width='40' height='40'> | [@Emam-Bokhari](https://github.com/Emam-Bokhari) | 5.61 | 14 | 1 | JavaScript |
-| 139 | <img src='https://avatars.githubusercontent.com/u/18072164?u=a7353c8762b49364e24b006a32fbbb8ecd5a828b&v=4' width='40' height='40'> | [@jamilxt](https://github.com/jamilxt) | 5.59 | 429 | 202 | JavaScript |
-| 140 | <img src='https://avatars.githubusercontent.com/u/38876495?u=39b22eb8cce16f087b18beff7e86c385fdde98e9&v=4' width='40' height='40'> | [@arctronic](https://github.com/arctronic) | 5.56 | 38 | 225 | Dart |
-| 141 | <img src='https://avatars.githubusercontent.com/u/29172543?u=3ad7fc752884f727b2cb30aa2c1125979abd760e&v=4' width='40' height='40'> | [@sgtlaugh](https://github.com/sgtlaugh) | 5.54 | 129 | 106 | Go |
+| 129 | <img src='https://avatars.githubusercontent.com/u/11135732?u=3cac184c5ec7cedcb885be4fea36621d7a178f6f&v=4' width='40' height='40'> | [@Iamsdt](https://github.com/Iamsdt) | 5.79 | 67 | 198 | JavaScript |
+| 130 | <img src='https://avatars.githubusercontent.com/u/121648135?u=1f194821d97fec5eb28d0646c681d9bb428180bf&v=4' width='40' height='40'> | [@NahidAhmed47](https://github.com/NahidAhmed47) | 5.77 | 33 | 22 | JavaScript |
+| 131 | <img src='https://avatars.githubusercontent.com/u/29172543?u=3ad7fc752884f727b2cb30aa2c1125979abd760e&v=4' width='40' height='40'> | [@sgtlaugh](https://github.com/sgtlaugh) | 5.77 | 130 | 106 | Go |
+| 132 | <img src='https://avatars.githubusercontent.com/u/15651792?u=269fef1d7d06a72285b041c15fa1e5db13a595a5&v=4' width='40' height='40'> | [@manjurulhoque](https://github.com/manjurulhoque) | 5.74 | 695 | 1939 | Python |
+| 133 | <img src='https://avatars.githubusercontent.com/u/44812376?u=427d7758ab6b80d6a562544953980c4434c62a6c&v=4' width='40' height='40'> | [@imhayatunnabi](https://github.com/imhayatunnabi) | 5.71 | 30 | 16 | JavaScript |
+| 134 | <img src='https://avatars.githubusercontent.com/u/134803050?u=9c75193698192c08be895e2de06d03bbad23daf9&v=4' width='40' height='40'> | [@Emam-Bokhari](https://github.com/Emam-Bokhari) | 5.7 | 14 | 1 | Python |
+| 135 | <img src='https://avatars.githubusercontent.com/u/191543?v=4' width='40' height='40'> | [@masnun](https://github.com/masnun) | 5.67 | 1325 | 539 | JavaScript |
+| 136 | <img src='https://avatars.githubusercontent.com/u/22824948?u=532a11295775003b19b712178992865ec1163f4c&v=4' width='40' height='40'> | [@kmtusher97](https://github.com/kmtusher97) | 5.66 | 251 | 96 | Dart |
+| 137 | <img src='https://avatars.githubusercontent.com/u/78620963?u=c7898547bc479c9c82192ee4f7526c9e2fc3e3b0&v=4' width='40' height='40'> | [@mdrijoanmaruf](https://github.com/mdrijoanmaruf) | 5.65 | 771 | 121 | JavaScript |
+| 138 | <img src='https://avatars.githubusercontent.com/u/18072164?u=a7353c8762b49364e24b006a32fbbb8ecd5a828b&v=4' width='40' height='40'> | [@jamilxt](https://github.com/jamilxt) | 5.65 | 429 | 202 | CSS |
+| 139 | <img src='https://avatars.githubusercontent.com/u/118790117?u=6ddf04fa8e6d55596028cc950cf7e8e5e965e7af&v=4' width='40' height='40'> | [@arman-miaa](https://github.com/arman-miaa) | 5.63 | 38 | 7 | Shell |
+| 140 | <img src='https://avatars.githubusercontent.com/u/8166346?u=761017b95d26dc8086bed7813ce2546af9223eae&v=4' width='40' height='40'> | [@nazmulpcc](https://github.com/nazmulpcc) | 5.62 | 73 | 195 | C |
+| 141 | <img src='https://avatars.githubusercontent.com/u/38876495?u=39b22eb8cce16f087b18beff7e86c385fdde98e9&v=4' width='40' height='40'> | [@arctronic](https://github.com/arctronic) | 5.62 | 37 | 225 | JavaScript |
 | 142 | <img src='https://avatars.githubusercontent.com/u/1138769?u=130f45cac9cb21c6bb69738db217fb5de8b3a272&v=4' width='40' height='40'> | [@milon](https://github.com/milon) | 5.54 | 689 | 1757 | JavaScript |
 | 143 | <img src='https://avatars.githubusercontent.com/u/12676368?u=417fdffc910fe3f117d540df01cdf8be6193077b&v=4' width='40' height='40'> | [@zedrex](https://github.com/zedrex) | 5.52 | 86 | 169 | C |
 | 144 | <img src='https://avatars.githubusercontent.com/u/72712376?u=a306555680de66ecdcfd000dbb5f9ae659595e67&v=4' width='40' height='40'> | [@coderkhalide](https://github.com/coderkhalide) | 5.49 | 352 | 177 | JavaScript |
@@ -525,7 +525,7 @@
 ## Stats
 
 - Total Developers: 3,673
-- Total Stars: 682,971
+- Total Stars: 682,976
 - Top Community Language: JavaScript
 
 ## How to Add Yourself
@@ -533,4 +533,4 @@
 Please open an [Add Developer Issue](https://github.com/sharf-shawon/Awesome-Bangladeshi-Devs/issues/new?template=add_developer.yml) and fill in your GitHub username and location. The pipeline will automatically validate and add you to the list!
 
 ---
-*Last updated on 2026-11-26 07:09 UTC*
+*Last updated on 2026-11-27 06:38 UTC*

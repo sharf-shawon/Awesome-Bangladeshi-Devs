@@ -1491,6 +1491,167 @@
     "activity_score": 17.09
   },
   {
+    "github_username": "i-rocky",
+    "name": "Rasel Rana Rocky",
+    "profile_url": "https://github.com/i-rocky",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12933820?u=7544991cab2a70672e81e67541bbaa19efb26b9f&v=4",
+    "bio": "huh!",
+    "company": "Hydra Inc.",
+    "website_url": "",
+    "followers": 59,
+    "following": 24,
+    "public_repos": 46,
+    "total_stars": 78,
+    "top_repos": [
+      {
+        "name": "country-list-js",
+        "description": "Country list with name, continent, capital, currency, dialing code, ISO-2 code, ISO-3 code and search",
+        "url": "https://github.com/i-rocky/country-list-js",
+        "stars": 41,
+        "forks": 29,
+        "language": "JavaScript",
+        "topics": [
+          "country",
+          "currency",
+          "dialing",
+          "continent",
+          "capital"
+        ],
+        "pushed_at": "2026-11-01T04:42:45Z"
+      },
+      {
+        "name": "eloquent-dynamic-relation",
+        "description": "Adds dynamic relationship to eloquent ORM models",
+        "url": "https://github.com/i-rocky/eloquent-dynamic-relation",
+        "stars": 21,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2021-06-10T11:40:48Z"
+      },
+      {
+        "name": "just-a-moment",
+        "description": "Spinners, progress bars and progress rings as one tiny custom element \u2014 CSS, unicode and terminal-style, determinate or not, isolated in Shadow DOM. ~5.6 KB, zero config, no dependencies.",
+        "url": "https://github.com/i-rocky/just-a-moment",
+        "stars": 5,
+        "forks": 0,
+        "language": "HTML",
+        "topics": [
+          "css-loader",
+          "custom-element",
+          "loader",
+          "progress-bar",
+          "progress-ring"
+        ],
+        "pushed_at": "2026-06-09T13:08:51Z"
+      },
+      {
+        "name": "laravel-twilio",
+        "description": "Laravel package for twilio integration for sending and receiving SMS, MMS, Fax, and calling with recording support for both inbound and outbound.",
+        "url": "https://github.com/i-rocky/laravel-twilio",
+        "stars": 4,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [
+          "twilio",
+          "twilio-api",
+          "twilio-api-wrapper",
+          "laravel-twilio",
+          "incoming-faxes"
+        ],
+        "pushed_at": "2019-11-30T08:36:37Z"
+      },
+      {
+        "name": "core",
+        "description": ":rocket: Open Source React File Manager ",
+        "url": "https://github.com/reactfilemanager/core",
+        "stars": 2,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2024-11-13T07:35:29Z"
+      },
+      {
+        "name": "github-worker",
+        "description": "gw \u2014 a CLI to manage a fleet of GitHub Actions self-hosted runners",
+        "url": "https://github.com/i-rocky/github-worker",
+        "stars": 1,
+        "forks": 0,
+        "language": "Go",
+        "topics": [],
+        "pushed_at": "2026-09-02T11:51:37Z"
+      },
+      {
+        "name": "corvid-node",
+        "description": "Node.js bindings for corvid \u2014 typed FFI via napi-rs, zero serialization, OOP surface.",
+        "url": "https://github.com/corvid-db/corvid-node",
+        "stars": 1,
+        "forks": 0,
+        "language": "Rust",
+        "topics": [],
+        "pushed_at": "2026-09-03T14:51:03Z"
+      },
+      {
+        "name": "pylon",
+        "description": "A Pusher-compatible real-time WebSocket server (clean-room Rust)",
+        "url": "https://github.com/i-rocky/pylon",
+        "stars": 1,
+        "forks": 0,
+        "language": "Rust",
+        "topics": [],
+        "pushed_at": "2026-10-26T18:10:27Z"
+      },
+      {
+        "name": "x-zsh",
+        "description": "Animated terminal walkthroughs as an HTML custom element. Write a session in plain text; <x-zsh> renders an animated p10k-style zsh, isolated in Shadow DOM. Zero config, no build, not an emulator.",
+        "url": "https://github.com/i-rocky/x-zsh",
+        "stars": 1,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [
+          "animation",
+          "cli",
+          "console",
+          "custom-elements",
+          "documentation"
+        ],
+        "pushed_at": "2026-06-10T10:22:42Z"
+      },
+      {
+        "name": "corvid",
+        "description": "Embedded multi-modal data store for AI applications: vector + full-text + graph + geo behind one fluent Rust API, a typed C ABI, and native bindings.",
+        "url": "https://github.com/corvid-db/corvid",
+        "stars": 1,
+        "forks": 0,
+        "language": "Rust",
+        "topics": [
+          "ai",
+          "bm25",
+          "database",
+          "embedded-database",
+          "embeddings"
+        ],
+        "pushed_at": "2026-09-03T15:46:53Z"
+      }
+    ],
+    "top_language": "HTML",
+    "all_languages": [
+      "HTML",
+      "Go",
+      "JavaScript",
+      "PHP",
+      "Rust"
+    ],
+    "contributions_last_90d": 25745,
+    "prs_last_90d": 179,
+    "issues_last_90d": 55,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 1943,
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 16.81
+  },
+  {
     "github_username": "santoshakil",
     "name": "Santo Shakil",
     "profile_url": "https://github.com/santoshakil",
@@ -1750,182 +1911,21 @@
         "pushed_at": "2026-06-23T10:03:41Z"
       }
     ],
-    "top_language": "Vue",
+    "top_language": "Java",
     "all_languages": [
-      "Vue",
+      "Java",
       "HTML",
       "JavaScript",
-      "C#",
-      "Java"
+      "Vue",
+      "C#"
     ],
-    "contributions_last_90d": 9981,
+    "contributions_last_90d": 9983,
     "prs_last_90d": 837,
     "issues_last_90d": 3511,
     "reviews_last_90d": 150,
-    "commits_last_90d": 5233,
-    "enriched_at": "2026-11-25T06:52:21.811401+00:00",
+    "commits_last_90d": 5235,
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
     "activity_score": 16.46
-  },
-  {
-    "github_username": "i-rocky",
-    "name": "Rasel Rana Rocky",
-    "profile_url": "https://github.com/i-rocky",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/12933820?u=7544991cab2a70672e81e67541bbaa19efb26b9f&v=4",
-    "bio": "huh!",
-    "company": "Hydra Inc.",
-    "website_url": "",
-    "followers": 59,
-    "following": 24,
-    "public_repos": 46,
-    "total_stars": 78,
-    "top_repos": [
-      {
-        "name": "country-list-js",
-        "description": "Country list with name, continent, capital, currency, dialing code, ISO-2 code, ISO-3 code and search",
-        "url": "https://github.com/i-rocky/country-list-js",
-        "stars": 41,
-        "forks": 29,
-        "language": "JavaScript",
-        "topics": [
-          "country",
-          "currency",
-          "dialing",
-          "continent",
-          "capital"
-        ],
-        "pushed_at": "2026-11-01T04:42:45Z"
-      },
-      {
-        "name": "eloquent-dynamic-relation",
-        "description": "Adds dynamic relationship to eloquent ORM models",
-        "url": "https://github.com/i-rocky/eloquent-dynamic-relation",
-        "stars": 21,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2021-06-10T11:40:48Z"
-      },
-      {
-        "name": "just-a-moment",
-        "description": "Spinners, progress bars and progress rings as one tiny custom element \u2014 CSS, unicode and terminal-style, determinate or not, isolated in Shadow DOM. ~5.6 KB, zero config, no dependencies.",
-        "url": "https://github.com/i-rocky/just-a-moment",
-        "stars": 5,
-        "forks": 0,
-        "language": "HTML",
-        "topics": [
-          "css-loader",
-          "custom-element",
-          "loader",
-          "progress-bar",
-          "progress-ring"
-        ],
-        "pushed_at": "2026-06-09T13:08:51Z"
-      },
-      {
-        "name": "laravel-twilio",
-        "description": "Laravel package for twilio integration for sending and receiving SMS, MMS, Fax, and calling with recording support for both inbound and outbound.",
-        "url": "https://github.com/i-rocky/laravel-twilio",
-        "stars": 4,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [
-          "twilio",
-          "twilio-api",
-          "twilio-api-wrapper",
-          "laravel-twilio",
-          "incoming-faxes"
-        ],
-        "pushed_at": "2019-11-30T08:36:37Z"
-      },
-      {
-        "name": "core",
-        "description": ":rocket: Open Source React File Manager ",
-        "url": "https://github.com/reactfilemanager/core",
-        "stars": 2,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2024-11-13T07:35:29Z"
-      },
-      {
-        "name": "github-worker",
-        "description": "gw \u2014 a CLI to manage a fleet of GitHub Actions self-hosted runners",
-        "url": "https://github.com/i-rocky/github-worker",
-        "stars": 1,
-        "forks": 0,
-        "language": "Go",
-        "topics": [],
-        "pushed_at": "2026-09-02T11:51:37Z"
-      },
-      {
-        "name": "corvid-node",
-        "description": "Node.js bindings for corvid \u2014 typed FFI via napi-rs, zero serialization, OOP surface.",
-        "url": "https://github.com/corvid-db/corvid-node",
-        "stars": 1,
-        "forks": 0,
-        "language": "Rust",
-        "topics": [],
-        "pushed_at": "2026-09-03T14:51:03Z"
-      },
-      {
-        "name": "pylon",
-        "description": "A Pusher-compatible real-time WebSocket server (clean-room Rust)",
-        "url": "https://github.com/i-rocky/pylon",
-        "stars": 1,
-        "forks": 0,
-        "language": "Rust",
-        "topics": [],
-        "pushed_at": "2026-10-26T18:10:27Z"
-      },
-      {
-        "name": "x-zsh",
-        "description": "Animated terminal walkthroughs as an HTML custom element. Write a session in plain text; <x-zsh> renders an animated p10k-style zsh, isolated in Shadow DOM. Zero config, no build, not an emulator.",
-        "url": "https://github.com/i-rocky/x-zsh",
-        "stars": 1,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [
-          "animation",
-          "cli",
-          "console",
-          "custom-elements",
-          "documentation"
-        ],
-        "pushed_at": "2026-06-10T10:22:42Z"
-      },
-      {
-        "name": "corvid",
-        "description": "Embedded multi-modal data store for AI applications: vector + full-text + graph + geo behind one fluent Rust API, a typed C ABI, and native bindings.",
-        "url": "https://github.com/corvid-db/corvid",
-        "stars": 1,
-        "forks": 0,
-        "language": "Rust",
-        "topics": [
-          "ai",
-          "bm25",
-          "database",
-          "embedded-database",
-          "embeddings"
-        ],
-        "pushed_at": "2026-09-03T15:46:53Z"
-      }
-    ],
-    "top_language": "Go",
-    "all_languages": [
-      "Go",
-      "HTML",
-      "PHP",
-      "JavaScript",
-      "Rust"
-    ],
-    "contributions_last_90d": 25003,
-    "prs_last_90d": 179,
-    "issues_last_90d": 55,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 1943,
-    "enriched_at": "2026-11-25T06:52:21.811401+00:00",
-    "activity_score": 16.39
   },
   {
     "github_username": "akram02",
@@ -2048,19 +2048,19 @@
         "pushed_at": "2021-03-15T17:47:57Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "Java",
     "all_languages": [
-      "JavaScript",
+      "Java",
       "Ruby",
-      "Java"
+      "JavaScript"
     ],
-    "contributions_last_90d": 10355,
+    "contributions_last_90d": 10426,
     "prs_last_90d": 20,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 20,
-    "enriched_at": "2026-11-25T06:52:21.811401+00:00",
-    "activity_score": 16.07
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 16.11
   },
   {
     "github_username": "Asif2BD",
@@ -2108,7 +2108,7 @@
           "wordpress-plugin",
           "wordpress-development"
         ],
-        "pushed_at": "2026-11-23T10:06:31Z"
+        "pushed_at": "2026-11-26T08:20:34Z"
       },
       {
         "name": "JARVIS-Mission-Control-OpenClaw",
@@ -2154,7 +2154,7 @@
         "forks": 11,
         "language": "PHP",
         "topics": [],
-        "pushed_at": "2026-11-24T08:59:58Z"
+        "pushed_at": "2026-11-26T11:26:34Z"
       },
       {
         "name": "xCloud-Docker-Deploy-Skill",
@@ -2198,20 +2198,20 @@
         "pushed_at": "2023-03-06T17:22:44Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "PHP",
     "all_languages": [
-      "JavaScript",
       "PHP",
+      "Python",
       "Dockerfile",
-      "Python"
+      "JavaScript"
     ],
-    "contributions_last_90d": 15365,
-    "prs_last_90d": 199,
+    "contributions_last_90d": 15735,
+    "prs_last_90d": 200,
     "issues_last_90d": 5173,
     "reviews_last_90d": 2,
     "commits_last_90d": 599,
-    "enriched_at": "2026-11-25T06:52:21.811401+00:00",
-    "activity_score": 15.71
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 15.93
   },
   {
     "github_username": "developerjillur",
@@ -2222,7 +2222,7 @@
     "bio": "Web Design & Development is my passion, I give full time in development. I love to do this, it\u2019s my life everything. I learn new things every day. ",
     "company": "DevsSquad",
     "website_url": "www.developerjillur.me",
-    "followers": 192,
+    "followers": 193,
     "following": 85,
     "public_repos": 56,
     "total_stars": 19,
@@ -2343,17 +2343,17 @@
     "top_language": "PHP",
     "all_languages": [
       "PHP",
+      "Python",
       "HTML",
-      "JavaScript",
-      "Python"
+      "JavaScript"
     ],
-    "contributions_last_90d": 24067,
+    "contributions_last_90d": 24102,
     "prs_last_90d": 81,
     "issues_last_90d": 9,
     "reviews_last_90d": 0,
     "commits_last_90d": 728,
-    "enriched_at": "2026-11-25T06:52:21.811401+00:00",
-    "activity_score": 15.41
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 15.43
   },
   {
     "github_username": "codewithsadee",
@@ -3075,14 +3075,14 @@
     "followers": 151,
     "following": 100,
     "public_repos": 44,
-    "total_stars": 5630,
+    "total_stars": 5632,
     "top_repos": [
       {
         "name": "wigolo",
         "description": "The go-to web for your AI coding agent \u2014 local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0/query. Public beta.",
         "url": "https://github.com/KnockOutEZ/wigolo",
-        "stars": 5565,
-        "forks": 463,
+        "stars": 5567,
+        "forks": 464,
         "language": "TypeScript",
         "topics": [
           "mcp",
@@ -3091,7 +3091,7 @@
           "ai-agent",
           "claude"
         ],
-        "pushed_at": "2026-11-25T06:49:03Z"
+        "pushed_at": "2026-11-26T15:07:58Z"
       },
       {
         "name": "diffdeck",
@@ -3132,7 +3132,7 @@
         "forks": 1,
         "language": null,
         "topics": [],
-        "pushed_at": "2026-11-24T17:52:05Z"
+        "pushed_at": "2026-11-26T16:59:26Z"
       },
       {
         "name": "tracingingo",
@@ -3195,19 +3195,98 @@
         "pushed_at": "2024-09-26T07:00:01Z"
       }
     ],
-    "top_language": "TypeScript",
+    "top_language": "Go",
     "all_languages": [
-      "TypeScript",
       "Go",
-      "Shell"
+      "Shell",
+      "TypeScript"
     ],
-    "contributions_last_90d": 14346,
-    "prs_last_90d": 534,
+    "contributions_last_90d": 14378,
+    "prs_last_90d": 535,
     "issues_last_90d": 22,
     "reviews_last_90d": 28,
-    "commits_last_90d": 2128,
-    "enriched_at": "2026-11-25T06:52:21.811401+00:00",
-    "activity_score": 13.26
+    "commits_last_90d": 2135,
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 13.29
+  },
+  {
+    "github_username": "Moonomo",
+    "name": "Omaar Osmaan",
+    "profile_url": "https://github.com/Moonomo",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7054823?u=175f0d467732aeaa297fbca810a40a2f8b14b9c9&v=4",
+    "bio": "Senior Full-Stack Product Engineer | React \u2022 TypeScript \u2022 Flutter",
+    "company": "@elegantthemes ",
+    "website_url": "https://osmaan.dev/",
+    "followers": 35,
+    "following": 2,
+    "public_repos": 5,
+    "total_stars": 0,
+    "top_repos": [
+      {
+        "name": "phpass",
+        "description": "",
+        "url": "https://github.com/Moonomo/phpass",
+        "stars": 0,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2021-09-13T17:33:39Z"
+      },
+      {
+        "name": "National-Safari-Park-PHP-MySQL",
+        "description": "This is a PHP, MySQL CRUD coding web application project for the CIS-331 Web Engineering course at Daffodil International University's department of CIS (COMPUTING AND INFORMATION SYSTEM).",
+        "url": "https://github.com/Fahim16-360/National-Safari-Park-PHP-MySQL",
+        "stars": 0,
+        "forks": 0,
+        "language": "CSS",
+        "topics": [],
+        "pushed_at": "2021-09-01T14:05:57Z"
+      },
+      {
+        "name": "react-todo",
+        "description": "Learning React, Flux and ES6.",
+        "url": "https://github.com/Moonomo/react-todo",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2018-08-30T20:00:36Z"
+      },
+      {
+        "name": "xf-customers",
+        "description": "",
+        "url": "https://github.com/Moonomo/xf-customers",
+        "stars": 0,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2018-07-11T23:09:16Z"
+      },
+      {
+        "name": "xf-woocommerce-apartment",
+        "description": "",
+        "url": "https://github.com/Moonomo/xf-woocommerce-apartment",
+        "stars": 0,
+        "forks": 0,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2018-06-29T01:32:56Z"
+      }
+    ],
+    "top_language": "PHP",
+    "all_languages": [
+      "PHP",
+      "CSS",
+      "JavaScript"
+    ],
+    "contributions_last_90d": 23198,
+    "prs_last_90d": 1,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 1,
+    "commits_last_90d": 0,
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 13.07
   },
   {
     "github_username": "nadimtuhin",
@@ -3389,83 +3468,139 @@
     "activity_score": 12.85
   },
   {
-    "github_username": "Moonomo",
-    "name": "Omaar Osmaan",
-    "profile_url": "https://github.com/Moonomo",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/7054823?u=175f0d467732aeaa297fbca810a40a2f8b14b9c9&v=4",
-    "bio": "Senior Full-Stack Product Engineer | React \u2022 TypeScript \u2022 Flutter",
-    "company": "@elegantthemes ",
-    "website_url": "https://osmaan.dev/",
-    "followers": 35,
-    "following": 2,
-    "public_repos": 5,
-    "total_stars": 0,
+    "github_username": "jobayer977",
+    "name": "Jobayer Hossain",
+    "profile_url": "https://github.com/jobayer977",
+    "location": "Dhaka,Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34404032?u=94caba839b62bbfe4b8d689dd7792128c57e09b6&v=4",
+    "bio": "Full Stack Developer web/mobile/devops",
+    "company": "",
+    "website_url": "https://jobayer.dev",
+    "followers": 63,
+    "following": 129,
+    "public_repos": 70,
+    "total_stars": 48,
     "top_repos": [
       {
-        "name": "phpass",
-        "description": "",
-        "url": "https://github.com/Moonomo/phpass",
-        "stars": 0,
-        "forks": 0,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2021-09-13T17:33:39Z"
-      },
-      {
-        "name": "National-Safari-Park-PHP-MySQL",
-        "description": "This is a PHP, MySQL CRUD coding web application project for the CIS-331 Web Engineering course at Daffodil International University's department of CIS (COMPUTING AND INFORMATION SYSTEM).",
-        "url": "https://github.com/Fahim16-360/National-Safari-Park-PHP-MySQL",
-        "stars": 0,
-        "forks": 0,
+        "name": "ultimate-ecommerce-shop",
+        "description": "Production Ready e-commerce Application with PWA eCommerce is implemented based on NextJS, Angular, and Nodejs. It entirely REST API & And automatically image optimize plus delivers by Cloudinary. On the frontend, I have used React, NextJS TypeScript & Ant Design. The full source code is open. It\u2019s very easy to install and deploy. It\u2019s very fast and PWA supported. I have added good documentation useing swagger and I tried to make everything extendable and reusable so you can edit as your own need. It has full admin support too to maintain and manage your order. Here full source code, Frontend, Admin Panel, and Backend.",
+        "url": "https://github.com/jobayer977/ultimate-ecommerce-shop",
+        "stars": 20,
+        "forks": 3,
         "language": "CSS",
         "topics": [],
-        "pushed_at": "2021-09-01T14:05:57Z"
+        "pushed_at": "2023-01-10T22:34:03Z"
       },
       {
-        "name": "react-todo",
-        "description": "Learning React, Flux and ES6.",
-        "url": "https://github.com/Moonomo/react-todo",
-        "stars": 0,
-        "forks": 0,
+        "name": "react-express-lms",
+        "description": "e-learning platform made with react,redux,firebase,mongoDB,mongoose,nodejs(express)",
+        "url": "https://github.com/jobayer977/react-express-lms",
+        "stars": 7,
+        "forks": 1,
         "language": "JavaScript",
         "topics": [],
-        "pushed_at": "2018-08-30T20:00:36Z"
+        "pushed_at": "2022-12-12T14:34:37Z"
       },
       {
-        "name": "xf-customers",
-        "description": "",
-        "url": "https://github.com/Moonomo/xf-customers",
-        "stars": 0,
-        "forks": 0,
-        "language": "PHP",
+        "name": "gRPC-nestjs-microservices",
+        "description": "Example of a gRPC microservice using Nest.js framework for seamless service communication.",
+        "url": "https://github.com/jobayer977/gRPC-nestjs-microservices",
+        "stars": 3,
+        "forks": 2,
+        "language": "TypeScript",
         "topics": [],
-        "pushed_at": "2018-07-11T23:09:16Z"
+        "pushed_at": "2023-08-24T08:38:37Z"
       },
       {
-        "name": "xf-woocommerce-apartment",
-        "description": "",
-        "url": "https://github.com/Moonomo/xf-woocommerce-apartment",
-        "stars": 0,
+        "name": "nestjs-caching-with-redis",
+        "description": "Example of Implementing robust caching strategies in NestJS applications using Redis and In-memory",
+        "url": "https://github.com/jobayer977/nestjs-caching-with-redis",
+        "stars": 3,
         "forks": 0,
-        "language": "PHP",
+        "language": "TypeScript",
         "topics": [],
-        "pushed_at": "2018-06-29T01:32:56Z"
+        "pushed_at": "2023-08-06T04:39:55Z"
+      },
+      {
+        "name": "nestjs-tcp-microservice-example",
+        "description": "microservice with a client-server architecture using TCP protocol, as well as how to handle different events and messages between the client and the server.",
+        "url": "https://github.com/jobayer977/nestjs-tcp-microservice-example",
+        "stars": 3,
+        "forks": 1,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2023-05-07T10:18:03Z"
+      },
+      {
+        "name": "react-express-appointment-app",
+        "description": "Appointment booking system using react redux mongodb nodejs (MERN)",
+        "url": "https://github.com/jobayer977/react-express-appointment-app",
+        "stars": 3,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2022-12-22T15:20:51Z"
+      },
+      {
+        "name": "medium-article-react-credit-card",
+        "description": "https://medium.com/@jobayerdev/getting-started-with-react-credit-card-ac44071eeb45",
+        "url": "https://github.com/jobayer977/medium-article-react-credit-card",
+        "stars": 3,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-02-13T19:50:51Z"
+      },
+      {
+        "name": "nestjs-redis-microservices",
+        "description": "NestJS Redis Microservices integration of Redis-based microservices in NestJS applications.",
+        "url": "https://github.com/jobayer977/nestjs-redis-microservices",
+        "stars": 2,
+        "forks": 4,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2023-10-18T10:18:20Z"
+      },
+      {
+        "name": "interview-questions",
+        "description": "This repository is a collection of commonly asked interview questions and their answers for various topics. Whether you are a fresh graduate or an experienced professional, this repository will help you prepare for your next job interview.",
+        "url": "https://github.com/jobayer977/interview-questions",
+        "stars": 2,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [
+          "codeing-interviews",
+          "interview-questions",
+          "shortcode",
+          "angular",
+          "front-end"
+        ],
+        "pushed_at": "2023-03-17T03:53:09Z"
+      },
+      {
+        "name": "nogimo",
+        "description": "Nogimo: Built on RxJS, it's a state management pattern with streamlined APIs, designed for easy synchronization with local storage.",
+        "url": "https://github.com/jobayer977/nogimo",
+        "stars": 2,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2022-07-10T15:03:40Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "CSS",
     "all_languages": [
-      "JavaScript",
-      "PHP",
-      "CSS"
+      "CSS",
+      "TypeScript",
+      "JavaScript"
     ],
-    "contributions_last_90d": 22456,
-    "prs_last_90d": 1,
+    "contributions_last_90d": 19971,
+    "prs_last_90d": 2,
     "issues_last_90d": 0,
-    "reviews_last_90d": 1,
-    "commits_last_90d": 0,
-    "enriched_at": "2026-11-25T06:52:21.811401+00:00",
-    "activity_score": 12.66
+    "reviews_last_90d": 0,
+    "commits_last_90d": 34,
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 12.6
   },
   {
     "github_username": "creativehabib",
@@ -3593,154 +3728,19 @@
         "pushed_at": "2026-10-15T18:43:39Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "PHP",
     "all_languages": [
-      "JavaScript",
+      "PHP",
       "Blade",
-      "PHP"
+      "JavaScript"
     ],
     "contributions_last_90d": 4795,
     "prs_last_90d": 1192,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 3582,
-    "enriched_at": "2026-11-25T06:52:21.811401+00:00",
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
     "activity_score": 12.53
-  },
-  {
-    "github_username": "jobayer977",
-    "name": "Jobayer Hossain",
-    "profile_url": "https://github.com/jobayer977",
-    "location": "Dhaka,Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/34404032?u=94caba839b62bbfe4b8d689dd7792128c57e09b6&v=4",
-    "bio": "Full Stack Developer web/mobile/devops",
-    "company": "",
-    "website_url": "https://jobayer.dev",
-    "followers": 63,
-    "following": 129,
-    "public_repos": 70,
-    "total_stars": 48,
-    "top_repos": [
-      {
-        "name": "ultimate-ecommerce-shop",
-        "description": "Production Ready e-commerce Application with PWA eCommerce is implemented based on NextJS, Angular, and Nodejs. It entirely REST API & And automatically image optimize plus delivers by Cloudinary. On the frontend, I have used React, NextJS TypeScript & Ant Design. The full source code is open. It\u2019s very easy to install and deploy. It\u2019s very fast and PWA supported. I have added good documentation useing swagger and I tried to make everything extendable and reusable so you can edit as your own need. It has full admin support too to maintain and manage your order. Here full source code, Frontend, Admin Panel, and Backend.",
-        "url": "https://github.com/jobayer977/ultimate-ecommerce-shop",
-        "stars": 20,
-        "forks": 3,
-        "language": "CSS",
-        "topics": [],
-        "pushed_at": "2023-01-10T22:34:03Z"
-      },
-      {
-        "name": "react-express-lms",
-        "description": "e-learning platform made with react,redux,firebase,mongoDB,mongoose,nodejs(express)",
-        "url": "https://github.com/jobayer977/react-express-lms",
-        "stars": 7,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2022-12-12T14:34:37Z"
-      },
-      {
-        "name": "gRPC-nestjs-microservices",
-        "description": "Example of a gRPC microservice using Nest.js framework for seamless service communication.",
-        "url": "https://github.com/jobayer977/gRPC-nestjs-microservices",
-        "stars": 3,
-        "forks": 2,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2023-08-24T08:38:37Z"
-      },
-      {
-        "name": "nestjs-caching-with-redis",
-        "description": "Example of Implementing robust caching strategies in NestJS applications using Redis and In-memory",
-        "url": "https://github.com/jobayer977/nestjs-caching-with-redis",
-        "stars": 3,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2023-08-06T04:39:55Z"
-      },
-      {
-        "name": "nestjs-tcp-microservice-example",
-        "description": "microservice with a client-server architecture using TCP protocol, as well as how to handle different events and messages between the client and the server.",
-        "url": "https://github.com/jobayer977/nestjs-tcp-microservice-example",
-        "stars": 3,
-        "forks": 1,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2023-05-07T10:18:03Z"
-      },
-      {
-        "name": "react-express-appointment-app",
-        "description": "Appointment booking system using react redux mongodb nodejs (MERN)",
-        "url": "https://github.com/jobayer977/react-express-appointment-app",
-        "stars": 3,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2022-12-22T15:20:51Z"
-      },
-      {
-        "name": "medium-article-react-credit-card",
-        "description": "https://medium.com/@jobayerdev/getting-started-with-react-credit-card-ac44071eeb45",
-        "url": "https://github.com/jobayer977/medium-article-react-credit-card",
-        "stars": 3,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-02-13T19:50:51Z"
-      },
-      {
-        "name": "nestjs-redis-microservices",
-        "description": "NestJS Redis Microservices integration of Redis-based microservices in NestJS applications.",
-        "url": "https://github.com/jobayer977/nestjs-redis-microservices",
-        "stars": 2,
-        "forks": 4,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2023-10-18T10:18:20Z"
-      },
-      {
-        "name": "interview-questions",
-        "description": "This repository is a collection of commonly asked interview questions and their answers for various topics. Whether you are a fresh graduate or an experienced professional, this repository will help you prepare for your next job interview.",
-        "url": "https://github.com/jobayer977/interview-questions",
-        "stars": 2,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [
-          "codeing-interviews",
-          "interview-questions",
-          "shortcode",
-          "angular",
-          "front-end"
-        ],
-        "pushed_at": "2023-03-17T03:53:09Z"
-      },
-      {
-        "name": "nogimo",
-        "description": "Nogimo: Built on RxJS, it's a state management pattern with streamlined APIs, designed for easy synchronization with local storage.",
-        "url": "https://github.com/jobayer977/nogimo",
-        "stars": 2,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2022-07-10T15:03:40Z"
-      }
-    ],
-    "top_language": "TypeScript",
-    "all_languages": [
-      "TypeScript",
-      "JavaScript",
-      "CSS"
-    ],
-    "contributions_last_90d": 19796,
-    "prs_last_90d": 2,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 34,
-    "enriched_at": "2026-11-25T06:52:21.811401+00:00",
-    "activity_score": 12.5
   },
   {
     "github_username": "cbHasib",
@@ -3754,13 +3754,13 @@
     "followers": 43,
     "following": 25,
     "public_repos": 86,
-    "total_stars": 12,
+    "total_stars": 13,
     "top_repos": [
       {
         "name": "devpilot",
         "description": "",
         "url": "https://github.com/cbHasib/devpilot",
-        "stars": 7,
+        "stars": 8,
         "forks": 1,
         "language": "TypeScript",
         "topics": [],
@@ -3863,21 +3863,21 @@
         "pushed_at": "2024-09-16T18:23:38Z"
       }
     ],
-    "top_language": "TypeScript",
+    "top_language": "HTML",
     "all_languages": [
-      "TypeScript",
       "HTML",
       "JavaScript",
-      "Swift",
-      "Dockerfile"
+      "Dockerfile",
+      "TypeScript",
+      "Swift"
     ],
-    "contributions_last_90d": 18703,
+    "contributions_last_90d": 19031,
     "prs_last_90d": 0,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 166,
-    "enriched_at": "2026-11-25T06:52:21.811401+00:00",
-    "activity_score": 12.19
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 12.37
   },
   {
     "github_username": "kingRayhan",
@@ -5397,7 +5397,7 @@
     "bio": "React JS | Node JS | Python | PHP | Data Visualization | Serverless | Aws | Streaming | Automation",
     "company": "SDE - 2 at Craftsmen",
     "website_url": "https://www.anwar.pro.bd",
-    "followers": 90,
+    "followers": 89,
     "following": 108,
     "public_repos": 279,
     "total_stars": 206,
@@ -5530,17 +5530,17 @@
     "top_language": "PHP",
     "all_languages": [
       "PHP",
+      "JavaScript",
       "TypeScript",
-      "Blade",
-      "JavaScript"
+      "Blade"
     ],
-    "contributions_last_90d": 4920,
+    "contributions_last_90d": 4936,
     "prs_last_90d": 279,
     "issues_last_90d": 9,
     "reviews_last_90d": 1,
     "commits_last_90d": 1306,
-    "enriched_at": "2026-11-25T06:52:21.811401+00:00",
-    "activity_score": 10.27
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 10.28
   },
   {
     "github_username": "FahadBinHussain",
@@ -5554,13 +5554,13 @@
     "followers": 20,
     "following": 4,
     "public_repos": 47,
-    "total_stars": 84,
+    "total_stars": 85,
     "top_repos": [
       {
         "name": "awesome-file-hosts",
         "description": "Free-first, source-backed directory of file hosting services with structured JSON data and a spreadsheet-style explorer.",
         "url": "https://github.com/FahadBinHussain/awesome-file-hosts",
-        "stars": 26,
+        "stars": 27,
         "forks": 6,
         "language": "TypeScript",
         "topics": [
@@ -5694,20 +5694,165 @@
         "pushed_at": "2026-10-28T16:29:43Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "HTML",
     "all_languages": [
+      "HTML",
+      "Python",
+      "JavaScript",
+      "TypeScript"
+    ],
+    "contributions_last_90d": 13616,
+    "prs_last_90d": 103,
+    "issues_last_90d": 38,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 5017,
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 10.1
+  },
+  {
+    "github_username": "rupok",
+    "name": "Nazmul H. Rupok",
+    "profile_url": "https://github.com/rupok",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3213988?u=055f9cd047f401e479b204df6ac38a40e78691cc&v=4",
+    "bio": "Full-stack product builder. Designer's eye, engineer's hands. WordPress veteran.",
+    "company": "@WPDevelopers ",
+    "website_url": "http://www.rupok.dev",
+    "followers": 98,
+    "following": 11,
+    "public_repos": 35,
+    "total_stars": 321,
+    "top_repos": [
+      {
+        "name": "webview",
+        "description": "Native Android WebView App Template with Loader (Progressbar). ",
+        "url": "https://github.com/rupok/webview",
+        "stars": 183,
+        "forks": 115,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2026-05-01T06:11:24Z"
+      },
+      {
+        "name": "essential-addons-for-elementor-lite",
+        "description": "Essential Addons for Elementor. Ultimate elements library for Elementor.",
+        "url": "https://github.com/WPDevelopers/essential-addons-for-elementor-lite",
+        "stars": 54,
+        "forks": 48,
+        "language": "PHP",
+        "topics": [
+          "wordpress",
+          "wordpress-plugin",
+          "wordpress-development"
+        ],
+        "pushed_at": "2026-11-26T08:20:34Z"
+      },
+      {
+        "name": "antigravity-auto-retry",
+        "description": "A tiny browser utility that automatically clicks the **Retry** button in the Antigravity panel when it appears.",
+        "url": "https://github.com/rupok/antigravity-auto-retry",
+        "stars": 22,
+        "forks": 3,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-04-28T06:30:52Z"
+      },
+      {
+        "name": "notificationx",
+        "description": "Fomo notification for WordPress",
+        "url": "https://github.com/WPDevelopers/notificationx",
+        "stars": 19,
+        "forks": 11,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2026-11-26T11:26:34Z"
+      },
+      {
+        "name": "flexia",
+        "description": "A modern lightweight and versatile theme for WordPress with the endless customization options through Customizer.",
+        "url": "https://github.com/rupok/flexia",
+        "stars": 12,
+        "forks": 6,
+        "language": "PHP",
+        "topics": [
+          "wordpress",
+          "wordpress-theme",
+          "wordpress-development",
+          "wordpress-plugin"
+        ],
+        "pushed_at": "2026-11-19T08:34:01Z"
+      },
+      {
+        "name": "wp-scheduled-posts",
+        "description": "WP Scheduled Posts",
+        "url": "https://github.com/WPDevelopers/wp-scheduled-posts",
+        "stars": 10,
+        "forks": 5,
+        "language": "PHP",
+        "topics": [],
+        "pushed_at": "2026-11-25T23:22:42Z"
+      },
+      {
+        "name": "essential-blocks-for-gutenberg",
+        "description": "",
+        "url": "https://github.com/WPDevelopers/essential-blocks-for-gutenberg",
+        "stars": 9,
+        "forks": 8,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2024-02-27T09:29:29Z"
+      },
+      {
+        "name": "crisli-picker",
+        "description": "A modern, customizable date and time picker library for React applications, inspired by mobile date/time pickers.",
+        "url": "https://github.com/rupok/crisli-picker",
+        "stars": 5,
+        "forks": 1,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2025-06-04T10:49:56Z"
+      },
+      {
+        "name": "instafilters",
+        "description": "",
+        "url": "https://github.com/rupok/instafilters",
+        "stars": 4,
+        "forks": 1,
+        "language": "CSS",
+        "topics": [],
+        "pushed_at": "2013-12-28T06:52:57Z"
+      },
+      {
+        "name": "custom-script-for-customizer",
+        "description": "Add custom script to header and footer through WordPress Customizer. You can place any custom JavaScript, Google Analytics or embed script.",
+        "url": "https://github.com/rupok/custom-script-for-customizer",
+        "stars": 3,
+        "forks": 3,
+        "language": "PHP",
+        "topics": [
+          "wordpress",
+          "wordpress-plugin",
+          "wordpress-development",
+          "customizer"
+        ],
+        "pushed_at": "2023-08-20T06:57:46Z"
+      }
+    ],
+    "top_language": "Java",
+    "all_languages": [
+      "Java",
       "JavaScript",
       "TypeScript",
-      "Python",
-      "HTML"
+      "PHP",
+      "CSS"
     ],
-    "contributions_last_90d": 13432,
-    "prs_last_90d": 103,
-    "issues_last_90d": 37,
+    "contributions_last_90d": 16250,
+    "prs_last_90d": 4,
+    "issues_last_90d": 0,
     "reviews_last_90d": 0,
-    "commits_last_90d": 4936,
-    "enriched_at": "2026-11-24T08:15:33.392717+00:00",
-    "activity_score": 9.98
+    "commits_last_90d": 29,
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 9.93
   },
   {
     "github_username": "EQuimper",
@@ -5884,151 +6029,6 @@
     "commits_last_90d": 195,
     "enriched_at": "2026-11-26T06:43:11.830258+00:00",
     "activity_score": 9.9
-  },
-  {
-    "github_username": "rupok",
-    "name": "Nazmul H. Rupok",
-    "profile_url": "https://github.com/rupok",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/3213988?u=055f9cd047f401e479b204df6ac38a40e78691cc&v=4",
-    "bio": "Full-stack product builder. Designer's eye, engineer's hands. WordPress veteran.",
-    "company": "@WPDevelopers ",
-    "website_url": "http://www.rupok.dev",
-    "followers": 97,
-    "following": 11,
-    "public_repos": 35,
-    "total_stars": 321,
-    "top_repos": [
-      {
-        "name": "webview",
-        "description": "Native Android WebView App Template with Loader (Progressbar). ",
-        "url": "https://github.com/rupok/webview",
-        "stars": 183,
-        "forks": 115,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2026-05-01T06:11:24Z"
-      },
-      {
-        "name": "essential-addons-for-elementor-lite",
-        "description": "Essential Addons for Elementor. Ultimate elements library for Elementor.",
-        "url": "https://github.com/WPDevelopers/essential-addons-for-elementor-lite",
-        "stars": 54,
-        "forks": 48,
-        "language": "PHP",
-        "topics": [
-          "wordpress",
-          "wordpress-plugin",
-          "wordpress-development"
-        ],
-        "pushed_at": "2026-11-23T10:06:31Z"
-      },
-      {
-        "name": "antigravity-auto-retry",
-        "description": "A tiny browser utility that automatically clicks the **Retry** button in the Antigravity panel when it appears.",
-        "url": "https://github.com/rupok/antigravity-auto-retry",
-        "stars": 22,
-        "forks": 3,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-04-28T06:30:52Z"
-      },
-      {
-        "name": "notificationx",
-        "description": "Fomo notification for WordPress",
-        "url": "https://github.com/WPDevelopers/notificationx",
-        "stars": 19,
-        "forks": 11,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2026-11-24T05:21:08Z"
-      },
-      {
-        "name": "flexia",
-        "description": "A modern lightweight and versatile theme for WordPress with the endless customization options through Customizer.",
-        "url": "https://github.com/rupok/flexia",
-        "stars": 12,
-        "forks": 6,
-        "language": "PHP",
-        "topics": [
-          "wordpress",
-          "wordpress-theme",
-          "wordpress-development",
-          "wordpress-plugin"
-        ],
-        "pushed_at": "2026-11-19T08:34:01Z"
-      },
-      {
-        "name": "wp-scheduled-posts",
-        "description": "WP Scheduled Posts",
-        "url": "https://github.com/WPDevelopers/wp-scheduled-posts",
-        "stars": 10,
-        "forks": 5,
-        "language": "PHP",
-        "topics": [],
-        "pushed_at": "2026-11-24T05:50:51Z"
-      },
-      {
-        "name": "essential-blocks-for-gutenberg",
-        "description": "",
-        "url": "https://github.com/WPDevelopers/essential-blocks-for-gutenberg",
-        "stars": 9,
-        "forks": 8,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2024-02-27T09:29:29Z"
-      },
-      {
-        "name": "crisli-picker",
-        "description": "A modern, customizable date and time picker library for React applications, inspired by mobile date/time pickers.",
-        "url": "https://github.com/rupok/crisli-picker",
-        "stars": 5,
-        "forks": 1,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2025-06-04T10:49:56Z"
-      },
-      {
-        "name": "instafilters",
-        "description": "",
-        "url": "https://github.com/rupok/instafilters",
-        "stars": 4,
-        "forks": 1,
-        "language": "CSS",
-        "topics": [],
-        "pushed_at": "2013-12-28T06:52:57Z"
-      },
-      {
-        "name": "custom-script-for-customizer",
-        "description": "Add custom script to header and footer through WordPress Customizer. You can place any custom JavaScript, Google Analytics or embed script.",
-        "url": "https://github.com/rupok/custom-script-for-customizer",
-        "stars": 3,
-        "forks": 3,
-        "language": "PHP",
-        "topics": [
-          "wordpress",
-          "wordpress-plugin",
-          "wordpress-development",
-          "customizer"
-        ],
-        "pushed_at": "2023-08-20T06:57:46Z"
-      }
-    ],
-    "top_language": "JavaScript",
-    "all_languages": [
-      "JavaScript",
-      "TypeScript",
-      "CSS",
-      "Java",
-      "PHP"
-    ],
-    "contributions_last_90d": 16164,
-    "prs_last_90d": 4,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 29,
-    "enriched_at": "2026-11-24T08:15:33.392717+00:00",
-    "activity_score": 9.89
   },
   {
     "github_username": "hasan1119",
@@ -6444,17 +6444,17 @@
         "pushed_at": "2021-07-31T06:32:43Z"
       }
     ],
-    "top_language": "JavaScript",
+    "top_language": "Ruby",
     "all_languages": [
-      "JavaScript",
-      "Ruby"
+      "Ruby",
+      "JavaScript"
     ],
     "contributions_last_90d": 0,
     "prs_last_90d": 0,
     "issues_last_90d": 0,
     "reviews_last_90d": 0,
     "commits_last_90d": 0,
-    "enriched_at": "2026-11-24T08:15:33.392717+00:00",
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
     "activity_score": 9.84
   },
   {
@@ -8228,21 +8228,21 @@
         "pushed_at": "2026-09-24T15:46:09Z"
       }
     ],
-    "top_language": "Go",
+    "top_language": "Java",
     "all_languages": [
+      "Java",
+      "HTML",
       "Go",
       "TypeScript",
-      "HTML",
-      "PHP",
-      "Java"
+      "PHP"
     ],
-    "contributions_last_90d": 9180,
+    "contributions_last_90d": 9207,
     "prs_last_90d": 178,
     "issues_last_90d": 32,
     "reviews_last_90d": 1,
-    "commits_last_90d": 2064,
-    "enriched_at": "2026-11-25T06:52:21.811401+00:00",
-    "activity_score": 8.43
+    "commits_last_90d": 2073,
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 8.45
   },
   {
     "github_username": "Tahsin005",
@@ -19010,6 +19010,190 @@
     "activity_score": 5.8
   },
   {
+    "github_username": "Iamsdt",
+    "name": "Shudipto Trafder",
+    "profile_url": "https://github.com/Iamsdt",
+    "location": "Khulna Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11135732?u=3cac184c5ec7cedcb885be4fea36621d7a178f6f&v=4",
+    "bio": "VP Engineering at 10xScale \u00b7 Building 10xGraph \u00b7 Python, distributed systems, AI agents\r\n",
+    "company": "@10XScale-in",
+    "website_url": "https://medium.com/@iamsdt",
+    "followers": 67,
+    "following": 1,
+    "public_repos": 116,
+    "total_stars": 198,
+    "top_repos": [
+      {
+        "name": "MicrosoftML-ProjectShowcasing",
+        "description": "A repository to keep all open sources projects that created by individuals or study groups of Microsoft ML Scholarship",
+        "url": "https://github.com/mhmohona/MicrosoftML-ProjectShowcasing",
+        "stars": 49,
+        "forks": 86,
+        "language": "Jupyter Notebook",
+        "topics": [],
+        "pushed_at": "2023-04-13T05:25:32Z"
+      },
+      {
+        "name": "chess",
+        "description": "\u265f\ufe0f AI-powered chess trainer with Stockfish 18 + LLM coaching. Learn chess with real-time explanations, engine analysis, puzzles, openings, and endgame training \u2014 directly in your browser",
+        "url": "https://github.com/Iamsdt/chess",
+        "stars": 37,
+        "forks": 14,
+        "language": "JavaScript",
+        "topics": [
+          "ai-chess",
+          "ai-coach",
+          "board-game",
+          "chess",
+          "chess-ai"
+        ],
+        "pushed_at": "2026-10-31T19:21:04Z"
+      },
+      {
+        "name": "10xGraph",
+        "description": "Open-source, self-hosted infrastructure for AI applications. You write the agents, tools and tasks; 10xGraph runs them behind an API server with auth, role-based access, tenant isolation, durable state in Postgres and Redis, background jobs, metrics and tracing, and generates Docker and Kubernetes files. MIT. Formerly Agentflow.",
+        "url": "https://github.com/10xGraph/10xGraph",
+        "stars": 31,
+        "forks": 14,
+        "language": "Python",
+        "topics": [
+          "ai-agents",
+          "llm",
+          "mcp",
+          "10xgraph",
+          "ai-backend"
+        ],
+        "pushed_at": "2026-11-25T19:02:37Z"
+      },
+      {
+        "name": "password_manager",
+        "description": "An easy configurable and secure open-source personal password manager. Anyone can you this project and generate his own personal mobile app. All the passwords will be saved into your own Firebase Firestone database with encryption.",
+        "url": "https://github.com/Iamsdt/password_manager",
+        "stars": 25,
+        "forks": 6,
+        "language": "Dart",
+        "topics": [
+          "flutter",
+          "firebase",
+          "getx",
+          "password-manager",
+          "android"
+        ],
+        "pushed_at": "2026-08-23T20:21:28Z"
+      },
+      {
+        "name": "MusicPlayer",
+        "description": "A complete music player with playlist options. In this project the UI of old universal music player is used, but the layout created with new component of android like constrain layout, card view. For this project, exoplayer is for music play. This app support latest android 10.",
+        "url": "https://github.com/Iamsdt/MusicPlayer",
+        "stars": 20,
+        "forks": 4,
+        "language": "Kotlin",
+        "topics": [
+          "exoplayer2",
+          "kotlin-coroutines",
+          "ump",
+          "music-player",
+          "android"
+        ],
+        "pushed_at": "2020-04-10T14:57:58Z"
+      },
+      {
+        "name": "MultilabelMoviePosterClassification",
+        "description": "Multilabel image classification to classify movie poster and find appropriate movie genre with movie poster. For this project tensorflow framwork is used for deep learning model. The model is converted into tf lite to reduce final model size. This is a complete project with server side code and also fronted. To deploy deep learning model, flask is used and deployed into heroku server. By using Flutter framework frontend web app is developed and deployed into firebase.",
+        "url": "https://github.com/Iamsdt/MultilabelMoviePosterClassification",
+        "stars": 10,
+        "forks": 2,
+        "language": "Jupyter Notebook",
+        "topics": [
+          "tensorflow",
+          "tflite",
+          "multilabel-classification",
+          "image-classification",
+          "flask"
+        ],
+        "pushed_at": "2023-05-01T21:21:27Z"
+      },
+      {
+        "name": "EyeExerciseApp",
+        "description": "An AI-based Eye Excercise Application",
+        "url": "https://github.com/bhadreshpsavani/EyeExerciseApp",
+        "stars": 9,
+        "forks": 4,
+        "language": "Python",
+        "topics": [
+          "face-detection",
+          "openvino-models",
+          "openvino-toolkit",
+          "openvino-inference-engine",
+          "edge-ai"
+        ],
+        "pushed_at": "2023-03-01T20:34:35Z"
+      },
+      {
+        "name": "SmogDetection",
+        "description": "",
+        "url": "https://github.com/SayedMaheen/SmogDetection",
+        "stars": 7,
+        "forks": 5,
+        "language": "Jupyter Notebook",
+        "topics": [
+          "smog4000",
+          "smogdetection",
+          "spaic",
+          "udacity"
+        ],
+        "pushed_at": "2020-06-22T23:58:30Z"
+      },
+      {
+        "name": "audiocall",
+        "description": "Open source AI voice calling agent for Twilio phone calls, built with FastAPI, Google ADK, and Gemini Live API",
+        "url": "https://github.com/Iamsdt/audiocall",
+        "stars": 5,
+        "forks": 3,
+        "language": "Python",
+        "topics": [
+          "ai-phone-agent",
+          "conversational-ai",
+          "fastapi",
+          "gemini-live-api",
+          "google-adk"
+        ],
+        "pushed_at": "2026-03-24T10:24:34Z"
+      },
+      {
+        "name": "10xgraph-api",
+        "description": "API server and CLI for 10xGraph, self-hosted infrastructure for AI applications. Serves your agents and tasks with JWT or custom auth, roles with own, tenant or all reach, rate limits, a background worker and scheduler, metrics and an audit log, and generates Docker and Kubernetes files.",
+        "url": "https://github.com/10xGraph/10xgraph-api",
+        "stars": 5,
+        "forks": 5,
+        "language": "Python",
+        "topics": [
+          "ai-agents",
+          "cli",
+          "docker",
+          "fastapi",
+          "kubernetes"
+        ],
+        "pushed_at": "2026-11-25T19:02:29Z"
+      }
+    ],
+    "top_language": "JavaScript",
+    "all_languages": [
+      "JavaScript",
+      "Dart",
+      "Python",
+      "Kotlin",
+      "Jupyter Notebook"
+    ],
+    "contributions_last_90d": 3391,
+    "prs_last_90d": 186,
+    "issues_last_90d": 8,
+    "reviews_last_90d": 34,
+    "commits_last_90d": 1514,
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 5.79
+  },
+  {
     "github_username": "NahidAhmed47",
     "name": "Nahid Ahmed",
     "profile_url": "https://github.com/NahidAhmed47",
@@ -19150,188 +19334,114 @@
     "activity_score": 5.77
   },
   {
-    "github_username": "Iamsdt",
-    "name": "Shudipto Trafder",
-    "profile_url": "https://github.com/Iamsdt",
-    "location": "Khulna Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/11135732?u=3cac184c5ec7cedcb885be4fea36621d7a178f6f&v=4",
-    "bio": "VP Engineering at 10xScale \u00b7 Building 10xGraph \u00b7 Python, distributed systems, AI agents\r\n",
-    "company": "@10XScale-in",
-    "website_url": "https://medium.com/@iamsdt",
-    "followers": 67,
-    "following": 1,
-    "public_repos": 116,
-    "total_stars": 197,
+    "github_username": "sgtlaugh",
+    "name": "Sabit Zahin",
+    "profile_url": "https://github.com/sgtlaugh",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/29172543?u=3ad7fc752884f727b2cb30aa2c1125979abd760e&v=4",
+    "bio": "Chaos is a ladder, and hesitation is defeat.",
+    "company": "NewsCred Inc, @newscred",
+    "website_url": "",
+    "followers": 130,
+    "following": 116,
+    "public_repos": 6,
+    "total_stars": 106,
     "top_repos": [
       {
-        "name": "MicrosoftML-ProjectShowcasing",
-        "description": "A repository to keep all open sources projects that created by individuals or study groups of Microsoft ML Scholarship",
-        "url": "https://github.com/mhmohona/MicrosoftML-ProjectShowcasing",
-        "stars": 49,
-        "forks": 86,
-        "language": "Jupyter Notebook",
+        "name": "algovault",
+        "description": "Algorithms and templates for competitive programming",
+        "url": "https://github.com/sgtlaugh/algovault",
+        "stars": 101,
+        "forks": 20,
+        "language": "C++",
+        "topics": [
+          "competitive-programming",
+          "data-structures",
+          "codeforces",
+          "codejam",
+          "hackerrank"
+        ],
+        "pushed_at": "2026-11-26T08:57:26Z"
+      },
+      {
+        "name": "skills",
+        "description": "Claude Code skills that make the agent prove it.",
+        "url": "https://github.com/sgtlaugh/skills",
+        "stars": 2,
+        "forks": 0,
+        "language": "Shell",
+        "topics": [
+          "ai-agents",
+          "claude-code",
+          "claude-skills",
+          "code-review"
+        ],
+        "pushed_at": "2026-11-26T09:06:33Z"
+      },
+      {
+        "name": "hariken",
+        "description": "A NoSQL database",
+        "url": "https://github.com/oneshadab/hariken",
+        "stars": 2,
+        "forks": 0,
+        "language": "Go",
         "topics": [],
-        "pushed_at": "2023-04-13T05:25:32Z"
+        "pushed_at": "2021-04-19T22:02:38Z"
       },
       {
-        "name": "chess",
-        "description": "\u265f\ufe0f AI-powered chess trainer with Stockfish 18 + LLM coaching. Learn chess with real-time explanations, engine analysis, puzzles, openings, and endgame training \u2014 directly in your browser",
-        "url": "https://github.com/Iamsdt/chess",
-        "stars": 37,
-        "forks": 14,
-        "language": "JavaScript",
-        "topics": [
-          "ai-chess",
-          "ai-coach",
-          "board-game",
-          "chess",
-          "chess-ai"
-        ],
-        "pushed_at": "2026-10-31T19:21:04Z"
-      },
-      {
-        "name": "10xGraph",
-        "description": "Open-source, self-hosted infrastructure for AI applications. You write the agents, tools and tasks; 10xGraph runs them behind an API server with auth, role-based access, tenant isolation, durable state in Postgres and Redis, background jobs, metrics and tracing, and generates Docker and Kubernetes files. MIT. Formerly Agentflow.",
-        "url": "https://github.com/10xGraph/10xGraph",
-        "stars": 31,
-        "forks": 14,
-        "language": "Python",
-        "topics": [
-          "ai-agents",
-          "llm",
-          "mcp",
-          "10xgraph",
-          "ai-backend"
-        ],
-        "pushed_at": "2026-11-25T05:22:35Z"
-      },
-      {
-        "name": "password_manager",
-        "description": "An easy configurable and secure open-source personal password manager. Anyone can you this project and generate his own personal mobile app. All the passwords will be saved into your own Firebase Firestone database with encryption.",
-        "url": "https://github.com/Iamsdt/password_manager",
-        "stars": 25,
-        "forks": 6,
-        "language": "Dart",
-        "topics": [
-          "flutter",
-          "firebase",
-          "getx",
-          "password-manager",
-          "android"
-        ],
-        "pushed_at": "2026-08-23T20:21:28Z"
-      },
-      {
-        "name": "MusicPlayer",
-        "description": "A complete music player with playlist options. In this project the UI of old universal music player is used, but the layout created with new component of android like constrain layout, card view. For this project, exoplayer is for music play. This app support latest android 10.",
-        "url": "https://github.com/Iamsdt/MusicPlayer",
-        "stars": 20,
-        "forks": 4,
-        "language": "Kotlin",
-        "topics": [
-          "exoplayer2",
-          "kotlin-coroutines",
-          "ump",
-          "music-player",
-          "android"
-        ],
-        "pushed_at": "2020-04-10T14:57:58Z"
-      },
-      {
-        "name": "EyeExerciseApp",
-        "description": "An AI-based Eye Excercise Application",
-        "url": "https://github.com/bhadreshpsavani/EyeExerciseApp",
-        "stars": 9,
-        "forks": 4,
-        "language": "Python",
-        "topics": [
-          "face-detection",
-          "openvino-models",
-          "openvino-toolkit",
-          "openvino-inference-engine",
-          "edge-ai"
-        ],
-        "pushed_at": "2023-03-01T20:34:35Z"
-      },
-      {
-        "name": "MultilabelMoviePosterClassification",
-        "description": "Multilabel image classification to classify movie poster and find appropriate movie genre with movie poster. For this project tensorflow framwork is used for deep learning model. The model is converted into tf lite to reduce final model size. This is a complete project with server side code and also fronted. To deploy deep learning model, flask is used and deployed into heroku server. By using Flutter framework frontend web app is developed and deployed into firebase.",
-        "url": "https://github.com/Iamsdt/MultilabelMoviePosterClassification",
-        "stars": 9,
+        "name": "minigen",
+        "description": "A static site generator for nodejs \u2b22",
+        "url": "https://github.com/oneshadab/minigen",
+        "stars": 1,
         "forks": 2,
-        "language": "Jupyter Notebook",
+        "language": "TypeScript",
         "topics": [
-          "tensorflow",
-          "tflite",
-          "multilabel-classification",
-          "image-classification",
-          "flask"
+          "typescript",
+          "nodejs",
+          "static-site-generator"
         ],
-        "pushed_at": "2023-05-01T21:21:27Z"
+        "pushed_at": "2022-11-25T15:32:47Z"
       },
       {
-        "name": "SmogDetection",
+        "name": "dev-home",
+        "description": "One board to resign them all",
+        "url": "https://github.com/sgtlaugh/dev-home",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [
+          "chess",
+          "productivity",
+          "dashboard"
+        ],
+        "pushed_at": "2026-07-13T16:22:22Z"
+      },
+      {
+        "name": "sense2vec",
         "description": "",
-        "url": "https://github.com/SayedMaheen/SmogDetection",
-        "stars": 7,
-        "forks": 5,
-        "language": "Jupyter Notebook",
-        "topics": [
-          "smog4000",
-          "smogdetection",
-          "spaic",
-          "udacity"
-        ],
-        "pushed_at": "2020-06-22T23:58:30Z"
-      },
-      {
-        "name": "audiocall",
-        "description": "Open source AI voice calling agent for Twilio phone calls, built with FastAPI, Google ADK, and Gemini Live API",
-        "url": "https://github.com/Iamsdt/audiocall",
-        "stars": 5,
-        "forks": 3,
+        "url": "https://github.com/rashed091/sense2vec",
+        "stars": 0,
+        "forks": 0,
         "language": "Python",
-        "topics": [
-          "ai-phone-agent",
-          "conversational-ai",
-          "fastapi",
-          "gemini-live-api",
-          "google-adk"
-        ],
-        "pushed_at": "2026-03-24T10:24:34Z"
-      },
-      {
-        "name": "10xgraph-api",
-        "description": "API server and CLI for 10xGraph, self-hosted infrastructure for AI applications. Serves your agents and tasks with JWT or custom auth, roles with own, tenant or all reach, rate limits, a background worker and scheduler, metrics and an audit log, and generates Docker and Kubernetes files.",
-        "url": "https://github.com/10xGraph/10xgraph-api",
-        "stars": 5,
-        "forks": 5,
-        "language": "Python",
-        "topics": [
-          "ai-agents",
-          "cli",
-          "docker",
-          "fastapi",
-          "kubernetes"
-        ],
-        "pushed_at": "2026-11-25T05:22:26Z"
+        "topics": [],
+        "pushed_at": "2018-06-21T05:04:25Z"
       }
     ],
-    "top_language": "Dart",
+    "top_language": "Go",
     "all_languages": [
-      "Dart",
-      "JavaScript",
-      "Kotlin",
+      "Go",
+      "TypeScript",
+      "C++",
       "Python",
-      "Jupyter Notebook"
+      "Shell"
     ],
-    "contributions_last_90d": 3363,
-    "prs_last_90d": 183,
-    "issues_last_90d": 8,
-    "reviews_last_90d": 34,
-    "commits_last_90d": 1493,
-    "enriched_at": "2026-11-25T06:52:21.811401+00:00",
-    "activity_score": 5.76
+    "contributions_last_90d": 8058,
+    "prs_last_90d": 0,
+    "issues_last_90d": 0,
+    "reviews_last_90d": 1,
+    "commits_last_90d": 5276,
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 5.77
   },
   {
     "github_username": "manjurulhoque",
@@ -19642,6 +19752,145 @@
     "commits_last_90d": 15,
     "enriched_at": "2026-11-25T06:52:21.811401+00:00",
     "activity_score": 5.71
+  },
+  {
+    "github_username": "Emam-Bokhari",
+    "name": "Moshfiqur Rahman",
+    "profile_url": "https://github.com/Emam-Bokhari",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/134803050?u=9c75193698192c08be895e2de06d03bbad23daf9&v=4",
+    "bio": "I am a full-stack developer. My dream is to see myself as a senior full-stack engineer between 2023 to 2030. And I am always working towards that goal.",
+    "company": "",
+    "website_url": "https://moshfiqurrahman.vercel.app",
+    "followers": 14,
+    "following": 14,
+    "public_repos": 172,
+    "total_stars": 1,
+    "top_repos": [
+      {
+        "name": "University-Management-Server",
+        "description": "This repository contains a university management system application built with a modular monolithic architecture. The app facilitates efficient management of students, faculty, courses, etc.",
+        "url": "https://github.com/Emam-Bokhari/University-Management-Server",
+        "stars": 1,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [
+          "express-js",
+          "mongoose",
+          "moduler-pattern",
+          "typescript"
+        ],
+        "pushed_at": "2024-12-29T06:09:12Z"
+      },
+      {
+        "name": "softlligence-backend-task",
+        "description": "",
+        "url": "https://github.com/Emam-Bokhari/softlligence-backend-task",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-11-27T04:33:08Z"
+      },
+      {
+        "name": "urock-backend",
+        "description": "",
+        "url": "https://github.com/iamrakiburrahman/urock-backend",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-11-25T16:59:23Z"
+      },
+      {
+        "name": "pixlab-frontend",
+        "description": "High-performance browser-based image processing studio. Features background removal, image upscaling, smart compression, and precision resizing built with Next.js 14, TypeScript & Tailwind CSS.",
+        "url": "https://github.com/Emam-Bokhari/pixlab-frontend",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [
+          "background-removal",
+          "image-compressor",
+          "image-processing",
+          "image-resizer",
+          "nextjs"
+        ],
+        "pushed_at": "2026-11-24T03:34:50Z"
+      },
+      {
+        "name": "task-management-fastapi",
+        "description": "",
+        "url": "https://github.com/Emam-Bokhari/task-management-fastapi",
+        "stars": 0,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-11-23T21:27:30Z"
+      },
+      {
+        "name": "fastapi-basic",
+        "description": "",
+        "url": "https://github.com/Emam-Bokhari/fastapi-basic",
+        "stars": 0,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-11-23T21:19:47Z"
+      },
+      {
+        "name": "python-learning",
+        "description": "",
+        "url": "https://github.com/Emam-Bokhari/python-learning",
+        "stars": 0,
+        "forks": 0,
+        "language": "Python",
+        "topics": [],
+        "pushed_at": "2026-11-23T21:24:47Z"
+      },
+      {
+        "name": "spend-locak-backend",
+        "description": "",
+        "url": "https://github.com/Emam-Bokhari/spend-locak-backend",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-11-23T18:50:41Z"
+      },
+      {
+        "name": "alygo-vehicle-dashboard",
+        "description": "",
+        "url": "https://github.com/MdJowelAhmed/alygo-vehicle-dashboard",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-11-23T21:31:02Z"
+      },
+      {
+        "name": "productos-y-service",
+        "description": "",
+        "url": "https://github.com/MdJowelAhmed/productos-y-service",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "pushed_at": "2026-11-23T21:31:21Z"
+      }
+    ],
+    "top_language": "Python",
+    "all_languages": [
+      "Python",
+      "TypeScript"
+    ],
+    "contributions_last_90d": 3964,
+    "prs_last_90d": 0,
+    "issues_last_90d": 1,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 589,
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 5.7
   },
   {
     "github_username": "masnun",
@@ -20073,6 +20322,151 @@
     "activity_score": 5.65
   },
   {
+    "github_username": "jamilxt",
+    "name": "Md Jamilur Rahman",
+    "profile_url": "https://github.com/jamilxt",
+    "location": "Dhaka, Bangladesh",
+    "avatar_url": "https://avatars.githubusercontent.com/u/18072164?u=a7353c8762b49364e24b006a32fbbb8ecd5a828b&v=4",
+    "bio": "",
+    "company": "Brain Station 23 Ltd.",
+    "website_url": "https://jamilxt.com",
+    "followers": 429,
+    "following": 2437,
+    "public_repos": 123,
+    "total_stars": 202,
+    "top_repos": [
+      {
+        "name": "spring-tx-board",
+        "description": "spring-tx-board is a developer-friendly tool that provides deep insights into transactional behavior within Spring-based applications. With real-time logging, intuitive dashboards, and powerful filtering, you can easily monitor and debug transaction commits, rollbacks, and performance issues.",
+        "url": "https://github.com/Mamun-Al-Babu-Shikder/spring-tx-board",
+        "stars": 57,
+        "forks": 28,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2026-03-04T04:44:31Z"
+      },
+      {
+        "name": "java_spring-boot_japser-report",
+        "description": "Jasper Report using Spring Boot. Export PDF, EXCEL, CSV, DOCX easily. ",
+        "url": "https://github.com/jamilxt/java_spring-boot_japser-report",
+        "stars": 54,
+        "forks": 24,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2026-03-09T21:53:05Z"
+      },
+      {
+        "name": "spring-lens",
+        "description": "Spring Lens is a real-time observability and debugging tool for Spring Boot applications that helps developers understand what\u2019s happening inside their system.",
+        "url": "https://github.com/sdlc-pro/spring-lens",
+        "stars": 35,
+        "forks": 50,
+        "language": "Java",
+        "topics": [
+          "java",
+          "spring-boot",
+          "developer-tools",
+          "spring-boot-starter",
+          "spring-framework"
+        ],
+        "pushed_at": "2026-11-27T05:56:01Z"
+      },
+      {
+        "name": "Medium-Paywall-Bypass",
+        "description": "A lightweight Google Chrome extension that helps you seamlessly read premium, \"Member-only\" articles on Medium by automatically redirecting them to a fast mirror service.",
+        "url": "https://github.com/jamilxt/Medium-Paywall-Bypass",
+        "stars": 21,
+        "forks": 3,
+        "language": "JavaScript",
+        "topics": [],
+        "pushed_at": "2026-03-27T09:22:51Z"
+      },
+      {
+        "name": "online-judge",
+        "description": "A simple online judge system where you can solve programming problems and get your code automatically evaluated. Think of it like LeetCode or HackerRank, but running on your own computer!  Works on Windows, Linux, and macOS! \ud83d\udda5\ufe0f \ud83d\udc27 \ud83c\udf4e",
+        "url": "https://github.com/jamilxt/online-judge",
+        "stars": 6,
+        "forks": 3,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2026-03-20T14:13:39Z"
+      },
+      {
+        "name": "owasp-top10-2025-java-spring-boot-ecommerce",
+        "description": "A production-ready Spring Boot e-commerce application demonstrating all OWASP Top 10 2025 security vulnerabilities and their secure implementations.",
+        "url": "https://github.com/jamilxt/owasp-top10-2025-java-spring-boot-ecommerce",
+        "stars": 6,
+        "forks": 1,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2026-05-08T02:03:37Z"
+      },
+      {
+        "name": "portfolio",
+        "description": "Personal Portfolio Project using Java & Spring Boot for Pondits (Batch 7)",
+        "url": "https://github.com/jamilxt/portfolio",
+        "stars": 6,
+        "forks": 14,
+        "language": "CSS",
+        "topics": [
+          "java",
+          "spring-boot",
+          "thymeleaf"
+        ],
+        "pushed_at": "2025-08-10T16:52:45Z"
+      },
+      {
+        "name": "java-resources",
+        "description": "Java & Spring Boot Resources I follow & find trusted and authentic",
+        "url": "https://github.com/jamilxt/java-resources",
+        "stars": 6,
+        "forks": 1,
+        "language": null,
+        "topics": [],
+        "pushed_at": "2026-03-23T21:39:07Z"
+      },
+      {
+        "name": "kotlin_multiplatform_mobile_KMMApplication",
+        "description": "Kotlin Multiplatform Mobile (KMM): https://kotlinlang.org/docs/mobile/create-first-app.html",
+        "url": "https://github.com/jamilxt/kotlin_multiplatform_mobile_KMMApplication",
+        "stars": 6,
+        "forks": 0,
+        "language": "Swift",
+        "topics": [
+          "android",
+          "ios",
+          "kotlin",
+          "multiplatform"
+        ],
+        "pushed_at": "2020-09-02T13:16:18Z"
+      },
+      {
+        "name": "erp",
+        "description": "",
+        "url": "https://github.com/jamilxt/erp",
+        "stars": 5,
+        "forks": 37,
+        "language": "Java",
+        "topics": [],
+        "pushed_at": "2025-02-24T14:13:14Z"
+      }
+    ],
+    "top_language": "CSS",
+    "all_languages": [
+      "CSS",
+      "Java",
+      "JavaScript",
+      "Swift"
+    ],
+    "contributions_last_90d": 4264,
+    "prs_last_90d": 21,
+    "issues_last_90d": 18,
+    "reviews_last_90d": 0,
+    "commits_last_90d": 269,
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 5.65
+  },
+  {
     "github_username": "arman-miaa",
     "name": "Arman Mia",
     "profile_url": "https://github.com/arman-miaa",
@@ -20361,291 +20755,6 @@
     "activity_score": 5.62
   },
   {
-    "github_username": "Emam-Bokhari",
-    "name": "Moshfiqur Rahman",
-    "profile_url": "https://github.com/Emam-Bokhari",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/134803050?u=9c75193698192c08be895e2de06d03bbad23daf9&v=4",
-    "bio": "I am a full-stack developer. My dream is to see myself as a senior full-stack engineer between 2023 to 2030. And I am always working towards that goal.",
-    "company": "",
-    "website_url": "https://moshfiqurrahman.vercel.app",
-    "followers": 14,
-    "following": 13,
-    "public_repos": 170,
-    "total_stars": 1,
-    "top_repos": [
-      {
-        "name": "University-Management-Server",
-        "description": "This repository contains a university management system application built with a modular monolithic architecture. The app facilitates efficient management of students, faculty, courses, etc.",
-        "url": "https://github.com/Emam-Bokhari/University-Management-Server",
-        "stars": 1,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [
-          "express-js",
-          "mongoose",
-          "moduler-pattern",
-          "typescript"
-        ],
-        "pushed_at": "2024-12-29T06:09:12Z"
-      },
-      {
-        "name": "urock-backend",
-        "description": "",
-        "url": "https://github.com/iamrakiburrahman/urock-backend",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-11-23T21:29:47Z"
-      },
-      {
-        "name": "pixlab-frontend",
-        "description": "High-performance browser-based image processing studio. Features background removal, image upscaling, smart compression, and precision resizing built with Next.js 14, TypeScript & Tailwind CSS.",
-        "url": "https://github.com/Emam-Bokhari/pixlab-frontend",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [
-          "background-removal",
-          "image-compressor",
-          "image-processing",
-          "image-resizer",
-          "nextjs"
-        ],
-        "pushed_at": "2026-11-24T03:34:50Z"
-      },
-      {
-        "name": "task-management-fastapi",
-        "description": "",
-        "url": "https://github.com/Emam-Bokhari/task-management-fastapi",
-        "stars": 0,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-11-23T21:27:30Z"
-      },
-      {
-        "name": "fastapi-basic",
-        "description": "",
-        "url": "https://github.com/Emam-Bokhari/fastapi-basic",
-        "stars": 0,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-11-23T21:19:47Z"
-      },
-      {
-        "name": "python-learning",
-        "description": "",
-        "url": "https://github.com/Emam-Bokhari/python-learning",
-        "stars": 0,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2026-11-23T21:24:47Z"
-      },
-      {
-        "name": "spend-locak-backend",
-        "description": "",
-        "url": "https://github.com/Emam-Bokhari/spend-locak-backend",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-11-23T18:50:41Z"
-      },
-      {
-        "name": "alygo-vehicle-dashboard",
-        "description": "",
-        "url": "https://github.com/MdJowelAhmed/alygo-vehicle-dashboard",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-11-23T21:31:02Z"
-      },
-      {
-        "name": "productos-y-service",
-        "description": "",
-        "url": "https://github.com/MdJowelAhmed/productos-y-service",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [],
-        "pushed_at": "2026-11-23T21:31:21Z"
-      },
-      {
-        "name": "testing-kit",
-        "description": "",
-        "url": "https://github.com/Emam-Bokhari/testing-kit",
-        "stars": 0,
-        "forks": 0,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-11-23T21:27:49Z"
-      }
-    ],
-    "top_language": "JavaScript",
-    "all_languages": [
-      "JavaScript",
-      "TypeScript",
-      "Python"
-    ],
-    "contributions_last_90d": 3900,
-    "prs_last_90d": 0,
-    "issues_last_90d": 1,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 530,
-    "enriched_at": "2026-11-24T08:15:33.392717+00:00",
-    "activity_score": 5.61
-  },
-  {
-    "github_username": "jamilxt",
-    "name": "Md Jamilur Rahman",
-    "profile_url": "https://github.com/jamilxt",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/18072164?u=a7353c8762b49364e24b006a32fbbb8ecd5a828b&v=4",
-    "bio": "",
-    "company": "Brain Station 23 Ltd.",
-    "website_url": "https://jamilxt.com",
-    "followers": 429,
-    "following": 2437,
-    "public_repos": 123,
-    "total_stars": 202,
-    "top_repos": [
-      {
-        "name": "spring-tx-board",
-        "description": "spring-tx-board is a developer-friendly tool that provides deep insights into transactional behavior within Spring-based applications. With real-time logging, intuitive dashboards, and powerful filtering, you can easily monitor and debug transaction commits, rollbacks, and performance issues.",
-        "url": "https://github.com/Mamun-Al-Babu-Shikder/spring-tx-board",
-        "stars": 57,
-        "forks": 28,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2026-03-04T04:44:31Z"
-      },
-      {
-        "name": "java_spring-boot_japser-report",
-        "description": "Jasper Report using Spring Boot. Export PDF, EXCEL, CSV, DOCX easily. ",
-        "url": "https://github.com/jamilxt/java_spring-boot_japser-report",
-        "stars": 54,
-        "forks": 24,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2026-03-09T21:53:05Z"
-      },
-      {
-        "name": "spring-lens",
-        "description": "Spring Lens is a real-time observability and debugging tool for Spring Boot applications that helps developers understand what\u2019s happening inside their system.",
-        "url": "https://github.com/sdlc-pro/spring-lens",
-        "stars": 35,
-        "forks": 50,
-        "language": "Java",
-        "topics": [
-          "java",
-          "spring-boot",
-          "developer-tools",
-          "spring-boot-starter",
-          "spring-framework"
-        ],
-        "pushed_at": "2026-11-24T05:01:48Z"
-      },
-      {
-        "name": "Medium-Paywall-Bypass",
-        "description": "A lightweight Google Chrome extension that helps you seamlessly read premium, \"Member-only\" articles on Medium by automatically redirecting them to a fast mirror service.",
-        "url": "https://github.com/jamilxt/Medium-Paywall-Bypass",
-        "stars": 21,
-        "forks": 3,
-        "language": "JavaScript",
-        "topics": [],
-        "pushed_at": "2026-03-27T09:22:51Z"
-      },
-      {
-        "name": "online-judge",
-        "description": "A simple online judge system where you can solve programming problems and get your code automatically evaluated. Think of it like LeetCode or HackerRank, but running on your own computer!  Works on Windows, Linux, and macOS! \ud83d\udda5\ufe0f \ud83d\udc27 \ud83c\udf4e",
-        "url": "https://github.com/jamilxt/online-judge",
-        "stars": 6,
-        "forks": 3,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2026-03-20T14:13:39Z"
-      },
-      {
-        "name": "owasp-top10-2025-java-spring-boot-ecommerce",
-        "description": "A production-ready Spring Boot e-commerce application demonstrating all OWASP Top 10 2025 security vulnerabilities and their secure implementations.",
-        "url": "https://github.com/jamilxt/owasp-top10-2025-java-spring-boot-ecommerce",
-        "stars": 6,
-        "forks": 1,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2026-05-08T02:03:37Z"
-      },
-      {
-        "name": "portfolio",
-        "description": "Personal Portfolio Project using Java & Spring Boot for Pondits (Batch 7)",
-        "url": "https://github.com/jamilxt/portfolio",
-        "stars": 6,
-        "forks": 14,
-        "language": "CSS",
-        "topics": [
-          "java",
-          "spring-boot",
-          "thymeleaf"
-        ],
-        "pushed_at": "2025-08-10T16:52:45Z"
-      },
-      {
-        "name": "java-resources",
-        "description": "Java & Spring Boot Resources I follow & find trusted and authentic",
-        "url": "https://github.com/jamilxt/java-resources",
-        "stars": 6,
-        "forks": 1,
-        "language": null,
-        "topics": [],
-        "pushed_at": "2026-03-23T21:39:07Z"
-      },
-      {
-        "name": "kotlin_multiplatform_mobile_KMMApplication",
-        "description": "Kotlin Multiplatform Mobile (KMM): https://kotlinlang.org/docs/mobile/create-first-app.html",
-        "url": "https://github.com/jamilxt/kotlin_multiplatform_mobile_KMMApplication",
-        "stars": 6,
-        "forks": 0,
-        "language": "Swift",
-        "topics": [
-          "android",
-          "ios",
-          "kotlin",
-          "multiplatform"
-        ],
-        "pushed_at": "2020-09-02T13:16:18Z"
-      },
-      {
-        "name": "erp",
-        "description": "",
-        "url": "https://github.com/jamilxt/erp",
-        "stars": 5,
-        "forks": 37,
-        "language": "Java",
-        "topics": [],
-        "pushed_at": "2025-02-24T14:13:14Z"
-      }
-    ],
-    "top_language": "JavaScript",
-    "all_languages": [
-      "JavaScript",
-      "Swift",
-      "CSS",
-      "Java"
-    ],
-    "contributions_last_90d": 4220,
-    "prs_last_90d": 17,
-    "issues_last_90d": 13,
-    "reviews_last_90d": 0,
-    "commits_last_90d": 262,
-    "enriched_at": "2026-11-24T08:15:33.392717+00:00",
-    "activity_score": 5.59
-  },
-  {
     "github_username": "arctronic",
     "name": "Shihab Sikder",
     "profile_url": "https://github.com/arctronic",
@@ -20654,9 +20763,9 @@
     "bio": "Tech Lead @BinduLogic | Ex Founding Software Engineer @EverstarAI |\r\nHashiCorp Certified: Terraform Associate (004)",
     "company": "BinduLogic Ltd",
     "website_url": "tronics.dev",
-    "followers": 38,
+    "followers": 37,
     "following": 17,
-    "public_repos": 21,
+    "public_repos": 22,
     "total_stars": 225,
     "top_repos": [
       {
@@ -20780,132 +20889,22 @@
         "pushed_at": "2020-08-19T17:07:22Z"
       }
     ],
-    "top_language": "Dart",
+    "top_language": "JavaScript",
     "all_languages": [
-      "Dart",
-      "C++",
       "JavaScript",
       "TypeScript",
-      "C",
-      "Python"
+      "Dart",
+      "C++",
+      "Python",
+      "C"
     ],
-    "contributions_last_90d": 9082,
+    "contributions_last_90d": 9171,
     "prs_last_90d": 1,
     "issues_last_90d": 0,
     "reviews_last_90d": 1,
     "commits_last_90d": 32,
-    "enriched_at": "2026-11-24T08:15:33.392717+00:00",
-    "activity_score": 5.56
-  },
-  {
-    "github_username": "sgtlaugh",
-    "name": "Sabit Zahin",
-    "profile_url": "https://github.com/sgtlaugh",
-    "location": "Dhaka, Bangladesh",
-    "avatar_url": "https://avatars.githubusercontent.com/u/29172543?u=3ad7fc752884f727b2cb30aa2c1125979abd760e&v=4",
-    "bio": "Chaos is a ladder, and hesitation is defeat.",
-    "company": "NewsCred Inc, @newscred",
-    "website_url": "",
-    "followers": 129,
-    "following": 116,
-    "public_repos": 6,
-    "total_stars": 106,
-    "top_repos": [
-      {
-        "name": "algovault",
-        "description": "Algorithms and templates for competitive programming",
-        "url": "https://github.com/sgtlaugh/algovault",
-        "stars": 101,
-        "forks": 20,
-        "language": "C++",
-        "topics": [
-          "competitive-programming",
-          "data-structures",
-          "codeforces",
-          "codejam",
-          "hackerrank"
-        ],
-        "pushed_at": "2026-11-22T06:54:44Z"
-      },
-      {
-        "name": "skills",
-        "description": "Claude Code skills that make the agent prove it.",
-        "url": "https://github.com/sgtlaugh/skills",
-        "stars": 2,
-        "forks": 0,
-        "language": "Shell",
-        "topics": [
-          "ai-agents",
-          "claude-code",
-          "claude-skills",
-          "code-review"
-        ],
-        "pushed_at": "2026-11-22T08:35:23Z"
-      },
-      {
-        "name": "hariken",
-        "description": "A NoSQL database",
-        "url": "https://github.com/oneshadab/hariken",
-        "stars": 2,
-        "forks": 0,
-        "language": "Go",
-        "topics": [],
-        "pushed_at": "2021-04-19T22:02:38Z"
-      },
-      {
-        "name": "minigen",
-        "description": "A static site generator for nodejs \u2b22",
-        "url": "https://github.com/oneshadab/minigen",
-        "stars": 1,
-        "forks": 2,
-        "language": "TypeScript",
-        "topics": [
-          "typescript",
-          "nodejs",
-          "static-site-generator"
-        ],
-        "pushed_at": "2022-11-25T15:32:47Z"
-      },
-      {
-        "name": "dev-home",
-        "description": "One board to resign them all",
-        "url": "https://github.com/sgtlaugh/dev-home",
-        "stars": 0,
-        "forks": 0,
-        "language": "TypeScript",
-        "topics": [
-          "chess",
-          "productivity",
-          "dashboard"
-        ],
-        "pushed_at": "2026-07-13T16:22:22Z"
-      },
-      {
-        "name": "sense2vec",
-        "description": "",
-        "url": "https://github.com/rashed091/sense2vec",
-        "stars": 0,
-        "forks": 0,
-        "language": "Python",
-        "topics": [],
-        "pushed_at": "2018-06-21T05:04:25Z"
-      }
-    ],
-    "top_language": "Go",
-    "all_languages": [
-      "Go",
-      "C++",
-      "TypeScript",
-      "Shell",
-      "Python"
-    ],
-    "contributions_last_90d": 7719,
-    "prs_last_90d": 0,
-    "issues_last_90d": 0,
-    "reviews_last_90d": 1,
-    "commits_last_90d": 5073,
-    "enriched_at": "2026-11-24T08:15:33.392717+00:00",
-    "activity_score": 5.54
+    "enriched_at": "2026-11-27T06:34:39.651522+00:00",
+    "activity_score": 5.62
   },
   {
     "github_username": "milon",
